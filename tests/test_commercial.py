@@ -8,12 +8,13 @@ import threading
 import time
 import unittest
 from pathlib import Path
+from urllib.parse import unquote
 from unittest.mock import patch
 from http.server import ThreadingHTTPServer
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT/'scripts'))
 from commercial.store import connect,migrate
-from commercial import service as s,alerts
+from commercial import service as s,alerts,notify
 from commercial.intelligence import briefing,official
 from commercial_admin import provision
 from api.index import handler
@@ -126,5 +127,66 @@ class CommercialTests(unittest.TestCase):
             self.assertEqual(request('/api/events',{'name':'diagnostic_submitted'})[0],400)
             with patch.dict(os.environ,{'VERCEL':'1'}):self.assertEqual(request('/api/leads',LEAD)[0],503)
         finally:server.shutdown();server.server_close()
+
+    def test_mailto_fallback_when_transport_fails(self):
+        env={'DATABASE_URL':'','VERCEL':'1','LEAD_NOTIFY_EMAIL':'operador@example.test'}
+        with patch.dict(os.environ,env,clear=False):
+            with self.assertRaises(s.Problem) as caught:s.capture_lead(None,{**LEAD,'request_id':'aaaaaaaa-1111-1111-1111-111111111111'})
+        self.assertEqual(caught.exception.status,503)
+        self.assertIn('mailto:operador@example.test',caught.exception.payload.get('mailto',''))
+        self.assertIn('Pessoa Teste',unquote(caught.exception.payload['mailto']))
+
+    def test_no_store_no_email_reports_unavailable(self):
+        with patch.dict(os.environ,{'DATABASE_URL':'','VERCEL':'1','LEAD_NOTIFY_EMAIL':''},clear=False):
+            with self.assertRaises(s.Problem) as caught:s.capture_lead(None,{**LEAD,'request_id':'dddddddd-4444-4444-4444-444444444444'})
+        self.assertEqual(caught.exception.status,503)
+        self.assertIn('indisponível',str(caught.exception).lower())
+
+    def test_direct_email_without_database_and_once_only(self):
+        sent=[]
+        env={'DATABASE_URL':'','VERCEL':'1','LEAD_NOTIFY_EMAIL':'operador@example.test','RESEND_API_KEY':'re_test','RESEND_FROM':'Monitor <leads@example.test>'}
+        request={**LEAD,'request_id':'bbbbbbbb-2222-2222-2222-222222222222'}
+        with patch.dict(os.environ,env,clear=False),patch('commercial.notify.resend',side_effect=lambda to,subject,text,reply_to:sent.append((to,subject,reply_to,text))):
+            result=s.capture_lead(None,request)
+            self.assertTrue(result['notified']);self.assertFalse(result['persisted'])
+            repeated=s.capture_lead(None,request)
+        self.assertEqual(len(sent),1)
+        self.assertEqual(repeated['message'],s.REPLY_REGISTERED)
+        to,subject,reply_to,text=sent[0]
+        self.assertEqual(to,['operador@example.test']);self.assertEqual(reply_to,'test@example.test')
+        self.assertIn('Novo contato — Organização Exemplo — score 100',subject)
+        for fragment in ('Pessoa Teste','501+','piloto','100/100'):self.assertIn(fragment,text)
+        self.assertNotIn('consent_version',text)
+
+    def test_transport_failure_keeps_durable_lead_and_retries_by_queue(self):
+        env={'LEAD_NOTIFY_EMAIL':'operador@example.test','RESEND_API_KEY':'re_test'}
+        with patch.dict(os.environ,env,clear=False),patch('commercial.notify.send',side_effect=notify.DeliveryError('resend_unreachable')):
+            with connect() as db:result=s.capture_lead(db,{**LEAD,'request_id':'cccccccc-3333-3333-3333-333333333333'})
+        self.assertTrue(result['persisted']);self.assertFalse(result['notified'])
+        self.assertIn('fila',result['message'])
+        with connect() as db:
+            mail=db.get('outbox','lead-cccccccc-3333-3333-3333-333333333333')
+            self.assertEqual(mail['status'],'pending');self.assertIn('Pessoa Teste',mail['text'])
+            self.assertIn('score 100',mail['subject'])
+
+    def test_local_rate_limit_is_single_instance_but_enforced(self):
+        for _ in range(20):s.local_rate_limit('203.0.113.7','/api/leads')
+        with self.assertRaises(s.Problem) as caught:s.local_rate_limit('203.0.113.7','/api/leads')
+        self.assertEqual(caught.exception.status,429)
+
+    def test_health_reports_missing_configuration(self):
+        server=ThreadingHTTPServer(('127.0.0.1',0),handler)
+        thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
+        try:
+            conn=http.client.HTTPConnection('127.0.0.1',server.server_port)
+            conn.request('GET','/api/health')
+            response=conn.getresponse();status,payload=response.status,json.loads(response.read());conn.close()
+        finally:server.shutdown();server.server_close()
+        self.assertEqual(status,200)
+        self.assertIn(payload['email_provider'],[None,'resend','formsubmit','smtp'])
+        for key in ('database','lead_capture','rate_limit','lead_recipients'):self.assertIn(key,payload)
+        self.assertNotIn('RESEND',json.dumps(payload))
+        self.assertNotIn('test-secret',json.dumps(payload))
+
 
 if __name__=='__main__':unittest.main()

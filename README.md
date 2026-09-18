@@ -161,3 +161,33 @@ Veja [a entrega e o guia de ativação](reports/ENTREGA-B2B.md) e [a auditoria i
 python3 -m unittest discover -s tests -v
 MONITOR_DEV=1 python3 scripts/serve_commercial.py
 ```
+
+### Receber os contatos direto no e-mail da equipe
+
+O formulário de diagnóstico (`/diagnostico/`) entrega o contato por e-mail no mesmo instante em que
+é enviado — `commercial/notify.py` faz a entrega, e a fila do banco (se houver) cobre o reenvio.
+
+1. Defina na Vercel (Settings → Environment Variables) o destino e **um** transporte:
+   - `LEAD_NOTIFY_EMAIL=lcaladoferreira@gmail.com` (aceita vários endereços separados por vírgula)
+   - `RESEND_API_KEY=re_...` e `RESEND_FROM=` — Resend usa HTTPS e funciona na Vercel; antes de
+     verificar um domínio próprio, o remetente `onboarding@resend.dev` só entrega no e-mail da conta
+   - ou `FORMSUBMIT_KEY=...` — não exige domínio nem DNS, mas os dados passam pelo serviço de terceiros
+   - ou `SMTP_HOST/PORT/USER/PASSWORD/SMTP_FROM` com STARTTLS (587) ou TLS (465); a Vercel bloqueia a porta 25
+2. Redeploye (variáveis novas só valem após o próximo deploy) e abra `https://monitor.lcfconsulting.com.br/api/health`.
+
+O `/api/health` responde o estado de configuração sem revelar nenhum valor:
+
+| Campo | Significado |
+|---|---|
+| `database` | `ok` · `not_configured` · `unreachable` (banco privado, onde os leads ficam registrados) |
+| `email_provider` | transporte escolhido: `resend` · `formsubmit` · `smtp` · `null` (nenhum) |
+| `lead_recipients` | quantos endereços de `LEAD_NOTIFY_EMAIL` são válidos |
+| `recipients_invalid` | `true` = há endereço inválido no `LEAD_NOTIFY_EMAIL` |
+| `lead_capture` | `true` = o formulário consegue concluir um envio |
+| `rate_limit` | `store` = limite persistente; `instance` = limite apenas na instância ativa |
+
+Sem banco privado o lead não é gravado no PostgreSQL, mas o e-mail continua sendo entregue; com o
+banco configurado, o registro é durável, idempotente (`request_id`) e o aviso entra na fila de retry
+quando o transporte falha (`python3 scripts/send_alerts.py --send` reenvia). Se nem o banco nem o
+e-mail estiverem prontos, o visitante recebe uma mensagem honesta de indisponibilidade **e** um link
+`mailto:` com o conteúdo já preenchido, para que nenhum contato se perca durante a configuração.

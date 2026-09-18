@@ -21,7 +21,11 @@
     const response = await fetch('/api/' + route, {method, credentials: 'same-origin', headers: {'Content-Type': 'application/json'}, ...(method === 'GET' ? {} : {body: JSON.stringify(data)} )});
     let result;
     try { result = await response.json(); } catch (_) { throw new Error('O serviço de envio está indisponível. Seus dados não foram confirmados. Tente novamente mais tarde.'); }
-    if (!response.ok) throw new Error(result.error || 'Não foi possível concluir a solicitação.');
+    if (!response.ok) {
+      const error = new Error(result.error || 'Não foi possível concluir a solicitação.');
+      error.mailto = typeof result.mailto === 'string' && result.mailto.startsWith('mailto:') ? result.mailto : '';
+      throw error;
+    }
     return result;
   }
   function track(name, cta = '', sector = '') {
@@ -63,7 +67,15 @@
         status.textContent = result.message;
         form.reset(); requestId = crypto.randomUUID();
         // diagnostic_submitted/demo_request are recorded transactionally by the server.
-      } catch (err) { status.textContent = err.message; } finally { button.disabled = false; }
+      } catch (err) {
+        status.textContent = err.message;
+        // Nothing was confirmed by the server, so the visitor may still reach the inbox directly.
+        if (err.mailto) {
+          const link = document.createElement('a');
+          link.href = err.mailto; link.rel = 'noopener'; link.textContent = 'Enviar por e-mail agora';
+          status.append(' ', link);
+        }
+      } finally { button.disabled = false; }
     });
   }
   function readPreferences(form) {

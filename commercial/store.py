@@ -62,6 +62,25 @@ def connect():
     finally:conn.close()
 
 
+def configured():
+    """Whether a private database is expected here (Vercel never accepts the local file)."""
+    return bool(os.environ.get('DATABASE_URL') or (os.environ.get('MONITOR_DEV')=='1' and not os.environ.get('VERCEL')))
+
+
+@contextmanager
+def connect_optional():
+    """Store for routes that can degrade to notification-only capture; None when no database is set.
+
+    A configured-but-broken database still raises: silently dropping leads into e-mail only would
+    hide an outage of the system of record.
+    """
+    if not configured():
+        yield None
+        return
+    with connect() as s:
+        yield s
+
+
 def migrate():
     with connect() as s:
         s.execute(SCHEMA)

@@ -2,11 +2,10 @@
 import hashlib
 import json
 import os
-import smtplib
-import ssl
 import time
 from datetime import datetime, timezone
 from email.message import EmailMessage
+from . import notify
 from .intelligence import load, official, score, briefing, email_briefing
 from .service import queue, token_record
 
@@ -105,11 +104,7 @@ def send_smtp(mail,key):
     message['Message-ID']='<'+hashlib.sha256(key.encode()).hexdigest()+'@monitor.lcfconsulting.com.br>'
     message.set_content(mail['text'])
     if mail.get('html'):message.add_alternative(mail['html'],subtype='html')
-    port=int(os.environ.get('SMTP_PORT','587'))
-    with smtplib.SMTP(os.environ['SMTP_HOST'],port,timeout=20) as smtp:
-        smtp.ehlo();smtp.starttls(context=ssl.create_default_context());smtp.ehlo()
-        if os.environ.get('SMTP_USER'):smtp.login(os.environ['SMTP_USER'],os.environ['SMTP_PASSWORD'])
-        smtp.send_message(message)
+    notify.smtp_send(message)
 
 
 def deliver(connect,transport=send_smtp,limit=50):
