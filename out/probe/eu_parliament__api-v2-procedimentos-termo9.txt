@@ -1,0 +1,5 @@
+URL: https://data.europarl.europa.eu/api/v2/procedures?parliamentary_term=9&limit=2&format=application/ld%2Bjson
+STATUS: 200 CT: application/ld+json
+INFO: {"data_len": 2, "amostra_titulos": ["|", "|"]}
+---
+{"data":[{"id":"eli/dl/proc/2024-2511","type":"Process","process_id":"2024-2511","process_type":"RSP","label":"2024/2511(RSP)"},{"id":"eli/dl/proc/2024-2516","type":"Process","process_id":"2024-2516","process_type":"RSP","label":"2024/2516(RSP)"}],"searchResults":{"hits":[{"id":"eli/dl/proc/2024-2511"},{"id":"eli/dl/proc/2024-2516"}]},"meta":{"total":10000}}

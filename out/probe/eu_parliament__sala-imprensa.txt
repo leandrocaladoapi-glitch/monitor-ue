@@ -1,0 +1,48 @@
+URL: https://www.europarl.europa.eu/news/en
+STATUS: 202 CT: text/html; charset=UTF-8
+INFO: {}
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        body {
+            font-family: "Arial";
+        }
+    </style>
+    <script type="text/javascript">
+    window.awsWafCookieDomainList = [];
+    window.gokuProps = {
+"key":"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AFz9nbdv7qA/6Bb+PQxlFSQAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMFgt5D+NIPPqyb68fAgEQgDuGA+f1DNU5dwS+E7IIW9iFj0Cv2YYv4SVdm4vJ4twFLzX97e8wPrjU2Lsc7Qx6y2FWRD/RNEmxe1NovQ==",
+          "iv":"NC48TQETSAAACGfT",
+          "context":"zFm7HgeR5jRc5SDnFK+MlFxvLCuig5zbBGrUEoyl0gmURPfLeiwuQOGNTAyR7t8c1c4xLIsZd1upFV3CX8R/w0gZVvgmpG8Jjn9vFYW657o/XYvCX8+AAWQ4Rj1K6tr71fYeCvjQljG+9o9CzGMx1f/vcuffbbWr6Gkc52bcMH+BxCa2lw9muo4OlizCspQwijJy8X8tZUupYe1GjVDjqC/7IvXzN+3s9p1ZFmiThw+gQVAifMw9w8EahzVMRTXHcpevT9SJXf0NuivKDz/miVDBtKIXiIoS3QNC9N31TYQBZVfM/qvtnCVQ2o6F/neqI07lXbMrddTgO8A6zCpEYykQEG8MWEsIEEh1ZcAqTotzyBsdZ7zCcf3G5h5v8AmZ8VlR/e5TiaC8SbzwcxzKE8OmquUZZ6PPS6ArM+SfWp17jTnCPeUxEsY/OB7JY9BdC1wGUXneFaekAV6b8cFBL1LoCJ/JZO0Ig5C+9ma3gm+FBjPWka2W/bu96Nc6SOAji3ktkWVTnjHAi+XuA/Hk91DoOnNSUKSk3BYlA4SotFjR2oUxNgEKbjwp7z+6oHPxQtXOfjRAG+jVoHPoKQXkTmaICKEtymrzpG58RO1KSCQDWkGR6i3go0rLfVGj85Bc7BJGhsx39X22/jczvMsYGNF/H1YoIjJ9LOL+4eE7/CdMNR5SxsQOf8SUgJUkBidIXDo7y2APfB6pRDMSUZCpkygJ4/VWkH9JAFCvO4gQuHPf1pSpQcsKmM1PznUXW/qmIFJvkG4HTC8YzJBPZqufsWgfCl3FAN38iipcIETmRX/7qlE+"
+};
+    </script>
+    <script src="https://e3c1b12827d4.3535c7cd.us-east-1.token.awswaf.com/e3c1b12827d4/d7f65e927fcd/f9998b2f6105/challenge.js"></script>
+</head>
+<body>
+    <div id="challenge-container"></div>
+    <script type="text/javascript">
+        AwsWafIntegration.saveReferrer();
+        AwsWafIntegration.checkForceRefresh().then((forceRefresh) => {
+            if (forceRefresh) {
+                AwsWafIntegration.forceRefreshToken().then(() => {
+                    window.location.reload(true);
+                });
+            } else {
+                AwsWafIntegration.getToken().then(() => {
+                    window.location.reload(true);
+                });
+            }
+        });
+    </script>
+    <noscript>
+        <h1>JavaScript is disabled</h1>
+        In order to continue, we need to verify that you're not a robot.
+        This requires JavaScript. Enable JavaScript and then reload the page.
+    </noscript>
+</body>
+</html>

@@ -1,36 +1,39 @@
-Estado anterior: 135 proposições · última execução: 2026-09-17 · orçamento: 12 min · novas/execução: 5 · workers: 5 (HTTP ≤ 4)
-Consultando fichas oficiais de 135 proposições monitoradas...
-  [25/135] verificadas · 29s decorridos · 690s restantes
-  [50/135] verificadas · 47s decorridos · 672s restantes
-  [75/135] verificadas · 67s decorridos · 652s restantes
-  [100/135] verificadas · 82s decorridos · 637s restantes
-  [125/135] verificadas · 99s decorridos · 620s restantes
-  [135/135] verificadas · 109s decorridos · 610s restantes
-Fase 1 concluída em 109.0s · 137 verificadas · 610s de orçamento restantes
-Descobrindo novas proposições (Câmara)...
-  0 candidatas a detalhar
-Descobrindo novas proposições (Senado)...
-  0 candidatas a detalhar
-Atualizando agenda de eventos...
-Coletando fontes multiórgão (ANPD, CNJ, TSE, DOU, Planalto, MCTI)...
-  · fonte 'anpd' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=58 · consultados=294 · canais_ok=8 · canais_falhos=0
-  · fonte 'cnj' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=16 · consultados=130 · canais_ok=5 · canais_falhos=0
-  · fonte 'tse' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=1 · consultados=6 · canais_ok=2 · canais_falhos=3
-  · fonte 'dou' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=102 · consultados=150 · canais_ok=1 · canais_falhos=0
-  · fonte 'planalto' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=11 · consultados=68 · canais_ok=4 · canais_falhos=0
-  · fonte 'mcti' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=34 · consultados=103 · canais_ok=3 · canais_falhos=1
-    anpd: 58 itens relevantes · 57 novidades · status ok
-    cnj: 16 itens relevantes · 16 novidades · status ok
-    tse: 1 itens relevantes · 1 novidades · status ok
-    dou: 102 itens relevantes · 102 novidades · status ok
-    planalto: 11 itens relevantes · 11 novidades · status ok
-    mcti: 34 itens relevantes · 34 novidades · status ok
+Estado anterior: 2 procedimentos · última execução: 2026-09-18 · orçamento: 12 min · novas/execução: 5 · workers: 5 (HTTP ≤ 4)
+Consultando fichas oficiais de 2 procedimentos monitorados...
+  [2/2] verificadas · 2s decorridos · 717s restantes
+Fase 1 concluída em 2.1s · 2 verificadas · 717s de orçamento restantes
+Descobrindo novos procedimentos (EUR-Lex + Legislative Train)...
+  2 candidatos a detalhar
+Atualizando agenda de consultas (Have Your Say)...
+Coletando fontes regulatórias (AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB, EDPS)...
+  · fonte 'ai_office' (timeout 150s, subprocesso isolado)
+    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=5
+  · fonte 'eurlex' (timeout 150s, subprocesso isolado)
+    → status=parcial · itens=0 · consultados=100 · canais_ok=1 · canais_falhos=3
+  · fonte 'eu_council' (timeout 150s, subprocesso isolado)
+    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=3
+  · fonte 'eu_commission' (timeout 150s, subprocesso isolado)
+    → status=parcial · itens=1 · consultados=10 · canais_ok=1 · canais_falhos=3
+  · fonte 'eu_parliament' (timeout 150s, subprocesso isolado)
+    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=5
+  · fonte 'edpb' (timeout 150s, subprocesso isolado)
+    → status=ok · itens=10 · consultados=10 · canais_ok=1 · canais_falhos=0
+  · fonte 'edps' (timeout 150s, subprocesso isolado)
+    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=3
+    ai_office: 0 itens relevantes · 0 novidades · status falha
+    eurlex: 0 itens relevantes · 0 novidades · status parcial
+    eu_council: 0 itens relevantes · 0 novidades · status falha
+    eu_commission: 1 itens relevantes · 1 novidades · status parcial
+    eu_parliament: 0 itens relevantes · 0 novidades · status falha
+    edpb: 10 itens relevantes · 9 novidades · status ok
+    edps: 0 itens relevantes · 0 novidades · status falha
 
-Mudanças detectadas: 0 · novas: 0 · atualizadas: 0 · verificadas: 137 · erros: 0 · status: concluida · duração: 256s
+Mudanças detectadas: 6 · novas: 2 · atualizadas: 2 · verificadas: 2 · erros: 0 · status: parcial · duração: 43s
 DRY-RUN: nada foi gravado.
+  - [2026-09-20] 2025/2058(INI): título oficial atualizado
+  - [2026-09-20] 2021/0106(COD): título oficial atualizado
+  - [2026-03-10] 2058/2025 INI procedimento 2025/2058(INI): resultado de votação no plenário (registro inco
+  - [2026-03-10] 2025/2058(INI): situação atualizada
+  - [2025-03-13] Novo procedimento monitorado: 2025/2056(INI)
+  - [2025-03-13] Novo procedimento monitorado: 2025/2060(INI)
+[aviso] execução parcial: o excedente entra na próxima execução.

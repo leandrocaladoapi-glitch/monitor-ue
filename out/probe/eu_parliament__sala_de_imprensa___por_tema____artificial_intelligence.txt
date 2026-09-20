@@ -1,0 +1,48 @@
+URL: https://www.europarl.europa.eu/news/en/press-room?keywords=artificial%20intelligence
+STATUS: 202 CT: text/html; charset=UTF-8
+INFO: {}
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        body {
+            font-family: "Arial";
+        }
+    </style>
+    <script type="text/javascript">
+    window.awsWafCookieDomainList = [];
+    window.gokuProps = {
+"key":"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AFz9nbdv7qA/6Bb+PQxlFSQAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMFgt5D+NIPPqyb68fAgEQgDuGA+f1DNU5dwS+E7IIW9iFj0Cv2YYv4SVdm4vJ4twFLzX97e8wPrjU2Lsc7Qx6y2FWRD/RNEmxe1NovQ==",
+          "iv":"NC48SgESsAAACG3l",
+          "context":"hR9UuRHXZKmmGStijre0q+xLJ9UWirYV2l9uO2VaknMuBeRt6qixVguCHejQoh4IdcbyZRfOVfbxen7QM5Sle4Crt+UfZESkI3JH1pyNSf26P8Jt+38RaH2UsNb7ySMN4QF5kXDt+OvNP8gCK7XUElDYKDfl7TRi8GM9JObdDKMMga4mJOif3hrR6a+b/xEunCq28EV3KCcDpjyHOkAuq8HwhTLpK/+yHTpb0f/tq9YUQr6PRjrrEBa9y5LoibQEWZjW3ekijUp7SM4RdnY7RG0u7NC0gAkUAII6J27lb2dqjviyfT+EfHPBb3VGg1k603HP3th40bdp+3b9QTPA/Sy4e4RGNy8mySkaPk3zyta+iz3OVnIq0zYbZ+wz7C4b8Va4/27qrg7EAyie2a2ICGl3XraZq3OdmHEN88Fq9uJBwHO45j03tEnLW0Gb2ZOhrw5E9DV9eHkcO2LwRXfFNP21l0DYF4wYbw7Hb4qXshg9yFW+fFUNw4Y8Qj+7dS0UbyVBa68hhtnTxzYxW/NmH9AgUTKf3svTofI+oIXg0SRSjTrXsiJhzZbE1ZHIA56N6/Z1bVbZwfaX1Jxw/5kxCYG8k//Mj+BQxtHUZT43kk3OWb8apMZ11RTHBXNUDVh9wpJjpenV2gGkbbOc7ZaCkwdgj0LvrMXrOR0nlSZ2T1EpR016BoM3wjCOznCyxpFf9C5fgZBzE8i3qj5rL3zQ8roWer7aRl5TONdedeAmilx6vlm6VIAFOXwyI4+nR0tEmHlt+Dq+hnHMNh8rfdSPXim9ciKQ3aJmJC04HWDopcmgCKsJ"
+};
+    </script>
+    <script src="https://e3c1b12827d4.3535c7cd.us-east-1.token.awswaf.com/e3c1b12827d4/d7f65e927fcd/f9998b2f6105/challenge.js"></script>
+</head>
+<body>
+    <div id="challenge-container"></div>
+    <script type="text/javascript">
+        AwsWafIntegration.saveReferrer();
+        AwsWafIntegration.checkForceRefresh().then((forceRefresh) => {
+            if (forceRefresh) {
+                AwsWafIntegration.forceRefreshToken().then(() => {
+                    window.location.reload(true);
+                });
+            } else {
+                AwsWafIntegration.getToken().then(() => {
+                    window.location.reload(true);
+                });
+            }
+        });
+    </script>
+    <noscript>
+        <h1>JavaScript is disabled</h1>
+        In order to continue, we need to verify that you're not a robot.
+        This requires JavaScript. Enable JavaScript and then reload the page.
+    </noscript>
+</body>
+</html>

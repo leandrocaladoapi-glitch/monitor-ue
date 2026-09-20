@@ -1,149 +1,78 @@
-  · fonte 'anpd' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=58 · consultados=294 · canais_ok=8 · canais_falhos=0
-  · fonte 'cnj' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=16 · consultados=130 · canais_ok=5 · canais_falhos=0
-  · fonte 'tse' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=1 · consultados=6 · canais_ok=2 · canais_falhos=3
-  · fonte 'dou' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=102 · consultados=150 · canais_ok=1 · canais_falhos=0
-  · fonte 'planalto' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=11 · consultados=68 · canais_ok=4 · canais_falhos=0
-  · fonte 'mcti' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=34 · consultados=103 · canais_ok=3 · canais_falhos=1
-[anpd] ANPD — Autoridade Nacional de Proteção de Dados
-  status: ok · duração 11.2s
-  itens consultados: 294 · relevantes: 58 · descartados (tema): 154
-  canais ok: notícias recentes, notícias por tema, regulação e normas, consultas públicas, tomada de subsídios, atos normativos (arquivos), fiscalização (pasta oficial), agenda regulatória (pasta oficial)
-    - [2026-09-16] (noticia, forte) ECA Digital completa um ano e é marco na proteção de crianças e adolescentes na internet
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/eca-digital-completa-um-ano-e-e-marco-na-protecao-de-criancas-e-adolescentes-na-internet
-    - [2026-09-16] (noticia, forte) Projeto Sandbox Regulatório de IA da ANPD é finalista de prêmio internacional
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/projeto-sandbox-regulatorio-de-ia-da-anpd-e-finalista-de-premio-internacional
-    - [2026-09-01] (noticia, forte) ANPD abre tomadas de subsídios sobre próxima agenda regulatória e avaliação do resultado regulatório
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-abre-ts-agenda-regulatoria-e-avaliacao-de-resultado-regulatorio
-    - [2026-08-25] (noticia, forte) ANPD multa TikTok em R$ 153,7 milhões por falhas na proteção de dados de crianças e adolescentes
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-multa-tiktok-em-r-153-7-milhoes-por-falhas-na-protecao-de-dados-de-criancas-e-adolescentes
-    - [2026-08-21] (noticia, forte) ANPD avalia como plataformas digitais atuam para prevenir conteúdos criminosos e proteger crianças e mulheres 
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-avalia-como-plataformas-digitais-atuam-para-prevenir-conteudos-criminosos-e-proteger-criancas-e-mulheres-na-internet
-    - [2026-08-21] (noticia, forte) ANPD e PNUD divulgam resultado da seleção de consultores que vão elaborar estudos sobre IA e proteção de dados
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-resultado-da-selecao-para-consultores-que-vao-elaborar-relatorios-em-protecao-de-dados
-    - [2026-08-19] (noticia, forte) ANPD publica metodologia de testagem do Sandbox Regulatório em IA e Proteção de Dados
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-metodologia-de-testagem-do-sandbox-regulatorio-em-inteligencia-artificial-e-protecao-de-dados
-    - [2026-08-18] (noticia, revisar) ANPD publica relatório de acompanhamento e execução da agenda regulatória do 1º semestre deste ano
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-relatorio-de-acompanhamento-e-execucao-da-agenda-regulatoria-no-1o-semestre-deste-ano
-    - [2026-08-14] (noticia, forte) ANPD realiza consulta multissetorial sobre Sandbox Regulatório de Inteligência Artificial
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-realiza-consulta-multissetorial-sobre-sandbox-regulatorio-de-inteligencia-artificial
-    - [2026-08-12] (noticia, forte) ANPD realiza 3º Encontro de Encarregados na próxima quarta
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-realiza-encontro-anpd-de-encarregados-na-proxima-quarta
-    ... (+48 itens)
-[cnj] CNJ — Conselho Nacional de Justiça
-  status: ok · duração 5.1s
-  itens consultados: 130 · relevantes: 16 · descartados (tema): 112
-  canais ok: atos normativos recentes, atos normativos recentes (página 2), atos normativos recentes (página 3), notícias oficiais, notícias oficiais (página 2)
-    - [2026-09-08] (ato_normativo, revisar) Portaria CNJ nº 420
-      https://atos.cnj.jus.br/atos/detalhar/7034
-    - [2026-08-26] (ato_normativo, revisar) Portaria CNJ nº 404
-      https://atos.cnj.jus.br/atos/detalhar/7016
-    - [2026-09-17] (noticia, revisar) CNJ vai ao território Kalunga, em Goiás, para ouvir comunidade e ampliar acesso à Justiça
-      https://www.cnj.jus.br/cnj-vai-ao-territorio-kalunga-em-goias-para-ouvir-comunidade-e-ampliar-acesso-a-justica/
-    - [2026-09-14] (noticia, forte) Telegram detalha ações contra desinformação em plano para Eleições de 2026
-      https://www.cnj.jus.br/telegram-detalha-acoes-contra-desinformacao-em-plano-para-eleicoes-de-2026/
-    - [2026-09-14] (noticia, forte) Estão abertas as inscrições para reunião sobre trabalho decente nas plataformas digitais
-      https://www.cnj.jus.br/abertas-inscricoes-para-reuniao-sobre-decente-nas-plataformas-digitais/
-    - [2026-09-11] (noticia, forte) Inteligência artificial é tema de debate no Pará
-      https://www.cnj.jus.br/inteligencia-artificial-e-tema-de-debate-no-para/
-    - [2026-09-10] (noticia, revisar) TJPE lança + DJe com navegação mais rápida, novo visual e acesso facilitado
-      https://www.cnj.jus.br/tjpe-lanca-dje-com-navegacao-mais-rapida-novo-visual-e-acesso-facilitado/
-    - [2026-09-10] (noticia, revisar) Debates contribuem para a elaboração de norma sobre processos estruturais
-      https://www.cnj.jus.br/debates-contribuem-para-elaboracao-de-norma-sobre-processos-estruturais/
-    - [2026-09-08] (noticia, revisar) Oficinas buscam soluções inovadoras para tratamento de processos estruturais
-      https://www.cnj.jus.br/oficinas-buscam-solucoes-inovadoras-para-tratamento-de-processos-estruturais/
-    - [2026-09-04] (noticia, revisar) Comunidade quilombola do Amapá ganha ponto de inclusão digital
-      https://www.cnj.jus.br/comunidade-quilombola-do-amapa-ganha-ponto-de-inclusao-digital/
-    ... (+6 itens)
-[tse] TSE — Tribunal Superior Eleitoral
-  status: ok · duração 20.1s
-  itens consultados: 6 · relevantes: 1 · descartados (tema): 5
-  canais ok: atos do TSE por tema (DOU), resoluções do TSE (DOU, órgão/subórgão)
-  canais com falha: atos normativos (portal oficial), notícias oficiais (portal oficial), atos e notícias por tema (portal oficial)
-  erro: atos normativos (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Flegislacao; notícias oficiais (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&portal_type=Noticia; atos e notícias por tema (portal oficial): JSON indisponível: https://www
-    - [2026-07-14] (ato_normativo, forte) PORTARIA Nº 424, DE 8 DE JULHO DE 2026
-      https://www.in.gov.br/web/dou/-/portaria-n-424-de-8-de-julho-de-2026-718977388
-[dou] DOU — Diário Oficial da União (Imprensa Nacional)
-  status: ok · duração 13.9s
-  itens consultados: 150 · relevantes: 102 · descartados (tema): 34
-  canais ok: busca por tema (7 dias)
-    - [2026-09-17] (publicacao, revisar) PORTARIAS PGJ DE 10 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/portarias-pgj-de-10-de-setembro-de-2026-732363510
-    - [2026-09-17] (publicacao, forte) PORTARIA MRE Nº 689, DE 16 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/portaria-mre-n-689-de-16-de-setembro-de-2026-732326298
-    - [2026-09-17] (publicacao, revisar) PORTARIA SEFIC/MINC Nº 616, DE 16 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/portaria-sefic/minc-n-616-de-16-de-setembro-de-2026-732307581
-    - [2026-09-17] (publicacao, revisar) extrato de acordo
-      https://www.in.gov.br/web/dou/-/extrato-de-acordo-732271066
-    - [2026-09-17] (publicacao, revisar) AVISO DE LICITAÇÃO
-      https://www.in.gov.br/web/dou/-/aviso-de-licitacao-732207899
-    - [2026-09-16] (publicacao, revisar) PORTARIA CJF nº 600, DE 10 DE setembro DE 2026
-      https://www.in.gov.br/web/dou/-/portaria-cjf-n-600-de-10-de-setembro-de-2026-732127850
-    - [2026-09-16] (publicacao, forte) DESPACHO
-      https://www.in.gov.br/web/dou/-/despacho-732103379
-    - [2026-09-16] (publicacao, revisar) EXTRATO DE ACORDO DE COOPERAÇÃO TÉCNICA
-      https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-cooperacao-tecnica-732073254
-    - [2026-09-16] (publicacao, forte) PORTARIA Nº 5.827/IFSP, DE 15 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/portaria-n-5.827/ifsp-de-15-de-setembro-de-2026-732066376
-    - [2026-09-16] (publicacao, forte) PORTARIA Nº 5.825/IFSP, DE 15 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/portaria-n-5.825/ifsp-de-15-de-setembro-de-2026-732046805
-    ... (+92 itens)
-[planalto] Planalto — Presidência da República
-  status: ok · duração 43.9s
-  itens consultados: 68 · relevantes: 11 · descartados (tema): 24
-  canais ok: atos do Poder Legislativo (leis, vetos), atos da Presidência (decretos, MPs), notícias do Planalto (RSS oficial), notícias do Planalto (página oficial)
-    - [2026-09-15] (lei, forte) LEI Nº 15.504, DE 15 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.504-de-15-de-setembro-de-2026-731892072
-    - [2026-08-07] (lei, forte) LEI Nº 15.487, DE 6 DE AGOSTO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.487-de-6-de-agosto-de-2026-724081324
-    - [2026-09-14] (lei, forte) LEI Nº 15.503, DE 14 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.503-de-14-de-setembro-de-2026-731640068
-    - [2026-08-06] (lei, forte) LEI Nº 15.485, DE 5 DE AGOSTO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.485-de-5-de-agosto-de-2026-723789887
-    - [2026-07-30] (lei, forte) LEI Nº 15.479, DE 29 DE JULHO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.479-de-29-de-julho-de-2026-722121785
-    - [2026-07-24] (lei, forte) LEI Nº 15.474, DE 23 DE JULHO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.474-de-23-de-julho-de-2026-722990031
-    - [2026-09-10] (lei, forte) LEI Nº 15.502, DE 10 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.502-de-10-de-setembro-de-2026-730982911
-    - [2026-08-06] (decreto, forte) DESPACHO DO PRESIDENTE DA REPÚBLICA
-      https://www.in.gov.br/web/dou/-/despacho-do-presidente-da-republica-723734376
-    - [2026-07-11] (noticia, revisar) Visita presidencial ao Instituto Mauá de Tecnologia, em São Caetano do Sul (SP)
-      https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/visita-presidencial-ao-instituto-maua-de-tecnologia-em-sao-caetano-do-sul-sp
-    - [2026-08-18] (noticia, forte) Visita presidencial ao Parque Tecnológico de Macaíba e anúncios relativos aos supercomputadores e soberania di
-      https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/visita-presidencial-ao-parque-tecnologico-de-macaiba-e-anuncios-relativos-aos-supercomputadores-e-soberania-digital
-    ... (+1 itens)
-[mcti] MCTI — Ministério da Ciência, Tecnologia e Inovação
-  status: ok · duração 20.6s
-  itens consultados: 103 · relevantes: 34 · descartados (tema): 33
-  canais ok: atos do MCTI por tema (DOU), notícias institucionais, planos, programas e políticas
-  canais com falha: portarias publicadas
-  erro: portarias publicadas: listagem sem itens reconhecíveis (157956 bytes): https://www.gov.br/mcti/pt-br/acesso-a-informacao/legislacao/portarias
-    - [2026-09-14] (portaria, forte) DESPACHO DE 11 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/despacho-de-11-de-setembro-de-2026-731457497
-    - [2026-09-14] (portaria, forte) DESPACHO DE 10 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/despacho-de-10-de-setembro-de-2026-731410875
-    - [2026-09-09] (portaria, revisar) DESPACHO DE 4 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/despacho-de-4-de-setembro-de-2026-730752779
-    - [2026-09-08] (portaria, revisar) EXTRATO DE ACORDO DE COOPERAÇÃO TÉCNICA
-      https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-cooperacao-tecnica-730456843
-    - [2026-09-08] (portaria, forte) EXTRATO DE TERMO ADITIVO
-      https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-730450194
-    - [2026-09-03] (portaria, forte) AVISO DE CHAMADA PÚBLICA MCTI/CNPQ/ANR Nº 32/2026
-      https://www.in.gov.br/web/dou/-/aviso-de-chamada-publica-mcti/cnpq/anr-n-32/2026-729875159
-    - [2026-09-02] (portaria, revisar) DESPACHO DE 31 DE AGOSTO DE 2026
-      https://www.in.gov.br/web/dou/-/despacho-de-31-de-agosto-de-2026-729462005
-    - [2026-08-26] (portaria, forte) RESULTADO DE JULGAMENTO
-      https://www.in.gov.br/web/dou/-/resultado-de-julgamento-727821785
-    - [2026-08-20] (portaria, forte) DESPACHO DE 18 DE AGOSTO DE 2026
-      https://www.in.gov.br/web/dou/-/despacho-de-18-de-agosto-de-2026-726686638
-    - [2026-08-20] (portaria, revisar) DESPACHO DE 14 DE AGOSTO DE 2026
-      https://www.in.gov.br/web/dou/-/despacho-de-14-de-agosto-de-2026-726678071
-    ... (+24 itens)
+  · fonte 'ai_office' (timeout 150s, subprocesso isolado)
+    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=5
+  · fonte 'eurlex' (timeout 150s, subprocesso isolado)
+    → status=parcial · itens=0 · consultados=100 · canais_ok=1 · canais_falhos=3
+  · fonte 'eu_council' (timeout 150s, subprocesso isolado)
+    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=3
+  · fonte 'eu_commission' (timeout 150s, subprocesso isolado)
+    → status=parcial · itens=1 · consultados=10 · canais_ok=1 · canais_falhos=3
+  · fonte 'eu_parliament' (timeout 150s, subprocesso isolado)
+    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=5
+  · fonte 'edpb' (timeout 150s, subprocesso isolado)
+    → status=ok · itens=10 · consultados=10 · canais_ok=1 · canais_falhos=0
+  · fonte 'edps' (timeout 150s, subprocesso isolado)
+    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=3
+[ai_office] European AI Office — Comissão Europeia (digital-strategy)
+  status: falha · duração 1.1s
+  itens consultados: 0 · relevantes: 0 · descartados (tema): 0
+  canais ok: —
+  canais com falha: notícias e comunicados do portal, página da AI Office (políticas e ações), AI Act — quadro regulatório e implementação, General-Purpose AI — página oficial, AI Act — página do serviço
+  erro: notícias e comunicados do portal: ModuleNotFoundError: No module named 'eu_parsers'; página da AI Office (políticas e ações): ModuleNotFoundError: No module named 'eu_parsers'; AI Act — quadro regulatório e implementação: ModuleNotFoundError: No module named 'eu_parsers'; General-Purpose AI — página oficial: ModuleNotFoundError: No module named 'eu_parsers'
+[eurlex] EUR-Lex — Jornal Oficial da União Europeia (Publications Office)
+  status: parcial · duração 4.8s
+  itens consultados: 100 · relevantes: 0 · descartados (tema): 1
+  canais ok: atos do Jornal Oficial — série L (RSS oficial)
+  canais com falha: busca por tema (legislação do ano corrente), busca por tema (legislação do ano anterior), AI Act — versão consolidada (ato âncora)
+  erro: busca por tema (legislação do ano corrente): ModuleNotFoundError: No module named 'eu_parsers'; busca por tema (legislação do ano anterior): ModuleNotFoundError: No module named 'eu_parsers'; AI Act — versão consolidada (ato âncora): ModuleNotFoundError: No module named 'eu_parsers'
+[eu_council] Conselho da UE — Registro público de documentos
+  status: falha · duração 0.6s
+  itens consultados: 0 · relevantes: 0 · descartados (tema): 0
+  canais ok: —
+  canais com falha: últimos documentos adicionados ao registro, últimos documentos (página 2), documentos legislativos preparatórios (página 1)
+  erro: últimos documentos adicionados ao registro: HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/ (HTTP 403); últimos documentos (página 2): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2 (HTTP 403); documentos legislativos preparatórios (página 1): HTML indisponível: https://www.consilium.europa.eu/en/documents/publ
+[eu_commission] Comissão Europeia — Press Corner e Have Your Say
+  status: parcial · duração 2.0s
+  itens consultados: 10 · relevantes: 1 · descartados (tema): 9
+  canais ok: comunicados oficiais (Press Corner, RSS)
+  canais com falha: consultas públicas e calls for evidence (Have Your Say), consultas públicas (Have Your Say, página 2), consultas por tema (Have Your Say, keywords)
+  erro: consultas públicas e calls for evidence (Have Your Say): ModuleNotFoundError: No module named 'eu_parsers'; consultas públicas (Have Your Say, página 2): ModuleNotFoundError: No module named 'eu_parsers'; consultas por tema (Have Your Say, keywords): ModuleNotFoundError: No module named 'eu_parsers'
+    - [2026-09-17] (comunicado, forte) Speech by Executive Vice-President Teresa Ribera at Fordham's 53rd Annual Conference “Building a democratic, c
+      https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1898
+[eu_parliament] Parlamento Europeu — Open Data Portal v2 / Legislative Train
+  status: falha · duração 11.0s
+  itens consultados: 0 · relevantes: 0 · descartados (tema): 0
+  canais ok: —
+  canais com falha: API v2 — procedimentos do termo parlamentar corrente, API v2 — procedimentos de IA (busca por texto), Legislative Train — Europe fit for the digital age, Legislative Train — unicidade e poderes de execução, sala de imprensa — por tema
+  erro: API v2 — procedimentos do termo parlamentar corrente: ModuleNotFoundError: No module named 'eu_parsers'; API v2 — procedimentos de IA (busca por texto): JSON indisponível: https://data.europarl.europa.eu/api/v2/procedures?text=artificial%20intelligence&limit=25&format=application/ld%2Bjson; Legislative Train — Europe fit for the digital age: ModuleNotFoundError: No module named 'eu_parsers'; Legis
+[edpb] EDPB — European Data Protection Board
+  status: ok · duração 0.9s
+  itens consultados: 10 · relevantes: 10 · descartados (tema): 0
+  canais ok: notícias e guidelines (RSS oficial)
+    - [2026-09-11] (orientacao, forte) Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR
+      https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en
+    - [2026-09-09] (orientacao, forte) Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR
+      https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en
+    - [2026-09-03] (orientacao, forte) Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)
+      https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en
+    - [2026-07-30] (orientacao, forte) Stakeholder event on guidelines on the interplay between data protection and competition law: overview of topi
+      https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en
+    - [2026-07-23] (orientacao, forte) Stakeholder event on guidelines on the interplay between data protection and competition law: save the date
+      https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en
+    - [2026-07-17] (orientacao, forte) EDPB calls for legal basis for cross-regulatory information sharing
+      https://www.edpb.europa.eu/news/edpb-calls-for-legal-basis-for-cross-regulatory-information-sharing_en
+    - [2026-07-14] (orientacao, forte) EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint
+      https://www.edpb.europa.eu/news/edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint_en
+    - [2026-07-08] (orientacao, forte) EDPB sheds light on anonymisation and web scraping for generative AI and adopts final version of guidelines on
+      https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en
+    - [2026-07-01] (orientacao, forte) EDPB and AMLA to develop Joint Guidelines on partnerships for information sharing
+      https://www.edpb.europa.eu/news/edpb-and-amla-to-develop-joint-guidelines-on-partnerships-for-information-sharing_en
+    - [2026-06-25] (orientacao, forte) One-Stop-Shop case digest on right to object and right to erasure updated
+      https://www.edpb.europa.eu/news/one-stop-shop-case-digest-on-right-to-object-and-right-to-erasure-updated_en
+[edps] EDPS — European Data Protection Supervisor
+  status: falha · duração 1.2s
+  itens consultados: 0 · relevantes: 0 · descartados (tema): 0
+  canais ok: —
+  canais com falha: press releases (listagem oficial), notícias oficiais (listagem), publicações (opiniões e guidelines)
+  erro: press releases (listagem oficial): ModuleNotFoundError: No module named 'eu_parsers'; notícias oficiais (listagem): ModuleNotFoundError: No module named 'eu_parsers'; publicações (opiniões e guidelines): ModuleNotFoundError: No module named 'eu_parsers'; nenhum canal respondeu — press releases (listagem oficial): ModuleNotFoundError: No module named 'eu_parsers'; notícias oficiais (listagem): Modu
 
-relatório: out/fontes_reais.json · status global: OK
+relatório: out/fontes_reais.json · status global: PARCIAL

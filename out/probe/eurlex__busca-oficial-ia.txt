@@ -1,0 +1,1346 @@
+URL: https://eur-lex.europa.eu/search.html?text=%22artificial%20intelligence%22&scope=EURLEX&type=quick&amount=5&page=1
+STATUS: 200 CT: text/html; charset=UTF-8
+INFO: {"links": 247}
+---
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        <!DOCTYPE html>
+        <html lang="en" class="no-js"
+        xml:lang="en"  >
+        <head>
+        <meta charset="utf-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        
+ 
+ 
+ 
+ 
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+ 
+ 
+        <script type="text/javascript" src="/eurlex-frontoffice/ruxitagentjs_ICANVfgqrux_10335260518104739.js" data-dtconfig="app=47d4c64c3b67ec69|agentId=fc0d58d8e740afab|owasp=1|featureHash=ICANVfgqrux|rdnt=1|uxrgce=1|cuc=m097nmfl|mel=100000|mb=null|dpvc=1|iub=null|lastModification=1789710590183|tp=500,50,0|srbbv=2|agentUri=/eurlex-frontoffice/ruxitagentjs_ICANVfgqrux_10335260518104739.js|reportUrl=/eurlex-frontoffice/rb_39a3e95b-5423-482c-879b-99ef235dffeb|rid=RID_2135455449|rpid=864447794|domain=europa.eu"></script><script type="text/javascript" src="./revamp/components/vendor/modernizr/modernizr.js?v=2.18.4"></script>
+        
+ 
+
+      
+
+
+     
+
+ 
+ 
+ 
+ <title>Search results - EUR-Lex</title> 
+ 
+
+
+
+ <meta name="WT.cg_n" content="Search"/><meta name="WT.cg_s" content="Search results"/><meta name="WT.pi" content="Search result page"/><meta name="WT.z_usr_lan" content="en"/><meta name="WT.seg_1" content="Unregistered"/>
+
+ 
+ 
+        <meta name="google-site-verification" content="hl-zFNRVYTzOJ4xGdc2Wl9h6Ezs9rbbdMgFYLFvx6cA"/>
+        <meta name="msvalidate.01" content="6F74BA769F6140EC354DF6BE33F86005"/>
+        
+        <meta name="format-detection" content="telephone=no"/>
+        
+        <meta name="war-version" content="2.18.4"/>
+        <meta name="fo-db-version" content="2.18.1"/>
+        <meta name="sl-api-version" content="3.9.8/CORPORATE_SEARCH/2.155"/>
+
+        <meta name="app-relative-path" content="./"/>
+
+        <link rel="stylesheet" media="all"
+        href="./revamp/components/vendor/bootstrap/dist/css/bootstrap.css?v=2.18.4">
+        
+        <link rel="stylesheet" media="all"
+        href="./revamp/components/vendor/font-awesome/css/font-awesome.min.css?v=2.18.4">
+        <link rel="stylesheet" media="all" href="./revamp/components/vendor/roboto/roboto.css?v=2.18.4">
+        <link rel="stylesheet" media="all" href="./revamp/css/eurlex.css?v=2.18.4">
+        <link rel="stylesheet" media="all" href="./revamp/css/eurlex-dev.css?v=2.18.4">
+        
+ 
+ 
+        <link rel="stylesheet" media="all" href="./css/eurlex-xml-editorial-content.css?t=1780043803769">
+
+        
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        <link rel="stylesheet" media="print" href="./css/eurlex-print.css?t=1760540477398">
+        
+ 
+ 
+ 
+        <script>(function(w,d,u){w.readyQ=[];w.bindReadyQ=[];function p(x,y){if(x=="ready"){w.bindReadyQ.push(y);}else{w.readyQ.push(x);}};var a={ready:p,bind:p};w.$=w.jQuery=function(f){if(f===d||f===u){return a}else{p(f)}}})(window,document)</script>
+
+        
+
+        <script type="text/javascript" src="./dynamic-js/labels_en.js?v=2.18.4"></script>
+        
+        <script type="text/javascript" src="./dynamic-js/WT_labels_en.js?v=2.18.4"></script>
+        <script type="text/javascript" src="./dynamic-js/config.js?v=2.18.4"></script>
+        <script type="text/javascript" src="./dynamic-js/const.js?v=2.18.4"></script>
+        
+        <script type="text/javascript" src="./dynamic-js/paths.js?requestURL=%2Fsearch.html"></script>
+        
+
+			<script type="text/javascript">
+        var legislativeUrl = 'http://old.eur-lex.europa.eu/en/techleg/index.htm';
+        var eurovocUrl = 'http://eurovoc.europa.eu/drupal/';
+        var interStyleGuideUrl = 'http://publications.europa.eu/code/en/en-000100.htm';
+        var sessionExpired = false;
+        var pageUrl = '/search.html';
+        var queryString = 'amount=5&amp;page=1&amp;text=%22artificial+intelligence%22&amp;type=quick&amp;qid=1789878546423&amp;scope=EURLEX';
+        var sessionTimeout = '900000';
+        </script>
+
+        <!-- [if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif] -->
+        
+ 
+
+        <link rel="shortcut icon" href="./images/eurlex.ico"/>
+        <link rel="canonical" href="https://eur-lex.europa.eu/search.html?amount=5&amp;page=1&amp;scope=EURLEX&amp;text=%22artificial+intelligence%22&amp;type=quick"/>
+        
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                <link rel="next" href="https://eur-lex.europa.eu/search.html?amount=5&amp;scope=EURLEX&amp;text=%22artificial+intelligence%22&amp;type=quick&amp;page=2"/>
+            
+ 
+ 
+ 
+ 
+ 
+ 
+        <link rel="stylesheet" media="all" href="./revamp/css/custom-infinite-scroll.css?v=2.18.4">
+        
+        
+ 
+ 
+   
+ 
+                <link rel="stylesheet" media="all" href="./revamp/components/vendor/ec/eu-preset-v4.1.1/styles/ecl-eu.css?v=2.18.4">
+            
+   
+ 
+ 
+         <link rel="stylesheet" media="all" href="./revamp/css/eurlex-ec.css?v=2.18.4">
+        
+		<script type="text/javascript" src="./js/survey/survey.js?v=2.18.4"></script>
+         
+        </head>
+        
+ 
+ 
+ <body > 
+        <script  type="application/json">{
+            "utility": "cck",
+            "url": "https://eur-lex.europa.eu/content/legal-notice/legal-notice.html?locale=en#5.%20Cookies%20notice"
+        }</script>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="piwikProSiteID" value="0b5594a8-b9c8-4cd6-aa25-5c578dcf91df">
+<input type="hidden" id="piwikProSummariesSiteID" value="46acaa7c-2394-428f-b054-103dec22b689">
+
+
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            (function(window, document, dataLayerName, id) {
+                window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+                function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString();f="; SameSite=Strict"}document.cookie=a+"="+b+d+f+"; path=/"}
+                var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+                var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+                tags.async=!0,tags.src="https://analytics.webanalytics.op.europa.eu/containers/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+                !function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+            })(window, document, 'dataLayer','0b5594a8-b9c8-4cd6-aa25-5c578dcf91df');
+        }, { once: true });
+    </script>
+
+
+ <!-- // GENERAL Modal which is used by all the dynamic loading modal cases. --> 
+
+
+
+
+
+<div class="modal fade EurlexModal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="DemoModal02Title">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="modal-title" role="heading" aria-level="1" id="DemoModal02Title"></div>
+            </div><!-- modal-header -->
+            <div class="modal-body">
+            </div><!-- modal-body -->
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+
+</div><!-- modal -->
+ 
+ 
+
+
+
+
+
+ 
+ 
+
+        <div class="Wrapper clearfix">
+
+        
+        <a class="sr-only sr-only-focusable SkipLink" href="#MainContent">Skip to main content</a> <div> 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<header id="op-header" class="ecl-site-header header-refinement box-shadow-removal" data-ecl-auto-init="SiteHeader">
+        <div class="ecl-site-header__background">
+            <div class="ecl-site-header__header">
+                <div class="ecl-site-header__container ecl-container upper-header-border header-width-override">
+                    
+                    <div class="ecl-site-header__top" data-ecl-site-header-top>
+                        <a id="homepageLogo" href="https://european-union.europa.eu/index_en" class="ecl-link ecl-link--standalone ecl-site-header__logo-link" ariaLabel="aria-label=European Union">
+                            <picture class="ecl-picture ecl-site-header__picture" title="European Union">
+                              <source srcset="./revamp/components/vendor/ec/eu-preset-v4.1.1/images/logo/standard-version/positive/logo-eu--en.svg" media="(min-width: 996px)">
+                                <img class="ecl-site-header__logo-image eu-logo-size" src="./revamp/components/vendor/ec/eu-preset-v4.1.1/images/logo/condensed-version/positive/logo-eu--en.svg" alt="European Union flag" />
+                            </picture>
+                        </a>
+                            <div class="ecl-site-header__action">
+                                
+ 
+                                    <div class="dropdown ecl-site-header__login-container">
+                                        
+ 
+ 
+                                                <a id="MyEurlex" class="ecl-button ecl-button--tertiary ecl-site-header__login-toggle dropdown-toggle login-lang-text-size" href="#" data-toggle="dropdown" aria-haspopup="true" >
+                                                    <svg class="ecl-icon ecl-icon--s ecl-site-header__icon login-lang-image-size" focusable="false" aria-hidden="false" role="img" ">
+                                                        <use alt="Log in" xlink:href="./revamp/components/vendor/ec/eu-preset-v4.1.1/images/icons/svg/all/log-in.svg#log-in"/>
+                                                        <title>Log in</title>
+                                                    </svg>
+                                                    My EUR-Lex
+ </a> 
+ 
+ 
+                                        <div class="dropdown-menu MyAccount" role="menu" aria-labelledby="MyEurlex">
+                                            
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+                                                    <li class="dropdown-header visible-xs-block">My EUR-Lex</li> <li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="./protected/homepage.html?url=%2Fsearch.html%3Famount%3D5%26page%3D1%26qid%3D1789878546423%26scope%3DEURLEX%26text%3D%2522artificial%2Bintelligence%2522%26type%3Dquick"                aria-label=""><i class="fa fa-sign-in" aria-hidden="true"></i>Sign in</a>
+</li>
+                                                    <li><a href="https://ecas.ec.europa.eu/cas/eim/external/register.cgi/"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                
+ 
+ 
+ 
+ 
+ 
+ <li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="./my-eurlex/my-queries.html#recentQueries"       title="My recent searches (0)" id="myRecentQueriesLink"        aria-label=""><i class="fa fa-history" aria-hidden="true"></i>My recent searches (0)</a>
+</li> 
+ 
+ 
+ </div> </div> 
+ 
+                                <div id="op-header-language" class="ecl-site-header__language">
+                                    <a class="ecl-button ecl-button--tertiary ecl-site-header__language-selector login-lang-text-size" href="#" data-ecl-language-selector role="button" aria-label="Change language, current language is English" aria-controls="language-list-overlay">
+                                        <span class="ecl-site-header__language-icon">
+                                            <svg class="ecl-icon ecl-icon--s ecl-site-header__icon login-lang-image-size" focusable="false" aria-hidden="false" role="img" ">
+                                                <use xlink:href="./revamp/components/vendor/ec/eu-preset-v4.1.1/images/icons/svg/all/global.svg#global"/use>
+                                                <title>English</title>
+                                            </svg>
+                                        </span>
+                                        English
+ </a> 
+                                    <div class="ecl-site-header__language-container" id="language-list-overlay" hidden data-ecl-language-list-overlay aria-labelledby="ecl-site-header__language-title" role="dialog">
+                                        <div class="ecl-site-header__language-header">
+                                            <div class="ecl-site-header__language-title" id="ecl-site-header__language-title">
+                                                Select your language
+                                            </div>
+                                            <button id="languageButtonClose" class="ecl-button ecl-button--tertiary" type="submit" data-ecl-language-list-close>
+                                                <span class="ecl-button__container">
+                                                    <span class="ecl-button__label" data-ecl-label="true"></span>
+                                                    <svg class="ecl-icon ecl-icon--l ecl-button__icon lang-panel-close" focusable="false" aria-hidden="true" data-ecl-icon>
+                                                        <use alt="Close button" xlink:href="./revamp/components/vendor/ec/eu-preset-v4.1.1/images/icons/svg/all/close-filled.svg#close-filled"/>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <hr class="lang-box-divisor"/>
+                                        <div class="ecl-site-header__language-content">
+                                            <div class="ecl-site-header__language-category" data-ecl-language-list-eu>
+                                                <div class="ecl-site-header__language-category-title">
+                                                    Official EU languages:
+                                                </div>
+                                                <form id="languageForm" method="get" name="languageForm">
+	                                                
+	
+	<input type="hidden" name="page" value="1"></input><input type="hidden" name="text" value="&quot;artificial intelligence&quot;"></input><input type="hidden" name="qid" value="1789878546423"></input><input type="hidden" name="type" value="quick"></input><input type="hidden" name="scope" value="EURLEX"></input><input type="hidden" name="amount" value="5"></input>
+                                                    <ul class="ecl-site-header__language-list">
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;bg&#039;); $(this).closest(&#039;form&#039;).submit();"  id="bg"      lang=bg hreflang=bg aria-label=""><span class="ecl-site-header__language-link-code">bg</span><span class="ecl-site-header__language-link-label">български</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;es&#039;); $(this).closest(&#039;form&#039;).submit();"  id="es"      lang=es hreflang=es aria-label=""><span class="ecl-site-header__language-link-code">es</span><span class="ecl-site-header__language-link-label">Español</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;cs&#039;); $(this).closest(&#039;form&#039;).submit();"  id="cs"      lang=cs hreflang=cs aria-label=""><span class="ecl-site-header__language-link-code">cs</span><span class="ecl-site-header__language-link-label">Čeština</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;da&#039;); $(this).closest(&#039;form&#039;).submit();"  id="da"      lang=da hreflang=da aria-label=""><span class="ecl-site-header__language-link-code">da</span><span class="ecl-site-header__language-link-label">Dansk</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;de&#039;); $(this).closest(&#039;form&#039;).submit();"  id="de"      lang=de hreflang=de aria-label=""><span class="ecl-site-header__language-link-code">de</span><span class="ecl-site-header__language-link-label">Deutsch</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;et&#039;); $(this).closest(&#039;form&#039;).submit();"  id="et"      lang=et hreflang=et aria-label=""><span class="ecl-site-header__language-link-code">et</span><span class="ecl-site-header__language-link-label">Eesti keel</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;el&#039;); $(this).closest(&#039;form&#039;).submit();"  id="el"      lang=el hreflang=el aria-label=""><span class="ecl-site-header__language-link-code">el</span><span class="ecl-site-header__language-link-label">Ελληνικά</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;en&#039;); $(this).closest(&#039;form&#039;).submit();"  id="en"      lang=en hreflang=en aria-label=""><span class="ecl-site-header__language-link-code">en</span><span class="ecl-site-header__language-link-label">English</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;fr&#039;); $(this).closest(&#039;form&#039;).submit();"  id="fr"      lang=fr hreflang=fr aria-label=""><span class="ecl-site-header__language-link-code">fr</span><span class="ecl-site-header__language-link-label">Français</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;ga&#039;); $(this).closest(&#039;form&#039;).submit();"  id="ga"      lang=ga hreflang=ga aria-label=""><span class="ecl-site-header__language-link-code">ga</span><span class="ecl-site-header__language-link-label">Gaeilge</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;hr&#039;); $(this).closest(&#039;form&#039;).submit();"  id="hr"      lang=hr hreflang=hr aria-label=""><span class="ecl-site-header__language-link-code">hr</span><span class="ecl-site-header__language-link-label">Hrvatski</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;it&#039;); $(this).closest(&#039;form&#039;).submit();"  id="it"      lang=it hreflang=it aria-label=""><span class="ecl-site-header__language-link-code">it</span><span class="ecl-site-header__language-link-label">Italiano</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;lv&#039;); $(this).closest(&#039;form&#039;).submit();"  id="lv"      lang=lv hreflang=lv aria-label=""><span class="ecl-site-header__language-link-code">lv</span><span class="ecl-site-header__language-link-label">Latviešu valoda</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;lt&#039;); $(this).closest(&#039;form&#039;).submit();"  id="lt"      lang=lt hreflang=lt aria-label=""><span class="ecl-site-header__language-link-code">lt</span><span class="ecl-site-header__language-link-label">Lietuvių kalba</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;hu&#039;); $(this).closest(&#039;form&#039;).submit();"  id="hu"      lang=hu hreflang=hu aria-label=""><span class="ecl-site-header__language-link-code">hu</span><span class="ecl-site-header__language-link-label">Magyar</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;mt&#039;); $(this).closest(&#039;form&#039;).submit();"  id="mt"      lang=mt hreflang=mt aria-label=""><span class="ecl-site-header__language-link-code">mt</span><span class="ecl-site-header__language-link-label">Malti</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;nl&#039;); $(this).closest(&#039;form&#039;).submit();"  id="nl"      lang=nl hreflang=nl aria-label=""><span class="ecl-site-header__language-link-code">nl</span><span class="ecl-site-header__language-link-label">Nederlands</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;pl&#039;); $(this).closest(&#039;form&#039;).submit();"  id="pl"      lang=pl hreflang=pl aria-label=""><span class="ecl-site-header__language-link-code">pl</span><span class="ecl-site-header__language-link-label">Polski</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;pt&#039;); $(this).closest(&#039;form&#039;).submit();"  id="pt"      lang=pt hreflang=pt aria-label=""><span class="ecl-site-header__language-link-code">pt</span><span class="ecl-site-header__language-link-label">Português</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;ro&#039;); $(this).closest(&#039;form&#039;).submit();"  id="ro"      lang=ro hreflang=ro aria-label=""><span class="ecl-site-header__language-link-code">ro</span><span class="ecl-site-header__language-link-label">Română</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;sk&#039;); $(this).closest(&#039;form&#039;).submit();"  id="sk"      lang=sk hreflang=sk aria-label=""><span class="ecl-site-header__language-link-code">sk</span><span class="ecl-site-header__language-link-label">Slovenčina</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;sl&#039;); $(this).closest(&#039;form&#039;).submit();"  id="sl"      lang=sl hreflang=sl aria-label=""><span class="ecl-site-header__language-link-code">sl</span><span class="ecl-site-header__language-link-label">Slovenščina</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;fi&#039;); $(this).closest(&#039;form&#039;).submit();"  id="fi"      lang=fi hreflang=fi aria-label=""><span class="ecl-site-header__language-link-code">fi</span><span class="ecl-site-header__language-link-label">Suomi</span></a>
+</li>
+                                                        <li class="ecl-site-header__language-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#"    class="ecl-link ecl-link--standalone ecl-link--no-visited ecl-site-header__language-link"  onclick="$(&#039;#langToSubmit&#039;).val(&#039;sv&#039;); $(this).closest(&#039;form&#039;).submit();"  id="sv"      lang=sv hreflang=sv aria-label=""><span class="ecl-site-header__language-link-code">sv</span><span class="ecl-site-header__language-link-label">Svenska</span></a>
+</li>
+                                                    </ul>
+                                                	<input type="hidden" name="locale" id="langToSubmit" value="">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ecl-site-header__container ecl-container header-width-override bottom-header-padding">
+                    <div class="container-fluid container-width">
+                        <div class="row">
+                            <div class="col-xs-8 ecl-container-padding-removal">
+                                <div id="small-vertical-blue-divisor-with-label" class="ecl-site-header__site-name site-header">
+                                    <div>
+                                    	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="./homepage.html?lang=en"    class="header-link"    id="eurlex-logo-text-size"        aria-label="">
+ EUR-Lex
+ </a>
+
+                                    </div>
+         

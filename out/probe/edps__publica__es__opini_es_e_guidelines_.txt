@@ -1,0 +1,48 @@
+URL: https://www.edps.europa.eu/data-protection/our-work/publications_en
+STATUS: 202 CT: text/html; charset=UTF-8
+INFO: {}
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        body {
+            font-family: "Arial";
+        }
+    </style>
+    <script type="text/javascript">
+    window.awsWafCookieDomainList = [];
+    window.gokuProps = {
+"key":"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AFR5AVT55AfvazdheMc0QL7AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMAnXBULSzkhuisHosAgEQgDuBL+A/TF/xWJKKn3TZfr1hsUKzhjKF/69aoRaoRLSqkNaAmKAIOPXeFXH3Bvw15l9njg9C4k6sw8qNFw==",
+          "iv":"CgAELh7KmwAAArCq",
+          "context":"/otEpoQ9Xy0oBG9x62WH3l/zrZREhwkolFCehYEckygFLAnlPyDKQew8gI5wVPQ3+i2Bhh9oy9z2OjZEJByOvEwscx6h2qGmiHnESqm8G1PBdSYbC107jIaw8gPSQqYpJpb98qPtAywfgT5O7dm72VI2hZ4IBUm4XmBg0YEO9bTR4XhJGBjFGgfJkpPgDXZ+s5DsNFbCA+eubqSzF7FPCPx/p5LwPTD2e4vO32b5n8WrtoWn0ILr3zuuRzfULi72aooHN3joYqomC2ms9IqMYLNZCEfLQGJb6NSFzqtiHKFcujjPD1tcW5gv6htoiJoAdPgGf0yYYKGBavBVq0MPekaGJ89ca9eB5hjgN+l2Q7guag=="
+};
+    </script>
+    <script src="https://cbc118bbfbdf.c336fc65.eu-west-1.token.awswaf.com/cbc118bbfbdf/2c2b3b92d1df/ff464a5e0ee8/challenge.js"></script>
+</head>
+<body>
+    <div id="challenge-container"></div>
+    <script type="text/javascript">
+        AwsWafIntegration.saveReferrer();
+        AwsWafIntegration.checkForceRefresh().then((forceRefresh) => {
+            if (forceRefresh) {
+                AwsWafIntegration.forceRefreshToken().then(() => {
+                    window.location.reload(true);
+                });
+            } else {
+                AwsWafIntegration.getToken().then(() => {
+                    window.location.reload(true);
+                });
+            }
+        });
+    </script>
+    <noscript>
+        <h1>JavaScript is disabled</h1>
+        In order to continue, we need to verify that you're not a robot.
+        This requires JavaScript. Enable JavaScript and then reload the page.
+    </noscript>
+</body>
+</html>
