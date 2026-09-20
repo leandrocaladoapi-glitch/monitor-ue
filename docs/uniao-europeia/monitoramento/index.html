@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel de monitoramento — métricas do cron e da coleta de IA</title>
+<meta name="description" content="Métricas do monitoramento de IA da União Europeia: frescor da última execução, cobertura da verificação, mudanças detectadas, chamadas às fontes oficiais da UE e histórico auditável do cron diário.">
+<link rel="canonical" href="https://monitor.lcfconsulting.com.br/uniao-europeia/monitoramento/">
+<meta property="og:site_name" content="Monitor UE de IA">
+<meta property="og:title" content="Painel de monitoramento — métricas do cron e da coleta de IA">
+<meta property="og:description" content="Métricas do monitoramento de IA da União Europeia: frescor da última execução, cobertura da verificação, mudanças detectadas, chamadas às fontes oficiais da UE e histórico auditável do cron diário.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://monitor.lcfconsulting.com.br/uniao-europeia/monitoramento/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="https://monitor.lcfconsulting.com.br/uniao-europeia/assets/style.css">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Painel de monitoramento do Monitor Legislativo de IA", "description": "Métricas operacionais do monitoramento legislativo de IA: frescor, cobertura, mudanças detectadas, custo em consultas e histórico de execuções do cron.", "url": "https://monitor.lcfconsulting.com.br/uniao-europeia/monitoramento/", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Monitor UE de IA", "url": "https://monitor.lcfconsulting.com.br/uniao-europeia/"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://monitor.lcfconsulting.com.br/uniao-europeia/"}, {"@type": "ListItem", "position": 2, "name": "Monitoramento"}]}]}</script>
+<link rel="alternate" type="text/plain" href="https://monitor.lcfconsulting.com.br/uniao-europeia/llms.txt" title="LLM discovery">
+<link rel="mcp-actions" href="https://monitor.lcfconsulting.com.br/uniao-europeia/mcp-actions.json">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "LCF Consulting", "url": "https://lcfconsulting.com.br/", "founder": {"@type": "Person", "name": "Leandro Calado", "url": "https://leandrocaladoferreira.com/"}}</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <div class="brand">
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/">Monitor UE de IA</a>
+      <small>Inteligência Artificial · União Europeia</small>
+    </div>
+    <nav class="links" aria-label="Principal"><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/">Início</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/procedimentos-legislativos/">Procedimentos</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/atualizacoes/">Atualizações</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/legislacao-e-atos/">Legislação e atos</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/timeline/">Timeline</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/atores-legislativos/">Atores legislativos</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/agenda/">Agenda</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/monitoramento/" class="active">Monitoramento</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/metodologia/">Metodologia</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/relatorio/">Relatório</a></nav>
+    <a class="fresh" href="https://monitor.lcfconsulting.com.br/uniao-europeia/monitoramento/" data-freshness="2026-09-18T10:00:00-03:00" data-estado="ok" title="Idade da última execução do monitoramento (recalculada agora)"><span class="dot"></span><span data-fresh-label>Última verificação: 18/09/2026 10:00</span></a>
+  </div>
+</header>
+<main>
+
+<div class="page-head"><div class="wrap">
+  <div class="crumbs"><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/">Início</a> › Monitoramento</div>
+  <h1>Painel de monitoramento</h1>
+  <p class="sub">Métricas operacionais do monitoramento legislativo — atualizadas automaticamente
+  a cada rebuild do site (cron diário às 07:17, 10:43, 14:43, 18:43 BRT / 10:17, 13:43, 17:43, 21:43 UTC).
+  Serve para auditar se a coleta está rodando, quanto do banco foi verificado, o que mudou e
+  quanto custou em consultas às APIs oficiais.</p>
+</div></div>
+
+<section class="block"><div class="wrap">
+  <h2 class="section-title">Saúde do monitoramento</h2>
+  <p class="section-sub">Sinais automáticos calculados a partir do histórico de execuções
+  (<code>data/legislation/updates.json</code>).</p>
+  <div data-freshness-panel="2026-09-18T10:00:00-03:00">
+  <div class="alert atencao"><b>Execução atrasada</b><span>Última execução há 40 horas. Há quatro agendamentos diários; confira o histórico de execuções.</span></div><div class="alert atencao"><b>1 proposições aguardam curadoria</b><span>Registros automáticos têm score preliminar e categorias incompletas.</span></div>
+  </div>
+  <div class="grid cols-4" style="margin-top:16px">
+    <div class="metric yellow"><div class="num">40.1 h</div><div class="lbl">Desde a última execução</div></div>
+    <div class="metric"><div class="num">100.0%</div><div class="lbl">Cobertura da última execução</div></div>
+    <div class="metric"><div class="num">[]</div><div class="lbl">Proposições pendentes</div></div>
+    <div class="metric"><div class="num">100.0</div><div class="lbl">Cobertura média (histórico)</div></div>
+    <div class="metric"><div class="num">1</div><div class="lbl">Execuções registradas</div></div>
+    <div class="metric"><div class="num">Concluida</div><div class="lbl">Status da última execução</div></div>
+    <div class="metric"><div class="num">0</div><div class="lbl">Mudanças (30 dias)</div></div>
+    <div class="metric"><div class="num">1</div><div class="lbl">Aguardando curadoria</div></div>
+  </div>
+  <p class="disclaimer" style="margin-top:12px">A idade desde a última execução é recalculada no
+  seu navegador a cada visita — se o painel ficar vermelho, o cron parou.</p>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <h2 class="section-title">Monitoramento por órgão</h2>
+  <p class="section-sub">Status obrigatório de cada fonte na última execução: quando foi a última
+  tentativa, quando foi a última execução bem-sucedida, quantos itens foram consultados, quantas
+  novidades apareceram, quantos erros e quais endpoints oficiais foram usados.
+  <b>Fonte que não respondeu aparece como falha</b> — nunca como monitorada.</p>
+  <div class="grid cols-4" style="margin-bottom:16px">
+    <div class="metric"><div class="num">—</div><div class="lbl">Fontes OK na última execução</div></div>
+    <div class="metric"><div class="num">—</div><div class="lbl">Status global da coleta</div></div>
+    <div class="metric"><div class="num">0</div><div class="lbl">Fontes com falha</div></div>
+    <div class="metric"><div class="num">0</div><div class="lbl">Fontes parciais</div></div>
+  </div>
+  <div class="table-wrap" style="overflow-x:auto">
+  <table class="table"><thead><tr>
+    <th>Órgão</th><th>Status</th><th>Última tentativa</th><th>Última execução OK</th>
+    <th>Itens consultados</th><th>Novidades</th><th>Erros</th><th>Endpoints oficiais</th>
+  </tr></thead><tbody>
+  <tr><td colspan='8'>Sem registro de fontes nesta execução.</td></tr>
+  </tbody></table></div>
+  <p class="disclaimer" style="margin-top:10px">Status global: <b>OK</b> = todos os órgãos
+  obrigatórios consultados; <b>PARCIAL</b> = ao menos uma fonte falhou (o dataset preserva o último
+  estado verificado e a falha fica registrada em <code>updates.json</code>);
+  <b>FALHA</b> = execução incapaz de produzir dados confiáveis — nesse caso nada é publicado.
+  O detalhe por canal (o que respondeu e o que não respondeu) está em
+  <code>data/legislation/updates.json</code>.</p>
+</div></section>
+
+
+<section class="block"><div class="wrap">
+  <h2 class="section-title">Evolução por execução</h2>
+  <p class="section-sub">Cada barra/ponto é uma execução do coletor. O site é reconstruído após
+  cada execução, então este painel acompanha o cron.</p>
+  <div class="note"><b>Primeira execução com métricas completas.</b> A partir da próxima execução do cron as séries ganham comparação histórica (cobertura, duração e volume de consultas por dia).</div>
+  <div class="grid cols-2">
+    <div class="chart-card"><h3>Cobertura da verificação</h3>
+      <p class="sub">Percentual das proposições monitoradas efetivamente consultadas na execução.</p>
+      <svg class="dv" viewBox="0 0 720 210" role="img" preserveAspectRatio="xMidYMid meet"><line x1="42" y1="26.0" x2="708" y2="26.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="36" y="30.0" text-anchor="end" font-size="10" fill="var(--muted)">100</text><line x1="42" y1="101.0" x2="708" y2="101.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="36" y="105.0" text-anchor="end" font-size="10" fill="var(--muted)">50</text><line x1="42" y1="176.0" x2="708" y2="176.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="36" y="180.0" text-anchor="end" font-size="10" fill="var(--muted)">0</text><path d="M375.0,26.0" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linejoin="round"/><circle cx="375.0" cy="26.0" r="3" fill="var(--accent)"><title>Cobertura da verificação (%) — 09/18: 100</title></circle><text x="375.0" y="190.0" text-anchor="middle" font-size="10" fill="var(--muted)">09/18</text><text x="36" y="16" text-anchor="end" font-size="10" fill="var(--muted)">%</text></svg></div>
+    <div class="chart-card"><h3>Duração da coleta × orçamento</h3>
+      <p class="sub">Tempo gasto na coleta e teto configurado (evita estourar o job).</p>
+      <svg class="dv" viewBox="0 0 720 210" role="img" preserveAspectRatio="xMidYMid meet"><line x1="42" y1="26.0" x2="708" y2="26.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="36" y="30.0" text-anchor="end" font-size="10" fill="var(--muted)">1 680.0</text><line x1="42" y1="101.0" x2="708" y2="101.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="36" y="105.0" text-anchor="end" font-size="10" fill="var(--muted)">840.0</text><line x1="42" y1="176.0" x2="708" y2="176.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="36" y="180.0" text-anchor="end" font-size="10" fill="var(--muted)">0</text><path d="" fill="none" stroke="var(--accent-2)" stroke-width="2.2" stroke-linejoin="round"/><path d="M375.0,42.1" fill="none" stroke="var(--warn)" stroke-width="2.2" stroke-linejoin="round"/><circle cx="375.0" cy="42.1" r="3" fill="var(--warn)"><title>Orçamento (s) — 09/18: 1 500</title></circle><text x="375.0" y="190.0" text-anchor="middle" font-size="10" fill="var(--muted)">09/18</text><text x="36" y="16" text-anchor="end" font-size="10" fill="var(--muted)">s</text></svg>
+      <div class="dv-legenda"><span class="dv-leg-item"><i style="background:var(--accent-2)"></i>Duração da coleta</span><span class="dv-leg-item"><i style="background:var(--warn)"></i>Orçamento</span></div></div>
+  </div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <h2 class="section-title">Volume de trabalho</h2>
+  <p class="section-sub">Quanto o monitoramento verifica, descobre e registra em cada execução.</p>
+  <div class="grid cols-2">
+    <div class="chart-card"><h3>Proposições monitoradas</h3>
+      <p class="sub">Tamanho do banco de proposições ao fim de cada execução.</p><svg class="dv" viewBox="0 0 720 210" role="img" preserveAspectRatio="xMidYMid meet"><line x1="42" y1="26.0" x2="708" y2="26.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="36" y="30.0" text-anchor="end" font-size="10" fill="var(--muted)">2.2</text><line x1="42" y1="101.0" x2="708" y2="101.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="36" y="105.0" text-anchor="end" font-size="10" fill="var(--muted)">1.1</text><line x1="42" y1="176.0" x2="708" y2="176.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="36" y="180.0" text-anchor="end" font-size="10" fill="var(--muted)">0</text><path d="M375.0,42.1" fill="none" stroke="#a371f7" stroke-width="2.2" stroke-linejoin="round"/><circle cx="375.0" cy="42.1" r="3" fill="#a371f7"><title>Proposições monitoradas — 09/18: 2</title></circle><text x="375.0" y="190.0" text-anchor="middle" font-size="10" fill="var(--muted)">09/18</text></svg></div>
+    <div class="chart-card"><h3>Chamadas às APIs oficiais</h3>
+      <p class="sub">Consultas HTTP feitas às fontes oficiais da UE por execução.</p><p class="sub">—</p></div>
+    <div class="chart-card"><h3>Mudanças detectadas</h3>
+      <p class="sub">Alterações registradas com fonte oficial (relator, situação, pauta, votação, apensação…).</p><svg class="dv" viewBox="0 0 720 190" role="img" preserveAspectRatio="xMidYMid meet"><line x1="38" y1="22.0" x2="712" y2="22.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="32" y="26.0" text-anchor="end" font-size="10" fill="var(--muted)">1</text><line x1="38" y1="89.0" x2="712" y2="89.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="32" y="93.0" text-anchor="end" font-size="10" fill="var(--muted)">0.5</text><line x1="38" y1="156.0" x2="712" y2="156.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="32" y="160.0" text-anchor="end" font-size="10" fill="var(--muted)">0</text><rect x="166.1" y="156.0" width="417.9" height="0.6" rx="2" fill="var(--accent)"><title>09/18: 0</title></rect><text x="375.0" y="169.0" text-anchor="middle" font-size="10" fill="var(--muted)">09/18</text><text x="32" y="14" text-anchor="end" font-size="10" fill="var(--muted)">mudanças</text></svg></div>
+    <div class="chart-card"><h3>Novas proposições</h3>
+      <p class="sub">Fichas novas incorporadas ao banco em cada execução.</p><svg class="dv" viewBox="0 0 720 190" role="img" preserveAspectRatio="xMidYMid meet"><line x1="38" y1="22.0" x2="712" y2="22.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="32" y="26.0" text-anchor="end" font-size="10" fill="var(--muted)">1</text><line x1="38" y1="89.0" x2="712" y2="89.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="32" y="93.0" text-anchor="end" font-size="10" fill="var(--muted)">0.5</text><line x1="38" y1="156.0" x2="712" y2="156.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="32" y="160.0" text-anchor="end" font-size="10" fill="var(--muted)">0</text><rect x="166.1" y="156.0" width="417.9" height="0.6" rx="2" fill="#a371f7"><title>09/18: 0</title></rect><text x="375.0" y="169.0" text-anchor="middle" font-size="10" fill="var(--muted)">09/18</text><text x="32" y="14" text-anchor="end" font-size="10" fill="var(--muted)">novas</text></svg></div>
+  </div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <h2 class="section-title">Composição do banco legislativo</h2>
+  <p class="section-sub">Fotografia do dataset publicado nesta execução.</p>
+  <div class="chart-card"><h3>Situação dos procedimentos (2 monitorados)</h3><svg class="dv" viewBox="0 0 720 26" role="img" preserveAspectRatio="none"><rect x="0.0" y="0" width="719.0" height="26" rx="3" fill="var(--accent)" opacity="0.85"><title>Em tramitação: 2 (100%)</title></rect></svg><div class="dv-legenda"><span class="dv-leg-item"><i style="background:var(--accent)"></i>Em tramitação <b>2</b></span></div></div>
+  <div class="grid cols-2" style="margin-top:16px">
+    <div class="chart-card"><h3>Faixas do AI Legislative Impact Score</h3>
+      <p class="sub">Distribuição das proposições por prioridade de acompanhamento.</p><svg class="dv" viewBox="0 0 720 156" role="img" preserveAspectRatio="xMidYMid meet"><text x="0" y="19.3" font-size="11.5" fill="var(--text)">90–100 pontos</text><rect x="250" y="3" width="1.5" height="24" rx="3" fill="var(--accent-2)" opacity="0.85"><title>90–100 pontos: 0</title></rect><text x="257.5" y="19.3" font-size="11" font-weight="700" fill="var(--muted)">0</text><text x="0" y="49.3" font-size="11.5" fill="var(--text)">75–89 pontos</text><rect x="250" y="33" width="410.0" height="24" rx="3" fill="var(--accent-2)" opacity="0.85"><title>75–89 pontos: 1</title></rect><text x="666.0" y="49.3" font-size="11" font-weight="700" fill="var(--muted)">1</text><text x="0" y="79.3" font-size="11.5" fill="var(--text)">60–74 pontos</text><rect x="250" y="63" width="1.5" height="24" rx="3" fill="var(--accent-2)" opacity="0.85"><title>60–74 pontos: 0</title></rect><text x="257.5" y="79.3" font-size="11" font-weight="700" fill="var(--muted)">0</text><text x="0" y="109.3" font-size="11.5" fill="var(--text)">40–59 pontos</text><rect x="250" y="93" width="1.5" height="24" rx="3" fill="var(--accent-2)" opacity="0.85"><title>40–59 pontos: 0</title></rect><text x="257.5" y="109.3" font-size="11" font-weight="700" fill="var(--muted)">0</text><text x="0" y="139.3" font-size="11.5" fill="var(--text)">0–39 pontos</text><rect x="250" y="123" width="410.0" height="24" rx="3" fill="var(--accent-2)" opacity="0.85"><title>0–39 pontos: 1</title></rect><text x="666.0" y="139.3" font-size="11" font-weight="700" fill="var(--muted)">1</text></svg></div>
+    <div class="chart-card"><h3>Por ano de apresentação</h3>
+      <p class="sub">Últimos anos representados no banco.</p><svg class="dv" viewBox="0 0 720 190" role="img" preserveAspectRatio="xMidYMid meet"><line x1="38" y1="22.0" x2="712" y2="22.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="32" y="26.0" text-anchor="end" font-size="10" fill="var(--muted)">1</text><line x1="38" y1="89.0" x2="712" y2="89.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="32" y="93.0" text-anchor="end" font-size="10" fill="var(--muted)">0.5</text><line x1="38" y1="156.0" x2="712" y2="156.0" stroke="var(--border)" stroke-dasharray="3 3"/><text x="32" y="160.0" text-anchor="end" font-size="10" fill="var(--muted)">0</text><rect x="102.0" y="22.0" width="208.9" height="134.0" rx="2" fill="#a371f7"><title>2021: 1</title></rect><text x="206.5" y="18.0" text-anchor="middle" font-size="10" fill="var(--muted)">1</text><text x="206.5" y="169.0" text-anchor="middle" font-size="10" fill="var(--muted)">2021</text><rect x="439.0" y="22.0" width="208.9" height="134.0" rx="2" fill="#a371f7"><title>2025: 1</title></rect><text x="543.5" y="18.0" text-anchor="middle" font-size="10" fill="var(--muted)">1</text><text x="543.5" y="169.0" text-anchor="middle" font-size="10" fill="var(--muted)">2025</text><text x="32" y="14" text-anchor="end" font-size="10" fill="var(--muted)">proposições</text></svg></div>
+    <div class="chart-card"><h3>Temas mais frequentes</h3>
+      <p class="sub">Categorias temáticas atribuídas às proposições monitoradas.</p><svg class="dv" viewBox="0 0 720 216" role="img" preserveAspectRatio="xMidYMid meet"><text x="0" y="19.3" font-size="11.5" fill="var(--text)">Modelos de uso geral (GPAI)</text><rect x="250" y="3" width="410.0" height="24" rx="3" fill="var(--accent)" opacity="0.85"><title>Modelos de uso geral (GPAI): 2</title></rect><text x="666.0" y="19.3" font-size="11" font-weight="700" fill="var(--muted)">2</text><text x="0" y="49.3" font-size="11.5" fill="var(--text)">Regulação de IA (quadro geral)</text><rect x="250" y="33" width="205.0" height="24" rx="3" fill="var(--accent)" opacity="0.85"><title>Regulação de IA (quadro geral): 1</title></rect><text x="461.0" y="49.3" font-size="11" font-weight="700" fill="var(--muted)">1</text><text x="0" y="79.3" font-size="11.5" fill="var(--text)">Direitos fundamentais e não discr…</text><rect x="250" y="63" width="205.0" height="24" rx="3" fill="var(--accent)" opacity="0.85"><title>Direitos fundamentais e não discriminação: 1</title></rect><text x="461.0" y="79.3" font-size="11" font-weight="700" fill="var(--muted)">1</text><text x="0" y="109.3" font-size="11.5" fill="var(--text)">Dados pessoais e privacidade</text><rect x="250" y="93" width="205.0" height="24" rx="3" fill="var(--accent)" opacity="0.85"><title>Dados pessoais e privacidade: 1</title></rect><text x="461.0" y="109.3" font-size="11" font-weight="700" fill="var(--muted)">1</text><text x="0" y="139.3" font-size="11.5" fill="var(--text)">Sistemas de alto risco</text><rect x="250" y="123" width="205.0" height="24" rx="3" fill="var(--accent)" opacity="0.85"><title>Sistemas de alto risco: 1</title></rect><text x="461.0" y="139.3" font-size="11" font-weight="700" fill="var(--muted)">1</text><text x="0" y="169.3" font-size="11.5" fill="var(--text)">Direitos de autor e conteúdo</text><rect x="250" y="153" width="205.0" height="24" rx="3" fill="var(--accent)" opacity="0.85"><title>Direitos de autor e conteúdo: 1</title></rect><text x="461.0" y="169.3" font-size="11" font-weight="700" fill="var(--muted)">1</text><text x="0" y="199.3" font-size="11.5" fill="var(--text)">Transparência e rotulagem de cont…</text><rect x="250" y="183" width="205.0" height="24" rx="3" fill="var(--accent)" opacity="0.85"><title>Transparência e rotulagem de conteúdo: 1</title></rect><text x="461.0" y="199.3" font-size="11" font-weight="700" fill="var(--muted)">1</text></svg></div>
+    <div class="chart-card"><h3>Curadoria</h3>
+      <p class="sub">Registros automáticos aguardando revisão editorial (score preliminar).</p><svg class="dv" viewBox="0 0 720 26" role="img" preserveAspectRatio="none"><rect x="0.0" y="0" width="359.0" height="26" rx="3" fill="var(--accent)" opacity="0.85"><title>Curadoria concluída: 1 (50%)</title></rect><rect x="360.0" y="0" width="359.0" height="26" rx="3" fill="var(--warn)" opacity="0.85"><title>Aguardando curadoria: 1 (50%)</title></rect></svg><div class="dv-legenda"><span class="dv-leg-item"><i style="background:var(--accent)"></i>Curadoria concluída <b>1</b></span><span class="dv-leg-item"><i style="background:var(--warn)"></i>Aguardando curadoria <b>1</b></span></div></div>
+  </div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <h2 class="section-title">Atividade legislativa detectada</h2>
+  <p class="section-sub">O que o monitoramento registrou desde a primeira execução
+  (0 mudanças; — dias em média entre o
+  evento e a detecção, considerando apenas eventos captados pela rotina diária —
+  0 registros históricos foram incorporados em lote).</p>
+  <div class="chart-card"><h3>Mudanças por dia</h3>
+    <p class="sub">Calendário dos últimos 6 meses — quanto mais escuro, mais mudanças no dia.</p>
+    </div>
+  <div class="grid cols-2" style="margin-top:16px">
+    <div class="chart-card"><h3>Mudanças por mês</h3></div>
+    <div class="chart-card"><h3>Tipo de mudança</h3>
+      <p class="sub">Classificação automática a partir do despacho oficial.</p></div>
+  </div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <h2 class="section-title">Histórico de execuções</h2>
+  <p class="section-sub">Log auditável do cron. Cada linha é uma execução registrada pelo coletor.</p>
+  <div style="overflow-x:auto"><table class="tbl">
+    <thead><tr><th>Início (UTC−3)</th><th>Status</th><th>Duração</th><th>Verificadas</th>
+    <th>Cobertura</th><th>Novas</th><th>Mudanças</th><th>HTTP</th><th>Erros</th></tr></thead>
+    <tbody><tr><td>2026-09-18 10:00</td><td><span class="run-status ok">Concluída</span></td><td>—</td><td>2</td><td>100.0%</td><td>0</td><td>0</td><td>—</td><td>0</td></tr></tbody></table></div>
+  <div class="grid cols-2" style="margin-top:18px">
+    <div class="chart-card"><h3>Custo por endpoint (última execução)</h3>
+      <p class="sub">Chamadas HTTP por endpoint oficial — base para otimizar a coleta.</p>
+      <p class="sub">Sem telemetria de rede nesta execução.</p></div>
+    <div class="chart-card"><h3>Tempos por fase</h3>
+      <p class="sub">Distribuição do tempo da coleta entre atualização, descoberta e agenda.</p>
+      <p class="sub">Sem telemetria de fases nesta execução.</p>
+    </div>
+  </div>
+  <p class="disclaimer" style="margin-top:14px">Métricas derivadas de <code>updates.json</code>
+  (histórico auditável). Números de execuções anteriores a 10/09/2026 aparecem como “—” quando o
+  campo não era coletado. Dados legislativos devem sempre ser conferidos nas fontes oficiais.</p>
+</div></section>
+
+</main>
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <h4>Monitor UE de IA</h4>
+      <p>Monitoramento público, documentado e auditável da legislação e da regulação de IA da União Europeia. Dados estruturados, fontes oficiais e histórico de alterações versionados no repositório.</p>
+      <p class="author-line">Projeto desenvolvido por Leandro Calado / LCF Consulting — <a href="https://leandrocaladoferreira.com/">Leandro Calado</a> · <a href="https://lcfconsulting.com.br/">LCF Consulting</a></p>
+      <p class="disclaimer">Dados legislativos devem sempre ser conferidos nas fontes oficiais.</p>
+    </div>
+    <div>
+      <h4>Dados</h4>
+      <p><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/propositions.json">propositions.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/laws.json">laws.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/timeline.json">timeline.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/updates.json">updates.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/events.json">events.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/parliamentarians.json">parliamentarians.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/categories.json">categories.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/monitoramento.json">monitoramento.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/atos.json">atos.json</a>
+      <span style="color:var(--muted)">(métricas do cron)</span></p>
+    </div>
+    <div>
+      <h4>Metodologia</h4>
+      <p>Última execução do monitoramento: <b>18/09/2026</b>.<br>
+      Fontes primárias: Parlamento Europeu, Conselho da UE, Comissão Europeia,<br>
+      EUR-Lex/JO, European AI Office, EDPB e EDPS.<br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/metodologia/">Metodologia completa</a> ·
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/relatorio/">Relatório da execução</a></p>
+    </div>
+    <div>
+      <h4>Aviso</h4>
+      <p>Conteúdo informativo baseado em fontes oficiais. Não substitui os textos legais publicados no Jornal Oficial da União Europeia nem as fichas oficiais dos procedimentos.</p>
+      <p class="cta-mini">Precisa acompanhar impactos regulatórios de IA para sua empresa? <a href="https://lcfconsulting.com.br/">Fale com a LCF Consulting →</a></p>
+    </div>
+  </div>
+</footer>
+<script src="https://monitor.lcfconsulting.com.br/uniao-europeia/assets/site.js" defer></script>
+</body>
+</html>

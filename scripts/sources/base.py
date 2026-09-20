@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-sources/base.py — infraestrutura dos coletores multiórgão do Monitor UE.
+sources/base.py — infraestrutura dos coletores multiórgão.
 
-Este módulo é a base comum dos conectores das fontes oficiais da União
-Europeia (Parlamento Europeu, Conselho da UE, Comissão Europeia, EUR-Lex,
-European AI Office, EDPB e EDPS). Ele oferece:
+Este módulo é a base comum dos conectores das fontes oficiais de DOIS
+monitores que compartilham este repositório:
+
+  * Monitor Legislativo de IA no Brasil (ANPD, CNJ, TSE, DOU, Planalto, MCTI);
+  * Monitor Legislativo e Regulatório de IA da União Europeia (Parlamento
+    Europeu, Conselho da UE, Comissão Europeia, EUR-Lex, European AI Office,
+    EDPB e EDPS).
+
+Ele oferece:
 
   * cliente HTTP com timeout, retry, cache de execução, telemetria e respeito ao
     orçamento global da coleta (o mesmo de `update_legislation.py`);
@@ -47,7 +53,7 @@ from datetime import date, datetime, timedelta, timezone
 
 BRT = timezone(timedelta(hours=-3))
 UA_PADRAO = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
-             "Chrome/124.0 Safari/537.36 monitor-ia-ue/1.0 "
+             "Chrome/124.0 Safari/537.36 monitor-legislativo-ia/1.0 monitor-ia-ue/1.0 "
              "(+https://monitor.lcfconsulting.com.br)")
 
 
@@ -62,7 +68,22 @@ class OrcamentoEsgotado(RuntimeError):
 
 # Termos de busca usados nas consultas por assunto das fontes oficiais.
 # São termos temáticos (o filtro fino é aplicado item a item, depois).
+# TOPICOS_BUSCA = tópicos do monitor BR (em português, idioma das fontes);
+# TOPICOS_BUSCA_UE = tópicos do monitor UE (em inglês, idioma técnico).
 TOPICOS_BUSCA = [
+    "inteligência artificial",
+    "algoritmo",
+    "proteção de dados",
+    "reconhecimento facial",
+    "biometria",
+    "deepfake",
+    "plataformas digitais",
+    "semicondutor",
+    "computação em nuvem",
+    "data center",
+]
+
+TOPICOS_BUSCA_UE = [
     "artificial intelligence",
     "AI Act",
     "general-purpose AI",
@@ -112,6 +133,28 @@ FORTE_PATTERNS = [
     r"disinformation", r"misinformation", r"\bdesinformation\b",
     r"cybersecurity", r"cyber security",
     r"\brobot", r"autonomous system", r"internet of things", r"\biot\b",
+    # --- bloco BR (preservado do monitor brasileiro; texto em português)
+    r"\bia\b", r"ia generativa", r"inteligencia artificial generativa",
+    r"modelo de linguagem", r"modelos? fundaciona",
+    r"aprendizado de maquina", r"aprendizado profundo",
+    r"rede[s]? neural", r"redes neurais",
+    r"conteudo sintetico", r"midia sintetica", r"midia gerada",
+    r"reconhecimento facial", r"reconhecimento biometrico", r"biometria",
+    r"decisao automatizada", r"decisoes automatizadas", r"decisao algorítmica",
+    r"decisoes algoritmicas", r"tomada de decisao automat", r"sistema de decisao automat",
+    r"governanca de ia", r"governanca algoritmica", r"governanca de dados",
+    r"moderacao algoritmica", r"moderacao de conteudo", r"curadoria algoritmica",
+    r"algoritmo[s]?", r"algoritmic",
+    r"plataformas digitais", r"big tech", r"rede social", r"redes sociais",
+    r"sandbox regulatorio", r"regulacao de ia", r"regulamentacao da ia",
+    r"protecao de dados", r"dados pessoais", r"\blgpd\b", r"titular de dados", r"autoridade nacional de protecao de dados",
+    r"direitos digitais", r"desinformacao", r"integridade da informacao",
+    r"litografia", r"centro de dados", r"data center",
+    r"computacao em nuvem", r"nuvem computacional", r"infraestrutura digital",
+    r"transformacao digital", r"soberania digital", r"soberania de dados",
+    r"automacao", r"internet das coisas",
+    r"ciberseguranca", r"seguranca cibernetica",
+    r"cadastro positivo|scoring|pontuacao de credito",
 ]
 # Sinais temáticos mais fracos: exigem confirmação (entram como "revisar").
 REVISAR_PATTERNS = [
@@ -120,6 +163,9 @@ REVISAR_PATTERNS = [
     r"\bai\b", r"\bml\b",
     r"technology", r"digital", r"innovation", r"data science", r"open data",
     r"software", r"startup", r"platform", r"internet", r"online",
+    # --- bloco BR (preservado)
+    r"tecnologia", r"inovacao", r"ciencia de dados", r"dados abertos",
+    r"plataforma", r"escaneamento",
 ]
 
 _FORTE_RE = [re.compile(p) for p in FORTE_PATTERNS]
@@ -510,6 +556,201 @@ def parse_html_links(html, base_url, padrao_href, limite=80, descricao_apos=1200
         if len(itens) >= limite:
             break
     return itens
+
+
+# ------------------------------------- decodificadores BR (gov.br / DOU / CNJ)
+def parse_dou_json(dados):
+    """Busca do DOU (in.gov.br) em JSON → itens com URL oficial.
+
+    O endpoint responde com um envelope cujo array de resultados aparece ora como
+    `jsonArray`, ora aninhado (`resultado`, `items`). O parser aceita as variações
+    e descarta o que não tiver título ou link oficial.
+    """
+    if not dados:
+        return []
+    lista = None
+    if isinstance(dados, list):
+        lista = dados
+    elif isinstance(dados, dict):
+        for chave in ("jsonArray", "itens", "items", "results", "resultado", "content"):
+            valor = dados.get(chave)
+            if isinstance(valor, list):
+                lista = valor
+                break
+            if isinstance(valor, dict):
+                for sub in ("jsonArray", "itens", "items", "results"):
+                    if isinstance(valor.get(sub), list):
+                        lista = valor[sub]
+                        break
+            if lista is not None:
+                break
+    if not lista:
+        return []
+    itens = []
+    for it in lista:
+        if not isinstance(it, dict):
+            continue
+        titulo = limpar_texto(it.get("title") or it.get("titulo") or it.get("nome") or "", 400)
+        href = (it.get("href") or it.get("url") or it.get("link") or "").strip()
+        if not titulo or not href:
+            continue
+        if href.startswith("/"):
+            href = urllib.parse.urljoin("https://www.in.gov.br/", href)
+        resumo = limpar_texto(it.get("abstract") or it.get("content") or it.get("descricao")
+                              or it.get("ementa") or "", 900)
+        orgao = limpar_texto(it.get("pubName") or it.get("orgao") or it.get("hierarchyStr")
+                             or it.get("hierarchyList") or "", 200)
+        itens.append({
+            "titulo": titulo,
+            "link": href.split("#")[0],
+            "data": data_iso(it.get("pubDate") or it.get("date") or it.get("data")
+                             or it.get("dataPublicacao")),
+            "descricao": (resumo + (f" · {orgao}" if orgao else ""))[:900],
+            "tipo_ato": limpar_texto(it.get("artType") or it.get("type") or "", 80) or None,
+            "secao": limpar_texto(it.get("pubName") or "", 80) or None,
+        })
+    return itens
+
+
+def parse_plone_search(dados):
+    """plone.restapi (@search / pasta) → itens oficiais de sites gov.br (Volto).
+
+    Cada item traz `@id` (URL oficial), `title`, `description` e `effective`.
+    Itens que não são conteúdo editorial (imagens, arquivos de layout) são
+    descartados: só entram tipos com título e URL de página.
+    """
+    if not isinstance(dados, dict):
+        return []
+    itens = []
+    for it in (dados.get("items") or []):
+        if not isinstance(it, dict):
+            continue
+        url = (it.get("@id") or "").strip()
+        titulo = limpar_texto(it.get("title") or "", 300)
+        if not url or not titulo:
+            continue
+        tipo = it.get("@type") or ""
+        if tipo in ("Image", "Image Container"):
+            continue
+        if re.search(r"\.(png|jpe?g|gif|webp|svg|ico)$", url, re.I):
+            continue
+        itens.append({
+            "titulo": titulo,
+            "link": url.split("#")[0],
+            "data": data_iso(it.get("effective") or it.get("created") or it.get("modified")),
+            "descricao": limpar_texto(it.get("description") or "", 600),
+            "tipo_ato": tipo or None,
+            "orgao_item": limpar_texto(it.get("head_title") or "", 120) or None,
+        })
+    return itens
+
+
+def parse_cnj_atos(dados):
+    """API oficial do Sistema de Atos Normativos do CNJ (atos.cnj.jus.br).
+
+    Formato: {"data": [{id, tipo, numero, data_publicacao, situacao, ementa,
+    observacao, url_ato, ...}], "total": n}. O título é montado com os campos
+    oficiais (nunca inventado); a ementa vem do próprio ato.
+    """
+    if not isinstance(dados, dict):
+        return []
+    itens = []
+    for ato in (dados.get("data") or []):
+        if not isinstance(ato, dict) or not ato.get("id"):
+            continue
+        tipo = limpar_texto(ato.get("tipo") or "Ato", 60)
+        numero = limpar_texto(ato.get("numero") or "", 30)
+        titulo = f"{tipo} CNJ nº {numero}" if numero else f"{tipo} CNJ"
+        ementa = limpar_texto(ato.get("ementa") or "", 800)
+        situacao = limpar_texto(ato.get("situacao") or "", 60)
+        obs = limpar_texto(ato.get("observacao") or "", 200)
+        descricao = " ".join(x for x in (ementa, f"Situação: {situacao}." if situacao else "",
+                                         obs) if x)
+        itens.append({
+            "titulo": titulo,
+            "link": f"https://atos.cnj.jus.br/atos/detalhar/{ato['id']}",
+            "data": data_iso(ato.get("data_publicacao")),
+            "descricao": descricao[:900],
+            "tipo_ato": tipo,
+            "situacao": situacao or None,
+        })
+    return itens
+
+
+DOU_RE_SCRIPT = re.compile(
+    r'<script[^>]+id="[^"]*BuscaDouPortlet_params"[^>]*>(.*?)</script>', re.I | re.S)
+
+
+def parse_dou_embutido(html):
+    """Extrai o JSON de resultados embutido na página de busca do DOU.
+
+    A busca do in.gov.br devolve HTML com um <script type="application/json">
+    contendo {"jsonArray": [...]}. Cada resultado tem `title`, `urlTitle`,
+    `pubDate`, `content`, `artType` e `hierarchyStr` — é daí que saem o título,
+    a data, o órgão e a URL oficial do ato.
+    """
+    if not html:
+        return []
+    m = DOU_RE_SCRIPT.search(html)
+    if not m:
+        return []
+    bruto = html_mod.unescape(m.group(1)).strip()
+    try:
+        dados = json.loads(bruto)
+    except ValueError:
+        return []
+    itens = []
+    for it in (dados.get("jsonArray") or []):
+        if not isinstance(it, dict):
+            continue
+        titulo = limpar_texto(it.get("title") or "", 400)
+        url_title = (it.get("urlTitle") or "").strip()
+        if not titulo or not url_title:
+            continue
+        hierarquia = limpar_texto(it.get("hierarchyStr") or it.get("hierarchyList") or "", 240)
+        art_type = limpar_texto(it.get("artType") or "", 80)
+        conteudo = limpar_texto(it.get("content") or "", 900)
+        itens.append({
+            "titulo": titulo,
+            "link": f"https://www.in.gov.br/web/dou/-/{url_title}",
+            "data": data_iso(it.get("pubDate")),
+            "descricao": " ".join(x for x in (conteudo,
+                                              f"({art_type} — {hierarquia})" if hierarquia else "")
+                                 if x)[:900],
+            "tipo_ato": art_type or None,
+            "hierarquia": hierarquia or None,
+            "secao": (it.get("pubName") or None),
+            "edicao": it.get("editionNumber") or None,
+            "id_dou": it.get("classPK") or None,
+        })
+    return itens
+
+
+def html_para_texto_blocos(html, padrao_href, base_url="https://www.in.gov.br/", limite=50):
+    """Fallback: extrai resultados da busca do DOU direto do HTML.
+
+    Cada resultado tem um link `/web/dou/-/<slug>`; o título vem da âncora e o
+    resumo do bloco seguinte. Usado só quando o endpoint JSON não está disponível.
+    """
+    if not html:
+        return []
+    itens, vistos = [], set()
+    for m in re.finditer(r'<a[^>]+href="(/web/dou/-/[^"#?]+)"[^>]*>(.*?)</a>', html, re.I | re.S):
+        href, interno = m.group(1), m.group(2)
+        titulo = limpar_texto(interno, 400)
+        if len(titulo) < 10 or href in vistos:
+            continue
+        vistos.add(href)
+        trecho = html[m.end():m.end() + 1500]
+        texto = limpar_texto(trecho, 700)
+        data = data_iso(re.search(r"\d{2}/\d{2}/\d{4}", trecho).group(0)) if re.search(
+            r"\d{2}/\d{2}/\d{4}", trecho) else None
+        itens.append({"titulo": titulo, "link": urllib.parse.urljoin(base_url, href),
+                      "data": data, "descricao": texto})
+        if len(itens) >= limite:
+            break
+    return itens
+
 
 
 # ------------------------------------------------------- modelo de canal/fonte

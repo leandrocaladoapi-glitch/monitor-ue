@@ -26,7 +26,7 @@ O número de arquivo interinstitucional é preservado em cada item
 (`arquivo_interinstitucional`) e é a identidade compartilhada entre as
 instituições no dataset.
 """
-from .base import Canal, Fonte, TOPICOS_BUSCA, registrar
+from .base import Canal, Fonte, TOPICOS_BUSCA_UE, registrar
 
 REGISTRO = "https://www.consilium.europa.eu/en/documents/public-register"
 

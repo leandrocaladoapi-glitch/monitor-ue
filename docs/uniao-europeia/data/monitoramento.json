@@ -1,0 +1,170 @@
+{
+  "gerado_em": "2026-09-18",
+  "execucoes": [
+    {
+      "id": "bootstrap_ue_2026_09_18",
+      "data_hora": "2026-09-18T10:00:00-03:00",
+      "fim": "2026-09-18T10:00:00-03:00",
+      "ts": "2026-09-18T13:00:00+00:00",
+      "ts_fim": "2026-09-18T13:00:00+00:00",
+      "idade_horas": 40.1,
+      "tipo": "bootstrap",
+      "status": "concluida",
+      "duracao_segundos": null,
+      "orcamento_segundos": null,
+      "verificadas": 2,
+      "monitoradas": 2,
+      "pendentes": [],
+      "atualizadas": 0,
+      "novas": 0,
+      "mudancas": 0,
+      "eventos": 0,
+      "cobertura_pct": 100.0,
+      "erros": 0,
+      "chamadas_http": null,
+      "cache_http": null,
+      "falhas_http": null,
+      "tempo_rede_s": null,
+      "por_endpoint": {},
+      "fases_segundos": {},
+      "snapshot": {},
+      "fontes": 6,
+      "engine": {},
+      "status_global": null,
+      "fontes_monitoradas": {},
+      "fontes_falha": [],
+      "fontes_parciais": [],
+      "http_fontes": {},
+      "mudancas_multiorgao": null
+    }
+  ],
+  "ultima": {
+    "id": "bootstrap_ue_2026_09_18",
+    "data_hora": "2026-09-18T10:00:00-03:00",
+    "fim": "2026-09-18T10:00:00-03:00",
+    "ts": "2026-09-18T13:00:00+00:00",
+    "ts_fim": "2026-09-18T13:00:00+00:00",
+    "idade_horas": 40.1,
+    "tipo": "bootstrap",
+    "status": "concluida",
+    "duracao_segundos": null,
+    "orcamento_segundos": null,
+    "verificadas": 2,
+    "monitoradas": 2,
+    "pendentes": [],
+    "atualizadas": 0,
+    "novas": 0,
+    "mudancas": 0,
+    "eventos": 0,
+    "cobertura_pct": 100.0,
+    "erros": 0,
+    "chamadas_http": null,
+    "cache_http": null,
+    "falhas_http": null,
+    "tempo_rede_s": null,
+    "por_endpoint": {},
+    "fases_segundos": {},
+    "snapshot": {},
+    "fontes": 6,
+    "engine": {},
+    "status_global": null,
+    "fontes_monitoradas": {},
+    "fontes_falha": [],
+    "fontes_parciais": [],
+    "http_fontes": {},
+    "mudancas_multiorgao": null
+  },
+  "frescor": {
+    "horas": 40.1,
+    "estado": "atencao",
+    "cron_utc": "10:17, 13:43, 17:43, 21:43",
+    "cron_brt": "07:17, 10:43, 14:43, 18:43"
+  },
+  "kpis": {
+    "execucoes_registradas": 1,
+    "execucoes_com_metricas": 1,
+    "execucoes_ok": 1,
+    "cobertura_media": 100.0,
+    "mudancas_total": 0,
+    "mudancas_30d": 0,
+    "latencia_media_dias": null,
+    "incorporacoes_historicas": 0,
+    "fontes_monitoradas": 0,
+    "fontes_falha": 0,
+    "fontes_parciais": 0,
+    "status_global": null,
+    "procedimentos": 2,
+    "proposicoes": 2,
+    "curadoria_pendente": 1,
+    "normas": 2,
+    "eventos_futuros": 1
+  },
+  "series": {
+    "rotulos": [
+      "09/18"
+    ],
+    "cobertura_pct": [
+      100.0
+    ],
+    "mudancas": [
+      0
+    ],
+    "novas": [
+      0
+    ],
+    "chamadas_http": [],
+    "cache_http": [],
+    "duracao_s": [],
+    "monitoradas": [
+      2
+    ]
+  },
+  "dataset": {
+    "por_status": {
+      "em_tramitacao": 2
+    },
+    "por_casa": {
+      "Comissão Europeia": 1,
+      "Parlamento Europeu": 1
+    },
+    "por_ano": {
+      "2021": 1,
+      "2025": 1
+    },
+    "por_faixa_score": {
+      "75–89": 1,
+      "0–39": 1
+    },
+    "por_categoria": {
+      "Regulação de IA (quadro geral)": 1,
+      "Direitos fundamentais e não discriminação": 1,
+      "Dados pessoais e privacidade": 1,
+      "Sistemas de alto risco": 1,
+      "Modelos de uso geral (GPAI)": 2,
+      "Direitos de autor e conteúdo": 1,
+      "Transparência e rotulagem de conteúdo": 1
+    },
+    "revisao_pendente": 1
+  },
+  "mudancas": {
+    "total": 0,
+    "por_tipo": {},
+    "por_mes": {},
+    "por_dia": {},
+    "latencia_media_dias": null,
+    "incorporacoes_historicas": 0
+  },
+  "http_por_endpoint": {},
+  "alertas": [
+    {
+      "nivel": "atencao",
+      "titulo": "Execução atrasada",
+      "detalhe": "Última execução há 40 horas. Há quatro agendamentos diários; confira o histórico de execuções."
+    },
+    {
+      "nivel": "atencao",
+      "titulo": "1 proposições aguardam curadoria",
+      "detalhe": "Registros automáticos têm score preliminar e categorias incompletas."
+    }
+  ]
+}

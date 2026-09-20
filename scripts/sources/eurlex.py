@@ -26,7 +26,7 @@ CELEX é preservado como identificador em todo item. Versões linguísticas não
 geram itens duplicados: a identidade é o CELEX/URL canônica e a coleta usa a
 versão inglesa.
 """
-from .base import Canal, Fonte, TOPICOS_BUSCA, registrar
+from .base import Canal, Fonte, TOPICOS_BUSCA_UE, registrar
 from .eu_parsers import parse_eurlex_rss
 
 EURLEX = "https://eur-lex.europa.eu"
@@ -46,14 +46,14 @@ class EurLex(Fonte):
             (EURLEX + "/search.html?text=%22{topico}%22&scope=EURLEX&type=quick"
                       "&amount=25&page=1&DD_YEAR={year}"),
             formato="html", parser="eu:parse_eurlex_busca",
-            tipo_padrao="ato_ue", topicos=TOPICOS_BUSCA[:8],
+            tipo_padrao="ato_ue", topicos=TOPICOS_BUSCA_UE[:8],
         ),
         Canal(
             "busca por tema (legislação do ano anterior)",
             (EURLEX + "/search.html?text=%22{topico}%22&scope=EURLEX&type=quick"
                       "&amount=25&page=1&DD_YEAR={prev_year}"),
             formato="html", parser="eu:parse_eurlex_busca",
-            tipo_padrao="ato_ue", obrigatorio=False, topicos=TOPICOS_BUSCA[:8],
+            tipo_padrao="ato_ue", obrigatorio=False, topicos=TOPICOS_BUSCA_UE[:8],
         ),
         Canal(
             "atos do Jornal Oficial — série L (RSS oficial)",

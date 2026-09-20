@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-update_legislation.py — Motor legislativo do Monitor UE (procedimentos).
+update_legislation.py — Coletor legislativo automático do Monitor Legislativo de IA.
 
-Camada anterior ao build: consulta as fontes oficiais da União Europeia,
-compara com o estado anterior versionado em /data/legislation, registra
-mudanças em updates.json e atualiza o dataset (fonte única da verdade).
-Depois disso, `python3 scripts/build_site.py` regenera o site.
+Camada anterior ao build: consulta fontes oficiais, compara com o estado
+anterior versionado em /data/legislation, registra mudanças em updates.json e
+atualiza o dataset (fonte única da verdade). Depois disso,
+`python3 scripts/build_site.py` regenera o site.
 
 Uso:
     python3 scripts/update_legislation.py                    # execução completa
@@ -19,45 +19,36 @@ Orçamento de tempo (obrigatório para a automação): a coleta tem um teto de
 duração (padrão 25 min, configurável por `--budget-min` ou pela variável
 `MONITOR_BUDGET_SEGUNDOS`). Ao se aproximar do teto, o coletor para de iniciar
 novas consultas, **persiste o que já foi verificado** e registra a execução com
-status `parcial` — o site é reconstruído e publicado de qualquer forma.
+status `parcial` — o site é reconstruído e publicado de qualquer forma. Sem esse
+teto, o crescimento do dataset (mais proposições = mais chamadas HTTP) fazia a
+GitHub Action estourar o timeout de 45 min e nada era publicado.
 
 Sem dependências externas (apenas stdlib). É terminantemente proibido inventar
-dados: tudo que este script grava vem de resposta oficial das fontes abaixo.
+dados: tudo que este script grava vem de resposta oficial das APIs abaixo.
 Campos não confirmados ficam ausentes.
 
-Fontes oficiais consultadas:
-  Parlamento Europeu — Open Data Portal, API oficial v2
-    /procedures                      (listagem de procedimentos; JSON-LD)
-    /procedures/{process_id}         (ficha completa: eventos, estágios,
-                                     votações, assinatura, publicação no JO)
-    Evidência da sonda (18/09/2026): a ficha do AI Act (2021-0106) devolve
-    consists_of com activity_date, tipo de atividade (REFERRAL,
-    COMMITTEE_ADOPTING_REPORT, PLENARY_VOTE, SIGNATURE,
-    PUBLICATION_OFFICIAL_JOURNAL…) e occurred_at_stage (RDG1…) — é dessa ficha
-    que saem estágio, votações e datas, sem nunca estimar nada.
-  EUR-Lex — busca oficial pública (search.html?type=quick&scope=EURLEX)
-    Resultados com CELEX, forma do ato, data e referência de procedimento
-    interinstitucional; usada na descoberta de procedimentos novos e para
-    completar o título oficial quando a ficha do Parlamento não o traz.
-  Parlamento Europeu — Legislative Train Schedule
-    Fichas editoriais oficiais por dossiê; usadas (com limite) para descobrir
-    arquivos interinstitucionais novos.
-  Comissão Europeia — Have Your Say (Better Regulation)
-    Listagem oficial de consultas públicas/calls for evidence com período de
-    feedback futuro — é a agenda oficial verificável (os endpoints de reuniões
-    do Parlamento na API v2 retornam corpo vazio — limitação documentada).
-
-Além do motor legislativo, a mesma execução roda os conectores regulatórios
-multiórgão de `scripts/sources` (European AI Office, EUR-Lex/JO, Conselho,
-Comissão, Parlamento, EDPB e EDPS) em subprocessos isolados com timeout
-próprio — ver `scripts/update_sources.py`. Os itens dessas fontes ficam em
-data/legislation/atos.json, as mudanças em updates.json e a saúde de cada
-fonte em `fontes_monitoradas` (com `status_global`: OK · PARCIAL · FALHA).
-
-Identidade dos dossiês: o **número de procedimento interinstitucional**
-(ex.: 2021/0106(COD)) é a chave compartilhada entre Parlamento, Conselho e
-Comissão. Os ids do dataset são normalizados como `ue_<ano>_<numero>_<tipo>`
-(ex.: `ue_2021_0106_cod`) e nunca derivam do título.
+Fontes oficiais consultadas (quando tecnicamente disponíveis):
+  Câmara dos Deputados — API de Dados Abertos v2
+    /proposicoes (busca por tipo/número/ano, keywords, data de apresentação)
+    /proposicoes/{id} (detalhe: ementa, status, regime, relator, principal)
+    /proposicoes/{id}/tramitacoes (histórico de movimentações)
+    /proposicoes/{id}/autores (autoria)
+    /proposicoes/{id}/votacoes (votações registradas)
+    /deputados/{id} (nome/partido/UF do relator)
+    /eventos (agenda futura)
+  Senado Federal — API de Dados Abertos v7
+    /materia/pesquisa/lista (busca por sigla/número/ano e palavra-chave)
+    /materia/{codigo} (detalhe: ementa, autoria, decisão/destino)
+    /materia/movimentacoes/{codigo} (situação atual + informes legislativos)
+    /materia/relatorias/{codigo} (relatoria atual e histórico)
+    /materia/votacoes/{codigo} (votações)
+Além das duas casas, a mesma execução roda os conectores multiórgão de
+`scripts/sources` (ANPD, CNJ, TSE, DOU/Imprensa Nacional, Planalto e MCTI) em
+subprocessos isolados com timeout próprio — ver `scripts/update_sources.py`.
+Os itens coletados nesses órgãos ficam em data/legislation/atos.json, as
+mudanças em updates.json e a saúde de cada fonte em `fontes_monitoradas`
+(com `status_global`: OK · PARCIAL · FALHA). Câmara e Senado seguem sendo
+coletados exatamente como antes por este arquivo.
 """
 import argparse
 import json
@@ -76,35 +67,24 @@ from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from scoring import compute_impact_score  # noqa: E402
-from sources.eu_parsers import (  # noqa: E402
-    RE_PROC_REF, parse_ep_procedimento, parse_eurlex_busca,
-    parse_legislative_train, parse_consultas_hys,
-)
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(BASE, "data", "legislation")
 
-EP_API = "https://data.europarl.europa.eu/api/v2"
-JSONLD = "application/ld%2Bjson"
-EURLEX = "https://eur-lex.europa.eu"
-HYS = "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en"
-TRAIN_THEMES = [
-    "https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age",
-]
-DOCEO = "https://www.europarl.europa.eu/doceo/document"
-
+CAMARA = "https://dadosabertos.camara.leg.br/api/v2"
+SENADO = "https://legis.senado.leg.br/dadosabertos"
 BRT = timezone(timedelta(hours=-3))
-UA = {"User-Agent": "monitor-ia-ue/1.0 (+https://monitor.lcfconsulting.com.br)",
-      "Accept": "application/json, text/html;q=0.9, */*;q=0.8"}
+UA = {"User-Agent": "monitor-legislativo-ia/1.0 (+https://monitor-legislativo-five.vercel.app)",
+      "Accept": "application/json"}
 
 OLD_DOMAIN = "lcaladoferreira.github.io/monitor-legislativo"
 
 # ---------------------------------------------------------------- orçamento
-# Por que isto existe: o dataset cresce a cada execução (mais procedimentos =
-# mais fichas para consultar). Sem teto de tempo, a coleta pode passar do
-# limite do job do GitHub Actions ANTES do rebuild/commit — o site ficaria
-# congelado na execução anterior. O orçamento garante que a execução sempre
-# termine a tempo de publicar (mesmo que parcialmente).
+# Por que isto existe: o dataset cresce a cada execução (mais proposições =
+# mais fichas para consultar). Sem teto de tempo, a coleta passava dos 45 min
+# do job e era cancelada pelo GitHub Actions ANTES do rebuild/commit — o site
+# ficava congelado na execução anterior. O orçamento garante que a execução
+# sempre termine a tempo de publicar (mesmo que parcialmente).
 def _env_int(nome, padrao):
     try:
         return int(os.environ.get(nome, "") or padrao)
@@ -120,7 +100,6 @@ WORKERS = max(1, _env_int("MONITOR_WORKERS", 5))          # threads de coleta
 HTTP_CONCORRENCIA = max(1, _env_int("MONITOR_HTTP_CONCORRENCIA", 4))
 HTTP_TIMEOUT = _env_int("MONITOR_HTTP_TIMEOUT", 20)
 HTTP_RETRIES = max(1, _env_int("MONITOR_HTTP_RETRIES", 2))
-TRAIN_MAX_PAGINAS = _env_int("MONITOR_TRAIN_PAGINAS", 8)  # fichas do Train por execução
 
 
 class BudgetExceeded(RuntimeError):
@@ -135,115 +114,79 @@ class Budget:
     """
 
     def __init__(self, segundos, margem=None):
-        self.limite = int(segundos)
-        self.margem = MARGEM_FINAL_S if margem is None else margem
-        self._t0 = time.monotonic()
+        self.limite = max(5, int(segundos))  # piso baixo: usado nos testes offline
+        self.margem = MARGEM_FINAL_S if margem is None else max(0, int(margem))
+        self.t0 = time.monotonic()
+        self._lock = threading.Lock()
 
     def decorrido(self):
-        return time.monotonic() - self._t0
+        return time.monotonic() - self.t0
 
     def restante(self):
         return max(0.0, self.limite - self.decorrido())
 
     def expirado(self, folga=0):
-        # A margem final (reserva p/ build/commit) integra o limiar: sem isso o
-        # motor consome o tempo reservado e o run perde a gravação do dataset.
         return self.restante() <= (self.margem + max(0, folga))
 
     def checar(self, folga=0):
         if self.expirado(folga):
             raise BudgetExceeded(
                 f"orçamento de {self.limite}s esgotado "
-                f"({int(self.decorrido())}s decorridos)")
+                f"(decorrido: {int(self.decorrido())}s)")
 
     def pausa(self, segundos):
-        if segundos <= 0:
-            return
-        fim = time.monotonic() + min(segundos, max(0, self.restante() - self.margem))
-        while time.monotonic() < fim:
-            time.sleep(min(0.5, max(0.01, fim - time.monotonic())))
+        """Pausa educada, encurtada se o orçamento estiver no fim."""
+        time.sleep(max(0.0, min(segundos, self.restante() - self.margem)))
 
 
 BUDGET = Budget(BUDGET_S)
 
-# Tipos de procedimento interinstitucional monitorados (sufixo da referência).
-# COD/CNS/CONS = legislativos; NLE/INI/RES = não legislativos (consultas,
-# iniciativas próprias, resoluções); REG = aprovação de atos delegados/de
-# execução; DEC/BUA = orçamentários (monitorados só com relevância forte).
-TIPO_PROC_PT = {
-    "COD": "procedimento legislativo ordinário",
-    "CNS": "procedimento legislativo especial (consulta)",
-    "CONS": "procedimento legislativo especial (cooperação)",
-    "NLE": "procedimento não legislativo",
-    "INI": "iniciativa própria do Parlamento",
-    "RES": "resolução do Parlamento",
-    "REG": "aprovação de ato delegado/de execução",
-    "DEC": "procedimento orçamentário",
-    "APP": "aprovação",
-    "BUA": "procedimento orçamentário",
-    "CWP": "procedimento orçamentário",
-}
-TIPOS_LEGISLATIVOS = {"COD", "CNS", "CONS"}
-TIPOS_SECUNDARIOS = {"NLE", "INI", "RES", "REG"}
+# Tipos de proposição aceitos na descoberta automática (Câmara e Senado).
+TIPOS_INCLUIR = {"PL", "PLP", "PEC", "PDL", "PDN", "PLN", "MPV", "PDC", "PRC",
+                 "PLC", "PLS", "PDS", "EMS", "SUBSTITUTIVO"}
+# Requerimentos entram apenas com match forte e flag de revisão pendente.
+TIPOS_REQUERIMENTO = {"REQ", "RIC", "RQS", "RMA"}
 
-# --- Relevância temática (texto normalizado: minúsculo, sem acento; inglês) ---
+# --- Relevância temática (sobre texto normalizado: minúsculo, sem acento) ---
 STRONG_PATTERNS = [
-    r"artificial intelligence", r"\bai act\b", r"\bai office\b", r"\bai safety\b",
-    r"\bai governance\b", r"\bai literacy\b", r"\bai regulatory sandbox",
-    r"\bai systems?\b", r"artificial intelligence systems?", r"\bai model",
-    r"general[- ]purpose ai", r"\bgpai\b", r"foundation models?", r"frontier models?",
-    r"generative ai", r"generative artificial intelligence",
-    r"large language models?", r"\bllms?\b", r"machine learning", r"deep learning",
-    r"neural networks?", r"\bchatbots?\b", r"\bai agents?\b", r"autonomous ai",
-    r"high[- ]risk ai", r"prohibited ai practices?", r"ai transparency",
-    r"ai auditing", r"training data", r"model training", r"model evaluation",
-    r"deepfake", r"synthetic content", r"synthetic media", r"ai[- ]generated content",
-    r"facial recognition", r"remote biometric identification", r"biometrics",
-    r"emotion recognition", r"automated decision[- ]making", r"algorithmic decision",
-    r"algorithmic transparency", r"data protection", r"personal data", r"\bgdpr\b",
-    r"cybersecurity", r"data cent(er|re)s?", r"semiconductors?", r"\bchips act\b",
-    r"high[- ]performance computing", r"supercomput", r"quantum comput",
-    r"digital services act", r"digital markets act", r"\bdsa\b.*platform",
-    r"\beprivacy\b", r"\bdata act\b", r"\bdata governance act\b",
+    r"inteligencia artificial", r"\bia generativa\b", r"ia de proposito geral",
+    r"deepfake", r"conteudo sintetico", r"midia sintetica",
+    r"decisao automatizada", r"decisoes automatizadas", r"tomada de decisao automat",
+    r"reconhecimento facial", r"reconhecimento biometrico", r"biometria facial",
+    r"modelos? fundaciona", r"large language models?", r"\bllms?\b",
+    r"agentes? de ia\b", r"agentes? autonomos?", r"sistemas? autonomos?",
+    r"sistemas? automatizados?", r"automacao algoritmica", r"governanca algoritmica",
+    r"responsabilidade por sistemas de ia", r"marco legal da (inteligencia artificial|\bia\b)",
+    r"sistema nacional de (inteligencia artificial|\bia\b)",
+    r"treinamento de modelos", r"dados de treinamento",
 ]
 MEDIUM_PATTERNS = [
-    r"\balgorithm", r"automat", r"robot", r"internet of things", r"\biot\b",
-    r"\bprivacy\b", r"\bcookies?\b", r"cyber", r"\bcloud\b", r"\bchip",
-    r"\bdigital\b", r"\bplatform", r"online environment", r"\bonline\b",
+    r"algoritm", r"automatiz", r"machine learning", r"aprendizado de maquina",
+    r"aprendizado profundo", r"deep learning", r"processamento de linguagem natural",
+    r"\bchatbots?\b", r"redes neurais", r"visao computacional",
+    r"biometr", r"datacenter", r"data centers?", r"centro de dados",
+    r"microchip", r"semicondutor", r"computacao de alto desempenho",
 ]
-# Termos de infraestrutura/tecnologia que isoladamente geram revisão pendente
-# (evitar falso positivo em inglês — "digital" aparece em quase todo ato).
-# Importante: cada padrão aqui também precisa existir em MEDIUM_PATTERNS.
-INFRA_ONLY = [r"\bdigital\b", r"\bplatform", r"\bonline\b", r"\bcloud\b", r"\bchip",
-              r"cyber", r"\bcookies?\b", r"online environment"]
+# Termos de infraestrutura que isoladamente geram revisão pendente (evitar falso positivo).
+INFRA_ONLY = [r"datacenter", r"data centers?", r"centro de dados", r"semicondutor", r"microchip"]
 
 STRONG_RE = [re.compile(p) for p in STRONG_PATTERNS]
 MEDIUM_RE = [re.compile(p) for p in MEDIUM_PATTERNS]
 INFRA_RE = [re.compile(p) for p in INFRA_ONLY]
 
-FONTES_PARLAMENTO = [
-    "Parlamento Europeu — Open Data Portal v2 (procedures, ficha do dossiê)",
-    "Parlamento Europeu — Open Data Portal v2 (eventos do procedimento)",
-    "Parlamento Europeu — Legislative Train Schedule",
-    "Parlamento Europeu — textos adotados (DOCEO, via eventos)",
+FONTES_CAMARA = [
+    "API de Dados Abertos da Câmara dos Deputados — proposições (detalhe)",
+    "API de Dados Abertos da Câmara dos Deputados — tramitações",
+    "API de Dados Abertos da Câmara dos Deputados — autores",
+    "API de Dados Abertos da Câmara dos Deputados — votações",
+    "API de Dados Abertos da Câmara dos Deputados — deputados (relator)",
+    "API de Dados Abertos da Câmara dos Deputados — eventos (agenda)",
 ]
-FONTES_EURLEX = [
-    "EUR-Lex — busca oficial (metadados de atos)",
-    "EUR-Lex — busca oficial (descoberta de procedimentos)",
-]
-FONTES_HYS = [
-    "Comissão Europeia — Have Your Say (agenda de consultas)",
-]
-
-# Termos usados na descoberta por busca oficial (inglês, idioma técnico).
-KEYWORDS_DESCOBERTA = [
-    "artificial intelligence",
-    "AI Act",
-    "general-purpose AI",
-    "deepfake",
-    "facial recognition",
-    "automated decision-making",
-    "foundation models",
+FONTES_SENADO = [
+    "API de Dados Abertos do Senado Federal — matérias (detalhe)",
+    "API de Dados Abertos do Senado Federal — movimentações",
+    "API de Dados Abertos do Senado Federal — relatorias",
+    "API de Dados Abertos do Senado Federal — votações",
 ]
 
 
@@ -268,19 +211,12 @@ def endpoint_label(url):
         partes = urllib.parse.urlparse(url)
     except ValueError:
         return "desconhecido"
-    host = partes.netloc.lower()
-    if "europarl" in host:
-        casa = "parlamento"
-    elif "eur-lex" in host:
-        casa = "eurlex"
-    elif "ec.europa.eu" in host or "commission" in host:
-        casa = "comissao"
-    else:
-        casa = "outro"
-    seg = [p for p in partes.path.split("/") if p]
+    casa = "camara" if "camara" in partes.netloc else (
+        "senado" if "senado" in partes.netloc else "outro")
+    seg = [p for p in partes.path.split("/") if p][2:] if casa != "outro" else []
     limpos = []
     for p in seg:
-        limpos.append("{id}" if p.isdigit() or re.match(r"^\d{4}-\d{3,4}$", p) else p)
+        limpos.append("{id}" if p.isdigit() else p.removesuffix(".json"))
     return f"{casa}:" + "/".join(limpos[:3]) if limpos else casa
 
 
@@ -305,40 +241,31 @@ def http_stats():
         }
 
 
-def _http_urllib(url, timeout, as_text=False):
+def _http_urllib(url, timeout):
     req = urllib.request.Request(url, headers=UA)
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        bruto = r.read()
-    enc = (r.headers.get_content_charset() or "utf-8") if hasattr(r, "headers") else "utf-8"
-    if as_text:
-        return bruto.decode(enc, errors="replace")
-    return json.loads(bruto.decode(enc, errors="replace"))
+        return json.load(r)
 
 
-def _http_curl(url, timeout, as_text=False):
+def _http_curl(url, timeout):
     import subprocess
     out = subprocess.run(
-        [_CURL_BIN, "-sS", "-L", "-m", str(timeout),
-         "-H", f"Accept: {UA['Accept']}", "-H", f"User-Agent: {UA['User-Agent']}", url],
+        [_CURL_BIN, "-sS", "-m", str(timeout), "-H", "Accept: application/json",
+         "-H", f"User-Agent: {UA['User-Agent']}", url],
         capture_output=True, text=True, timeout=timeout + 5)
     if out.returncode != 0:
         raise RuntimeError(f"curl exit {out.returncode}: {(out.stderr or '')[:120]}")
-    if as_text:
-        return out.stdout
     return json.loads(out.stdout)
 
 
 def http_get_json(url, timeout=None, retries=None, cache=True):
-    """GET → JSON (dict/list). Usa o cache de execução e respeita o orçamento."""
-    return _http_get(url, timeout=timeout, retries=retries, cache=cache, as_text=False)
+    """GET com orçamento de tempo, cache de execução e retries. Dict ou None.
 
-
-def http_get_text(url, timeout=None, retries=None, cache=True):
-    """GET → texto (HTML/RSS). Mesmo orçamento, cache e telemetria do JSON."""
-    return _http_get(url, timeout=timeout, retries=retries, cache=cache, as_text=True)
-
-
-def _http_get(url, timeout=None, retries=None, cache=True, as_text=False):
+    Levanta BudgetExceeded quando o orçamento acaba: nenhuma chamada nova é
+    iniciada e a coleta é encerrada de forma limpa (dados parciais preservados).
+    Usa curl quando disponível (handshake mais robusto nos runners do GitHub
+    Actions); caso contrário, urllib da stdlib.
+    """
     timeout = HTTP_TIMEOUT if timeout is None else timeout
     retries = HTTP_RETRIES if retries is None else retries
     if cache:
@@ -358,9 +285,9 @@ def _http_get(url, timeout=None, retries=None, cache=True, as_text=False):
                 with _HTTP_LOCK:
                     _HTTP_STATS["chamadas"] += 1
                 if _CURL_BIN:
-                    payload = _http_curl(url, int(espera), as_text=as_text)
+                    payload = _http_curl(url, int(espera))
                 else:
-                    payload = _http_urllib(url, int(espera), as_text=as_text)
+                    payload = _http_urllib(url, int(espera))
             with _HTTP_LOCK:
                 _HTTP_STATS["tempo_total"] += time.monotonic() - t0
                 if cache:
@@ -387,19 +314,16 @@ def polite_pause():
 
 
 def relevance(text):
-    """Classifica relevância temática: 'forte', 'media', 'infra' ou None.
-
-    A sigla isolada "AI" não conta como sinal forte (falso positivo em inglês:
-    "said", "maintain"…). Sinais fracos combinados com contexto técnico valem
-    'media'; infraestrutura isolada vira 'infra' (revisão pendente).
-    """
+    """Classifica relevância temática: 'forte', 'media', 'infra' ou None."""
     t = norm(text)
     if any(r.search(t) for r in STRONG_RE):
         return "forte"
-    medium_hit = any(re.search(p, t) for p in MEDIUM_PATTERNS if p not in INFRA_ONLY)
-    if medium_hit:
-        return "media"
-    if any(r.search(t) for r in INFRA_RE):
+    if any(r.search(t) for r in MEDIUM_RE):
+        # infra isolada (ex.: só "data center") pede curadoria, não inclusão direta
+        others = [r for r in MEDIUM_RE if r.pattern not in INFRA_ONLY or True]
+        non_infra = [p for p in MEDIUM_PATTERNS if p not in INFRA_ONLY]
+        if any(re.search(p, t) for p in non_infra):
+            return "media"
         return "infra"
     return None
 
@@ -443,239 +367,192 @@ def as_list(x):
     return x if isinstance(x, list) else [x]
 
 
-# ------------------------------------------- procedimentos: ids e referências
-def proc_ref_de_dataset_id(dataset_id):
-    """'ue_2021_0106_cod' → '2021/0106(COD)'. Sem tipo conhecido → com o que houver."""
-    m = re.match(r"^ue_(\d{4})_(\d{3,4})(?:_([a-z]{2,4}))?$", dataset_id or "")
-    if not m:
-        return None
-    ano, num, tipo = m.groups()
-    return f"{ano}/{num}({(tipo or '').upper()})" if tipo else f"{ano}/{num}"
-
-
-def dataset_id_de_proc_ref(ref):
-    """'2021/0106(COD)' → 'ue_2021_0106_cod' (normalização canônica do dataset)."""
-    if not ref:
-        return None
-    m = RE_PROC_REF.search(ref)
-    if not m:
-        return None
-    ano, num, tipo = m.group(1), m.group(2), m.group(3).lower()
-    return f"ue_{ano}_{num}_{tipo}"
-
-
-def process_id_de_ref(ref):
-    """'2021/0106(COD)' → '2021-0106' (id usado na API v2 do Parlamento)."""
-    m = RE_PROC_REF.search(ref or "")
-    if not m:
-        m2 = re.match(r"^(\d{4})-(\d{3,4})$", (ref or "").strip())
-        return f"{m2.group(1)}-{m2.group(2)}" if m2 else None
-    return f"{m.group(1)}-{m.group(2)}"
-
-
-# ------------------------------------------------- APIs Parlamento / EUR-Lex
-def ep_list_procedimentos(termo=10, limit=100, offset=0):
-    """Listagem de procedimentos por termo parlamentar (JSON-LD oficial)."""
-    url = (f"{EP_API}/procedures?parliamentary_term={termo}&limit={limit}"
-           f"&offset={offset}&format={JSONLD}")
-    d = http_get_json(url, retries=2)
-    polite_pause()
-    if not d:
-        return []
-    return d.get("data", []) or []
-
-
-def ep_ficha(process_id):
-    """Ficha completa do procedimento na API oficial (eventos, estágios, docs)."""
-    url = f"{EP_API}/procedures/{process_id}?format={JSONLD}"
-    d = http_get_json(url, retries=2)
+# ------------------------------------------------------------- APIs Câmara
+def camara_find_id(tipo, numero, ano):
+    q = urllib.parse.urlencode({"siglaTipo": tipo, "numero": numero, "ano": ano,
+                                "ordem": "ASC", "ordenarPor": "id"})
+    d = http_get_json(f"{CAMARA}/proposicoes?{q}")
     polite_pause()
     if not d:
         return None
-    return parse_ep_procedimento(d, proc_id=process_id)
-
-
-def eurlex_busca(query, ano=None, pagina=1, amount=25):
-    """Busca oficial pública do EUR-Lex (HTML server-rendered) → itens."""
-    q = urllib.parse.quote(query)
-    url = (f"{EURLEX}/search.html?text={q}&scope=EURLEX&type=quick&amount={amount}"
-           f"&page={pagina}")
-    if ano:
-        url += f"&DD_YEAR={ano}"
-    html = http_get_text(url, retries=2)
-    polite_pause()
-    if not html:
-        return []
-    return parse_eurlex_busca(html, url=url)
-
-
-def train_fichas(theme_url, limite=60):
-    """Listagem de dossiês de um tema do Legislative Train (site oficial)."""
-    html = http_get_text(theme_url, retries=2)
-    polite_pause()
-    if not html:
-        return []
-    return parse_legislative_train(html, url=theme_url)[:limite]
-
-
-def train_ficha_html(url):
-    html = http_get_text(url, retries=1)
-    polite_pause()
-    return html
-
-
-def hys_listagem(pagina=1):
-    """Listagem oficial de consultas/calls for evidence (Have Your Say)."""
-    html = http_get_text(f"{HYS}?page={pagina}", retries=2)
-    polite_pause()
-    if not html:
-        return []
-    return parse_consultas_hys(html, url=HYS, canal=None)
-
-
-def doceo_url(doc_id):
-    """URL oficial do DOCEO para textos adotados/relatórios (A-, TA-, PV-, CRE-).
-
-    Só constrói URL para ids cujo padrão é o esquema estável do DOCEO; outros
-    ids (comissões, AD-) ficam sem URL — nada de link estimado.
-    """
-    if re.match(r"^(TA|A|PV|CRE)-\d-\d{4}-\d{4}(-\w+)*$", doc_id or ""):
-        return f"{DOCEO}/{doc_id}_EN.html"
+    for item in d.get("dados", []):
+        if (item.get("siglaTipo") == tipo and item.get("numero") == numero
+                and item.get("ano") == ano):
+            return item.get("id")
     return None
 
 
+def camara_detail(pid):
+    d = http_get_json(f"{CAMARA}/proposicoes/{pid}")
+    polite_pause()
+    return (d or {}).get("dados")
+
+
+def camara_tramitacoes(pid):
+    d = http_get_json(f"{CAMARA}/proposicoes/{pid}/tramitacoes")
+    polite_pause()
+    return (d or {}).get("dados", []) or []
+
+
+def camara_autores(pid):
+    d = http_get_json(f"{CAMARA}/proposicoes/{pid}/autores")
+    polite_pause()
+    return (d or {}).get("dados", []) or []
+
+
+def camara_votacoes(pid):
+    # Melhor esforço: endpoint historicamente lento; uma tentativa curta.
+    d = http_get_json(f"{CAMARA}/proposicoes/{pid}/votacoes", timeout=12, retries=1)
+    polite_pause()
+    return (d or {}).get("dados", []) or []
+
+
+def camara_deputado(uri_or_id):
+    if not uri_or_id:
+        return None
+    url = uri_or_id if str(uri_or_id).startswith("http") else f"{CAMARA}/deputados/{uri_or_id}"
+    d = http_get_json(url, retries=2)
+    polite_pause()
+    return (d or {}).get("dados")
+
+
+def camara_id_from_prop(p):
+    for u in [p.get("url_oficial")] + [d.get("url") for d in p.get("documentos", [])]:
+        if not u:
+            continue
+        m = re.search(r"idProposicao=(\d+)", u)
+        if m:
+            return int(m.group(1))
+    return None
+
+
+# ------------------------------------------------------------- APIs Senado
+def senado_detail(codigo):
+    d = http_get_json(f"{SENADO}/materia/{codigo}.json")
+    polite_pause()
+    try:
+        return d["DetalheMateria"]["Materia"]
+    except (TypeError, KeyError):
+        return None
+
+
+def senado_movimentacoes(codigo):
+    d = http_get_json(f"{SENADO}/materia/movimentacoes/{codigo}.json")
+    polite_pause()
+    try:
+        return d["MovimentacaoMateria"]["Materia"]
+    except (TypeError, KeyError):
+        return None
+
+
+def senado_relatorias(codigo):
+    d = http_get_json(f"{SENADO}/materia/relatorias/{codigo}.json", retries=2)
+    polite_pause()
+    try:
+        return d["RelatoriaMateria"]["Materia"]
+    except (TypeError, KeyError):
+        return None
+
+
+def senado_search(sigla=None, numero=None, ano=None, palavra_chave=None):
+    params = {}
+    if sigla:
+        params["sigla"] = sigla
+    if numero:
+        params["numero"] = numero
+    if ano:
+        params["ano"] = ano
+    if palavra_chave:
+        params["palavraChave"] = palavra_chave
+    d = http_get_json(f"{SENADO}/materia/pesquisa/lista?{urllib.parse.urlencode(params)}",
+                      retries=2)
+    polite_pause()
+    if not d:
+        return []
+    try:
+        return as_list(d["PesquisaBasicaMateria"]["Materias"]["Materia"])
+    except (TypeError, KeyError):
+        return []
+
+
+def senado_codes_from_prop(p):
+    codes = []
+    urls = [p.get("url_oficial")] + [d.get("url") for d in p.get("documentos", [])] \
+        + [f.get("url") for f in p.get("fontes_adicionais", [])]
+    for u in urls:
+        if not u:
+            continue
+        for m in re.finditer(r"materia/(\d+)", u):
+            if m.group(1) not in codes:
+                codes.append(m.group(1))
+    return codes
+
+
 # ------------------------------------------------------- tipos de mudança
-# Tipos de atividade da API v2 do Parlamento → rótulo PT (factual).
-EVENTO_TIPO_PT = {
-    "REFERRAL": "encaminhamento à comissão",
-    "COMMITTEE_TABLING_REPORT": "relatório apresentado na comissão",
-    "COMMITTEE_ADOPTING_REPORT": "relatório adotado na comissão",
-    "COMMITTEE_TABLING_OPINION": "parecer apresentado na comissão",
-    "COMMITTEE_ADOPTING_OPINION": "parecer adotado na comissão",
-    "COMMITTEE_APPROVE_PROVISIONAL_AGREEMENT": "acordo provisório aprovado",
-    "PLENARY_DEBATE": "debate no plenário",
-    "PLENARY_AMEND": "emendas no plenário",
-    "PLENARY_AMEND_PROPOSAL": "propostas de emenda no plenário",
-    "PLENARY_VOTE": "votação no plenário",
-    "PLENARY_VOTE_RESULTS": "resultado de votação no plenário",
-    "PLENARY_REFER_COMMITTEE_INTERINSTITUTIONAL_NEGOTIATIONS":
-        "abertura de negociações interinstitucionais",
-    "TABLING_PLENARY": "inscrição em pauta do plenário",
-    "SIGNATURE": "assinatura formal",
-    "PUBLICATION_OFFICIAL_JOURNAL": "publicação no Jornal Oficial",
-}
-
-
-def label_evento(tipo):
-    if not tipo:
-        return "movimentação no procedimento"
-    if tipo in EVENTO_TIPO_PT:
-        return EVENTO_TIPO_PT[tipo]
-    return tipo.replace("_", " ").lower()
-
-
 def infer_change_type(text):
-    """Tipo de mudança (vocabulary dos tipos usados no site) a partir do texto."""
     t = norm(text)
-    if "publication no jornal oficial" in t or "jornal oficial" in t \
-            or "official journal" in t:
-        return "publicação"
-    if "assinatura" in t or "signature" in t:
-        return "assinatura"
-    if "vota" in t or "vote" in t:
-        return "votação"
-    if "negocia" in t or "interinstitucional" in t or "trilogo" in t:
-        return "negociação interinstitucional"
-    if "acordo provisorio" in t or "provisional agreement" in t:
-        return "acordo provisório"
-    if "emenda" in t or "amend" in t:
-        return "emenda"
-    if "parecer" in t or "opinion" in t:
+    if "desapens" in t and "apense-se" not in t and "apense se" not in t:
+        return "desapensação"
+    if "apens" in t:
+        return "apensação"
+    if "desarquiv" in t:
+        return "desarquivamento"
+    if "arquiv" in t:
+        return "arquivamento"
+    if "sancao" in t or "sancionad" in t or "transformada em norma" in t or "convertida" in t:
+        return "sanção"
+    if "veto" in t:
+        return "veto"
+    if "promulg" in t:
+        return "promulgação"
+    if "parecer" in t:
         return "parecer"
-    if "relatorio" in t or "report" in t:
-        return "relatório"
-    if "debate" in t or "pauta" in t:
-        return "pauta do plenário"
-    if "encaminhamento" in t or "referral" in t:
-        return "encaminhamento"
+    if "votac" in t or "aprovad" in t or "rejeitad" in t:
+        return "votação"
+    if "pauta" in t or "ordem do dia" in t:
+        return "pauta"
+    if "relator" in t:
+        return "relatoria"
+    if "redacao final" in t:
+        return "redação final"
+    if "publica" in t:
+        return "publicação"
     return "tramitação"
 
 
-def situacao_from_evento(ev):
-    """Situação factual a partir do último evento oficial da ficha.
-
-    Nunca descreve estágio futuro: só traduz o que a ficha oficial registra.
-    """
-    tipo = ev.get("tipo") or ""
-    data = ev.get("data") or ""
-    fase = ev.get("fase")
-    sufixo = f" — {data}" + (f" (fase {fase})" if fase else "")
-    mapa = {
-        "REFERRAL": "Em avaliação na comissão parlamentar responsável",
-        "COMMITTEE_TABLING_REPORT": "Relatório em discussão na comissão",
-        "COMMITTEE_ADOPTING_REPORT": "Relatório adotado na comissão — aguarda plenário",
-        "COMMITTEE_TABLING_OPINION": "Parecer em elaboração na comissão",
-        "COMMITTEE_ADOPTING_OPINION": "Parecer adotado na comissão",
-        "COMMITTEE_APPROVE_PROVISIONAL_AGREEMENT":
-            "Acordo provisório aprovado — aguarda confirmação no plenário",
-        "PLENARY_DEBATE": "Debatido no plenário",
-        "PLENARY_AMEND": "Emendas em exame no plenário",
-        "PLENARY_AMEND_PROPOSAL": "Propostas de emenda em exame no plenário",
-        "PLENARY_VOTE": "Votado no plenário",
-        "PLENARY_VOTE_RESULTS": "Votado no plenário (resultado registado)",
-        "PLENARY_REFER_COMMITTEE_INTERINSTITUTIONAL_NEGOTIATIONS":
-            "Negociações interinstitucionais (trílogos) em curso",
-        "TABLING_PLENARY": "Inscrito em pauta do plenário",
-        "SIGNATURE": "Assinado — aguarda publicação no Jornal Oficial",
-        "PUBLICATION_OFFICIAL_JOURNAL": "Publicado no Jornal Oficial da UE",
-    }
-    base = mapa.get(tipo) or (label_evento(tipo).capitalize() if tipo else
-                              "Tramitação em curso")
-    return base + sufixo
-
-
 # ------------------------------------------------------- categorias inferidas
-# Palavras-chave (inglês, texto normalizado) → ids das categorias do dataset.
-# Os ids seguem data/legislation/categories.json (categorias UE).
 CATEGORY_KEYWORDS = [
-    (["ai act", "artificial intelligence act", "ai office", "regulatory framework"],
-     [1]),
-    (["fundamental rights", "non-discrimination", "discriminat"], [2]),
-    (["gdpr", "personal data", "data protection", "privacy"], [3]),
-    (["liability", "redress", "compensation"], [4]),
-    (["prohibited ai", "unacceptable risk", "social scoring", "real-time remote biometric"],
-     [5]),
-    (["copyright", "text and data mining", "tdm", "creator"], [6]),
-    (["worker", "employment", "labour", "employee"], [7]),
-    (["education", "school", "research", "universit"], [8]),
-    (["health", "medical device", "hospital", "patient"], [9]),
-    (["law enforcement", "police", "criminal", "migration", "border"], [10]),
-    (["defence", "defense", "military", "security union"], [11]),
-    (["justice", "courts", "judicial", "democracy"], [12]),
-    (["election", "electoral", "political advertising"], [13]),
-    (["deepfake", "synthetic content", "manipulation of content"], [14]),
-    (["disinformation", "misinformation", "information integrity"], [15]),
-    (["digital services act", "very large online platform", "vlop", "platform liability"],
-     [16]),
-    (["biometric"], [17]),
-    (["facial recognition", "facial image database"], [18]),
-    (["public administration", "public service", "government use"], [19]),
-    (["financial service", "credit scoring", "insurance", "bank"], [20]),
-    (["consumer", "product safety", "product liability"], [21]),
-    (["cybersecurity", "cyber resilience", "nis2", "incident"], [22]),
-    (["autonomous system", "robot", "drone", "self-driving"], [23]),
-    (["transparency obligation", "watermark", "labelling", "labeling", "marking of"],
-     [24]),
-    (["conformity assessment", "notified body", "audit", "ce marking"], [25]),
-    (["high-risk", "high risk", "annex iii", "risk management system"], [26]),
-    (["regulatory sandbox", "innovation", "start-up", "startup", "research and development"],
-     [27]),
-    (["high-performance computing", "supercomput", "data centre", "datacenter",
-      "quantum", "cloud infrastructure", "chips"], [28]),
-    (["digital sovereignty", "competitiveness", "single market", "open strategic autonomy"],
-     [29]),
-    (["general-purpose ai", "gpai", "foundation model", "large language model",
-      "generative ai", "systemic risk"], [30]),
+    (["marco legal", "marco regulatorio", "sistema nacional", "normas gerais",
+      "politica nacional de inteligencia"], [1]),
+    (["direitos fundamentais", "direitos humanos"], [2]),
+    (["dados pessoais", "lgpd", "protecao de dados", "privacidade"], [3]),
+    (["responsabilidade civil", "responsabilidade por"], [4]),
+    (["crime", "penal", "pena de", "reclusao", "detencao", "deepfake"], [5]),
+    (["direito autoral", "direitos autorais", "titular de direito"], [6]),
+    (["trabalh", "emprego", "profission"], [7]),
+    (["educac", "escola", "ensino"], [8]),
+    (["saude", "hospital", "medic"], [9]),
+    (["seguranca publica", "policia", "violencia domestica"], [10]),
+    (["defesa nacional", "forcas armadas", "militar"], [11]),
+    (["judiciario", "justica", "tribunal", "processo judicial"], [12]),
+    (["eleic", "eleitor", "campanha eleitoral", "pleito"], [13]),
+    (["deepfake"], [14]),
+    (["desinformacao", "fake news", "conteudo falso"], [15]),
+    (["plataforma", "rede social", "provedor"], [16]),
+    (["biometr"], [17]),
+    (["reconhecimento facial"], [18]),
+    (["administracao publica", "servico publico", "setor publico", "governo"], [19]),
+    (["banco", "credito", "financeir", "fintech"], [20]),
+    (["consumidor"], [21]),
+    (["ciberseguranca", "seguranca cibernetica", "incidente de seguranca"], [22]),
+    (["agente autonomo", "sistema autonomo", "agentes de ia"], [23]),
+    (["transparencia", "rotulagem", "rotulo", "identificacao de conteudo"], [24]),
+    (["auditoria", "avaliacao de risco", "avaliacao de impacto"], [25]),
+    (["alto risco", "risco excessivo", "sistema de alto risco"], [26]),
+    (["pesquisa", "desenvolvimento cientifico", "inovacao"], [27]),
+    (["incentivo fiscal", "tributario", "renuncia", "regime especial", "fundo"], [28]),
+    (["datacenter", "data center", "centro de dados", "infraestrutura"], [29]),
+    (["soberania", "nuvem soberana", "dados nacionais"], [30]),
 ]
 
 
@@ -704,9 +581,8 @@ class Collector:
         self.new_props = []
         self.fontes_ok = set()
         self.nao_verificadas = []   # ids não consultados por fim de orçamento
-        self.verificadas_ids = set()  # procedimentos distintos consultados (cobertura)
-        # saúde por instituição-fonte do motor legislativo
-        self.verificadas_inst = {"parlamento": 0, "eurlex": 0}
+        self.verificadas_ids = set()  # proposições distintas consultadas (cobertura)
+        self.verificadas_casa = {"camara": 0, "senado": 0}  # saúde por casa
         self.fases = {}             # fase -> segundos (métricas do painel)
         self._changes_gravadas = 0  # mudanças já persistidas (checkpoint intermediário)
         self._fases_ini = {}
@@ -743,13 +619,13 @@ class Collector:
         with self._lock:
             setattr(self, attr, getattr(self, attr) + 1)
 
-    def _marca_verificada(self, prop_id, instituicao="parlamento"):
-        """Conta a ficha consultada e o dossiê distinto (cobertura ≤ 100%)."""
+    def _marca_verificada(self, prop_id):
+        """Conta a ficha consultada e a proposição distinta (cobertura ≤ 100%)."""
         with self._lock:
             self.verified += 1
             self.verificadas_ids.add(prop_id)
-            self.verificadas_inst[instituicao] = \
-                self.verificadas_inst.get(instituicao, 0) + 1
+            casa = "senado" if str(prop_id).startswith("senado_") else "camara"
+            self.verificadas_casa[casa] = self.verificadas_casa.get(casa, 0) + 1
 
     def _add_fonte(self, fonte):
         with self._lock:
@@ -778,469 +654,745 @@ class Collector:
             "id_execucao": self.run_id,
         })
 
-    # ------------------------------------------ procedimentos monitorados
-    def _process_id_de_prop(self, p):
-        """Id do processo (API v2) do registro; nunca inventado."""
-        api = p.get("api_ep") or {}
-        if api.get("process_id"):
-            return api["process_id"]
-        for u in [p.get("url_oficial")] + [d.get("url") for d in p.get("documentos", [])]:
-            m = re.search(r"/procedures/(\d{4}-\d{3,4})", u or "")
-            if m:
-                return m.group(1)
-        # tenta pela referência normalizada no próprio id do dataset
-        m = re.match(r"^ue_(\d{4})_(\d{3,4})", p.get("id") or "")
-        if m:
-            return f"{m.group(1)}-{m.group(2)}"
-        return None
-
-    def update_procedure(self, p, last_run):
-        """Atualiza um procedimento monitorado a partir da ficha oficial (API v2).
-
-        Devolve True quando a ficha foi consultada com sucesso. Detecta:
-        novos eventos (→ mudanças + timeline), mudança de situação, textos
-        adotados novos (documentos DOCEO) e o snapshot api_ep.
-        """
-        pid = self._process_id_de_prop(p)
+    # -------------------------------------------------- proposições Câmara
+    def update_camara_prop(self, p, last_run):
+        pid = camara_id_from_prop(p)
         if not pid:
-            self.errors.append(f"{p['id']}: sem identificador de procedimento oficial")
+            pid = camara_find_id(p["tipo"], p["numero"], p["ano"])
+            if pid:
+                # completa o registro com a ficha oficial canônica
+                ficha = f"https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao={pid}"
+                if not p.get("url_oficial"):
+                    p["url_oficial"] = ficha
+        if not pid:
+            return False  # pode ser matéria do Senado; o erro só se confirma em _update_one
+        detail = camara_detail(pid)
+        if not detail:
+            self.errors.append(f"{p['id']}: detalhe indisponível na API da Câmara")
             return False
-        ficha = ep_ficha(pid)
-        if not ficha:
-            self.errors.append(f"{p['id']}: ficha indisponível na API v2 do Parlamento")
-            return False
-        self._add_fontes(FONTES_PARLAMENTO[:2])
-        self._marca_verificada(p["id"], "parlamento")
-        fonte_ficha = f"{EP_API}/procedures/{pid}?format={JSONLD}"
+        self._add_fontes(FONTES_CAMARA[:2])
+        self._marca_verificada(p["id"])
         changed = False
-        api = p.setdefault("api_ep", {})
+        st = detail.get("statusProposicao") or {}
+        ficha_url = f"https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao={pid}"
+        api = p.setdefault("api_camara", {})
         api.update({
-            "process_id": ficha.get("process_id") or pid,
-            "process_type": ficha.get("process_type"),
-            "label": ficha.get("label"),
+            "id_proposicao": pid,
             "verificado_em": self.run_iso,
-            "eventos_total": len(ficha.get("eventos", [])),
+            "status_datahora": st.get("dataHora"),
+            "descricao_situacao": st.get("descricaoSituacao"),
+            "descricao_tramitacao": st.get("descricaoTramitacao"),
+            "despacho": st.get("despacho"),
+            "sigla_orgao": st.get("siglaOrgao"),
+            "regime": st.get("regime"),
+            "apreciacao": st.get("apreciacao"),
+            "uri_prop_principal": detail.get("uriPropPrincipal"),
+            "keywords": detail.get("keywords"),
+            "url_inteiro_teor": detail.get("urlInteiroTeor"),
+            "ementa_api": detail.get("ementa"),
         })
 
-        eventos = ficha.get("eventos", [])
-        # Título oficial (campo 'title' quando existir; nunca inventado)
-        titulo_oficial = (ficha.get("tema") or "").strip()
-        if (titulo_oficial and len(titulo_oficial) > 12
-                and not titulo_oficial.startswith("European Parliament procedure")
-                and not (p.get("revisao_pendente") is False and p.get("titulo"))):
-            if norm(p.get("titulo", "")) != norm(titulo_oficial):
-                anterior = p.get("titulo")
-                p["titulo"] = titulo_oficial[:300]
-                if anterior:
+        # Regime / apreciação (campos objetivos da API)
+        for field, key in (("regime_tramitacao", "regime"), ("forma_apreciacao", "apreciacao")):
+            new_val = st.get(key)
+            if new_val and p.get(field) != new_val:
+                # só registra mudança se o valor anterior existia (evita ruído de curadoria)
+                if p.get(field):
                     self.add_change(
-                        data_evento=self.today,
-                        titulo=f"{ficha.get('label') or pid}: título oficial atualizado",
-                        descricao=f"Título passou de “{(anterior or '')[:200]}” para "
-                                  f"“{titulo_oficial[:200]}”.",
+                        data_evento=date_only(st.get("dataHora")) or self.today,
+                        titulo=f"{p['tipo']} {p['numero']}/{p['ano']}: {field.replace('_', ' ')} atualizado",
+                        descricao=f"{field.replace('_', ' ').capitalize()} passou de "
+                                  f"“{p.get(field)}” para “{new_val}”, conforme ficha oficial.",
                         tipo="atualização cadastral", proposicao=p["id"],
-                        fonte="Parlamento Europeu — Open Data Portal v2",
-                        fonte_url=fonte_ficha, campo="titulo",
-                        anterior=anterior, novo=titulo_oficial[:300])
+                        fonte="Câmara dos Deputados — API de Dados Abertos",
+                        fonte_url=ficha_url, campo=field,
+                        anterior=p.get(field), novo=new_val)
+                p[field] = new_val
                 changed = True
 
-        # Documentos oficiais referenciados pelos eventos (DOCEO p/ A-/TA-)
-        docs_registrados = {d.get("url") for d in p.get("documentos", [])}
-        novos_docs = []
-        for ev in eventos:
-            for doc_id in ev.get("docs", []):
-                u = doceo_url(doc_id)
-                if u and u not in docs_registrados:
-                    rotulo = ("Texto adotado pelo Plenário" if doc_id.startswith("TA")
-                              else "Relatório da comissão" if doc_id.startswith("A-")
-                              else "Documento oficial do procedimento")
-                    novos_docs.append({"titulo": rotulo, "id_doc": doc_id, "url": u})
-                    docs_registrados.add(u)
-        if novos_docs:
-            p["documentos"] = (p.get("documentos") or []) + novos_docs
-            changed = True
-
-        # Timeline: eventos oficiais ainda não registrados (dedupe por data+tipo+id)
-        tl_chaves = {(t.get("data"), norm(t.get("evento", ""))[:60], t.get("id_atividade"))
-                     for t in p.get("timeline", [])}
-        novos_eventos = []
-        for ev in eventos:
-            chave = (ev.get("data"), norm(label_evento(ev.get("tipo")))[:60],
-                     ev.get("activity_id"))
-            if chave in tl_chaves:
-                continue
-            tl_chaves.add(chave)
-            novos_eventos.append(ev)
-        if novos_eventos:
-            for ev in novos_eventos:
-                p.setdefault("timeline", []).append({
-                    "data": ev.get("data"),
-                    "evento": (label_evento(ev.get("tipo")).capitalize()
-                               + (f" (fase {ev.get('fase')})" if ev.get("fase") else "")),
-                    "fonte": fonte_ficha,
-                    "id_atividade": ev.get("activity_id"),
-                })
-            p["timeline"] = sorted(
-                p.get("timeline", []),
-                key=lambda t: (t.get("data") or "9999-99-99", t.get("id_atividade") or ""))
-            changed = True
-
-        # Último evento → mudança + situação + última movimentação
-        if eventos:
-            ultimo = eventos[-1]
-            udate = ultimo.get("data")
-            utipo = label_evento(ultimo.get("tipo"))
-            udato_doc = next((doceo_url(d) for d in ultimo.get("docs", [])
-                              if doceo_url(d)), fonte_ficha)
-            api["ultimo_evento"] = {"data": udate, "tipo": ultimo.get("tipo"),
-                                    "fase": ultimo.get("fase"),
-                                    "activity_id": ultimo.get("activity_id")}
+        # Última movimentação via tramitações
+        trams = camara_tramitacoes(pid)
+        if trams:
+            self._add_fonte(FONTES_CAMARA[1])
+            last = trams[-1]
+            last_date = date_only(last.get("dataHora"))
+            last_text = (last.get("despacho") or last.get("descricaoTramitacao") or "").strip()
+            last_sigla = last.get("siglaOrgao")
+            api["ultima_tramitacao"] = {
+                "data": last_date, "orgao": last_sigla,
+                "tramitacao": last.get("descricaoTramitacao"), "despacho": last_text,
+                "sequencia": last.get("sequencia"),
+            }
             stored = p.get("ultima_movimentacao") or {}
-            mudou = (udate and
-                     (stored.get("data") != udate
-                      or norm(stored.get("descricao", ""))[:80] != norm(utipo)[:80]))
-            if mudou:
-                nova = udate > (last_run or "0000-00-00") if udate else False
-                self.add_change(
-                    data_evento=udate or self.today,
-                    titulo=(f"{p['tipo'] and (str(p.get('numero')) + '/' + str(p.get('ano'))) or ''}"
-                            f"{(' ' + p['tipo']) if p.get('tipo') else ''} procedimento "
-                            f"{api.get('label') or pid}: {utipo}"
-                            + ("" if nova else " (registro incorporado)")).strip(),
-                    descricao=(f"Em {udate}, ficha oficial do procedimento "
-                               f"({ficha.get('label') or pid}): {utipo}"
-                               + (f", fase {ultimo.get('fase')}" if ultimo.get("fase") else "")
-                               + ("" if nova else " — evento já constava na ficha oficial "
-                                  "antes desta execução e foi incorporado ao dataset agora.")),
-                    tipo=infer_change_type(utipo), proposicao=p["id"],
-                    fonte="Parlamento Europeu — Open Data Portal v2 (eventos do procedimento)",
-                    fonte_url=udato_doc, campo="ultima_movimentacao",
-                    anterior=f"{stored.get('data', '?')} — {(stored.get('descricao') or '')[:200]}",
-                    novo=f"{udate} — {utipo}")
-                p["ultima_movimentacao"] = {"data": udate, "descricao": utipo}
-                nova_sit = situacao_from_evento(ultimo)
-                if nova_sit and nova_sit != p.get("situacao"):
-                    if p.get("situacao"):
-                        self.add_change(
-                            data_evento=udate or self.today,
-                            titulo=f"{api.get('label') or pid}: situação atualizada",
-                            descricao=f"Situação passou de “{(p.get('situacao') or '')[:200]}” "
-                                      f"para “{nova_sit[:200]}”.",
-                            tipo=infer_change_type(utipo), proposicao=p["id"],
-                            fonte="Parlamento Europeu — Open Data Portal v2 (eventos do procedimento)",
-                            fonte_url=udato_doc, campo="situacao",
-                            anterior=p.get("situacao"), novo=nova_sit)
-                    p["situacao"] = nova_sit
-                # documentos novos citados na própria mudança
-                if novos_docs:
+            if last_date and (stored.get("data") != last_date or
+                              norm(stored.get("descricao", ""))[:80] != norm(last_text)[:80]):
+                if stored.get("data") and last_date < stored.get("data"):
+                    # Ficha da Câmara está atrás do registro curado (ex.: evento de outra
+                    # Casa). Não regride o dataset; apenas mantém o snapshot da API.
+                    pass
+                else:
+                    self._record_movimentacao(p, last, last_date, last_text, last_sigla,
+                                              stored, ficha_url, last_run)
+                    changed = True
+                    # Detecta apensações novas dentro do pacote (para proposições principais)
+                    self._detect_apensacoes(trams, p, ficha_url, last_run)
+
+        # Proposição principal (apensação) — dado objetivo da API
+        principal_nome = self._resolve_principal(detail, p)
+        if principal_nome:
+            api["proposicao_principal_api"] = principal_nome
+            if p.get("proposicao_principal") != principal_nome["id_dataset"]:
+                anterior = p.get("proposicao_principal")
+                p["proposicao_principal"] = principal_nome["id_dataset"]
+                if anterior:  # só registra se houve troca real (não preenchimento)
                     self.add_change(
-                        data_evento=udate or self.today,
-                        titulo=f"{api.get('label') or pid}: novo documento oficial "
-                               f"({novos_docs[0]['titulo']})",
-                        descricao=("Documento referenciado pela ficha oficial do "
-                                   "procedimento: " + "; ".join(d["id_doc"] or ""
-                                                                for d in novos_docs[:4])),
-                        tipo="documento", proposicao=p["id"],
-                        fonte="Parlamento Europeu — Open Data Portal v2 (eventos do procedimento)",
-                        fonte_url=fonte_ficha)
+                        data_evento=self.today,
+                        titulo=f"{p['tipo']} {p['numero']}/{p['ano']}: proposição principal alterada",
+                        descricao=f"Principal passou de {anterior} para {principal_nome['id_dataset']}.",
+                        tipo="apensação", proposicao=p["id"],
+                        fonte="Câmara dos Deputados — API de Dados Abertos",
+                        fonte_url=ficha_url, campo="proposicao_principal",
+                        anterior=anterior, novo=principal_nome["id_dataset"])
+                changed = True
+
+        # Relator (via uriUltimoRelator → ficha do deputado)
+        relator_uri = st.get("uriUltimoRelator")
+        if relator_uri:
+            dep = camara_deputado(relator_uri)
+            if dep:
+                self._add_fonte(FONTES_CAMARA[4])
+                ultimo = dep.get("ultimoStatus") or {}
+                nome = ultimo.get("nome") or dep.get("nomeCivil", "").title()
+                partido = ultimo.get("siglaPartido")
+                uf = ultimo.get("siglaUf")
+                api["relator_api"] = {"nome": nome, "partido": partido, "estado": uf}
+                stored_rel = p.get("relator") or {}
+                if nome and norm(stored_rel.get("nome", "")) not in ("", norm(nome)) \
+                        and norm(nome) not in norm(stored_rel.get("nome", "")) \
+                        and norm(stored_rel.get("nome", "")) not in norm(nome):
+                    self.add_change(
+                        data_evento=date_only(st.get("dataHora")) or self.today,
+                        titulo=f"{p['tipo']} {p['numero']}/{p['ano']}: relator alterado",
+                        descricao=f"Relatoria passou de “{stored_rel.get('nome', '—')}” para "
+                                  f"“{nome} ({partido}-{uf})”.",
+                        tipo="relatoria", proposicao=p["id"],
+                        fonte="Câmara dos Deputados — API de Dados Abertos",
+                        fonte_url=ficha_url, campo="relator",
+                        anterior=stored_rel.get("nome"), novo=nome)
+                    p["relator"] = {"nome": f"Deputado {nome}" if not norm(nome).startswith("deputad") else nome,
+                                    "partido": partido, "estado": uf}
+                    changed = True
+
+        # Autores (completa quando ausente; não sobrescreve curadoria)
+        if not (p.get("autor") or {}).get("nome"):
+            autores = camara_autores(pid)
+            if autores:
+                self._add_fonte(FONTES_CAMARA[2])
+                a0 = autores[0]
+                if a0.get("tipo") == "Deputado" or "deputados/" in (a0.get("uri") or ""):
+                    dep = camara_deputado(a0.get("uri"))
+                    ultimo = (dep or {}).get("ultimoStatus", {}) if dep else {}
+                    p["autor"] = {"nome": ultimo.get("nome") or a0.get("nome"),
+                                  "partido": ultimo.get("siglaPartido"),
+                                  "estado": ultimo.get("siglaUf")}
+                else:
+                    p["autor"] = {"nome": a0.get("nome")}
+                changed = True
+
+        # Votações (melhor esforço)
+        try:
+            vots = camara_votacoes(pid)
+        except Exception:  # noqa: BLE001
+            vots = []
+        if vots:
+            self._add_fonte(FONTES_CAMARA[3])
+            api["votacoes_total"] = len(vots)
+            novas = [v for v in vots if (v.get("data") or "") > (last_run or "0000-00-00")]
+            if novas:
+                v = sorted(novas, key=lambda x: x.get("data", ""))[-1]
+                api["ultima_votacao"] = {"data": v.get("data"), "descricao": v.get("descricao")}
+                self.add_change(
+                    data_evento=v.get("data") or self.today,
+                    titulo=f"{p['tipo']} {p['numero']}/{p['ano']}: votação registrada",
+                    descricao=f"{v.get('data')}: {v.get('descricao', '')[:400]}",
+                    tipo="votação", proposicao=p["id"],
+                    fonte="Câmara dos Deputados — API de Dados Abertos (votações)",
+                    fonte_url=v.get("uri") or ficha_url, campo="votacoes",
+                    anterior=None, novo=v.get("descricao", "")[:200])
                 changed = True
         if changed:
             self._bump("updated")
         return True
 
-    # ------------------------------------------------------- descoberta
-    def discover_procedures(self, known_refs, last_run):
-        """Descobre procedimentos novos nas fontes oficiais.
+    def _record_movimentacao(self, p, last, last_date, last_text, last_sigla, stored,
+                             ficha_url, last_run):
+        tram_nome = last.get("descricaoTramitacao") or "nova movimentação"
+        mesma_data = stored.get("data") == last_date
+        if mesma_data:
+            # Mesma data, redação diferente: alinhamento de texto à ficha oficial
+            ctype = "atualização cadastral"
+            titulo = (f"{p['tipo']} {p['numero']}/{p['ano']}: {tram_nome} "
+                      f"(alinhamento de texto à ficha oficial)")
+            desc = (f"Redação da movimentação de {last_date} alinhada ao texto oficial: "
+                    f"{last_text[:400]}")
+        else:
+            # Nova movimentação (ou correção de registro anterior)
+            ctype = infer_change_type(f"{tram_nome} {last_text}")
+            nova = (last_date > (last_run or "0000-00-00")) if last_date else False
+            titulo = (f"{p['tipo']} {p['numero']}/{p['ano']}: {tram_nome}"
+                      + ("" if nova else " (registro incorporado)"))
+            desc = f"Em {last_date}, {last_sigla or 'ficha oficial'}: {last_text[:400]}"
+            if not nova:
+                desc += (" Movimentação já constava na ficha oficial antes desta execução "
+                         "e foi incorporada ao dataset agora.")
+        self.add_change(
+            data_evento=last_date or self.today, titulo=titulo, descricao=desc,
+            tipo=ctype, proposicao=p["id"],
+            fonte="Câmara dos Deputados — ficha de tramitação (API)",
+            fonte_url=ficha_url, campo="ultima_movimentacao",
+            anterior=f"{stored.get('data', '?')} — {(stored.get('descricao') or '')[:200]}",
+            novo=f"{last_date} — {last_text[:200]}")
+        p["ultima_movimentacao"] = {"data": last_date, "descricao": last_text[:800]}
+        # Situação: reflete o despacho mais recente quando ele indica estado novo
+        new_sit = self._situacao_from_tram(last, p)
+        if new_sit and new_sit != p.get("situacao"):
+            self.add_change(
+                data_evento=last_date or self.today,
+                titulo=f"{p['tipo']} {p['numero']}/{p['ano']}: situação atualizada",
+                descricao=f"Situação passou de “{(p.get('situacao') or '')[:200]}” para "
+                          f"“{new_sit[:200]}”.",
+                tipo=ctype, proposicao=p["id"],
+                fonte="Câmara dos Deputados — ficha de tramitação (API)",
+                fonte_url=ficha_url, campo="situacao",
+                anterior=p.get("situacao"), novo=new_sit)
+            p["situacao"] = new_sit
 
-        Estratégia (ordem de preferência das vias oficiais):
-          1) EUR-Lex — busca por tema nos anos corrente/anterior; quando o
-             resultado cita o número do arquivo interinstitucional, é
-             evidência objetiva de um procedimento (legislativo ou não).
-          2) Legislative Train — fichas do tema digital; cada ficha cita o
-             arquivo interinstitucional do dossiê.
-        Devolve [(ref, rel, via, titulo_hint)].
+    def _situacao_from_tram(self, last, p):
+        """Deriva texto de situação a partir da última tramitação.
+
+        Preserva o prefixo curado de apensação quando a proposição segue
+        apensada; caso contrário reflete despacho + órgão da ficha oficial.
+        """
+        stored = p.get("situacao") or ""
+        tram = (last.get("descricaoTramitacao") or "").strip()
+        desp = (last.get("despacho") or "").strip()
+        org = (last.get("siglaOrgao") or "").strip()
+        t = norm(f"{tram} {desp}")
+        s = norm(stored)
+        if "desarquiv" in t:
+            return f"Desarquivada — {tram} ({org}): {desp[:220]}".strip()
+        terminal = any(k in s for k in ("arquivad", "prejudicad", "transformada em norma",
+                                        "convertida em norma", "promulgad"))
+        if terminal:
+            # Estado terminal curado: despacho burocrático não o degrada.
+            return stored
+        if "apens" in t and "desapens" not in t:
+            # mantém contexto curado; a apensação em si gera change próprio
+            return stored
+        if "desapens" in t:
+            # Re-apensação ("desapense-se de X e apense-se a Y")? extrai o destino.
+            m = re.search(r"apense-se\s+[aà](?:\(ao\))?\s*([A-Z]{2,4})\s*(\d{1,5})/(\d{4})",
+                          desp, re.IGNORECASE)
+            if m:
+                target = f"{m.group(1).upper()} {m.group(2)}/{m.group(3)}"
+                if target.lower() in s:
+                    return stored  # destino igual ao curado: sem mudança de estado
+                return f"Apensado ao {target} (despacho de {date_only(last.get('dataHora')) or 'correção'})"
+            return f"Desapensada — {tram} ({org}): {desp[:220]}".strip()
+        if "sancao" in s and "sancao" in t:
+            return stored  # segue aguardando sanção: sem mudança de estado
+        if any(k in t for k in ("sancion", "transformada em norma", "convertida")):
+            return f"Convertida em norma — {tram}: {desp[:220]}".strip()
+        if "sancao" in t:
+            return "Aguarda sanção presidencial"
+        if any(k in t for k in ("parecer", "votac", "aprovad", "rejeitad", "pauta",
+                                "ordem do dia", "redacao final")):
+            # mudança de estado relevante: reflete a ficha oficial
+            return f"{tram} ({org}): {desp[:220]}".strip()
+        # Movimentações burocráticas (publicação, recebimento, juntada etc.) não
+        # alteram o estado: preserva a situação curada.
+        return stored
+
+    def _detect_apensacoes(self, trams, p, ficha_url, last_run):
+        """Registra apensações novas ocorridas no pacote da proposição principal."""
+        if not trams or not last_run:
+            return
+        for t in trams:
+            d = date_only(t.get("dataHora"))
+            if not d or d <= last_run:
+                continue
+            txt = f"{t.get('descricaoTramitacao', '')} {t.get('despacho', '')}"
+            if "apens" in norm(txt) and "desapens" not in norm(txt):
+                pls = re.findall(r"PL\s*(\d{1,5})/(\d{4})", txt)
+                detalhe = "; ".join(f"PL {n}/{a}" for n, a in pls[:4]) or txt[:160]
+                self.add_change(
+                    data_evento=d,
+                    titulo=f"{p['tipo']} {p['numero']}/{p['ano']}: nova apensação no pacote ({detalhe})",
+                    descricao=f"Em {d}: {txt.strip()[:450]}",
+                    tipo="apensação", proposicao=p["id"],
+                    fonte="Câmara dos Deputados — ficha de tramitação (API)",
+                    fonte_url=ficha_url)
+
+    def _resolve_principal(self, detail, p):
+        """Resolve a proposição principal canônica (para apensadas)."""
+        uri = detail.get("uriPropPrincipal")
+        if not uri:
+            return None
+        m = re.search(r"/proposicoes/(\d+)", uri)
+        if not m:
+            return None
+        princ_id = int(m.group(1))
+        if princ_id == detail.get("id"):
+            return None  # é a principal
+        princ = camara_detail(princ_id)
+        if not princ:
+            return None
+        sigla = (princ.get("siglaTipo") or "").lower()
+        ds_id = f"camara_{sigla}_{princ.get('numero')}_{princ.get('ano')}"
+        return {"id_dataset": ds_id,
+                "rotulo": f"{princ.get('siglaTipo')} {princ.get('numero')}/{princ.get('ano')}",
+                "id_camara": princ_id}
+
+    # --------------------------------------------------- proposições Senado
+    def update_senado_refs(self, p, last_run):
+        codes = senado_codes_from_prop(p)
+        if not codes:
+            # tenta localizar pelo Senado (útil p/ casa_origem = Senado Federal)
+            if p.get("casa_origem") == "Senado Federal" or p["id"].startswith("senado_"):
+                found = senado_search(sigla=p["tipo"], numero=str(p["numero"]), ano=str(p["ano"]))
+                for m in found:
+                    if (m.get("Sigla") == p["tipo"]
+                            and str(m.get("Numero")).lstrip("0") == str(p["numero"])
+                            and str(m.get("Ano")) == str(p["ano"])):
+                        codes = [m.get("Codigo")]
+                        break
+        if not codes:
+            return False
+        changed = False
+        for code in codes[:2]:
+            det = senado_detail(code)
+            mov = senado_movimentacoes(code)
+            if not det and not mov:
+                continue
+            self._add_fontes(FONTES_SENADO[:2])
+            self._marca_verificada(p["id"])
+            api = p.setdefault("api_senado", {})
+            ficha = f"https://www25.senado.leg.br/web/atividade/materias/-/materia/{code}"
+            if det:
+                dados = det.get("DadosBasicosMateria", {}) or {}
+                ident = det.get("IdentificacaoMateria", {}) or {}
+                dec = (det.get("DecisaoEDestino") or {}).get("Decisao", {}) or {}
+                api.update({
+                    "codigo_materia": code, "verificado_em": self.run_iso,
+                    "tramitando": ident.get("IndicadorTramitando"),
+                    "ementa_api": dados.get("EmentaMateria"),
+                    "apelido": dados.get("ApelidoMateria"),
+                    "autor_api": dados.get("Autor"),
+                    "decisao": dec.get("Descricao"), "decisao_data": dec.get("Data"),
+                })
+            if mov:
+                try:
+                    aut = mov["Autuacoes"]["Autuacao"][0]
+                    sit = as_list((aut.get("SituacoesAtuais") or {}).get("SituacaoAtual"))[0]
+                    infs = as_list((aut.get("InformesLegislativos") or {}).get("InformeLegislativo"))
+                except (KeyError, IndexError):
+                    continue
+                api["situacao_senado"] = {
+                    "data": sit.get("DataSituacao"),
+                    "sigla": sit.get("SiglaSituacao"),
+                    "descricao": sit.get("DescricaoSituacao"),
+                }
+                if infs:
+                    first = infs[0]  # API retorna em ordem descendente (mais recente primeiro)
+                    fdate = date_only((first.get("Data") or "").replace(" ", "T")
+                                      if re.match(r"\d{4}-\d{2}-\d{2}", first.get("Data") or "")
+                                      else None)
+                    # Data vem como "2025-03-17 15:53:41"
+                    mdate = re.match(r"(\d{4}-\d{2}-\d{2})", first.get("Data") or "")
+                    fdate = mdate.group(1) if mdate else None
+                    fdesc = (first.get("Descricao") or "").strip()
+                    api["ultimo_informe_senado"] = {"data": fdate, "descricao": fdesc[:500]}
+                    prev = p.get("api_senado", {}).get("ultimo_informe_senado", {})
+                    if fdate and (prev.get("data") != fdate
+                                  or norm(prev.get("descricao", ""))[:80] != norm(fdesc)[:80]):
+                        if prev.get("data"):  # só registra se já havia snapshot anterior
+                            ctype = infer_change_type(fdesc)
+                            self.add_change(
+                                data_evento=fdate, titulo=f"{p['tipo']} {p['numero']}/{p['ano']}: movimentação no Senado",
+                                descricao=f"Em {fdate}: {fdesc[:450]}",
+                                tipo=ctype, proposicao=p["id"],
+                                fonte="Senado Federal — API de Dados Abertos (movimentações)",
+                                fonte_url=ficha, campo="senado_movimentacao",
+                                anterior=f"{prev.get('data', '?')} — {(prev.get('descricao') or '')[:200]}",
+                                novo=f"{fdate} — {fdesc[:200]}")
+                            changed = True
+            rel = senado_relatorias(code)
+            if rel:
+                self._add_fonte(FONTES_SENADO[2])
+                atual = rel.get("RelatoriaAtual")
+                if atual:
+                    parl = (atual.get("IdentificacaoParlamentar") or {})
+                    rinfo = {"nome": parl.get("NomeParlamentar"),
+                             "partido": parl.get("SiglaPartidoParlamentar"),
+                             "estado": parl.get("UfParlamentar")}
+                    api["relatoria_senado_atual"] = rinfo
+                    stored_rs = p.get("relator_senado") or {}
+                    if rinfo["nome"] and stored_rs.get("nome") \
+                            and norm(rinfo["nome"]) not in norm(stored_rs["nome"]) \
+                            and norm(stored_rs["nome"]) not in norm(rinfo["nome"]):
+                        self.add_change(
+                            data_evento=self.today,
+                            titulo=f"{p['tipo']} {p['numero']}/{p['ano']}: relator no Senado alterado",
+                            descricao=f"Relatoria no Senado passou de “{stored_rs.get('nome')}” para "
+                                      f"“{rinfo['nome']} ({rinfo['partido']}-{rinfo['estado']})”.",
+                            tipo="relatoria", proposicao=p["id"],
+                            fonte="Senado Federal — API de Dados Abertos (relatorias)",
+                            fonte_url=ficha, campo="relator_senado",
+                            anterior=stored_rs.get("nome"), novo=rinfo["nome"])
+                        p["relator_senado"] = rinfo
+                        changed = True
+        if changed:
+            self._bump("updated")
+        return True
+
+    # ------------------------------------------------- descoberta: Câmara
+    def discover_camara(self, known_keys, last_run):
+        """Descobre proposições novas na Câmara.
+
+        `last_run` é uma data ISO (YYYY-MM-DD). Antes era passado o timestamp
+        completo da execução anterior (com hora e fuso), que é inválido para o
+        parâmetro `dataApresentacaoInicio` da API — a paginação vinha sem filtro
+        e a descoberta varria o banco inteiro em toda execução (uma das causas
+        do estouro de tempo do job).
         """
         found = []
-        refs = set(known_refs)
-
-        def _add(ref, rel, via, titulo_hint=None):
-            if not ref:
-                return
-            ref = ref.upper()
-            if ref in refs:
-                return
-            refs.add(ref)
-            found.append((ref, rel, via, titulo_hint))
-
-        # 1) EUR-Lex (temas × anos, com teto de orçamento)
-        n_buscas = 0
-        ano_atual = self.now.year
-        for kw in KEYWORDS_DESCOBERTA[:5]:
-            if BUDGET.expirado(120):
-                break
-            for ano in (ano_atual, ano_atual - 1):
-                if BUDGET.expirado(120):
+        # 1) Incremental: tudo apresentado desde a última execução (1 dia de
+        #    sobreposição para não perder matérias apresentadas entre execuções).
+        if last_run:
+            inicio = (datetime.strptime(last_run, "%Y-%m-%d").date()
+                      - timedelta(days=1)).isoformat()
+            for page in range(1, 6):
+                if BUDGET.expirado():
                     break
-                hits = eurlex_busca(f'"{kw}"', ano=ano)[:25]
-                n_buscas += 1
-                for item in hits:
-                    if BUDGET.expirado(120):
-                        break
-                    texto = f"{item.get('titulo', '')} {item.get('descricao', '')}"
-                    rel = relevance(texto)
+                q = urllib.parse.urlencode({
+                    "dataApresentacaoInicio": inicio, "ordem": "DESC",
+                    "ordenarPor": "id", "itens": 100, "pagina": page})
+                d = http_get_json(f"{CAMARA}/proposicoes?{q}")
+                polite_pause()
+                if not d:
+                    break
+                items = d.get("dados", [])
+                if not items:
+                    break
+                for it in items:
+                    rel = relevance(it.get("ementa", ""))
                     if not rel:
                         continue
-                    m = RE_PROC_REF.search(texto)
-                    if not m:
+                    tipo = it.get("siglaTipo")
+                    if tipo not in TIPOS_INCLUIR and tipo not in TIPOS_REQUERIMENTO:
                         continue
-                    ref = f"{m.group(1)}/{m.group(2)}({m.group(3)})"
-                    _add(ref, rel, f"eurlex:{kw}:{ano}", item.get("titulo"))
-        if n_buscas:
-            # consultou a busca oficial (mesmo sem candidato inédito): conta
-            # como evidência de saúde da instituição — nunca subnotificar.
-            self._add_fonte(FONTES_EURLEX[1])
-
-        # 2) Legislative Train (fichas com referência interinstitucional)
-        n_train = 0
-        for theme_url in TRAIN_THEMES:
-            if BUDGET.expirado(120) or n_train >= TRAIN_MAX_PAGINAS:
-                break
-            for ficha in train_fichas(theme_url, limite=60):
-                if BUDGET.expirado(120) or n_train >= TRAIN_MAX_PAGINAS:
+                    key = ("camara", tipo, it.get("numero"), it.get("ano"))
+                    if key in known_keys:
+                        continue
+                    found.append((it, rel, "incremental"))
+                if len(items) < 100:
                     break
-                if not relevance(ficha.get("titulo", "")):
-                    continue
-                html = train_ficha_html(ficha["link"])
-                if not html:
-                    continue
-                n_train += 1
-                for m in RE_PROC_REF.finditer(html[:200000]):
-                    ref = f"{m.group(1)}/{m.group(2)}({m.group(3)})"
-                    _add(ref, "forte", f"train:{ficha.get('titulo', '')[:40]}",
-                         ficha.get("titulo"))
-        if n_train:
-            self._add_fonte(FONTES_PARLAMENTO[2])
+        # 2) Busca por palavras-chave (capta matérias antigas ainda não monitoradas)
+        for kw in ("inteligencia artificial", "deepfake", "reconhecimento facial",
+                   "conteudo sintetico", "decisao automatizada"):
+            for page in range(1, 4):
+                if BUDGET.expirado():
+                    break
+                q = urllib.parse.urlencode({"keywords": kw, "ordem": "DESC",
+                                            "ordenarPor": "id", "itens": 100, "pagina": page})
+                d = http_get_json(f"{CAMARA}/proposicoes?{q}")
+                polite_pause()
+                if not d:
+                    break
+                items = d.get("dados", [])
+                if not items:
+                    break
+                for it in items:
+                    # filtro anti-falso-positivo: a ementa precisa mencionar o tema
+                    rel = relevance(it.get("ementa", ""))
+                    if not rel:
+                        continue
+                    tipo = it.get("siglaTipo")
+                    if tipo not in TIPOS_INCLUIR and tipo not in TIPOS_REQUERIMENTO:
+                        continue
+                    key = ("camara", tipo, it.get("numero"), it.get("ano"))
+                    if key in known_keys or any(f[0].get("id") == it.get("id") for f in found):
+                        continue
+                    found.append((it, rel, f"keywords:{kw}"))
+                if len(items) < 100:
+                    break
+        if found:
+            self._add_fonte("API de Dados Abertos da Câmara dos Deputados — descoberta (keywords + incremental)")
         return found
 
-    def build_new_procedure_record(self, cand):
-        """Ficha completa do procedimento novo a partir da fonte oficial.
-
-        cand = (ref, rel, via, titulo_hint). A ficha vem da API v2 do
-        Parlamento; o título oficial vem da ficha ou, em último caso, do
-        EUR-Lex (busca pela referência). Nunca do nada.
-        """
-        ref, rel, via, titulo_hint = cand
-        pid = process_id_de_ref(ref)
-        label = RE_PROC_REF.search(ref).group(3).upper() if RE_PROC_REF.search(ref) else ""
-        ficha = ep_ficha(pid) if pid else None
-        fonte_ficha = f"{EP_API}/procedures/{pid}?format={JSONLD}" if pid else None
-        eventos = (ficha or {}).get("eventos", []) or []
-
-        # Título oficial: ficha do Parlamento → EUR-Lex (busca pela referência)
-        titulo = (ficha or {}).get("tema") or ""
-        if not titulo or len(titulo) < 12 or titulo.startswith("European Parliament procedure"):
-            titulo = None
-            if not BUDGET.expirado(120):
-                hits = eurlex_busca(ref, pagina=1)
-                for h in hits:
-                    if h.get("titulo") and len(h["titulo"]) > 12:
-                        titulo = h["titulo"][:300]
-                        break
-        sem_titulo = not titulo
-
-        tipo = label or "COD"
-        mref = RE_PROC_REF.search(ref)
-        ano = int(mref.group(1)) if mref else None
-        numero = int(mref.group(2)) if mref else None
-        origem = ("Comissão Europeia" if tipo in (TIPOS_LEGISLATIVOS | {"REG", "DEC", "BUA"})
-                  else "Parlamento Europeu")
-
-        url_oficial = fonte_ficha or ""
-        docs = [{"titulo": "Ficha do procedimento — Open Data Portal do Parlamento",
-                 "url": url_oficial}]
-        vistos = {url_oficial}
-        for ev in eventos:
-            for doc_id in ev.get("docs", []):
-                u = doceo_url(doc_id)
-                if u and u not in vistos:
-                    vistos.add(u)
-                    docs.append({
-                        "titulo": "Texto adotado pelo Plenário" if doc_id.startswith("TA")
-                        else "Relatório da comissão" if doc_id.startswith("A-")
-                        else "Documento oficial do procedimento",
-                        "url": u})
-        timeline = []
-        ultima = None
-        for ev in eventos:
-            ev_label = label_evento(ev.get("tipo")).capitalize()
-            if ev.get("fase"):
-                ev_label += f" (fase {ev['fase']})"
-            timeline.append({"data": ev.get("data"), "evento": ev_label,
-                             "fonte": fonte_ficha,
-                             "id_atividade": ev.get("activity_id")})
-            ultima = ev
-        timeline = sorted(timeline, key=lambda t: (t.get("data") or "9999-99-99",
-                                                   t.get("id_atividade") or ""))
-        situacao = situacao_from_evento(ultima) if ultima else (
-            "Situação não confirmada nesta execução — ver ficha oficial")
-        ds_id = dataset_id_de_proc_ref(ref)
+    def build_new_camara_record(self, item, rel, via):
+        pid = item.get("id")
+        detail = camara_detail(pid) or {}
+        st = detail.get("statusProposicao") or {}
+        trams = camara_tramitacoes(pid)
+        last = trams[-1] if trams else {}
+        last_date = date_only(last.get("dataHora")) or date_only(item.get("dataApresentacao"))
+        last_text = ((last.get("despacho") or last.get("descricaoTramitacao") or "").strip()
+                     or "Apresentação da proposição.")
+        ementa = detail.get("ementa") or item.get("ementa", "")
+        ficha = f"https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao={pid}"
+        detalhe_ok = bool(detail)
+        tipo = item.get("siglaTipo")
+        numero = item.get("numero")
+        ano = item.get("ano")
+        # Autor (melhor esforço; ausente se não confirmado)
+        autor = {}
+        autores = camara_autores(pid)
+        if autores:
+            a0 = autores[0]
+            if "deputados/" in (a0.get("uri") or ""):
+                dep = camara_deputado(a0.get("uri")) or {}
+                ult = dep.get("ultimoStatus", {}) or {}
+                autor = {"nome": ult.get("nome") or a0.get("nome"),
+                         "partido": ult.get("siglaPartido"), "estado": ult.get("siglaUf")}
+            else:
+                autor = {"nome": a0.get("nome")}
+        titulo = (detail.get("ementa") or item.get("ementa", ""))[:140]
+        cats = infer_categories(ementa, titulo)
         rec = {
-            "id": ds_id,
-            "tipo": tipo,
-            "numero": numero,
-            "ano": ano,
-            "titulo": (titulo or f"Procedimento {ref}")[:300],
-            "ementa": (titulo or f"Procedimento interinstitucional {ref} "
-                       f"({TIPO_PROC_PT.get(tipo, tipo)}). "
-                       "Descrição oficial pendente de confirmação.")[:1200],
-            "casa_origem": origem,
-            "casa_atual": "Parlamento Europeu",
-            "url_oficial": url_oficial,
-            "autor": ({"nome": "Comissão Europeia"} if origem == "Comissão Europeia"
-                      else {"nome": "Parlamento Europeu"}),
-            "data_apresentacao": (eventos[0].get("data") if eventos else None),
-            "situacao": situacao,
-            "ultima_movimentacao": ({"data": ultima.get("data"),
-                                     "descricao": label_evento(ultima.get("tipo"))}
-                                    if ultima else {"data": None,
-                                                    "descricao": "Sem eventos na ficha"}),
-            "resumo": (titulo or f"Procedimento {ref}")[:400],
-            "categorias": infer_categories(titulo or ""),
-            "impacto": {},
-            "documentos": docs,
-            "timeline": timeline,
+            "id": f"camara_{tipo.lower()}_{numero}_{ano}",
+            "tipo": tipo, "numero": numero, "ano": ano,
+            "titulo": titulo, "ementa": ementa,
+            "casa_origem": "Câmara dos Deputados",
+            "casa_atual": "Câmara dos Deputados",
+            "url_oficial": ficha,
+            "autor": autor,
+            "data_apresentacao": date_only(item.get("dataApresentacao")),
+            "situacao": ((f"{st.get('descricaoSituacao') or st.get('descricaoTramitacao') or 'Em tramitação'}"
+                          + (f" — {(st.get('despacho') or '')[:200]}" if st.get("despacho") else ""))
+                         if detalhe_ok else
+                         "Situação não confirmada nesta execução — ver ficha oficial"),
+            "regime_tramitacao": st.get("regime"),
+            "forma_apreciacao": st.get("apreciacao"),
+            "ultima_movimentacao": {"data": last_date, "descricao": last_text[:800]},
+            "resumo": ementa,
+            "categorias": cats,
+            "impacto": {},  # preenchido abaixo
+            "documentos": [
+                {"titulo": "Ficha de tramitação na Câmara", "url": ficha},
+            ] + ([{"titulo": "Inteiro teor", "url": detail.get("urlInteiroTeor")}]
+                 if detail.get("urlInteiroTeor") else []),
+            "timeline": [{"data": date_only(item.get("dataApresentacao")),
+                          "evento": f"Apresentação do {tipo} {numero}/{ano} na Câmara dos Deputados.",
+                          "fonte": ficha}],
             "origem": "descoberta_automatica",
-            "fonte_descoberta": via,
+            "fonte_descoberta": f"{CAMARA}/proposicoes ({via})",
             "revisao_pendente": True,
-            "api_ep": {
-                "process_id": pid,
-                "label": ref,
-                "process_type": tipo,
-                "verificado_em": self.run_iso,
-                "eventos_total": len(eventos),
-                "titulo_pendente": sem_titulo,
+            "api_camara": {
+                "id_proposicao": pid, "verificado_em": self.run_iso,
+                "status_datahora": st.get("dataHora"),
+                "descricao_situacao": st.get("descricaoSituacao"),
+                "descricao_tramitacao": st.get("descricaoTramitacao"),
+                "despacho": st.get("despacho"),
+                "sigla_orgao": st.get("siglaOrgao"),
+                "keywords": detail.get("keywords"),
             },
+        }
+        rec["impacto"] = compute_impact_score(rec)
+        return rec
+
+    # ------------------------------------------------- descoberta: Senado
+    def discover_senado(self, known_keys):
+        found = []
+        for kw in ("inteligencia artificial", "deepfake", "reconhecimento facial"):
+            if BUDGET.expirado():
+                break
+            for m in senado_search(palavra_chave=kw):
+                rel = relevance(f"{m.get('Ementa', '')} {m.get('DescricaoIdentificacao', '')}")
+                if not rel:
+                    continue
+                tipo = (m.get("Sigla") or "").upper()
+                if tipo not in TIPOS_INCLUIR and tipo not in TIPOS_REQUERIMENTO:
+                    continue
+                try:
+                    numero = int(str(m.get("Numero")).lstrip("0") or "0")
+                    ano = int(str(m.get("Ano")))
+                except (TypeError, ValueError):
+                    continue
+                key = ("senado", tipo, numero, ano)
+                if key in known_keys or any(f.get("Codigo") == m.get("Codigo") for f in found):
+                    continue
+                m["_relevancia"] = rel
+                found.append(m)
+        if found:
+            self._add_fonte("API de Dados Abertos do Senado Federal — descoberta (palavra-chave)")
+        return found
+
+    def build_new_senado_record(self, m):
+        code = m.get("Codigo")
+        det = senado_detail(code) or {}
+        dados = det.get("DadosBasicosMateria", {}) or {}
+        ident = det.get("IdentificacaoMateria", {}) or {}
+        tipo = (m.get("Sigla") or ident.get("SiglaSubtipoMateria") or "").upper()
+        numero = int(str(m.get("Numero")).lstrip("0") or "0")
+        ano = int(str(m.get("Ano")))
+        ficha = f"https://www25.senado.leg.br/web/atividade/materias/-/materia/{code}"
+        ementa = dados.get("EmentaMateria") or m.get("Ementa", "")
+        # Situação atual via movimentações
+        situacao = ("Em tramitação no Senado Federal" if (det or mov)
+                    else "Situação não confirmada nesta execução — ver ficha oficial")
+        last_date = dados.get("DataApresentacao")
+        last_desc = "Apresentação da matéria."
+        mov = senado_movimentacoes(code)
+        try:
+            aut = mov["Autuacoes"]["Autuacao"][0]
+            sit = as_list((aut.get("SituacoesAtuais") or {}).get("SituacaoAtual"))[0]
+            situacao = sit.get("DescricaoSituacao") or situacao
+            infs = as_list((aut.get("InformesLegislativos") or {}).get("InformeLegislativo"))
+            if infs:
+                md = re.match(r"(\d{4}-\d{2}-\d{2})", infs[0].get("Data") or "")
+                if md:
+                    last_date = md.group(1)
+                last_desc = (infs[0].get("Descricao") or last_desc).strip()[:800]
+        except (TypeError, KeyError, IndexError):
+            pass
+        titulo = (dados.get("ApelidoMateria") or "") or ementa[:140]
+        cats = infer_categories(ementa, titulo)
+        rec = {
+            "id": f"senado_{tipo.lower()}_{numero}_{ano}",
+            "tipo": tipo, "numero": numero, "ano": ano,
+            "titulo": titulo, "ementa": ementa,
+            "casa_origem": "Senado Federal",
+            "casa_atual": "Senado Federal",
+            "url_oficial": ficha,
+            "autor": {"nome": dados.get("Autor") or m.get("Autor", "")},
+            "data_apresentacao": date_only(dados.get("DataApresentacao")),
+            "situacao": situacao[:400],
+            "ultima_movimentacao": {"data": last_date, "descricao": last_desc},
+            "resumo": ementa,
+            "categorias": cats,
+            "impacto": {},
+            "documentos": [{"titulo": "Matéria no Senado Federal", "url": ficha}],
+            "timeline": [{"data": date_only(dados.get("DataApresentacao")),
+                          "evento": f"Apresentação do {tipo} {numero}/{ano} no Senado Federal.",
+                          "fonte": ficha}],
+            "origem": "descoberta_automatica",
+            "fonte_descoberta": f"{SENADO}/materia/pesquisa/lista (palavra-chave)",
+            "revisao_pendente": True,
+            "api_senado": {"codigo_materia": code, "verificado_em": self.run_iso,
+                           "tramitando": ident.get("IndicadorTramitando")},
         }
         rec["impacto"] = compute_impact_score(rec)
         return rec
 
     # ------------------------------------------------------------- eventos
     def update_events(self, events):
-        """Agenda futura oficial: consultas da Comissão (Have Your Say).
-
-        Os endpoints de reuniões do Parlamento na API v2 retornam corpo vazio
-        (limitação documentada); o período de feedback oficial das consultas
-        é a agenda futura verificável disponível.
-        """
+        inicio = self.today
+        fim = (self.now + timedelta(days=60)).date().isoformat()
         found = []
-        for pagina in (1, 2):
-            if BUDGET.expirado(60):
+        for page in range(1, 4):
+            if BUDGET.expirado():
                 break
-            found.extend(hys_listagem(pagina))
-        futuros = []
-        for it in found:
-            fim = it.get("data")
-            if not fim or fim <= self.today:
-                continue
-            texto = f"{it.get('titulo', '')} {it.get('descricao', '')}"
-            if relevance(texto):
-                futuros.append(it)
-        self._add_fonte(FONTES_HYS[0])
+            q = urllib.parse.urlencode({"dataInicio": inicio, "dataFim": fim,
+                                        "itens": 100, "pagina": page})
+            d = http_get_json(f"{CAMARA}/eventos?{q}")
+            polite_pause()
+            if not d:
+                break
+            items = d.get("dados", [])
+            if not items:
+                break
+            for ev in items:
+                texto = f"{ev.get('descricao', '')} {ev.get('descricaoTipo', '')}"
+                orgaos = " ".join(o.get("apelido", "") or o.get("nome", "") for o in ev.get("orgaos", []))
+                if relevance(texto + " " + orgaos):
+                    found.append(ev)
+            if len(items) < 100:
+                break
+        self._add_fonte(FONTES_CAMARA[5])
         existing_ids = {e.get("id") for e in events.get("eventos", [])}
         added = 0
-        for it in futuros:
-            eid = f"evt_hys_{it.get('consulta_id') or abs(hash(it.get('link', '')))}"
+        for ev in found:
+            eid = f"evt_auto_camara_{ev.get('id')}"
             if eid in existing_ids:
                 continue
-            delta = (datetime.strptime(it["data"], "%Y-%m-%d").date()
-                     - self.now.date()).days
-            janela = ("proximos_7_dias" if delta <= 7
-                      else "proximos_30_dias" if delta <= 30 else "sem_data_confirmada")
+            di = date_only(ev.get("dataHoraInicio"))
+            delta = (datetime.strptime(di, "%Y-%m-%d").date() - self.now.date()).days if di else 999
+            janela = "proximos_7_dias" if delta <= 7 else ("proximos_30_dias" if delta <= 30 else "sem_data_confirmada")
+            orgaos = ev.get("orgaos", []) or [{}]
             events["eventos"].append({
                 "id": eid,
-                "titulo": (it.get("titulo") or "Consulta pública")[:220],
-                "casa": "Comissão Europeia",
-                "tipo": (it.get("estagio") or "consulta pública"),
-                "data_inicio": (it.get("periodo_feedback") or "").split(" → ")[0] or None,
-                "data_fim": it.get("data"),
-                "hora": None,
-                "local": "Have Your Say (online)",
-                "tema": (it.get("descricao") or "")[:500],
-                "relacao_ia": ("Consultas com período de feedback aberto, "
-                               "relacionadas a IA/dados por filtro temático "
-                               "(revisão pendente)."),
+                "titulo": (ev.get("descricaoTipo") or "Evento") + " — " + (ev.get("descricao") or "")[:120],
+                "casa": "Câmara dos Deputados",
+                "tipo": ev.get("descricaoTipo"),
+                "data_inicio": di,
+                "data_fim": date_only(ev.get("dataHoraFim")),
+                "hora": (ev.get("dataHoraInicio") or "")[11:16] or None,
+                "local": ((ev.get("localCamara") or {}).get("nome") or ev.get("localExterno") or "—"),
+                "tema": (ev.get("descricao") or "")[:500],
+                "relacao_ia": "Detectado automaticamente na agenda oficial (revisão pendente).",
                 "janela": janela,
-                "fonte_titulo": "Comissão Europeia — Have Your Say",
-                "fonte_url": it.get("link"),
+                "fonte_titulo": "API de Dados Abertos da Câmara — Eventos",
+                "fonte_url": ev.get("uri") or f"{CAMARA}/eventos/{ev.get('id')}",
                 "origem": "descoberta_automatica",
-                "verificacao": {
-                    "fonte_consultada": FONTES_HYS[0],
-                    "url": it.get("link"),
-                    "como_verificar": ("Página oficial da consulta no portal "
-                                       "Have Your Say lista o período de "
-                                       "feedback e o tipo de ato."),
-                    "data_verificacao": self.today,
-                },
             })
             added += 1
         events["verificacao"] = {
             "data": self.today,
             "fontes_consultadas": [{
-                "titulo": FONTES_HYS[0],
-                "url": HYS,
-            }],
-            "resultado": (f"{added} nova(s) consulta(s) futura(s) relacionada(s) a "
-                          f"IA/dados incorporada(s) à agenda; {len(futuros)} "
-                          f"consulta(s) com prazo futuro no período analisado."
-                          if futuros else
-                          "Nenhuma consulta futura relacionada a IA/dados no "
-                          "portal Have Your Say neste período."),
+                "titulo": "API de Dados Abertos da Câmara dos Deputados — Eventos",
+                "url": f"{CAMARA}/eventos?dataInicio={inicio}&dataFim={fim}"}],
+            "resultado": (f"{added} novo(s) evento(s) com menção a IA incorporado(s) à agenda; "
+                          f"{len(found)} evento(s) relevante(s) no período {inicio}–{fim}."
+                          if found else
+                          f"Nenhum evento dedicado à temática de IA na agenda oficial da Câmara para {inicio}–{fim}."),
         }
         return added
 
     # -------------------------------------------------------------- métricas
-    def _prioridade(self, p):
-        """Ordem de verificação: maior score primeiro; em empate, o mais antigo.
+    @staticmethod
+    def _ordinal(data_iso):
+        try:
+            return datetime.strptime(data_iso, "%Y-%m-%d").toordinal()
+        except (TypeError, ValueError):
+            return 0
 
-        Garante que, se o orçamento acabar, o que ficou de fora são os dossiês
-        de menor impacto — e que eles sejam os primeiros da execução seguinte.
+    def _prioridade(self, p):
+        """Ordem de verificação: maior score primeiro; em empate, a mais antiga.
+
+        Garante que, se o orçamento acabar, o que ficou de fora são as matérias
+        de menor impacto — e que elas sejam as primeiras da execução seguinte.
         """
         score = (p.get("impacto") or {}).get("score") or 0
         dias = -1
-        d = date_only((p.get("api_ep") or {}).get("verificado_em"))
-        if d:
-            dias = max(dias, (self.now.date() - datetime.strptime(d, "%Y-%m-%d").date()).days)
+        for marca in ((p.get("api_camara") or {}).get("verificado_em"),
+                      (p.get("api_senado") or {}).get("verificado_em")):
+            d = date_only(marca)
+            if d:
+                delta = (self.now.date() - datetime.strptime(d, "%Y-%m-%d").date()).days
+                dias = max(dias, delta)
         return (-score, -dias)
 
-    @staticmethod
-    def _prioridade_candidato(cand):
-        """Relevância temática > tipo legislativo > mais recente.
-
-        "Mais recente" = ano do arquivo interinstitucional e, em empate, o
-        número maior (uma fatia `ref[2:12]` quebrada como data ISO e virava
-        ordinal 0 para todos — recência deixava de desempatar).
-        """
-        ref, rel, _via, _hint = cand
+    @classmethod
+    def _prioridade_candidato(cls, cand):
+        """Relevância temática > tipo de proposição > mais recente."""
+        it, rel, _via = cand
         ordem_rel = {"forte": 0, "media": 1, "infra": 2}.get(rel, 3)
-        m = RE_PROC_REF.search(ref)
-        tipo = m.group(3).upper() if m else ""
-        legislativo = 0 if tipo in TIPOS_LEGISLATIVOS else 1
-        ano = int(m.group(1)) if m else 0
-        numero = int(m.group(2)) if m else 0
-        return (ordem_rel, legislativo, -ano, -numero)
+        tipo_ok = 0 if it.get("siglaTipo") in TIPOS_INCLUIR else 1
+        return (ordem_rel, tipo_ok, -cls._ordinal(date_only(it.get("dataApresentacao"))))
 
     def _snapshot_dataset(self, props_all, laws_f, ev_f, up_f):
         """Fotografia do banco ao fim da execução (série histórica do painel)."""
         por_situacao = {}
         for p in props_all:
             t = norm(p.get("situacao") or "")
-            if "publicado no jornal oficial" in t:
-                g = "publicado_jo"
-            elif "assinado" in t:
-                g = "assinado"
-            elif "negocia" in t or "trilogo" in t:
-                g = "negociacao"
-            elif "plenário" in t or "comissão" in t or "comiss" in t:
-                g = "em_avaliacao"
+            if any(k in t for k in ("arquivad", "prejudicad", "retirad")):
+                g = "arquivada"
+            elif "sancao" in t or "sanção" in t:
+                g = "a_sancao"
+            elif any(k in t for k in ("transformada em norma", "convertida em norma",
+                                      "convertida em lei", "promulgada", "sancionada")):
+                g = "aprovada_lei"
             else:
                 g = "em_tramitacao"
             por_situacao[g] = por_situacao.get(g, 0) + 1
@@ -1254,81 +1406,69 @@ class Collector:
         }
 
     @staticmethod
-    def _status_inst(verificadas, falhas):
-        """ok · parcial · falha por instituição a partir de evidência de consulta.
+    def _status_casa(verificadas, falhas):
+        """ok · parcial · falha por casa a partir de evidência de consulta.
 
-        Sem nenhuma ficha consultada, a instituição conta como **falha** —
-        nunca como monitorada.
+        A evidência primária é o nº de fichas efetivamente consultadas na casa
+        (contadas também quando vêm do cache da execução). Sem nenhuma ficha
+        consultada, a casa conta como **falha** — nunca como monitorada.
         """
         if not verificadas:
             return "falha"
         return "parcial" if falhas else "ok"
 
-    def _saude_instituicoes(self):
-        """Saúde das instituições do motor legislativo (estrutura das fontes)."""
+    def _saude_casas(self):
+        """Saúde de Câmara e Senado na mesma estrutura das fontes multiórgão."""
         stats = http_stats()
         por_ep = stats.get("por_endpoint") or {}
         saude = {}
-        for inst, host, rotulo, prefixo in (
-                ("parlamento", "data.europarl.europa.eu",
-                 "Parlamento Europeu — Open Data Portal v2 (motor legislativo)",
-                 "parlamento"),
-                ("eurlex_motor", "eur-lex.europa.eu",
-                 "EUR-Lex — busca oficial (motor legislativo)", "eurlex")):
+        for casa, base_url, rotulo in (
+                ("camara", CAMARA, "Câmara dos Deputados — API de Dados Abertos v2"),
+                ("senado", SENADO, "Senado Federal — API de Dados Abertos v7")):
             chamadas = sum(v.get("chamadas", 0) for k, v in por_ep.items()
-                           if k.startswith(prefixo))
+                           if k.startswith(casa))
             falhas = sum(v.get("falhas", 0) for k, v in por_ep.items()
-                         if k.startswith(prefixo))
-            if inst == "parlamento":
-                # dossiês distintos verificados via ficha da API v2
-                verificadas = self.verificadas_inst.get("parlamento", 0)
-            else:
-                # cada busca oficial executada é uma consulta ao EUR-Lex
-                verificadas = chamadas
-            erros_inst = [e for e in self.errors if e.startswith(inst)]
-            status_inst = self._status_inst(verificadas, falhas)
-            saude[inst] = {
+                         if k.startswith(casa))
+            verificadas = self.verificadas_casa.get(casa, 0)
+            erros_casa = [e for e in self.errors if e.startswith(f"{casa}_")]
+            status_casa = self._status_casa(verificadas, falhas)
+            saude[casa] = {
                 "nome": rotulo,
-                "status": status_inst,
+                "status": status_casa,
                 "ultima_tentativa": self.run_iso,
-                "ultima_execucao_ok": self.run_iso if status_inst == "ok" else None,
+                "ultima_execucao_ok": self.run_iso if status_casa == "ok" else None,
                 "itens_consultados": verificadas,
                 "novidades": len([p for p in self.new_props
-                                  if str(p.get("id", "")).startswith("ue_")])
-                if inst == "parlamento" else 0,
-                "erros": len(erros_inst),
+                                  if str(p.get("id", "")).startswith(casa + "_")]),
+                "erros": len(erros_casa),
                 "chamadas_http": chamadas,
                 "falhas_http": falhas,
-                "endpoints": [f"https://{host}/"],
-                "canais_ok": [f"{inst}:{k.split(':', 1)[-1]}" for k, v in por_ep.items()
-                              if k.startswith(prefixo) and v.get("chamadas")
+                "endpoints": [base_url],
+                "canais_ok": [f"{casa}:{k.split(':', 1)[-1]}" for k, v in por_ep.items()
+                              if k.startswith(casa) and v.get("chamadas")
                               and not v.get("falhas")][:6],
-                "canais_falhos": [f"{inst}:{k.split(':', 1)[-1]}" for k, v in por_ep.items()
-                                  if k.startswith(prefixo) and v.get("falhas")][:6],
-                "erro_detalhe": ("; ".join(erros_inst[:3]) or None) if falhas else None,
+                "canais_falhos": [f"{casa}:{k.split(':', 1)[-1]}" for k, v in por_ep.items()
+                                  if k.startswith(casa) and v.get("falhas")][:6],
+                "erro_detalhe": ("; ".join(erros_casa[:3]) or None) if falhas else None,
             }
         # última execução bem-sucedida vem do histórico (nunca estimada)
         anteriores = (load("updates.json").get("execucoes") or [])[1:]
-        for inst, dados in saude.items():
+        for casa, dados in saude.items():
             if dados["status"] == "ok":
                 continue
             dados["ultima_execucao_ok"] = next(
-                ((ex.get("fontes_monitoradas") or {}).get(inst, {}).get("ultima_tentativa")
+                ((ex.get("fontes_monitoradas") or {}).get(casa, {}).get("ultima_tentativa")
                  or ex.get("fim") or ex.get("data_hora")
                  for ex in anteriores
-                 if ((ex.get("fontes_monitoradas") or {}).get(inst) or {}).get("status") == "ok"),
+                 if ((ex.get("fontes_monitoradas") or {}).get(casa) or {}).get("status") == "ok"),
                 None)
         return saude
 
     def _atualizar_registro(self, rec, n_ev=0):
         rec.update({
             "resumo": (f"Verificação automática: {self.verified} fichas consultadas, "
-                       f"{self.updated} procedimentos atualizados, {len(self.new_props)} novos, "
+                       f"{self.updated} proposições atualizadas, {len(self.new_props)} novas, "
                        f"{len(self.changes)} mudanças detectadas, {n_ev} eventos adicionados."),
-            "procedimentos_verificados": self.verified,
-            "procedimentos_atualizados": self.updated,
-            "novos_procedimentos": len(self.new_props),
-            # aliases de compatibilidade com camadas auxiliares existentes
             "proposicoes_verificadas": self.verified,
             "proposicoes_atualizadas": self.updated,
             "novas_proposicoes": len(self.new_props),
@@ -1341,7 +1481,7 @@ class Collector:
             "observacao": ("Nada foi inventado: todos os registros novos ou alterados citam "
                            "a URL oficial. Registros automáticos aguardam curadoria editorial."
                            + (f" Coleta encerrada pelo orçamento de tempo: "
-                              f"{len(self.nao_verificadas)} procedimento(s) ficaram para a "
+                              f"{len(self.nao_verificadas)} proposição(ões) ficaram para a "
                               f"próxima execução (prioridade por score)."
                               if self.nao_verificadas else "")),
         })
@@ -1355,13 +1495,11 @@ class Collector:
         exec_record["status"] = status
         exec_record.setdefault("data_hora", self.run_iso)
         exec_record["fim"] = today_brt().isoformat(timespec="seconds")
-        exec_record["procedimentos_monitorados"] = len(props_all)
-        exec_record["procedimentos_pendentes"] = len(self.nao_verificadas)
-        exec_record["procedimentos_distintos_verificados"] = len(self.verificadas_ids)
-        # aliases de compatibilidade
         exec_record["proposicoes_monitoradas"] = len(props_all)
         exec_record["proposicoes_pendentes"] = len(self.nao_verificadas)
-        # cobertura = dossiês distintos verificados / monitorados
+        exec_record["proposicoes_distintas_verificadas"] = len(self.verificadas_ids)
+        # cobertura = proposições distintas verificadas / monitoradas (as refs do
+        # Senado podem somar mais de uma consulta por proposição)
         exec_record["cobertura_pct"] = min(
             100.0, round(100.0 * len(self.verificadas_ids) / max(1, len(props_all)), 1))
         exec_record["snapshot_dataset"] = self._snapshot_dataset(props_all, laws_f, ev_f, up_f)
@@ -1406,11 +1544,14 @@ class Collector:
         last_run = None
         if up_f.get("execucoes"):
             last_run = parse_run_date(up_f["execucoes"][0].get("data_hora", ""))
-        print(f"Estado anterior: {len(props)} procedimentos · última execução: {last_run} · "
+        print(f"Estado anterior: {len(props)} proposições · última execução: {last_run} · "
               f"orçamento: {BUDGET.limite // 60} min · novas/execução: {MAX_NOVAS} · "
               f"workers: {WORKERS} (HTTP ≤ {HTTP_CONCORRENCIA})", flush=True)
 
-        known_keys = {p["id"] for p in props}
+        known_keys = set()
+        for p in props:
+            casa = "senado" if p["id"].startswith("senado_") else "camara"
+            known_keys.add((casa, p.get("tipo"), p.get("numero"), p.get("ano")))
 
         exec_record = {
             "id": self.run_id,
@@ -1419,39 +1560,43 @@ class Collector:
             "status": "em_andamento",
             "motor": {"orcamento_segundos": BUDGET.limite, "max_novas": MAX_NOVAS,
                       "workers": WORKERS, "http_concorrencia": HTTP_CONCORRENCIA},
-            "procedimentos_monitorados": len(props),
+            "proposicoes_monitoradas": len(props),
             "sugestoes_curadoria": [],
         }
         self._atualizar_registro(exec_record)
 
-        # 1) Atualizar procedimentos monitorados (paralelo, I/O-bound; cada thread
-        #    toca apenas o seu dict de procedimento + estruturas com lock).
+        # 1) Atualizar proposições monitoradas (paralelo, I/O-bound; cada thread
+        #    toca apenas o seu dict de proposição + estruturas com lock).
         #    A fila é ordenada por prioridade: se o orçamento acabar, o que fica
-        #    pendente são os dossiês de menor impacto.
+        #    pendente são as matérias de menor impacto.
         fila = sorted(props, key=self._prioridade)
         if MAX_PROPS and len(fila) > MAX_PROPS:
             self.nao_verificadas = [p["id"] for p in fila[MAX_PROPS:]]
             fila = fila[:MAX_PROPS]
-        print(f"Consultando fichas oficiais de {len(fila)} procedimentos monitorados...",
-              flush=True)
+        print(f"Consultando fichas oficiais de {len(fila)} proposições monitoradas...", flush=True)
 
         def _update_one(p):
             try:
-                ok = self.update_procedure(p, last_run)
-                if not ok:
-                    with self._lock:
-                        if not any(e.startswith(p["id"]) for e in self.errors):
-                            self.errors.append(
-                                f"{p['id']}: não atualizado pela API v2 do Parlamento")
+                if p["id"].startswith("senado_"):
+                    sen_ok = self.update_senado_refs(p, last_run)
+                    if not sen_ok:
+                        with self._lock:
+                            self.errors.append(f"{p['id']}: não localizada na API do Senado")
+                else:
+                    cam_ok = self.update_camara_prop(p, last_run)
+                    sen_ok = self.update_senado_refs(p, last_run)  # enriquece refs ao Senado
+                    if not cam_ok and not sen_ok:
+                        with self._lock:
+                            self.errors.append(f"{p['id']}: não localizada nas APIs da Câmara e do Senado")
             except BudgetExceeded:
                 with self._lock:
                     self.nao_verificadas.append(p["id"])
-            except Exception as e:  # noqa: BLE001 - um dossiê não derruba a execução
+            except Exception as e:  # noqa: BLE001 - uma proposição não derruba a execução
                 with self._lock:
                     self.errors.append(f"{p['id']}: erro inesperado ({e})")
             return p["id"]
 
-        with self.fase("atualizacao_procedimentos"):
+        with self.fase("atualizacao_proposicoes"):
             with ThreadPoolExecutor(max_workers=WORKERS) as pool:
                 futures = {pool.submit(_update_one, p): p for p in fila}
                 for i, fut in enumerate(as_completed(futures), 1):
@@ -1461,9 +1606,8 @@ class Collector:
                               f"decorridos · {int(BUDGET.restante())}s restantes", flush=True)
         # Ordem determinística das mudanças (mais recentes primeiro)
         self.changes.sort(key=lambda c: (c.get("data", ""), c.get("titulo", "")), reverse=True)
-        print(f"Fase 1 concluída em {self.fases.get('atualizacao_procedimentos', 0)}s · "
-              f"{self.verified} verificadas · {int(BUDGET.restante())}s de orçamento restantes",
-              flush=True)
+        print(f"Fase 1 concluída em {self.fases.get('atualizacao_proposicoes', 0)}s · "
+              f"{self.verified} verificadas · {int(BUDGET.restante())}s de orçamento restantes", flush=True)
 
         # Checkpoint: grava o resultado da fase 1 antes da descoberta. Se o job
         # for interrompido por qualquer motivo, a verificação já feita não se perde.
@@ -1472,44 +1616,47 @@ class Collector:
             self._gravar(props_f, up_f, ev_f, laws_f, tl_f, pm_f, props, exec_record,
                          status="em_andamento")
 
-        # 2) Descobrir novos procedimentos (com teto por execução: o excedente
-        #    fica para a próxima, sempre priorizando relevância e recência).
+        # 2) Descobrir novas proposições (com teto por execução: o excedente fica
+        #    para a próxima, sempre priorizando relevância temática e recência).
         candidatos_total, adiados = 0, 0
         if BUDGET.expirado(120):
             print("Orçamento insuficiente para a descoberta — etapa adiada.", flush=True)
         else:
-            print("Descobrindo novos procedimentos (EUR-Lex + Legislative Train)...",
-                  flush=True)
-            with self.fase("descoberta_procedimentos"):
+            print("Descobrindo novas proposições (Câmara)...", flush=True)
+            with self.fase("descoberta_camara"):
                 try:
-                    cands = self.discover_procedures(known_keys, last_run)
+                    cands = [(it, rel, via) for it, rel, via in self.discover_camara(known_keys, last_run)
+                             if not (rel == "infra" and it.get("siglaTipo") in TIPOS_REQUERIMENTO)]
                     cands.sort(key=self._prioridade_candidato)
                     candidatos_total = len(cands)
-                    uniq, seen = [], set()
-                    for c in cands:
-                        ds_id = dataset_id_de_proc_ref(c[0])
-                        if ds_id in seen or ds_id in known_keys:
+                    uniq, seen = [], set(known_keys)
+                    for it, rel, via in cands:
+                        key = ("camara", it.get("siglaTipo"), it.get("numero"), it.get("ano"))
+                        if key in seen:
                             continue
-                        seen.add(ds_id)
-                        uniq.append(c)
+                        seen.add(key)
+                        uniq.append((it, rel, via))
                     adiados = max(0, len(uniq) - MAX_NOVAS)
                     uniq = uniq[:MAX_NOVAS]
-                    print(f"  {len(uniq)} candidatos a detalhar"
-                          + (f" (+{adiados} adiados para a próxima execução)"
-                             if adiados else ""), flush=True)
+                    known_keys.update(("camara", it.get("siglaTipo"), it.get("numero"), it.get("ano"))
+                                      for it, _rel, _via in uniq)
+                    print(f"  {len(uniq)} candidatas a detalhar"
+                          + (f" (+{adiados} adiadas para a próxima execução)" if adiados else ""),
+                          flush=True)
 
-                    def _build_proc(cand):
+                    def _build_cam(args):
+                        it, rel, via = args
                         try:
-                            return self.build_new_procedure_record(cand)
+                            return self.build_new_camara_record(it, rel, via)
                         except BudgetExceeded:
                             return None
                         except Exception as e:  # noqa: BLE001
                             with self._lock:
-                                self.errors.append(f"novo procedimento {cand[0]}: {e}")
+                                self.errors.append(f"nova camara {it.get('id')}: {e}")
                             return None
 
                     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
-                        for i, rec in enumerate(pool.map(_build_proc, uniq), 1):
+                        for i, rec in enumerate(pool.map(_build_cam, uniq), 1):
                             if rec is None:
                                 continue
                             if any(x["id"] == rec["id"] for x in self.new_props):
@@ -1517,37 +1664,90 @@ class Collector:
                             self.new_props.append(rec)
                             self.add_change(
                                 data_evento=rec.get("data_apresentacao") or self.today,
-                                titulo=f"Novo procedimento monitorado: {rec['api_ep'].get('label')}",
-                                descricao=f"{rec['ementa'][:400]} (Registro automático a "
-                                          f"partir de fontes oficiais; aguardando curadoria.)",
-                                tipo="novo procedimento", proposicao=rec["id"],
-                                fonte="Parlamento Europeu — Open Data Portal v2",
+                                titulo=f"Nova proposição: {rec['tipo']} {rec['numero']}/{rec['ano']}",
+                                descricao=f"{rec['ementa'][:400]} (Registro automático a partir da API oficial; aguardando curadoria.)",
+                                tipo="nova proposição", proposicao=rec["id"],
+                                fonte="Câmara dos Deputados — API de Dados Abertos",
                                 fonte_url=rec["url_oficial"])
                             if i % 10 == 0:
-                                print(f"  ...{i}/{len(uniq)} detalhados", flush=True)
+                                print(f"  ...{i}/{len(uniq)} detalhadas", flush=True)
                 except BudgetExceeded:
-                    print("  orçamento esgotado durante a descoberta", flush=True)
+                    print("  orçamento esgotado durante a descoberta (Câmara)", flush=True)
                 except Exception as e:  # noqa: BLE001
-                    self.errors.append(f"descoberta: {e}")
+                    self.errors.append(f"descoberta Câmara: {e}")
 
-        # 3) Agenda futura (consultas oficiais com prazo)
+            desafio_senado = max(0, MAX_NOVAS - len(self.new_props))
+            if not BUDGET.expirado(120) and desafio_senado:
+                print("Descobrindo novas proposições (Senado)...", flush=True)
+                with self.fase("descoberta_senado"):
+                    try:
+                        matches = self.discover_senado(known_keys)
+                        uniqm, seenm = [], set(known_keys)
+                        for m in matches:
+                            try:
+                                numero = int(str(m.get("Numero")).lstrip("0") or "0")
+                                ano = int(str(m.get("Ano")))
+                            except (TypeError, ValueError):
+                                continue
+                            key = ("senado", (m.get("Sigla") or "").upper(), numero, ano)
+                            if key in seenm:
+                                continue
+                            seenm.add(key)
+                            uniqm.append(m)
+                        candidatos_total += len(uniqm)
+                        adiados += max(0, len(uniqm) - desafio_senado)
+                        uniqm = uniqm[:desafio_senado]
+                        known_keys.update(("senado", (m.get("Sigla") or "").upper(),
+                                           int(str(m.get("Numero")).lstrip("0") or "0"),
+                                           int(str(m.get("Ano")))) for m in uniqm)
+                        print(f"  {len(uniqm)} candidatas a detalhar", flush=True)
+
+                        def _build_sen(m):
+                            try:
+                                return self.build_new_senado_record(m)
+                            except BudgetExceeded:
+                                return None
+                            except Exception as e:  # noqa: BLE001
+                                with self._lock:
+                                    self.errors.append(f"nova senado {m.get('Codigo')}: {e}")
+                                return None
+
+                        with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+                            for rec in pool.map(_build_sen, uniqm):
+                                if rec is None:
+                                    continue
+                                if any(x["id"] == rec["id"] for x in self.new_props):
+                                    continue
+                                self.new_props.append(rec)
+                                self.add_change(
+                                    data_evento=rec.get("data_apresentacao") or self.today,
+                                    titulo=f"Nova proposição: {rec['tipo']} {rec['numero']}/{rec['ano']} (Senado)",
+                                    descricao=f"{rec['ementa'][:400]} (Registro automático a partir da API oficial; aguardando curadoria.)",
+                                    tipo="nova proposição", proposicao=rec["id"],
+                                    fonte="Senado Federal — API de Dados Abertos",
+                                    fonte_url=rec["url_oficial"])
+                    except BudgetExceeded:
+                        print("  orçamento esgotado durante a descoberta (Senado)", flush=True)
+                    except Exception as e:  # noqa: BLE001
+                        self.errors.append(f"descoberta Senado: {e}")
+
+        # 3) Agenda futura
         n_ev = 0
         if BUDGET.expirado(60):
             print("Orçamento insuficiente para a agenda — etapa adiada.", flush=True)
         else:
-            print("Atualizando agenda de consultas (Have Your Say)...", flush=True)
-            with self.fase("agenda_consultas"):
+            print("Atualizando agenda de eventos...", flush=True)
+            with self.fase("agenda_eventos"):
                 try:
                     n_ev = self.update_events(ev_f)
                 except BudgetExceeded:
-                    print("  orçamento esgotado na agenda de consultas", flush=True)
+                    print("  orçamento esgotado na agenda de eventos", flush=True)
                 except Exception as e:  # noqa: BLE001
                     self.errors.append(f"eventos: {e}")
 
-        # 3.5) Fontes regulatórias multiórgão (AI Office, EUR-Lex/JO, Conselho,
-        #      Comissão, Parlamento, EDPB, EDPS). Cada uma roda em subprocesso
-        #      com timeout próprio: uma fonte travada/bloqueada não impede as
-        #      demais nem o build do site.
+        # 3.5) Fontes multiórgão (ANPD, CNJ, TSE, DOU, Planalto, MCTI).
+        #      Cada uma roda em subprocesso com timeout próprio: uma fonte
+        #      travada/bloqueada não impede as demais nem o build do site.
         resumo_fontes = None
         atos_f = load("atos.json") if os.path.exists(os.path.join(DATA, "atos.json")) else None
         if atos_f is None:
@@ -1556,12 +1756,11 @@ class Collector:
         if os.environ.get("MONITOR_SEM_FONTES"):
             print("Coleta multiórgão desativada por MONITOR_SEM_FONTES.", flush=True)
         elif BUDGET.expirado(90):
-            print("Orçamento insuficiente para as fontes multiórgão — etapa adiada.",
-                  flush=True)
+            print("Orçamento insuficiente para as fontes multiórgão — etapa adiada.", flush=True)
             exec_record["fontes_multiorgao_adiadas"] = True
         else:
-            print("Coletando fontes regulatórias (AI Office, EUR-Lex, Conselho, "
-                  "Comissão, Parlamento, EDPB, EDPS)...", flush=True)
+            print("Coletando fontes multiórgão (ANPD, CNJ, TSE, DOU, Planalto, MCTI)...",
+                  flush=True)
             with self.fase("fontes_multiorgao"):
                 try:
                     import update_sources as _us
@@ -1585,34 +1784,30 @@ class Collector:
                     self.errors.append(f"fontes multiórgão: {e}")
                     print(f"  [erro] fontes multiórgão: {e}", flush=True)
 
-        # 4) Checagem de publicação no JO (sugestão, sem auto-criar norma)
-        sugestoes = []
-        normas_conhecidas = {norm(n.get("nome", "")) for n in laws_f.get("normas", [])}
+        # 4) Checagem de conversão em lei (sugestão, sem auto-criar norma)
+        sugestoes_lei = []
         for p in props + self.new_props:
             s = norm(p.get("situacao", ""))
-            if "publicado no jornal oficial" in s:
-                if norm(p.get("titulo", "")) not in normas_conhecidas:
-                    sugestoes.append(p["id"])
-        exec_record["sugestoes_curadoria"] = [
-            f"Verificar publicação no JO para entrada em laws.json: {pid}"
-            for pid in sugestoes[:10]]
+            if ("transformada em norma" in s or "convertida" in s) and "lei" in s:
+                if not any((p["tipo"] == "PL" and str(p["numero"]) in (l.get("relacao_ia", "") + l.get("ementa_sintese", ""))) for l in laws_f.get("normas", [])):
+                    sugestoes_lei.append(p["id"])
+        exec_record["sugestoes_curadoria"] = [f"Verificar conversão em lei: {pid}" for pid in sugestoes_lei[:10]]
 
         # 5) Fechamento e persistência
         exec_record["descoberta_candidatos"] = candidatos_total
         exec_record["descoberta_adiada"] = adiados
         self._atualizar_registro(exec_record, n_ev=n_ev)
 
-        # 5.1) Saúde por fonte: instituições do motor legislativo + multiórgão.
+        # 5.1) Saúde por fonte: Câmara, Senado e os órgãos multiórgão.
         #      Fonte obrigatória não consultada nunca é reportada como sucesso.
-        saude_legis = self._saude_instituicoes()
-        fontes_monitoradas = dict(saude_legis)
+        saude_casas = self._saude_casas()
+        fontes_monitoradas = dict(saude_casas)
         if resumo_fontes:
             fontes_monitoradas.update(resumo_fontes["fontes_monitoradas"])
         else:
-            for orgao in ("ai_office", "eurlex", "eu_council", "eu_commission",
-                          "eu_parliament", "edpb", "edps"):
+            for orgao in ("anpd", "cnj", "tse", "dou", "planalto", "mcti"):
                 fontes_monitoradas.setdefault(orgao, {
-                    "nome": orgao, "status": "falha",
+                    "nome": orgao.upper(), "status": "falha",
                     "ultima_tentativa": self.run_iso, "ultima_execucao_ok": None,
                     "itens_consultados": 0, "novidades": 0, "erros": 1,
                     "endpoints": [], "canais_ok": [], "canais_falhos": ["(não executada)"],
@@ -1622,7 +1817,7 @@ class Collector:
         import update_sources as _us
         status_global = _us.calcular_status_global(
             {k: v for k, v in fontes_monitoradas.items()
-             if k not in ("parlamento", "eurlex_motor")}, saude_legis)
+             if k not in ("camara", "senado")}, saude_casas)
         exec_record["fontes_monitoradas"] = dict(sorted(fontes_monitoradas.items()))
         exec_record["status_global"] = status_global
         exec_record["fontes_falha"] = sorted(o for o, s in fontes_monitoradas.items()
@@ -1666,9 +1861,10 @@ class Collector:
         return exec_record
 
 
+
 def parse_args(argv=None):
     ap = argparse.ArgumentParser(
-        description="Motor legislativo do Monitor UE (fontes oficiais da União Europeia).")
+        description="Coletor legislativo do Monitor Legislativo de IA (Câmara/Senado).")
     ap.add_argument("--dry-run", action="store_true",
                     help="consulta e relata sem gravar o dataset")
     ap.add_argument("--budget-min", type=float, default=None,
@@ -1676,7 +1872,7 @@ def parse_args(argv=None):
     ap.add_argument("--max-novas", type=int, default=None,
                     help=f"máximo de fichas novas detalhadas por execução (padrão: {MAX_NOVAS})")
     ap.add_argument("--limite", type=int, default=None,
-                    help="verificar apenas os N procedimentos mais prioritários (padrão: todos)")
+                    help="verificar apenas as N proposições mais prioritárias (padrão: todas)")
     ap.add_argument("--workers", type=int, default=None,
                     help=f"threads de coleta (padrão: {WORKERS})")
     return ap.parse_args(argv)
@@ -1694,8 +1890,7 @@ def main(argv=None):
     if args.workers:
         WORKERS = max(1, args.workers)
     if MAX_NOVAS == 0:
-        print("Descoberta de novos procedimentos desativada nesta execução (--max-novas 0).",
-              flush=True)
+        print("Descoberta de novas proposições desativada nesta execução (--max-novas 0).", flush=True)
     try:
         rec = Collector().run(dry_run=args.dry_run)
     except BudgetExceeded as e:  # rede lenta: sai sem falhar o job (dados já gravados)

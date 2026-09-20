@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "descricao": "Atores legislativos (eurodeputados e instituições) documentados nos dossiês monitorados — somente atores com papel registrado em fonte oficial sobre IA.",
+    "criterio": "Incluído apenas quando a atuação em IA aparece em fonte oficial citada. Sem perfis genéricos; sem dados estimados.",
+    "execucao": "2026-09-18",
+    "total": 2
+  },
+  "parlamentares": [
+    {
+      "id": "pe_brando_benifei",
+      "nome": "Brando Benifei",
+      "partido": "S&D (Grupo Socialista e Democrata)",
+      "casa": "Parlamento Europeu",
+      "estado": "Itália",
+      "comissao": "IMCO (Mercado Interno e Proteção do Consumidor)",
+      "papel": "Co-relator do AI Act (2021/0106(COD))",
+      "atuacao_ia": [
+        "Co-relator do procedimento legislativo do AI Act (Reg. (UE) 2024/1689).",
+        "Relator do relatório adotado em comissão (A-9-2023-0188) e da posição do Plenário em 1ª leitura (TA-9-2023-0236)."
+      ],
+      "proposicoes_relacionadas": [
+        "ue_2021_0106_cod"
+      ],
+      "fontes": [
+        {
+          "titulo": "Dossiê AI Act nas comissões do Parlamento (co-relatores)",
+          "url": "https://www.europarl.europa.eu/committees/en/artificial-intelligence-act/product-details/20230417CDT11481"
+        },
+        {
+          "titulo": "Comunicado oficial do Parlamento sobre a adoção no plenário",
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law"
+        },
+        {
+          "titulo": "Comunicado oficial do Conselho sobre a aprovação final",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2024/05/21/artificial-intelligence-ai-act-council-gives-final-green-light-to-the-first-worldwide-rules-on-ai/"
+        }
+      ]
+    },
+    {
+      "id": "pe_dragos_tudorache",
+      "nome": "Dragoș Tudorache",
+      "partido": "Renew Europe",
+      "casa": "Parlamento Europeu",
+      "estado": "Romênia",
+      "comissao": "LIBE (Direitos Fundamentais, Justiça e Assuntos Internos)",
+      "papel": "Co-relator do AI Act (2021/0106(COD))",
+      "atuacao_ia": [
+        "Co-relator do procedimento legislativo do AI Act (Reg. (UE) 2024/1689).",
+        "Coordenou as negociações interinstitucionais (trílogos) com o Conselho, concluídas com acordo provisório em 8 de dezembro de 2023."
+      ],
+      "proposicoes_relacionadas": [
+        "ue_2021_0106_cod"
+      ],
+      "fontes": [
+        {
+          "titulo": "Dossiê AI Act nas comissões do Parlamento (co-relatores)",
+          "url": "https://www.europarl.europa.eu/committees/en/artificial-intelligence-act/product-details/20230417CDT11481"
+        },
+        {
+          "titulo": "Comunicado oficial do Parlamento sobre a adoção no plenário",
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law"
+        },
+        {
+          "titulo": "Comunicado oficial do Conselho sobre a aprovação final",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2024/05/21/artificial-intelligence-ai-act-council-gives-final-green-light-to-the-first-worldwide-rules-on-ai/"
+        }
+      ]
+    }
+  ]
+}

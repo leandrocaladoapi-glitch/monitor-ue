@@ -1,42 +1,167 @@
 {
   "meta": {
-    "descricao": "Agenda futura oficial relacionada a IA/dados na União Europeia: consultas públicas com prazo de feedback (Comissão Europeia — Have Your Say) e eventos oficiais documentados nas fontes monitoradas.",
-    "criterio": "Somente eventos futuros com data documentada em fonte oficial.",
+    "descricao": "Agenda Legislativa de IA — eventos futuros, marcos previstos e registro de verificação",
     "execucao": "2026-09-18",
-    "total": 1
+    "proxima_verificacao_recomendada": "após a posse do novo calendário legislativo pós-eleitoral (novembro/2026)"
   },
   "eventos": [
     {
-      "id": "evt_hys_16155",
-      "titulo": "EHDS — requisitos técnicos para o HealthData@EU (regulamento de execução)",
-      "casa": "Comissão Europeia",
-      "tipo": "call for evidence (Better Regulation)",
-      "data_inicio": "2026-09-01",
-      "data_fim": "2026-09-29",
-      "hora": null,
-      "local": "Have Your Say (online)",
-      "tema": "Consultação pública sobre os requisitos técnicos do serviço digital HealthData@EU do Espaço Europeu de Dados de Saúde (EHDS) — infraestrutura de dados de saúde relevante para a IA aplicada à saúde.",
-      "relacao_ia": "Espaço europeu de dados de saúde: infraestrutura de dados que fundamenta aplicações de IA na saúde (relação indireta; revisão pendente).",
+      "id": "evt_fiid_2026",
+      "data_inicio": "2026-09-10",
+      "data_fim": "2026-09-11",
+      "titulo": "Fórum Internacional da Influência Digital (FIID 2026)",
+      "janela": "proximos_7_dias",
+      "casa": "Câmara dos Deputados",
+      "local": "Auditório Nereu Ramos, Câmara dos Deputados, Brasília",
+      "hora": "09:00",
+      "tipo": "reunião técnica",
+      "tema": "Ecossistema de criadores, plataformas digitais, marcas e políticas públicas",
+      "relacao_ia": "Periférico — debate plataformas digitais e influência digital, temas adjacentes à regulação de IA",
+      "fonte_titulo": "API de Dados Abertos da Câmara — Eventos (consultada em 08/09/2026)",
+      "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/eventos?dataInicio=2026-09-08&dataFim=2026-10-31"
+    },
+    {
+      "id": "evt_eleicao_2026_janela_ia",
+      "data_inicio": "2026-10-01",
+      "data_fim": "2026-10-05",
+      "titulo": "Janela eleitoral de restrição a conteúdo sintético (72h antes até 24h após o 1º turno)",
       "janela": "proximos_30_dias",
-      "fonte_titulo": "Comissão Europeia — Have Your Say",
-      "fonte_url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16155-EHDS-technical-requirements-for-HealthDataEU_implementing-regulation_en",
-      "origem": "descoberta_automatica",
-      "verificacao": {
-        "fonte_consultada": "Comissão Europeia — Have Your Say (Better Regulation)",
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16155-EHDS-technical-requirements-for-HealthDataEU_implementing-regulation_en",
-        "como_verificar": "A página oficial da consulta lista o período de feedback (01–29/09/2026) e o tipo de ato (regulamento de execução).",
-        "data_verificacao": "2026-09-18"
-      }
+      "casa": "Justiça Eleitoral (TSE)",
+      "local": "—",
+      "tipo": "marco normativo",
+      "tema": "Vedação, pela Resolução TSE 23.748/2026, de publicação, republicação ou impulsionamento de novos conteúdos produzidos ou alterados por IA nas 72 horas anteriores ao pleito e nas 24 horas seguintes",
+      "relacao_ia": "Direto — primeira eleição geral brasileira sob regras específicas de IA",
+      "fonte_titulo": "TSE/g1 — Regras de IA para as eleições 2026 (Resolução 23.748/2026)",
+      "fonte_url": "https://g1.globo.com/politica/noticia/2026/03/02/eleicoes-2026-tse-proibe-disseminacao-de-conteudo-novo-feito-por-ia-72-horas-antes-do-pleito.ghtml"
+    },
+    {
+      "id": "evt_eleicoes_2026_1o_turno",
+      "data_inicio": "2026-10-04",
+      "titulo": "Eleições gerais 2026 — 1º turno",
+      "janela": "proximos_30_dias",
+      "casa": "Justiça Eleitoral (TSE)",
+      "local": "—",
+      "tipo": "pleito",
+      "tema": "Eleição de Presidente da República, governadores, senadores e deputados federais e estaduais",
+      "relacao_ia": "Contexto central — a votação do marco legal da IA (PL 2338/2023) foi formalmente adiada para depois deste pleito",
+      "fonte_titulo": "Declaração do relator Aguinaldo Ribeiro (24/08/2026) — Mobile Time/AntiHype",
+      "fonte_url": "https://antihype.com.br/c/ia/marco-legal-ia-brasil-adiado-eleicoes/"
+    },
+    {
+      "id": "evt_redata_sancao",
+      "data_inicio": null,
+      "titulo": "Sanção presidencial do PL 278/2026 (Redata)",
+      "janela": "sem_data_confirmada",
+      "casa": "Presidência da República",
+      "local": "Palácio do Planalto",
+      "tipo": "ato do Executivo (pendente)",
+      "tema": "O PL aprovado pelo Senado em 01/09/2026, sem alteração de mérito, segue à sanção presidencial",
+      "relacao_ia": "Direto — regime tributário para data centers vinculados à infraestrutura de IA",
+      "fonte_titulo": "Teletime — Senado aprova Redata (01/09/2026)",
+      "fonte_url": "https://teletime.com.br/01/09/2026/redata-senado/"
+    },
+    {
+      "id": "evt_pl2338_votacao_pos_eleicao",
+      "data_inicio": null,
+      "titulo": "Retomada da votação do PL 2338/2023 (Marco Legal da IA) na Comissão Especial",
+      "janela": "sem_data_confirmada",
+      "casa": "Câmara dos Deputados",
+      "local": "Comissão Especial sobre Inteligência Artificial (PL 2338/23)",
+      "tipo": "votação (prevista)",
+      "tema": "Relator declarou em 24/08/2026 que a votação fica para depois das eleições de outubro; cinco datas já foram marcadas e perdidas desde novembro/2025",
+      "relacao_ia": "Direto — evento central da agenda legislativa de IA",
+      "fonte_titulo": "AntiHype — Lei da IA no Brasil fica para depois das eleições de outubro (07/09/2026)",
+      "fonte_url": "https://antihype.com.br/c/ia/marco-legal-ia-brasil-adiado-eleicoes/"
+    },
+    {
+      "id": "evt_auto_camara_82987",
+      "titulo": "Reunião Técnica — GT 1 - GOVERNANÇA DIGITAL E TRANSPARÊNCIA PÚBLICA\r\n PROGRAMAÇÃO DOS GRUPOS DE TRABALHO\r\n\r\nGT 1 – GOVERNANÇA DIGITAL E TR",
+      "casa": "Câmara dos Deputados",
+      "tipo": "Reunião Técnica",
+      "data_inicio": "2026-09-17",
+      "data_fim": null,
+      "hora": "14:00",
+      "local": "Anexo II, Plenário 03",
+      "tema": "GT 1 - GOVERNANÇA DIGITAL E TRANSPARÊNCIA PÚBLICA\r\n PROGRAMAÇÃO DOS GRUPOS DE TRABALHO\r\n\r\nGT 1 – GOVERNANÇA DIGITAL E TRANSPARÊNCIA PÚBLICA\r\nCoordenadores: Magno Medeiros (UFG | magno@ufg.br) e Tiago Mainieri (UFG | tiagomainieri@ufg.br)\r\n\r\n17 de setembro (quinta-feira), 14h - 17h - Plenário 3\r\n1. Governança editorial da inteligência artificial no jornalismo investigativo: práticas, limites e transparência no The New York Times \r\nCarlos Augusto Pereira dos Santos Júnior\r\n \r\n2. Tensionamentos ent",
+      "relacao_ia": "Detectado automaticamente na agenda oficial (revisão pendente).",
+      "janela": "proximos_7_dias",
+      "fonte_titulo": "API de Dados Abertos da Câmara — Eventos",
+      "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/eventos/82987",
+      "origem": "descoberta_automatica"
+    },
+    {
+      "id": "evt_auto_camara_82990",
+      "titulo": "Reunião Técnica — GT 2 - DIREITOS HUMANOS, INCLUSÃO E INTERSECCIONALIDADES\r\n 18 de setembro (sexta-feira), 14h - 17h - Plenário 4\r\n1. Hibr",
+      "casa": "Câmara dos Deputados",
+      "tipo": "Reunião Técnica",
+      "data_inicio": "2026-09-18",
+      "data_fim": null,
+      "hora": "14:00",
+      "local": "Anexo II, Plenário 04",
+      "tema": "GT 2 - DIREITOS HUMANOS, INCLUSÃO E INTERSECCIONALIDADES\r\n 18 de setembro (sexta-feira), 14h - 17h - Plenário 4\r\n1. Hibridização, multimodalidade e proximidade: a comunicação pública sobre direitos humanos no Instagram sob a ótica da Linguística \r\nHelena Castro de Alencar\r\n\r\n2. O Desenvolvimento Digital e os Direitos Sociais das Pessoas com Câncer\r\nJoana Nazar Neiva, Maria Grazielle de Oliveira Cardoso, Maria Idalina Viana Costa\r\n\r\n\r\n3. Inteligência artificial e comunicação no terceiro setor: de",
+      "relacao_ia": "Detectado automaticamente na agenda oficial (revisão pendente).",
+      "janela": "proximos_7_dias",
+      "fonte_titulo": "API de Dados Abertos da Câmara — Eventos",
+      "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/eventos/82990",
+      "origem": "descoberta_automatica"
+    },
+    {
+      "id": "evt_auto_camara_82991",
+      "titulo": "Reunião Técnica — GT 3 – CIDADANIA, DEMOCRACIA E PARTICIPAÇÃO \r\n GT 3 – CIDADANIA, DEMOCRACIA E PARTICIPAÇÃO\r\nCoordenadores: João José A. ",
+      "casa": "Câmara dos Deputados",
+      "tipo": "Reunião Técnica",
+      "data_inicio": "2026-09-17",
+      "data_fim": null,
+      "hora": "14:00",
+      "local": "Anexo II, Plenário 05",
+      "tema": "GT 3 – CIDADANIA, DEMOCRACIA E PARTICIPAÇÃO \r\n GT 3 – CIDADANIA, DEMOCRACIA E PARTICIPAÇÃO\r\nCoordenadores: João José A. Curvello (UnB | joaocurvello@unb.br) e Marlise Viegas Brenol (UnB| marlise.brenol@unb.br)\r\n\r\n\r\n17 de setembro (quinta-feira), 14h - 17h\r\nSessão 1 - Plenário 5\r\n1. Da troca de cartas aos influenciadores digitais: comunicação turística, cidadania comunicativa e sustentabilidade cultural de destinos regionais\r\nLuciana Ramos da Silva \r\n\r\n2. Influencers e influentes na época dos fan",
+      "relacao_ia": "Detectado automaticamente na agenda oficial (revisão pendente).",
+      "janela": "proximos_7_dias",
+      "fonte_titulo": "API de Dados Abertos da Câmara — Eventos",
+      "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/eventos/82991",
+      "origem": "descoberta_automatica"
+    },
+    {
+      "id": "evt_auto_camara_82996",
+      "titulo": "Reunião Técnica — GT 4 – GESTÃO E REGULAÇÃO DA COMUNICAÇÃO\r\n GT 4 – GESTÃO E REGULAÇÃO DA COMUNICAÇÃO\r\nCoordenadoras: Kárita Sena (Correio",
+      "casa": "Câmara dos Deputados",
+      "tipo": "Reunião Técnica",
+      "data_inicio": "2026-09-18",
+      "data_fim": null,
+      "hora": "14:00",
+      "local": "Anexo II, Plenário 07",
+      "tema": "GT 4 – GESTÃO E REGULAÇÃO DA COMUNICAÇÃO\r\n GT 4 – GESTÃO E REGULAÇÃO DA COMUNICAÇÃO\r\nCoordenadoras: Kárita Sena (Correios/UFMS) e Rachel Gonçalves (Senado Federal)\r\n\r\n18 de setembro (sexta-feira), 14h - 17h - Plenário 7\r\n1. Personas orientadas por dados como ferramenta de gestão da comunicação pública: relato de experiência em uma autogestão de saúde suplementar\r\nAline Amorim da Cruz\r\n\r\n2. Desinformação, soberania e democracia na era da inteligência artificial: um relato da primeira conferência ",
+      "relacao_ia": "Detectado automaticamente na agenda oficial (revisão pendente).",
+      "janela": "proximos_7_dias",
+      "fonte_titulo": "API de Dados Abertos da Câmara — Eventos",
+      "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/eventos/82996",
+      "origem": "descoberta_automatica"
+    },
+    {
+      "id": "evt_auto_camara_82997",
+      "titulo": "Reunião Técnica — GT 5 – PROJETOS, PRODUTOS E SERVIÇOS \r\n GT 5 – PROJETOS, PRODUTOS E SERVIÇOS\r\nCoordenadores: Alessandra Lessa (TCE-GO) e",
+      "casa": "Câmara dos Deputados",
+      "tipo": "Reunião Técnica",
+      "data_inicio": "2026-09-17",
+      "data_fim": null,
+      "hora": "14:00",
+      "local": "Anexo II, Plenário 08",
+      "tema": "GT 5 – PROJETOS, PRODUTOS E SERVIÇOS \r\n GT 5 – PROJETOS, PRODUTOS E SERVIÇOS\r\nCoordenadores: Alessandra Lessa (TCE-GO) e Verônica Lima (Câmara dos Deputados)\r\n\r\n17 de setembro (quinta-feira), 14h - 17h - Plenário 8\r\n1. Trends e comunicação pública: o caso do Vestibular UFG 2025 \r\nBeatriz Carvalho Barreto\r\n\r\n2. Estratégias digitais para uma comunicação humanizada no Instagram da Faculdade de Enfermagem da UFG \r\nEduardo Rodrigues Almeida, Gabriela Marques Gonçalves\r\n\r\n3. TCE Presente: storytelling",
+      "relacao_ia": "Detectado automaticamente na agenda oficial (revisão pendente).",
+      "janela": "proximos_7_dias",
+      "fonte_titulo": "API de Dados Abertos da Câmara — Eventos",
+      "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/eventos/82997",
+      "origem": "descoberta_automatica"
     }
   ],
   "verificacao": {
     "data": "2026-09-18",
     "fontes_consultadas": [
       {
-        "titulo": "Comissão Europeia — Have Your Say (agenda de consultas)",
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en"
+        "titulo": "API de Dados Abertos da Câmara dos Deputados — Eventos",
+        "url": "https://dadosabertos.camara.leg.br/api/v2/eventos?dataInicio=2026-09-18&dataFim=2026-11-17"
       }
     ],
-    "resultado": "Nenhuma consulta futura relacionada a IA/dados no portal Have Your Say neste período."
+    "resultado": "0 novo(s) evento(s) com menção a IA incorporado(s) à agenda; 2 evento(s) relevante(s) no período 2026-09-18–2026-11-17."
   }
 }

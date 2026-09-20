@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "descricao": "Registro de atualizações do monitor: cada execução da coleta registra saúde das fontes, mudanças detectadas (com fonte oficial e data de detecção) e métricas HTTP.",
+    "execucao": "2026-09-18"
+  },
+  "mudancas": [],
+  "execucoes": [
+    {
+      "id": "bootstrap_ue_2026_09_18",
+      "data_hora": "2026-09-18T10:00:00-03:00",
+      "fim": "2026-09-18T10:00:00-03:00",
+      "tipo": "bootstrap",
+      "status": "concluida",
+      "resumo": "Carga inicial curada do monitor UE: dados extraídos manualmente de fontes oficiais verificadas em 18/09/2026 (Open Data Portal do Parlamento Europeu — API v2, EUR-Lex, comunicados institucionais do Parlamento e do Conselho, portal Have Your Say e feed do EDPB). Primeira execução automática seguirá este registro.",
+      "procedimentos_monitorados": 2,
+      "procedimentos_pendentes": [],
+      "procedimentos_distintos_verificados": 2,
+      "cobertura_pct": 100.0,
+      "procedimentos_verificados": 2,
+      "procedimentos_atualizadas": 0,
+      "procedimentos_atualizados": 0,
+      "novos_procedimentos": 0,
+      "novas_leis_regulamentos": 1,
+      "mudancas_detectadas": 0,
+      "eventos_adicionados": 0,
+      "fontes_consultadas": [
+        "Parlamento Europeu — Open Data Portal v2 (procedures/2021-0106)",
+        "EUR-Lex — CELEX 32024R1689 e 52021PC0206",
+        "Comunicado do Parlamento Europeu — adoção no plenário (13/03/2024)",
+        "Comunicado do Conselho da UE — aprovação final (21/05/2024)",
+        "Comissão Europeia — Have Your Say (consultas abertas)",
+        "EDPB — feed oficial de notícias"
+      ],
+      "erros": [],
+      "sugestoes_curadoria": [],
+      "fontes_monitoradas": {},
+      "observacao": "Registro de carga inicial (curadoria). Nada foi inventado: todos os registros citam a URL oficial."
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Regulação de IA (quadro geral)",
+      "slug": "regulacao-de-ia"
+    },
+    {
+      "id": 2,
+      "nome": "Direitos fundamentais e não discriminação",
+      "slug": "direitos-fundamentais"
+    },
+    {
+      "id": 3,
+      "nome": "Dados pessoais e privacidade",
+      "slug": "dados-pessoais-e-privacidade"
+    },
+    {
+      "id": 4,
+      "nome": "Responsabilidade civil e reparação",
+      "slug": "responsabilidade-civil"
+    },
+    {
+      "id": 5,
+      "nome": "Práticas de IA proibidas",
+      "slug": "praticas-de-ia-proibidas"
+    },
+    {
+      "id": 6,
+      "nome": "Direitos de autor e conteúdo",
+      "slug": "direitos-de-autor"
+    },
+    {
+      "id": 7,
+      "nome": "Trabalho e emprego",
+      "slug": "trabalho-e-emprego"
+    },
+    {
+      "id": 8,
+      "nome": "Educação, ciência e pesquisa",
+      "slug": "educacao-ciencia-e-pesquisa"
+    },
+    {
+      "id": 9,
+      "nome": "Saúde",
+      "slug": "saude"
+    },
+    {
+      "id": 10,
+      "nome": "Segurança pública e polícia",
+      "slug": "seguranca-publica"
+    },
+    {
+      "id": 11,
+      "nome": "Defesa e segurança",
+      "slug": "defesa-e-seguranca"
+    },
+    {
+      "id": 12,
+      "nome": "Justiça e democracia",
+      "slug": "justica-e-democracia"
+    },
+    {
+      "id": 13,
+      "nome": "Eleições e publicidade política",
+      "slug": "eleicoes-e-publicidade-politica"
+    },
+    {
+      "id": 14,
+      "nome": "Manipulação sintética (deepfakes)",
+      "slug": "manipulacao-sintetica"
+    },
+    {
+      "id": 15,
+      "nome": "Desinformação e integridade informacional",
+      "slug": "desinformacao"
+    },
+    {
+      "id": 16,
+      "nome": "Plataformas digitais (DSA/DMA)",
+      "slug": "plataformas-digitais"
+    },
+    {
+      "id": 17,
+      "nome": "Biometria",
+      "slug": "biometria"
+    },
+    {
+      "id": 18,
+      "nome": "Reconhecimento facial",
+      "slug": "reconhecimento-facial"
+    },
+    {
+      "id": 19,
+      "nome": "Administração pública",
+      "slug": "administracao-publica"
+    },
+    {
+      "id": 20,
+      "nome": "Serviços financeiros",
+      "slug": "servicos-financeiros"
+    },
+    {
+      "id": 21,
+      "nome": "Consumidores e segurança de produtos",
+      "slug": "consumidores-e-produtos"
+    },
+    {
+      "id": 22,
+      "nome": "Cibersegurança",
+      "slug": "ciberseguranca"
+    },
+    {
+      "id": 23,
+      "nome": "Sistemas autônomos e robótica",
+      "slug": "sistemas-autonomos"
+    },
+    {
+      "id": 24,
+      "nome": "Transparência e rotulagem de conteúdo",
+      "slug": "transparencia-e-rotulagem"
+    },
+    {
+      "id": 25,
+      "nome": "Avaliação de conformidade e auditoria",
+      "slug": "avaliacao-de-conformidade"
+    },
+    {
+      "id": 26,
+      "nome": "Sistemas de alto risco",
+      "slug": "sistemas-de-alto-risco"
+    },
+    {
+      "id": 27,
+      "nome": "Inovação e sandboxes regulatórias",
+      "slug": "inovacao-e-sandboxes"
+    },
+    {
+      "id": 28,
+      "nome": "Computação e infraestrutura digital",
+      "slug": "computacao-e-infraestrutura"
+    },
+    {
+      "id": 29,
+      "nome": "Soberania digital e competitividade",
+      "slug": "soberania-digital"
+    },
+    {
+      "id": 30,
+      "nome": "Modelos de uso geral (GPAI)",
+      "slug": "modelos-de-uso-geral"
+    }
+  ],
+  "meta": {
+    "descricao": "Categorias temáticas do monitor de IA da União Europeia (AI Act e acervo correlato).",
+    "fonte": "Taxonomia própria do monitor, alinhada ao AI Act (Reg. (UE) 2024/1689) e ao acervo digital da UE.",
+    "total": 30
+  }
+}

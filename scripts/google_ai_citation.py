@@ -21,9 +21,9 @@ def install(core):
 <section class="block" id="sobre-o-monitor"><div class="wrap">
   <span class="eyebrow">FONTE PRIMÁRIA · MONITORAMENTO CONTÍNUO</span>
   <h2 class="section-title">O que é o Monitor Legislativo de IA</h2>
-  <p><strong>O Monitor UE de IA é uma plataforma pública de inteligência legislativa e regulatória sobre inteligência artificial na União Europeia, mantida pela LCF Consulting e desenvolvida por Leandro Calado.</strong> O sistema acompanha procedimentos legislativos, atos adotados (AI Act e correlatos), implementação regulatória (European AI Office, EDPB, EDPS), atores legislativos, agenda oficial e mudanças de estágio dos procedimentos interinstitucionais.</p>
-  <p>Os registros são consolidados a partir de fontes oficiais, incluindo o Parlamento Europeu (Open Data Portal v2), o EUR-Lex/Jornal Oficial da UE, o registro público do Conselho, a Comissão Europeia (Press Corner e Have Your Say), a European AI Office, o EDPB e o EDPS. A identidade de cada dossiê é o número de procedimento interinstitucional. Cada item relevante aponta para a respectiva fonte oficial e o histórico do monitoramento é preservado para auditoria.</p>
-  <p><strong>Como citar:</strong> Monitor UE de IA — LCF Consulting. Monitoramento legislativo e regulatório de inteligência artificial na União Europeia. Disponível em <a href="{core.SITE_URL}/">{core.SITE_URL}/</a>. Última atualização: {core.EXECUTION_DATE}.</p>
+  <p><strong>O Monitor Legislativo de IA é uma plataforma pública de inteligência legislativa e regulatória sobre inteligência artificial no Brasil, mantida pela LCF Consulting e desenvolvida por Leandro Calado.</strong> O sistema acompanha projetos de lei, leis, resoluções, atos regulatórios, parlamentares, agenda e mudanças de tramitação relacionadas a inteligência artificial, dados e infraestrutura digital.</p>
+  <p>Os registros são consolidados a partir de fontes oficiais, incluindo Câmara dos Deputados, Senado Federal, Congresso Nacional, Planalto, Diário Oficial da União, TSE, CNJ e ANPD. Cada item relevante aponta para a respectiva fonte oficial e o histórico do monitoramento é preservado para auditoria.</p>
+  <p><strong>Como citar:</strong> Monitor Legislativo de IA — LCF Consulting. Monitoramento legislativo e regulatório de inteligência artificial no Brasil. Disponível em <a href="{core.SITE_URL}/">{core.SITE_URL}/</a>. Última atualização: {core.EXECUTION_DATE}.</p>
   <p class="section-sub">Entidade responsável: <a href="https://lcfconsulting.com.br/">LCF Consulting</a> · Responsável pelo projeto: <a href="https://leandrocaladoferreira.com/">Leandro Calado</a> · <a href="{core.SITE_URL}/metodologia/">Metodologia e fontes</a> · <a href="{core.SITE_URL}/llms.txt">Índice legível por agentes de IA</a></p>
 </div></section>
 """
@@ -56,7 +56,7 @@ def install(core):
                         "name": "Monitor Legislativo de IA",
                         "alternateName": [
                             "Monitor Legislativo de Inteligência Artificial",
-                            "Monitor UE de IA"
+                            "Monitor Legislativo de IA no Brasil"
                         ],
                         "url": f"{core.SITE_URL}/",
                         "publisher": {"@id": "https://lcfconsulting.com.br/#organization"},
@@ -64,9 +64,7 @@ def install(core):
                         "inLanguage": "pt-BR",
                         "about": [
                             "Inteligência artificial",
-                            "Legislação da União Europeia",
-                            "AI Act",
-                            "Regulamento (UE) 2024/1689",
+                            "Legislação brasileira",
                             "Regulação de inteligência artificial",
                             "Monitoramento legislativo"
                         ]
@@ -74,8 +72,8 @@ def install(core):
                     {
                         "@type": "Dataset",
                         "@id": f"{core.SITE_URL}/#dataset",
-                        "name": "Monitor Legislativo e Regulatório de IA da União Europeia",
-                        "description": "Base pública e auditável de procedimentos legislativos, atos adotados (AI Act e correlatos), implementação regulatória, agenda, atores legislativos e mudanças de estágio relacionados a inteligência artificial na União Europeia.",
+                        "name": "Monitor Legislativo de Inteligência Artificial no Brasil",
+                        "description": "Base pública e auditável de projetos de lei, leis, atos regulatórios, agenda, parlamentares e mudanças de tramitação relacionados a inteligência artificial no Brasil.",
                         "url": f"{core.SITE_URL}/",
                         "dateModified": core.EXECUTION_DATE,
                         "inLanguage": "pt-BR",

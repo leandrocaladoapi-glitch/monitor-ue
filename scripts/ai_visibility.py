@@ -49,11 +49,11 @@ def install(core):
 
         llms = f"""# Monitor Legislativo de IA
 
-> Monitor público e auditável da legislação e da regulação de IA da União Europeia, mantido pela LCF Consulting a partir de fontes oficiais.
+> Monitor público e auditável da legislação brasileira de Inteligência Artificial, mantido pela LCF Consulting a partir de fontes oficiais.
 
 ## Key Pages
 - [Início]({core.SITE_URL}/): visão geral, mudanças recentes e matérias de maior impacto
-- [Procedimentos]({core.SITE_URL}/procedimentos-legislativos/): procedimentos da UE monitorados e filtros
+- [Proposições]({core.SITE_URL}/proposicoes/): projetos de lei monitorados e filtros
 - [Atualizações]({core.SITE_URL}/atualizacoes/): histórico de mudanças detectadas
 - [Leis e normas]({core.SITE_URL}/leis/): normas vigentes relacionadas a IA
 - [Agenda]({core.SITE_URL}/agenda/): eventos e marcos futuros
@@ -87,12 +87,12 @@ def install(core):
             slug = core.slugify_prop(p["id"])
             title = f'{p.get("tipo", "")} {p.get("numero", "")}/{p.get("ano", "")} — {p.get("titulo", "")}'
             situation = (p.get("situacao") or "").replace("\n", " ")[:280]
-            prop_lines.append(f'- [{title}]({core.SITE_URL}/procedimentos-legislativos/{slug}/) — score {score}/100; situação: {situation}')
+            prop_lines.append(f'- [{title}]({core.SITE_URL}/proposicoes/{slug}/) — score {score}/100; situação: {situation}')
 
         llms_full = llms + "\n## High-impact monitored propositions\n" + "\n".join(prop_lines) + f"""
 
 ## Source and trust policy
-Facts are grounded in primary sources including the European Parliament (Open Data Portal v2), EUR-Lex / Official Journal, the Council of the EU public register, the European Commission (Press Corner and Have Your Say), the European AI Office, the EDPB and the EDPS. The interinstitutional procedure number is the shared identity across institutions; automatic discoveries can be flagged as awaiting editorial review. Corrections are recorded rather than silently overwritten.
+Facts are grounded in primary sources including Câmara dos Deputados, Senado Federal, Congresso Nacional, Planalto, Diário Oficial da União, TSE, CNJ and ANPD. Automatic discoveries can be flagged as awaiting editorial review. Corrections are recorded rather than silently overwritten.
 
 Last build reference: {core.EXECUTION_DATE}.
 """
@@ -106,8 +106,7 @@ Canonical site: {core.SITE_URL}/
 Public, structured monitoring of Brazilian federal legislation and regulation related to artificial intelligence. The site is statically generated, so the core content is available in HTML without requiring client-side JavaScript.
 
 ## Main collections
-- Procedures: {core.SITE_URL}/procedimentos-legislativos/
-- Legislation and acts: {core.SITE_URL}/legislacao-e-atos/
+- Propositions: {core.SITE_URL}/proposicoes/
 - Recent changes: {core.SITE_URL}/atualizacoes/
 - Laws and regulations: {core.SITE_URL}/leis/
 - Timeline: {core.SITE_URL}/timeline/

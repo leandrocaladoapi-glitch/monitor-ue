@@ -28,7 +28,7 @@ Fontes oficiais:
 Camadas de idioma: a coleta usa a versão inglesa (idioma técnico); a
 identidade dos itens é o número do procedimento (ex.: 2021/0106(COD)).
 """
-from .base import Canal, Fonte, TOPICOS_BUSCA, registrar
+from .base import Canal, Fonte, TOPICOS_BUSCA_UE, registrar
 
 API = "https://data.europarl.europa.eu/api/v2"
 JSONLD = "application/ld%2Bjson"
@@ -79,7 +79,7 @@ class EUParliament(Fonte):
             "sala de imprensa — por tema",
             NEWSROOM + "/press-room?keywords={topico}",
             formato="html", parser="eu:parse_comissao_noticias",
-            tipo_padrao="noticia", obrigatorio=False, topicos=TOPICOS_BUSCA[:6],
+            tipo_padrao="noticia", obrigatorio=False, topicos=TOPICOS_BUSCA_UE[:6],
             opcoes={"limite": 30},
         ),
     ]

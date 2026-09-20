@@ -6,8 +6,7 @@ Canonical site: https://monitor.lcfconsulting.com.br/
 Public, structured monitoring of Brazilian federal legislation and regulation related to artificial intelligence. The site is statically generated, so the core content is available in HTML without requiring client-side JavaScript.
 
 ## Main collections
-- Procedures: https://monitor.lcfconsulting.com.br/procedimentos-legislativos/
-- Legislation and acts: https://monitor.lcfconsulting.com.br/legislacao-e-atos/
+- Propositions: https://monitor.lcfconsulting.com.br/proposicoes/
 - Recent changes: https://monitor.lcfconsulting.com.br/atualizacoes/
 - Laws and regulations: https://monitor.lcfconsulting.com.br/leis/
 - Timeline: https://monitor.lcfconsulting.com.br/timeline/

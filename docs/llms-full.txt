@@ -1,10 +1,10 @@
 # Monitor Legislativo de IA
 
-> Monitor público e auditável da legislação e da regulação de IA da União Europeia, mantido pela LCF Consulting a partir de fontes oficiais.
+> Monitor público e auditável da legislação brasileira de Inteligência Artificial, mantido pela LCF Consulting a partir de fontes oficiais.
 
 ## Key Pages
 - [Início](https://monitor.lcfconsulting.com.br/): visão geral, mudanças recentes e matérias de maior impacto
-- [Procedimentos](https://monitor.lcfconsulting.com.br/procedimentos-legislativos/): procedimentos da UE monitorados e filtros
+- [Proposições](https://monitor.lcfconsulting.com.br/proposicoes/): projetos de lei monitorados e filtros
 - [Atualizações](https://monitor.lcfconsulting.com.br/atualizacoes/): histórico de mudanças detectadas
 - [Leis e normas](https://monitor.lcfconsulting.com.br/leis/): normas vigentes relacionadas a IA
 - [Agenda](https://monitor.lcfconsulting.com.br/agenda/): eventos e marcos futuros
@@ -31,10 +31,28 @@
 - [Briefing executivo](https://monitor.lcfconsulting.com.br/briefing-executivo/): amostra com fonte oficial e interpretação separadas.
 
 ## High-impact monitored propositions
-- [COD 106/2021 — Regulation laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)](https://monitor.lcfconsulting.com.br/procedimentos-legislativos/2021-0106-cod/) — score 85/100; situação: Em vigor desde 01/08/2024, com aplicação faseada: proibições 02/02/2025, GPAI 02/08/2025, aplicação geral (transparência e demais regras) 02/08/2026; alto risco Anexo III 02/12/2027 e Anexo I 02/08/2028 — calendário reprogramado pelo Regulamento (UE) 2026/1744 (Digital Omnibus on
-- [INI 2058/2025 — Copyright and generative artificial intelligence — opportunities and challenges](https://monitor.lcfconsulting.com.br/procedimentos-legislativos/2025-2058-ini/) — score 36/100; situação: Resolução adotada pelo Plenário — 2026-03-10
+- [PL 2338/2023 — Marco Legal da Inteligência Artificial](https://monitor.lcfconsulting.com.br/proposicoes/pl-2338-2023/) — score 95/100; situação: Aguardando Parecer do(a) Relator(a) na Comissão Especial (PL233823)
+- [PL 6237/2025 — Sistema Nacional para Desenvolvimento, Regulação e Governança de IA (SIA)](https://monitor.lcfconsulting.com.br/proposicoes/pl-6237-2025/) — score 88/100; situação: Apensado ao PL 2338/2023 — Aguardando Parecer do(a) Relator(a) na Comissão Especial PL233823
+- [PL 278/2026 — Redata — Regime Especial de Tributação para Serviços de Datacenter](https://monitor.lcfconsulting.com.br/proposicoes/pl-278-2026/) — score 85/100; situação: Aprovado pelo Congresso Nacional; aguarda sanção presidencial
+- [PL 3066/2025 — Enfrentamento da violência sexual contra crianças com uso de IA (convertido na Lei 15.487/2026)](https://monitor.lcfconsulting.com.br/proposicoes/pl-3066-2025/) — score 78/100; situação: Transformada em norma jurídica — Lei nº 15.487/2026, sancionada em 06/08/2026, publicada no DOU de 07/08/2026, em vigor desde 07/08/2026
+- [PL 4358/2025 — Marco setorial de princípios, direitos e governança de IA](https://monitor.lcfconsulting.com.br/proposicoes/pl-4358-2025/) — score 70/100; situação: Apensado ao PL 2338/2023 — Aguardando Parecer do(a) Relator(a) na Comissão Especial PL233823
+- [PL 762/2026 — Marco regulatório para IA em setores de alta consequência](https://monitor.lcfconsulting.com.br/proposicoes/pl-762-2026/) — score 68/100; situação: Apensado ao PL 7132/2025 (subcluster do PL 2338/2023) — Aguardando Parecer do(a) Relator(a) na Comissão Especial PL233823
+- [PL 904/2026 — Responsabilidade, transparência e auditabilidade de IA de alto impacto](https://monitor.lcfconsulting.com.br/proposicoes/pl-904-2026/) — score 66/100; situação: Apensado ao PL 4358/2025 (subcluster do PL 2338/2023)
+- [PL 7132/2025 — Auditoria de vieses em sistemas de IA de alto risco](https://monitor.lcfconsulting.com.br/proposicoes/pl-7132-2025/) — score 66/100; situação: Apensado ao PL 2338/2023 — Aguardando Parecer do(a) Relator(a) na Comissão Especial PL233823
+- [PL 1523/2026 — Classificação por risco e auditoria de discriminação algorítmica](https://monitor.lcfconsulting.com.br/proposicoes/pl-1523-2026/) — score 65/100; situação: Apensado ao PL 4358/2025 (subcluster do PL 2338/2023)
+- [PL 1528/2026 — Transparência e rotulagem de deepfakes e conteúdos sintéticos](https://monitor.lcfconsulting.com.br/proposicoes/pl-1528-2026/) — score 64/100; situação: Apensado ao PL 6326/2025 (cluster de rotulagem do PL 2338/2023)
+- [PL 728/2026 — Governança tecnológica e transparência algorítmica na Administração Pública](https://monitor.lcfconsulting.com.br/proposicoes/pl-728-2026/) — score 63/100; situação: Apensado ao PL 4358/2025 (subcluster do PL 2338/2023)
+- [PL 1542/2026 — Marco de Responsabilidade por Sistemas Autônomos](https://monitor.lcfconsulting.com.br/proposicoes/pl-1542-2026/) — score 62/100; situação: Apensado ao PL 904/2026 (subcluster do PL 2338/2023)
+- [PL 6036/2025 — Selo Nacional de Conteúdo Sintético](https://monitor.lcfconsulting.com.br/proposicoes/pl-6036-2025/) — score 62/100; situação: Apensado ao PL 2983/2025 (cluster de rotulagem do PL 2338/2023)
+- [PL 3967/2025 — Identificação de conteúdo gerado por IA (hub do cluster de rotulagem)](https://monitor.lcfconsulting.com.br/proposicoes/pl-3967-2025/) — score 60/100; situação: No pacote do PL 2338/2023 — aguardando parecer do relator (hub de subcluster com 7 apensados, incluindo PL 6326/2025 e PL 6336/2025)
+- [PL 6326/2025 — Lei de Rotulagem de Conteúdo Sintético](https://monitor.lcfconsulting.com.br/proposicoes/pl-6326-2025/) — score 60/100; situação: No pacote do PL 2338/2023 (apensado ao PL 3967/2025); recebeu o PL 83/2026, o PL 453/2026 e o PL 1528/2026
+- [PL 3060/2026 — Complementações ao regime de governança da IA](https://monitor.lcfconsulting.com.br/proposicoes/pl-3060-2026/) — score 60/100; situação: Apensado ao PL 2338/2023
+- [PL 5433/2025 — Diretrizes nacionais para IA na saúde](https://monitor.lcfconsulting.com.br/proposicoes/pl-5433-2025/) — score 58/100; situação: Apensado ao PL 3782/2025 (subcluster do PL 2338/2023, desde 17/06/2026)
+- [PL 974/2026 — Governança de Agentes de Inteligência Artificial](https://monitor.lcfconsulting.com.br/proposicoes/pl-974-2026/) — score 56/100; situação: Apensado ao PL 6036/2025 (cluster de rotulagem do PL 2338/2023, desde 17/06/2026)
+- [PL 6172/2025 — Tutela dos autores de obras criadas com IA e critérios para conteúdo sintético](https://monitor.lcfconsulting.com.br/proposicoes/pl-6172-2025/) — score 55/100; situação: Apensado ao PL 1969/2025 (subcluster de direitos autorais do PL 2338/2023)
+- [PL 3069/2022 — Reconhecimento facial automatizado por forças de segurança](https://monitor.lcfconsulting.com.br/proposicoes/pl-3069-2022/) — score 55/100; situação: Última movimentação publicamente confirmada: aprovado na Comissão de Segurança Pública (CSPCCO) em 04/08/2023; tramitava em caráter conclusivo, pendente de análise pela CCJC — situação atual a confirmar em execução futura
 
 ## Source and trust policy
-Facts are grounded in primary sources including the European Parliament (Open Data Portal v2), EUR-Lex / Official Journal, the Council of the EU public register, the European Commission (Press Corner and Have Your Say), the European AI Office, the EDPB and the EDPS. The interinstitutional procedure number is the shared identity across institutions; automatic discoveries can be flagged as awaiting editorial review. Corrections are recorded rather than silently overwritten.
+Facts are grounded in primary sources including Câmara dos Deputados, Senado Federal, Congresso Nacional, Planalto, Diário Oficial da União, TSE, CNJ and ANPD. Automatic discoveries can be flagged as awaiting editorial review. Corrections are recorded rather than silently overwritten.
 
 Last build reference: 2026-09-18.

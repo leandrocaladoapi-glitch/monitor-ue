@@ -1,14 +1,12 @@
 name: Sonda e ensaio das fontes oficiais (diagnóstico)
 
 # Diagnóstico manual, em duas partes:
-#   1. Sonda: consulta os endpoints oficiais da União Europeia usados (e os
-#      candidatos documentados) por cada fonte — Parlamento (API v2), EUR-Lex,
-#      Conselho, Comissão (Press Corner/Have Your Say), AI Office, EDPB, EDPS —
-#      e publica resumo + amostras dos corpos.
-#   2. Ensaio real: roda os conectores regulatórios de verdade (scripts/sources,
-#      via scripts/update_sources.py --todas --dry-run) e o motor legislativo
-#      completo em --dry-run, publicando o relatório com o status de cada fonte,
-#      canais que responderam/falharam e amostras dos itens com URL oficial.
+#   1. Sonda: consulta candidatos a endpoint oficial de cada órgão (ANPD, CNJ,
+#      TSE, DOU, Planalto, MCTI) e publica resumo + amostras dos corpos.
+#   2. Ensaio real: roda os coletores multiórgão de verdade (scripts/sources,
+#      via scripts/update_sources.py --todas --dry-run) e publica o relatório
+#      com o status de cada fonte, canais que responderam/falharam e amostras
+#      dos itens com URL oficial.
 # Nada é gravado no dataset, nada no site. Serve para comprovar, com evidência
 # real de execução, qual fonte oficial cada órgão usa e se o coletor funciona.
 on:
@@ -93,11 +91,13 @@ jobs:
       - name: Sondar endpoints (após o ensaio)
         run: |
           mkdir -p out
-          python3 scripts/probe_sources.py --conjunto eu --limite-exemplo 300 \
+          python3 scripts/probe_sources.py --conjunto detalhe --limite-exemplo 300 \
             --salvar-dir out/probe > out/probe.log 2>&1 || true
+          python3 scripts/probe_sources.py --conjunto rodada4 --limite-exemplo 400 \
+            --salvar-dir out/probe > out/probe_rodada4.log 2>&1 || true
           python3 scripts/probe_sources.py --canais --limite-exemplo 200 \
             --salvar-dir out/probe > out/probe_canais.log 2>&1 || true
-          cat out/probe_canais.log >> out/probe.log
+          cat out/probe_rodada4.log out/probe_canais.log >> out/probe.log
           tail -c 4000 out/probe.log
           echo "## Sonda de fontes oficiais" >> "$GITHUB_STEP_SUMMARY"
           echo '```' >> "$GITHUB_STEP_SUMMARY"
@@ -113,15 +113,16 @@ jobs:
             out/fontes_reais.json
             out/fontes_reais.log
             out/probe.log
+            out/probe_rodada4.log
             out/probe_canais.log
             out/execucao_dry_run.log
           retention-days: 7
       - name: Publicar o diagnóstico no branch (mesmo padrão do workflow de produção)
         if: always()
         run: |
-          git config user.name "monitor-ia-ue-bot"
-          git config user.email "monitor-ia-ue-bot@users.noreply.github.com"
-          git add -Af out/probe out/probe.log \
+          git config user.name "monitor-legislativo-bot"
+          git config user.email "monitor-legislativo-bot@users.noreply.github.com"
+          git add -Af out/probe out/probe.log out/probe_rodada4.log \
             out/probe_canais.log out/fontes_reais.json out/fontes_reais.log \
             out/execucao_dry_run.log
           echo "--- arquivos a publicar ---"
@@ -130,7 +131,7 @@ jobs:
             echo "Diagnóstico sem alterações a publicar."
             exit 0
           fi
-          git commit -m "chore(diag): sonda e ensaio das fontes oficiais da UE"
+          git commit -m "chore(diag): sonda e ensaio das fontes oficiais"
           echo "--- push ---"
           if ! git push origin HEAD:${{ github.ref_name }}; then
             # corrida com outro push no mesmo branch: sincroniza e repete

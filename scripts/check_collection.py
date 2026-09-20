@@ -1,10 +1,4 @@
-"""Fail the scheduled run when the latest collection is stale or incomplete.
-
-Critério: a execução mais recente precisa estar concluída, com cobertura
-integral e sem erros/pendências, com data do dia corrente (os timestamps do
-dataset são gerados no fuso BRT — decisão documentada no README, mantida por
-estabilidade dos run_id).
-"""
+"""Fail the scheduled run when the latest collection is stale or incomplete."""
 import json
 import sys
 from datetime import datetime, timezone, timedelta
@@ -38,9 +32,13 @@ def problems(record, now=None):
         errors.append("Há erros ou procedimentos pendentes.")
     return errors
 
-def main():
+def main(argv=None):
+    # Caminho do dataset por argv: raiz (BR) por padrão; o cron UE passa
+    # data/legislation-eu/updates.json.
+    caminho = (argv or sys.argv)[1] if len((argv or sys.argv)) > 1 \
+        else "data/legislation/updates.json"
     try:
-        data = json.loads(Path("data/legislation/updates.json").read_text())
+        data = json.loads(Path(caminho).read_text())
         found = problems((data.get("execucoes") or [{}])[0])
     except (OSError, ValueError, TypeError, AttributeError):
         found = ["Não foi possível verificar o registro da coleta."]

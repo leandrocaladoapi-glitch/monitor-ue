@@ -88,9 +88,9 @@ def briefing(as_of=None, since=None, sector=None, themes=None, watchlist=None, s
     return {'title':'Executive Regulatory Brief', 'as_of':str(today), 'since':str(start), 'sector':sector,
             'top': sorted(props, key=lambda p: (-score(p),p['id']))[:5], 'changes':changes, 'events':events,
             'critical_changes':[m for m in changes if score(next(p for p in props if p['id']==m['proposicao'])) >=80],
-            'coverage':(load('updates').get('execucoes') or [{}])[0].get('status', 'não informado'),
-            'coverage_pct':(load('updates').get('execucoes') or [{}])[0].get('cobertura_pct'),
-            'source_errors':len((load('updates').get('execucoes') or [{}])[0].get('erros', []))}
+            'coverage':load('updates').get('execucoes', [{}])[0].get('status', 'não informado'),
+            'coverage_pct':load('updates').get('execucoes', [{}])[0].get('cobertura_pct'),
+            'source_errors':len(load('updates').get('execucoes', [{}])[0].get('erros', []))}
 
 
 def email_briefing(model):

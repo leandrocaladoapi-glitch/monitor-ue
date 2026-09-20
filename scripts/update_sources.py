@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-update_sources.py — Coleta regulatória multiórgão da União Europeia.
+update_sources.py — Coleta multiórgão (ANPD, CNJ, TSE, DOU, Planalto, MCTI).
 
-Executa cada conector do pacote `scripts/sources` (eu_parliament, eurlex,
-eu_council, eu_commission, ai_office, edpb, edps) em um **subprocesso com
+Executa cada conector do pacote `scripts/sources` em um **subprocesso com
 timeout próprio** (uma fonte travada não derruba as outras), compara o que foi
 coletado com o estado anterior versionado em `data/legislation/atos.json`,
 registra as mudanças em `updates.json` (fonte, URL oficial, data do evento,
@@ -58,45 +57,42 @@ def _env_int(nome, padrao):
 
 TIMEOUT_FONTE_S = _env_int("MONITOR_FONTES_TIMEOUT_S", 150)   # por fonte
 # Teto de tempo para o conjunto das fontes novas: garante que a etapa termine
-# dentro do orçamento da coleta (motor legislativo + build + commit ainda rodam).
+# dentro do orçamento da coleta (Câmara/Senado + build + commit ainda rodam).
 LIMITE_TOTAL_FONTES_S = _env_int("MONITOR_FONTES_LIMITE_TOTAL_S", 900)
 LIMITE_ATOS_POR_FONTE = _env_int("MONITOR_ATOS_POR_FONTE", 400)
 LIMITE_MUDANCAS = _env_int("MONITOR_LIMITE_MUDANCAS", 800)
 RETENCAO_DIAS = _env_int("MONITOR_RETENCAO_DIAS", 180)
 
-# Fontes obrigatórias da execução regulatória (ordem de execução).
-FONTES_NOVAS = ["ai_office", "eurlex", "eu_council", "eu_commission",
-                "eu_parliament", "edpb", "edps"]
+# Fontes obrigatórias da execução (as demais entram via update_legislation).
+FONTES_NOVAS = ["anpd", "cnj", "tse", "dou", "planalto", "mcti"]
 
 # id do tipo de item → tipo do evento registrado em updates.json
 TIPO_EVENTO = {
-    "ato_ue": "novo ato da UE",
-    "norma_vigente": "alteração de norma vigente",
-    "publicacao_jo": "publicação no Jornal Oficial",
-    "documento_conselho": "novo documento do Conselho",
+    "resolucao": "nova resolução",
+    "regulamento": "nova regulamentação",
+    "ato_normativo": "novo ato normativo",
     "consulta_publica": "nova consulta pública",
-    "comunicado": "novo comunicado oficial",
-    "orientacao": "nova orientação oficial",
+    "portaria": "nova portaria",
+    "lei": "nova lei",
+    "decreto": "novo decreto",
+    "medida_provisoria": "nova medida provisória",
     "noticia": "nova notícia oficial",
     "publicacao": "nova publicação",
     "decisao": "nova decisão",
-    "procedimento": "novo procedimento legislativo",
-    "dossie_parlamento": "novo dossiê no Legislative Train",
-    "institucional": "atualização institucional",
+    "programa": "novo programa",
+    "dados_abertos": "nova base de dados",
+    "edital": "novo edital",
 }
 
 # Palavras que mudam o tipo do evento (detectadas no título/descrição do ato).
 EVENTO_POR_TEXTO = [
-    (r"\brepeal|\brevocat", "revogação"),
-    (r"consultation (?:is )?open|call for evidence", "nova consulta pública"),
-    (r"code of practice", "novo código de prática"),
-    (r"guideline", "nova guideline"),
-    (r"delegated act", "novo ato delegado"),
-    (r"implementing act", "novo ato de execução"),
-    (r"\bfine[sd]?\b|\benforcement\b|investigation", "enforcement"),
-    (r"adopt[s]?\b|adoption|published in the official journal", "adoção/publicação"),
-    (r"amend", "alteração normativa"),
-    (r"\bdeadline\b|\bcloses\b|feedback period", "prazo de consulta"),
+    (r"\brevoga", "revogação"),
+    (r"\bsancao|\bsanciona|\bpromulg", "sanção"),
+    (r"\bveto\b|\bvetado\b|\bvetos\b", "veto"),
+    (r"regulament", "regulamentação"),
+    (r"consulta publica", "nova consulta pública"),
+    (r"\bdecisao\b|\bdecide\b|\bjulgamento\b", "nova decisão"),
+    (r"altera(?!cao de texto)", "alteração normativa"),
 ]
 
 
@@ -258,16 +254,13 @@ def executar_todas(orgaos=None, timeout_s=None, usar_subprocesso=True, logger=pr
 def _atos_vazios():
     return {
         "meta": {
-            "descricao": ("Atos, publicações, consultas e documentos das fontes "
-                          "oficiais da União Europeia (European AI Office, "
-                          "EUR-Lex, Conselho, Comissão, Parlamento, EDPB e "
-                          "EDPS), coletados automaticamente."),
+            "descricao": ("Atos, publicações e consultas dos órgãos monitorados "
+                          "(ANPD, CNJ, TSE, DOU, Planalto e MCTI), coletados "
+                          "automaticamente de fontes oficiais."),
             "chave_primaria": "id estável derivado da URL oficial",
-            "nota": ("Todo item traz URL oficial, instituição, fonte e as datas "
-                     "de detecção. A coleta usa o inglês como idioma técnico e "
-                     "deduplica por identificador oficial (CELEX, número de "
-                     "procedimento, URL canônica). Registros com relevância "
-                     "'revisar' aguardam curadoria editorial. Nada é estimado."),
+            "nota": ("Todo item traz URL oficial, órgão, fonte e as datas de "
+                     "detecção. Registros com relevância 'revisar' aguardam "
+                     "curadoria editorial. Nada é estimado."),
             "total": 0,
             "por_orgao": {},
             "indice_total": 0,
@@ -513,16 +506,16 @@ def _somar_http(resultados):
     return total
 
 
-def calcular_status_global(fontes_monitoradas, motor_legislativo=None):
+def calcular_status_global(fontes_monitoradas, camara_senado=None):
     """OK · PARCIAL · FALHA — nunca dá como completa uma coleta incompleta.
 
     OK       todos os órgãos obrigatórios consultados com sucesso;
     PARCIAL  ao menos uma fonte falhou ou ficou parcial;
-    FALHA    nenhuma fonte consultada com sucesso (ou o motor legislativo falhou).
+    FALHA    nenhuma fonte consultada com sucesso (ou Câmara e Senado falharam).
     """
     saude = dict(fontes_monitoradas or {})
-    if motor_legislativo:
-        saude.update(motor_legislativo)
+    if camara_senado:
+        saude.update(camara_senado)
     if not saude:
         return "FALHA"
     falhas = [o for o, s in saude.items() if (s or {}).get("status") == "falha"]
@@ -530,10 +523,10 @@ def calcular_status_global(fontes_monitoradas, motor_legislativo=None):
                    if (s or {}).get("status") in ("ok", "parcial")]
     if not consultadas:
         return "FALHA"
-    if motor_legislativo:
-        insts = [(motor_legislativo.get("parlamento") or {}).get("status"),
-                 (motor_legislativo.get("eurlex_motor") or {}).get("status")]
-        if all(c == "falha" for c in insts):
+    if camara_senado:
+        casas = [(camara_senado.get("camara") or {}).get("status"),
+                 (camara_senado.get("senado") or {}).get("status")]
+        if all(c == "falha" for c in casas):
             return "FALHA"
     if falhas or any((s or {}).get("status") == "parcial" for s in saude.values()):
         return "PARCIAL"
@@ -622,7 +615,7 @@ def relatorio_compacto(resultados, limite_amostras=5):
     return {
         "gerado_em": ts_iso(),
         "status_global": calcular_status_global(
-            {o: f for o, f in fontes.items() if o not in ("parlamento", "eurlex_motor")}),
+            {o: f for o, f in fontes.items() if o not in ("camara", "senado")}),
         "fontes": fontes,
     }
 

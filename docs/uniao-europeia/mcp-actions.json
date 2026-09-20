@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "status": "draft-compatible-declaration",
+  "site": "https://monitor.lcfconsulting.com.br/uniao-europeia",
+  "actions": [
+    {
+      "id": "contact-lcf-consulting",
+      "name": "Contact LCF Consulting",
+      "description": "Open LCF Consulting to request legislative and regulatory intelligence services.",
+      "method": "declarative",
+      "element": "a[data-mcp-action='contact-lcf-consulting']",
+      "endpoint": "https://lcfconsulting.com.br/"
+    },
+    {
+      "id": "read-legislative-updates",
+      "name": "Read legislative updates feed",
+      "description": "Retrieve the public structured feed of detected legislative changes.",
+      "method": "GET",
+      "endpoint": "https://monitor.lcfconsulting.com.br/uniao-europeia/data/updates.json"
+    },
+    {
+      "id": "read-propositions",
+      "name": "Read monitored propositions",
+      "description": "Retrieve the public structured feed of monitored AI-related propositions.",
+      "method": "GET",
+      "endpoint": "https://monitor.lcfconsulting.com.br/uniao-europeia/data/propositions.json"
+    }
+  ]
+}

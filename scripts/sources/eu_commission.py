@@ -21,7 +21,7 @@ Fontes oficiais:
 
 Nada de imprensa de terceiros: só canais da própria Comissão.
 """
-from .base import Canal, Fonte, TOPICOS_BUSCA, registrar
+from .base import Canal, Fonte, TOPICOS_BUSCA_UE, registrar
 
 PRESSCORNER = "https://ec.europa.eu/commission/presscorner/api/rss?language=en"
 HYS = "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en"

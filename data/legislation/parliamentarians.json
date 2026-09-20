@@ -1,68 +1,331 @@
 {
   "meta": {
-    "descricao": "Atores legislativos (eurodeputados e instituições) documentados nos dossiês monitorados — somente atores com papel registrado em fonte oficial sobre IA.",
-    "criterio": "Incluído apenas quando a atuação em IA aparece em fonte oficial citada. Sem perfis genéricos; sem dados estimados.",
+    "descricao": "Mapa de parlamentares com atuação documentada na legislação brasileira de Inteligência Artificial",
     "execucao": "2026-09-18",
-    "total": 2
+    "nota_metodologica": "Só constam cargos e posições documentados em fontes oficiais (fichas de tramitação, agências de notícias das Casas e registros legislativos). Não são atribuídas posições políticas de favorabilidade ou contrariedade sem fonte documental."
   },
   "parlamentares": [
     {
-      "id": "pe_brando_benifei",
-      "nome": "Brando Benifei",
-      "partido": "S&D (Grupo Socialista e Democrata)",
-      "casa": "Parlamento Europeu",
-      "estado": "Itália",
-      "comissao": "IMCO (Mercado Interno e Proteção do Consumidor)",
-      "papel": "Co-relator do AI Act (2021/0106(COD))",
+      "id": "dep_aguinaldo_ribeiro",
+      "nome": "Aguinaldo Ribeiro",
+      "partido": "PP",
+      "estado": "PB",
+      "casa": "Câmara",
+      "papel": "Relator do PL 2338/2023 (Marco Legal da IA) na Comissão Especial desde 20/05/2025; relator do PL 278/2026 (Redata) na Câmara",
       "atuacao_ia": [
-        "Co-relator do procedimento legislativo do AI Act (Reg. (UE) 2024/1689).",
-        "Relator do relatório adotado em comissão (A-9-2023-0188) e da posição do Plenário em 1ª leitura (TA-9-2023-0236)."
+        "Designado relator do PL 2338/2023 na Comissão Especial sobre Inteligência Artificial em 20/05/2025",
+        "Relator do Redata (PL 278/2026) aprovado pela Câmara em 24/02/2026",
+        "Sinalizou publicamente, em 24/08/2026, que a votação do marco legal fica para depois das eleições de outubro"
       ],
       "proposicoes_relacionadas": [
-        "ue_2021_0106_cod"
+        "camara_pl_2338_2023",
+        "camara_pl_278_2026"
       ],
       "fontes": [
         {
-          "titulo": "Dossiê AI Act nas comissões do Parlamento (co-relatores)",
-          "url": "https://www.europarl.europa.eu/committees/en/artificial-intelligence-act/product-details/20230417CDT11481"
+          "titulo": "Agência Câmara — Comissão será presidida por Luisa Canziani; Aguinaldo Ribeiro será relator",
+          "url": "https://antihype.com.br/c/ia/marco-legal-ia-brasil-adiado-eleicoes/"
         },
         {
-          "titulo": "Comunicado oficial do Parlamento sobre a adoção no plenário",
-          "url": "https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law"
-        },
-        {
-          "titulo": "Comunicado oficial do Conselho sobre a aprovação final",
-          "url": "https://www.consilium.europa.eu/en/press/press-releases/2024/05/21/artificial-intelligence-ai-act-council-gives-final-green-light-to-the-first-worldwide-rules-on-ai/"
+          "titulo": "Câmara — tramitação PL 7132/2025 (designação de relator)",
+          "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2599741"
         }
       ]
     },
     {
-      "id": "pe_dragos_tudorache",
-      "nome": "Dragoș Tudorache",
-      "partido": "Renew Europe",
-      "casa": "Parlamento Europeu",
-      "estado": "Romênia",
-      "comissao": "LIBE (Direitos Fundamentais, Justiça e Assuntos Internos)",
-      "papel": "Co-relator do AI Act (2021/0106(COD))",
+      "id": "dep_luisa_canziani",
+      "nome": "Luísa Canziani",
+      "partido": "PSD",
+      "estado": "PR",
+      "casa": "Câmara",
+      "papel": "Presidente da Comissão Especial do PL 2338/2023 desde 20/05/2025; ex-relatora do PL 21/2020 (aprovado pela Câmara em 2021)",
       "atuacao_ia": [
-        "Co-relator do procedimento legislativo do AI Act (Reg. (UE) 2024/1689).",
-        "Coordenou as negociações interinstitucionais (trílogos) com o Conselho, concluídas com acordo provisório em 8 de dezembro de 2023."
+        "Relatora do PL 21/2020, aprovado no Plenário da Câmara em 29/09/2021 (substitutivo de sua autoria, 413x15)",
+        "Presidente da Comissão Especial destinada a proferir parecer ao PL 2338/2023"
       ],
       "proposicoes_relacionadas": [
-        "ue_2021_0106_cod"
+        "camara_pl_2338_2023",
+        "camara_pl_21_2020"
       ],
       "fontes": [
         {
-          "titulo": "Dossiê AI Act nas comissões do Parlamento (co-relatores)",
-          "url": "https://www.europarl.europa.eu/committees/en/artificial-intelligence-act/product-details/20230417CDT11481"
-        },
+          "titulo": "Agência Câmara (20/05/2025) e CNN Brasil (2021)",
+          "url": "https://www.cnnbrasil.com.br/tecnologia/camara-aprova-marco-legal-para-inteligencia-artificial-entenda-implicacoes/"
+        }
+      ]
+    },
+    {
+      "id": "sen_rodrigo_pacheco",
+      "nome": "Rodrigo Pacheco",
+      "partido": "PSD",
+      "estado": "MG",
+      "casa": "Senado",
+      "papel": "Autor do PL 2338/2023 (Marco Legal da IA); criador da CTIA (RQS 722/2023) quando presidia o Senado",
+      "atuacao_ia": [
+        "Apresentou o PL 2338/2023 em 03/05/2023, matéria que consolidou todas as iniciativas de IA do Senado",
+        "Presidiu o Senado durante os trabalhos da Comissão de Juristas (2022) e da CTIA (2023-2024)",
+        "Acionado pelo relator Aguinaldo Ribeiro para destravar o Redata no Senado (2026)"
+      ],
+      "proposicoes_relacionadas": [
+        "camara_pl_2338_2023"
+      ],
+      "fontes": [
         {
-          "titulo": "Comunicado oficial do Parlamento sobre a adoção no plenário",
-          "url": "https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law"
-        },
+          "titulo": "Senado — PL 2338/2023",
+          "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/157233"
+        }
+      ]
+    },
+    {
+      "id": "sen_carlos_viana",
+      "nome": "Carlos Viana",
+      "partido": "PODEMOS",
+      "estado": "MG",
+      "casa": "Senado",
+      "papel": "Presidente da CTIA (Comissão Temporária Interna sobre IA, 2023-2024); relator inicial das matérias de IA",
+      "atuacao_ia": [
+        "Presidiu a CTIA, instalada em 16/08/2023",
+        "Apresentou emendas ao PL 2338/2023 durante a tramitação na CTIA (2023)"
+      ],
+      "proposicoes_relacionadas": [
+        "camara_pl_2338_2023"
+      ],
+      "fontes": [
         {
-          "titulo": "Comunicado oficial do Conselho sobre a aprovação final",
-          "url": "https://www.consilium.europa.eu/en/press/press-releases/2024/05/21/artificial-intelligence-ai-act-council-gives-final-green-light-to-the-first-worldwide-rules-on-ai/"
+          "titulo": "Senado — página da CTIA",
+          "url": "https://legis.senado.leg.br/atividade/comissoes/comissao/2629/"
+        }
+      ]
+    },
+    {
+      "id": "sen_eduardo_gomes",
+      "nome": "Eduardo Gomes",
+      "partido": "PL",
+      "estado": "TO",
+      "casa": "Senado",
+      "papel": "Relator da CTIA (2023-2024); relator designado do Redata no Senado",
+      "atuacao_ia": [
+        "Relator do relatório da CTIA aprovado em 07/06/2024 (Parecer da CTIA com Emenda 199-CCT), base do texto aprovado do PL 2338/2023",
+        "Designado relator do PL 278/2026 (Redata) no Senado em 2026"
+      ],
+      "proposicoes_relacionadas": [
+        "camara_pl_2338_2023",
+        "camara_pl_278_2026"
+      ],
+      "fontes": [
+        {
+          "titulo": "Senado — CTIA e PL 5691/2019 (complementação de voto)",
+          "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/139586"
+        }
+      ]
+    },
+    {
+      "id": "sen_cid_gomes",
+      "nome": "Cid Gomes",
+      "partido": "PSB",
+      "estado": "CE",
+      "casa": "Senado",
+      "papel": "Relator do PL 278/2026 (Redata) no Plenário do Senado (aprovado em 01/09/2026)",
+      "atuacao_ia": [
+        "Relator do relatório do Redata aprovado em votação simbólica pelo Senado em 01/09/2026, com acolhimento parcial de emendas de redação"
+      ],
+      "proposicoes_relacionadas": [
+        "camara_pl_278_2026"
+      ],
+      "fontes": [
+        {
+          "titulo": "Teletime — Senado aprova Redata (01/09/2026)",
+          "url": "https://teletime.com.br/01/09/2026/redata-senado/"
+        }
+      ]
+    },
+    {
+      "id": "dep_rubens_pereira_junior",
+      "nome": "Rubens Pereira Júnior",
+      "partido": "PT",
+      "estado": "MA",
+      "casa": "Câmara",
+      "papel": "Autor do principal bloco de projetos setoriais de IA apensados ao PL 2338/2023 em 2026",
+      "atuacao_ia": [
+        "Autor dos PLs 762/2026 (setores de alta consequência), 728/2026 (governança e transparência algorítmica na Administração Pública), 904/2026 (responsabilidade, transparência e auditabilidade de sistemas de alto impacto), 1523/2026 (classificação por risco e auditoria de discriminação algorítmica) e 1528/2026 (rotulagem de deepfakes e conteúdo sintético)"
+      ],
+      "proposicoes_relacionadas": [
+        "camara_pl_762_2026",
+        "camara_pl_728_2026",
+        "camara_pl_904_2026",
+        "camara_pl_1523_2026",
+        "camara_pl_1528_2026"
+      ],
+      "fontes": [
+        {
+          "titulo": "Câmara — apensados do PL 2338/2023",
+          "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262"
+        }
+      ]
+    },
+    {
+      "id": "dep_eduardo_bismarck",
+      "nome": "Eduardo Bismarck",
+      "partido": "PDT",
+      "estado": "CE",
+      "casa": "Câmara",
+      "papel": "Autor do PL 21/2020, primeiro marco de IA aprovado pela Câmara (2021)",
+      "atuacao_ia": [
+        "Autor do PL 21/2020, aprovado pela Câmara em 29/09/2021 e declarado prejudicado pelo Senado em 10/12/2024, quando da aprovação do PL 2338/2023"
+      ],
+      "proposicoes_relacionadas": [
+        "camara_pl_21_2020"
+      ],
+      "fontes": [
+        {
+          "titulo": "Câmara — PL 21/2020",
+          "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2236340"
+        }
+      ]
+    },
+    {
+      "id": "sen_styvenson_valentim",
+      "nome": "Styvenson Valentim",
+      "partido": "PODEMOS",
+      "estado": "RN",
+      "casa": "Senado",
+      "papel": "Autor dos primeiros projetos estruturantes de IA do Senado (2019)",
+      "atuacao_ia": [
+        "Autor do PL 5051/2019 (princípios para uso de IA) e do PL 5691/2019 (Política Nacional de IA)",
+        "Requereu tramitação conjunta das matérias de IA no Senado (RQS 1593/2021) e audiências públicas de instrução"
+      ],
+      "proposicoes_relacionadas": [
+        "camara_pl_5051_2019",
+        "camara_pl_5691_2019"
+      ],
+      "fontes": [
+        {
+          "titulo": "Senado — PL 5051/2019 e PL 5691/2019",
+          "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/138790"
+        }
+      ]
+    },
+    {
+      "id": "sen_veneziano_vital_do_rego",
+      "nome": "Veneziano Vital do Rêgo",
+      "partido": "PSDB",
+      "estado": "PB",
+      "casa": "Senado",
+      "papel": "Autor do PL 872/2021 sobre uso de IA",
+      "atuacao_ia": [
+        "Autor do PL 872/2021 ('Dispõe sobre o uso da Inteligência Artificial'), apensado às matérias consolidadas pela CTIA e declarado prejudicado em 10/12/2024"
+      ],
+      "proposicoes_relacionadas": [
+        "camara_pl_872_2021"
+      ],
+      "fontes": [
+        {
+          "titulo": "Senado — PL 872/2021",
+          "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/147434"
+        }
+      ]
+    },
+    {
+      "id": "dep_osmar_terra",
+      "nome": "Osmar Terra",
+      "partido": "MDB",
+      "estado": "RS",
+      "casa": "Câmara",
+      "papel": "Autor do PL 3066/2025, convertido na Lei 15.487/2026 (crimes com IA e deepfakes)",
+      "atuacao_ia": [
+        "Autor do PL 3066/2025 — medidas de enfrentamento à violência sexual contra crianças, inclusive com IA — sancionado como Lei 15.487/2026 em 06/08/2026"
+      ],
+      "proposicoes_relacionadas": [
+        "camara_pl_3066_2025"
+      ],
+      "fontes": [
+        {
+          "titulo": "Senado — PL 3066/2025 (autoria)",
+          "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/174481"
+        }
+      ]
+    },
+    {
+      "id": "dep_jose_guimaraes",
+      "nome": "José Guimarães",
+      "partido": "PT",
+      "estado": "CE",
+      "casa": "Câmara",
+      "papel": "Líder do governo na Câmara; autor do PL 278/2026 (Redata)",
+      "atuacao_ia": [
+        "Autor do PL 278/2026, que institui o Redata — regime tributário para data centers, aprovado pelo Congresso em 01/09/2026"
+      ],
+      "proposicoes_relacionadas": [
+        "camara_pl_278_2026"
+      ],
+      "fontes": [
+        {
+          "titulo": "IstoÉ Dinheiro — Redata (26/02/2026)",
+          "url": "https://istoedinheiro.com.br/redata-que-cria-incentivos-a-data-centers-caduca"
+        }
+      ]
+    },
+    {
+      "id": "dep_hugo_motta",
+      "nome": "Hugo Motta",
+      "partido": "Republicanos",
+      "estado": "PB",
+      "casa": "Câmara",
+      "papel": "Presidente da Câmara dos Deputados",
+      "atuacao_ia": [
+        "Determinou a criação da Comissão Especial do PL 2338/2023 (Ato de 04/04/2025, DCD extra)",
+        "Anunciou em 28/05/2026 meta de votação do marco legal até 09/06/2026 (não cumprida)"
+      ],
+      "proposicoes_relacionadas": [
+        "camara_pl_2338_2023"
+      ],
+      "fontes": [
+        {
+          "titulo": "Brasil247 (28/05/2026) e Câmara — Dados Abertos",
+          "url": "https://www.brasil247.com/brasilia/regulamentacao-da-ia-deve-ser-votada-na-camara-ate-o-final-de-junho/"
+        }
+      ]
+    },
+    {
+      "id": "dep_amom_mandel",
+      "nome": "Amom Mandel",
+      "partido": "CIDADANIA",
+      "estado": "AM",
+      "casa": "Câmara",
+      "papel": "Autor de bloco de projetos de IA em educação e auditoria de vieses",
+      "atuacao_ia": [
+        "Autor dos PLs 6708/2025 (IA e ética algorítmica na LDB), 7137/2025 (literacia digital), 7132/2025 (auditoria de vieses em IA de alto risco) e 6270/2025 (escrita humana e uso ético de IA), todos apensados ao PL 2338/2023"
+      ],
+      "proposicoes_relacionadas": [
+        "camara_pl_6708_2025",
+        "camara_pl_7137_2025",
+        "camara_pl_7132_2025",
+        "camara_pl_6270_2025"
+      ],
+      "fontes": [
+        {
+          "titulo": "Câmara — fichas de tramitação (apensados ao PL 2338/2023)",
+          "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2599741"
+        }
+      ]
+    },
+    {
+      "id": "dep_heloisa_helena",
+      "nome": "Heloísa Helena",
+      "partido": "PSOL",
+      "estado": "AL",
+      "casa": "Câmara",
+      "papel": "Autora do PL 3060/2026, apensado ao PL 2338/2023 em 01/09/2026",
+      "atuacao_ia": [
+        "Autora do PL 3060/2026 — complementações ao regime nacional de governança da IA (deveres de administradores, tratamento diferenciado de MPEs, tutela contra discriminação algorítmica)"
+      ],
+      "proposicoes_relacionadas": [
+        "camara_pl_3060_2026"
+      ],
+      "fontes": [
+        {
+          "titulo": "Câmara — ficha PL 2338/2023 (apensação de 01/09/2026)",
+          "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262"
         }
       ]
     }
