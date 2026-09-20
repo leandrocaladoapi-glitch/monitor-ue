@@ -1,6 +1,6 @@
 URL: https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Flegislacao
 STATUS: 200 CT: application/json
-INFO: {"items_total": 21226, "items_len": 50, "amostra_titulos": ["PORTARIA Nº 623, DE 15 DE SETEMBRO DE 2026|", "PORTARIA Nº 621, DE 14 DE SETEMBRO DE 2026|", "PORTARIA Nº 619, DE 14 DE SETEMBRO DE 2026|"]}
+INFO: {"items_total": 21227, "items_len": 50, "amostra_titulos": ["PORTARIA Nº 626, DE 16 DE SETEMBRO DE 2026|", "PORTARIA Nº 623, DE 15 DE SETEMBRO DE 2026|", "PORTARIA Nº 621, DE 14 DE SETEMBRO DE 2026|"]}
 ---
 {
   "@id": "https://www.tse.jus.br/++api++/@search?path=%2Flegislacao", 
@@ -11,6 +11,24 @@ INFO: {"items_total": 21226, "items_len": 50, "amostra_titulos": ["PORTARIA Nº 
     "next": "https://www.tse.jus.br/++api++/@search?b_start=50&b_size=50&sort_on=effective&sort_order=descending&path=%2Flegislacao"
   }, 
   "items": [
+    {
+      "@id": "https://www.tse.jus.br/legislacao/compilada/prt/2026/portaria-no-626-de-16-de-setembro-de-2026", 
+      "@type": "Ato", 
+      "description": "", 
+      "effective": "2026-09-18T13:06:11+00:00", 
+      "end": null, 
+      "getObjSize": "1.5 KB", 
+      "getRemoteUrl": null, 
+      "head_title": null, 
+      "image_field": null, 
+      "image_scales": null, 
+      "mime_type": "text/plain", 
+      "nav_title": null, 
+      "review_state": "published", 
+      "start": null, 
+      "title": "PORTARIA N\u00ba 626, DE 16 DE SETEMBRO DE 2026", 
+      "type_title": "Ato"
+    }, 
     {
       "@id": "https://www.tse.jus.br/legislacao/compilada/prt/2026/portaria-no-623-de-15-de-setembro-de-2026", 
       "@type": "Ato", 
@@ -875,23 +893,4 @@ INFO: {"items_total": 21226, "items_len": 50, "amostra_titulos": ["PORTARIA Nº 
       "title": "PORTARIA N\u00ba 583, DE 2 DE SETEMBRO DE 2026", 
       "type_title": "Ato"
     }, 
-    {
-      "@id": "https://www.tse.jus.br/legislacao/compilada/prt/2026/portaria-no-559-de-27-de-agosto-de-2026", 
-      "@type": "Ato", 
-      "description": "", 
-      "effective": "2026-09-03T13:45:51+00:00", 
-      "end": null, 
-      "getObjSize": "2.0 KB", 
-      "getRemoteUrl": null, 
-      "head_title": null, 
-      "image_field": null, 
-      "image_scales": null, 
-      "mime_type": "text/plain", 
-      "nav_title": null, 
-      "review_state": "published", 
-      "start": null, 
-      "title": "PORTARIA N\u00ba 559, DE 27 DE AGOSTO DE 2026", 
-      "type_title": "Ato"
-    }, 
-    {
- 
+   

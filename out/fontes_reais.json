@@ -1,494 +1,300 @@
 {
-  "gerado_em": "2026-09-20T01:28:18-03:00",
+  "gerado_em": "2026-09-20T02:05:10-03:00",
   "status_global": "PARCIAL",
   "fontes": {
-    "ai_office": {
-      "nome": "European AI Office — Comissão Europeia (digital-strategy)",
-      "status": "falha",
-      "ultima_tentativa": "2026-09-20T01:27:56-03:00",
-      "ultima_execucao_ok": null,
-      "itens_consultados": 0,
-      "itens_relevantes": 0,
-      "itens_descartados": 0,
-      "itens_duplicados": 0,
-      "revisao_pendente": 0,
-      "novidades": 0,
-      "erros": 6,
-      "duracao_segundos": 1.1,
-      "endpoints": [
-        "https://digital-strategy.ec.europa.eu/en/news?type=5%7C13",
-        "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
-        "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
-        "https://digital-strategy.ec.europa.eu/en/policies/general-purpose-ai",
-        "https://digital-strategy.ec.europa.eu/en/ai-act"
-      ],
-      "canais_ok": [],
-      "canais_falhos": [
-        "notícias e comunicados do portal",
-        "página da AI Office (políticas e ações)",
-        "AI Act — quadro regulatório e implementação",
-        "General-Purpose AI — página oficial",
-        "AI Act — página do serviço"
-      ],
-      "canais_falhos_obrigatorios": [
-        "notícias e comunicados do portal"
-      ],
-      "canais_opcionais_falhos": [
-        "página da AI Office (políticas e ações)",
-        "AI Act — quadro regulatório e implementação",
-        "General-Purpose AI — página oficial",
-        "AI Act — página do serviço"
-      ],
-      "canais_detalhe": [],
-      "erro_detalhe": "notícias e comunicados do portal: ModuleNotFoundError: No module named 'eu_parsers'; página da AI Office (políticas e ações): ModuleNotFoundError: No module named 'eu_parsers'; AI Act — quadro regulatório e implementação: ModuleNotFoundError: No module named 'eu_parsers'; General-Purpose AI — página oficial: ModuleNotFoundError: No module named 'eu_parsers'",
-      "http": {
-        "chamadas": 5,
-        "falhas": 0,
-        "cache": 0,
-        "tempo_total": 1.07,
-        "por_endpoint": {
-          "digital-strategy.ec.europa.eu/en/ai-act": {
-            "chamadas": 1,
-            "falhas": 0,
-            "tempo_total": 0.23
-          },
-          "digital-strategy.ec.europa.eu/en/news": {
-            "chamadas": 1,
-            "falhas": 0,
-            "tempo_total": 0.37
-          },
-          "digital-strategy.ec.europa.eu/en/policies/ai-office": {
-            "chamadas": 1,
-            "falhas": 0,
-            "tempo_total": 0.16
-          },
-          "digital-strategy.ec.europa.eu/en/policies/general-purpose-ai": {
-            "chamadas": 1,
-            "falhas": 0,
-            "tempo_total": 0.25
-          },
-          "digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai": {
-            "chamadas": 1,
-            "falhas": 0,
-            "tempo_total": 0.07
-          }
-        }
-      },
-      "erro_fatal": "nenhum canal respondeu — notícias e comunicados do portal: ModuleNotFoundError: No module named 'eu_parsers'; página da AI Office (políticas e ações): ModuleNotFoundError: No module named 'eu_parsers'; AI Act — quadro regulatório e implementação: ModuleNotFoundError: No module named 'eu_parsers'; General-Purpose AI — página oficial: ModuleNotFoundError: No module named 'eu_parsers'",
-      "amostra": []
-    },
-    "eurlex": {
-      "nome": "EUR-Lex — Jornal Oficial da União Europeia (Publications Office)",
-      "status": "parcial",
-      "ultima_tentativa": "2026-09-20T01:27:57-03:00",
-      "ultima_execucao_ok": null,
-      "itens_consultados": 100,
-      "itens_relevantes": 0,
-      "itens_descartados": 1,
-      "itens_duplicados": 99,
-      "revisao_pendente": 0,
-      "novidades": 0,
-      "erros": 3,
-      "duracao_segundos": 4.8,
-      "endpoints": [
-        "https://eur-lex.europa.eu/search.html?text=%22{topico}%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR={year}",
-        "https://eur-lex.europa.eu/search.html?text=%22{topico}%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR={prev_year}",
-        "https://eur-lex.europa.eu/EN/display-feed.rss?rssId=222",
-        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727"
-      ],
-      "canais_ok": [
-        "atos do Jornal Oficial — série L (RSS oficial)"
-      ],
-      "canais_falhos": [
-        "busca por tema (legislação do ano corrente)",
-        "busca por tema (legislação do ano anterior)",
-        "AI Act — versão consolidada (ato âncora)"
-      ],
-      "canais_falhos_obrigatorios": [
-        "busca por tema (legislação do ano corrente)"
-      ],
-      "canais_opcionais_falhos": [
-        "busca por tema (legislação do ano anterior)",
-        "AI Act — versão consolidada (ato âncora)"
-      ],
-      "canais_detalhe": [
-        {
-          "canal": "atos do Jornal Oficial — série L (RSS oficial)",
-          "url": "https://eur-lex.europa.eu/EN/display-feed.rss?rssId=222",
-          "itens_brutos": 100,
-          "amostra_hierarquia": [],
-          "itens_relevantes": 0
-        }
-      ],
-      "erro_detalhe": "busca por tema (legislação do ano corrente): ModuleNotFoundError: No module named 'eu_parsers'; busca por tema (legislação do ano anterior): ModuleNotFoundError: No module named 'eu_parsers'; AI Act — versão consolidada (ato âncora): ModuleNotFoundError: No module named 'eu_parsers'",
-      "http": {
-        "chamadas": 4,
-        "falhas": 0,
-        "cache": 0,
-        "tempo_total": 4.77,
-        "por_endpoint": {
-          "eur-lex.europa.eu/EN/display-feed.rss": {
-            "chamadas": 1,
-            "falhas": 0,
-            "tempo_total": 0.28
-          },
-          "eur-lex.europa.eu/legal-content/EN/TXT/": {
-            "chamadas": 1,
-            "falhas": 0,
-            "tempo_total": 1.03
-          },
-          "eur-lex.europa.eu/search.html": {
-            "chamadas": 2,
-            "falhas": 0,
-            "tempo_total": 3.46
-          }
-        }
-      },
-      "erro_fatal": null,
-      "amostra": []
-    },
-    "eu_council": {
-      "nome": "Conselho da UE — Registro público de documentos",
-      "status": "falha",
-      "ultima_tentativa": "2026-09-20T01:28:02-03:00",
-      "ultima_execucao_ok": null,
-      "itens_consultados": 0,
-      "itens_relevantes": 0,
-      "itens_descartados": 0,
-      "itens_duplicados": 0,
-      "revisao_pendente": 0,
-      "novidades": 0,
-      "erros": 4,
-      "duracao_segundos": 0.6,
-      "endpoints": [
-        "https://www.consilium.europa.eu/en/documents/public-register/latest/",
-        "https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2",
-        "https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/"
-      ],
-      "canais_ok": [],
-      "canais_falhos": [
-        "últimos documentos adicionados ao registro",
-        "últimos documentos (página 2)",
-        "documentos legislativos preparatórios (página 1)"
-      ],
-      "canais_falhos_obrigatorios": [
-        "últimos documentos adicionados ao registro"
-      ],
-      "canais_opcionais_falhos": [
-        "últimos documentos (página 2)",
-        "documentos legislativos preparatórios (página 1)"
-      ],
-      "canais_detalhe": [],
-      "erro_detalhe": "últimos documentos adicionados ao registro: HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/ (HTTP 403); últimos documentos (página 2): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2 (HTTP 403); documentos legislativos preparatórios (página 1): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/ (HTTP 403); nenhum canal respondeu — últimos documentos adicionados ao registro: HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/ (HTTP 403); últimos documentos (página 2): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2 (HTTP 403); documentos legislativos preparatórios (página 1): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/ (HTTP 403)",
-      "http": {
-        "chamadas": 3,
-        "falhas": 3,
-        "cache": 0,
-        "tempo_total": 0.62,
-        "por_endpoint": {
-          "consilium.europa.eu/en/documents/public-register/latest/": {
-            "chamadas": 2,
-            "falhas": 2,
-            "tempo_total": 0.55
-          },
-          "consilium.europa.eu/en/documents/public-register/preparatory-legislative-documen": {
-            "chamadas": 1,
-            "falhas": 1,
-            "tempo_total": 0.07
-          }
-        }
-      },
-      "erro_fatal": "nenhum canal respondeu — últimos documentos adicionados ao registro: HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/ (HTTP 403); últimos documentos (página 2): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2 (HTTP 403); documentos legislativos preparatórios (página 1): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/ (HTTP 403)",
-      "amostra": []
-    },
-    "eu_commission": {
-      "nome": "Comissão Europeia — Press Corner e Have Your Say",
-      "status": "parcial",
-      "ultima_tentativa": "2026-09-20T01:28:03-03:00",
-      "ultima_execucao_ok": null,
-      "itens_consultados": 10,
-      "itens_relevantes": 1,
-      "itens_descartados": 9,
-      "itens_duplicados": 0,
-      "revisao_pendente": 0,
-      "novidades": 0,
-      "erros": 3,
-      "duracao_segundos": 2.0,
-      "endpoints": [
-        "https://ec.europa.eu/commission/presscorner/api/rss?language=en",
-        "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?page=1",
-        "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?page=2",
-        "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?keywords={topico}"
-      ],
-      "canais_ok": [
-        "comunicados oficiais (Press Corner, RSS)"
-      ],
-      "canais_falhos": [
-        "consultas públicas e calls for evidence (Have Your Say)",
-        "consultas públicas (Have Your Say, página 2)",
-        "consultas por tema (Have Your Say, keywords)"
-      ],
-      "canais_falhos_obrigatorios": [
-        "consultas públicas e calls for evidence (Have Your Say)"
-      ],
-      "canais_opcionais_falhos": [
-        "consultas públicas (Have Your Say, página 2)",
-        "consultas por tema (Have Your Say, keywords)"
-      ],
-      "canais_detalhe": [
-        {
-          "canal": "comunicados oficiais (Press Corner, RSS)",
-          "url": "https://ec.europa.eu/commission/presscorner/api/rss?language=en",
-          "itens_brutos": 10,
-          "amostra_hierarquia": [],
-          "itens_relevantes": 1
-        }
-      ],
-      "erro_detalhe": "consultas públicas e calls for evidence (Have Your Say): ModuleNotFoundError: No module named 'eu_parsers'; consultas públicas (Have Your Say, página 2): ModuleNotFoundError: No module named 'eu_parsers'; consultas por tema (Have Your Say, keywords): ModuleNotFoundError: No module named 'eu_parsers'",
-      "http": {
-        "chamadas": 4,
-        "falhas": 0,
-        "cache": 0,
-        "tempo_total": 2.04,
-        "por_endpoint": {
-          "ec.europa.eu/commission/presscorner/api/rss": {
-            "chamadas": 1,
-            "falhas": 0,
-            "tempo_total": 0.96
-          },
-          "ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en": {
-            "chamadas": 3,
-            "falhas": 0,
-            "tempo_total": 1.09
-          }
-        }
-      },
-      "erro_fatal": null,
-      "amostra": [
-        {
-          "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_1898",
-          "tipo": "comunicado",
-          "titulo": "Speech by Executive Vice-President Teresa Ribera at Fordham's 53rd Annual Conference “Building a democratic, competitive and sustainable future for artificial intelligence”",
-          "data": "2026-09-17",
-          "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1898",
-          "relevancia": "forte",
-          "revisao_pendente": false,
-          "hierarquia": null,
-          "situacao": null
-        }
-      ]
-    },
-    "eu_parliament": {
-      "nome": "Parlamento Europeu — Open Data Portal v2 / Legislative Train",
-      "status": "falha",
-      "ultima_tentativa": "2026-09-20T01:28:05-03:00",
-      "ultima_execucao_ok": null,
-      "itens_consultados": 0,
-      "itens_relevantes": 0,
-      "itens_descartados": 0,
-      "itens_duplicados": 0,
-      "revisao_pendente": 0,
-      "novidades": 0,
-      "erros": 6,
-      "duracao_segundos": 11.0,
-      "endpoints": [
-        "https://data.europarl.europa.eu/api/v2/procedures?parliamentary_term=10&limit=100&format=application/ld%2Bjson",
-        "https://data.europarl.europa.eu/api/v2/procedures?text={topico}&limit=25&format=application/ld%2Bjson",
-        "https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age",
-        "https://www.europarl.europa.eu/legislative-train/file-artificial-intelligence-act",
-        "https://www.europarl.europa.eu/news/en/press-room?keywords={topico}"
-      ],
-      "canais_ok": [],
-      "canais_falhos": [
-        "API v2 — procedimentos do termo parlamentar corrente",
-        "API v2 — procedimentos de IA (busca por texto)",
-        "Legislative Train — Europe fit for the digital age",
-        "Legislative Train — unicidade e poderes de execução",
-        "sala de imprensa — por tema"
-      ],
-      "canais_falhos_obrigatorios": [
-        "API v2 — procedimentos do termo parlamentar corrente"
-      ],
-      "canais_opcionais_falhos": [
-        "API v2 — procedimentos de IA (busca por texto)",
-        "Legislative Train — Europe fit for the digital age",
-        "Legislative Train — unicidade e poderes de execução",
-        "sala de imprensa — por tema"
-      ],
-      "canais_detalhe": [],
-      "erro_detalhe": "API v2 — procedimentos do termo parlamentar corrente: ModuleNotFoundError: No module named 'eu_parsers'; API v2 — procedimentos de IA (busca por texto): JSON indisponível: https://data.europarl.europa.eu/api/v2/procedures?text=artificial%20intelligence&limit=25&format=application/ld%2Bjson; Legislative Train — Europe fit for the digital age: ModuleNotFoundError: No module named 'eu_parsers'; Legislative Train — unicidade e poderes de execução: ModuleNotFoundError: No module named 'eu_parsers'",
-      "http": {
-        "chamadas": 5,
-        "falhas": 1,
-        "cache": 0,
-        "tempo_total": 11.01,
-        "por_endpoint": {
-          "data.europarl.europa.eu/api/v2/procedures": {
-            "chamadas": 2,
-            "falhas": 1,
-            "tempo_total": 10.5
-          },
-          "europarl.europa.eu/legislative-train/file-artificial-intelligence-act": {
-            "chamadas": 1,
-            "falhas": 0,
-            "tempo_total": 0.08
-          },
-          "europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age": {
-            "chamadas": 1,
-            "falhas": 0,
-            "tempo_total": 0.34
-          },
-          "europarl.europa.eu/news/en/press-room": {
-            "chamadas": 1,
-            "falhas": 0,
-            "tempo_total": 0.08
-          }
-        }
-      },
-      "erro_fatal": "nenhum canal respondeu — API v2 — procedimentos do termo parlamentar corrente: ModuleNotFoundError: No module named 'eu_parsers'; API v2 — procedimentos de IA (busca por texto): JSON indisponível: https://data.europarl.europa.eu/api/v2/procedures?text=artificial%20intelligence&limit=25&format=application/ld%2Bjson; Legislative Train — Europe fit for the digital age: ModuleNotFoundError: No module named 'eu_parsers'; Legislative Train — unicidade e poderes de execução: ModuleNotFoundError: No module named 'eu_parsers'",
-      "amostra": []
-    },
-    "edpb": {
-      "nome": "EDPB — European Data Protection Board",
+    "anpd": {
+      "nome": "ANPD — Autoridade Nacional de Proteção de Dados",
       "status": "ok",
-      "ultima_tentativa": "2026-09-20T01:28:16-03:00",
+      "ultima_tentativa": "2026-09-20T02:04:39-03:00",
       "ultima_execucao_ok": null,
-      "itens_consultados": 10,
-      "itens_relevantes": 10,
+      "itens_consultados": 0,
+      "itens_relevantes": 0,
       "itens_descartados": 0,
       "itens_duplicados": 0,
       "revisao_pendente": 0,
       "novidades": 0,
       "erros": 0,
-      "duracao_segundos": 0.9,
+      "duracao_segundos": 10.0,
       "endpoints": [
-        "https://www.edpb.europa.eu/feed/news_en"
+        "https://www.gov.br/anpd/++api++/@search",
+        "https://www.gov.br/anpd/++api++/@search",
+        "https://www.gov.br/anpd/++api++/@search",
+        "https://www.gov.br/anpd/++api++/@search",
+        "https://www.gov.br/anpd/++api++/@search",
+        "https://www.gov.br/anpd/++api++/@search",
+        "https://www.gov.br/anpd/++api++/@search",
+        "https://www.gov.br/anpd/++api++/@search"
       ],
       "canais_ok": [
-        "notícias e guidelines (RSS oficial)"
+        "notícias recentes",
+        "notícias por tema",
+        "regulação e normas",
+        "consultas públicas",
+        "tomada de subsídios",
+        "atos normativos (arquivos)",
+        "fiscalização (pasta oficial)",
+        "agenda regulatória (pasta oficial)"
       ],
       "canais_falhos": [],
       "canais_falhos_obrigatorios": [],
       "canais_opcionais_falhos": [],
       "canais_detalhe": [
         {
-          "canal": "notícias e guidelines (RSS oficial)",
-          "url": "https://www.edpb.europa.eu/feed/news_en",
-          "itens_brutos": 10,
+          "canal": "notícias recentes",
+          "url": "https://www.gov.br/anpd/++api++/@search",
+          "itens_brutos": 0,
           "amostra_hierarquia": [],
-          "itens_relevantes": 10
+          "itens_relevantes": 0
+        },
+        {
+          "canal": "notícias por tema",
+          "url": "https://www.gov.br/anpd/++api++/@search",
+          "itens_brutos": 0,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 0
+        },
+        {
+          "canal": "regulação e normas",
+          "url": "https://www.gov.br/anpd/++api++/@search",
+          "itens_brutos": 0,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 0
+        },
+        {
+          "canal": "consultas públicas",
+          "url": "https://www.gov.br/anpd/++api++/@search",
+          "itens_brutos": 0,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 0
+        },
+        {
+          "canal": "tomada de subsídios",
+          "url": "https://www.gov.br/anpd/++api++/@search",
+          "itens_brutos": 0,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 0
+        },
+        {
+          "canal": "atos normativos (arquivos)",
+          "url": "https://www.gov.br/anpd/++api++/@search",
+          "itens_brutos": 0,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 0
+        },
+        {
+          "canal": "fiscalização (pasta oficial)",
+          "url": "https://www.gov.br/anpd/++api++/@search",
+          "itens_brutos": 0,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 0
+        },
+        {
+          "canal": "agenda regulatória (pasta oficial)",
+          "url": "https://www.gov.br/anpd/++api++/@search",
+          "itens_brutos": 0,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 0
         }
       ],
       "erro_detalhe": null,
       "http": {
-        "chamadas": 1,
+        "chamadas": 17,
         "falhas": 0,
         "cache": 0,
-        "tempo_total": 0.93,
+        "tempo_total": 10.04,
         "por_endpoint": {
-          "edpb.europa.eu/feed/news_en": {
-            "chamadas": 1,
+          "gov.br/anpd/++api++/@search": {
+            "chamadas": 17,
             "falhas": 0,
-            "tempo_total": 0.93
+            "tempo_total": 10.03
+          }
+        }
+      },
+      "erro_fatal": null,
+      "amostra": []
+    },
+    "cnj": {
+      "nome": "CNJ — Conselho Nacional de Justiça",
+      "status": "ok",
+      "ultima_tentativa": "2026-09-20T02:04:49-03:00",
+      "ultima_execucao_ok": null,
+      "itens_consultados": 100,
+      "itens_relevantes": 14,
+      "itens_descartados": 86,
+      "itens_duplicados": 0,
+      "revisao_pendente": 8,
+      "novidades": 0,
+      "erros": 0,
+      "duracao_segundos": 5.1,
+      "endpoints": [
+        "https://atos.cnj.jus.br/api/atos",
+        "https://atos.cnj.jus.br/api/atos",
+        "https://atos.cnj.jus.br/api/atos",
+        "https://www.cnj.jus.br/wp-json/wp/v2/posts",
+        "https://www.cnj.jus.br/wp-json/wp/v2/posts"
+      ],
+      "canais_ok": [
+        "atos normativos recentes",
+        "atos normativos recentes (página 2)",
+        "atos normativos recentes (página 3)",
+        "notícias oficiais",
+        "notícias oficiais (página 2)"
+      ],
+      "canais_falhos": [],
+      "canais_falhos_obrigatorios": [],
+      "canais_opcionais_falhos": [],
+      "canais_detalhe": [
+        {
+          "canal": "atos normativos recentes",
+          "url": "https://atos.cnj.jus.br/api/atos",
+          "itens_brutos": 0,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 0
+        },
+        {
+          "canal": "atos normativos recentes (página 2)",
+          "url": "https://atos.cnj.jus.br/api/atos",
+          "itens_brutos": 0,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 0
+        },
+        {
+          "canal": "atos normativos recentes (página 3)",
+          "url": "https://atos.cnj.jus.br/api/atos",
+          "itens_brutos": 0,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 0
+        },
+        {
+          "canal": "notícias oficiais",
+          "url": "https://www.cnj.jus.br/wp-json/wp/v2/posts",
+          "itens_brutos": 50,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 7
+        },
+        {
+          "canal": "notícias oficiais (página 2)",
+          "url": "https://www.cnj.jus.br/wp-json/wp/v2/posts",
+          "itens_brutos": 50,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 7
+        }
+      ],
+      "erro_detalhe": null,
+      "http": {
+        "chamadas": 5,
+        "falhas": 0,
+        "cache": 0,
+        "tempo_total": 5.07,
+        "por_endpoint": {
+          "atos.cnj.jus.br/api/atos": {
+            "chamadas": 3,
+            "falhas": 0,
+            "tempo_total": 2.23
+          },
+          "cnj.jus.br/wp-json/wp/v2/posts": {
+            "chamadas": 2,
+            "falhas": 0,
+            "tempo_total": 2.85
           }
         }
       },
       "erro_fatal": null,
       "amostra": [
         {
-          "id": "edpb_edpb_europa_eu_news_failure_to_respect_the_rights_of_individuals_the_cnil_fined_extia_300_000_eur_en",
-          "tipo": "orientacao",
-          "titulo": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
+          "id": "cnj_cnj_jus_br_justica_do_trabalho_passa_a_usar_remessa_digital_de_oficios_pelo_jus_br",
+          "tipo": "noticia",
+          "titulo": "TST e TRTs passam a usar remessa digital de ofícios pelo Jus.br",
+          "data": "2026-09-18",
+          "url_oficial": "https://www.cnj.jus.br/justica-do-trabalho-passa-a-usar-remessa-digital-de-oficios-pelo-jus-br/",
+          "relevancia": "revisar",
+          "revisao_pendente": true,
+          "hierarquia": null,
+          "situacao": null
+        },
+        {
+          "id": "cnj_cnj_jus_br_cnj_vai_ao_territorio_kalunga_em_goias_para_ouvir_comunidade_e_ampliar_acesso_a_justica",
+          "tipo": "noticia",
+          "titulo": "CNJ vai ao território Kalunga, em Goiás, para ouvir comunidade e ampliar acesso à Justiça",
+          "data": "2026-09-17",
+          "url_oficial": "https://www.cnj.jus.br/cnj-vai-ao-territorio-kalunga-em-goias-para-ouvir-comunidade-e-ampliar-acesso-a-justica/",
+          "relevancia": "revisar",
+          "revisao_pendente": true,
+          "hierarquia": null,
+          "situacao": null
+        },
+        {
+          "id": "cnj_cnj_jus_br_telegram_detalha_acoes_contra_desinformacao_em_plano_para_eleicoes_de_2026",
+          "tipo": "noticia",
+          "titulo": "Telegram detalha ações contra desinformação em plano para Eleições de 2026",
+          "data": "2026-09-14",
+          "url_oficial": "https://www.cnj.jus.br/telegram-detalha-acoes-contra-desinformacao-em-plano-para-eleicoes-de-2026/",
+          "relevancia": "forte",
+          "revisao_pendente": false,
+          "hierarquia": null,
+          "situacao": null
+        },
+        {
+          "id": "cnj_cnj_jus_br_abertas_inscricoes_para_reuniao_sobre_decente_nas_plataformas_digitais",
+          "tipo": "noticia",
+          "titulo": "Estão abertas as inscrições para reunião sobre trabalho decente nas plataformas digitais",
+          "data": "2026-09-14",
+          "url_oficial": "https://www.cnj.jus.br/abertas-inscricoes-para-reuniao-sobre-decente-nas-plataformas-digitais/",
+          "relevancia": "forte",
+          "revisao_pendente": false,
+          "hierarquia": null,
+          "situacao": null
+        },
+        {
+          "id": "cnj_cnj_jus_br_inteligencia_artificial_e_tema_de_debate_no_para",
+          "tipo": "noticia",
+          "titulo": "Inteligência artificial é tema de debate no Pará",
           "data": "2026-09-11",
-          "url_oficial": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en",
+          "url_oficial": "https://www.cnj.jus.br/inteligencia-artificial-e-tema-de-debate-no-para/",
           "relevancia": "forte",
           "revisao_pendente": false,
           "hierarquia": null,
           "situacao": null
         },
         {
-          "id": "edpb_edpb_europa_eu_news_health_data_breach_the_cnil_fined_hopital_prive_de_la_loire_500_000_eur_en",
-          "tipo": "orientacao",
-          "titulo": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
-          "data": "2026-09-09",
-          "url_oficial": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en",
-          "relevancia": "forte",
-          "revisao_pendente": false,
+          "id": "cnj_cnj_jus_br_tjpe_lanca_dje_com_navegacao_mais_rapida_novo_visual_e_acesso_facilitado",
+          "tipo": "noticia",
+          "titulo": "TJPE lança + DJe com navegação mais rápida, novo visual e acesso facilitado",
+          "data": "2026-09-10",
+          "url_oficial": "https://www.cnj.jus.br/tjpe-lanca-dje-com-navegacao-mais-rapida-novo-visual-e-acesso-facilitado/",
+          "relevancia": "revisar",
+          "revisao_pendente": true,
           "hierarquia": null,
           "situacao": null
         },
         {
-          "id": "edpb_edpb_europa_eu_news_data_protection_commission_announces_final_decision_following_inquiry_into_the_health_serv",
-          "tipo": "orientacao",
-          "titulo": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
-          "data": "2026-09-03",
-          "url_oficial": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en",
-          "relevancia": "forte",
-          "revisao_pendente": false,
+          "id": "cnj_cnj_jus_br_debates_contribuem_para_elaboracao_de_norma_sobre_processos_estruturais",
+          "tipo": "noticia",
+          "titulo": "Debates contribuem para a elaboração de norma sobre processos estruturais",
+          "data": "2026-09-10",
+          "url_oficial": "https://www.cnj.jus.br/debates-contribuem-para-elaboracao-de-norma-sobre-processos-estruturais/",
+          "relevancia": "revisar",
+          "revisao_pendente": true,
           "hierarquia": null,
           "situacao": null
         },
         {
-          "id": "edpb_edpb_europa_eu_news_stakeholder_event_on_guidelines_on_the_interplay_between_data_protection_and_competition_l",
-          "tipo": "orientacao",
-          "titulo": "Stakeholder event on guidelines on the interplay between data protection and competition law: overview of topics available",
-          "data": "2026-07-30",
-          "url_oficial": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en",
-          "relevancia": "forte",
-          "revisao_pendente": false,
-          "hierarquia": null,
-          "situacao": null
-        },
-        {
-          "id": "edpb_edpb_europa_eu_news_stakeholder_event_on_guidelines_on_the_interplay_between_data_protection_and_competition_l",
-          "tipo": "orientacao",
-          "titulo": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date",
-          "data": "2026-07-23",
-          "url_oficial": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en",
-          "relevancia": "forte",
-          "revisao_pendente": false,
-          "hierarquia": null,
-          "situacao": null
-        },
-        {
-          "id": "edpb_edpb_europa_eu_news_edpb_calls_for_legal_basis_for_cross_regulatory_information_sharing_en",
-          "tipo": "orientacao",
-          "titulo": "EDPB calls for legal basis for cross-regulatory information sharing",
-          "data": "2026-07-17",
-          "url_oficial": "https://www.edpb.europa.eu/news/edpb-calls-for-legal-basis-for-cross-regulatory-information-sharing_en",
-          "relevancia": "forte",
-          "revisao_pendente": false,
-          "hierarquia": null,
-          "situacao": null
-        },
-        {
-          "id": "edpb_edpb_europa_eu_news_edpb_requires_belgian_dpa_to_handle_the_merits_of_noyb_cookie_banner_complaint_en",
-          "tipo": "orientacao",
-          "titulo": "EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint",
-          "data": "2026-07-14",
-          "url_oficial": "https://www.edpb.europa.eu/news/edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint_en",
-          "relevancia": "forte",
-          "revisao_pendente": false,
-          "hierarquia": null,
-          "situacao": null
-        },
-        {
-          "id": "edpb_edpb_europa_eu_news_edpb_sheds_light_on_anonymisation_and_web_scraping_for_generative_ai_and_adopts_final_vers",
-          "tipo": "orientacao",
-          "titulo": "EDPB sheds light on anonymisation and web scraping for generative AI and adopts final version of guidelines on blockchain",
-          "data": "2026-07-08",
-          "url_oficial": "https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en",
-          "relevancia": "forte",
-          "revisao_pendente": false,
+          "id": "cnj_cnj_jus_br_oficinas_buscam_solucoes_inovadoras_para_tratamento_de_processos_estruturais",
+          "tipo": "noticia",
+          "titulo": "Oficinas buscam soluções inovadoras para tratamento de processos estruturais",
+          "data": "2026-09-08",
+          "url_oficial": "https://www.cnj.jus.br/oficinas-buscam-solucoes-inovadoras-para-tratamento-de-processos-estruturais/",
+          "relevancia": "revisar",
+          "revisao_pendente": true,
           "hierarquia": null,
           "situacao": null
         }
       ]
     },
-    "edps": {
-      "nome": "EDPS — European Data Protection Supervisor",
+    "tse": {
+      "nome": "TSE — Tribunal Superior Eleitoral",
       "status": "falha",
-      "ultima_tentativa": "2026-09-20T01:28:17-03:00",
+      "ultima_tentativa": "2026-09-20T02:04:54-03:00",
       "ultima_execucao_ok": null,
       "itens_consultados": 0,
       "itens_relevantes": 0,
@@ -496,53 +302,375 @@
       "itens_duplicados": 0,
       "revisao_pendente": 0,
       "novidades": 0,
-      "erros": 4,
-      "duracao_segundos": 1.2,
+      "erros": 6,
+      "duracao_segundos": 3.6,
       "endpoints": [
-        "https://www.edps.europa.eu/press-publications/press-news/press-releases_en",
-        "https://www.edps.europa.eu/press-publications/press-news/news_en",
-        "https://www.edps.europa.eu/data-protection/our-work/publications_en"
+        "https://www.tse.jus.br/++api++/@search",
+        "https://www.tse.jus.br/++api++/@search",
+        "https://www.tse.jus.br/++api++/@search",
+        "https://www.in.gov.br/consulta/-/buscar/dou",
+        "https://www.in.gov.br/consulta/-/buscar/dou"
       ],
       "canais_ok": [],
       "canais_falhos": [
-        "press releases (listagem oficial)",
-        "notícias oficiais (listagem)",
-        "publicações (opiniões e guidelines)"
+        "atos normativos (portal oficial)",
+        "notícias oficiais (portal oficial)",
+        "atos e notícias por tema (portal oficial)",
+        "atos do TSE por tema (DOU)",
+        "resoluções do TSE (DOU, órgão/subórgão)"
       ],
       "canais_falhos_obrigatorios": [
-        "press releases (listagem oficial)"
+        "atos do TSE por tema (DOU)",
+        "resoluções do TSE (DOU, órgão/subórgão)"
       ],
       "canais_opcionais_falhos": [
-        "notícias oficiais (listagem)",
-        "publicações (opiniões e guidelines)"
+        "atos normativos (portal oficial)",
+        "notícias oficiais (portal oficial)",
+        "atos e notícias por tema (portal oficial)"
       ],
       "canais_detalhe": [],
-      "erro_detalhe": "press releases (listagem oficial): ModuleNotFoundError: No module named 'eu_parsers'; notícias oficiais (listagem): ModuleNotFoundError: No module named 'eu_parsers'; publicações (opiniões e guidelines): ModuleNotFoundError: No module named 'eu_parsers'; nenhum canal respondeu — press releases (listagem oficial): ModuleNotFoundError: No module named 'eu_parsers'; notícias oficiais (listagem): ModuleNotFoundError: No module named 'eu_parsers'; publicações (opiniões e guidelines): ModuleNotFoundError: No module named 'eu_parsers'",
+      "erro_detalhe": "atos normativos (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Flegislacao; notícias oficiais (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&portal_type=Noticia; atos e notícias por tema (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?SearchableText=intelig%C3%AAncia%20artificial&b_size=20&sort_on=effective&sort_order=descending; atos do TSE por tema (DOU): listagem sem itens reconhecíveis (220492 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publishTo=20-09-2026&orgPrin=Poder%20Judici%C3%A1rio",
       "http": {
-        "chamadas": 3,
-        "falhas": 0,
+        "chamadas": 5,
+        "falhas": 3,
         "cache": 0,
-        "tempo_total": 1.22,
+        "tempo_total": 3.61,
         "por_endpoint": {
-          "edps.europa.eu/data-protection/our-work/publications_en": {
-            "chamadas": 1,
+          "in.gov.br/consulta/-/buscar/dou": {
+            "chamadas": 2,
             "falhas": 0,
-            "tempo_total": 0.33
+            "tempo_total": 3.04
           },
-          "edps.europa.eu/press-publications/press-news/news_en": {
-            "chamadas": 1,
-            "falhas": 0,
-            "tempo_total": 0.33
-          },
-          "edps.europa.eu/press-publications/press-news/press-releases_en": {
-            "chamadas": 1,
-            "falhas": 0,
-            "tempo_total": 0.55
+          "tse.jus.br/++api++/@search": {
+            "chamadas": 3,
+            "falhas": 3,
+            "tempo_total": 0.58
           }
         }
       },
-      "erro_fatal": "nenhum canal respondeu — press releases (listagem oficial): ModuleNotFoundError: No module named 'eu_parsers'; notícias oficiais (listagem): ModuleNotFoundError: No module named 'eu_parsers'; publicações (opiniões e guidelines): ModuleNotFoundError: No module named 'eu_parsers'",
+      "erro_fatal": "nenhum canal respondeu — atos normativos (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Flegislacao; notícias oficiais (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&portal_type=Noticia; atos e notícias por tema (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?SearchableText=intelig%C3%AAncia%20artificial&b_size=20&sort_on=effective&sort_order=descending; atos do TSE por tema (DOU): listagem sem itens reconhecíveis (220492 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publishTo=20-09-2026&orgPrin=Poder%20Judici%C3%A1rio",
       "amostra": []
+    },
+    "dou": {
+      "nome": "DOU — Diário Oficial da União (Imprensa Nacional)",
+      "status": "falha",
+      "ultima_tentativa": "2026-09-20T02:04:58-03:00",
+      "ultima_execucao_ok": null,
+      "itens_consultados": 0,
+      "itens_relevantes": 0,
+      "itens_descartados": 0,
+      "itens_duplicados": 0,
+      "revisao_pendente": 0,
+      "novidades": 0,
+      "erros": 2,
+      "duracao_segundos": 1.4,
+      "endpoints": [
+        "https://www.in.gov.br/consulta/-/buscar/dou"
+      ],
+      "canais_ok": [],
+      "canais_falhos": [
+        "busca por tema (7 dias)"
+      ],
+      "canais_falhos_obrigatorios": [
+        "busca por tema (7 dias)"
+      ],
+      "canais_opcionais_falhos": [],
+      "canais_detalhe": [],
+      "erro_detalhe": "busca por tema (7 dias): listagem sem itens reconhecíveis (228655 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=13-09-2026&publishTo=20-09-2026; nenhum canal respondeu — busca por tema (7 dias): listagem sem itens reconhecíveis (228655 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=13-09-2026&publishTo=20-09-2026",
+      "http": {
+        "chamadas": 1,
+        "falhas": 0,
+        "cache": 0,
+        "tempo_total": 1.45,
+        "por_endpoint": {
+          "in.gov.br/consulta/-/buscar/dou": {
+            "chamadas": 1,
+            "falhas": 0,
+            "tempo_total": 1.45
+          }
+        }
+      },
+      "erro_fatal": "nenhum canal respondeu — busca por tema (7 dias): listagem sem itens reconhecíveis (228655 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=13-09-2026&publishTo=20-09-2026",
+      "amostra": []
+    },
+    "planalto": {
+      "nome": "Planalto — Presidência da República",
+      "status": "parcial",
+      "ultima_tentativa": "2026-09-20T02:05:00-03:00",
+      "ultima_execucao_ok": null,
+      "itens_consultados": 52,
+      "itens_relevantes": 3,
+      "itens_descartados": 23,
+      "itens_duplicados": 26,
+      "revisao_pendente": 2,
+      "novidades": 0,
+      "erros": 2,
+      "duracao_segundos": 4.9,
+      "endpoints": [
+        "https://www.in.gov.br/consulta/-/buscar/dou",
+        "https://www.in.gov.br/consulta/-/buscar/dou",
+        "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/RSS",
+        "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias"
+      ],
+      "canais_ok": [
+        "notícias do Planalto (RSS oficial)",
+        "notícias do Planalto (página oficial)"
+      ],
+      "canais_falhos": [
+        "atos do Poder Legislativo (leis, vetos)",
+        "atos da Presidência (decretos, MPs)"
+      ],
+      "canais_falhos_obrigatorios": [
+        "atos do Poder Legislativo (leis, vetos)",
+        "atos da Presidência (decretos, MPs)"
+      ],
+      "canais_opcionais_falhos": [],
+      "canais_detalhe": [
+        {
+          "canal": "notícias do Planalto (RSS oficial)",
+          "url": "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/RSS",
+          "itens_brutos": 26,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 3
+        },
+        {
+          "canal": "notícias do Planalto (página oficial)",
+          "url": "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias",
+          "itens_brutos": 26,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 0
+        }
+      ],
+      "erro_detalhe": "atos do Poder Legislativo (leis, vetos): listagem sem itens reconhecíveis (177735 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publishTo=20-09-2026&orgPrin=Atos%20do%20Poder%20Legislativo; atos da Presidência (decretos, MPs): listagem sem itens reconhecíveis (193427 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publishTo=20-09-2026&orgPrin=Presid%C3%AAncia%20da%20Rep%C3%BAblica",
+      "http": {
+        "chamadas": 4,
+        "falhas": 0,
+        "cache": 0,
+        "tempo_total": 4.9,
+        "por_endpoint": {
+          "gov.br/planalto/pt-br/acompanhe-o-planalto/noticias": {
+            "chamadas": 1,
+            "falhas": 0,
+            "tempo_total": 1.49
+          },
+          "gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/RSS": {
+            "chamadas": 1,
+            "falhas": 0,
+            "tempo_total": 1.0
+          },
+          "in.gov.br/consulta/-/buscar/dou": {
+            "chamadas": 2,
+            "falhas": 0,
+            "tempo_total": 2.4
+          }
+        }
+      },
+      "erro_fatal": null,
+      "amostra": [
+        {
+          "id": "planalto_gov_br_planalto_pt_br_acompanhe_o_planalto_noticias_visita_presidencial_ao_instituto_maua_de_tecnologia_em_sao",
+          "tipo": "noticia",
+          "titulo": "Visita presidencial ao Instituto Mauá de Tecnologia, em São Caetano do Sul (SP)",
+          "data": "2026-07-11",
+          "url_oficial": "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/visita-presidencial-ao-instituto-maua-de-tecnologia-em-sao-caetano-do-sul-sp",
+          "relevancia": "revisar",
+          "revisao_pendente": true,
+          "hierarquia": null,
+          "situacao": null
+        },
+        {
+          "id": "planalto_gov_br_planalto_pt_br_acompanhe_o_planalto_noticias_visita_presidencial_ao_parque_tecnologico_de_macaiba_e_anu",
+          "tipo": "noticia",
+          "titulo": "Visita presidencial ao Parque Tecnológico de Macaíba e anúncios relativos aos supercomputadores e soberania digital",
+          "data": "2026-08-18",
+          "url_oficial": "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/visita-presidencial-ao-parque-tecnologico-de-macaiba-e-anuncios-relativos-aos-supercomputadores-e-soberania-digital",
+          "relevancia": "forte",
+          "revisao_pendente": false,
+          "hierarquia": null,
+          "situacao": null
+        },
+        {
+          "id": "planalto_gov_br_planalto_pt_br_acompanhe_o_planalto_noticias_presidente_da_republica_participa_de_encontro_com_lideranc",
+          "tipo": "noticia",
+          "titulo": "Presidente da República participa de encontro com lideranças do sistema de ciência e tecnologia no Brasil",
+          "data": "2026-07-23",
+          "url_oficial": "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/presidente-da-republica-participa-de-encontro-com-liderancas-do-sistema-de-ciencia-e-tecnologia-no-brasil",
+          "relevancia": "revisar",
+          "revisao_pendente": true,
+          "hierarquia": null,
+          "situacao": null
+        }
+      ]
+    },
+    "mcti": {
+      "nome": "MCTI — Ministério da Ciência, Tecnologia e Inovação",
+      "status": "parcial",
+      "ultima_tentativa": "2026-09-20T02:05:05-03:00",
+      "ultima_execucao_ok": null,
+      "itens_consultados": 86,
+      "itens_relevantes": 18,
+      "itens_descartados": 34,
+      "itens_duplicados": 34,
+      "revisao_pendente": 10,
+      "novidades": 0,
+      "erros": 2,
+      "duracao_segundos": 5.6,
+      "endpoints": [
+        "https://www.in.gov.br/consulta/-/buscar/dou",
+        "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias",
+        "https://www.gov.br/mcti/pt-br/acesso-a-informacao/legislacao/portarias",
+        "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti"
+      ],
+      "canais_ok": [
+        "notícias institucionais",
+        "planos, programas e políticas"
+      ],
+      "canais_falhos": [
+        "atos do MCTI por tema (DOU)",
+        "portarias publicadas"
+      ],
+      "canais_falhos_obrigatorios": [
+        "atos do MCTI por tema (DOU)"
+      ],
+      "canais_opcionais_falhos": [
+        "portarias publicadas"
+      ],
+      "canais_detalhe": [
+        {
+          "canal": "notícias institucionais",
+          "url": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias",
+          "itens_brutos": 68,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 8
+        },
+        {
+          "canal": "planos, programas e políticas",
+          "url": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti",
+          "itens_brutos": 18,
+          "amostra_hierarquia": [],
+          "itens_relevantes": 10
+        }
+      ],
+      "erro_detalhe": "atos do MCTI por tema (DOU): listagem sem itens reconhecíveis (187167 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=21-08-2026&publishTo=20-09-2026&orgPrin=Minist%C3%A9rio%20da%20Ci%C3%AAncia%2C%20Tecnologia%20e%20Inova%C3%A7%C3%A3o; portarias publicadas: listagem sem itens reconhecíveis (159028 bytes): https://www.gov.br/mcti/pt-br/acesso-a-informacao/legislacao/portarias",
+      "http": {
+        "chamadas": 4,
+        "falhas": 0,
+        "cache": 1,
+        "tempo_total": 5.61,
+        "por_endpoint": {
+          "gov.br/mcti/pt-br/acesso-a-informacao/legislacao/portarias": {
+            "chamadas": 1,
+            "falhas": 0,
+            "tempo_total": 1.16
+          },
+          "gov.br/mcti/pt-br/acompanhe-o-mcti": {
+            "chamadas": 1,
+            "falhas": 0,
+            "tempo_total": 1.17
+          },
+          "gov.br/mcti/pt-br/acompanhe-o-mcti/noticias": {
+            "chamadas": 1,
+            "falhas": 0,
+            "tempo_total": 2.17
+          },
+          "in.gov.br/consulta/-/buscar/dou": {
+            "chamadas": 1,
+            "falhas": 0,
+            "tempo_total": 1.11
+          }
+        }
+      },
+      "erro_fatal": null,
+      "amostra": [
+        {
+          "id": "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_aeb_abre_inscricoes_para_37_cursos_gra",
+          "tipo": "noticia",
+          "titulo": "AEB abre inscrições para 37 cursos gratuitos sobre ciência e tecnologia espacial",
+          "data": "2026-09-11",
+          "url_oficial": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/aeb-abre-inscricoes-para-37-cursos-gratuitos-sobre-ciencia-e-tecnologia-espacial",
+          "relevancia": "revisar",
+          "revisao_pendente": true,
+          "hierarquia": null,
+          "situacao": null
+        },
+        {
+          "id": "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_pesquisa_desenvolve_equipamento_para_r",
+          "tipo": "noticia",
+          "titulo": "Pesquisa desenvolve equipamento para recuperação muscular e reabilitação de pacientes",
+          "data": "2026-09-09",
+          "url_oficial": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/pesquisa-desenvolve-equipamento-para-recuperacao-muscular-e-reabilitacao-de-pacientes",
+          "relevancia": "revisar",
+          "revisao_pendente": true,
+          "hierarquia": null,
+          "situacao": null
+        },
+        {
+          "id": "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_ada_lovelace_como_a_mae_da_programacao",
+          "tipo": "noticia",
+          "titulo": "Ada Lovelace: como a mãe da programação teceu o primeiro algoritmo",
+          "data": "2026-09-08",
+          "url_oficial": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/ada-lovelace-como-a-mae-da-programacao-teceu-o-primeiro-algoritmo",
+          "relevancia": "forte",
+          "revisao_pendente": false,
+          "hierarquia": null,
+          "situacao": null
+        },
+        {
+          "id": "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_banco_nacional_reune_solucoes_de_intel",
+          "tipo": "noticia",
+          "titulo": "Banco nacional reúne soluções de inteligência artificial para o setor público",
+          "data": "2026-09-04",
+          "url_oficial": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/banco-nacional-reune-solucoes-de-inteligencia-artificial-para-o-setor-publico",
+          "relevancia": "forte",
+          "revisao_pendente": false,
+          "hierarquia": null,
+          "situacao": null
+        },
+        {
+          "id": "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_tecnologias_de_reuso_de_agua_garantem_",
+          "tipo": "noticia",
+          "titulo": "Tecnologias de reúso de água garantem qualidade de vida de moradores do semiárido da Amazônia",
+          "data": "2026-08-31",
+          "url_oficial": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/tecnologias-de-reuso-de-agua-garantem-qualidade-de-vida-de-moradores-do-semiarido-da-amazonia",
+          "relevancia": "revisar",
+          "revisao_pendente": true,
+          "hierarquia": null,
+          "situacao": null
+        },
+        {
+          "id": "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_programa_granioter_acelera_2026_recebe",
+          "tipo": "noticia",
+          "titulo": "Programa Granioter Acelera 2026 recebe inscrições até 30 de agosto",
+          "data": "2026-08-27",
+          "url_oficial": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/programa-granioter-acelera-2026-recebe-inscricoes-ate-30-de-agosto",
+          "relevancia": "revisar",
+          "revisao_pendente": true,
+          "hierarquia": null,
+          "situacao": null
+        },
+        {
+          "id": "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_saiba_como_acompanhar_a_seca_no_brasil",
+          "tipo": "noticia",
+          "titulo": "Saiba como acompanhar a seca no Brasil pela plataforma Alerta Secas do Cemaden",
+          "data": "2026-08-27",
+          "url_oficial": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/saiba-como-acompanhar-a-seca-no-brasil-pela-plataforma-alerta-secas-do-cemaden",
+          "relevancia": "revisar",
+          "revisao_pendente": true,
+          "hierarquia": null,
+          "situacao": null
+        },
+        {
+          "id": "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_brics_adota_consenso_de_chennai_com_pr",
+          "tipo": "noticia",
+          "titulo": "Brics adota Consenso de Chennai com prioridades para cooperação em ciência, tecnologia e inovação",
+          "data": "2026-08-26",
+          "url_oficial": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/brics-adota-consenso-de-chennai-com-prioridades-para-cooperacao-em-ciencia-tecnologia-e-inovacao",
+          "relevancia": "revisar",
+          "revisao_pendente": true,
+          "hierarquia": null,
+          "situacao": null
+        }
+      ]
     }
   }
 }

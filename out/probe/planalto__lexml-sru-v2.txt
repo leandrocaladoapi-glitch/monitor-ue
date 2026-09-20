@@ -47,8 +47,8 @@ INFO: {}
 </style>
 
 <form method="post" target="post" action="/_challenge" name="challenge">
-  <input type="hidden" name="ip" value="172.171.125.17">
-  <input type="hidden" name="ts" value="1789682770">
+  <input type="hidden" name="ip" value="52.173.219.195">
+  <input type="hidden" name="ts" value="1789880939">
   <input type="hidden" name="diff" value="3">
   <input type="hidden" name="tries" value="">
 </form>

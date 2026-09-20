@@ -7,7 +7,7 @@ INFO: {"feed": 100}
 <rss version="2.0">
 <channel xmlns:dc="http://purl.org/dc/elements/1.1/">
    <title>5 - Acts of the Official Journal L</title>
-   <pubDate>Sun, 20 Sep 2026 06:25:50 +0200</pubDate>
+   <pubDate>Sun, 20 Sep 2026 06:40:52 +0200</pubDate>
    <description>This feed retrieves individual acts published in the latest editions of the L series (Legislation) of the &lt;em&gt;Official Journal of the European Union&lt;/em&gt;.</description>
    <language>en</language>
    <link>https://eur-lex.europa.eu/homepage.html</link>
@@ -26,15 +26,6 @@ INFO: {"feed": 100}
       <dc:creator>Council of the European Union, European Parliament,</dc:creator>
    </item>
    <item>
-      <title>CELEX:32026R2077: Commission Implementing Regulation (EU) 2026/2077 of 17 September 2026 concerning the renewal of the authorisation of a preparation of benzoic acid, thymol, eugenol and piperine as a feed additive for chickens for fattening, chickens reared for laying, minor poultry species for fattening and minor poultry species reared for laying, the authorisation of that preparation as a feed additive for turkeys for fattening and poultry reared for reproduction (holder of authorisation: DSM Nutritional Products Ltd represented by DSM Nutritional Products Sp. z.o.o.), and repealing Implementing Regulation (EU) 2015/1426</title>
-      <description/>
-      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2077</link>
-      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:3171102b-b2f9-11f1-81de-01aa75ed71a1</guid>
-      <category>Lex Alerts</category>
-      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
-      <dc:creator>Directorate-General for Health and Food Safety, European Commission</dc:creator>
-   </item>
-   <item>
       <title>CELEX:32026R2057: Commission Implementing Regulation (EU) 2026/2057 of 17 September 2026 adding to the 2026 fishing quotas certain quantities withheld in the year 2025 pursuant to Article 4(2) of Council Regulation (EC) No 847/96</title>
       <description/>
       <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2057</link>
@@ -42,6 +33,15 @@ INFO: {"feed": 100}
       <category>Lex Alerts</category>
       <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
       <dc:creator>European Commission, Directorate-General for Maritime Affairs and Fisheries</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2077: Commission Implementing Regulation (EU) 2026/2077 of 17 September 2026 concerning the renewal of the authorisation of a preparation of benzoic acid, thymol, eugenol and piperine as a feed additive for chickens for fattening, chickens reared for laying, minor poultry species for fattening and minor poultry species reared for laying, the authorisation of that preparation as a feed additive for turkeys for fattening and poultry reared for reproduction (holder of authorisation: DSM Nutritional Products Ltd represented by DSM Nutritional Products Sp. z.o.o.), and repealing Implementing Regulation (EU) 2015/1426</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2077</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:3171102b-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Health and Food Safety, European Commission</dc:creator>
    </item>
    <item>
       <title>CELEX:32026R2070: Commission Implementing Regulation (EU) 2026/2070 of 17 September 2026 correcting Implementing Regulation (EU) 2026/164 as regards 2-chloroethanol</title>
@@ -107,15 +107,6 @@ INFO: {"feed": 100}
       <dc:creator>European Commission, Directorate-General for Health and Food Safety</dc:creator>
    </item>
    <item>
-      <title>CELEX:32025R2547R(02)</title>
-      <description>The corrigendum does not concern the English version.</description>
-      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32025R2547R(02)</link>
-      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:828a04ea-b2f9-11f1-81de-01aa75ed71a1</guid>
-      <category>Lex Alerts</category>
-      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
-      <dc:creator>Directorate-General for Translation, European Commission</dc:creator>
-   </item>
-   <item>
       <title>CELEX:32026R2104: Commission Implementing Regulation (EU) 2026/2104 of 17 September 2026 amending Annexes V and XIV to Implementing Regulation (EU) 2021/404 as regards the entries for the United States in the lists of third countries, territories, or zones thereof authorised for the entry into the Union of consignments of poultry and germinal products of poultry, and of fresh meat of poultry and game birds</title>
       <description/>
       <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2104</link>
@@ -123,6 +114,15 @@ INFO: {"feed": 100}
       <category>Lex Alerts</category>
       <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
       <dc:creator>Directorate-General for Health and Food Safety, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32025R2547R(02)</title>
+      <description>The corrigendum does not concern the English version.</description>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32025R2547R(02)</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:828a04ea-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Translation, European Commission</dc:creator>
    </item>
    <item>
       <title>CELEX:32026R2072: Commission Implementing Regulation (EU) 2026/2072 of 17 September 2026 concerning the authorisation of perlite as a feed additive for poultry for fattening, poultry reared for laying or reproduction, ornamental birds, piglets and pigs for fattening</title>
@@ -179,19 +179,28 @@ INFO: {"feed": 100}
       <dc:creator>European Commission, Directorate-General for Agriculture and Rural Development</dc:creator>
    </item>
    <item>
-      <title>CELEX:32026D2109: Commission Implementing Decision (EU) 2026/2109 of 17 September 2026 amending the Annex to Implementing Decision (EU) 2023/2447 concerning emergency measures in relation to outbreaks of highly pathogenic avian influenza in certain Member States (notified under document C(2026) 6659)</title>
-      <description/>
-      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2109</link>
-      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:77fa2964-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <title>CELEX:32026R0877R(01)</title>
+      <description>The corrigendum does not concern the English version.</description>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R0877R(01)</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:257e7054-b2f9-11f1-81de-01aa75ed71a1</guid>
       <category>Lex Alerts</category>
       <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
-      <dc:creator>European Commission, Directorate-General for Health and Food Safety</dc:creator>
+      <dc:creator>European Commission, Directorate-General for Translation</dc:creator>
    </item>
    <item>
       <title>CELEX:32026R2076: Commission Implementing Regulation (EU) 2026/2076 of 17 September 2026 concerning the authorisation of nutmeg essential oil from Myristica fragrans Houtt. as a feed additive for all animal species</title>
       <description/>
       <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2076</link>
       <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:3577cb5e-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Health and Food Safety</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026D2109: Commission Implementing Decision (EU) 2026/2109 of 17 September 2026 amending the Annex to Implementing Decision (EU) 2023/2447 concerning emergency measures in relation to outbreaks of highly pathogenic avian influenza in certain Member States (notified under document C(2026) 6659)</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2109</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:77fa2964-b2f9-11f1-81de-01aa75ed71a1</guid>
       <category>Lex Alerts</category>
       <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
       <dc:creator>European Commission, Directorate-General for Health and Food Safety</dc:creator>
@@ -204,15 +213,6 @@ INFO: {"feed": 100}
       <category>Lex Alerts</category>
       <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
       <dc:creator>European Parliament, Council of the European Union,</dc:creator>
-   </item>
-   <item>
-      <title>CELEX:32026R0877R(01)</title>
-      <description>The corrigendum does not concern the English version.</description>
-      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R0877R(01)</link>
-      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:257e7054-b2f9-11f1-81de-01aa75ed71a1</guid>
-      <category>Lex Alerts</category>
-      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
-      <dc:creator>European Commission, Directorate-General for Translation</dc:creator>
    </item>
    <item>
       <title>CELEX:32026R2133: Commission Implementing Regulation (EU) 2026/2133 of 18 September 2026 imposing a provisional safeguard measure with regard to imports of certain grain-oriented flat-rolled products of silicon-electrical steel</title>
@@ -305,13 +305,13 @@ INFO: {"feed": 100}
       <dc:creator>Moldova, Montenegro, Joint Committee, European Union, Andorra, North Macedonia, Bosnia and Herzegovina, Türkiye, Ukraine, Serbia, Albania, United Kingdom</dc:creator>
    </item>
    <item>
-      <title>CELEX:32026D2063: Political and Security Committee Decision (CFSP) 2026/2063 of 10 September 2026 on the appointment of the EU Mission Force Commander for the European Union CSDP Military Training Mission in the Central African Republic (EUTM RCA), and repealing Decision (CFSP) 2025/2010 (EUTM RCA/1/2026)</title>
-      <description/>
-      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2063</link>
-      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:b20d0e6d-b09d-11f1-b9e5-01aa75ed71a1</guid>
+      <title>CELEX:32025R1176R(02)</title>
+      <description>The corrigendum does not concern the English version.</description>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32025R1176R(02)</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:cee1e2b5-b09d-11f1-b9e5-01aa75ed71a1</guid>
       <category>Lex Alerts</category>
       <pubDate>Tue, 15 Sep 2026 00:00:00 +0200</pubDate>
-      <dc:creator>Political and Security Committee</dc:creator>
+      <dc:creator>European Commission, Directorate-General for Translation</dc:creator>
    </item>
    <item>
       <title>CELEX:32026R2045: Commission Implementing Regulation (EU) 2026/2045 of 14 September 2026 amending Regulation (EU) No 468/2010 establishing the EU list of vessels engaged in illegal, unreported and unregulated fishing</title>
@@ -323,13 +323,13 @@ INFO: {"feed": 100}
       <dc:creator>European Commission, Directorate-General for Maritime Affairs and Fisheries</dc:creator>
    </item>
    <item>
-      <title>CELEX:32025R1176R(02)</title>
-      <description>The corrigendum does not concern the English version.</description>
-      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32025R1176R(02)</link>
-      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:cee1e2b5-b09d-11f1-b9e5-01aa75ed71a1</guid>
+      <title>CELEX:32026D2063: Political and Security Committee Decision (CFSP) 2026/2063 of 10 September 2026 on the appointment of the EU Mission Force Commander for the European Union CSDP Military Training Mission in the Central African Republic (EUTM RCA), and repealing Decision (CFSP) 2025/2010 (EUTM RCA/1/2026)</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2063</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:b20d0e6d-b09d-11f1-b9e5-01aa75ed71a1</guid>
       <category>Lex Alerts</category>
       <pubDate>Tue, 15 Sep 2026 00:00:00 +0200</pubDate>
-      <dc:creator>European Commission, Directorate-General for Translation</dc:creator>
+      <dc:creator>Political and Security Committee</dc:creator>
    </item>
    <item>
       <title>CELEX:32026H2069: Commission Recommendation (EU) 2026/2069 of 9 September 2026 on housing affordability and supply in areas under housing stress</title>
@@ -341,19 +341,19 @@ INFO: {"feed": 100}
       <dc:creator>European Commission, Directorate-General for Energy</dc:creator>
    </item>
    <item>
-      <title>CELEX:32026D2103: Council Decision (CFSP) 2026/2103 of 15 September 2026 amending Decision 2014/145/CFSP concerning restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine</title>
+      <title>CELEX:32026D2060: Council Decision (EU) 2026/2060 of 20 November 2025 on the position to be taken on behalf of the European Union within the EU-Armenia Partnership Council as regards the adoption of the Strategic Agenda for the EU-Armenia Partnership</title>
       <description/>
-      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2103</link>
-      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:44e92eca-b0f3-11f1-b9e5-01aa75ed71a1</guid>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2060</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:c3991769-b09d-11f1-b9e5-01aa75ed71a1</guid>
       <category>Lex Alerts</category>
       <pubDate>Tue, 15 Sep 2026 00:00:00 +0200</pubDate>
       <dc:creator>Council of the European Union</dc:creator>
    </item>
    <item>
-      <title>CELEX:32026D2060: Council Decision (EU) 2026/2060 of 20 November 2025 on the position to be taken on behalf of the European Union within the EU-Armenia Partnership Council as regards the adoption of the Strategic Agenda for the EU-Armenia Partnership</title>
+      <title>CELEX:32026D2103: Council Decision (CFSP) 2026/2103 of 15 September 2026 amending Decision 2014/145/CFSP concerning restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine</title>
       <description/>
-      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2060</link>
-      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:c3991769-b09d-11f1-b9e5-01aa75ed71a1</guid>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2103</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:44e92eca-b0f3-11f1-b9e5-01aa75ed71a1</guid>
       <category>Lex Alerts</category>
       <pubDate>Tue, 15 Sep 2026 00:00:00 +0200</pubDate>
       <dc:creator>Council of the European Union</dc:creator>

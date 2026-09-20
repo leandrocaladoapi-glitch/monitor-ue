@@ -1,4 +1,4 @@
-URL: https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=18-08-2026&publishTo=17-09-2026&orgPrin=Minist%C3%A9rio%20da%20Ci%C3%AAncia%2C%20Tecnologia%20e%20Inova%C3%A7%C3%A3o
+URL: https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=21-08-2026&publishTo=20-09-2026&orgPrin=Minist%C3%A9rio%20da%20Ci%C3%AAncia%2C%20Tecnologia%20e%20Inova%C3%A7%C3%A3o
 STATUS: 200 CT: text/html;charset=UTF-8
 INFO: {"jsonArray_ref": "presente", "hits": 0, "links": 64}
 ---
@@ -566,12 +566,12 @@ INFO: {"jsonArray_ref": "presente", "hits": 0, "links": 64}
 			}
 		};
 
-		Liferay.authToken = 'kwQCA5fx';
+		Liferay.authToken = '4u3dpEZb';
 
 		
 
-		Liferay.currentURL = '\x2fconsulta\x2f-\x2fbuscar\x2fdou\x3fq\x3d\x2522algoritmo\x2522\x26s\x3dtodos\x26exactDate\x3dpersonalizado\x26sortType\x3d0\x26delta\x3d50\x26currentPage\x3d1\x26publishFrom\x3d18-08-2026\x26publishTo\x3d17-09-2026\x26orgPrin\x3dMinist\x25C3\x25A9rio\x2520da\x2520Ci\x25C3\x25AAncia\x252C\x2520Tecnologia\x2520e\x2520Inova\x25C3\x25A7\x25C3\x25A3o';
-		Liferay.currentURLEncoded = '\x252Fconsulta\x252F-\x252Fbuscar\x252Fdou\x253Fq\x253D\x252522algoritmo\x252522\x2526s\x253Dtodos\x2526exactDate\x253Dpersonalizado\x2526sortType\x253D0\x2526delta\x253D50\x2526currentPage\x253D1\x2526publishFrom\x253D18-08-2026\x2526publishTo\x253D17-09-2026\x2526orgPrin\x253DMinist\x2525C3\x2525A9rio\x252520da\x252520Ci\x2525C3\x2525AAncia\x25252C\x252520Tecnologia\x252520e\x252520Inova\x2525C3\x2525A7\x2525C3\x2525A3o';
+		Liferay.currentURL = '\x2fconsulta\x2f-\x2fbuscar\x2fdou\x3fq\x3d\x2522algoritmo\x2522\x26s\x3dtodos\x26exactDate\x3dpersonalizado\x26sortType\x3d0\x26delta\x3d50\x26currentPage\x3d1\x26publishFrom\x3d21-08-2026\x26publishTo\x3d20-09-2026\x26orgPrin\x3dMinist\x25C3\x25A9rio\x2520da\x2520Ci\x25C3\x25AAncia\x252C\x2520Tecnologia\x2520e\x2520Inova\x25C3\x25A7\x25C3\x25A3o';
+		Liferay.currentURLEncoded = '\x252Fconsulta\x252F-\x252Fbuscar\x252Fdou\x253Fq\x253D\x252522algoritmo\x252522\x2526s\x253Dtodos\x2526exactDate\x253Dpersonalizado\x2526sortType\x253D0\x2526delta\x253D50\x2526currentPage\x253D1\x2526publishFrom\x253D21-08-2026\x2526publishTo\x253D20-09-2026\x2526orgPrin\x253DMinist\x2525C3\x2525A9rio\x252520da\x252520Ci\x2525C3\x2525AAncia\x25252C\x252520Tecnologia\x252520e\x252520Inova\x2525C3\x2525A7\x2525C3\x2525A3o';
 	// ]]>
 </script>
 

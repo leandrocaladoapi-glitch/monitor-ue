@@ -1,23 +1,23 @@
 URL: https://www.tse.jus.br/++api++/@search?b_size=3&sort_on=effective&sort_order=descending
 STATUS: 200 CT: application/json
-INFO: {"items_total": 83127, "items_len": 3, "amostra_titulos": ["Delegação de Timor-Leste visita TSE para conhecer sistema el|", "Hertz Dias - Propostas de Governo|", "Escritor Augusto Cury - Propostas de Governo|"]}
+INFO: {"items_total": 83194, "items_len": 3, "amostra_titulos": ["Título Eleitoral - FAQ|", "Lei dos Partidos Políticos completa 31 anos e estrutura a at|", "Faltam 15 dias: candidatas e candidatos não podem ser presos|"]}
 ---
 {
   "@id": "https://www.tse.jus.br/++api++/@search", 
   "batching": {
     "@id": "https://www.tse.jus.br/++api++/@search?b_size=3&sort_on=effective&sort_order=descending", 
     "first": "https://www.tse.jus.br/++api++/@search?b_start=0&b_size=3&sort_on=effective&sort_order=descending", 
-    "last": "https://www.tse.jus.br/++api++/@search?b_start=83124&b_size=3&sort_on=effective&sort_order=descending", 
+    "last": "https://www.tse.jus.br/++api++/@search?b_start=83193&b_size=3&sort_on=effective&sort_order=descending", 
     "next": "https://www.tse.jus.br/++api++/@search?b_start=3&b_size=3&sort_on=effective&sort_order=descending"
   }, 
   "items": [
     {
-      "@id": "https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/delegacao-de-timor-leste-visita-tse-para-conhecer-sistema-eleitoral-brasileiro", 
-      "@type": "Noticia", 
-      "description": "Iniciativa integra miss\u00e3o de estudos e capacita\u00e7\u00e3o de defensores p\u00fablicos e oficiais de Justi\u00e7a timorenses", 
-      "effective": "2026-09-17T20:28:04+00:00", 
+      "@id": "https://www.tse.jus.br/servicos-eleitorais/titulo-eleitoral-faq-1", 
+      "@type": "PaginaInterna", 
+      "description": "Informa\u00e7\u00f5es sobre o t\u00edtulo de eleitor e seu aplicativo (e-t\u00edtulo).", 
+      "effective": "2026-09-19T13:22:13+00:00", 
       "end": null, 
-      "getObjSize": "1.6 KB", 
+      "getObjSize": "1 KB", 
       "getRemoteUrl": null, 
       "head_title": null, 
       "image_field": null, 
@@ -26,16 +26,34 @@ INFO: {"items_total": 83127, "items_len": 3, "amostra_titulos": ["Delegação de
       "nav_title": null, 
       "review_state": "published", 
       "start": null, 
-      "title": "Delega\u00e7\u00e3o de Timor-Leste visita TSE para conhecer sistema eleitoral brasileiro", 
+      "title": "T\u00edtulo Eleitoral - FAQ", 
+      "type_title": "P\u00e1gina interna"
+    }, 
+    {
+      "@id": "https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/lei-dos-partidos-politicos-completa-31-anos-e-estrutura-a-atuacao-das-legendas-no-pais", 
+      "@type": "Noticia", 
+      "description": "Norma prev\u00ea regras para cria\u00e7\u00e3o, funcionamento, financiamento e participa\u00e7\u00e3o eleitoral das legendas", 
+      "effective": "2026-09-19T12:00:00+00:00", 
+      "end": null, 
+      "getObjSize": "15.4 KB", 
+      "getRemoteUrl": null, 
+      "head_title": null, 
+      "image_field": null, 
+      "image_scales": null, 
+      "mime_type": "text/plain", 
+      "nav_title": null, 
+      "review_state": "published", 
+      "start": null, 
+      "title": "Lei dos Partidos Pol\u00edticos completa 31 anos e estrutura a atua\u00e7\u00e3o das legendas no pa\u00eds", 
       "type_title": "Not\u00edcia"
     }, 
     {
-      "@id": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/propostas-de-governo-dos-candidatos-ao-cargo-de-presidente-da-republica-eleicoes-2026/hertz-dias-propostas-de-governo", 
-      "@type": "PastaTopicos", 
-      "description": "", 
-      "effective": "2026-09-17T19:07:38+00:00", 
+      "@id": "https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/faltam-15-dias-candidatas-e-candidatos-nao-podem-ser-presos-a-partir-de-hoje-19", 
+      "@type": "Noticia", 
+      "description": "Restri\u00e7\u00e3o \u00e0 pris\u00e3o, prevista no C\u00f3digo Eleitoral, tamb\u00e9m abrange mes\u00e1rios e fiscais de partidos", 
+      "effective": "2026-09-19T11:00:00+00:00", 
       "end": null, 
-      "getObjSize": "1 KB", 
+      "getObjSize": "14.8 KB", 
       "getRemoteUrl": null, 
       "head_title": null, 
       "image_field": null, 
@@ -44,27 +62,9 @@ INFO: {"items_total": 83127, "items_len": 3, "amostra_titulos": ["Delegação de
       "nav_title": null, 
       "review_state": "published", 
       "start": null, 
-      "title": "Hertz Dias - Propostas de Governo", 
-      "type_title": "Pasta de t\u00f3picos"
-    }, 
-    {
-      "@id": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/propostas-de-governo-dos-candidatos-ao-cargo-de-presidente-da-republica-eleicoes-2026/escritor-augusto-cury-propostas-de-governo", 
-      "@type": "PastaTopicos", 
-      "description": "", 
-      "effective": "2026-09-17T19:07:37+00:00", 
-      "end": null, 
-      "getObjSize": "1 KB", 
-      "getRemoteUrl": null, 
-      "head_title": null, 
-      "image_field": null, 
-      "image_scales": null, 
-      "mime_type": "text/plain", 
-      "nav_title": null, 
-      "review_state": "published", 
-      "start": null, 
-      "title": "Escritor Augusto Cury - Propostas de Governo", 
-      "type_title": "Pasta de t\u00f3picos"
+      "title": "Faltam 15 dias: candidatas e candidatos n\u00e3o podem ser presos a partir de hoje (19)", 
+      "type_title": "Not\u00edcia"
     }
   ], 
-  "items_total": 83127
+  "items_total": 83194
 }

@@ -1,78 +1,94 @@
-  · fonte 'ai_office' (timeout 150s, subprocesso isolado)
+  · fonte 'anpd' (timeout 150s, subprocesso isolado)
+    → status=ok · itens=0 · consultados=0 · canais_ok=8 · canais_falhos=0
+  · fonte 'cnj' (timeout 150s, subprocesso isolado)
+    → status=ok · itens=14 · consultados=100 · canais_ok=5 · canais_falhos=0
+  · fonte 'tse' (timeout 150s, subprocesso isolado)
     → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=5
-  · fonte 'eurlex' (timeout 150s, subprocesso isolado)
-    → status=parcial · itens=0 · consultados=100 · canais_ok=1 · canais_falhos=3
-  · fonte 'eu_council' (timeout 150s, subprocesso isolado)
-    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=3
-  · fonte 'eu_commission' (timeout 150s, subprocesso isolado)
-    → status=parcial · itens=1 · consultados=10 · canais_ok=1 · canais_falhos=3
-  · fonte 'eu_parliament' (timeout 150s, subprocesso isolado)
-    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=5
-  · fonte 'edpb' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=10 · consultados=10 · canais_ok=1 · canais_falhos=0
-  · fonte 'edps' (timeout 150s, subprocesso isolado)
-    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=3
-[ai_office] European AI Office — Comissão Europeia (digital-strategy)
-  status: falha · duração 1.1s
+  · fonte 'dou' (timeout 150s, subprocesso isolado)
+    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=1
+  · fonte 'planalto' (timeout 150s, subprocesso isolado)
+    → status=parcial · itens=3 · consultados=52 · canais_ok=2 · canais_falhos=2
+  · fonte 'mcti' (timeout 150s, subprocesso isolado)
+    → status=parcial · itens=18 · consultados=86 · canais_ok=2 · canais_falhos=2
+[anpd] ANPD — Autoridade Nacional de Proteção de Dados
+  status: ok · duração 10.0s
+  itens consultados: 0 · relevantes: 0 · descartados (tema): 0
+  canais ok: notícias recentes, notícias por tema, regulação e normas, consultas públicas, tomada de subsídios, atos normativos (arquivos), fiscalização (pasta oficial), agenda regulatória (pasta oficial)
+[cnj] CNJ — Conselho Nacional de Justiça
+  status: ok · duração 5.1s
+  itens consultados: 100 · relevantes: 14 · descartados (tema): 86
+  canais ok: atos normativos recentes, atos normativos recentes (página 2), atos normativos recentes (página 3), notícias oficiais, notícias oficiais (página 2)
+    - [2026-09-18] (noticia, revisar) TST e TRTs passam a usar remessa digital de ofícios pelo Jus.br
+      https://www.cnj.jus.br/justica-do-trabalho-passa-a-usar-remessa-digital-de-oficios-pelo-jus-br/
+    - [2026-09-17] (noticia, revisar) CNJ vai ao território Kalunga, em Goiás, para ouvir comunidade e ampliar acesso à Justiça
+      https://www.cnj.jus.br/cnj-vai-ao-territorio-kalunga-em-goias-para-ouvir-comunidade-e-ampliar-acesso-a-justica/
+    - [2026-09-14] (noticia, forte) Telegram detalha ações contra desinformação em plano para Eleições de 2026
+      https://www.cnj.jus.br/telegram-detalha-acoes-contra-desinformacao-em-plano-para-eleicoes-de-2026/
+    - [2026-09-14] (noticia, forte) Estão abertas as inscrições para reunião sobre trabalho decente nas plataformas digitais
+      https://www.cnj.jus.br/abertas-inscricoes-para-reuniao-sobre-decente-nas-plataformas-digitais/
+    - [2026-09-11] (noticia, forte) Inteligência artificial é tema de debate no Pará
+      https://www.cnj.jus.br/inteligencia-artificial-e-tema-de-debate-no-para/
+    - [2026-09-10] (noticia, revisar) TJPE lança + DJe com navegação mais rápida, novo visual e acesso facilitado
+      https://www.cnj.jus.br/tjpe-lanca-dje-com-navegacao-mais-rapida-novo-visual-e-acesso-facilitado/
+    - [2026-09-10] (noticia, revisar) Debates contribuem para a elaboração de norma sobre processos estruturais
+      https://www.cnj.jus.br/debates-contribuem-para-elaboracao-de-norma-sobre-processos-estruturais/
+    - [2026-09-08] (noticia, revisar) Oficinas buscam soluções inovadoras para tratamento de processos estruturais
+      https://www.cnj.jus.br/oficinas-buscam-solucoes-inovadoras-para-tratamento-de-processos-estruturais/
+    - [2026-09-04] (noticia, revisar) Comunidade quilombola do Amapá ganha ponto de inclusão digital
+      https://www.cnj.jus.br/comunidade-quilombola-do-amapa-ganha-ponto-de-inclusao-digital/
+    - [2026-09-04] (noticia, forte) Webinário apresenta ferramentas de IA para o Judiciário
+      https://www.cnj.jus.br/webinario-apresenta-ferramentas-de-ia-para-o-judiciario/
+    ... (+4 itens)
+[tse] TSE — Tribunal Superior Eleitoral
+  status: falha · duração 3.6s
   itens consultados: 0 · relevantes: 0 · descartados (tema): 0
   canais ok: —
-  canais com falha: notícias e comunicados do portal, página da AI Office (políticas e ações), AI Act — quadro regulatório e implementação, General-Purpose AI — página oficial, AI Act — página do serviço
-  erro: notícias e comunicados do portal: ModuleNotFoundError: No module named 'eu_parsers'; página da AI Office (políticas e ações): ModuleNotFoundError: No module named 'eu_parsers'; AI Act — quadro regulatório e implementação: ModuleNotFoundError: No module named 'eu_parsers'; General-Purpose AI — página oficial: ModuleNotFoundError: No module named 'eu_parsers'
-[eurlex] EUR-Lex — Jornal Oficial da União Europeia (Publications Office)
-  status: parcial · duração 4.8s
-  itens consultados: 100 · relevantes: 0 · descartados (tema): 1
-  canais ok: atos do Jornal Oficial — série L (RSS oficial)
-  canais com falha: busca por tema (legislação do ano corrente), busca por tema (legislação do ano anterior), AI Act — versão consolidada (ato âncora)
-  erro: busca por tema (legislação do ano corrente): ModuleNotFoundError: No module named 'eu_parsers'; busca por tema (legislação do ano anterior): ModuleNotFoundError: No module named 'eu_parsers'; AI Act — versão consolidada (ato âncora): ModuleNotFoundError: No module named 'eu_parsers'
-[eu_council] Conselho da UE — Registro público de documentos
-  status: falha · duração 0.6s
+  canais com falha: atos normativos (portal oficial), notícias oficiais (portal oficial), atos e notícias por tema (portal oficial), atos do TSE por tema (DOU), resoluções do TSE (DOU, órgão/subórgão)
+  erro: atos normativos (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Flegislacao; notícias oficiais (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&portal_type=Noticia; atos e notícias por tema (portal oficial): JSON indisponível: https://www
+[dou] DOU — Diário Oficial da União (Imprensa Nacional)
+  status: falha · duração 1.4s
   itens consultados: 0 · relevantes: 0 · descartados (tema): 0
   canais ok: —
-  canais com falha: últimos documentos adicionados ao registro, últimos documentos (página 2), documentos legislativos preparatórios (página 1)
-  erro: últimos documentos adicionados ao registro: HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/ (HTTP 403); últimos documentos (página 2): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2 (HTTP 403); documentos legislativos preparatórios (página 1): HTML indisponível: https://www.consilium.europa.eu/en/documents/publ
-[eu_commission] Comissão Europeia — Press Corner e Have Your Say
-  status: parcial · duração 2.0s
-  itens consultados: 10 · relevantes: 1 · descartados (tema): 9
-  canais ok: comunicados oficiais (Press Corner, RSS)
-  canais com falha: consultas públicas e calls for evidence (Have Your Say), consultas públicas (Have Your Say, página 2), consultas por tema (Have Your Say, keywords)
-  erro: consultas públicas e calls for evidence (Have Your Say): ModuleNotFoundError: No module named 'eu_parsers'; consultas públicas (Have Your Say, página 2): ModuleNotFoundError: No module named 'eu_parsers'; consultas por tema (Have Your Say, keywords): ModuleNotFoundError: No module named 'eu_parsers'
-    - [2026-09-17] (comunicado, forte) Speech by Executive Vice-President Teresa Ribera at Fordham's 53rd Annual Conference “Building a democratic, c
-      https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1898
-[eu_parliament] Parlamento Europeu — Open Data Portal v2 / Legislative Train
-  status: falha · duração 11.0s
-  itens consultados: 0 · relevantes: 0 · descartados (tema): 0
-  canais ok: —
-  canais com falha: API v2 — procedimentos do termo parlamentar corrente, API v2 — procedimentos de IA (busca por texto), Legislative Train — Europe fit for the digital age, Legislative Train — unicidade e poderes de execução, sala de imprensa — por tema
-  erro: API v2 — procedimentos do termo parlamentar corrente: ModuleNotFoundError: No module named 'eu_parsers'; API v2 — procedimentos de IA (busca por texto): JSON indisponível: https://data.europarl.europa.eu/api/v2/procedures?text=artificial%20intelligence&limit=25&format=application/ld%2Bjson; Legislative Train — Europe fit for the digital age: ModuleNotFoundError: No module named 'eu_parsers'; Legis
-[edpb] EDPB — European Data Protection Board
-  status: ok · duração 0.9s
-  itens consultados: 10 · relevantes: 10 · descartados (tema): 0
-  canais ok: notícias e guidelines (RSS oficial)
-    - [2026-09-11] (orientacao, forte) Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR
-      https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en
-    - [2026-09-09] (orientacao, forte) Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR
-      https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en
-    - [2026-09-03] (orientacao, forte) Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)
-      https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en
-    - [2026-07-30] (orientacao, forte) Stakeholder event on guidelines on the interplay between data protection and competition law: overview of topi
-      https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en
-    - [2026-07-23] (orientacao, forte) Stakeholder event on guidelines on the interplay between data protection and competition law: save the date
-      https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en
-    - [2026-07-17] (orientacao, forte) EDPB calls for legal basis for cross-regulatory information sharing
-      https://www.edpb.europa.eu/news/edpb-calls-for-legal-basis-for-cross-regulatory-information-sharing_en
-    - [2026-07-14] (orientacao, forte) EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint
-      https://www.edpb.europa.eu/news/edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint_en
-    - [2026-07-08] (orientacao, forte) EDPB sheds light on anonymisation and web scraping for generative AI and adopts final version of guidelines on
-      https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en
-    - [2026-07-01] (orientacao, forte) EDPB and AMLA to develop Joint Guidelines on partnerships for information sharing
-      https://www.edpb.europa.eu/news/edpb-and-amla-to-develop-joint-guidelines-on-partnerships-for-information-sharing_en
-    - [2026-06-25] (orientacao, forte) One-Stop-Shop case digest on right to object and right to erasure updated
-      https://www.edpb.europa.eu/news/one-stop-shop-case-digest-on-right-to-object-and-right-to-erasure-updated_en
-[edps] EDPS — European Data Protection Supervisor
-  status: falha · duração 1.2s
-  itens consultados: 0 · relevantes: 0 · descartados (tema): 0
-  canais ok: —
-  canais com falha: press releases (listagem oficial), notícias oficiais (listagem), publicações (opiniões e guidelines)
-  erro: press releases (listagem oficial): ModuleNotFoundError: No module named 'eu_parsers'; notícias oficiais (listagem): ModuleNotFoundError: No module named 'eu_parsers'; publicações (opiniões e guidelines): ModuleNotFoundError: No module named 'eu_parsers'; nenhum canal respondeu — press releases (listagem oficial): ModuleNotFoundError: No module named 'eu_parsers'; notícias oficiais (listagem): Modu
+  canais com falha: busca por tema (7 dias)
+  erro: busca por tema (7 dias): listagem sem itens reconhecíveis (228655 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=13-09-2026&publishTo=20-09-2026; nenhum canal respondeu — busca por tema (7 dias): listagem sem itens reconhecíveis (228655 bytes): https://www.in.gov.br/consulta/-/
+[planalto] Planalto — Presidência da República
+  status: parcial · duração 4.9s
+  itens consultados: 52 · relevantes: 3 · descartados (tema): 23
+  canais ok: notícias do Planalto (RSS oficial), notícias do Planalto (página oficial)
+  canais com falha: atos do Poder Legislativo (leis, vetos), atos da Presidência (decretos, MPs)
+  erro: atos do Poder Legislativo (leis, vetos): listagem sem itens reconhecíveis (177735 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publishTo=20-09-2026&orgPrin=Atos%20do%20Poder%20Legislativo; atos da Presidência (decretos, MPs): listagem sem itens reconhecíveis (19342
+    - [2026-07-11] (noticia, revisar) Visita presidencial ao Instituto Mauá de Tecnologia, em São Caetano do Sul (SP)
+      https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/visita-presidencial-ao-instituto-maua-de-tecnologia-em-sao-caetano-do-sul-sp
+    - [2026-08-18] (noticia, forte) Visita presidencial ao Parque Tecnológico de Macaíba e anúncios relativos aos supercomputadores e soberania di
+      https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/visita-presidencial-ao-parque-tecnologico-de-macaiba-e-anuncios-relativos-aos-supercomputadores-e-soberania-digital
+    - [2026-07-23] (noticia, revisar) Presidente da República participa de encontro com lideranças do sistema de ciência e tecnologia no Brasil
+      https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/presidente-da-republica-participa-de-encontro-com-liderancas-do-sistema-de-ciencia-e-tecnologia-no-brasil
+[mcti] MCTI — Ministério da Ciência, Tecnologia e Inovação
+  status: parcial · duração 5.6s
+  itens consultados: 86 · relevantes: 18 · descartados (tema): 34
+  canais ok: notícias institucionais, planos, programas e políticas
+  canais com falha: atos do MCTI por tema (DOU), portarias publicadas
+  erro: atos do MCTI por tema (DOU): listagem sem itens reconhecíveis (187167 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=21-08-2026&publishTo=20-09-2026&orgPrin=Minist%C3%A9rio%20da%20Ci%C3%AAncia%2C%20Tecnologia%20e%20Inova%C3%A7%C3%A3o; portarias publicadas: listagem sem itens re
+    - [2026-09-11] (noticia, revisar) AEB abre inscrições para 37 cursos gratuitos sobre ciência e tecnologia espacial
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/aeb-abre-inscricoes-para-37-cursos-gratuitos-sobre-ciencia-e-tecnologia-espacial
+    - [2026-09-09] (noticia, revisar) Pesquisa desenvolve equipamento para recuperação muscular e reabilitação de pacientes
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/pesquisa-desenvolve-equipamento-para-recuperacao-muscular-e-reabilitacao-de-pacientes
+    - [2026-09-08] (noticia, forte) Ada Lovelace: como a mãe da programação teceu o primeiro algoritmo
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/ada-lovelace-como-a-mae-da-programacao-teceu-o-primeiro-algoritmo
+    - [2026-09-04] (noticia, forte) Banco nacional reúne soluções de inteligência artificial para o setor público
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/banco-nacional-reune-solucoes-de-inteligencia-artificial-para-o-setor-publico
+    - [2026-08-31] (noticia, revisar) Tecnologias de reúso de água garantem qualidade de vida de moradores do semiárido da Amazônia
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/tecnologias-de-reuso-de-agua-garantem-qualidade-de-vida-de-moradores-do-semiarido-da-amazonia
+    - [2026-08-27] (noticia, revisar) Programa Granioter Acelera 2026 recebe inscrições até 30 de agosto
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/programa-granioter-acelera-2026-recebe-inscricoes-ate-30-de-agosto
+    - [2026-08-27] (noticia, revisar) Saiba como acompanhar a seca no Brasil pela plataforma Alerta Secas do Cemaden
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/saiba-como-acompanhar-a-seca-no-brasil-pela-plataforma-alerta-secas-do-cemaden
+    - [2026-08-26] (noticia, revisar) Brics adota Consenso de Chennai com prioridades para cooperação em ciência, tecnologia e inovação
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/brics-adota-consenso-de-chennai-com-prioridades-para-cooperacao-em-ciencia-tecnologia-e-inovacao
+    - [—] (programa, revisar) Tecnologias Habilitadoras
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/tecnologias-convergentes-e-habilitadoras
+    - [—] (programa, revisar) Nanotecnologia
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/tecnologias-convergentes-e-habilitadoras/nanotecnologia
+    ... (+8 itens)
 
 relatório: out/fontes_reais.json · status global: PARCIAL

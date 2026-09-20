@@ -566,7 +566,7 @@ INFO: {"jsonArray_ref": "presente", "hits": 20, "links": 64}
 			}
 		};
 
-		Liferay.authToken = 'YimpF6q1';
+		Liferay.authToken = '8QnIuvvs';
 
 		
 

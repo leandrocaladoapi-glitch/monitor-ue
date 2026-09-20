@@ -126,7 +126,7 @@ INFO: {"links": 544}
 
 
 
-    <link rel="search" href="https://www.gov.br/mcti/@@search" title="Buscar neste site" />
+    <link rel="search" href="https://www.gov.br/mcti/pt-br/@@search" title="Buscar neste site" />
 
 
 
@@ -1024,4 +1024,4 @@ INFO: {"links": 544}
 
     
 
-        <a href="https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/cgcl/#publicacoes" cla
+        <a href="https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/cgcl/#publicacoe
