@@ -1,21 +1,23 @@
-name: Atualizar monitoramento legislativo
+name: Atualizar monitoramento UE
 
-# Coleta automática das fontes oficiais (Câmara/Senado), rebuild do site
-# estático e validação. Commita somente quando há alteração real no dataset
-# ou nas páginas geradas. O deploy na Vercel é acionado pelo push (a Vercel
-# executa `python3 scripts/build_site.py` e publica `docs/`).
+# Coleta automática das fontes oficiais da União Europeia (motor legislativo
+# do Parlamento + conectores regulatórios), rebuild do site estático e
+# validação. Commita somente quando há alteração real no dataset ou nas
+# páginas geradas. O deploy na Vercel é acionado pelo push (a Vercel executa
+# `python3 scripts/build_site.py` e publica `docs/`).
 #
 # A coleta publica resultados parciais quando build e validação passam.
 # Falhas de build nunca publicam páginas quebradas; o dataset fica em artifact.
 # A coleta pública não depende de banco, SMTP ou credenciais comerciais.
 on:
   schedule:
-    # Diário às 10:17 UTC (07:17 BRT). Evita o minuto 0, quando o GitHub atrasa
-    # os agendamentos por excesso de jobs na fila.
-    - cron: "17 10 * * *"
-    # Repetições diárias às 10:43, 14:43 e 18:43 BRT. O GitHub pode atrasar
-    # ou descartar um disparo; não dependemos de uma única oportunidade diária.
-    - cron: "43 13,17,21 * * *"
+    # Diário às 07:17 de Bruxelas (05:17 UTC no verão europeu / 06:17 no inverno).
+    # Evita o minuto 0, quando o GitHub atrasa os agendamentos por excesso de jobs.
+    - cron: "17 5 * * *"
+    # Repetições diárias às 10:43, 14:43 e 18:43 de Bruxelas (08:43/12:43/16:43 UTC).
+    # O GitHub pode atrasar ou descartar um disparo; não dependemos de uma única
+    # oportunidade diária.
+    - cron: "43 8,12,16 * * *"
   workflow_dispatch:
     inputs:
       orcamento_minutos:
@@ -90,17 +92,17 @@ jobs:
           ex = (ups.get("execucoes") or [{}])[0]
           http = ex.get("http") or {}
           linhas = [
-              "## Monitoramento legislativo — execução do dia",
+              "## Monitoramento UE — execução do dia",
               "",
               f"- **Status:** `{ex.get('status', '—')}`",
               f"- **Início/fim:** {ex.get('data_hora', '—')} → {ex.get('fim', '—')}",
               f"- **Duração:** {ex.get('duracao_segundos', '—')}s de {ex.get('orcamento_segundos', '—')}s de orçamento",
-              f"- **Proposições:** {ex.get('proposicoes_verificadas', '—')} verificadas de "
-              f"{ex.get('proposicoes_monitoradas', '—')} monitoradas "
+              f"- **Procedimentos:** {ex.get('procedimentos_verificados', ex.get('proposicoes_verificadas', '—'))} verificados de "
+              f"{ex.get('procedimentos_monitorados', ex.get('proposicoes_monitoradas', '—'))} monitorados "
               f"({ex.get('cobertura_pct', '—')}% de cobertura; "
-              f"{ex.get('proposicoes_pendentes', 0)} pendentes)",
+              f"{ex.get('procedimentos_pendentes', 0)} pendentes)",
               f"- **Mudanças:** {ex.get('mudancas_detectadas', '—')} · "
-              f"**novas proposições:** {ex.get('novas_proposicoes', '—')} · "
+              f"**novos procedimentos:** {ex.get('novos_procedimentos', '—')} · "
               f"**eventos:** {ex.get('eventos_adicionados', '—')}",
               f"- **HTTP:** {http.get('chamadas', '—')} chamadas · "
               f"{http.get('cache', 0)} do cache · {http.get('falhas', 0)} falhas · "
@@ -137,8 +139,8 @@ jobs:
       - name: Commit e push (somente se houver alteração)
         if: always() && steps.diff.outputs.changed == 'true' && steps.build.outcome == 'success' && steps.validate.outcome == 'success'
         run: |
-          git config user.name "monitor-legislativo-bot"
-          git config user.email "monitor-legislativo-bot@users.noreply.github.com"
+          git config user.name "monitor-ia-ue-bot"
+          git config user.email "monitor-ia-ue-bot@users.noreply.github.com"
           git add -A data docs
           # Evita commit vazio em caso de corrida: só commita se houver staged diff
           if git diff --cached --quiet; then
@@ -146,7 +148,7 @@ jobs:
           else
             DATA=$(date -u +%Y-%m-%d)
             STATUS=$(python3 -c "import json;print((json.load(open('data/legislation/updates.json')).get('execucoes') or [{}])[0].get('status','?'))")
-            git commit -m "chore: atualização automática do monitoramento ($DATA) [$STATUS]" -m "Execução do coletor (update_legislation.py) + rebuild (build_site.py). Mudanças e métricas em data/legislation/updates.json — painel em /monitoramento/."
+            git commit -m "chore: atualização automática do monitor UE ($DATA) [$STATUS]" -m "Execução do coletor (update_legislation.py) + rebuild (build_site.py). Mudanças e métricas em data/legislation/updates.json — painel em /monitoramento/."
             git push
           fi
 

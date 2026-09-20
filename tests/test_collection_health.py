@@ -1,12 +1,12 @@
 import unittest
 from datetime import datetime, timezone, timedelta
-from scripts.check_collection import problems
+from scripts.check_collection import problems  # dataset timestampado em BRT (README)
 
 class CollectionHealthTests(unittest.TestCase):
     def setUp(self):
         self.now = datetime.fromisoformat("2026-09-14T18:00:00-03:00")
         self.record = dict(fim="2026-09-14T16:24:35+00:00", status="concluida",
-                           cobertura_pct=100, erros=[], proposicoes_pendentes=0)
+                           cobertura_pct=100, erros=[], procedimentos_pendentes=0)
     def test_zero_changes_is_success(self):
         self.record["mudancas_detectadas"] = 0
         self.assertEqual(problems(self.record, self.now), [])
@@ -27,5 +27,9 @@ class CollectionHealthTests(unittest.TestCase):
         self.record["status"] = "parcial"
         self.assertTrue(problems(self.record, self.now))
         self.record["status"] = "concluida"
+        self.record["procedimentos_pendentes"] = 1
+        self.assertTrue(problems(self.record, self.now))
+        # Compat: registros antigos com a chave legada também detectam pendência
+        del self.record["procedimentos_pendentes"]
         self.record["proposicoes_pendentes"] = 1
         self.assertTrue(problems(self.record, self.now))

@@ -3,18 +3,19 @@
 """
 scoring.py — AI Legislative Impact Score: critérios claros e reproduzíveis.
 
-O score (0-100) mede a IMPORTÂNCIA REGULATÓRIA de uma proposição para o
-monitoramento de IA, não uma opinião sobre seu mérito. A mesma função é usada
-para novas proposições descobertas automaticamente; os scores das proposições
-do bootstrap (08/09/2026) foram atribuídos manualmente seguindo esta mesma
-rúbrica e são PRESERVADOS como estão (nunca recalculados para gerar manchete).
+O score (0-100) mede a IMPORTÂNCIA REGULATÓRIA de um procedimento/ato da
+União Europeia para o monitoramento de IA — não uma opinião sobre seu mérito
+e **não** uma previsão de aprovação ou de comportamento político (essa é uma
+regra inegociável do projeto). A mesma função é usada para procedimentos
+descobertos automaticamente; os registros curados manualmente seguem esta
+mesma rúbrica.
 
 Rúbrica (soma máxima = 100):
   1. Abrangência regulatória ............ 0-20
-  2. Estágio de tramitação .............. 0-15
-  3. Proximidade de votação ............. 0-10
-  4. Urgência / regime de tramitação .... 0-10
-  5. Apensados (quantidade/relevância) .. 0-5
+  2. Estágio do procedimento ............ 0-15
+  3. Próximas datas aplicáveis .......... 0-10
+  4. Regime do procedimento ............. 0-10
+  5. Densidade do dossiê (documentos) ... 0-5
   6. Impacto econômico .................. 0-15
   7. Impacto sobre direitos ............. 0-10
   8. Alcance setorial ................... 0-5
@@ -40,15 +41,15 @@ RUBRIC_MAX = {
 }
 
 RUBRIC_DESCRIPTIONS = {
-    "abrangencia_regulatoria": "Marco geral/nacional (20) · setorial amplo (12) · tema pontual (6) · simbólico/arquivado (0-2)",
-    "estagio_tramitacao": "À sanção/convertida recente (15) · plenário ou pronta p/ pauta (12) · comissão com parecer (9) · comissão sem parecer (6) · apresentação/distribuição (3) · arquivada (0)",
-    "proximidade_votacao": "Pauta marcada/votação iminente (10) · urgência (8) · prioridade (5) · ordinária (2) · arquivada/parada (0)",
-    "urgencia_regime": "Urgência constitucional/MP (10) · urgência aprovada (8) · prioridade (5) · ordinária (2)",
-    "apensados": "Principal com 10+ apensados (5) · principal com 3-9 (3) · principal com 1-2 (1) · apensada ou sem apensados (0)",
-    "impacto_economico": "Efeito fiscal bilionário/setor inteiro (15) · custos relevantes p/ empresas (9) · efeito moderado (5) · baixo/inexistente (0-2)",
-    "impacto_direitos": "Direitos fundamentais/dados/penal (10) · consumidor/trabalho (6) · indireto (3) · nenhum (0)",
+    "abrangencia_regulatoria": "Quadro horizontal da UE/AI Act (20) · pilar setorial amplo (12) · tema pontual (6) · simbólico/sem efeito (0-2)",
+    "estagio_tramitacao": "Publicado no JO / aplicável (15) · assinado-aguarda JO (13) · adotado pelo plenário (12) · acordo provisório aprovado (11) · trílogos em curso (10) · posição do plenário em 1ª leitura (9) · relatório adotado em comissão (8) · em comissão (6) · encaminhamento recente (4) · início/sem confirmação (2)",
+    "proximidade_votacao": "Data de aplicação/obrigação futura confirmada (10) · votação em pauta confirmada (10) · trílogos ativos (6) · agenda não confirmada (2) · sem próximas etapas (0)",
+    "urgencia_regime": "Ato delegado/de execução com prazo legal (8) · legislativo ordinário (COD, 5) · especial CNS/CONS (5) · não legislativo NLE/INI (3) · resolução (2)",
+    "apensados": "Dossiê com 5+ documentos oficiais (5) · 3-4 (3) · 1-2 (1) · nenhum (0)",
+    "impacto_economico": "Mercado único inteiro/sanções milionárias (15) · custos relevantes p/ provedores e utilizadores (9) · efeito moderado (5) · baixo/inexistente (0-2)",
+    "impacto_direitos": "Direitos fundamentais/dados/práticas proibidas (10) · trabalho/consumidor/saúde (6) · indireto (3) · nenhum (0)",
     "alcance_setorial": "Multissetorial (5) · 2-3 setores (3) · 1 setor (1)",
-    "relevancia_institucional": "Cria/governa autoridade nacional (10) · altera competências relevantes (6) · impacto institucional pontual (3) · nenhum (0)",
+    "relevancia_institucional": "Cria/governa autoridade da UE (AI Office, EDPB, mercado) (10) · altera competências relevantes (6) · impacto institucional pontual (3) · nenhum (0)",
 }
 
 
@@ -72,32 +73,32 @@ def _norm(t):
 
 
 def compute_impact_score(prop):
-    """Calcula o score de forma determinística a partir dos campos da proposição.
+    """Calcula o score de forma determinística a partir dos campos do registro.
 
-    Recebe um dict com (quando disponíveis): tipo, situacao, regime_tramitacao,
-    forma_apreciacao, ultima_movimentacao, total_apensados, categorias (ids),
-    ementa, titulo. Retorna {"score": int, "classificacao": str, "detalhe": {...}}.
-    Critério conservador: na dúvida, pontua para baixo.
+    Recebe um dict com (quando disponíveis): tipo, situacao, ultima_movimentacao,
+    documentos, categorias (ids), ementa, titulo, procedimento. Retorna
+    {"score": int, "classificacao": str, "detalhe": {...}}. Critério
+    conservador: na dúvida, pontua para baixo. Mede impacto — nunca aprovação.
     """
     sit = _norm(prop.get("situacao", ""))
-    reg = _norm(prop.get("regime_tramitacao", ""))
-    apr = _norm(prop.get("forma_apreciacao", ""))
+    proc = _norm(prop.get("procedimento", "") or prop.get("tipo", ""))
     ult = _norm((prop.get("ultima_movimentacao") or {}).get("descricao", ""))
     texto = _norm(f"{prop.get('ementa', '')} {prop.get('titulo', '')}")
     cats = set(prop.get("categorias") or [])
-    total_ap = prop.get("total_apensados") or 0
     try:
-        total_ap = int(total_ap)
+        n_docs = len(prop.get("documentos") or [])
     except (TypeError, ValueError):
-        total_ap = 0
-    texto_all = f"{sit} {reg} {apr} {ult} {texto}"
+        n_docs = 0
+    texto_all = f"{sit} {ult} {texto}"
     d = {}
 
     # 1. Abrangência regulatória (0-20)
-    if any(k in texto for k in ("marco legal", "marco regulatorio", "sistema nacional",
-                                "normas gerais", "politica nacional", "estatuto")):
-        d["abrangencia_regulatoria"] = 20 if ("inteligencia artificial" in texto or 1 in cats) else 12
-    elif cats & {1, 24, 26}:
+    if any(k in texto for k in ("artificial intelligence act", "quadro geral",
+                                "harmonised rules", "regulatory framework",
+                                "horizontal", "marco geral")):
+        d["abrangencia_regulatoria"] = 20 if ("artificial intelligence" in texto
+                                              or 1 in cats) else 12
+    elif cats & {1, 24, 26, 30}:
         d["abrangencia_regulatoria"] = 12
     elif len(cats) >= 4:
         d["abrangencia_regulatoria"] = 12
@@ -107,72 +108,95 @@ def compute_impact_score(prop):
         d["abrangencia_regulatoria"] = 6
     else:
         d["abrangencia_regulatoria"] = 6
-    if "arquivad" in sit or "prejudicad" in sit:
+    if any(k in sit for k in ("rejeitad", "retirad", "repealed")):
         d["abrangencia_regulatoria"] = min(d["abrangencia_regulatoria"], 6)
 
-    # 2. Estágio de tramitação (0-15)
-    if "arquivad" in sit or "prejudicad" in sit:
-        d["estagio_tramitacao"] = 0
-    elif "sancao" in sit or "transformada em norma" in sit or "convertida" in texto_all:
+    # 2. Estágio do procedimento (0-15) — apenas estágios oficiais da ficha
+    if "publicado no jornal oficial" in sit or "jornal oficial" in ult:
         d["estagio_tramitacao"] = 15
-    elif "plenario" in sit and ("pront" in sit or "pauta" in sit or "ordem do dia" in sit):
+    elif "assinado" in sit:
+        d["estagio_tramitacao"] = 13
+    elif "votado no plenario" in sit or "votação no plenário" in ult \
+            or "adotada pelo plenario" in sit or "adotado pelo plenario" in sit:
         d["estagio_tramitacao"] = 12
-    elif "parecer" in sit and ("aprovad" in sit or "favoravel" in sit):
+    elif "acordo provisorio" in sit:
+        d["estagio_tramitacao"] = 11
+    elif "negocia" in sit or "trilogo" in sit or "trilogue" in sit:
+        d["estagio_tramitacao"] = 10
+    elif "inscrito em pauta" in sit or "debate no plenario" in sit:
         d["estagio_tramitacao"] = 9
-    elif "parecer" in sit or "comissao" in sit:
+    elif "relatorio adotado" in sit or "report adopted" in sit:
+        d["estagio_tramitacao"] = 8
+    elif "comissao" in sit or "parecer" in sit:
         d["estagio_tramitacao"] = 6
-    elif "apensad" in sit:
-        d["estagio_tramitacao"] = 6
+    elif "encaminhamento" in sit or "referral" in sit:
+        d["estagio_tramitacao"] = 4
+    elif "não confirmada" in sit or "nao confirmada" in sit:
+        d["estagio_tramitacao"] = 2
     else:
         d["estagio_tramitacao"] = 3
 
-    # 3. Proximidade de votação (0-10)
-    if "arquivad" in sit or "prejudicad" in sit:
-        d["proximidade_votacao"] = 0
-    elif "pauta" in sit or "ordem do dia" in sit or "votacao" in ult:
+    # 3. Próximas datas aplicáveis (0-10) — somente datas confirmadas oficialmente
+    if any(k in texto_all for k in ("aplicável", "aplicavel", "aplicação", "aplicacao",
+                                    "applies from", "applicable", "entry into force")):
         d["proximidade_votacao"] = 10
-    elif "urgencia" in texto_all or "urgente" in texto_all:
-        d["proximidade_votacao"] = 8
-    elif "prioridade" in texto_all:
-        d["proximidade_votacao"] = 5
+    elif "pauta" in sit or "votação no plenário" in ult:
+        d["proximidade_votacao"] = 10
+    elif "negocia" in sit or "trilogo" in sit:
+        d["proximidade_votacao"] = 6
+    elif any(k in sit for k in ("publicado", "resolução adotada", "resolucao adotada")):
+        d["proximidade_votacao"] = 2
     else:
         d["proximidade_votacao"] = 2
 
-    # 4. Urgência / regime (0-10)
-    if prop.get("tipo") in ("MPV", "MP"):
-        d["urgencia_regime"] = 10
-    elif "urgencia" in texto_all:
+    # 4. Regime do procedimento (0-10) — tipo do procedimento interinstitucional
+    tipo_proc = (re.search(r"\(([A-Z]{2,4})\)", prop.get("procedimento") or "") or [None,
+                 None])[1]
+    if tipo_proc is None:
+        tipo_proc = (prop.get("tipo") or "").upper()
+    if tipo_proc in ("REG", "DEC"):
         d["urgencia_regime"] = 8
-    elif "prioridade" in texto_all:
+    elif tipo_proc in ("COD", "CNS", "CONS"):
         d["urgencia_regime"] = 5
+    elif tipo_proc in ("NLE", "INI", "APP"):
+        d["urgencia_regime"] = 3
     else:
         d["urgencia_regime"] = 2
 
-    # 5. Apensados (0-5)
-    if total_ap >= 10:
+    # 5. Densidade do dossiê — documentos oficiais vinculados (0-5)
+    if n_docs >= 5:
         d["apensados"] = 5
-    elif total_ap >= 3:
+    elif n_docs >= 3:
         d["apensados"] = 3
-    elif total_ap >= 1:
+    elif n_docs >= 1:
         d["apensados"] = 1
     else:
         d["apensados"] = 0
 
     # 6. Impacto econômico (0-15)
-    if any(k in texto for k in ("regime tributario", "incentivo fiscal", "renuncia",
-                                "bilh", "datacenter", "data center", "fundo nacional")):
-        d["impacto_economico"] = 15 if any(k in texto for k in ("bilh", "datacenter", "data center", "renuncia")) else 9
-    elif any(k in texto for k in ("empresa", "fornecedor", "desenvolvedor", "aplicacao", "multa", "sancao administrativa")):
+    if any(k in texto for k in ("single market", "mercado unico", "mercado único",
+                                "harmonised rules", "fines", "sanctions",
+                                "turnover", "chips act", "investeu", "fundo")):
+        d["impacto_economico"] = 15 if any(k in texto for k in (
+            "single market", "mercado unico", "mercado único", "harmonised rules",
+            "fines", "sanctions", "chips act")) else 9
+    elif any(k in texto for k in ("providers", "deployers", "suppliers",
+                                  "providers and deployers", "obligations",
+                                  "compliance", "conformity")):
         d["impacto_economico"] = 9
-    elif any(k in texto for k in ("obrigacao", "dever", "vedado", "proibid", "rotul", "transparencia")):
+    elif any(k in texto for k in ("transparency", "watermark", "labelling",
+                                  "labeling", "information obligation")):
         d["impacto_economico"] = 5
     else:
         d["impacto_economico"] = 2
 
     # 7. Impacto sobre direitos (0-10)
-    if cats & {2, 3, 5} or any(k in texto for k in ("direitos fundamentais", "dados pessoais", "crime", "pena", "prisional", "crianca", "adolescente")):
+    if cats & {2, 3, 5} or any(k in texto for k in (
+            "fundamental rights", "prohibited practices", "personal data",
+            "biometric", "social scoring", "criminal", "children", "minors")):
         d["impacto_direitos"] = 10
-    elif cats & {7, 8, 9, 13, 21} or any(k in texto for k in ("trabalh", "consumidor", "eleitor", "saude", "educacao")):
+    elif cats & {7, 8, 9, 13, 21} or any(k in texto for k in (
+            "worker", "employee", "consumer", "patient", "election", "health")):
         d["impacto_direitos"] = 6
     elif cats:
         d["impacto_direitos"] = 3
@@ -180,7 +204,7 @@ def compute_impact_score(prop):
         d["impacto_direitos"] = 3
 
     # 8. Alcance setorial (0-5)
-    setoriais = cats & {7, 8, 9, 10, 11, 12, 13, 19, 20, 21, 27, 28, 29}
+    setoriais = cats & {7, 8, 9, 10, 11, 12, 13, 19, 20, 21, 23, 28}
     if len(setoriais) >= 3 or 1 in cats:
         d["alcance_setorial"] = 5
     elif len(setoriais) == 2:
@@ -191,9 +215,12 @@ def compute_impact_score(prop):
         d["alcance_setorial"] = 1
 
     # 9. Relevância institucional (0-10)
-    if any(k in texto for k in ("sistema nacional", "autoridade", "agencia", "conselho nacional", "anpd", "competencia")):
-        d["relevancia_institucional"] = 10 if "sistema nacional" in texto else 6
-    elif any(k in texto for k in ("fiscalizacao", "poder executivo", "regulament")):
+    if any(k in texto for k in ("ai office", "european ai office", "governance",
+                                "edpb", "market surveillance", "notified body",
+                                "authorities", "supervisory")):
+        d["relevancia_institucional"] = 10 if "ai office" in texto or "governance" in texto else 6
+    elif any(k in texto for k in ("commission", "committee", "competence",
+                                  "enforcement")):
         d["relevancia_institucional"] = 3
     else:
         d["relevancia_institucional"] = 0

@@ -1,242 +1,38 @@
 {
   "meta": {
-    "descricao": "Leis, decretos, resoluções e atos normativos federais vigentes relacionados à Inteligência Artificial no Brasil",
+    "descricao": "Legislação da União Europeia diretamente relacionada à inteligência artificial — AI Act e atos correlatos (não é o acervo digital completo).",
+    "criterio": "Somente atos com relação direta com IA, com URL oficial no EUR-Lex (CELEX preservado). Nada estimado.",
     "execucao": "2026-09-18",
-    "nota": "Inclui normas diretamente voltadas a IA e normas vigentes que já disciplinam sistemas automatizados e decisões algorítmicas. Atos caducos ou históricos estão marcados com status próprio."
+    "total": 1
   },
   "normas": [
     {
-      "id": "lei_13709_2018",
-      "tipo": "Lei",
-      "numero": "13.709",
-      "data": "2018-08-14",
-      "nome": "Lei Geral de Proteção de Dados (LGPD)",
-      "ementa_sintese": "Dispõe sobre o tratamento de dados pessoais, inclusive em meios digitais, por pessoa natural ou jurídica de direito público ou privado.",
-      "relacao_ia": "Base vigente para tratamento de dados usados em sistemas de IA. O art. 20 assegura ao titular a revisão de decisões tomadas unicamente de forma automatizada que afetem seus interesses (acesso a critérios, pedido de revisão). Arts. 6º e 37 impõem transparência e Relatório de Impacto à Proteção de Dados Pessoais (RIPD) em tratamentos de risco elevado — aplicáveis a modelos de IA.",
-      "orgao": "Congresso Nacional / ANPD (fiscalização)",
-      "status": "Vigente",
-      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
-      "categorias": [
-        3,
-        2
-      ]
+      "id": "32024R1689",
+      "tipo": "Regulamento (UE) 2024/1689",
+      "numero": "2024/1689",
+      "data": "2024-07-12",
+      "nome": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending Regulation (EC) No 300/2008, Regulation (EC) No 1107/2009 and Regulation (EU) No 1025/2012",
+      "relacao_ia": "AI Act — o ato âncora deste monitor: abordagem baseada em risco, práticas proibidas, sistemas de alto risco, modelos de uso geral (GPAI) e European AI Office.",
+      "orgao": "União Europeia (Parlamento Europeu e Conselho)",
+      "status": "Em vigor desde 1 de agosto de 2024; aplicação faseada: proibições 02/02/2025, GPAI 02/08/2025, aplicação geral 02/08/2026; alto risco Anexo III 02/12/2027 e Anexo I 02/08/2028 (calendário alterado pelo Regulamento (UE) 2026/1744).",
+      "procedimento": "2021/0106(COD)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+      "url_consolidada": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+      "celex": "32024R1689",
+      "jornal_oficial": "JO L, 12.7.2024"
     },
     {
-      "id": "lei_14129_2021",
-      "tipo": "Lei",
-      "numero": "14.129",
-      "data": "2021-03-29",
-      "nome": "Lei do Governo Digital",
-      "ementa_sintese": "Institui princípios, diretrizes e instrumentos para o Governo Digital e a transformação digital do Poder Executivo federal.",
-      "relacao_ia": "Arts. 3º e 4º preveem a oferta de serviços públicos digitais com uso de novas tecnologias, inclusive inteligência artificial. Arts. 20 a 24 disciplinam decisões automatizadas na Administração Pública: garantia de decisão humana quando o titular solicitar, motivação dos atos e revisão de decisões tomadas com apoio de sistemas automatizados.",
-      "orgao": "Congresso Nacional / Governo federal",
-      "status": "Vigente",
-      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14129.htm",
-      "categorias": [
-        19,
-        24
-      ]
-    },
-    {
-      "id": "lei_14533_2023",
-      "tipo": "Lei",
-      "numero": "14.533",
-      "data": "2023-01-11",
-      "nome": "Política Nacional de Educação Digital (PNED)",
-      "ementa_sintese": "Institui a Política Nacional de Educação Digital e dá outras providências.",
-      "relacao_ia": "Diretrizes de educação digital incluem letramento algorítmico e pensamento crítico para uso de tecnologias digitais e de IA. É uma das leis alteradas pelo PL 2338/2023 (Marco Legal da IA, em tramitação).",
-      "orgao": "Congresso Nacional / MEC",
-      "status": "Vigente",
-      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2023/lei/l14533.htm",
-      "categorias": [
-        8
-      ]
-    },
-    {
-      "id": "lei_15211_2025",
-      "tipo": "Lei",
-      "numero": "15.211",
-      "data": "2025-09-17",
-      "nome": "ECA Digital — proteção de crianças e adolescentes no ambiente digital",
-      "ementa_sintese": "Alterou o Estatuto da Criança e do Adolescente para estabelecer proteção de crianças e adolescentes em ambientes digitais.",
-      "relacao_ia": "Cria obrigações para plataformas digitais (verificação de idade, medidas razoáveis contra conteúdo nocivo e adultização) fiscalizadas pela ANPD, que ganhou atribuições regulatórias. Aplicável a serviços que utilizam sistemas algorítmicos de recomendação e moderação. Entrada em vigor: março/2026 (6 meses após a sanção). Aprovada pelo Congresso no fim de agosto/2025; sancionada com três vetos. É alterada também pelo PL 278/2026 (Redata), aprovado pelo Congresso e pendente de sanção.",
-      "orgao": "Congresso Nacional / ANPD",
-      "status": "Vigente",
-      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15211.htm",
-      "categorias": [
-        2,
-        16,
-        3
-      ]
-    },
-    {
-      "id": "lei_15487_2026",
-      "tipo": "Lei",
-      "numero": "15.487",
-      "data": "2026-08-06",
-      "nome": "Enfrentamento da violência sexual contra crianças e adolescentes, inclusive com IA",
-      "ementa_sintese": "Institui medidas de enfrentamento e repressão ao crime de violência sexual contra criança ou adolescente, inclusive no ambiente digital e com uso de inteligência artificial; altera o Código Penal, o CPP, o ECA, a Lei dos Crimes Hediondos e a Lei de Organização Criminosa.",
-      "relacao_ia": "Primeira lei federal que tipifica condutas especificamente associadas a deepfakes e conteúdo sintético: criminaliza a simulação de participação de criança ou adolescente em material sexual por montagem, adulteração, deepfake ou outra tecnologia de IA; amplia o conceito de material de violência sexual para conteúdo real ou fictício gerado por IA; prevê aumento de pena de 1/3 a 2/3 quando o criminoso utiliza IA, deepfakes ou recursos para ocultar identidade; institui 'ronda virtual' para investigação. Originada do PL 3066/2025 (Dep. Osmar Terra, MDB-RS); aprovada pelo Senado em julho/2026; sancionada em 06/08/2026 e publicada no DOU de 07/08/2026.",
-      "orgao": "Congresso Nacional / Presidência da República",
-      "status": "Vigente (em vigor desde 07/08/2026)",
-      "url": "https://www2.camara.leg.br/legin/fed/lei/2026/lei-15487-6-agosto-2026-799703-norma-pl.html",
-      "categorias": [
-        5,
-        14,
-        2
-      ]
-    },
-    {
-      "id": "portaria_mcti_4617_2021",
-      "tipo": "Portaria",
-      "numero": "MCTI 4.617",
-      "data": "2021-04-06",
-      "nome": "Estratégia Brasileira de Inteligência Artificial (EBIA)",
-      "ementa_sintese": "Institui a Estratégia Brasileira de Inteligência Artificial e dá outras providências.",
-      "relacao_ia": "Primeira política nacional estruturada de IA: eixos de legislação e governança, educação, qualificação profissional, trabalho, pesquisa e desenvolvimento, aplicação em setores produtivos e serviços públicos. Posteriormente complementada pelo PBIA 2024-2028.",
-      "orgao": "Ministério da Ciência, Tecnologia e Inovação",
-      "status": "Vigente",
-      "url": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/transformacaodigital/estrategia-brasileira-de-inteligencia-artificial",
-      "categorias": [
-        27,
-        19
-      ]
-    },
-    {
-      "id": "pbia_2024_2028",
-      "tipo": "Política pública",
-      "numero": "PBIA 2024-2028",
-      "data": "2024-07-30",
-      "nome": "Plano Brasileiro de Inteligência Artificial (PBIA) — 'IA para o bem de todos'",
-      "ementa_sintese": "Plano de ação do governo federal para 2024-2028 com investimento previsto de R$ 23,03 bilhões.",
-      "relacao_ia": "Lançado durante a 5ª Conferência Nacional de Ciência, Tecnologia e Inovação. Eixos: Infraestrutura e Desenvolvimento de IA (R$ 5,79 bi), Difusão e Capacitação (R$ 1,15 bi), IA para Serviços Públicos (R$ 1,76 bi), IA para Inovação Empresarial (R$ 13,79 bi) e Apoio ao Processo Regulatório (R$ 103,25 mi). Preconiza 'nuvem soberana', supercomputador de alta performance e o Instituto de IA do LNCC.",
-      "orgao": "Governo federal (MCTI)",
-      "status": "Vigente",
-      "url": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/transformacaodigital/plano-brasileiro-de-inteligencia-artificial-pbia-_vf.pdf",
-      "categorias": [
-        27,
-        29,
-        30
-      ]
-    },
-    {
-      "id": "resolucao_tse_23732_2024",
-      "tipo": "Resolução",
-      "numero": "TSE 23.732",
-      "data": "2024-02-27",
-      "nome": "Uso de IA na propaganda eleitoral — Eleições 2024",
-      "ementa_sintese": "Aprovada em 27/02/2024; regulamentou, de forma inédita, o uso de IA na propaganda eleitoral das Eleições Municipais de 2024.",
-      "relacao_ia": "Proibiu deepfakes em propaganda eleitoral; obrigou aviso explícito sobre o uso de IA em qualquer modalidade de propaganda; restringiu o uso de robôs para simular contato com o eleitor; e previu a responsabilização das big techs que não retirarem do ar conteúdos de desinformação, discurso de ódio e afins. Base normativa sobre a qual se ergueu a Resolução 23.748/2026.",
-      "orgao": "Tribunal Superior Eleitoral",
-      "status": "Vigente (aplicada às Eleições 2024; sucedida para eleições gerais pela Res. 23.748/2026)",
-      "url": "https://www.tse.jus.br/comunicacao/noticias/2024/Fevereiro/tse-proibe-uso-de-inteligencia-artificial-para-criar-e-propagar-conteudos-falsos-nas-eleicoes",
-      "categorias": [
-        13,
-        14,
-        15
-      ]
-    },
-    {
-      "id": "resolucao_cnj_615_2025",
-      "tipo": "Resolução",
-      "numero": "CNJ 615",
-      "data": "2025-02-18",
-      "nome": "IA no Poder Judiciário",
-      "ementa_sintese": "Estabelece normas para o desenvolvimento, a governança, a auditoria, o monitoramento e o uso responsável de soluções de IA no âmbito do Poder Judiciário.",
-      "relacao_ia": "Aprovada em sessão de 18/02/2025 (relator: conselheiro Bandeira de Mello). Cria o Comitê Nacional de Inteligência Artificial do Judiciário; exige auditoria prévia e periódica dos sistemas de IA; classifica usos por nível de risco; veda o uso de IA para prever crimes com base em características pessoais ou comportamentais; restringe o uso de LLMs e sistemas de IA generativa privados/externos para finalidades de risco excessivo ou alto; impõe transparência e relatórios de impacto.",
-      "orgao": "Conselho Nacional de Justiça",
-      "status": "Vigente",
-      "url": "https://atos.cnj.jus.br/atos/detalhar/6001",
-      "categorias": [
-        12,
-        25,
-        26
-      ]
-    },
-    {
-      "id": "resolucao_tse_23748_2026",
-      "tipo": "Resolução",
-      "numero": "TSE 23.748",
-      "data": "2026-03-04",
-      "nome": "IA nas Eleições Gerais de 2026",
-      "ementa_sintese": "Aprovada por unanimidade pelo TSE no início de março/2026 — principal norma eleitoral sobre IA para as eleições gerais de outubro/2026.",
-      "relacao_ia": "Proíbe a publicação, republicação ou impulsionamento de novos conteúdos produzidos ou alterados por IA nas 72h anteriores ao pleito e 24h posteriores; exige rotulagem explícita, destacada e acessível de conteúdo sintético em propaganda; veda que sistemas de IA ranqueiem, recomendem ou priorizem candidatos; exige informar ao eleitor que interage com chatbots e avatares; proíbe deepfakes para prejudicar ou favorecer candidaturas (vedação mantida mesmo com autorização da pessoa imitada); classifica montagens com nudez envolvendo candidatas como crime eleitoral e violência política de gênero; admite inversão do ônus da prova em ações sobre manipulação digital. Em 01/09/2026, o TSE fixou tese afirmando que a caracterização de deepfake pressupõe grau de realismo/verossimilhança capaz de enganar o eleitor.",
-      "orgao": "Tribunal Superior Eleitoral",
-      "status": "Vigente",
-      "url": "https://g1.globo.com/politica/noticia/2026/03/02/eleicoes-2026-tse-proibe-disseminacao-de-conteudo-novo-feito-por-ia-72-horas-antes-do-pleito.ghtml",
-      "categorias": [
-        13,
-        14,
-        15,
-        16
-      ]
-    },
-    {
-      "id": "decreto_12975_2026",
-      "tipo": "Decreto",
-      "numero": "12.975",
-      "data": "2026-05-20",
-      "nome": "Atualização da regulamentação do Marco Civil da Internet",
-      "ementa_sintese": "Atualiza a regulamentação do Marco Civil da Internet (Lei 12.965/2014) e estabelece novas obrigações para provedores de aplicações de internet, incluindo plataformas digitais e redes sociais.",
-      "relacao_ia": "Editado em seguida à decisão do STF (2025) que ampliou a responsabilização de plataformas por falhas sistêmicas de moderação e por conteúdo ilícito veiculado via anúncios pagos, impulsionamento e redes artificiais de disseminação (robôs). Cria novas atribuições de fiscalização para a ANPD. Relevante para sistemas algorítmicos de recomendação e moderação. Prazo de adequação das plataformas: 20/07/2026.",
-      "orgao": "Presidência da República / ANPD",
-      "status": "Vigente",
-      "url": "https://www.gov.br/anpd/pt-br/assuntos/marco-civil-da-internet",
-      "categorias": [
-        16,
-        15,
-        3
-      ]
-    },
-    {
-      "id": "decreto_12976_2026",
-      "tipo": "Decreto",
-      "numero": "12.976",
-      "data": "2026-05-20",
-      "nome": "Proteção de mulheres no ambiente digital",
-      "ementa_sintese": "Estabelece diretrizes para a proteção de mulheres na internet e o enfrentamento da violência digital de gênero.",
-      "relacao_ia": "Define deveres das plataformas diante de crimes de violência contra mulheres na internet, com canal específico de denúncia e retirada de material em até 2 horas após notificação; prazos de 6 a 24 horas para ameaça, perseguição, assédio coordenado e violência política de gênero. Aplicável a conteúdo sintético e deepfakes contra mulheres. Fiscalização pela ANPD.",
-      "orgao": "Presidência da República / ANPD",
-      "status": "Vigente",
-      "url": "https://www.gov.br/anpd/pt-br/assuntos/marco-civil-da-internet",
-      "categorias": [
-        2,
-        14,
-        16
-      ]
-    },
-    {
-      "id": "mapa_prioridades_anpd_2026_2027",
-      "tipo": "Ato administrativo",
-      "numero": "Mapa de Temas Prioritários ANPD 2026-2027",
-      "data": "2025-12-01",
-      "nome": "Mapa de Temas Prioritários da ANPD — biênio 2026-2027",
-      "ementa_sintese": "Publicada em dezembro/2025, elege inteligência artificial e tecnologias emergentes como um dos eixos prioritários de fiscalização.",
-      "relacao_ia": "Desde 21/08/2026, a ANPD monitora 22 agentes — redes sociais, lojas de aplicativos e ferramentas de IA generativa — para verificar governança, transparência, gestão de riscos, moderação de conteúdo e mecanismos de proteção, com base no Marco Civil atualizado e no ECA Digital.",
-      "orgao": "ANPD",
-      "status": "Vigente",
-      "url": "https://www.gov.br/anpd/pt-br",
-      "categorias": [
-        3,
-        25,
-        16
-      ]
-    },
-    {
-      "id": "mp_1318_2025",
-      "tipo": "Medida Provisória (caducada)",
-      "numero": "1.318",
-      "data": "2025-09-01",
-      "nome": "MP do Redata — regime tributário para data centers",
-      "ementa_sintese": "Instituía o Regime Especial de Tributação para Serviços de Datacenter (Redata), com suspensão de PIS/Cofins e PIS/Cofins-Importação na aquisição de máquinas e equipamentos para data centers habilitados. Data exata de edição: setembro/2025.",
-      "relacao_ia": "Registro histórico: caducou às 23h59 de 25/02/2026 porque o Congresso não concluiu sua apreciação no prazo constitucional — o Senado não pautou o PL 278/2026 na janela final. O conteúdo foi reapresentado no PL 278/2026, aprovado pelo Congresso e pendente de sanção.",
-      "orgao": "Presidência da República / Congresso Nacional",
-      "status": "Caducada (25/02/2026)",
-      "url": "https://tagdlaw.com.br/mp-1-318-2025-caduca-e-deixa-sem-efeito-incentivo-fiscal-para-datacenters/",
-      "categorias": [
-        29,
-        28
-      ]
+      "id": "32026R1744",
+      "tipo": "Regulamento (UE) 2026/1744",
+      "numero": "2026/1744",
+      "data": "2026-07-24",
+      "nome": "Regulation (EU) 2026/1744 of the European Parliament and of the Council of 8 July 2026 amending Regulations (EU) 2024/1689, (EU) 2018/1139 and (EU) 2023/1230 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI) (Text with EEA relevance)",
+      "relacao_ia": "Digital Omnibus on AI — altera diretamente o AI Act: reprograma a aplicação das obrigações de alto risco (Anexo III 02/12/2027; Anexo I 02/08/2028), cria novas proibições aplicáveis a 02/12/2026 e reforça a execução pela European AI Office (Art. 102–110 aplicáveis desde 27/07/2026).",
+      "orgao": "União Europeia (Parlamento Europeu e Conselho)",
+      "status": "Em vigor desde 27 de julho de 2026 (terceiro dia após a publicação no JO).",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744",
+      "celex": "32026R1744",
+      "jornal_oficial": "JO L, 24.7.2026"
     }
   ]
 }

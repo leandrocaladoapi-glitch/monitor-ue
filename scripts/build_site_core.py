@@ -26,8 +26,8 @@ OUT = os.path.join(BASE, "docs")
 # Domínio oficial (Vercel). Usado em canonical/OG/sitemap/navegação.
 SITE_URL = "https://monitor-legislativo-five.vercel.app"
 OLD_DOMAIN = "lcaladoferreira.github.io/monitor-legislativo"
-SITE_NAME = "Monitor Legislativo de IA"
-TAGLINE = "Monitoramento público, documentado e auditável da legislação brasileira de Inteligência Artificial"
+SITE_NAME = "Monitor UE de IA"
+TAGLINE = "Monitoramento público, documentado e auditável da legislação e da regulação de IA da União Europeia"
 
 AUTHOR_NAME = "Leandro Calado"
 AUTHOR_ORG = "LCF Consulting"
@@ -83,10 +83,10 @@ def build_slugs(props):
     _SLUGS = {}
     base_count = {}
     for p in sorted(props, key=lambda x: x["id"]):
-        base = re.sub(r"^(camara|senado|congresso)_", "", p["id"]).replace("_", "-")
+        base = re.sub(r"^ue_", "", p["id"]).replace("_", "-")
         base_count[base] = base_count.get(base, 0) + 1
     for p in sorted(props, key=lambda x: x["id"]):
-        base = re.sub(r"^(camara|senado|congresso)_", "", p["id"]).replace("_", "-")
+        base = re.sub(r"^ue_", "", p["id"]).replace("_", "-")
         if base_count[base] > 1:
             casa = p["id"].split("_")[0]
             _SLUGS[p["id"]] = f"{casa}-{base}"
@@ -95,12 +95,12 @@ def build_slugs(props):
 
 
 def slugify_prop(pid):
-    return _SLUGS.get(pid, re.sub(r"^(camara|senado|congresso)_", "", pid).replace("_", "-"))
+    return _SLUGS.get(pid, re.sub(r"^ue_", "", pid).replace("_", "-"))
 
 
 def prop_fs_path(pid):
     # caminho do arquivo no sistema (relativo a docs/)
-    return f"proposicoes/{slugify_prop(pid)}/index.html"
+    return f"procedimentos-legislativos/{slugify_prop(pid)}/index.html"
 
 
 def fmt_date(d):
@@ -167,20 +167,20 @@ def score_label(s):
 
 def status_group(p):
     s = (p.get("situacao") or "").lower()
-    if "convertida em lei" in s or "transformada em norma" in s:
-        return "aprovada_lei"
-    if "à sanção" in s or "aguarda sanção" in s:
-        return "a_sancao"
-    if "arquivada" in s:
-        return "arquivada"
+    if "publicado no jornal oficial" in s:
+        return "publicado_jo"
+    if "assinado" in s:
+        return "assinado"
+    if any(k in s for k in ("rejeitad", "retirad", "repealed")):
+        return "rejeitado"
     return "em_tramitacao"
 
 
 STATUS_LABEL = {
     "em_tramitacao": ("Em tramitação", "status-active"),
-    "a_sancao": ("À sanção presidencial", "status-approved"),
-    "aprovada_lei": ("Convertida em lei", "status-law"),
-    "arquivada": ("Arquivada", "status-archived"),
+    "assinado": ("Assinado — aguarda JO", "status-approved"),
+    "publicado_jo": ("Publicado no Jornal Oficial", "status-law"),
+    "rejeitado": ("Rejeitado/retirado", "status-archived"),
 }
 
 
@@ -190,14 +190,14 @@ def cat_map():
 
 
 def prop_link(p):
-    return f'{SITE_URL}/proposicoes/{slugify_prop(p["id"])}/'
+    return f'{SITE_URL}/procedimentos-legislativos/{slugify_prop(p["id"])}/'
 
 
 def prop_link_by_id(pid, by_id):
     p = by_id.get(pid)
     if p:
         return prop_link(p)
-    return f"{SITE_URL}/proposicoes/"
+    return f"{SITE_URL}/procedimentos-legislativos/"
 
 
 def changes_for_prop(pid, updates):
@@ -206,19 +206,18 @@ def changes_for_prop(pid, updates):
 
 
 def guess_principal_id(p):
-    """Tenta identificar a proposição principal (dataset id) de uma apensada."""
-    if p.get("proposicao_principal"):
-        return p["proposicao_principal"]
-    m = re.search(r"Apensad[oa] ao ([A-Z]{2,4})\s*(\d{1,5})/(\d{4})", p.get("situacao") or "")
-    if m:
-        return f"camara_{m.group(1).lower()}_{m.group(2)}_{m.group(3)}"
+    """Relação de dossiê principal (sem equivalente na UE — procedimentos não
+    têm apensação). Mantém o contrato para chamadores existentes."""
+    if p.get("procedimento_vinculado"):
+        return p["procedimento_vinculado"]
     return None
 
 
 OFFICIAL_DOMAINS = (
-    "camara.leg.br", "senado.leg.br", "congressonacional.leg.br",
-    "planalto.gov.br", "in.gov.br", "tse.jus.br", "cnj.jus.br",
-    "anpd.gov.br", "gov.br", "mcti.gov.br",
+    "europa.eu", "europarl.europa.eu", "consilium.europa.eu",
+    "ec.europa.eu", "eur-lex.europa.eu", "data.europarl.europa.eu",
+    "edpb.europa.eu", "edps.europa.eu", "digital-strategy.ec.europa.eu",
+    "commission.europa.eu", "data.consilium.europa.eu",
 )
 
 
@@ -237,28 +236,35 @@ def near_vote(p):
     Aprovações já ocorridas (ex.: 'aprovado na comissão em 2023') não contam.
     """
     s = (p.get("situacao") or "").lower()
-    prox_terms = ["sanção", "sancao", "pauta", "ordem do dia", "pront",
-                  "redação final", "redacao final", "votação marcad", "votacao marcad",
-                  "incluída na ordem", "includa na ordem", "aguardando votação",
-                  "aguardando votacao"]
+    prox_terms = ["inscrito em pauta", "aguarda publicação", "aguarda confirmacao",
+                  "trílogos em curso", "trilogos em curso",
+                  "negociações interinstitucionais", "negociacoes interinstitucionais",
+                  "aplicável a partir", "aplicável desde", "em vigor desde",
+                  "aplicação faseada"]
     return any(t in s for t in prox_terms)
 
 
 ROTULO_ORGAO = {
-    "anpd": "ANPD", "cnj": "CNJ", "tse": "TSE", "dou": "DOU",
-    "planalto": "Planalto/Presidência", "mcti": "MCTI",
-    "camara": "Câmara dos Deputados", "senado": "Senado Federal",
+    "eu_parliament": "Parlamento Europeu",
+    "eu_council": "Conselho da União Europeia",
+    "eu_commission": "Comissão Europeia",
+    "eurlex": "EUR-Lex / Jornal Oficial da UE",
+    "ai_office": "European AI Office (Comissão Europeia)",
+    "edpb": "EDPB — European Data Protection Board",
+    "edps": "EDPS — European Data Protection Supervisor",
+    "parlamento": "Parlamento Europeu (motor legislativo)",
+    "eurlex": "EUR-Lex (motor legislativo)",
 }
 
 
 def change_prop_href(m, by_id):
-    """Link do registro: proposição (Câmara/Senado) ou ato publicado por órgão."""
+    """Link do registro: procedimento ou ato publicado por instituição da UE."""
     pid = m.get("proposicao")
     if pid and pid in by_id:
         return prop_link(by_id[pid]), f'{by_id[pid]["tipo"]} {by_id[pid]["numero"]}/{by_id[pid]["ano"]}'
     if m.get("orgao") and m.get("url_oficial"):
-        return m["url_oficial"], f'publicação no {ROTULO_ORGAO.get(m["orgao"], m["orgao"])}'
-    return f"{SITE_URL}/proposicoes/", "todas as proposições"
+        return m["url_oficial"], f'publicação de {ROTULO_ORGAO.get(m["orgao"], m["orgao"])}'
+    return f"{SITE_URL}/procedimentos-legislativos/", "todos os procedimentos"
 
 
 # ------------------------------------------------------------- JSON-LD base
@@ -267,7 +273,7 @@ def ld_website():
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": SITE_NAME,
-        "alternateName": "Monitor Legislativo de Inteligência Artificial no Brasil",
+        "alternateName": "Monitor Legislativo e Regulatório de IA da União Europeia",
         "url": SITE_URL + "/",
         "description": TAGLINE,
         "inLanguage": "pt-BR",
@@ -316,11 +322,11 @@ def page(title, desc, path, body, extra_head="", og_type="website", jsonld=None)
     canon = SITE_URL + "/" + path if path else SITE_URL + "/"
     nav_items = [
         ("", "Início"),
-        ("proposicoes/", "Proposições"),
+        ("procedimentos-legislativos/", "Procedimentos"),
         ("atualizacoes/", "Atualizações"),
-        ("leis/", "Leis e normas"),
+        ("legislacao-e-atos/", "Legislação e atos"),
         ("timeline/", "Timeline"),
-        ("parlamentares/", "Parlamentares"),
+        ("atores-legislativos/", "Atores legislativos"),
         ("agenda/", "Agenda"),
         ("monitoramento/", "Monitoramento"),
         ("metodologia/", "Metodologia"),
@@ -359,7 +365,7 @@ def page(title, desc, path, body, extra_head="", og_type="website", jsonld=None)
   <div class="wrap nav">
     <div class="brand">
       <a href="{SITE_URL}/">{SITE_NAME}</a>
-      <small>Inteligência Artificial · Brasil</small>
+      <small>Inteligência Artificial · União Europeia</small>
     </div>
     <nav class="links" aria-label="Principal">{nav}</nav>
     {_freshness_badge()}
@@ -371,7 +377,7 @@ def page(title, desc, path, body, extra_head="", og_type="website", jsonld=None)
 <footer class="site">
   <div class="wrap cols">
     <div>
-      <h4>Monitor Legislativo de IA</h4>
+      <h4>Monitor UE de IA</h4>
       <p>{TAGLINE}. Dados estruturados, fontes oficiais e histórico de alterações versionados no repositório.</p>
       <p class="author-line">Projeto desenvolvido por {AUTHOR_NAME} / {AUTHOR_ORG} — {author_links}</p>
       <p class="disclaimer">{DISCLAIMER}</p>
@@ -391,13 +397,14 @@ def page(title, desc, path, body, extra_head="", og_type="website", jsonld=None)
     <div>
       <h4>Metodologia</h4>
       <p>Última execução do monitoramento: <b>{fmt_date(EXECUTION_DATE)}</b>.<br>
-      Fontes primárias: Câmara, Senado, Congresso, Planalto, DOU, TSE, CNJ, ANPD e MCTI.<br>
+      Fontes primárias: Parlamento Europeu, Conselho da UE, Comissão Europeia,<br>
+      EUR-Lex/JO, European AI Office, EDPB e EDPS.<br>
       <a href="{SITE_URL}/metodologia/">Metodologia completa</a> ·
       <a href="{SITE_URL}/relatorio/">Relatório da execução</a></p>
     </div>
     <div>
       <h4>Aviso</h4>
-      <p>Conteúdo informativo baseado em fontes oficiais. Não substitui os textos legais e as fichas de tramitação das Casas do Congresso Nacional.</p>
+      <p>Conteúdo informativo baseado em fontes oficiais. Não substitui os textos legais publicados no Jornal Oficial da União Europeia nem as fichas oficiais dos procedimentos.</p>
       <p class="cta-mini">{CTA_TEXT} <a href="{CONSULTING_URL}">Fale com a {AUTHOR_ORG} →</a></p>
     </div>
   </div>
@@ -442,8 +449,8 @@ def change_card(m, by_id):
 def run_summary():
     """Resumo da última execução para blocos de verificação.
 
-    Consolida as fontes legislativas tradicionais (Câmara/Senado) com os
-    conectores multiórgão registrados em `fontes_monitoradas`. Assim o
+    Consolida as instituições do motor legislativo (Parlamento/EUR-Lex) com os
+    conectores regulatórios registrados em `fontes_monitoradas`. Assim o
     relatório reflete exatamente o que a execução realmente consultou, sem
     hardcode de órgãos adicionais no HTML.
     """
@@ -460,8 +467,8 @@ def run_summary():
 
     if isinstance(fontes_monitoradas, dict):
         for chave, info in fontes_monitoradas.items():
-            # Câmara e Senado já aparecem detalhados em fontes_consultadas.
-            if chave in ("camara", "senado") or not info:
+            # As instituições do motor legislativo já aparecem em fontes_consultadas.
+            if chave in ("parlamento", "eurlex") or not info:
                 continue
             rotulo = ROTULO_ORGAO.get(chave, str(chave).upper())
             endpoints = info.get("endpoints") or []
@@ -477,9 +484,9 @@ def run_summary():
     return {
         "data": data, "hora": hora or "—",
         "fontes": fontes,
-        "verificadas": run.get("proposicoes_verificadas", "—"),
-        "mudancas": run.get("mudancas_detectadas", run.get("proposicoes_atualizadas", "—")),
-        "novas": run.get("novas_proposicoes", 0),
+        "verificadas": run.get("procedimentos_verificados", run.get("proposicoes_verificadas", "—")),
+        "mudancas": run.get("mudancas_detectadas", "—"),
+        "novas": run.get("novos_procedimentos", run.get("novas_proposicoes", 0)),
     }
 
 
@@ -507,9 +514,9 @@ def build_home(props, laws, events, updates, timeline, cats):
         "Nenhuma outra mudança nos últimos 7 dias além das destacadas acima.")
 
     active = [p for p in props if status_group(p) == "em_tramitacao"]
-    archived = [p for p in props if status_group(p) == "arquivada"]
-    to_sancao = [p for p in props if status_group(p) == "a_sancao"]
-    laws_ok = [l for l in laws if "Vigente" in l.get("status", "")]
+    archived = [p for p in props if status_group(p) == "rejeitado"]
+    to_sancao = [p for p in props if status_group(p) == "assinado"]
+    laws_ok = [l for l in laws if "Em vigor" in l.get("status", "")]
     mv7 = len([m for m in mudancas if days_ago(m["data"]) is not None and days_ago(m["data"]) <= 7])
     mv30 = len([m for m in mudancas if days_ago(m["data"]) is not None and days_ago(m["data"]) <= 30])
 
@@ -522,7 +529,7 @@ def build_home(props, laws, events, updates, timeline, cats):
         for p in top
     )
 
-    near = [p for p in props if status_group(p) in ("em_tramitacao", "a_sancao") and near_vote(p)]
+    near = [p for p in props if status_group(p) in ("em_tramitacao", "assinado") and near_vote(p)]
     near = sorted(near, key=lambda p: -p["impacto"]["score"])[:6]
     if near:
         near_html = "".join(
@@ -533,14 +540,14 @@ def build_home(props, laws, events, updates, timeline, cats):
             for p in near
         )
     else:
-        near_html = '<div class="card"><p>Nenhuma matéria com sinal objetivo de votação iminente (pauta, sanção ou plenário) nesta execução. Critério e limitações na <a href="' + SITE_URL + '/metodologia/">metodologia</a>.</p></div>'
+        near_html = '<div class="card"><p>Nenhum dossiê com data de aplicação, pauta ou negociação ativa confirmada nesta execução. Critério e limitações na <a href="' + SITE_URL + '/metodologia/">metodologia</a>.</p></div>'
 
     novas = [m for m in mudancas if (m.get("tipo") or "") == "nova proposição"
              and days_ago(m["data"]) is not None and days_ago(m["data"]) <= 30][:4]
     if novas:
         novas_html = "".join(change_card(m, by_id) for m in novas)
     else:
-        novas_html = '<div class="note">Nenhuma proposição nova incorporada nos últimos 30 dias.</div>'
+        novas_html = '<div class="note">Nenhum procedimento novo incorporado nos últimos 30 dias.</div>'
 
     laws_sorted = sorted([l for l in laws if l.get("data")], key=lambda l: l["data"], reverse=True)[:3]
     laws_html = "".join(
@@ -556,10 +563,10 @@ def build_home(props, laws, events, updates, timeline, cats):
         f'<p><b>{fmt_date(e.get("data_inicio"))}</b> · {esc(e["casa"])} · {esc(e["tipo"])}</p>'
         f'<p>{esc(e["tema"][:200])}</p></div>'
         for e in agenda_soon
-    ) or '<div class="card"><p>Nenhum evento futuro confirmado na agenda oficial da Câmara para o período eleitoral. A Comissão Especial do PL 2338/2023 não tem pauta publicada.</p></div>'
+    ) or '<div class="card"><p>Nenhum evento futuro confirmado nas fontes oficiais para o período. Consultas abertas no portal Have Your Say aparecem aqui assim que entram no período de feedback.</p></div>'
 
     cat_chips = " ".join(
-        f'<a class="tag cat" href="{SITE_URL}/proposicoes/">{esc(c["nome"])}</a>'
+        f'<a class="tag cat" href="{SITE_URL}/procedimentos-legislativos/">{esc(c["nome"])}</a>'
         for c in list(cats.values())[:12]
     )
 
@@ -574,7 +581,8 @@ def build_home(props, laws, events, updates, timeline, cats):
     idade_txt = ("—" if idade_h is None else
                  f"{idade_h:.1f} h" if idade_h < 48 else f"{idade_h / 24:.1f} dias")
     cob = (EXECUTION_RUN or {}).get("cobertura_pct")
-    pend = (EXECUTION_RUN or {}).get("proposicoes_pendentes")
+    pend = (EXECUTION_RUN or {}).get("procedimentos_pendentes",
+                                     (EXECUTION_RUN or {}).get("proposicoes_pendentes"))
     status_run = (EXECUTION_RUN or {}).get("status", "—")
     health_strip = f"""
 <section class="block" id="saude"><div class="wrap">
@@ -611,10 +619,10 @@ def build_home(props, laws, events, updates, timeline, cats):
 
     body = f"""
 <div class="hero"><div class="wrap">
-  <div class="kicker">Sistema de inteligência legislativa · Execução de {fmt_date(EXECUTION_DATE)}</div>
-  <h1>Inteligência Artificial — Monitoramento Legislativo Brasileiro</h1>
-  <p class="lead">Central pública de acompanhamento de projetos de lei, leis, resoluções e atos regulatórios federais sobre inteligência artificial no Brasil — com AI Legislative Impact Score, timeline histórica, mapa de relações entre proposições e registro auditável de mudanças.</p>
-  <div class="updated">Última verificação das fontes oficiais: <b>{fmt_date(EXECUTION_DATE)}</b> · {len(props)} proposições monitoradas · {len(laws)} normas mapeadas · <a href="#o-que-mudou">veja o que mudou recentemente</a></div>
+  <div class="kicker">Sistema de inteligência legislativa e regulatória · Execução de {fmt_date(EXECUTION_DATE)}</div>
+  <h1>Inteligência Artificial — Monitoramento Legislativo e Regulatório da União Europeia</h1>
+  <p class="lead">Central pública de acompanhamento dos procedimentos legislativos, da legislação adotada e dos atos regulatórios das instituições da União Europeia sobre inteligência artificial — com AI Legislative Impact Score, timeline do AI Act, agenda oficial de consultas e registro auditável de mudanças.</p>
+  <div class="updated">Última verificação das fontes oficiais: <b>{fmt_date(EXECUTION_DATE)}</b> · {len(props)} procedimentos monitorados · {len(laws)} atos mapeados · <a href="#o-que-mudou">veja o que mudou recentemente</a></div>
 </div></div>
 
 {verify_block}
@@ -630,13 +638,13 @@ def build_home(props, laws, events, updates, timeline, cats):
 
 <section class="block"><div class="wrap">
   <h2 class="section-title">Dashboard</h2>
-  <p class="section-sub">Indicadores do banco legislativo nesta execução.</p>
+  <p class="section-sub">Indicadores do banco de procedimentos nesta execução.</p>
   <div class="grid cols-4">
-    <div class="metric blue"><div class="num">{len(props)}</div><div class="lbl">Projetos monitorados</div></div>
+    <div class="metric blue"><div class="num">{len(props)}</div><div class="lbl">Procedimentos monitorados</div></div>
     <div class="metric green"><div class="num">{len(active)}</div><div class="lbl">Em tramitação</div></div>
-    <div class="metric"><div class="num">{len(archived)}</div><div class="lbl">Arquivados</div></div>
-    <div class="metric yellow"><div class="num">{len(to_sancao)}</div><div class="lbl">À sanção</div></div>
-    <div class="metric green"><div class="num">{len(laws_ok)}</div><div class="lbl">Normas vigentes mapeadas</div></div>
+    <div class="metric"><div class="num">{len(archived)}</div><div class="lbl">Rejeitados/retirados</div></div>
+    <div class="metric yellow"><div class="num">{len(to_sancao)}</div><div class="lbl">Assinados — aguardam JO</div></div>
+    <div class="metric green"><div class="num">{len(laws_ok)}</div><div class="lbl">Atos em vigor mapeados</div></div>
     <div class="metric"><div class="num">{len(agenda_soon)}</div><div class="lbl">Eventos futuros previstos</div></div>
     <div class="metric"><div class="num">{mv7}</div><div class="lbl">Movimentações (7 dias)</div></div>
     <div class="metric"><div class="num">{mv30}</div><div class="lbl">Movimentações (30 dias)</div></div>
@@ -644,33 +652,33 @@ def build_home(props, laws, events, updates, timeline, cats):
 </div></section>
 
 <section class="block"><div class="wrap">
-  <h2 class="section-title">Matérias de maior impacto agora</h2>
-  <p class="section-sub">Ordenadas pelo AI Legislative Impact Score — abrangência, estágio, proximidade de votação e efeito regulatório. <a href="{SITE_URL}/proposicoes/">Ver todas as proposições com filtros →</a></p>
+  <h2 class="section-title">Dossiês de maior impacto agora</h2>
+  <p class="section-sub">Ordenados pelo AI Legislative Impact Score — abrangência, estágio do procedimento, datas de aplicação e efeito regulatório. <a href="{SITE_URL}/procedimentos-legislativos/">Ver todos os procedimentos com filtros →</a></p>
   <div class="grid cols-3">{top_html}</div>
 </div></section>
 
 <section class="block"><div class="wrap">
-  <h2 class="section-title">Próximas de votação ou decisão</h2>
-  <p class="section-sub">Matérias cuja situação oficial indica pauta, plenário, redação final ou sanção. Critério objetivo descrito na <a href="{SITE_URL}/metodologia/">metodologia</a>.</p>
+  <h2 class="section-title">Próximas etapas e datas de aplicação</h2>
+  <p class="section-sub">Dossiês cuja situação oficial indica pauta de plenário, negociações em curso, assinatura pendente ou data de aplicação confirmada. Critério objetivo descrito na <a href="{SITE_URL}/metodologia/">metodologia</a>.</p>
   <div class="grid cols-3">{near_html}</div>
 </div></section>
 
 <section class="block"><div class="wrap">
-  <h2 class="section-title">Novas proposições (30 dias)</h2>
-  <p class="section-sub">Projetos incorporados ao monitoramento a partir das APIs oficiais. Registros automáticos aguardam curadoria editorial.</p>
+  <h2 class="section-title">Novos procedimentos (30 dias)</h2>
+  <p class="section-sub">Dossiês incorporados ao monitoramento a partir das fontes oficiais. Registros automáticos aguardam curadoria editorial.</p>
   {novas_html}
 </div></section>
 
 <section class="block"><div class="wrap">
   <h2 class="section-title">Normas recentes</h2>
-  <p class="section-sub">Últimas normas mapeadas. <a href="{SITE_URL}/leis/">Todas as leis e normas →</a></p>
+  <p class="section-sub">Últimos atos mapeados. <a href="{SITE_URL}/legislacao-e-atos/">Toda a legislação e atos →</a></p>
   <div class="grid cols-3">{laws_html}</div>
 </div></section>
 
 <section class="block"><div class="wrap">
-  <h2 class="section-title">Estado da regulação de IA no Brasil</h2>
+  <h2 class="section-title">Estado da regulação de IA na União Europeia</h2>
   <p class="section-sub">Síntese editorial — fatos e interpretação separados. Análise completa na <a href="{SITE_URL}/relatorio/">página de relatório</a>.</p>
-  <div class="note"><b>Em uma frase:</b> o Brasil tem hoje leis pontuais vigentes (LGPD, ECA Digital, Lei 15.487/2026, resoluções TSE/CNJ e decretos do Marco Civil) e um marco geral de IA (PL 2338/2023) aprovado no Senado, mas parado há 16 meses na Câmara — com votação oficialmente adiada para depois das eleições de outubro/2026, enquanto o Redata (infraestrutura de data centers) já foi aprovado pelo Congresso e aguarda sanção.</div>
+  <div class="note"><b>Em uma frase:</b> a União Europeia já tem seu marco geral de IA aprovado — o AI Act (Regulamento (UE) 2024/1689, procedimento 2021/0106(COD)) está em vigor desde 1º de agosto de 2024, com aplicação faseada concluída em 2 de agosto de 2026 (sistemas de alto risco e transparência) — e o centro de gravidade regulatório agora é a implementação: European AI Office, códigos de prática e guidelines para modelos de uso geral (GPAI), além do enforcement da EDPB e das autoridades nacionais.</div>
 </div></section>
 
 <section class="block"><div class="wrap">
@@ -681,8 +689,8 @@ def build_home(props, laws, events, updates, timeline, cats):
 
 <section class="block"><div class="wrap">
   <h2 class="section-title">Categorias temáticas</h2>
-  <p class="section-sub">Classificação das matérias em até 30 categorias, de regulação geral a soberania digital. Veja os filtros na página de proposições.</p>
-  <div style="display:flex;gap:8px;flex-wrap:wrap">{cat_chips} <a class="tag cat" href="{SITE_URL}/proposicoes/">+ todas</a></div>
+  <p class="section-sub">Classificação dos dossiês em até 30 categorias, do quadro geral do AI Act à soberania digital. Veja os filtros na página de procedimentos.</p>
+  <div style="display:flex;gap:8px;flex-wrap:wrap">{cat_chips} <a class="tag cat" href="{SITE_URL}/procedimentos-legislativos/">+ todas</a></div>
 </div></section>
 
 <section class="block"><div class="wrap">
@@ -694,19 +702,21 @@ def build_home(props, laws, events, updates, timeline, cats):
 """
     dataset_ld = {
         "@type": "Dataset",
-        "name": "Monitor Legislativo de Inteligência Artificial no Brasil",
+        "name": "Monitor Legislativo e Regulatório de IA da União Europeia",
         "description": TAGLINE,
         "url": SITE_URL + "/",
-        "keywords": ["regulação inteligência artificial Brasil", "PL 2338/2023", "marco legal da IA", "lei de IA", "Brazil AI law"],
-        "temporalCoverage": "2019/2026",
+        "keywords": ["AI Act", "regulação inteligência artificial União Europeia",
+                     "regulação IA UE", "AI Act em português", "GPAI",
+                     "European AI Office", "EU AI law"],
+        "temporalCoverage": "2021/2026",
         "dateModified": EXECUTION_DATE,
         "creator": {"@type": "Organization", "name": SITE_NAME,
                     "url": SITE_URL + "/"},
     }
     jsonld = combine_ld(ld_website(), dataset_ld)
     write("index.html", page(
-        "Legislação de Inteligência Artificial no Brasil — Regulação de IA: acompanhamento legislativo",
-        "Acompanhe a regulação de IA no Brasil: PL 2338/2023 (Marco Legal da IA), Redata, projetos de lei sobre inteligência artificial, leis vigentes, timeline, agenda e parlamentares. Dados com fonte oficial.",
+        "AI Act e regulação de IA na União Europeia — monitoramento legislativo e regulatório",
+        "Acompanhe o AI Act (Regulamento (UE) 2024/1689) e toda a regulação de IA da União Europeia: procedimentos legislativos, atos adotados, implementação do AI Act, EDPB/EDPS, consultas públicas, timeline e agenda. Dados com fonte oficial.",
         "", body, jsonld=jsonld))
 
 
@@ -746,16 +756,16 @@ def build_propositions(props, cats):
 
     body = f"""
 <div class="page-head"><div class="wrap">
-  <div class="crumbs"><a href="{SITE_URL}/">Início</a> › Proposições</div>
-  <h1>Projetos de Lei sobre Inteligência Artificial no Brasil</h1>
-  <p class="sub">Todas as matérias monitoradas, com filtros por casa, ano, situação, categoria e score. Cada ficha traz ementa oficial, autoria, tramitação, relatoria, relações e fontes primárias.</p>
+  <div class="crumbs"><a href="{SITE_URL}/">Início</a> › Procedimentos</div>
+  <h1>Procedimentos legislativos e regulatórios de IA na União Europeia</h1>
+  <p class="sub">Todos os dossiês monitorados, com filtros por instituição, ano, situação, categoria e score. Cada ficha traz a referência interinstitucional oficial, estágio do procedimento, eventos, relatoria, documentos e fontes primárias.</p>
 </div></div>
 <section class="block"><div class="wrap">
   <div class="filters">
-    <input id="f-q" class="search" type="search" placeholder="Buscar por número, título, ementa, autor ou partido…">
-    <select id="f-casa"><option value="">Todas as casas</option><option value="Câmara dos Deputados">Câmara dos Deputados</option><option value="Senado Federal">Senado Federal</option></select>
+    <input id="f-q" class="search" type="search" placeholder="Buscar por referência, título, tema ou instituição…">
+    <select id="f-casa"><option value="">Todas as instituições</option><option value="Comissão Europeia">Comissão Europeia</option><option value="Parlamento Europeu">Parlamento Europeu</option><option value="Conselho da UE">Conselho da UE</option></select>
     <select id="f-ano">{opts_ano}</select>
-    <select id="f-status"><option value="">Toda situação</option><option value="em_tramitacao">Em tramitação</option><option value="a_sancao">À sanção</option><option value="aprovada_lei">Convertida em lei</option><option value="arquivada">Arquivada</option></select>
+    <select id="f-status"><option value="">Toda situação</option><option value="em_tramitacao">Em tramitação</option><option value="assinado">Assinado — aguarda JO</option><option value="publicado_jo">Publicado no JO</option><option value="rejeitado">Rejeitado/retirado</option></select>
     <select id="f-cat">{opts_cat}</select>
     <select id="f-score"><option value="0">Qualquer score</option><option value="80">Score 80+</option><option value="60-79">Score 60–79</option><option value="low">Score &lt;60</option><option value="60">Score ≥ 60</option><option value="75">Score ≥ 75</option><option value="90">Score ≥ 90 (crítico)</option></select>
   </div>
@@ -763,28 +773,27 @@ def build_propositions(props, cats):
   {"".join(rows)}
 </div></section>"""
     jsonld = combine_ld(
-        ld_collection("Proposições legislativas sobre IA no Brasil",
-                      "Lista completa e filtrável de projetos de lei sobre inteligência artificial no Congresso Nacional.",
-                      "proposicoes/"),
-        ld_breadcrumbs([("Início", ""), ("Proposições", None)]))
-    write("proposicoes/index.html", page(
-        "Projetos de Lei sobre Inteligência Artificial no Brasil — Proposições e tramitação",
-        "Lista completa e filtrável de projetos de lei sobre inteligência artificial no Congresso Nacional, com AI Legislative Impact Score, situação atual e fontes oficiais.",
-        "proposicoes/", body, jsonld=jsonld))
+        ld_collection("Procedimentos legislativos e regulatórios de IA da União Europeia",
+                      "Lista completa e filtrável dos procedimentos da União Europeia sobre inteligência artificial, com AI Legislative Impact Score, estágio oficial e fontes oficiais.",
+                      "procedimentos-legislativos/"),
+        ld_breadcrumbs([("Início", ""), ("Procedimentos", None)]))
+    write("procedimentos-legislativos/index.html", page(
+        "Procedimentos de IA da União Europeia — AI Act e correlatos, estágio e score",
+        "Lista completa e filtrável dos procedimentos legislativos e regulatórios da União Europeia sobre inteligência artificial: AI Act, atos delegados, resoluções e correlatos, com estágio oficial e fontes oficiais.",
+        "procedimentos-legislativos/", body, jsonld=jsonld))
 
 
 def seo_title_prop(p):
-    t, n, a = p["tipo"], p["numero"], p["ano"]
-    if t == "PL" and n == 2338 and a == 2023:
-        return "PL 2338/2023: situação atual do Marco Legal da Inteligência Artificial"
-    if t == "PL" and n == 278 and a == 2026:
-        return "PL 278/2026 Redata: tramitação, texto e situação"
-    return f"{t} {n}/{a}: {p['titulo']} — situação atual e tramitação | Monitor Legislativo de IA"
+    ref = p.get("procedimento") or f'{p["tipo"]} {p["numero"]}/{p["ano"]}'
+    if p.get("id") == "ue_2021_0106_cod":
+        return "AI Act (2021/0106(COD)): situação atual, estágio e aplicação do Regulamento (UE) 2024/1689"
+    return f"{ref}: {p['titulo']} — estágio do procedimento e datas | Monitor UE de IA"
 
 
 def seo_desc_prop(p):
-    base = f"Acompanhe o {p['tipo']} {p['numero']}/{p['ano']} ({p['titulo']}): {(p.get('situacao') or '')[:110]}"
-    return (base + " Ementa, relator, comissão, apensados e fontes oficiais.")[:300]
+    ref = p.get("procedimento") or f'{p["tipo"]} {p["numero"]}/{p["ano"]}'
+    base = f"Acompanhe o procedimento {ref} ({p['titulo']}): {(p.get('situacao') or '')[:110]}"
+    return (base + " Estágio oficial, eventos, relatoria, documentos e fontes oficiais.")[:300]
 
 
 def build_prop_pages(props, cats, updates):
@@ -794,20 +803,17 @@ def build_prop_pages(props, cats, updates):
         lbl, cls = STATUS_LABEL[sg]
         autor = p.get("autor", {})
         kv = [
-            ("Número", f'{esc(p["tipo"])} {p["numero"]}/{p["ano"]}'),
-            ("Casa legislativa", f'{esc(p["casa_origem"])} → {esc(p.get("casa_atual", "—"))}'),
-            ("Autor", f'{esc(autor.get("nome", "—"))}' + (f' ({esc(autor["partido"])}-{esc(autor["estado"])})' if autor.get("partido") else "") + (f' · {esc(autor["cargo"])}' if autor.get("cargo") else "")),
-            ("Partido / UF", f'{esc(autor.get("partido", "—"))} / {esc(autor.get("estado", "—"))}' if autor.get("partido") else "—"),
-            ("Ementa oficial", esc(p["ementa"])),
+            ("Procedimento interinstitucional", esc(p.get("procedimento") or f'{p["tipo"]} {p["numero"]}/{p["ano"]}')),
+            ("Instituições", f'{esc(p["casa_origem"])} → {esc(p.get("casa_atual", "—"))}'),
+            ("Autor", f'{esc(autor.get("nome", "—"))}' + (f' ({esc(autor["partido"])}-{esc(autor["estado"])})' if autor.get("partido") else "")),
+            ("Tipo de procedimento", esc(p.get("api_ep", {}).get("process_type") or p["tipo"])),
+            ("Texto oficial (ementa)", esc(p["ementa"])),
             ("Situação", esc(p.get("situacao", "—"))),
             ("Comissão", esc(p.get("comissao_atual", "—"))),
-            ("Regime / apreciação", esc(", ".join(filter(None, [p.get("regime_tramitacao"), p.get("forma_apreciacao")])) or "—")),
         ]
-        relator = p.get("relator") or p.get("relator_camara")
+        relator = p.get("relator")
         if relator:
-            kv.append(("Relator", f'{esc(relator["nome"])}' + (f' ({esc(relator["partido"])}-{esc(relator["estado"])})' if relator.get("partido") else "") + (f' · designado em {fmt_date(relator.get("designacao"))}' if relator.get("designacao") else "")))
-        if p.get("relator_senado"):
-            kv.append(("Relator no Senado", esc(p["relator_senado"]["nome"])))
+            kv.append(("Relatoria", f'{esc(relator["nome"])}' + (f' ({esc(relator["partido"])})' if relator.get("partido") else "")))
         if p.get("ultima_movimentacao"):
             kv.append(("Última movimentação", f'{fmt_date(p["ultima_movimentacao"].get("data"))} — {esc(p["ultima_movimentacao"].get("descricao") or p["ultima_movimentacao"].get("evento", ""))}'))
         if p.get("proxima_etapa"):
@@ -816,16 +822,16 @@ def build_prop_pages(props, cats, updates):
         princ_id = guess_principal_id(p)
         if princ_id and princ_id in by_id:
             q = by_id[princ_id]
-            kv.append(("Proposição principal", f'<a href="{prop_link(q)}">{esc(q["tipo"])} {q["numero"]}/{q["ano"]} — {esc(q["titulo"])}</a>'))
+            kv.append(("Dossiê vinculado", f'<a href="{prop_link(q)}">{esc(q.get("procedimento") or q["id"])} — {esc(q["titulo"])}</a>'))
         elif princ_id:
-            kv.append(("Proposição principal", esc(princ_id)))
+            kv.append(("Dossiê vinculado", esc(princ_id)))
 
         kv_html = "".join(f'<div class="kv"><dt>{k}</dt><dd>{v}</dd></div>' for k, v in kv)
 
         docs_html = "".join(
             f'<li>▸ <a href="{d["url"]}" target="_blank" rel="noopener">{esc(d["titulo"])}</a></li>'
             for d in p.get("documentos", []))
-        rels = list(p.get("relacionamentos", [])) + list(p.get("apensados_principais", []))
+        rels = list(p.get("relacionamentos", []))
         rel_ids = [r for r in rels if r in by_id]
         rels_html = ""
         if rel_ids:
@@ -833,7 +839,7 @@ def build_prop_pages(props, cats, updates):
                 f'<li>▸ <a href="{prop_link(by_id[r])}">{esc(by_id[r]["tipo"])} {by_id[r]["numero"]}/{by_id[r]["ano"]} — {esc(by_id[r]["titulo"])}</a></li>'
                 for r in sorted(set(rel_ids)))
             total = p.get("total_apensados")
-            note = f"<p style='color:var(--muted);font-size:13px;margin-top:8px'>Total de apensados: {total}.</p>" if total else ""
+            note = ""
             rels_html = "<ul class=\"plain\">" + items + "</ul>" + note
         elif p.get("relacionamentos"):
             rels_html = "<p>" + esc("; ".join(p["relacionamentos"])) + "</p>"
@@ -869,12 +875,12 @@ def build_prop_pages(props, cats, updates):
                 for m in recent
             )
         else:
-            recent_html = "<p style='color:var(--muted)'>Nenhuma mudança registrada para esta proposição desde o início do monitoramento. O histórico completo está na página de <a href=\"" + SITE_URL + "/atualizacoes/\">atualizações</a>.</p>"
+            recent_html = "<p style='color:var(--muted)'>Nenhuma mudança registrada para este procedimento desde o início do monitoramento. O histórico completo está na página de <a href=\"" + SITE_URL + "/atualizacoes/\">atualizações</a>.</p>"
 
         review_note = ""
         if p.get("revisao_pendente"):
             review_note = ('<div class="note warn"><b>Aguardando curadoria:</b> registro criado automaticamente a partir '
-                           "da API oficial da Câmara/Senado e ainda não revisado editorialmente. Título, categorias e "
+                           "das fontes oficiais da União Europeia e ainda não revisado editorialmente. Título, categorias e "
                            "score são preliminares. Confira sempre a ficha oficial.</div>")
 
         impacto = p.get("impacto", {})
@@ -887,7 +893,7 @@ def build_prop_pages(props, cats, updates):
 
         body = f"""
 <div class="page-head prop-page"><div class="wrap">
-  <div class="crumbs"><a href="{SITE_URL}/">Início</a> › <a href="{SITE_URL}/proposicoes/">Proposições</a> › {esc(p["tipo"])} {p["numero"]}/{p["ano"]}</div>
+  <div class="crumbs"><a href="{SITE_URL}/">Início</a> › <a href="{SITE_URL}/procedimentos-legislativos/">Procedimentos</a> › {esc(p.get("procedimento") or f'{p["tipo"]} {p["numero"]}/{p["ano"]}')}</div>
   <div class="identity">
     <div style="flex:1;min-width:260px">
       <h1>{esc(p["tipo"])} {p["numero"]}/{p["ano"]}</h1>
@@ -905,7 +911,7 @@ def build_prop_pages(props, cats, updates):
 <section class="block"><div class="wrap">
   {review_note}
   <h2 class="section-title">O que mudou recentemente</h2>
-  <p class="section-sub">Últimas mudanças detectadas para esta proposição.</p>
+  <p class="section-sub">Últimas mudanças detectadas para este procedimento.</p>
   {recent_html}
 </div></section>
 <section class="block"><div class="wrap">
@@ -913,7 +919,7 @@ def build_prop_pages(props, cats, updates):
   <h2 class="section-title">Identificação e tramitação</h2>
   <p class="section-sub">Dados confirmados em fonte oficial nesta execução. Campos não confirmados não são exibidos.</p>
   <div class="dl-grid">{kv_html}</div>
-  <p style="margin-top:12px;font-size:13.5px"><a href="{esc(p["url_oficial"])}" target="_blank" rel="noopener">Abrir ficha oficial de tramitação ↗</a></p>
+  <p style="margin-top:12px;font-size:13.5px"><a href="{esc(p["url_oficial"])}" target="_blank" rel="noopener">Abrir ficha oficial do procedimento ↗</a></p>
 </div></section>
 <section class="block"><div class="wrap">
   <span class="eyebrow">SÍNTESE EDITORIAL / INTERPRETAÇÃO</span>
@@ -929,11 +935,11 @@ def build_prop_pages(props, cats, updates):
   <ul class="plain">{docs_html or '<li>—</li>'}</ul>
 </div></section>
 <section class="block"><div class="wrap">
-  <h2 class="section-title">Proposições relacionadas</h2>
-  {rels_html or "<p style='color:var(--muted)'>Nenhuma relação formal registrada (não apensada).</p>"}
+  <h2 class="section-title">Procedimentos relacionados</h2>
+  {rels_html or "<p style='color:var(--muted)'>Nenhuma relação formal registrada (dossiê independente).</p>"}
 </div></section>
 <section class="block"><div class="wrap">
-  <h2 class="section-title">Timeline de tramitação</h2>
+  <h2 class="section-title">Timeline do procedimento</h2>
   {tl_html}
 </div></section>
 <section class="block"><div class="wrap">
@@ -951,13 +957,13 @@ def build_prop_pages(props, cats, updates):
             "url": prop_link(p),
             "dateModified": EXECUTION_DATE,
             "inLanguage": "pt-BR",
-            "about": "Regulação de inteligência artificial no Brasil",
+            "about": "Regulação de inteligência artificial da União Europeia",
             "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL + "/"},
         }
         jsonld = combine_ld(
             article_ld,
-            ld_breadcrumbs([("Início", ""), ("Proposições", "proposicoes/"),
-                            (f'{p["tipo"]} {p["numero"]}/{p["ano"]}', None)]))
+            ld_breadcrumbs([("Início", ""), ("Procedimentos", "procedimentos-legislativos/"),
+                            (p.get("procedimento") or f'{p["tipo"]} {p["numero"]}/{p["ano"]}', None)]))
         write(prop_fs_path(p["id"]), page(
             seo_title_prop(p), seo_desc_prop(p),
             prop_fs_path(p["id"]).replace("index.html", ""), body, og_type="article", jsonld=jsonld))
@@ -984,7 +990,7 @@ def build_updates(props, updates):
 <div class="page-head"><div class="wrap">
   <div class="crumbs"><a href="{SITE_URL}/">Início</a> › Atualizações</div>
   <h1>O que mudou na regulação de IA</h1>
-  <p class="sub">Histórico cronológico das mudanças detectadas pelo monitoramento — relator, situação, parecer, pauta, votação, apensação, sanção e novas proposições. Ordenado pela data do evento (registros incorporados trazem a data original). Cada item aponta para a proposição e para a fonte oficial.</p>
+  <p class="sub">Histórico cronológico das mudanças detectadas pelo monitoramento — eventos de procedimento, situação, relatoria, votações, assinatura, publicação no JO e novos dossiês. Ordenado pela data do evento (registros incorporados trazem a data original). Cada item aponta para o procedimento e para a fonte oficial.</p>
 </div></div>
 <section class="block"><div class="wrap">
   <div class="update-filters" role="group" aria-label="Filtrar por período">
@@ -998,13 +1004,13 @@ def build_updates(props, updates):
   <p class="disclaimer" style="margin-top:16px">{DISCLAIMER}</p>
 </div></section>"""
     jsonld = combine_ld(
-        ld_collection("Atualizações da regulação de IA no Brasil",
+        ld_collection("Atualizações da regulação de IA na União Europeia",
                       "Histórico cronológico das mudanças legislativas e regulatórias de inteligência artificial detectadas pelo monitoramento.",
                       "atualizacoes/"),
         ld_breadcrumbs([("Início", ""), ("Atualizações", None)]))
     write("atualizacoes/index.html", page(
-        "Atualizações da regulação de IA no Brasil — o que mudou",
-        "Histórico cronológico do monitoramento legislativo de IA: mudanças de hoje, dos últimos 7 e 30 dias — relator, parecer, pauta, votação, sanção e novas proposições, com fonte oficial.",
+        "Atualizações da regulação de IA na União Europeia — o que mudou",
+        "Histórico cronológico do monitoramento de IA da União Europeia: mudanças de hoje, dos últimos 7 e 30 dias — eventos de procedimento, votações, assinatura, publicação no JO e novos dossiês, com fonte oficial.",
         "atualizacoes/", body, jsonld=jsonld))
 
 
@@ -1013,69 +1019,69 @@ def build_metodologia(props, laws, updates):
     rubric_rows = "".join(
         f"<tr><td><b>{n}</b></td><td>0–{v}</td><td>{d}</td></tr>"
         for n, v, d in [
-            ("Abrangência regulatória", 20, "Marco geral/nacional (20) · setorial amplo (12) · tema pontual (6) · simbólico/arquivado (0–2)"),
-            ("Estágio de tramitação", 15, "À sanção/convertida recente (15) · plenário ou pronta p/ pauta (12) · comissão com parecer (9) · comissão sem parecer (6) · apresentação (3) · arquivada (0)"),
-            ("Proximidade de votação", 10, "Pauta marcada/votação iminente (10) · urgência (8) · prioridade (5) · ordinária (2) · parada/arquivada (0)"),
-            ("Urgência / regime", 10, "Urgência constitucional/MP (10) · urgência aprovada (8) · prioridade (5) · ordinária (2)"),
-            ("Apensados", 5, "Principal com 10+ apensados (5) · 3–9 (3) · 1–2 (1) · apensada ou sem apensados (0)"),
-            ("Impacto econômico", 15, "Efeito fiscal bilionário/setor inteiro (15) · custos relevantes p/ empresas (9) · moderado (5) · baixo (0–2)"),
-            ("Impacto sobre direitos", 10, "Direitos fundamentais/dados/penal (10) · consumidor/trabalho (6) · indireto (3) · nenhum (0)"),
+            ("Abrangência regulatória", 20, "Quadro horizontal da UE/AI Act (20) · pilar setorial amplo (12) · tema pontual (6) · simbólico (0–2)"),
+            ("Estágio do procedimento", 15, "Publicado no JO/aplicável (15) · assinado (13) · adotado pelo plenário (12) · acordo provisório (11) · trílogos (10) · posição 1ª leitura (9) · relatório em comissão (8) · em comissão (6) · encaminhamento (4) · sem confirmação (2)"),
+            ("Próximas datas aplicáveis", 10, "Data de aplicação/obrigação confirmada (10) · votação em pauta (10) · trílogos ativos (6) · agenda não confirmada (2)"),
+            ("Regime do procedimento", 10, "Ato delegado/de execução (8) · legislativo ordinário COD (5) · especial CNS/CONS (5) · não legislativo NLE/INI (3) · resolução (2)"),
+            ("Densidade do dossiê", 5, "5+ documentos oficiais (5) · 3–4 (3) · 1–2 (1) · nenhum (0)"),
+            ("Impacto econômico", 15, "Mercado único/sanções milionárias (15) · custos p/ provedores e utilizadores (9) · moderado (5) · baixo (0–2)"),
+            ("Impacto sobre direitos", 10, "Direitos fundamentais/dados/práticas proibidas (10) · trabalho/consumidor/saúde (6) · indireto (3) · nenhum (0)"),
             ("Alcance setorial", 5, "Multissetorial (5) · 2–3 setores (3) · 1 setor (1)"),
-            ("Relevância institucional", 10, "Cria/governa autoridade nacional (10) · altera competências relevantes (6) · pontual (3) · nenhum (0)"),
+            ("Relevância institucional", 10, "Cria/governa autoridade da UE (10) · altera competências relevantes (6) · pontual (3) · nenhum (0)"),
         ])
     body = f"""
 <div class="page-head"><div class="wrap">
   <div class="crumbs"><a href="{SITE_URL}/">Início</a> › Metodologia</div>
   <h1>Metodologia do monitoramento</h1>
-  <p class="sub">Como coletamos, validamos e publicamos a legislação brasileira de IA — com fontes, critérios, frequência e limitações declaradas.</p>
+  <p class="sub">Como coletamos, validamos e publicamos a legislação e a regulação de IA da União Europeia — com fontes, critérios, frequência e limitações declaradas.</p>
 </div></div>
 <section class="block"><div class="wrap">
   <h2 class="section-title">Fontes utilizadas</h2>
   <ul class="plain facts">
-    <li>▸ <b>Câmara dos Deputados</b> — API de Dados Abertos (proposições, tramitações, autores, votações, eventos) e fichas de tramitação.</li>
-    <li>▸ <b>Senado Federal</b> — API de Dados Abertos (matérias, movimentações, relatorias, votações).</li>
-    <li>▸ <b>ANPD</b> — API de conteúdo do próprio portal (plone.restapi): notícias, regulação, consultas públicas e atos normativos. <code>/scripts/sources/anpd.py</code></li>
-    <li>▸ <b>CNJ</b> — Sistema de Atos Normativos (atos.cnj.jus.br/api/atos) e API do portal (wp-json): resoluções, provimentos, portarias e notícias oficiais. <code>/scripts/sources/cnj.py</code></li>
-    <li>▸ <b>TSE</b> — atos e resoluções publicados no DOU (Seção 1, "Poder Judiciário/Tribunal Superior Eleitoral", com conferência item a item) e portal/legislação/dados abertos do TSE. <code>/scripts/sources/tse.py</code></li>
-    <li>▸ <b>DOU</b> — busca oficial da Imprensa Nacional (in.gov.br), por tema (IA, algoritmos, dados, biometria, plataformas, data centers, semicondutores, nuvem…). <code>/scripts/sources/dou.py</code></li>
-    <li>▸ <b>Planalto / Presidência da República</b> — atos presidenciais publicados no DOU ("Atos do Poder Legislativo" e "Presidência da República": leis, decretos, medidas provisórias, vetos). <code>/scripts/sources/planalto.py</code></li>
-    <li>▸ <b>MCTI</b> — atos do Ministério publicados no DOU (Seção 1/2) e portal institucional (notícias, portarias, programas). <code>/scripts/sources/mcti.py</code></li>
-    <li>▸ <b>Bloqueio de robôs:</b> quando um portal oficial recusa o acesso automatizado (ex.: WAF devolvendo 403), o canal é registrado como falho no painel de monitoramento — o órgão continua sendo acompanhado pela publicação oficial no DOU, e a falha do portal fica explícita, nunca escondida.</li>
-    <li>▸ <b>Imprensa</b> — apenas para descoberta e contexto; fatos legislativos são confirmados em fonte oficial.</li>
+    <li>▸ <b>Parlamento Europeu</b> — Open Data Portal, API oficial v2 (procedimentos, eventos de procedimento, estágios, votações, assinatura e publicação no JO; JSON-LD) e <b>Legislative Train Schedule</b>. <code>/scripts/sources/eu_parliament.py</code></li>
+    <li>▸ <b>EUR-Lex / Jornal Oficial da UE</b> — busca oficial pública (metadados de atos: CELEX, ELI, JO, status) e RSS oficial de publicações. <code>/scripts/sources/eurlex.py</code></li>
+    <li>▸ <b>Conselho da UE</b> — registro público de documentos (últimos documentos, documentos legislativos preparatórios, com número de arquivo interinstitucional). <code>/scripts/sources/eu_council.py</code></li>
+    <li>▸ <b>Comissão Europeia</b> — Press Corner (RSS oficial) e portal <b>Have Your Say</b> (consultas públicas e calls for evidence, com período de feedback). <code>/scripts/sources/eu_commission.py</code></li>
+    <li>▸ <b>European AI Office</b> — portal digital-strategy da Comissão: implementação do AI Act, GPAI, códigos de prática e guidelines. <code>/scripts/sources/ai_office.py</code></li>
+    <li>▸ <b>EDPB</b> — RSS oficial (notícias, guidelines adotadas, decisões coordenadas sobre IA/dados). <code>/scripts/sources/edpb.py</code></li>
+    <li>▸ <b>EDPS</b> — press releases, notícias e publicações oficiais (opiniões e guidelines). <code>/scripts/sources/edps.py</code></li>
+    <li>▸ <b>Bloqueio/indisponibilidade:</b> quando uma fonte oficial não responde ou muda de layout, o canal é registrado como <b>falho</b> no painel — a falha fica explícita, nunca escondida, e nada é preenchido com dado estimado.</li>
+    <li>▸ <b>Imprensa</b> — apenas comunicados oficiais das próprias instituições (Press Corner do Parlamento/Comissão/Conselho); nunca imprensa de terceiros como fonte primária.</li>
   </ul>
   <h2 class="section-title" style="margin-top:26px">Frequência de atualização</h2>
-  <p>Coleta automática <b>diária</b> (GitHub Action às 07:00 BRT) com rebuild e validação do site. Última execução: <b>{rs["data"]}</b> às <b>{rs["hora"]}</b> — {rs["verificadas"]} proposições verificadas, {rs["mudancas"]} mudanças detectadas. Execuções sem mudança relevante registram apenas a verificação.</p>
+  <p>Coleta automática <b>diária</b> (GitHub Action, horário de Bruxelas) com rebuild e validação do site. Última execução: <b>{rs["data"]}</b> às <b>{rs["hora"]}</b> — {rs["verificadas"]} fichas de procedimento verificadas, {rs["mudancas"]} mudanças detectadas. Execuções sem mudança relevante registram apenas a verificação.</p>
   <h2 class="section-title" style="margin-top:26px">Critérios de inclusão</h2>
   <ul class="plain facts">
-    <li>▸ Proposições federais (PL, PLP, PEC, PDL, PLN, MP, requerimentos e pareceres) sobre IA e temas correlatos: IA generativa, algoritmos, sistemas autônomos, agentes de IA, deepfakes, conteúdo sintético, decisão automatizada, reconhecimento facial, modelos fundacionais, governança algorítmica, data centers de IA e impactos setoriais (trabalho, direitos autorais, educação, saúde, defesa, segurança, eleições).</li>
-    <li>▸ Leis, decretos e atos regulatórios vigentes (TSE, CNJ, ANPD, MCTI) com efeito sobre sistemas de IA.</li>
+    <li>▸ Procedimentos legislativos e não legislativos das instituições da UE sobre IA e temas correlatos: AI Act e seus atos delegados/de execução, IA generativa e modelos de uso geral (GPAI), deepfakes e conteúdo sintético, decisão automatizada, biometria e reconhecimento facial, plataformas digitais, dados pessoais, cibersegurança, computação/semicondutores e impactos setoriais (trabalho, direitos de autor, educação, saúde, defesa, segurança, eleições).</li>
+    <li>▸ Legislação da UE diretamente relacionada a IA com efeito sobre sistemas de IA — laws.json contém apenas atos com relação direta (AI Act e correlatos), não o acervo digital completo.</li>
     <li>▸ Descobertas automáticas entram com flag <b>“aguardando curadoria”</b> e score preliminar conservador (nunca CRÍTICO automático). Falsos positivos são removidos na revisão.</li>
   </ul>
   <h2 class="section-title" style="margin-top:26px">AI Legislative Impact Score (0–100)</h2>
   <p>O score mede <b>importância regulatória para o monitoramento</b>, não mérito. Rúbrica pública e reproduzível (implementada em <code>scripts/scoring.py</code>):</p>
   <div style="overflow-x:auto;margin-top:12px"><table class="tbl"><thead><tr><th>Critério</th><th>Pontos</th><th>Como pontuar (resumo)</th></tr></thead><tbody>{rubric_rows}</tbody></table></div>
-  <p style="margin-top:12px">Faixas: <b>90–100 CRÍTICO · 75–89 MUITO RELEVANTE · 60–74 RELEVANTE · 40–59 MONITORAR · 0–39 BAIXA PRIORIDADE</b>. Scores da curadoria de referência (08/09/2026) são preservados; scores nunca são inflados para gerar manchetes.</p>
+  <p style="margin-top:12px">Faixas: <b>90–100 CRÍTICO · 75–89 MUITO RELEVANTE · 60–74 RELEVANTE · 40–59 MONITORAR · 0–39 BAIXA PRIORIDADE</b>. O score mede apenas <b>impacto regulatório</b> — nunca aprovação, probabilidade ou posição política. Scores da curadoria de referência são preservados; scores nunca são inflados para gerar manchetes.</p>
   <h2 class="section-title" style="margin-top:26px">Como mudanças são detectadas</h2>
-  <p>Antes de sobrescrever qualquer registro, o coletor compara o <b>estado anterior</b> (dataset versionado) com o <b>estado coletado</b> nas APIs. Cada alteração relevante gera um registro em <code>updates.json</code> com proposição, campo alterado, valor anterior e novo, data do evento, data da detecção, fonte, URL oficial e timestamp da execução. Tipos monitorados: relator, situação, parecer, pauta, votação, apensação, desapensação, arquivamento, desarquivamento, sanção, veto, nova norma e nova proposição.</p>
+  <p>Antes de sobrescrever qualquer registro, o coletor compara o <b>estado anterior</b> (dataset versionado) com o <b>estado coletado</b> nas fontes oficiais. Cada alteração relevante gera um registro em <code>updates.json</code> com procedimento, campo alterado, valor anterior e novo, data do evento, data da detecção, fonte, URL oficial e timestamp da execução. Tipos monitorados: eventos de procedimento (encaminhamento, relatório, parecer, debate, emendas, votação, negociações interinstitucionais, acordo provisório), situação, relatoria, assinatura, publicação no JO, novos documentos oficiais e novos procedimentos. A identidade de cada dossiê é o <b>número de procedimento interinstitucional</b> (ex.: 2021/0106(COD)), compartilhado entre Parlamento, Conselho e Comissão — nunca o título.</p>
   <h2 class="section-title" style="margin-top:26px">Limitações</h2>
   <ul class="plain facts">
-    <li>▸ Sanções, vetos e publicações no DOU podem levar horas ou dias para se refletir nas APIs; a confirmação final é sempre o texto oficial.</li>
-    <li>▸ Pautas de comissões podem mudar no mesmo dia; a agenda é uma fotografia do momento da verificação.</li>
-    <li>▸ Atos do Executivo (decretos, portarias), resoluções e decisões de TSE/CNJ/ANPD são detectados automaticamente nas fontes oficiais e entram marcados como <b>aguardando curadoria</b>; a confirmação jurídica final é sempre o texto oficial.</li>
+    <li>▸ Publicações no JO e eventos de procedimento podem levar horas ou dias para se refletir na API oficial; a confirmação final é sempre a ficha oficial e o texto publicado no EUR-Lex.</li>
+    <li>▸ A API v2 do Parlamento não expõe documentos de reuniões (agenda de plenos/comissões) em formato público estável — a agenda futura do monitor usa as consultas oficiais do portal Have Your Say (limitação declarada).</li>
+    <li>▸ O <b>EU Law Tracker</b> (law-tracker.europa.eu) exige autenticação para uso interativo e não possui API pública estável documentada; por isso não é usado como conector automático — o estado dos dossiês vem da API do Parlamento e do registro público do Conselho.</li>
+    <li>▸ Itens de fontes regulatórias (AI Office, EDPB, EDPS, Comissão) são detectados automaticamente e entram marcados como <b>aguardando curadoria</b> quando o sinal temático é duvidoso; a confirmação jurídica final é sempre o texto oficial.</li>
     <li>▸ O monitoramento multiórgão é conservador por desenho: item sem sinal temático claro é descartado, item duvidoso entra como <b>revisar</b>, e órgão que não respondeu aparece como <b>falha</b> no painel — nunca como monitorado.</li>
     <li>▸ Registros automáticos (“aguardando curadoria”) podem conter título preliminar e categorias incompletas.</li>
   </ul>
   <h2 class="section-title" style="margin-top:26px">Política de correção</h2>
   <p>Erros são corrigidos no dataset com registro da correção em <code>updates.json</code> (nunca sobrescrita silenciosa). O histórico versionado no Git permite auditar qualquer alteração. <b>{DISCLAIMER}</b></p>
   <h2 class="section-title" style="margin-top:26px">Automação, orçamento de tempo e auditoria</h2>
-  <p>A coleta roda <b>diariamente</b> (agendamentos às 07:17, 10:43, 14:43 e 18:43 BRT; sujeitos a atraso do GitHub) com <b>orçamento de tempo</b> declarado:
+  <p>A coleta roda <b>diariamente</b> (agendamentos da GitHub Action em horário compatível com Bruxelas; sujeitos a atraso do GitHub) com <b>orçamento de tempo</b> declarado:
   ao se aproximar do teto, o coletor para de iniciar novas consultas, grava o que já verificou e
   registra a execução como <b>parcial</b> — a cobertura de cada execução fica visível no
   <a href="{SITE_URL}/monitoramento/">painel de monitoramento</a>. A verificação segue ordem de
   prioridade (maior AI Legislative Impact Score primeiro; em empate, a matéria há mais tempo sem
   verificação), de modo que o excedente de uma execução é sempre o de menor prioridade e entra
   primeiro na seguinte. Fichas novas descobertas nas APIs entram com teto por execução, priorizando
-  relevância temática, tipo de proposição e recência.</p>
+  relevância temática, tipo de procedimento e recência.</p>
   <p style="margin-top:10px">Cada execução registra no <code>updates.json</code>: início e fim,
   duração, orçamento, cobertura, proposições pendentes, mudanças detectadas, novas proposições,
   chamadas HTTP (total, cache, falhas, tempo por endpoint e por fase), erros e a fotografia do banco
@@ -1084,8 +1090,9 @@ def build_metodologia(props, laws, updates):
   avisa</b>. As mesmas métricas ficam em <code>data/monitoramento.json</code> para uso externo.</p>
 
   <h2 class="section-title" style="margin-top:26px">Monitoramento multiórgão: status por fonte</h2>
-  <p>Cada execução consulta <b>oito fontes obrigatórias</b> — Câmara, Senado, ANPD, CNJ, TSE, DOU,
-  Planalto e MCTI — e grava, em <code>updates.json</code> (campo <code>fontes_monitoradas</code>),
+  <p>Cada execução consulta <b>sete fontes regulatórias obrigatórias</b> — European AI Office, EUR-Lex,
+  Conselho da UE, Comissão Europeia, Parlamento Europeu, EDPB e EDPS — além do motor legislativo
+  (Parlamento — Open Data Portal v2; EUR-Lex) — e grava, em <code>updates.json</code> (campo <code>fontes_monitoradas</code>),
   para cada órgão: <b>timestamp da última tentativa</b>, <b>timestamp da última execução
   bem-sucedida</b>, <b>status</b>, <b>itens consultados</b>, <b>novidades</b>, <b>erros</b> e os
   <b>endpoints oficiais</b> usados. O campo <code>status_global</code> resume o resultado:</p>
@@ -1101,50 +1108,50 @@ def build_metodologia(props, laws, updates):
   <code>updates.json</code> (histórico por item, sem sobrescrita silenciosa). O arquivo histórico completo de
   mudanças é rotacionado para <code>data/legislation/updates_arquivo.json</code> em vez de ser descartado.</p>
   <h2 class="section-title" style="margin-top:26px">Cobertura atual</h2>
-  <p>{len(props)} proposições monitoradas · {len(laws)} normas mapeadas · {len(updates.get("mudancas", []))} mudanças registradas · última execução em {rs["data"]}.</p>
+  <p>{len(props)} procedimentos monitorados · {len(laws)} atos mapeados · {len(updates.get("mudancas", []))} mudanças registradas · última execução em {rs["data"]}.</p>
   <p style="margin-top:6px">Status global da última execução: <b>{(EXECUTION_RUN or {}).get("status_global") or "—"}</b> · fontes monitoradas: {len((EXECUTION_RUN or {}).get("fontes_monitoradas") or {})}.</p>
 </div></section>"""
     jsonld = combine_ld(
-        ld_collection("Metodologia do Monitor Legislativo de IA",
+        ld_collection("Metodologia do Monitor UE de IA",
                       "Fontes, frequência, critérios de inclusão, AI Legislative Impact Score, detecção de mudanças, limitações e política de correção.",
                       "metodologia/"),
         ld_breadcrumbs([("Início", ""), ("Metodologia", None)]))
     write("metodologia/index.html", page(
-        "Metodologia — como monitoramos a legislação de IA no Brasil",
-        "Metodologia do Monitor Legislativo de IA: fontes oficiais (Câmara, Senado), frequência diária, critérios de inclusão, AI Legislative Impact Score, detecção de mudanças e limitações.",
+        "Metodologia — como monitoramos a regulação de IA da União Europeia",
+        "Metodologia do Monitor UE de IA: fontes oficiais (Parlamento Europeu, EUR-Lex, Conselho, Comissão, AI Office, EDPB, EDPS), frequência diária, critérios de inclusão, AI Legislative Impact Score, detecção de mudanças e limitações.",
         "metodologia/", body, jsonld=jsonld))
 
 
 def build_laws(laws):
     rows = "".join(
         f'<tr><td><b>{esc(l["tipo"])} {esc(l["numero"])}</b><br><small style="color:var(--muted)">{fmt_date(l["data"])}</small></td>'
-        f'<td><b>{esc(l["nome"])}</b><br><span style="color:var(--muted);font-size:13px">{esc(l["ementa_sintese"][:180])}…</span></td>'
-        f'<td style="font-size:13px">{esc(l["relacao_ia"][:320])}…</td>'
+        f'<td><b>{esc(l["nome"])}</b><br><span style="color:var(--muted);font-size:13px">CELEX {esc(l.get("celex", "—"))}{(" · " + esc(l["jornal_oficial"])) if l.get("jornal_oficial") else ""}</span></td>'
+        f'<td style="font-size:13px">{esc((l.get("relacao_ia") or "")[:320])}</td>'
         f'<td><span class="tag">{esc(l["status"])}</span></td>'
         f'<td><a href="{l["url"]}" target="_blank" rel="noopener">link ↗</a></td></tr>'
         for l in sorted(laws, key=lambda x: x["data"] or "", reverse=True))
     body = f"""
 <div class="page-head"><div class="wrap">
-  <div class="crumbs"><a href="{SITE_URL}/">Início</a> › Leis e normas</div>
-  <h1>Leis e normas vigentes relacionadas à IA</h1>
-  <p class="sub">Legislação federal em vigor que já disciplina sistemas de IA, decisões automatizadas e conteúdo sintético — além de atos caducos mantidos por valor documental.</p>
+  <div class="crumbs"><a href="{SITE_URL}/">Início</a> › Legislação e atos</div>
+  <h1>Legislação e atos da UE relacionados à IA</h1>
+  <p class="sub">Atos jurídicos da União Europeia diretamente relacionados à inteligência artificial — AI Act e atos correlatos — com CELEX, referência do Jornal Oficial e status de vigência. Não é o acervo digital completo: só o que disciplina IA.</p>
 </div></div>
 <section class="block"><div class="wrap" style="overflow-x:auto">
   <table class="tbl">
-    <thead><tr><th>Norma</th><th>Nome</th><th>Relação com IA</th><th>Status</th><th>Fonte</th></tr></thead>
+    <thead><tr><th>Ato</th><th>Nome oficial</th><th>Relação com IA</th><th>Status</th><th>Fonte</th></tr></thead>
     <tbody>{rows}</tbody>
   </table>
   <p class="disclaimer" style="margin-top:16px">{DISCLAIMER}</p>
 </div></section>"""
     jsonld = combine_ld(
-        ld_collection("Leis e normas sobre IA no Brasil",
-                      "Legislação federal brasileira vigente relacionada à inteligência artificial: leis, decretos, resoluções do TSE e CNJ e atos da ANPD.",
-                      "leis/"),
-        ld_breadcrumbs([("Início", ""), ("Leis e normas", None)]))
-    write("leis/index.html", page(
-        "Leis e normas vigentes sobre IA no Brasil — LGPD, ECA Digital, Lei 15.487/2026 e mais",
-        "Legislação federal brasileira vigente relacionada à inteligência artificial: leis, decretos, resoluções do TSE e CNJ e atos da ANPD, com fonte oficial.",
-        "leis/", body, jsonld=jsonld))
+        ld_collection("Legislação e atos da UE sobre IA",
+                      "Atos jurídicos da União Europeia diretamente relacionados à inteligência artificial: AI Act (Regulamento (UE) 2024/1689) e atos correlatos, com CELEX e fonte oficial.",
+                      "legislacao-e-atos/"),
+        ld_breadcrumbs([("Início", ""), ("Legislação e atos", None)]))
+    write("legislacao-e-atos/index.html", page(
+        "AI Act e legislação da UE sobre IA — atos vigentes, CELEX e status",
+        "Legislação da União Europeia diretamente relacionada à inteligência artificial: AI Act (Regulamento (UE) 2024/1689) e atos correlatos, com CELEX, Jornal Oficial, status de vigência e fonte oficial.",
+        "legislacao-e-atos/", body, jsonld=jsonld))
 
 
 def build_timeline(timeline):
@@ -1152,25 +1159,25 @@ def build_timeline(timeline):
     tl = "".join(
         f'<div class="tl-item"><div class="date">{fmt_date(e["data"])} · {esc(e["casa"])}</div>'
         f'<div class="desc"><b>{esc(e["titulo"])}</b> — {esc(e["descricao"])}</div>'
-        f'<div class="src">Ator: {esc(e["ator"])} · <a href="{e["fonte_url"]}" target="_blank" rel="noopener">{esc(e["fonte_titulo"])} ↗</a></div></div>'
+        f'<div class="src">{("Dossiê: " + esc(e["proposicao"]) + " · ") if e.get("proposicao") else ""}<a href="{e["fonte_url"]}" target="_blank" rel="noopener">{esc(e["fonte_titulo"])} ↗</a></div></div>'
         for e in items)
     body = f"""
 <div class="page-head"><div class="wrap">
   <div class="crumbs"><a href="{SITE_URL}/">Início</a> › Timeline</div>
-  <h1>Timeline da regulamentação de IA no Brasil</h1>
-  <p class="sub">Histórico cronológico documentado — dos primeiros projetos de 2019 ao cenário de 2026. Cada evento traz casa, ator e fonte.</p>
+  <h1>Timeline da regulação de IA na União Europeia</h1>
+  <p class="sub">Histórico cronológico documentado — da proposta do AI Act (2021) à aplicação integral (2026). Cada evento traz instituição, dossiê e fonte oficial.</p>
 </div></div>
 <section class="block"><div class="wrap">
   <div class="timeline">{tl}</div>
 </div></section>"""
     jsonld = combine_ld(
-        ld_collection("Timeline da regulamentação de IA no Brasil (2019–2026)",
-                      "Linha do tempo documentada da legislação brasileira de inteligência artificial.",
+        ld_collection("Timeline da regulação de IA na União Europeia (2021–2026)",
+                      "Linha do tempo documentada da regulação de inteligência artificial da União Europeia: do AI Act à implementação.",
                       "timeline/"),
         ld_breadcrumbs([("Início", ""), ("Timeline", None)]))
     write("timeline/index.html", page(
-        "Timeline da regulamentação de IA no Brasil (2019–2026)",
-        "Linha do tempo documentada da legislação brasileira de inteligência artificial: comissão de juristas, CTIA, PL 2338/2023, leis sancionadas e atos regulatórios.",
+        "Timeline da regulação de IA na União Europeia (2021–2026)",
+        "Linha do tempo documentada da regulação de IA da União Europeia: proposta do AI Act, trílogos, adoção, publicação no JO, entrada em vigor e aplicação faseada.",
         "timeline/", body, jsonld=jsonld))
 
 
@@ -1183,7 +1190,7 @@ def build_parliamentarians(parms, props):
             for pid in m.get("proposicoes_relacionadas", []) if pid in by_id)
         atu = "".join(f"<li>{esc(a)}</li>" for a in m.get("atuacao_ia", []))
         fonts = "".join(f'<li><a href="{f["url"]}" target="_blank" rel="noopener">{esc(f["titulo"])} ↗</a></li>' for f in m.get("fontes", []))
-        casa = "Câmara" if m["casa"] == "Câmara" else "Senado"
+        casa = m.get("casa") or "Parlamento Europeu"
         cards += f"""
 <div class="card">
   <h3>{esc(m["nome"])} <span class="tag">{esc(m["partido"])}-{esc(m["estado"])}</span> <span class="tag">{casa}</span></h3>
@@ -1194,22 +1201,22 @@ def build_parliamentarians(parms, props):
 </div>"""
     body = f"""
 <div class="page-head"><div class="wrap">
-  <div class="crumbs"><a href="{SITE_URL}/">Início</a> › Parlamentares</div>
-  <h1>Parlamentares na legislação de IA</h1>
-  <p class="sub">Mapa de autoria, relatoria e condução das matérias de IA no Congresso Nacional. Posições só são registradas quando documentadas — não atribuímos juízo político sem fonte.</p>
+  <div class="crumbs"><a href="{SITE_URL}/">Início</a> › Atores legislativos</div>
+  <h1>Atores legislativos da IA na União Europeia</h1>
+  <p class="sub">Mapa de relatoria e condução dos dossiês de IA no Parlamento Europeu e nas demais instituições. Papéis só são registrados quando documentados em fonte oficial — não atribuímos juízo político sem fonte.</p>
 </div></div>
 <section class="block"><div class="wrap">
   <div class="grid cols-2">{cards}</div>
 </div></section>"""
     jsonld = combine_ld(
-        ld_collection("Parlamentares na legislação de IA no Brasil",
-                      "Autores, relatores e presidentes de comissões das principais matérias de inteligência artificial no Congresso Nacional.",
-                      "parlamentares/"),
-        ld_breadcrumbs([("Início", ""), ("Parlamentares", None)]))
-    write("parlamentares/index.html", page(
-        "Parlamentares envolvidos com a legislação de IA no Brasil",
-        "Autores, relatores e presidentes de comissões das principais matérias de inteligência artificial no Congresso Nacional, com atuação documentada.",
-        "parlamentares/", body, jsonld=jsonld))
+        ld_collection("Atores legislativos da IA na União Europeia",
+                      "Co-relatores, comissões e instituições que conduzem os dossiês de inteligência artificial no Parlamento Europeu e nas instituições da UE.",
+                      "atores-legislativos/"),
+        ld_breadcrumbs([("Início", ""), ("Atores legislativos", None)]))
+    write("atores-legislativos/index.html", page(
+        "Atores legislativos da IA na União Europeia — relatores e instituições",
+        "Co-relatores, comissões e instituições que conduzem os dossiês de inteligência artificial na União Europeia (Parlamento Europeu, Comissão, Conselho), com atuação documentada em fonte oficial.",
+        "atores-legislativos/", body, jsonld=jsonld))
 
 
 def build_agenda(events):
@@ -1240,61 +1247,65 @@ def build_agenda(events):
             for e in evts)
         html += f'<div class="agenda-group"><h3>{label}</h3><div class="grid cols-2">{items}</div></div>'
 
-    v = events["verificacao"]
+    v = events.get("verificacao") or {
+        "data": EXECUTION_DATE,
+        "resultado": ("Agenda ainda não verificada por execução automática — "
+                      "cada evento traz a fonte oficial de verificação."),
+    }
     body = f"""
 <div class="page-head"><div class="wrap">
   <div class="crumbs"><a href="{SITE_URL}/">Início</a> › Agenda</div>
-  <h1>Agenda Legislativa de IA</h1>
-  <p class="sub">Eventos futuros relacionados à IA no Congresso e marcos normativos previstos. Verificada em {fmt_date(v["data"])}.</p>
+  <h1>Agenda da regulação de IA na UE</h1>
+  <p class="sub">Eventos futuros oficialmente documentados: consultas públicas com prazo de feedback (Comissão — Have Your Say) e marcos de aplicação do AI Act. Verificada em {fmt_date(v["data"])}.</p>
 </div></div>
 <section class="block"><div class="wrap">
   <div class="note warn"><b>Hoje ({fmt_date(v["data"])}):</b> {esc(v["resultado"])}</div>
   {html}
 </div></section>"""
     jsonld = combine_ld(
-        ld_collection("Agenda Legislativa de IA no Brasil",
-                      "Agenda de eventos legislativos e regulatórios de inteligência artificial: audiências, votações previstas, marcos eleitorais e sanções pendentes.",
+        ld_collection("Agenda da regulação de IA na União Europeia",
+                      "Agenda oficial de consultas públicas e marcos de aplicação do AI Act: prazos de feedback, datas de aplicabilidade e eventos documentados.",
                       "agenda/"),
         ld_breadcrumbs([("Início", ""), ("Agenda", None)]))
     write("agenda/index.html", page(
-        "Agenda Legislativa de IA — próximos eventos e marcos",
-        "Agenda de eventos legislativos e regulatórios de inteligência artificial no Brasil: audiências, votações previstas, marcos eleitorais e sanções pendentes.",
+        "Agenda da regulação de IA na UE — consultas e marcos de aplicação",
+        "Agenda oficial da regulação de IA na União Europeia: consultas públicas em andamento (Have Your Say), prazos de feedback e marcos de aplicabilidade do AI Act.",
         "agenda/", body, jsonld=jsonld))
 
 
 def build_report(props, laws, updates, events):
-    run = updates["execucoes"][0]
+    run = (updates.get("execucoes") or [{}])[0] or {}
     top5 = [
-        ("Redata aprovado pelo Congresso e à sanção presidencial",
-         "O Senado aprovou o PL 278/2026 em 01/09/2026, sem alteração de mérito. É a matéria de infraestrutura de IA mais próxima de virar lei no Brasil, com renúncia estimada em bilhões de reais e contrapartidas de P&D, energia e capacidade para o mercado interno."),
-        ("Primeira lei penal específica de deepfakes em vigor",
-         "A Lei 15.487/2026 (ex-PL 3066/2025), sancionada em 06/08/2026, criminaliza simulação sexual de crianças por IA/deepfake e aumenta penas em 1/3 a 2/3 quando o crime usa IA — precedente normativo para todo o cluster de conteúdo sintético."),
-        ("Marco Legal da IA (PL 2338/2023) oficialmente adiado para depois das eleições",
-         "Após 16 meses sem parecer e cinco datas perdidas, o relator Aguinaldo Ribeiro confirmou em 24/08/2026 que a votação só ocorre após outubro. O pacote acumula 37 proposições apensadas, incluindo o PL 6237/2025 do Executivo (SIA/ANPD)."),
-        ("ANPD inicia fiscalização direta de ferramentas de IA generativa",
-         "Desde 21/08/2026, a ANPD monitora 22 agentes (redes sociais, lojas de apps e IA generativa) com base no Marco Civil atualizado e no ECA Digital — a autoridade já atua como reguladora de fato enquanto o marco legal não é votado."),
-        ("TSE consolida o regime eleitoral de IA e fixa tese sobre deepfakes",
-         "A Resolução 23.748/2026 (rotulagem, janela de 72h, vedação de recomendação por IA) foi reforçada em 01/09/2026 por tese que exige grau de realismo para caracterizar deepfake — primeira eleição geral do mundo com regras dessa amplitude."),
+        ("Aplicação integral do AI Act a partir de 2 de agosto de 2026",
+         "Com a entrada da fase de sistemas de alto risco (36 meses após a entrada em vigor), o AI Act (Regulamento (UE) 2024/1689) atinge aplicação integral da maioria das regras — e a Comissão anunciou o início da aplicação das novas regras de transparência na mesma data (comunicado de 31/07/2026)."),
+        ("Plataformas e IA generativa sob o DSA: ChatGPT, Reddit e Roblox designados",
+         "Em 31/08/2026 a Comissão designou novos serviços sob o Digital Services Act, estendendo as obrigações de transparência e gestão de riscos a plataformas com forte componente de IA generativa."),
+        ("Parlamento aprova resolução sobre direitos de autor e IA generativa",
+         "Em 10 de março de 2026 o Plenário adotou a resolução 'Copyright and generative artificial intelligence' (2025/2058(INI); P10_TA(2026)0066), sinalizando o debate sobre a política de conformidade de direitos de autor do art. 53 do AI Act."),
+        ("Enforcement de dados e IA nas autoridades nacionais sob coordenação do EDPB",
+         "O EDPB registra decisões relevantes em 2026 — entre elas multas da CNIL francesa a EXTIA (€300 mil, 11/09/2026) e ao Hôpital Privé de la Loire (€500 mil, 09/09/2026) — mostrando o regime de dados como complemento aplicado do AI Act."),
+        ("Consulta pública sobre infraestrutura de dados de saúde (EHDS/HealthData@EU)",
+         "A Comissão mantém aberto até 29/09/2026 o feedback sobre requisitos técnicos do HealthData@EU — infraestrutura de dados que fundamenta aplicações de IA na saúde na UE."),
     ]
     top5_html = "".join(
         f'<div class="change-item"><div class="when">#{i+1}</div><h3>{esc(t)}</h3><p>{esc(d)}</p></div>'
         for i, (t, d) in enumerate(top5))
 
     facts = [
-        "O PL 2338/2023 (Marco Legal da IA) foi aprovado pelo Senado em 10/12/2024 e tramita desde 17/03/2025 em Comissão Especial da Câmara, com relatoria de Aguinaldo Ribeiro (PP-PB) e presidência de Luísa Canziani (PSD-PR).",
-        "A comissão não protocolou parecer em 16 meses (prazo regimental: 10 sessões do Plenário). Cinco datas de votação foram marcadas e perdidas desde 25/11/2025. Em 24/08/2026, o relator anunciou votação somente após as eleições de outubro.",
-        "37 proposições estão apensadas ao PL 2338/2023, incluindo o PL 6237/2025 do Poder Executivo (Sistema Nacional de IA, com a ANPD como autoridade de normas gerais e regulador residual).",
-        "O Redata (PL 278/2026) foi aprovado pela Câmara em 24-25/02/2026 e pelo Senado em 01/09/2026, sem alteração de mérito, e aguarda sanção. Sua antecessora, a MP 1.318/2025, caducou em 25/02/2026.",
-        "Leis vigentes relevantes: LGPD (13.709/2018, art. 20), Governo Digital (14.129/2021, arts. 20-24), PNED (14.533/2023), ECA Digital (15.211/2025) e Lei 15.487/2026 (deepfakes/IA).",
-        "Atos regulatórios vigentes: Resolução TSE 23.732/2024 e 23.748/2026 (eleições), Resolução CNJ 615/2025 (Judiciário), Decretos 12.975 e 12.976/2026 (Marco Civil e proteção de mulheres), EBIA (Portaria MCTI 4.617/2021) e PBIA 2024-2028 (R$ 23 bi).",
-        "A ANPD elegeu IA como eixo prioritário de fiscalização para 2026-2027 e, desde 21/08/2026, monitora 22 agentes do mercado, incluindo ferramentas de IA generativa.",
+        "O AI Act foi adotado pelo Parlamento em 13/03/2024 com 523 votos a favor, 46 contra e 49 abstenções (TA-9-2024-0138), e aprovado definitivamente pelo Conselho em 21/05/2024 (fichas oficiais e comunicados institucionais).",
+        "O procedimento interinstitucional é o 2021/0106(COD), com proposta da Comissão (COM/2021/206 final) e co-relatoria de Brando Benifei (S&D/IMCO) e Dragoș Tudorache (Renew/LIBE).",
+        "O Regulamento (UE) 2024/1689 foi publicado no JO L de 12/07/2024, entrou em vigor em 01/08/2024 e tem aplicação faseada: proibições (02/02/2025), GPAI (02/08/2025) e sistemas de alto risco/aplicação integral (02/08/2026) — datas documentadas nos comunicados oficiais.",
+        "A versão consolidada do AI Act no EUR-Lex reflete alterações posteriores à publicação original (consolidada em 27/07/2026), típica do processo de corrigendas.",
+        "O Parlamento adotou em 10/03/2026 a resolução sobre direitos de autor e IA generativa (2025/2058(INI); P10_TA(2026)0066), registrada no EUR-Lex.",
+        "A Comissão anunciou (31/07/2026) o início da aplicação das regras do AI Act e das novas regras de transparência a partir de 2 de agosto de 2026, e designou (31/08/2026) ChatGPT, Reddit e Roblox sob o DSA.",
+        "O EDPB publica em seu feed oficial as decisões recentes do enforcement de dados na UE, incluindo multas da CNIL em setembro de 2026 (EXTIA €300 mil; Hôpital Privé de la Loire €500 mil).",
     ]
     interps = [
-        "A janela pós-eleitoral (novembro/dezembro de 2026) será decisiva: a convergência entre o PL 2338/2023 e o PL 6237/2025 em um único substitutivo é o cenário mais provável, já que o texto do governo resolve o vício de iniciativa apontado na arquitetura de governança.",
-        "Como a Câmara deverá alterar o texto aprovado pelo Senado, a matéria precisará retornar à Casa de origem antes da sanção — o vaivém entre as Casas é o principal risco de calendário.",
-        "O cluster de transparência/rotulagem de conteúdo sintético (mais de uma dezena de proposições) tende a ser disciplinado no bojo do marco legal, e não por leis separadas, dado o precedente da Resolução TSE 23.748/2026.",
-        "A infraestrutura (Redata + PBIA + data centers) ganhou prioridade política concreta em 2026, enquanto a regulação material (riscos, direitos, direitos autorais) segue como o ponto mais sensível e retardatário.",
-        "O debate de direitos autorais e treinamento de modelos permanece sem consenso documentado entre Casa, mercado e setor criativo — é a variável com maior potencial de alteração de última hora no substitutivo.",
+        "O centro de gravidade regulatório mudou: com a aplicação integral concluída em agosto de 2026, o debate migra da legislação para a implementação — guidelines, códigos de prática de GPAI, market surveillance e enforcement.",
+        "A European AI Office torna-se o ator mais observado do ecossistema: é dela que saem os atos e práticas que detalham as obrigações de modelos de uso geral, e cada publicação sua tem efeito extraterritorial sobre provedores.",
+        "A relação entre AI Act e GDPR será testada no enforcement: decisões recentes do EDPB/CNIL sobre dados e sistemas de IA indicam aplicação coordenada dos dois regimes.",
+        "Direitos de autor e treinamento de modelos é o conflito não resolvido do ecossistema GPAI — a resolução de março de 2026 indica que o Parlamento voltará ao tema, potencialmente em revisão do AI Act.",
+        "Atos delegados e de execução (REG) tenderão a dominar o pipeline legislativo de IA nos próximos anos; o monitor cobre esse tipo de procedimento com o mesmo rigor.",
     ]
     run_hour = ""
     m = re.search(r"T(\d{2}:\d{2})", str(run.get("data_hora", "")))
@@ -1305,17 +1316,17 @@ def build_report(props, laws, updates, events):
 <div class="page-head"><div class="wrap">
   <div class="crumbs"><a href="{SITE_URL}/">Início</a> › Relatório</div>
   <h1>Relatório da execução e Estado da Regulação</h1>
-  <p class="sub">LEGISLATIVE MONITORING REPORT da execução de {fmt_date(run["data_hora"])}{run_hour} e síntese editorial do cenário regulatório. Metodologia completa em <a href="{SITE_URL}/metodologia/">/metodologia/</a>.</p>
+  <p class="sub">MONITORING REPORT da execução de {fmt_date(run.get("data_hora"))}{run_hour} e síntese editorial do cenário regulatório. Metodologia completa em <a href="{SITE_URL}/metodologia/">/metodologia/</a>.</p>
 </div></div>
 
 <section class="block"><div class="wrap">
-  <h2 class="section-title">Estado da regulação de IA no Brasil — resumo executivo</h2>
+  <h2 class="section-title">Estado da regulação de IA na União Europeia — resumo executivo</h2>
   <p class="section-sub">Fatos (com fonte) e interpretação (análise editorial) rigorosamente separados.</p>
   <h3 style="margin:14px 0 8px;font-size:16px">Fatos documentados</h3>
   <ul class="plain facts">{"".join(f"<li>▸ {esc(f)}</li>" for f in facts)}</ul>
   <h3 style="margin:20px 0 8px;font-size:16px">Interpretação editorial</h3>
   <ul class="plain interp">{"".join(f"<li>▸ {esc(i)}</li>" for i in interps)}</ul>
-  <div class="note" style="margin-top:18px"><b>Resposta direta:</b> a matéria mais próxima de virar lei é o <b>PL 278/2026 (Redata)</b> — já aprovado pelo Congresso, pendente apenas de sanção. O projeto mais importante em conteúdo é o <b>PL 2338/2023</b>, parado na comissão especial até depois das eleições. As comissões mais relevantes são a Comissão Especial do PL 2338/23 (Câmara) e, no plano regulatório, o TSE (Res. 23.748/2026) e a ANPD (fiscalização ativa).</div>
+  <div class="note" style="margin-top:18px"><b>Resposta direta:</b> o ato central é o <b>AI Act (Regulamento (UE) 2024/1689)</b> — adotado, publicado e com aplicação faseada concluída em 02/08/2026. O que está "em tramitação" agora são os atos correlatos: atos delegados/de execução, códigos de prática de GPAI e o enforcement coordenado (AI Office, EDPB, autoridades nacionais). Para impacto regulatório imediato, acompanhamos AI Office e EDPB; para o pipeline legislativo, os procedimentos REG e a revisão do quadro de GPAI.</div>
 </div></section>
 
 <section class="block"><div class="wrap">
@@ -1325,12 +1336,12 @@ def build_report(props, laws, updates, events):
 </div></section>
 
 <section class="block"><div class="wrap">
-  <h2 class="section-title">LEGISLATIVE MONITORING REPORT — execução de {fmt_date(run["data_hora"])}{run_hour}</h2>
+  <h2 class="section-title">MONITORING REPORT — execução de {fmt_date(run.get("data_hora"))}{run_hour}</h2>
   <div class="dl-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
-    <div class="kv"><dt>Data/hora da execução</dt><dd>{fmt_date(run["data_hora"])}{run_hour}</dd></div>
-    <div class="kv"><dt>Proposições verificadas</dt><dd>{run.get("proposicoes_verificadas", "—")} (fichas oficiais e APIs de dados abertos)</dd></div>
-    <div class="kv"><dt>Proposições atualizadas</dt><dd>{run.get("proposicoes_atualizadas", run.get("novas_proposicoes", "—"))}</dd></div>
-    <div class="kv"><dt>Novas proposições cadastradas</dt><dd>{run.get("novas_proposicoes", "—")}</dd></div>
+    <div class="kv"><dt>Data/hora da execução</dt><dd>{fmt_date(run.get("data_hora"))}{run_hour}</dd></div>
+    <div class="kv"><dt>Procedimentos verificados</dt><dd>{run.get("procedimentos_verificados", run.get("proposicoes_verificadas", "—"))} (fichas oficiais e fontes abertas)</dd></div>
+    <div class="kv"><dt>Procedimentos atualizados</dt><dd>{run.get("procedimentos_atualizados", run.get("proposicoes_atualizadas", run.get("novas_proposicoes", "—")))}</dd></div>
+    <div class="kv"><dt>Novos procedimentos cadastrados</dt><dd>{run.get("novos_procedimentos", run.get("novas_proposicoes", "—"))}</dd></div>
     <div class="kv"><dt>Mudanças detectadas</dt><dd>{run.get("mudancas_detectadas", "—")}</dd></div>
     <div class="kv"><dt>Novas leis/regulamentos mapeados</dt><dd>{run.get("novas_leis_regulamentos", "—")}</dd></div>
     <div class="kv"><dt>Fontes consultadas</dt><dd>{"".join(esc(s) + "<br>" for s in run.get("fontes_consultadas", []))}</dd></div>
@@ -1342,9 +1353,9 @@ def build_report(props, laws, updates, events):
 <section class="block"><div class="wrap">
   <h2 class="section-title">Metodologia e política de qualidade</h2>
   <ul class="plain facts">
-    <li>▸ <b>Fontes primárias obrigatórias:</b> cada fato legislativo relevante cita a URL oficial (Câmara, Senado, Congresso, Planalto, DOU, TSE, CNJ, ANPD). Imprensa é usada apenas para descoberta e contexto, nunca como fonte final quando há fonte legislativa disponível.</li>
-    <li>▸ <b>Chave primária:</b> casa + tipo + número + ano (ex.: camara_pl_2338_2023). Nenhuma duplicata é criada; execuções futuras atualizam os mesmos registros.</li>
-    <li>▸ <b>AI Legislative Impact Score (0-100):</b> considera abrangência nacional, estágio, proximidade de votação, regime de urgência/prioridade, número de apensados, impacto sobre empresas, desenvolvedores, cidadãos e direitos fundamentais e potencial de virar referência. Faixas: 90-100 crítico, 75-89 muito relevante, 60-74 relevante, 40-59 monitorar, 0-39 baixa prioridade. Scores não são manipulados para inflacionar pautas.</li>
+    <li>▸ <b>Fontes primárias obrigatórias:</b> cada fato relevante cita a URL oficial (Parlamento Europeu, EUR-Lex, Conselho, Comissão, AI Office, EDPB, EDPS). Imprensa institucional é usada apenas como fonte complementar citada; nunca imprensa de terceiros como fonte primária.</li>
+    <li>▸ <b>Chave primária:</b> número de procedimento interinstitucional normalizado (ex.: ue_2021_0106_cod para o 2021/0106(COD)). Nenhuma duplicata é criada; execuções futuras atualizam os mesmos registros.</li>
+    <li>▸ <b>AI Legislative Impact Score (0-100):</b> mede impacto regulatório — abrangência, estágio do procedimento, datas de aplicação confirmadas, regime do procedimento, densidade do dossiê, efeito econômico, impacto sobre direitos, alcance setorial e relevância institucional. Faixas: 90-100 crítico, 75-89 muito relevante, 60-74 relevante, 40-59 monitorar, 0-39 baixa prioridade. <b>Não mede</b> probabilidade de aprovação nem posição política. Scores não são manipulados para inflacionar manchetes.</li>
     <li>▸ <b>Proibido:</b> inventar proposições, tramitações, datas, autores, pareceres, probabilidades ou posições políticas sem evidência documental.</li>
     <li>▸ <b>Controle de alterações:</b> o dataset é versionado no Git; mudanças de situação geram registro em updates.json com status anterior, status novo, data e fonte.</li>
     <li>▸ <b>Execuções futuras:</b> carregar o estado anterior → consultar fontes oficiais → detectar mudanças → atualizar registros e páginas → validar build → publicar. Se nada mudou, registra-se apenas a verificação.</li>
@@ -1352,14 +1363,14 @@ def build_report(props, laws, updates, events):
   <p style="margin-top:12px"><a href="{SITE_URL}/metodologia/">Metodologia completa e detalhada →</a></p>
 </div></section>"""
     jsonld = combine_ld(
-        {"@type": "Article", "headline": "Relatório da execução e Estado da Regulação de IA no Brasil",
+        {"@type": "Article", "headline": "Relatório da execução e Estado da Regulação de IA na União Europeia",
          "description": "Relatório executivo do monitoramento legislativo de IA: fatos documentados, interpretação editorial e top 5 desenvolvimentos.",
          "url": SITE_URL + "/relatorio/", "dateModified": EXECUTION_DATE, "inLanguage": "pt-BR",
          "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL + "/"}},
         ld_breadcrumbs([("Início", ""), ("Relatório", None)]))
     write("relatorio/index.html", page(
-        "Relatório e Estado da Regulação de IA no Brasil — setembro de 2026",
-        "Relatório executivo do monitoramento legislativo de IA: fatos documentados, interpretação editorial, top 5 desenvolvimentos e metodologia auditável.",
+        "Relatório e Estado da Regulação de IA na União Europeia",
+        "Relatório executivo do monitoramento de IA da União Europeia: fatos documentados, interpretação editorial, top 5 desenvolvimentos e metodologia auditável.",
         "relatorio/", body, jsonld=jsonld))
 
 
@@ -1435,11 +1446,11 @@ def metricas_monitoramento(props, laws, events, updates):
             "status": _status_run(ex, agora),
             "duracao_segundos": ex.get("duracao_segundos"),
             "orcamento_segundos": ex.get("orcamento_segundos"),
-            "verificadas": ex.get("proposicoes_verificadas"),
-            "monitoradas": ex.get("proposicoes_monitoradas"),
-            "pendentes": ex.get("proposicoes_pendentes"),
-            "atualizadas": ex.get("proposicoes_atualizadas"),
-            "novas": ex.get("novas_proposicoes"),
+            "verificadas": ex.get("procedimentos_verificados", ex.get("proposicoes_verificadas")),
+            "monitoradas": ex.get("procedimentos_monitorados", ex.get("proposicoes_monitoradas")),
+            "pendentes": ex.get("procedimentos_pendentes", ex.get("proposicoes_pendentes")),
+            "atualizadas": ex.get("procedimentos_atualizados", ex.get("proposicoes_atualizadas")),
+            "novas": ex.get("novos_procedimentos", ex.get("novas_proposicoes")),
             "mudancas": ex.get("mudancas_detectadas"),
             "eventos": ex.get("eventos_adicionados"),
             "cobertura_pct": ex.get("cobertura_pct"),
@@ -1472,7 +1483,7 @@ def metricas_monitoramento(props, laws, events, updates):
     for p in props:
         sg = status_group(p)
         por_status[sg] = por_status.get(sg, 0) + 1
-        casa = "Câmara" if p["id"].startswith("camara_") else "Senado"
+        casa = p.get("casa_origem") or "União Europeia"
         por_casa[casa] = por_casa.get(casa, 0) + 1
         por_ano[str(p.get("ano"))] = por_ano.get(str(p.get("ano")), 0) + 1
         sc = (p.get("impacto") or {}).get("score", 0) or 0
@@ -1575,7 +1586,8 @@ def metricas_monitoramento(props, laws, events, updates):
                "Fontes fora do esperado nesta execução: " + ", ".join(fontes_parciais))
     elif status_global == "OK" and ultima:
         alerta("ok", "Todas as fontes obrigatórias foram consultadas",
-               "Câmara, Senado, ANPD, CNJ, TSE, DOU, Planalto e MCTI.")
+               "Parlamento Europeu, EUR-Lex, Conselho da UE, Comissão Europeia, "
+               "European AI Office, EDPB e EDPS.")
     if fontes_parciais and status_global != "PARCIAL":
         alerta("atencao", f"{len(fontes_parciais)} fonte(s) com cobertura parcial",
                ", ".join(f"{o} ({nomes_fontes.get(o, o)})" for o in fontes_parciais)
@@ -1607,6 +1619,7 @@ def metricas_monitoramento(props, laws, events, updates):
             "fontes_falha": len(ultima.get("fontes_falha") or []),
             "fontes_parciais": len(ultima.get("fontes_parciais") or []),
             "status_global": ultima.get("status_global"),
+            "procedimentos": len(props),
             "proposicoes": len(props),
             "curadoria_pendente": len(revisao),
             "normas": len(laws),
@@ -1658,7 +1671,8 @@ def build_monitoramento(props, laws, events, updates, met):
         for a in met["alertas"])
 
     # --- monitoramento por órgão (fonte obrigatória que falhou fica explícita)
-    fontes_ordem = ["camara", "senado", "anpd", "cnj", "tse", "dou", "planalto", "mcti"]
+    fontes_ordem = ["parlamento", "eurlex_motor", "ai_office", "eurlex",
+                    "eu_council", "eu_commission", "eu_parliament", "edpb", "edps"]
     fontes_ult = ultima.get("fontes_monitoradas") or {}
     linhas_fontes, ok_fontes = [], 0
     for chave in [f for f in fontes_ordem if f in fontes_ult] + \
@@ -1774,7 +1788,7 @@ def build_monitoramento(props, laws, events, updates, met):
     itens_status = [(status_lbl.get(k, (k, "cinza"))[0], v, status_lbl.get(k, ("", "cinza"))[1])
                     for k, v in sorted(met["dataset"]["por_status"].items(), key=lambda kv: -kv[1])]
     composicao = dv.stacked_bar(itens_status) + dv.stacked_legenda(itens_status)
-    itens_curadoria = [("Curadoria concluída", kpis["proposicoes"] - kpis["curadoria_pendente"], "accent"),
+    itens_curadoria = [("Curadoria concluída", kpis["procedimentos"] - kpis["curadoria_pendente"], "accent"),
                        ("Aguardando curadoria", kpis["curadoria_pendente"], "amarelo")]
     curadoria = dv.stacked_bar(itens_curadoria) + dv.stacked_legenda(itens_curadoria)
 
@@ -1864,7 +1878,7 @@ def build_monitoramento(props, laws, events, updates, met):
     <div class="chart-card"><h3>Proposições monitoradas</h3>
       <p class="sub">Tamanho do banco de proposições ao fim de cada execução.</p>{grafico_mon or '<p class="sub">—</p>'}</div>
     <div class="chart-card"><h3>Chamadas às APIs oficiais</h3>
-      <p class="sub">Consultas HTTP feitas à Câmara e ao Senado por execução.</p>{grafico_http or '<p class="sub">—</p>'}</div>
+      <p class="sub">Consultas HTTP feitas às fontes oficiais da UE por execução.</p>{grafico_http or '<p class="sub">—</p>'}</div>
     <div class="chart-card"><h3>Mudanças detectadas</h3>
       <p class="sub">Alterações registradas com fonte oficial (relator, situação, pauta, votação, apensação…).</p>{grafico_mud or '<p class="sub">—</p>'}</div>
     <div class="chart-card"><h3>Novas proposições</h3>
@@ -1875,7 +1889,7 @@ def build_monitoramento(props, laws, events, updates, met):
 <section class="block"><div class="wrap">
   <h2 class="section-title">Composição do banco legislativo</h2>
   <p class="section-sub">Fotografia do dataset publicado nesta execução.</p>
-  <div class="chart-card"><h3>Situação das proposições ({kpis['proposicoes']} monitoradas)</h3>{composicao}</div>
+  <div class="chart-card"><h3>Situação dos procedimentos ({kpis['procedimentos']} monitorados)</h3>{composicao}</div>
   <div class="grid cols-2" style="margin-top:16px">
     <div class="chart-card"><h3>Faixas do AI Legislative Impact Score</h3>
       <p class="sub">Distribuição das proposições por prioridade de acompanhamento.</p>{barras_faixa}</div>
@@ -1913,7 +1927,7 @@ def build_monitoramento(props, laws, events, updates, met):
     <tbody>{''.join(linhas)}</tbody></table></div>
   <div class="grid cols-2" style="margin-top:18px">
     <div class="chart-card"><h3>Custo por endpoint (última execução)</h3>
-      <p class="sub">Chamadas HTTP por endpoint da Câmara/Senado — base para otimizar a coleta.</p>
+      <p class="sub">Chamadas HTTP por endpoint oficial — base para otimizar a coleta.</p>
       {barras_ep}</div>
     <div class="chart-card"><h3>Tempos por fase</h3>
       <p class="sub">Distribuição do tempo da coleta entre atualização, descoberta e agenda.</p>
@@ -1935,8 +1949,8 @@ def build_monitoramento(props, laws, events, updates, met):
         ld_breadcrumbs([("Início", ""), ("Monitoramento", None)]))
     write("monitoramento/index.html", page(
         "Painel de monitoramento — métricas do cron e da coleta de IA",
-        "Métricas do monitoramento legislativo de IA no Brasil: frescor da última execução, cobertura "
-        "da verificação, mudanças detectadas, chamadas às APIs oficiais da Câmara e do Senado e "
+        "Métricas do monitoramento de IA da União Europeia: frescor da última execução, cobertura "
+        "da verificação, mudanças detectadas, chamadas às fontes oficiais da UE e "
         "histórico auditável do cron diário.",
         "monitoramento/", body, jsonld=jsonld))
     return met
@@ -1988,7 +2002,8 @@ def main():
     build_monitoramento(props, laws, events, updates, met)
     write("data/monitoramento.json", json.dumps(met, ensure_ascii=False, indent=2) + "\n")
 
-    paths = ["", "proposicoes/", "atualizacoes/", "leis/", "timeline/", "parlamentares/",
+    paths = ["", "procedimentos-legislativos/", "atualizacoes/", "legislacao-e-atos/",
+             "timeline/", "atores-legislativos/",
              "agenda/", "monitoramento/", "metodologia/", "relatorio/"]
     paths += [prop_fs_path(p["id"]).replace("index.html", "") for p in props]
     build_sitemap(paths)

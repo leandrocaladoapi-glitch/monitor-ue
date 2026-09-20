@@ -1,4 +1,10 @@
-"""Fail the scheduled run when the latest collection is stale or incomplete."""
+"""Fail the scheduled run when the latest collection is stale or incomplete.
+
+Critério: a execução mais recente precisa estar concluída, com cobertura
+integral e sem erros/pendências, com data do dia corrente (os timestamps do
+dataset são gerados no fuso BRT — decisão documentada no README, mantida por
+estabilidade dos run_id).
+"""
 import json
 import sys
 from datetime import datetime, timezone, timedelta
@@ -26,8 +32,10 @@ def problems(record, now=None):
             errors.append("Cobertura inferior a 100%.")
     except (TypeError, ValueError):
         errors.append("Cobertura inválida.")
-    if record.get("erros") or record.get("proposicoes_pendentes"):
-        errors.append("Há erros ou proposições pendentes.")
+    pendentes = record.get("procedimentos_pendentes",
+                           record.get("proposicoes_pendentes"))
+    if record.get("erros") or pendentes:
+        errors.append("Há erros ou procedimentos pendentes.")
     return errors
 
 def main():

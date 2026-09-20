@@ -82,7 +82,7 @@ def alert_form(core):
     fields+='<label>Score mínimo<input type="number" name="score_min" min="0" max="100" value="60"></label>'
     fields+='<label>Temas (opcional)<select name="temas" multiple>'+''.join(f'<option value="{c["id"]}">{esc(c["nome"])}</option>' for c in core.cat_map().values())+'</select></label>'
     fields+='<label>Proposições (opcional)<select name="proposicoes" multiple>'+''.join(f'<option value="{esc(p["id"])}">{esc(p["tipo"])} {p["numero"]}/{p["ano"]}</option>' for p in core.load('propositions.json')['proposicoes'])+'</select></label>'
-    fields+='<label>Órgãos (opcional)<select name="orgaos" multiple>'+''.join(f'<option>{esc(o)}</option>' for o in ['Câmara dos Deputados','Senado Federal','ANPD','TSE','CNJ'])+'</select></label>'
+    fields+='<label>Órgãos (opcional)<select name="orgaos" multiple>'+''.join(f'<option>{esc(o)}</option>' for o in ['Parlamento Europeu','Comissão Europeia','Conselho da UE','European AI Office','EDPB','EDPS'])+'</select></label>'
     return '<form id="alert-form" class="commercial-card"><h2>Configurar alertas por e-mail</h2><p>Selecione temas, proposições e órgãos. Filtros preenchidos são combinados. A confirmação do endereço é necessária; você pode cancelar pelo link de cada e-mail.</p><div class="form-grid">'+fields+'</div><label class="check"><input type="checkbox" name="consent" required> Solicito os alertas selecionados e concordo com o uso do endereço para este envio. <a href="/privacidade/">Privacidade</a>.</label><div class="honeypot" aria-hidden="true"><input name="website" tabindex="-1"></div><button class="commercial-button">Solicitar alertas</button><p role="status" id="alert-status"></p></form>'
 
 

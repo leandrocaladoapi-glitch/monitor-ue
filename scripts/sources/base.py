@@ -1,25 +1,31 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-sources/base.py — infraestrutura dos coletores multiórgão do Monitor Legislativo.
+sources/base.py — infraestrutura dos coletores multiórgão do Monitor UE.
 
-Este módulo é a base comum dos conectores das fontes que se somam à Câmara e ao
-Senado (ANPD, CNJ, TSE, DOU, Planalto e MCTI). Ele oferece:
+Este módulo é a base comum dos conectores das fontes oficiais da União
+Europeia (Parlamento Europeu, Conselho da UE, Comissão Europeia, EUR-Lex,
+European AI Office, EDPB e EDPS). Ele oferece:
 
   * cliente HTTP com timeout, retry, cache de execução, telemetria e respeito ao
     orçamento global da coleta (o mesmo de `update_legislation.py`);
-  * decodificadores das formas oficiais usadas por essas fontes: RSS/Atom, JSON
-    de API (WordPress REST, CKAN, DOU), HTML de listagem (sites Plone do gov.br)
-    e blocos de resultado da busca do Diário Oficial;
-  * filtro temático conservador (IA, algoritmos, dados, biometria, plataformas,
-    infraestrutura digital, semicondutores…), que marca para revisão quando há
-    dúvida em vez de classificar por conta própria;
+  * decodificadores das formas oficiais usadas por essas fontes: RSS/Atom,
+    JSON/JSON-LD de APIs oficiais e HTML de listagem oficial;
+  * filtro temático conservador (IA, GPAI, AI Act, algoritmos, decisão
+    automatizada, biometria, modelos fundacionais, infraestrutura digital,
+    semicondutores…), que marca para revisão quando há dúvida em vez de
+    classificar por conta própria;
   * modelo de item normalizado com URL oficial obrigatória e hash de texto, que
     é o que permite detectar mudança de texto/status entre execuções.
 
 Regra inegociável do projeto: nada é inventado. Todo item gravado vem de uma
 resposta oficial, com URL oficial registrada. Quando um canal não responde, a
 fonte é marcada como falha/parcial — jamais é preenchida com dado estimado.
+
+Multilinguismo: a coleta usa o inglês como idioma técnico preferencial e a
+deduplicação é feita por identificador oficial (CELEX, número de procedimento
+interinstitucional, id de documento, URL canônica) — nunca por tradução de
+título. Versões linguísticas do mesmo documento não são contadas duas vezes.
 """
 from __future__ import annotations
 
@@ -41,7 +47,7 @@ from datetime import date, datetime, timedelta, timezone
 
 BRT = timezone(timedelta(hours=-3))
 UA_PADRAO = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
-             "Chrome/124.0 Safari/537.36 monitor-legislativo-ia/1.0 "
+             "Chrome/124.0 Safari/537.36 monitor-ia-ue/1.0 "
              "(+https://monitor.lcfconsulting.com.br)")
 
 
@@ -57,50 +63,63 @@ class OrcamentoEsgotado(RuntimeError):
 # Termos de busca usados nas consultas por assunto das fontes oficiais.
 # São termos temáticos (o filtro fino é aplicado item a item, depois).
 TOPICOS_BUSCA = [
-    "inteligência artificial",
-    "algoritmo",
-    "proteção de dados",
-    "reconhecimento facial",
-    "biometria",
+    "artificial intelligence",
+    "AI Act",
+    "general-purpose AI",
+    "GPAI",
+    "foundation model",
+    "generative AI",
     "deepfake",
-    "plataformas digitais",
-    "semicondutor",
-    "computação em nuvem",
-    "data center",
+    "facial recognition",
+    "biometrics",
+    "automated decision-making",
+    "algorithm",
+    "AI governance",
+    "data centre",
+    "semiconductor",
+    "cloud",
 ]
 
 
 # --------------------------------------------------------------- tema/filtro
 # Padrões avaliados sobre texto normalizado (minúsculo, sem acento).
 FORTE_PATTERNS = [
-    r"inteligencia artificial", r"\bia\b", r"ia generativa", r"inteligencia artificial generativa",
-    r"modelo de linguagem", r"modelos? fundaciona", r"large language model", r"\bllms?\b",
-    r"aprendizado de maquina", r"machine learning", r"aprendizado profundo", r"deep learning",
-    r"rede[s]? neural", r"redes neurais",
-    r"deepfake", r"conteudo sintetico", r"midia sintetica", r"midia gerada",
-    r"reconhecimento facial", r"reconhecimento biometrico", r"biometria",
-    r"decisao automatizada", r"decisoes automatizadas", r"decisao algorítmica",
-    r"decisoes algoritmicas", r"tomada de decisao automat", r"sistema de decisao automat",
-    r"governanca de ia", r"governanca algoritmica", r"governanca de dados",
-    r"moderacao algoritmica", r"moderacao de conteudo", r"curadoria algoritmica",
-    r"algoritmo[s]?", r"algoritmic",
-    r"plataformas digitais", r"big tech", r"rede social", r"redes sociais",
-    r"sandbox regulatorio", r"regulacao de ia", r"regulamentacao da ia",
-    r"protecao de dados", r"dados pessoais", r"lgpd", r"titular de dados", r"autoridade nacional de protecao de dados",
-    r"direitos digitais", r"desinformacao", r"integridade da informacao",
-    r"semicondutor", r"microchip", r"chip", r"litografia",
-    r"computacao de alto desempenho", r"supercomputa", r"exascale",
-    r"data cent(er|re)", r"datacent", r"centro de dados", r"data center",
-    r"computacao em nuvem", r"nuvem computacional", r"\bcloud\b", r"infraestrutura digital",
-    r"transformacao digital", r"soberania digital", r"soberania de dados",
-    r"automacao", r"robotic", r"internet das coisas", r"\biot\b",
-    r"ciberseguranca", r"seguranca cibernetica",
-    r"cadastro positivo|scoring|pontuacao de credito",
+    # --- núcleo temático de IA (termos específicos; a sigla isolada "AI" é
+    #     tratada como sinal fraco para evitar falso positivo em inglês)
+    r"artificial intelligence", r"inteligencia artificial", r"\bai act\b", r"\bai office\b", r"\bai safety\b",
+    r"\bai governance\b", r"\bai literacy\b", r"\bai regulatory sandbox",
+    r"\bai systems?\b", r"artificial intelligence systems?", r"\bai model",
+    r"general[- ]purpose ai", r"\bgpai\b", r"foundation models?", r"frontier models?",
+    r"generative ai", r"generative artificial intelligence",
+    r"large language model", r"\bllms?\b", r"machine learning", r"deep learning",
+    r"neural network", r"\bchatbots?\b", r"\bai agents?\b", r"autonomous ai",
+    r"high[- ]risk ai", r"high[- ]risk artificial intelligence",
+    r"prohibited ai practices?", r"ai transparency", r"ai auditing",
+    r"systemic risk", r"training data", r"model training", r"model evaluation",
+    r"compute", r"ai compute", r"sovereign ai",
+    # --- temas correlatos monitorados
+    r"deepfake", r"synthetic content", r"synthetic media", r"ai[- ]generated content",
+    r"facial recognition", r"biometric identification", r"remote biometric identification",
+    r"biometrics", r"emotion recognition", r"real[- ]time remote biometric",
+    r"automated decision[- ]making", r"automated decision making", r"solely automated decision",
+    r"algorithmic decision[- ]making", r"algorithmic transparency", r"\balgorithms?\b",
+    r"algorithmic system", r"decision[- ]making algorithm",
+    r"data protection", r"personal data", r"\bgdpr\b", r"\bprivacy\b",
+    r"semiconductor", r"microchip", r"\bchips?\b", r"advanced packaging",
+    r"high[- ]performance computing", r"supercomput", r"exascale", r"quantum comput",
+    r"data cent(er|re)", r"datacent", r"\bcloud\b", r"cloud infrastructure",
+    r"digital sovereignty", r"data sovereignty",
+    r"disinformation", r"misinformation", r"\bdesinformation\b",
+    r"cybersecurity", r"cyber security",
+    r"\brobot", r"autonomous system", r"internet of things", r"\biot\b",
 ]
 # Sinais temáticos mais fracos: exigem confirmação (entram como "revisar").
 REVISAR_PATTERNS = [
-    r"tecnologia", r"digital", r"inovacao", r"ciencia de dados", r"dados abertos",
-    r"software", r"startup", r"plataforma", r"internet", r"escaneamento",
+    # a sigla isolada "ai"/"AI" é sinal fraco (falso positivo em inglês: "said",
+    # "maintain" não casam por \b, mas "AI" sem contexto também não basta)
+    r"\bai\b", r"\bml\b",
+    r"technology", r"digital", r"innovation", r"data science", r"open data",
+    r"software", r"startup", r"platform", r"internet", r"online",
 ]
 
 _FORTE_RE = [re.compile(p) for p in FORTE_PATTERNS]
@@ -153,6 +172,36 @@ def url_canonica(url):
 def hash_texto(*partes):
     base = normalizar(" | ".join(str(p or "") for p in partes))
     return "sha1:" + hashlib.sha1(base.encode("utf-8")).hexdigest()[:16]
+
+
+MESES_EN = {"january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "june": 6,
+            "july": 7, "august": 8, "september": 9, "october": 10, "november": 11,
+            "december": 12, "jan": 1, "feb": 2, "mar": 3, "apr": 4, "jun": 6,
+            "jul": 7, "aug": 8, "sept": 9, "sep": 9, "oct": 10, "nov": 11, "dec": 12}
+
+
+def data_eu(texto):
+    """'17 September 2026' / 'September 17, 2026' → '2026-09-17'. Sem data → None."""
+    if not texto:
+        return None
+    s = normalizar(str(texto))
+    m = re.search(r"(\d{1,2})\s+([a-z]{3,9})\s+(\d{4})", s)
+    if m:
+        mes = MESES_EN.get(m.group(2))
+        if mes:
+            try:
+                return date(int(m.group(3)), mes, int(m.group(1))).isoformat()
+            except ValueError:
+                return None
+    m = re.search(r"([a-z]{3,9})\s+(\d{1,2}),?\s+(\d{4})", s)
+    if m:
+        mes = MESES_EN.get(m.group(1))
+        if mes:
+            try:
+                return date(int(m.group(3)), mes, int(m.group(2))).isoformat()
+            except ValueError:
+                return None
+    return None
 
 
 def data_iso(valor, formatos=None):
@@ -410,11 +459,18 @@ def parse_rss(xml_texto, base_url=""):
         if link and base_url and link.startswith("/"):
             link = urllib.parse.urljoin(base_url, link)
         descricao = limpar_texto(_txt("description", "summary", "encoded", "content") or "", 600)
+        data = _txt("pubdate", "published", "updated", "date", "dc:date") \
+            or _txt("pubDate", "published", "updated", "date")
+        try:
+            # RFC 822 (padrão RSS: "Fri, 11 Sep 2026 12:00:00 +0000")
+            from email.utils import parsedate_to_datetime
+            data = parsedate_to_datetime(data).date().isoformat() if data else None
+        except (TypeError, ValueError):
+            data = data_iso(data) or data_eu(data)
         itens.append({
             "titulo": limpar_texto(_txt("title") or "", 300),
             "link": link,
-            "data": data_iso(_txt("pubdate", "published", "updated", "date", "dc:date")
-                             or _txt("pubDate", "published", "updated", "date")),
+            "data": data,
             "descricao": descricao,
         })
     return [i for i in itens if i.get("titulo")]
@@ -444,204 +500,13 @@ def parse_html_links(html, base_url, padrao_href, limite=80, descricao_apos=1200
             continue
         vistos.add(chave)
         trecho = html[m.end():m.end() + descricao_apos]
-        data = data_iso(re.search(r"\d{2}/\d{2}/\d{4}", trecho).group(0)) if re.search(
-            r"\d{2}/\d{2}/\d{4}", trecho) else None
+        data = (data_eu(re.search(r"\d{1,2}\s+[A-Za-zç]{3,9}\s+\d{4}", trecho))
+                if data_eu(re.search(r"\d{1,2}\s+[A-Za-zç]{3,9}\s+\d{4}", trecho))
+                else (data_iso(re.search(r"\d{2}/\d{2}/\d{4}", trecho).group(0))
+                      if re.search(r"\d{2}/\d{2}/\d{4}", trecho) else None))
         texto = limpar_texto(re.sub(r"<a\s[^>]*>.*?</a>", " ", trecho, flags=re.I | re.S), 600)
         texto = re.sub(r"^\s*[-–|]\s*", "", texto)
         itens.append({"titulo": titulo, "link": chave, "data": data, "descricao": texto})
-        if len(itens) >= limite:
-            break
-    return itens
-
-
-def parse_dou_json(dados):
-    """Busca do DOU (in.gov.br) em JSON → itens com URL oficial.
-
-    O endpoint responde com um envelope cujo array de resultados aparece ora como
-    `jsonArray`, ora aninhado (`resultado`, `items`). O parser aceita as variações
-    e descarta o que não tiver título ou link oficial.
-    """
-    if not dados:
-        return []
-    lista = None
-    if isinstance(dados, list):
-        lista = dados
-    elif isinstance(dados, dict):
-        for chave in ("jsonArray", "itens", "items", "results", "resultado", "content"):
-            valor = dados.get(chave)
-            if isinstance(valor, list):
-                lista = valor
-                break
-            if isinstance(valor, dict):
-                for sub in ("jsonArray", "itens", "items", "results"):
-                    if isinstance(valor.get(sub), list):
-                        lista = valor[sub]
-                        break
-            if lista is not None:
-                break
-    if not lista:
-        return []
-    itens = []
-    for it in lista:
-        if not isinstance(it, dict):
-            continue
-        titulo = limpar_texto(it.get("title") or it.get("titulo") or it.get("nome") or "", 400)
-        href = (it.get("href") or it.get("url") or it.get("link") or "").strip()
-        if not titulo or not href:
-            continue
-        if href.startswith("/"):
-            href = urllib.parse.urljoin("https://www.in.gov.br/", href)
-        resumo = limpar_texto(it.get("abstract") or it.get("content") or it.get("descricao")
-                              or it.get("ementa") or "", 900)
-        orgao = limpar_texto(it.get("pubName") or it.get("orgao") or it.get("hierarchyStr")
-                             or it.get("hierarchyList") or "", 200)
-        itens.append({
-            "titulo": titulo,
-            "link": href.split("#")[0],
-            "data": data_iso(it.get("pubDate") or it.get("date") or it.get("data")
-                             or it.get("dataPublicacao")),
-            "descricao": (resumo + (f" · {orgao}" if orgao else ""))[:900],
-            "tipo_ato": limpar_texto(it.get("artType") or it.get("type") or "", 80) or None,
-            "secao": limpar_texto(it.get("pubName") or "", 80) or None,
-        })
-    return itens
-
-
-def parse_plone_search(dados):
-    """plone.restapi (@search / pasta) → itens oficiais de sites gov.br (Volto).
-
-    Cada item traz `@id` (URL oficial), `title`, `description` e `effective`.
-    Itens que não são conteúdo editorial (imagens, arquivos de layout) são
-    descartados: só entram tipos com título e URL de página.
-    """
-    if not isinstance(dados, dict):
-        return []
-    itens = []
-    for it in (dados.get("items") or []):
-        if not isinstance(it, dict):
-            continue
-        url = (it.get("@id") or "").strip()
-        titulo = limpar_texto(it.get("title") or "", 300)
-        if not url or not titulo:
-            continue
-        tipo = it.get("@type") or ""
-        if tipo in ("Image", "Image Container"):
-            continue
-        if re.search(r"\.(png|jpe?g|gif|webp|svg|ico)$", url, re.I):
-            continue
-        itens.append({
-            "titulo": titulo,
-            "link": url.split("#")[0],
-            "data": data_iso(it.get("effective") or it.get("created") or it.get("modified")),
-            "descricao": limpar_texto(it.get("description") or "", 600),
-            "tipo_ato": tipo or None,
-            "orgao_item": limpar_texto(it.get("head_title") or "", 120) or None,
-        })
-    return itens
-
-
-def parse_cnj_atos(dados):
-    """API oficial do Sistema de Atos Normativos do CNJ (atos.cnj.jus.br).
-
-    Formato: {"data": [{id, tipo, numero, data_publicacao, situacao, ementa,
-    observacao, url_ato, ...}], "total": n}. O título é montado com os campos
-    oficiais (nunca inventado); a ementa vem do próprio ato.
-    """
-    if not isinstance(dados, dict):
-        return []
-    itens = []
-    for ato in (dados.get("data") or []):
-        if not isinstance(ato, dict) or not ato.get("id"):
-            continue
-        tipo = limpar_texto(ato.get("tipo") or "Ato", 60)
-        numero = limpar_texto(ato.get("numero") or "", 30)
-        titulo = f"{tipo} CNJ nº {numero}" if numero else f"{tipo} CNJ"
-        ementa = limpar_texto(ato.get("ementa") or "", 800)
-        situacao = limpar_texto(ato.get("situacao") or "", 60)
-        obs = limpar_texto(ato.get("observacao") or "", 200)
-        descricao = " ".join(x for x in (ementa, f"Situação: {situacao}." if situacao else "",
-                                         obs) if x)
-        itens.append({
-            "titulo": titulo,
-            "link": f"https://atos.cnj.jus.br/atos/detalhar/{ato['id']}",
-            "data": data_iso(ato.get("data_publicacao")),
-            "descricao": descricao[:900],
-            "tipo_ato": tipo,
-            "situacao": situacao or None,
-        })
-    return itens
-
-
-DOU_RE_SCRIPT = re.compile(
-    r'<script[^>]+id="[^"]*BuscaDouPortlet_params"[^>]*>(.*?)</script>', re.I | re.S)
-
-
-def parse_dou_embutido(html):
-    """Extrai o JSON de resultados embutido na página de busca do DOU.
-
-    A busca do in.gov.br devolve HTML com um <script type="application/json">
-    contendo {"jsonArray": [...]}. Cada resultado tem `title`, `urlTitle`,
-    `pubDate`, `content`, `artType` e `hierarchyStr` — é daí que saem o título,
-    a data, o órgão e a URL oficial do ato.
-    """
-    if not html:
-        return []
-    m = DOU_RE_SCRIPT.search(html)
-    if not m:
-        return []
-    bruto = html_mod.unescape(m.group(1)).strip()
-    try:
-        dados = json.loads(bruto)
-    except ValueError:
-        return []
-    itens = []
-    for it in (dados.get("jsonArray") or []):
-        if not isinstance(it, dict):
-            continue
-        titulo = limpar_texto(it.get("title") or "", 400)
-        url_title = (it.get("urlTitle") or "").strip()
-        if not titulo or not url_title:
-            continue
-        hierarquia = limpar_texto(it.get("hierarchyStr") or it.get("hierarchyList") or "", 240)
-        art_type = limpar_texto(it.get("artType") or "", 80)
-        conteudo = limpar_texto(it.get("content") or "", 900)
-        itens.append({
-            "titulo": titulo,
-            "link": f"https://www.in.gov.br/web/dou/-/{url_title}",
-            "data": data_iso(it.get("pubDate")),
-            "descricao": " ".join(x for x in (conteudo,
-                                              f"({art_type} — {hierarquia})" if hierarquia else "")
-                                 if x)[:900],
-            "tipo_ato": art_type or None,
-            "hierarquia": hierarquia or None,
-            "secao": (it.get("pubName") or None),
-            "edicao": it.get("editionNumber") or None,
-            "id_dou": it.get("classPK") or None,
-        })
-    return itens
-
-
-def html_para_texto_blocos(html, padrao_href, base_url="https://www.in.gov.br/", limite=50):
-    """Fallback: extrai resultados da busca do DOU direto do HTML.
-
-    Cada resultado tem um link `/web/dou/-/<slug>`; o título vem da âncora e o
-    resumo do bloco seguinte. Usado só quando o endpoint JSON não está disponível.
-    """
-    if not html:
-        return []
-    itens, vistos = [], set()
-    for m in re.finditer(r'<a[^>]+href="(/web/dou/-/[^"#?]+)"[^>]*>(.*?)</a>', html, re.I | re.S):
-        href, interno = m.group(1), m.group(2)
-        titulo = limpar_texto(interno, 400)
-        if len(titulo) < 10 or href in vistos:
-            continue
-        vistos.add(href)
-        trecho = html[m.end():m.end() + 1500]
-        texto = limpar_texto(trecho, 700)
-        data = data_iso(re.search(r"\d{2}/\d{2}/\d{4}", trecho).group(0)) if re.search(
-            r"\d{2}/\d{2}/\d{4}", trecho) else None
-        itens.append({"titulo": titulo, "link": urllib.parse.urljoin(base_url, href),
-                      "data": data, "descricao": texto})
         if len(itens) >= limite:
             break
     return itens
@@ -656,7 +521,7 @@ class Canal:
       json     — API oficial em JSON (com `parser` específico)
       html     — listagem oficial em HTML (com `padrao_href`)
     opcoes:
-      parser           — "wp_json" | "ckan" | "dou_json" | "generico" | "plone"
+      parser           — "wp_json" | "lista_json" | "generico" | "eu:<funcao>"
       padrao_href      — regex de href (formato html)
       paginas          — nº de páginas (listagens paginadas por ?b_start:int=N)
       passo            — itens por página
@@ -698,21 +563,29 @@ class Canal:
         return url + sep + urllib.parse.urlencode(extras)
 
     def urls(self):
-        """Gera (tópico, url) do canal. Suporta {topico}, {from} e {to}
-        (janela de datas do DOU, em DD-MM-AAAA) e paginação b_start:int."""
+        """Gera (tópico, url) do canal.
+
+        Suporta {topico}, {year}/{prev_year} (ano), janelas {from}/{to}
+        (DD-MM-AAAA) e {from_eu}/{to_eu} (DD/MM/AAAA) e paginação via
+        `opcoes["param_pagina"]` (ex.: "page" → ?page=N).
+        """
         hoje = datetime.now(BRT).date()
         inicio = hoje - timedelta(days=self.dias if self.dias else 30)
-        ctx = {"from": inicio.strftime("%d-%m-%Y"), "to": hoje.strftime("%d-%m-%Y")}
+        ctx = {"from": inicio.strftime("%d-%m-%Y"), "to": hoje.strftime("%d-%m-%Y"),
+               "from_eu": inicio.strftime("%d/%m/%Y"), "to_eu": hoje.strftime("%d/%m/%Y"),
+               "year": hoje.year, "prev_year": hoje.year - 1}
+        param_pag = self.opcoes.get("param_pagina")
         if self.topicos:
             for t in self.topicos:
                 yield t, self._com_params(
                     self.url_template.format(topico=urllib.parse.quote(t), **ctx))
             return
         for i in range(self.paginas):
-            sep = "&" if "?" in self.url else "?"
             base = self.url_template.format(topico="", **ctx)
-            u = base if i == 0 else f"{base}{sep}b_start:int={i * self.passo}"
-            yield None, self._com_params(u)
+            if param_pag and i > 0:
+                sep = "&" if "?" in base else "?"
+                base = f"{base}{sep}{urllib.parse.quote(param_pag)}={i + 1}"
+            yield None, self._com_params(base)
 
 
 class ResultadoFonte:
@@ -949,16 +822,12 @@ class Fonte:
 
     def _parser_json(self, dados, canal, topico=None):
         parser = canal.parser
+        if parser and parser.startswith("eu:"):
+            import eu_parsers
+            fn = getattr(eu_parsers, parser[3:])
+            return fn(dados, canal=canal, topico=topico)
         if parser == "wp_json":
             return self._parse_wp_json(dados)
-        if parser == "ckan":
-            return self._parse_ckan(dados)
-        if parser == "dou_json":
-            return parse_dou_json(dados)
-        if parser == "plone_search":
-            return parse_plone_search(dados)
-        if parser == "cnj_atos":
-            return parse_cnj_atos(dados)
         if parser == "lista_json":
             return self._parse_lista_json(dados, canal)
         # genérico: tenta os formatos conhecidos
@@ -980,22 +849,6 @@ class Fonte:
                           "data": data_iso(post.get("date") or post.get("modified")),
                           "descricao": resumo,
                           "tipo_ato": (post.get("type") or None)})
-        return itens
-
-    @staticmethod
-    def _parse_ckan(dados):
-        itens = []
-        resultado = (dados or {}).get("result") or {}
-        for pkg in (resultado.get("results") or []):
-            titulo = limpar_texto(pkg.get("title") or pkg.get("name"), 300)
-            url = pkg.get("url") or pkg.get("name")
-            if not titulo or not url:
-                continue
-            if not str(url).startswith("http"):
-                url = "https://dadosabertos.tse.jus.br/dataset/" + str(url)
-            itens.append({"titulo": titulo, "link": url,
-                          "data": data_iso(pkg.get("metadata_modified") or pkg.get("metadata_created")),
-                          "descricao": limpar_texto(pkg.get("notes") or "", 600)})
         return itens
 
     @staticmethod
@@ -1048,15 +901,17 @@ class Fonte:
             if not resp.ok:
                 raise FonteIndisponivel(f"HTML indisponível: {url} ({resp.erro or resp.status})")
             html = resp.texto
-            if canal.parser == "dou_embutido":
-                if not DOU_RE_SCRIPT.search(html):
+            if canal.parser and canal.parser.startswith("eu:"):
+                import eu_parsers
+                fn = getattr(eu_parsers, canal.parser[3:])
+                extraidos = fn(html, url=url, canal=canal)
+                if not extraidos and len(html) > 5000:
+                    # Página existe mas nenhum item foi reconhecido: ou o layout
+                    # mudou, ou a página é um desafio anti-bot. Nos dois casos o
+                    # correto é falhar o canal (nunca fingir que não há novidade).
                     raise FonteIndisponivel(
-                        f"busca do DOU sem bloco de resultados (layout mudou?): {url}")
-                extraidos = parse_dou_embutido(html)
-                itens += extraidos if extraidos else html_para_texto_blocos(
-                    html, canal.padrao_href or r"/web/dou/-/")
-            elif canal.parser == "dou_html":
-                itens += html_para_texto_blocos(html, canal.padrao_href)
+                        f"listagem sem itens reconhecíveis ({len(html)} bytes): {url}")
+                itens += extraidos
             else:
                 if not canal.padrao_href:
                     raise FonteIndisponivel(f"canal HTML sem padrao_href: {canal.rotulo}")

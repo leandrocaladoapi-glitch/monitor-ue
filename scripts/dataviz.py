@@ -114,7 +114,7 @@ def line_chart(labels, series, width=720, height=210, y_max=None, unidade=""):
     if not pontos:
         return ""
     pad_e, pad_d, pad_b, pad_t = 42, 12, 34, 26
-    y_max = y_max or max([max(s["valores"]) for s in series] + [1]) * 1.12
+    y_max = y_max or max([max(s["valores"]) for s in series if s["valores"]] + [1]) * 1.12
     largura = width - pad_e - pad_d
     altura = height - pad_t - pad_b
     partes = []

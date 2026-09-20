@@ -1,10 +1,10 @@
 # Monitor Legislativo de IA
 
-> Monitor público e auditável da legislação brasileira de Inteligência Artificial, mantido pela LCF Consulting a partir de fontes oficiais.
+> Monitor público e auditável da legislação e da regulação de IA da União Europeia, mantido pela LCF Consulting a partir de fontes oficiais.
 
 ## Key Pages
 - [Início](https://monitor.lcfconsulting.com.br/): visão geral, mudanças recentes e matérias de maior impacto
-- [Proposições](https://monitor.lcfconsulting.com.br/proposicoes/): projetos de lei monitorados e filtros
+- [Procedimentos](https://monitor.lcfconsulting.com.br/procedimentos-legislativos/): procedimentos da UE monitorados e filtros
 - [Atualizações](https://monitor.lcfconsulting.com.br/atualizacoes/): histórico de mudanças detectadas
 - [Leis e normas](https://monitor.lcfconsulting.com.br/leis/): normas vigentes relacionadas a IA
 - [Agenda](https://monitor.lcfconsulting.com.br/agenda/): eventos e marcos futuros

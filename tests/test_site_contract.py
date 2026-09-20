@@ -33,11 +33,15 @@ class SiteTests(unittest.TestCase):
         root=ET.fromstring((OUT/'sitemap.xml').read_text());ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
         urls=[e.text for e in root.findall('s:url/s:loc',ns)]
         self.assertEqual(len(urls),len(set(urls)))
-        self.assertGreaterEqual(len(urls),168)
-        for path in ['','proposicoes/','atualizacoes/','leis/','timeline/','parlamentares/','agenda/','monitoramento/','metodologia/','relatorio/']:
+        # 1 home + 2 fichas de procedimento + 9 seções do monitor
+        self.assertGreaterEqual(len(urls),12)
+        for path in ['','procedimentos-legislativos/','atualizacoes/','legislacao-e-atos/','timeline/','atores-legislativos/','agenda/','monitoramento/','metodologia/','relatorio/']:
             self.assertIn(SITE+'/'+path,urls)
         self.assertNotIn(SITE+'/app/',urls);self.assertNotIn(SITE+'/login/',urls)
-        self.assertGreaterEqual(len(list((OUT/'proposicoes').glob('*/index.html'))),133)
+        # Sem rotas do antigo monitor brasileiro
+        for antiga in ['proposicoes/','leis/','parlamentares/']:
+            self.assertNotIn(SITE+'/'+antiga,urls)
+        self.assertGreaterEqual(len(list((OUT/'procedimentos-legislativos').glob('*/index.html'))),2)
     def test_public_json_unchanged_private_data_not_published(self):
         for file in (ROOT/'data/legislation').glob('*.json'):
             self.assertEqual(json.loads(file.read_text()),json.loads((OUT/'data'/file.name).read_text()))
@@ -56,3 +60,9 @@ class SiteTests(unittest.TestCase):
         text=(ROOT/'.github/workflows/update-legislation.yml').read_text()
         self.assertIn("steps.build.outcome == 'success' && steps.validate.outcome == 'success'",text)
         self.assertIn("vars.COMMERCIAL_ENABLED == 'true'",(ROOT/'.github/workflows/commercial.yml').read_text())
+    def test_br_legado_fora_do_dataset_publicado(self):
+        """Nada de lixo brasileiro no dataset novo (missão: base só UE)."""
+        for name in ['propositions.json','atos.json','laws.json','parliamentarians.json','events.json','timeline.json']:
+            bruto=(ROOT/'data/legislation'/name).read_text(encoding='utf-8')
+            self.assertNotIn('anpd',bruto.lower());self.assertNotIn('planalto.gov.br',bruto.lower())
+            self.assertNotIn('camara.leg.br',bruto.lower());self.assertNotIn('senado.leg.br',bruto.lower())
