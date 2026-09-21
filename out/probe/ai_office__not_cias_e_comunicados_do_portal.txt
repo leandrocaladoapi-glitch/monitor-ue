@@ -482,7 +482,7 @@ INFO: {}
   class="ecl-button ecl-button--primary button js-form-submit form-submit"
   type="submit"
    data-drupal-selector="edit-reset" type="submit" id="edit-reset" name="op" value="Clear&#x20;all"
->Clear all</button><input autocomplete="off" data-drupal-selector="form-yp2yjo5ae8chot-2y0nrs8j5x-7pox-iyy2xq8pd5ss" type="hidden" name="form_build_id" value="form-Yp2Yjo5AE8chOT_2y0NRS8J5x-7POX-IyY2xQ8pd5ss" />
+>Clear all</button><input autocomplete="off" data-drupal-selector="form-nev-tkonjuajl-nqe-dduipfsieklulnbdwa7fzdel8" type="hidden" name="form_build_id" value="form-nEV_TkoNjuAJL_nQe-dDUIpfSIEKLulnBdWA7FZdel8" />
 <input data-drupal-selector="edit-newsroom-filter-form" type="hidden" name="form_id" value="newsroom_filter_form" />
 </form>
 

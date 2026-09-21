@@ -343,42 +343,42 @@ INFO: {"links": 126}
 ><span class="ecl-button__container"><span 
   class="wt-icon--corner-arrow ecl-icon ecl-icon--s ecl-icon--rotate-90 ecl-button__icon ecl-icon--corner-arrow"
   aria-hidden="true"
-   data-ecl-icon></span><span class="ecl-button__label" data-ecl-label="true">Next items</span></span></button><ul class="ecl-menu__list" data-ecl-menu-list><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-119215127-0"><a
+   data-ecl-icon></span><span class="ecl-button__label" data-ecl-label="true">Next items</span></span></button><ul class="ecl-menu__list" data-ecl-menu-list><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-736530251-0"><a
   href="/en/shaping-europes-digital-future"
   class="ecl-link ecl-link--standalone ecl-menu__link"
-   data-ecl-menu-link id="ecl-menu-item-ecl-menu-119215127-0-link"
->Home</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-119215127-1"><a
+   data-ecl-menu-link id="ecl-menu-item-ecl-menu-736530251-0-link"
+>Home</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-736530251-1"><a
   href="/en/policies"
   class="ecl-link ecl-link--standalone ecl-menu__link"
-   data-ecl-menu-link id="ecl-menu-item-ecl-menu-119215127-1-link"
->Policies</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-119215127-2"><a
+   data-ecl-menu-link id="ecl-menu-item-ecl-menu-736530251-1-link"
+>Policies</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-736530251-2"><a
   href="/en/activities"
   class="ecl-link ecl-link--standalone ecl-menu__link"
-   data-ecl-menu-link id="ecl-menu-item-ecl-menu-119215127-2-link"
->Activities</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-119215127-3"><a
+   data-ecl-menu-link id="ecl-menu-item-ecl-menu-736530251-2-link"
+>Activities</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-736530251-3"><a
   href="/en/news"
   class="ecl-link ecl-link--standalone ecl-menu__link"
-   data-ecl-menu-link id="ecl-menu-item-ecl-menu-119215127-3-link"
->News</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-119215127-4"><a
+   data-ecl-menu-link id="ecl-menu-item-ecl-menu-736530251-3-link"
+>News</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-736530251-4"><a
   href="/en/library"
   class="ecl-link ecl-link--standalone ecl-menu__link"
-   data-ecl-menu-link id="ecl-menu-item-ecl-menu-119215127-4-link"
->Library</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-119215127-5"><a
+   data-ecl-menu-link id="ecl-menu-item-ecl-menu-736530251-4-link"
+>Library</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-736530251-5"><a
   href="/en/funding"
   class="ecl-link ecl-link--standalone ecl-menu__link"
-   data-ecl-menu-link id="ecl-menu-item-ecl-menu-119215127-5-link"
->Funding</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-119215127-6"><a
+   data-ecl-menu-link id="ecl-menu-item-ecl-menu-736530251-5-link"
+>Funding</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-736530251-6"><a
   href="/en/events"
   class="ecl-link ecl-link--standalone ecl-menu__link"
-   data-ecl-menu-link id="ecl-menu-item-ecl-menu-119215127-6-link"
->Calendar</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-119215127-7"><a
+   data-ecl-menu-link id="ecl-menu-item-ecl-menu-736530251-6-link"
+>Calendar</a></li><li class="ecl-menu__item" data-ecl-menu-item id="ecl-menu-item-ecl-menu-736530251-7"><a
   href="/en/consultations"
   class="ecl-link ecl-link--standalone ecl-menu__link"
-   data-ecl-menu-link id="ecl-menu-item-ecl-menu-119215127-7-link"
->Consultations</a></li><li class="ecl-menu__item ecl-menu__item--current" data-ecl-menu-item id="ecl-menu-item-ecl-menu-119215127-8"><a
+   data-ecl-menu-link id="ecl-menu-item-ecl-menu-736530251-7-link"
+>Consultations</a></li><li class="ecl-menu__item ecl-menu__item--current" data-ecl-menu-item id="ecl-menu-item-ecl-menu-736530251-8"><a
   href="/en/policies/ai-office"
   class="ecl-link ecl-link--standalone ecl-menu__link ecl-menu__link--current"
-   data-ecl-menu-link id="ecl-menu-item-ecl-menu-119215127-8-link"
+   data-ecl-menu-link id="ecl-menu-item-ecl-menu-736530251-8-link"
 >AI Office</a></li></ul></section></div></nav>
 
 
@@ -477,13 +477,13 @@ INFO: {"links": 126}
   class="ecl-inpage-navigation"
   data-ecl-auto-init="InpageNavigation"
   data-ecl-inpage-navigation="true"
-  aria-labelledby="ecl-inpage-navigation-1356425510"
-><div class="ecl-inpage-navigation__title" id="ecl-inpage-navigation-1356425510">
+  aria-labelledby="ecl-inpage-navigation-1520636529"
+><div class="ecl-inpage-navigation__title" id="ecl-inpage-navigation-1520636529">
     Page Contents
   </div><div class="ecl-inpage-navigation__body"><div class="ecl-inpage-navigation__trigger-wrapper"><button 
       type="button"
       class="ecl-inpage-navigation__trigger"
-      id="ecl-inpage-navigation-1356425510-trigger"
+      id="ecl-inpage-navigation-1520636529-trigger"
       data-ecl-inpage-navigation-trigger="true"
       aria-controls="ecl-inpage-navigation-list"
       aria-expanded="false"><span

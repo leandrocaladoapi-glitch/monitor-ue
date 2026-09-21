@@ -1,31 +1,31 @@
 
 === [ai_office] notícias e comunicados do portal (modo=base)
     GET https://digital-strategy.ec.europa.eu/en/news?type=5%7C13
-    status=200 ct=text/html; charset=UTF-8 bytes=69911 t=0.39s
+    status=200 ct=text/html; charset=UTF-8 bytes=69911 t=0.46s
     info: {}
     amostra: <!DOCTYPE html> <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#"> <head> <meta charset="utf-8" /> <link rel="canonical" href="https://digital-strategy.ec.europa.eu/en/news" /> <meta nam
 
 === [ai_office] página da AI Office (políticas e ações) (modo=base)
     GET https://digital-strategy.ec.europa.eu/en/policies/ai-office
-    status=200 ct=text/html; charset=UTF-8 bytes=79272 t=0.05s
+    status=200 ct=text/html; charset=UTF-8 bytes=79272 t=0.04s
     info: {"links": 126}
     amostra: <!DOCTYPE html> <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#"> <head> <meta charset="utf-8" /> <meta name="description" content="The European AI Office supports the development and a
 
 === [ai_office] AI Act — quadro regulatório e implementação (modo=base)
     GET https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
-    status=200 ct=text/html; charset=UTF-8 bytes=92376 t=0.07s
+    status=200 ct=text/html; charset=UTF-8 bytes=92376 t=0.05s
     info: {"links": 141}
     amostra: <!DOCTYPE html> <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#"> <head> <meta charset="utf-8" /> <meta name="description" content="The AI Act is the first-ever legal framework on AI, w
 
 === [ai_office] General-Purpose AI — página oficial (modo=base)
     GET https://digital-strategy.ec.europa.eu/en/policies/general-purpose-ai
-    status=200 ct=text/html; charset=UTF-8 bytes=46165 t=0.25s
+    status=200 ct=text/html; charset=UTF-8 bytes=46165 t=0.27s
     info: {"links": 67}
     amostra: <!DOCTYPE html> <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#"> <head> <meta charset="utf-8" /> <meta name="robots" content="noindex" /> <link rel="canonical" href="https://digital-st
 
 === [ai_office] AI Act — página do serviço (modo=base)
     GET https://digital-strategy.ec.europa.eu/en/ai-act
-    status=200 ct=text/html; charset=UTF-8 bytes=46165 t=0.25s
+    status=200 ct=text/html; charset=UTF-8 bytes=46165 t=0.23s
     info: {"links": 67}
     amostra: <!DOCTYPE html> <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#"> <head> <meta charset="utf-8" /> <meta name="robots" content="noindex" /> <link rel="canonical" href="https://digital-st
 
@@ -37,19 +37,19 @@
 
 === [anpd] notícias por tema :: inteligência artificial (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?SearchableText=intelig%C3%AAncia%20artificial&portal_type=News%20Item&b_size=20&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=61774 t=0.51s
+    status=200 ct=application/json bytes=61774 t=0.5s
     info: {"items_total": 23, "items_len": 20, "amostra_titulos": ["ECA Digital completa um ano e é marco na proteção de criança|", "Projeto Sandbox Regulatório de IA da ANPD é finalista de prê|", "ANPD abre tomadas de subsídios sobre próxima agenda regulató|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?SearchableText=intelig%C3%AAncia+artificial&portal_type=News+Item", "batching": { "@id": "https://www.gov.br/anpd/@search?SearchableText=intelig%C3%A
 
 === [anpd] notícias por tema :: algoritmo (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?SearchableText=algoritmo&portal_type=News%20Item&b_size=20&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=130 t=0.51s
+    status=200 ct=application/json bytes=130 t=0.5s
     info: {"items_total": 0, "items_len": 0, "amostra_titulos": []}
     amostra: { "@id": "https://www.gov.br/anpd/@search?SearchableText=algoritmo&portal_type=News+Item", "items": [], "items_total": 0 }
 
 === [anpd] regulação e normas (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Fpt-br%2Fassuntos%2Fregulacao
-    status=200 ct=application/json bytes=74957 t=0.53s
+    status=200 ct=application/json bytes=74957 t=0.51s
     info: {"items_total": 85, "items_len": 50, "amostra_titulos": ["relatorio_inteligencia_regulatória.pdf|", "SEI_0325517_Nota_Tecnica_5_assinado_assinado_Hugo Jordane Lu|", "capa balanço agenda regulatoria 2025-2026 - 1 SEM 2026|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Fassuntos%2Fregulacao", "batching": { "@id": "https://www.gov.br/anpd/@search?b_size=50&sort_on=effective&sort_order=descending&path=%
 
@@ -73,7 +73,7 @@
 
 === [anpd] fiscalização (pasta oficial) (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Fpt-br%2Fassuntos%2Ffiscalizacao
-    status=200 ct=application/json bytes=107648 t=0.51s
+    status=200 ct=application/json bytes=107648 t=0.54s
     info: {"items_total": 121, "items_len": 50, "amostra_titulos": ["BancodadosPainelFISem03.07.2026.xlsx|", "DadosPainelFiscalizacao.xlsx|", "banner-mobile_fiscalização.png|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Fassuntos%2Ffiscalizacao", "batching": { "@id": "https://www.gov.br/anpd/@search?b_size=50&sort_on=effective&sort_order=descending&pat
 
@@ -85,13 +85,13 @@
 
 === [cnj] atos normativos recentes (modo=base)
     GET https://atos.cnj.jus.br/api/atos
-    status=200 ct=application/json bytes=42201 t=0.63s
+    status=200 ct=application/json bytes=42201 t=0.62s
     info: {"total": 6695, "data_len": 10, "amostra_titulos": ["<p style=\"text-align:justify\">Altera a Resolução CNJ n&ordm;|", "<p style=\"text-align:justify\">Altera o Provimento n. 255, de|", "<p>1. Conceder, durante o plantão judiciário, medida com imp|"], "links": 37}
     amostra: {"message":"Atos encontrados","total":6695,"per_page":10,"current_page":1,"last_page":670,"from":1,"to":10,"data":[{"id":7043,"tipo":"Resolu\u00e7\u00e3o","numero":697,"data_publicacao":"2026-09-16","
 
 === [cnj] atos normativos recentes (página 2) (modo=base)
     GET https://atos.cnj.jus.br/api/atos?page=2
-    status=200 ct=application/json bytes=69082 t=0.32s
+    status=200 ct=application/json bytes=69082 t=0.7s
     info: {"total": 6695, "data_len": 10, "amostra_titulos": ["<p style=\"text-align:justify\">Altera a Portaria Presidência |", "<p style=\"text-align:justify\">Dispõe sobre a prorrogação do |", "<p>1. Nova resolução para os concursos de cartórios;</p>\r\n\r\n|"], "links": 25}
     amostra: {"message":"Atos encontrados","total":6695,"per_page":10,"current_page":2,"last_page":670,"from":11,"to":20,"data":[{"id":7034,"tipo":"Portaria","numero":420,"data_publicacao":"2026-09-08","situacao":
 
@@ -103,61 +103,61 @@
 
 === [cnj] notícias oficiais (modo=base)
     GET https://www.cnj.jus.br/wp-json/wp/v2/posts?per_page=50&_fields=id%2Cdate%2Clink%2Ctitle%2Cexcerpt%2Ctype
-    status=200 ct=application/json; charset=UTF-8 bytes=39525 t=0.86s
+    status=200 ct=application/json; charset=UTF-8 bytes=39525 t=0.76s
     info: {"lista_len": 50}
     amostra: [{"id":427718,"date":"2026-09-18T21:12:50","type":"post","link":"https:\/\/www.cnj.jus.br\/forum-debate-carreira-de-servidores-combate-ao-assedio-e-valorizacao-do-1o-grau\/","title":{"rendered":"F\u00
 
 === [cnj] notícias oficiais (página 2) (modo=base)
     GET https://www.cnj.jus.br/wp-json/wp/v2/posts?per_page=50&page=2&_fields=id%2Cdate%2Clink%2Ctitle%2Cexcerpt%2Ctype
-    status=200 ct=application/json; charset=UTF-8 bytes=39543 t=0.97s
+    status=200 ct=application/json; charset=UTF-8 bytes=39543 t=0.94s
     info: {"lista_len": 50}
     amostra: [{"id":426119,"date":"2026-09-08T17:56:10","type":"post","link":"https:\/\/www.cnj.jus.br\/oficinas-buscam-solucoes-inovadoras-para-tratamento-de-processos-estruturais\/","title":{"rendered":"Oficinas
 
 === [dou] busca por tema (7 dias) :: inteligência artificial (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom
-    status=200 ct=text/html;charset=UTF-8 bytes=229928 t=1.21s
+    status=200 ct=text/html;charset=UTF-8 bytes=229928 t=1.38s
     info: {"jsonArray_ref": "presente", "hits": 40, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [dou] busca por tema (7 dias) :: algoritmo (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=13-09-2026&publishTo
-    status=200 ct=text/html;charset=UTF-8 bytes=176179 t=1.11s
+    status=200 ct=text/html;charset=UTF-8 bytes=176178 t=1.21s
     info: {"jsonArray_ref": "presente", "hits": 2, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [edpb] notícias e guidelines (RSS oficial) (modo=base)
     GET https://www.edpb.europa.eu/feed/news_en
-    status=200 ct=application/rss+xml; charset=utf-8 bytes=43109 t=0.8s
+    status=200 ct=application/rss+xml; charset=utf-8 bytes=43109 t=1.18s
     info: {"feed": 10}
     amostra: <?xml version="1.0" encoding="utf-8"?> <rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://www.edpb.europa.eu/home_en"> <channel> <title>EDPB News</title> <link>
 
 === [edps] press releases (listagem oficial) (modo=base)
     GET https://www.edps.europa.eu/press-publications/press-news/press-releases_en
-    status=202 ct=text/html; charset=UTF-8 bytes=1983 t=0.6s
+    status=202 ct=text/html; charset=UTF-8 bytes=1983 t=0.48s
     info: {}
     amostra: <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title></title> <style> body { f
 
 === [edps] notícias oficiais (listagem) (modo=base)
     GET https://www.edps.europa.eu/press-publications/press-news/news_en
-    status=202 ct=text/html; charset=UTF-8 bytes=1983 t=0.28s
+    status=202 ct=text/html; charset=UTF-8 bytes=1983 t=0.33s
     info: {}
     amostra: <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title></title> <style> body { f
 
 === [edps] publicações (opiniões e guidelines) (modo=base)
     GET https://www.edps.europa.eu/data-protection/our-work/publications_en
-    status=202 ct=text/html; charset=UTF-8 bytes=1983 t=0.36s
+    status=202 ct=text/html; charset=UTF-8 bytes=1983 t=0.3s
     info: {}
     amostra: <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title></title> <style> body { f
 
 === [eu_commission] comunicados oficiais (Press Corner, RSS) (modo=base)
     GET https://ec.europa.eu/commission/presscorner/api/rss?language=en
-    status=200 ct=application/rss+xml;charset=UTF-8 bytes=6834 t=1.26s
+    status=200 ct=application/rss+xml;charset=UTF-8 bytes=6533 t=1.02s
     info: {"feed": 10}
     amostra: <?xml version="1.0" encoding="UTF-8"?> <rss version="2.0"> <channel> <title>Press releases - RSS</title> <link>https://ec.europa.eu/commission/presscorner/api/rss?language=en</link> 
 
 === [eu_commission] consultas públicas e calls for evidence (Have Your Say) (modo=base)
     GET https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?page=1
-    status=200 ct=text/html;charset=UTF-8 bytes=4043 t=0.34s
+    status=200 ct=text/html;charset=UTF-8 bytes=4043 t=0.32s
     info: {}
     amostra: <!doctype html> <html class="eui-t-eui-legacy"> <head> <meta charset="utf-8"> <!-- General --> <meta name="description" content="European Commission - Have your say"> <meta nam
 
@@ -169,55 +169,55 @@
 
 === [eu_commission] consultas por tema (Have Your Say, keywords) :: artificial intelligence (modo=base)
     GET https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?keywords=artificial%20intelligence
-    status=200 ct=text/html;charset=UTF-8 bytes=4043 t=0.37s
+    status=200 ct=text/html;charset=UTF-8 bytes=4043 t=0.35s
     info: {}
     amostra: <!doctype html> <html class="eui-t-eui-legacy"> <head> <meta charset="utf-8"> <!-- General --> <meta name="description" content="European Commission - Have your say"> <meta nam
 
 === [eu_commission] consultas por tema (Have Your Say, keywords) :: AI Act (modo=base)
     GET https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?keywords=AI%20Act
-    status=200 ct=text/html;charset=UTF-8 bytes=4043 t=0.34s
+    status=200 ct=text/html;charset=UTF-8 bytes=4043 t=0.36s
     info: {}
     amostra: <!doctype html> <html class="eui-t-eui-legacy"> <head> <meta charset="utf-8"> <!-- General --> <meta name="description" content="European Commission - Have your say"> <meta nam
 
 === [eu_council] últimos documentos adicionados ao registro (modo=base)
     GET https://www.consilium.europa.eu/en/documents/public-register/latest/
-    status=403 ct=text/html; charset=UTF-8 bytes=2000 t=0.2s
+    status=403 ct=text/html; charset=UTF-8 bytes=2000 t=0.46s
     info: {}
-    amostra:  �      ���W��H�%������\`2 ^�NQUYj�r:�X,>Pk����}_f��ڞ� hN׮�kv���O����q ��6����?}� M����v?|�I��*?>�ԦK��4��/?��3���m]ئ�����>����G�wK�]}�2Y�_�t+����/��(�r)���9�������\������s:]�q����ws
+    amostra:  �      �����H�&��}��\`2 ^T�U�U��N����Sk�F��0nf��ڞ?�Ӝ&� m� ���1m�/�#�������������� ����=i�\��ǟ�t?�< �t����~�� �a� ��� �"��n����vN�k�V$s�K��E������ E[�EX�<�a��}��5s����mJ�k�4�>~���v*�b
 
 === [eu_council] últimos documentos (página 2) (modo=base)
     GET https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2
-    status=403 ct=text/html; charset=UTF-8 bytes=2000 t=0.07s
+    status=403 ct=text/html; charset=UTF-8 bytes=2000 t=0.05s
     info: {}
-    amostra:  �      �����H�&��}��\`2 ^T�U�U�&��t����Sk�F��2nf���� ��4q�h�N������/_g?���� �j?��~�!m�ޓ���~|��I��#��qJ�_~�_��� �?��a����Z�[ߍ� q��i{�݊d�Iҵ�ӟ�����h��럧8��_�O�o��b��?Sc�M�xm����� t�NE],͟�_
+    amostra:  �      �����H�&��}��\`2 ^Ԫ�� �N:�t�N�����Z��ﾌ�Yj����&��9M ;ھ�0���4�����|n�?���ǟ�ڏ:h�_~H� ��$A|� j�9���`���� ���3���cm�$�����w���GԵs�^s�"��_�d-����/��(�b.���) ������������mS2^&Q���۵SQK
 
 === [eu_council] documentos legislativos preparatórios (página 1) (modo=base)
     GET https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/
-    status=403 ct=text/html; charset=UTF-8 bytes=2000 t=0.05s
+    status=403 ct=text/html; charset=UTF-8 bytes=2000 t=0.06s
     info: {}
-    amostra:  �      ��{g��F����?���$��.z#�f@W,�b�,�áA��b���_iF�5s�a� 4��&#��?��2/�ɽeS]����?}�o�ߤ�|��/�zb?:۷�?��俅�?�����u�J|y��a�����/K �];L_�¶���]�h�~��%��^~|˛|�����U� ���הOU�gzh�1 ��|��ƴ͘W�\���+�)۷U
+    amostra:  �      ��{g��F����?ԼVR��.i�V7�L�$���E��{����e=�[�1��a0$#��5q#�)D���~�O�-��������|��&��K�|�V��Y�����'�-��a��_��/�+������Ư�_�,y�v�0}y �f����GS�K/y����[��S�W_�Я�_�w�o��|��?SC���pN����7�mƼ��
 
 === [eu_parliament] API v2 — procedimentos do termo parlamentar corrente (modo=base)
     GET https://data.europarl.europa.eu/api/v2/procedures?parliamentary_term=10&limit=100&format=application/ld%2Bjson
-    status=200 ct=application/ld+json bytes=15064 t=1.93s
+    status=200 ct=application/ld+json bytes=15060 t=5.84s
     info: {"data_len": 100, "amostra_titulos": ["|", "|", "|"]}
-    amostra: {"data":[{"id":"eli/dl/proc/2024-2511","type":"Process","process_id":"2024-2511","process_type":"RSP","label":"2024/2511(RSP)"},{"id":"eli/dl/proc/2024-2516","type":"Process","process_id":"2024-2516",
+    amostra: {"data":[{"id":"eli/dl/proc/2024-2526","type":"Process","process_id":"2024-2526","process_type":"RSP","label":"2024/2526(RSP)"},{"id":"eli/dl/proc/2024-2090","type":"Process","process_id":"2024-2090",
 
 === [eu_parliament] API v2 — procedimentos de IA (busca por texto) :: artificial intelligence (modo=base)
     GET https://data.europarl.europa.eu/api/v2/procedures?text=artificial%20intelligence&limit=25&format=application/ld%2Bjson
-    status=404 ct= bytes=0 t=0.42s
+    status=404 ct= bytes=0 t=0.43s
     info: {}
     amostra: 
 
 === [eu_parliament] API v2 — procedimentos de IA (busca por texto) :: AI Act (modo=base)
     GET https://data.europarl.europa.eu/api/v2/procedures?text=AI%20Act&limit=25&format=application/ld%2Bjson
-    status=404 ct= bytes=0 t=0.43s
+    status=404 ct= bytes=0 t=0.42s
     info: {}
     amostra: 
 
 === [eu_parliament] Legislative Train — Europe fit for the digital age (modo=base)
     GET https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age
-    status=202 ct=text/html; charset=UTF-8 bytes=2431 t=0.23s
+    status=202 ct=text/html; charset=UTF-8 bytes=2431 t=0.24s
     info: {}
     amostra: <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title></title> <style> body { f
 
@@ -229,7 +229,7 @@
 
 === [eu_parliament] sala de imprensa — por tema :: artificial intelligence (modo=base)
     GET https://www.europarl.europa.eu/news/en/press-room?keywords=artificial%20intelligence
-    status=202 ct=text/html; charset=UTF-8 bytes=2431 t=0.1s
+    status=202 ct=text/html; charset=UTF-8 bytes=2431 t=0.04s
     info: {}
     amostra: <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title></title> <style> body { f
 
@@ -241,151 +241,151 @@
 
 === [eurlex] busca por tema (legislação do ano corrente) :: artificial intelligence (modo=base)
     GET https://eur-lex.europa.eu/search.html?text=%22artificial%20intelligence%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR=2026
-    status=200 ct=text/html; charset=UTF-8 bytes=195020 t=1.67s
+    status=200 ct=text/html; charset=UTF-8 bytes=195019 t=1.8s
     info: {"links": 241}
     amostra:  <!DOCTYPE html> <html lang="en" class="no-js" xml:lang="en" > <head> <meta charset="utf-8"> <meta http-equiv="X-U
 
 === [eurlex] busca por tema (legislação do ano corrente) :: AI Act (modo=base)
     GET https://eur-lex.europa.eu/search.html?text=%22AI%20Act%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR=2026
-    status=200 ct=text/html; charset=UTF-8 bytes=174947 t=1.7s
+    status=200 ct=text/html; charset=UTF-8 bytes=174948 t=1.68s
     info: {"links": 235}
     amostra:  <!DOCTYPE html> <html lang="en" class="no-js" xml:lang="en" > <head> <meta charset="utf-8"> <meta http-equiv="X-U
 
 === [eurlex] busca por tema (legislação do ano anterior) :: artificial intelligence (modo=base)
     GET https://eur-lex.europa.eu/search.html?text=%22artificial%20intelligence%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR=2025
-    status=200 ct=text/html; charset=UTF-8 bytes=198205 t=1.79s
+    status=200 ct=text/html; charset=UTF-8 bytes=198205 t=1.38s
     info: {"links": 241}
     amostra:  <!DOCTYPE html> <html lang="en" class="no-js" xml:lang="en" > <head> <meta charset="utf-8"> <meta http-equiv="X-U
 
 === [eurlex] busca por tema (legislação do ano anterior) :: AI Act (modo=base)
     GET https://eur-lex.europa.eu/search.html?text=%22AI%20Act%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR=2025
-    status=200 ct=text/html; charset=UTF-8 bytes=179443 t=1.52s
+    status=200 ct=text/html; charset=UTF-8 bytes=179443 t=1.49s
     info: {"links": 235}
     amostra:  <!DOCTYPE html> <html lang="en" class="no-js" xml:lang="en" > <head> <meta charset="utf-8"> <meta http-equiv="X-U
 
 === [eurlex] atos do Jornal Oficial — série L (RSS oficial) (modo=base)
     GET https://eur-lex.europa.eu/EN/display-feed.rss?rssId=222
-    status=200 ct=application/xml bytes=69942 t=0.16s
+    status=200 ct=application/xml bytes=70461 t=0.29s
     info: {"feed": 100}
     amostra: <?xml version="1.0" encoding="UTF-8"?> <?xml-stylesheet type="text/xsl" media="screen" href="./../screen-rss.xsl"?> <rss version="2.0"> <channel xmlns:dc="http://purl.org/dc/elements/1.1/"> <title>
 
 === [eurlex] AI Act — versão consolidada (ato âncora) (modo=base)
     GET https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727
-    status=200 ct=text/html; charset=UTF-8 bytes=1103982 t=0.91s
+    status=200 ct=text/html; charset=UTF-8 bytes=1103983 t=0.98s
     info: {"links": 383}
     amostra:  <!DOCTYPE html> <html lang="en" class="no-js" xml:lang="en" prefix="eli: http://data.europa.eu/eli/ontology#" > <head> 
 
 === [mcti] atos do MCTI por tema (DOU) :: inteligência artificial (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom
-    status=200 ct=text/html;charset=UTF-8 bytes=187584 t=1.04s
+    status=200 ct=text/html;charset=UTF-8 bytes=187584 t=1.28s
     info: {"jsonArray_ref": "presente", "hits": 8, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [mcti] atos do MCTI por tema (DOU) :: algoritmo (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=21-08-2026&publishTo
-    status=200 ct=text/html;charset=UTF-8 bytes=173698 t=0.92s
+    status=200 ct=text/html;charset=UTF-8 bytes=173698 t=0.86s
     info: {"jsonArray_ref": "presente", "hits": 0, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [mcti] notícias institucionais (modo=base)
     GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias
-    status=200 ct=text/html;charset=utf-8 bytes=235259 t=1.98s
+    status=200 ct=text/html;charset=utf-8 bytes=235247 t=2.12s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 582}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); <
 
 === [mcti] notícias institucionais (modo=base)
     GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias
-    status=200 ct=text/html;charset=utf-8 bytes=235259 t=1.99s
+    status=200 ct=text/html;charset=utf-8 bytes=235247 t=1.83s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 582}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); <
 
 === [mcti] portarias publicadas (modo=base)
     GET https://www.gov.br/mcti/pt-br/acesso-a-informacao/legislacao/portarias
-    status=200 ct=text/html;charset=utf-8 bytes=159629 t=1.15s
+    status=200 ct=text/html;charset=utf-8 bytes=159617 t=1.45s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 547}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); <
 
 === [mcti] planos, programas e políticas (modo=base)
     GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti
-    status=200 ct=text/html;charset=utf-8 bytes=161984 t=1.15s
+    status=200 ct=text/html;charset=utf-8 bytes=161966 t=1.29s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 559}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); <
 
 === [planalto] atos do Poder Legislativo (leis, vetos) :: inteligência artificial (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom
-    status=200 ct=text/html;charset=UTF-8 bytes=177927 t=0.52s
+    status=200 ct=text/html;charset=UTF-8 bytes=177927 t=1.0s
     info: {"jsonArray_ref": "presente", "hits": 2, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [planalto] atos do Poder Legislativo (leis, vetos) :: algoritmo (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publishTo
-    status=200 ct=text/html;charset=UTF-8 bytes=171989 t=0.5s
+    status=200 ct=text/html;charset=UTF-8 bytes=171989 t=0.79s
     info: {"jsonArray_ref": "presente", "hits": 0, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [planalto] atos da Presidência (decretos, MPs) :: inteligência artificial (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom
-    status=200 ct=text/html;charset=UTF-8 bytes=193983 t=1.68s
+    status=200 ct=text/html;charset=UTF-8 bytes=193983 t=1.58s
     info: {"jsonArray_ref": "presente", "hits": 14, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [planalto] atos da Presidência (decretos, MPs) :: algoritmo (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publishTo
-    status=200 ct=text/html;charset=UTF-8 bytes=183699 t=1.4s
+    status=200 ct=text/html;charset=UTF-8 bytes=183700 t=1.68s
     info: {"jsonArray_ref": "presente", "hits": 7, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [planalto] notícias do Planalto (RSS oficial) (modo=base)
     GET https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/RSS
-    status=200 ct=application/atom+xml; charset=utf-8 bytes=85543 t=0.82s
+    status=200 ct=application/atom+xml; charset=utf-8 bytes=85543 t=0.84s
     info: {}
     amostra: <?xml version="1.0" encoding="utf-8" ?> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:syn="http://purl.org/rss/1.0/modules/syndicat
 
 === [planalto] notícias do Planalto (página oficial) (modo=base)
     GET https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias
-    status=200 ct=text/html;charset=utf-8 bytes=179924 t=1.15s
+    status=200 ct=text/html;charset=utf-8 bytes=179918 t=1.14s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 435}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); <
 
 === [tse] atos normativos (portal oficial) (modo=base)
     GET https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Flegislacao
-    status=200 ct=application/json bytes=30620 t=0.76s
+    status=200 ct=application/json bytes=30620 t=1.19s
     info: {"items_total": 21227, "items_len": 50, "amostra_titulos": ["PORTARIA Nº 626, DE 16 DE SETEMBRO DE 2026|", "PORTARIA Nº 623, DE 15 DE SETEMBRO DE 2026|", "PORTARIA Nº 621, DE 14 DE SETEMBRO DE 2026|"]}
     amostra: { "@id": "https://www.tse.jus.br/++api++/@search?path=%2Flegislacao", "batching": { "@id": "https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Fle
 
 === [tse] notícias oficiais (portal oficial) (modo=base)
     GET https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&portal_type=Noticia
-    status=200 ct=application/json bytes=42220 t=1.08s
-    info: {"items_total": 18661, "items_len": 50, "amostra_titulos": ["Lei dos Partidos Políticos completa 31 anos e estrutura a at|", "Faltam 15 dias: candidatas e candidatos não podem ser presos|", "Clica e Confirma mostra a importância do trabalho de mesária|"]}
+    status=200 ct=application/json bytes=42203 t=0.39s
+    info: {"items_total": 18662, "items_len": 50, "amostra_titulos": ["Faltam 14 dias: zerézima comprova que urna começa a funciona|", "Lei dos Partidos Políticos completa 31 anos e estrutura a at|", "Faltam 15 dias: candidatas e candidatos não podem ser presos|"]}
     amostra: { "@id": "https://www.tse.jus.br/++api++/@search?portal_type=Noticia", "batching": { "@id": "https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&portal_ty
 
 === [tse] atos e notícias por tema (portal oficial) :: inteligência artificial (modo=base)
     GET https://www.tse.jus.br/++api++/@search?SearchableText=intelig%C3%AAncia%20artificial&b_size=20&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=33738 t=1.02s
-    info: {"items_total": 83194, "items_len": 20, "amostra_titulos": ["Título Eleitoral - FAQ|", "Lei dos Partidos Políticos completa 31 anos e estrutura a at|", "Faltam 15 dias: candidatas e candidatos não podem ser presos|"]}
+    status=200 ct=application/json bytes=33935 t=0.85s
+    info: {"items_total": 83195, "items_len": 20, "amostra_titulos": ["Faltam 14 dias: zerézima comprova que urna começa a funciona|", "Título Eleitoral - FAQ|", "Lei dos Partidos Políticos completa 31 anos e estrutura a at|"]}
     amostra: { "@id": "https://www.tse.jus.br/++api++/@search", "batching": { "@id": "https://www.tse.jus.br/++api++/@search?b_size=20&sort_on=effective&sort_order=descending", "first": "https://www.
 
 === [tse] atos e notícias por tema (portal oficial) :: algoritmo (modo=base)
     GET https://www.tse.jus.br/++api++/@search?SearchableText=algoritmo&b_size=20&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=33738 t=0.48s
-    info: {"items_total": 83194, "items_len": 20, "amostra_titulos": ["Título Eleitoral - FAQ|", "Lei dos Partidos Políticos completa 31 anos e estrutura a at|", "Faltam 15 dias: candidatas e candidatos não podem ser presos|"]}
+    status=200 ct=application/json bytes=33935 t=2.33s
+    info: {"items_total": 83195, "items_len": 20, "amostra_titulos": ["Faltam 14 dias: zerézima comprova que urna começa a funciona|", "Título Eleitoral - FAQ|", "Lei dos Partidos Políticos completa 31 anos e estrutura a at|"]}
     amostra: { "@id": "https://www.tse.jus.br/++api++/@search", "batching": { "@id": "https://www.tse.jus.br/++api++/@search?b_size=20&sort_on=effective&sort_order=descending", "first": "https://www.
 
 === [tse] atos do TSE por tema (DOU) :: inteligência artificial (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom
-    status=200 ct=text/html;charset=UTF-8 bytes=221386 t=0.95s
+    status=200 ct=text/html;charset=UTF-8 bytes=221387 t=1.79s
     info: {"jsonArray_ref": "presente", "hits": 37, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [tse] atos do TSE por tema (DOU) :: algoritmo (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publishTo
-    status=200 ct=text/html;charset=UTF-8 bytes=177332 t=1.2s
+    status=200 ct=text/html;charset=UTF-8 bytes=177332 t=1.18s
     info: {"jsonArray_ref": "presente", "hits": 2, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [tse] resoluções do TSE (DOU, órgão/subórgão) (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=RESOLU%C3%87%C3%83O&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publi
-    status=200 ct=text/html;charset=UTF-8 bytes=198214 t=1.04s
+    status=200 ct=text/html;charset=UTF-8 bytes=198214 t=0.86s
     info: {"jsonArray_ref": "presente", "hits": 19, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 

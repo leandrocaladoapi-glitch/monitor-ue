@@ -3,10 +3,10 @@ Consultando fichas oficiais de 135 proposições monitoradas...
   [25/135] verificadas · 22s decorridos · 697s restantes
   [50/135] verificadas · 39s decorridos · 680s restantes
   [75/135] verificadas · 57s decorridos · 662s restantes
-  [100/135] verificadas · 71s decorridos · 648s restantes
+  [100/135] verificadas · 70s decorridos · 649s restantes
   [125/135] verificadas · 86s decorridos · 633s restantes
-  [135/135] verificadas · 95s decorridos · 624s restantes
-Fase 1 concluída em 95.7s · 137 verificadas · 624s de orçamento restantes
+  [135/135] verificadas · 94s decorridos · 625s restantes
+Fase 1 concluída em 94.5s · 137 verificadas · 625s de orçamento restantes
 Descobrindo novas proposições (Câmara)...
   0 candidatas a detalhar
 Descobrindo novas proposições (Senado)...
@@ -32,6 +32,6 @@ Coletando fontes multiórgão (ANPD, CNJ, TSE, DOU, Planalto, MCTI)...
     planalto: 3 itens relevantes · 0 novidades · status parcial
     mcti: 18 itens relevantes · 0 novidades · status parcial
 
-Mudanças detectadas: 0 · novas: 0 · atualizadas: 0 · verificadas: 137 · erros: 0 · status: parcial · duração: 163s
+Mudanças detectadas: 0 · novas: 0 · atualizadas: 0 · verificadas: 137 · erros: 0 · status: parcial · duração: 136s
 DRY-RUN: nada foi gravado.
 [aviso] execução parcial: o excedente entra na próxima execução.

@@ -11,11 +11,11 @@
   · fonte 'mcti' (timeout 150s, subprocesso isolado)
     → status=parcial · itens=18 · consultados=86 · canais_ok=2 · canais_falhos=2
 [anpd] ANPD — Autoridade Nacional de Proteção de Dados
-  status: ok · duração 10.0s
+  status: ok · duração 9.9s
   itens consultados: 0 · relevantes: 0 · descartados (tema): 0
   canais ok: notícias recentes, notícias por tema, regulação e normas, consultas públicas, tomada de subsídios, atos normativos (arquivos), fiscalização (pasta oficial), agenda regulatória (pasta oficial)
 [cnj] CNJ — Conselho Nacional de Justiça
-  status: ok · duração 5.1s
+  status: ok · duração 4.7s
   itens consultados: 100 · relevantes: 14 · descartados (tema): 86
   canais ok: atos normativos recentes, atos normativos recentes (página 2), atos normativos recentes (página 3), notícias oficiais, notícias oficiais (página 2)
     - [2026-09-18] (noticia, revisar) TST e TRTs passam a usar remessa digital de ofícios pelo Jus.br
@@ -40,19 +40,19 @@
       https://www.cnj.jus.br/webinario-apresenta-ferramentas-de-ia-para-o-judiciario/
     ... (+4 itens)
 [tse] TSE — Tribunal Superior Eleitoral
-  status: falha · duração 3.6s
+  status: falha · duração 3.2s
   itens consultados: 0 · relevantes: 0 · descartados (tema): 0
   canais ok: —
   canais com falha: atos normativos (portal oficial), notícias oficiais (portal oficial), atos e notícias por tema (portal oficial), atos do TSE por tema (DOU), resoluções do TSE (DOU, órgão/subórgão)
   erro: atos normativos (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Flegislacao; notícias oficiais (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&portal_type=Noticia; atos e notícias por tema (portal oficial): JSON indisponível: https://www
 [dou] DOU — Diário Oficial da União (Imprensa Nacional)
-  status: falha · duração 1.4s
+  status: falha · duração 2.6s
   itens consultados: 0 · relevantes: 0 · descartados (tema): 0
   canais ok: —
   canais com falha: busca por tema (7 dias)
   erro: busca por tema (7 dias): listagem sem itens reconhecíveis (228655 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=13-09-2026&publishTo=20-09-2026; nenhum canal respondeu — busca por tema (7 dias): listagem sem itens reconhecíveis (228655 bytes): https://www.in.gov.br/consulta/-/
 [planalto] Planalto — Presidência da República
-  status: parcial · duração 4.9s
+  status: parcial · duração 5.1s
   itens consultados: 52 · relevantes: 3 · descartados (tema): 23
   canais ok: notícias do Planalto (RSS oficial), notícias do Planalto (página oficial)
   canais com falha: atos do Poder Legislativo (leis, vetos), atos da Presidência (decretos, MPs)
@@ -64,7 +64,7 @@
     - [2026-07-23] (noticia, revisar) Presidente da República participa de encontro com lideranças do sistema de ciência e tecnologia no Brasil
       https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/presidente-da-republica-participa-de-encontro-com-liderancas-do-sistema-de-ciencia-e-tecnologia-no-brasil
 [mcti] MCTI — Ministério da Ciência, Tecnologia e Inovação
-  status: parcial · duração 5.6s
+  status: parcial · duração 5.5s
   itens consultados: 86 · relevantes: 18 · descartados (tema): 34
   canais ok: notícias institucionais, planos, programas e políticas
   canais com falha: atos do MCTI por tema (DOU), portarias publicadas

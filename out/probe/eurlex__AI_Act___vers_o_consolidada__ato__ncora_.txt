@@ -34,7 +34,7 @@ INFO: {"links": 383}
             
  
  
-        <script type="text/javascript" src="/eurlex-frontoffice/ruxitagentjs_ICANVfgqrux_10335260518104739.js" data-dtconfig="app=47d4c64c3b67ec69|agentId=bb21119050cfcee6|owasp=1|featureHash=ICANVfgqrux|rdnt=1|uxrgce=1|cuc=m097nmfl|mel=100000|mb=null|dpvc=1|iub=null|lastModification=1789733396789|tp=500,50,0|srbbv=2|agentUri=/eurlex-frontoffice/ruxitagentjs_ICANVfgqrux_10335260518104739.js|reportUrl=/eurlex-frontoffice/rb_39a3e95b-5423-482c-879b-99ef235dffeb|rid=RID_-1966693862|rpid=1025140712|domain=europa.eu"></script><script type="text/javascript" src="./../../../revamp/components/vendor/modernizr/modernizr.js?v=2.18.4"></script>
+        <script type="text/javascript" src="/eurlex-frontoffice/ruxitagentjs_ICANVfgqrux_10335260518104739.js" data-dtconfig="app=47d4c64c3b67ec69|agentId=eb5e629102d57131|owasp=1|featureHash=ICANVfgqrux|rdnt=1|uxrgce=1|cuc=m097nmfl|mel=100000|mb=null|dpvc=1|iub=null|lastModification=1789710590183|tp=500,50,0|srbbv=2|agentUri=/eurlex-frontoffice/ruxitagentjs_ICANVfgqrux_10335260518104739.js|reportUrl=/eurlex-frontoffice/rb_39a3e95b-5423-482c-879b-99ef235dffeb|rid=RID_-1966693862|rpid=-1892017492|domain=europa.eu"></script><script type="text/javascript" src="./../../../revamp/components/vendor/modernizr/modernizr.js?v=2.18.4"></script>
         
  
 
@@ -488,4 +488,4 @@ INFO: {"links": 383}
       content="Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (Text with EEA relevance)"
       lang="en"/>
 <meta about="http://data.europa.eu/eli/reg/2024/1689/2026-07-27/eng/fmx4"
-      typeof=
+      typeof

@@ -1,6 +1,6 @@
 URL: https://www.tse.jus.br/++api++/@search?SearchableText=algoritmo&b_size=20&sort_on=effective&sort_order=descending
 STATUS: 200 CT: application/json
-INFO: {"items_total": 83194, "items_len": 20, "amostra_titulos": ["Título Eleitoral - FAQ|", "Lei dos Partidos Políticos completa 31 anos e estrutura a at|", "Faltam 15 dias: candidatas e candidatos não podem ser presos|"]}
+INFO: {"items_total": 83195, "items_len": 20, "amostra_titulos": ["Faltam 14 dias: zerézima comprova que urna começa a funciona|", "Título Eleitoral - FAQ|", "Lei dos Partidos Políticos completa 31 anos e estrutura a at|"]}
 ---
 {
   "@id": "https://www.tse.jus.br/++api++/@search", 
@@ -11,6 +11,24 @@ INFO: {"items_total": 83194, "items_len": 20, "amostra_titulos": ["Título Eleit
     "next": "https://www.tse.jus.br/++api++/@search?b_start=20&b_size=20&sort_on=effective&sort_order=descending"
   }, 
   "items": [
+    {
+      "@id": "https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/faltam-14-dias-zerezima-comprova-que-urna-comeca-a-funcionar-com-zero-voto", 
+      "@type": "Noticia", 
+      "description": "Documento \u00e9 emitido antes do in\u00edcio da vota\u00e7\u00e3o e pode ser consultado por eleitores, mes\u00e1rios e fiscais", 
+      "effective": "2026-09-20T11:00:00+00:00", 
+      "end": null, 
+      "getObjSize": "13.9 KB", 
+      "getRemoteUrl": null, 
+      "head_title": null, 
+      "image_field": null, 
+      "image_scales": null, 
+      "mime_type": "text/plain", 
+      "nav_title": null, 
+      "review_state": "published", 
+      "start": null, 
+      "title": "Faltam 14 dias: zer\u00e9zima comprova que urna come\u00e7a a funcionar com zero voto", 
+      "type_title": "Not\u00edcia"
+    }, 
     {
       "@id": "https://www.tse.jus.br/servicos-eleitorais/titulo-eleitoral-faq-1", 
       "@type": "PaginaInterna", 
@@ -690,8 +708,4 @@ INFO: {"items_total": 83194, "items_len": 20, "amostra_titulos": ["Título Eleit
       "type_title": "\u00c1udio"
     }, 
     {
-      "@id": "https://www.tse.jus.br/comunicacao/radio/2026/Setembro/manual-do-eleitor-transporte-publico-no-dia-da-eleicao-e-de-graca", 
-      "@type": "AudioRadio", 
-      "description": "Votar \u00e9 um direito. E chegar ao local de vota\u00e7\u00e3o tamb\u00e9m. No cap\u00edtulo 10 do Manual do Eleitor, a Justi\u00e7a Eleitoral esclarece as regras sobre o transporte p\u00fablico gratuito nos dias de elei\u00e7\u00e3o. O programa \"Seu Voto Importa\" tamb\u00e9m amplia o acesso ao voto para pessoas com defici\u00eancia ou mobilidade reduzida e para eleitoras e eleitores de comunidades rurais, ind\u00edgenas, ribeirinhas e localidades mais afastadas dos centros urbanos. O epis\u00f3dio ainda refor\u00e7a que candidatas, candidatos, partidos pol\u00edticos e federa\u00e7\u00f5es n\u00e3o podem oferecer transporte em troca de votos.", 
-      "effective": "2026-09-18T15:48:13+00:00", 
-      "end": null, 
+      "@id": "https://www.tse.jus.br/comunicacao/radio/2026/Setembro/manual-do-eleitor-transporte-pub

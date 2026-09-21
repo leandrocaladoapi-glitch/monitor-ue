@@ -8,8 +8,8 @@ INFO: {"bloqueio": "403"}
 <H1>Access Denied</H1>
  
 You don't have permission to access "http&#58;&#47;&#47;www&#46;tse&#46;jus&#46;br&#47;&#43;&#43;api&#43;&#43;&#47;comunicacao&#47;noticias" on this server.<P>
-Reference&#32;&#35;18&#46;d2352f17&#46;1789880928&#46;aab1e52
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;d2352f17&#46;1789880928&#46;aab1e52</P>
+Reference&#32;&#35;18&#46;962b3417&#46;1789956570&#46;1bbd7c1
+<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;962b3417&#46;1789956570&#46;1bbd7c1</P>
 </BODY>
 </HTML>
 

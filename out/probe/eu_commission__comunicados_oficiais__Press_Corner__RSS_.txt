@@ -11,6 +11,23 @@ INFO: {"feed": 10}
     <language>en</language>
     <copyright>Copyright European Commission DG COMM</copyright>
     <item>
+      <title>UN Private Sector Forum - UN Global Compact</title>
+      <link>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1912</link>
+      <description>European Commission Speech New York, 20 Sep 2026 Good morning, ladies and gentlemen, and thank you for giving me the floor at such an important event.
+I arrived in New York yesterday from Prague. This summer w...</description>
+      <category>POLICY_AREA=DEVEL</category>
+      <pubDate>Sun, 20 Sep 2026 18:13:53 GMT</pubDate>
+      <guid>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1912</guid>
+    </item>
+    <item>
+      <title>Solidarity with Ukraine</title>
+      <link>https://ec.europa.eu/commission/presscorner/detail/en/fs_24_6565</link>
+      <description>European Commission Factsheet Brussels, 20 Sep 2026   Solidarity with Ukraine Solidarity with Ukraine</description>
+      <category>POLICY_AREA=UKRAINE</category>
+      <pubDate>Sat, 19 Sep 2026 22:00:00 GMT</pubDate>
+      <guid>https://ec.europa.eu/commission/presscorner/detail/en/fs_24_6565</guid>
+    </item>
+    <item>
       <title>Remarks by Commissioner Dombrovskis at the informal ECOFIN press conference</title>
       <link>https://ec.europa.eu/commission/presscorner/detail/en/statement_26_1906</link>
       <description>European Commission Statement Dublin, 19 Sep 2026 Thank you, Simon. Good afternoon, everyone.
@@ -88,24 +105,6 @@ We stand with...</description>
       <category>POLICY_AREA=HREXTRELS</category>
       <pubDate>Thu, 17 Sep 2026 17:55:33 GMT</pubDate>
       <guid>https://ec.europa.eu/commission/presscorner/detail/en/read_26_1899</guid>
-    </item>
-    <item>
-      <title>Speech by Executive Vice-President Teresa Ribera at Fordham's 53rd Annual Conference “Building a democratic, competitive and sustainable future for artificial intelligence”</title>
-      <link>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1898</link>
-      <description>European Commission Speech Brussels, 17 Sep 2026 Thank you, James for the introduction.
-It is good to be back in New York and at Fordham for the annual conference, one of the first major antitrust events of th...</description>
-      <category>POLICY_AREA=COMPETITIVE</category>
-      <pubDate>Thu, 17 Sep 2026 14:13:26 GMT</pubDate>
-      <guid>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1898</guid>
-    </item>
-    <item>
-      <title>Speech by Commissioner Albuquerque at Eurofi's Financial Forum 2026</title>
-      <link>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1897</link>
-      <description>European Commission Speech Dublin, 17 Sep 2026 Good afternoon, ladies and gentlemen.
-It is a pleasure to be here in Dublin, as always. This city is now widely regarded as one of Europe's most dynamic and int...</description>
-      <category>POLICY_AREA=FINSTAB</category>
-      <pubDate>Thu, 17 Sep 2026 10:41:37 GMT</pubDate>
-      <guid>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1897</guid>
     </item>
   </channel>
 </rss>
