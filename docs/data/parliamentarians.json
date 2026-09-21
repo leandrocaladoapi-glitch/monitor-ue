@@ -1,7 +1,7 @@
 {
   "meta": {
     "descricao": "Mapa de parlamentares com atuação documentada na legislação brasileira de Inteligência Artificial",
-    "execucao": "2026-09-18",
+    "execucao": "2026-09-21",
     "nota_metodologica": "Só constam cargos e posições documentados em fontes oficiais (fichas de tramitação, agências de notícias das Casas e registros legislativos). Não são atribuídas posições políticas de favorabilidade ou contrariedade sem fonte documental."
   },
   "parlamentares": [

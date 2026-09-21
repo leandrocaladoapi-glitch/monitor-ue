@@ -3,19 +3,91 @@
     "descricao": "Atos, publicações e consultas dos órgãos monitorados (ANPD, CNJ, TSE, DOU, Planalto e MCTI), coletados automaticamente de fontes oficiais.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, órgão, fonte e as datas de detecção. Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 234,
+    "total": 237,
     "por_orgao": {
       "anpd": 57,
-      "cnj": 16,
+      "cnj": 19,
       "dou": 115,
       "mcti": 34,
       "planalto": 11,
       "tse": 1
     },
-    "indice_total": 234,
-    "execucao": "2026-09-18"
+    "indice_total": 237,
+    "execucao": "2026-09-21"
   },
   "atos": [
+    {
+      "id": "cnj_cnj_jus_br_cnj_capacita_46_mil_pessoas_em_identificacao_e_documentacao_nos_sistemas_penal_e_socioeducativo",
+      "orgao": "cnj",
+      "tipo": "noticia",
+      "titulo": "CNJ capacita 4,6 mil pessoas em identificação e documentação nos sistemas penal e socioeducativo",
+      "descricao": "O 6º Ciclo de Capacitação Online da Ação Nacional de Identificação Civil e Emissão de Documentos, realizado pelo Conselho Nacional de Justiça (CNJ) nos dias 16 e 17 de setembro, formou 4.637 participantes nos sete módulos oferecidos. Com a nova edição da ação, os seis ciclos de formação realizados desde 2023 chegam a mais de […]",
+      "data": "2026-09-21",
+      "url_oficial": "https://www.cnj.jus.br/cnj-capacita-46-mil-pessoas-em-identificacao-e-documentacao-nos-sistemas-penal-e-socioeducativo/",
+      "fonte": "CNJ — Conselho Nacional de Justiça — notícias oficiais",
+      "canais": [
+        "notícias oficiais"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": "post",
+      "hierarquia": null,
+      "texto_hash": "sha1:86820ee492e2a03c",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
+      "primeira_deteccao": "2026-09-21T13:28:29-03:00",
+      "id_execucao_primeira": "run_2026_09_21_1328",
+      "historico": []
+    },
+    {
+      "id": "cnj_cnj_jus_br_agenda_justica_juvenil_adolescentes_do_sistema_socioeducativo_sao_capacitados_em_economia_criativa",
+      "orgao": "cnj",
+      "tipo": "noticia",
+      "titulo": "Agenda Justiça Juvenil: adolescentes do sistema socioeducativo são capacitados em economia criativa",
+      "descricao": "Adolescentes que cumprem medidas socioeducativas no Amapá, em Minas Gerais, em Pernambuco e no Rio de Janeiro começam nesta segunda-feira (21) formação profissional focada em áreas da economia criativa. A capacitação é resultado entre o Conselho Nacional de Justiça (CNJ) e a Fundação Roberto Marinho (FRM) e será oferecida via co.liga, plataforma da Fundação que conecta […]",
+      "data": "2026-09-21",
+      "url_oficial": "https://www.cnj.jus.br/agenda-justica-juvenil-adolescentes-do-sistema-socioeducativo-sao-capacitados-em-economia-criativa/",
+      "fonte": "CNJ — Conselho Nacional de Justiça — notícias oficiais",
+      "canais": [
+        "notícias oficiais"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": "post",
+      "hierarquia": null,
+      "texto_hash": "sha1:c281f3a8e1da8b07",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
+      "primeira_deteccao": "2026-09-21T13:28:29-03:00",
+      "id_execucao_primeira": "run_2026_09_21_1328",
+      "historico": []
+    },
+    {
+      "id": "cnj_cnj_jus_br_justica_do_trabalho_passa_a_usar_remessa_digital_de_oficios_pelo_jus_br",
+      "orgao": "cnj",
+      "tipo": "noticia",
+      "titulo": "TST e TRTs passam a usar remessa digital de ofícios pelo Jus.br",
+      "descricao": "O Tribunal Superior do Trabalho (TST) e os 24 tribunais regionais do Trabalho finalizaram a integração à remessa de ofícios no Jus.br, portal que centraliza os serviços digitais do Poder Judiciário. Desenvolvida no âmbito do Programa Justiça 4.0, fruto de parceria entre o Conselho Nacional de Justiça (CNJ) e o Programa das Nações Unidas para […]",
+      "data": "2026-09-18",
+      "url_oficial": "https://www.cnj.jus.br/justica-do-trabalho-passa-a-usar-remessa-digital-de-oficios-pelo-jus-br/",
+      "fonte": "CNJ — Conselho Nacional de Justiça — notícias oficiais",
+      "canais": [
+        "notícias oficiais"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": "post",
+      "hierarquia": null,
+      "texto_hash": "sha1:b382e28e86de2eeb",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
+      "primeira_deteccao": "2026-09-21T13:28:29-03:00",
+      "id_execucao_primeira": "run_2026_09_21_1328",
+      "historico": []
+    },
     {
       "id": "dou_in_gov_br_web_dou_extrato_de_termo_aditivo_n_1_2026_uasg_560010_732519284",
       "orgao": "dou",
@@ -370,8 +442,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:77dadb840efc2af4",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2002,8 +2074,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:62e0143bc2211903",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2026,8 +2098,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:58c3dc5746e8476e",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2338,8 +2410,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:830172f6c825cf4b",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2722,8 +2794,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:a5431837fe866b1b",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2770,8 +2842,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:6744bd4a822e1893",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2794,8 +2866,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:6e90401bef20b9cb",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3202,8 +3274,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:a566205e3efdbf67",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3312,9 +3384,10 @@
       "descricao": "O grupo de trabalho do Conselho Nacional de Justiça (CNJ) que estuda formas mais eficazes de tratar processos estruturais iniciou, nesta terça-feira (8/9), oficinas de inovação. As atividades discutem soluções para demandas complexas e de grande impacto social e são realizadas na Escola Nacional de Formação e Aperfeiçoamento de Magistrados (Enfam). A abertura foi conduzida […]",
       "data": "2026-09-08",
       "url_oficial": "https://www.cnj.jus.br/oficinas-buscam-solucoes-inovadoras-para-tratamento-de-processos-estruturais/",
-      "fonte": "CNJ — Conselho Nacional de Justiça — notícias oficiais",
+      "fonte": "CNJ — Conselho Nacional de Justiça — notícias oficiais (página 2)",
       "canais": [
-        "notícias oficiais"
+        "notícias oficiais",
+        "notícias oficiais (página 2)"
       ],
       "relevancia": "revisar",
       "revisao_pendente": true,
@@ -3322,8 +3395,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:180b85e02b701f53",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3346,8 +3419,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:83cd2ebe5e0056dd",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3370,8 +3443,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:89733c4e562a91e7",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3394,8 +3467,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:bafb64756d5ac798",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3418,8 +3491,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:070aaea38e12819b",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3490,8 +3563,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:bc1b501eea33c922",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3514,8 +3587,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:56666521f4438ae5",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3562,8 +3635,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:bccad66b8f933f1f",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3586,8 +3659,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:cda23403fdf23620",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3658,8 +3731,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:cfe7a38662d1053f",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3682,8 +3755,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:f536e284b2c2a751",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3754,8 +3827,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:7b5f94fb680c0b99",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3994,8 +4067,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:9c4674da3784164c",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -4472,8 +4545,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:3b877d11a05c65d7",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -4592,8 +4665,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:e00775e83b8168bb",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5408,8 +5481,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:999018efbf2bb88e",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5432,8 +5505,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:f8774dad424f1808",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5456,8 +5529,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:1a8930e106f4bf3b",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5480,8 +5553,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:4d49d80ef22da6fc",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5504,8 +5577,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:e346d0d4c0564cb8",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5528,8 +5601,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:a3e16149ae38013e",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5552,8 +5625,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:4380b47b680a0226",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5576,8 +5649,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:4b8e05ae05bbf431",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5600,8 +5673,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:88c772c47a0b8bba",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5648,8 +5721,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:2514d6bfd2cffa4f",
-      "ultima_verificacao": "2026-09-18T11:31:05-03:00",
-      "ultima_execucao": "run_2026_09_18_1131",
+      "ultima_verificacao": "2026-09-21T13:28:29-03:00",
+      "ultima_execucao": "run_2026_09_21_1328",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -6017,73 +6090,73 @@
         "h": "sha1:77dadb840efc2af4",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "cnj_cnj_jus_br_telegram_detalha_acoes_contra_desinformacao_em_plano_para_eleicoes_de_2026": {
         "h": "sha1:62e0143bc2211903",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "cnj_cnj_jus_br_abertas_inscricoes_para_reuniao_sobre_decente_nas_plataformas_digitais": {
         "h": "sha1:58c3dc5746e8476e",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "cnj_cnj_jus_br_inteligencia_artificial_e_tema_de_debate_no_para": {
         "h": "sha1:830172f6c825cf4b",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "cnj_cnj_jus_br_tjpe_lanca_dje_com_navegacao_mais_rapida_novo_visual_e_acesso_facilitado": {
         "h": "sha1:6744bd4a822e1893",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "cnj_cnj_jus_br_debates_contribuem_para_elaboracao_de_norma_sobre_processos_estruturais": {
         "h": "sha1:6e90401bef20b9cb",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "cnj_cnj_jus_br_oficinas_buscam_solucoes_inovadoras_para_tratamento_de_processos_estruturais": {
         "h": "sha1:180b85e02b701f53",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "cnj_cnj_jus_br_comunidade_quilombola_do_amapa_ganha_ponto_de_inclusao_digital": {
         "h": "sha1:89733c4e562a91e7",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "cnj_cnj_jus_br_webinario_apresenta_ferramentas_de_ia_para_o_judiciario": {
         "h": "sha1:bafb64756d5ac798",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "cnj_cnj_jus_br_justica_4_0_oferta_cursos_avancados_de_ciencia_de_dados": {
         "h": "sha1:bc1b501eea33c922",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "cnj_cnj_jus_br_academia_de_policia_judicial_divulga_calendario_de_cursos_para_o_segundo_semestre_de_2026": {
         "h": "sha1:56666521f4438ae5",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "cnj_cnj_jus_br_maturidade_em_tecnologia_da_informacao_no_judiciario_alcanca_media_historica_com_903_pontos": {
         "h": "sha1:bccad66b8f933f1f",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "cnj_cnj_jus_br_toda_menina_e_toda_mulher_tem_direito_a_uma_vida_livre_de_violencia_afirma_fachin_em_visita_a_aldei": {
         "h": "sha1:34fbd93cf39a08eb",
@@ -6096,6 +6169,24 @@
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
         "v": "2026-09-17"
+      },
+      "cnj_cnj_jus_br_cnj_capacita_46_mil_pessoas_em_identificacao_e_documentacao_nos_sistemas_penal_e_socioeducativo": {
+        "h": "sha1:86820ee492e2a03c",
+        "s": null,
+        "d": "2026-09-21T13:28:29-03:00",
+        "v": "2026-09-21"
+      },
+      "cnj_cnj_jus_br_agenda_justica_juvenil_adolescentes_do_sistema_socioeducativo_sao_capacitados_em_economia_criativa": {
+        "h": "sha1:c281f3a8e1da8b07",
+        "s": null,
+        "d": "2026-09-21T13:28:29-03:00",
+        "v": "2026-09-21"
+      },
+      "cnj_cnj_jus_br_justica_do_trabalho_passa_a_usar_remessa_digital_de_oficios_pelo_jus_br": {
+        "h": "sha1:b382e28e86de2eeb",
+        "s": null,
+        "d": "2026-09-21T13:28:29-03:00",
+        "v": "2026-09-21"
       }
     },
     "tse": {
@@ -6803,19 +6894,19 @@
         "h": "sha1:e00775e83b8168bb",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "planalto_gov_br_planalto_pt_br_acompanhe_o_planalto_noticias_visita_presidencial_ao_parque_tecnologico_de_macaiba_e_anu": {
         "h": "sha1:9c4674da3784164c",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "planalto_gov_br_planalto_pt_br_acompanhe_o_planalto_noticias_presidente_da_republica_participa_de_encontro_com_lideranc": {
         "h": "sha1:3b877d11a05c65d7",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "planalto_in_gov_br_web_dou_lei_n_15_504_de_15_de_setembro_de_2026_731892072": {
         "h": "sha1:91f731aeb48fde8a",
@@ -6871,103 +6962,103 @@
         "h": "sha1:a5431837fe866b1b",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_pesquisa_desenvolve_equipamento_para_r": {
         "h": "sha1:a566205e3efdbf67",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_ada_lovelace_como_a_mae_da_programacao": {
         "h": "sha1:83cd2ebe5e0056dd",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_banco_nacional_reune_solucoes_de_intel": {
         "h": "sha1:070aaea38e12819b",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_tecnologias_de_reuso_de_agua_garantem_": {
         "h": "sha1:cda23403fdf23620",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_programa_granioter_acelera_2026_recebe": {
         "h": "sha1:cfe7a38662d1053f",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_saiba_como_acompanhar_a_seca_no_brasil": {
         "h": "sha1:f536e284b2c2a751",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_brics_adota_consenso_de_chennai_com_pr": {
         "h": "sha1:7b5f94fb680c0b99",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_tecnologias_convergentes_e_habilitadoras": {
         "h": "sha1:999018efbf2bb88e",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_tecnologias_convergentes_e_habilitadoras_nanotecnologia": {
         "h": "sha1:f8774dad424f1808",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital": {
         "h": "sha1:1a8930e106f4bf3b",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital_estrategia_brasileira_de_inteligencia_artificial": {
         "h": "sha1:4d49d80ef22da6fc",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital_seguranca_cibernetica": {
         "h": "sha1:e346d0d4c0564cb8",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital_internet_das_coisas_2": {
         "h": "sha1:a3e16149ae38013e",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital_observatorio_de_tecnologias_digitais": {
         "h": "sha1:4380b47b680a0226",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital_plano_brasileiro_de_inteligencia_artificial": {
         "h": "sha1:4b8e05ae05bbf431",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital_internet_20das_20coisas": {
         "h": "sha1:88c772c47a0b8bba",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_semicondutores": {
         "h": "sha1:89e41f884c9b5c2d",
@@ -6979,7 +7070,7 @@
         "h": "sha1:2514d6bfd2cffa4f",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-18"
+        "v": "2026-09-21"
       },
       "mcti_in_gov_br_web_dou_despacho_de_11_de_setembro_de_2026_731457497": {
         "h": "sha1:468bb9d676437396",
