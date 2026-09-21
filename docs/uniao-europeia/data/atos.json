@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
+    "chave_primaria": "id estável derivado da URL oficial",
+    "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
+    "total": 0,
+    "por_orgao": {},
+    "indice_total": 0,
+    "execucao": "2026-09-18"
+  },
+  "atos": [],
+  "indice": {
+    "ai_office": {},
+    "eurlex": {},
+    "eu_council": {},
+    "eu_commission": {},
+    "eu_parliament": {},
+    "edpb": {},
+    "edps": {}
+  }
+}

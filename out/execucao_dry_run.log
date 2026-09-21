@@ -1,12 +1,12 @@
-Estado anterior: 135 proposições · última execução: 2026-09-17 · orçamento: 12 min · novas/execução: 5 · workers: 5 (HTTP ≤ 4)
+Estado anterior: 135 proposições · última execução: 2026-09-18 · orçamento: 12 min · novas/execução: 5 · workers: 5 (HTTP ≤ 4)
 Consultando fichas oficiais de 135 proposições monitoradas...
-  [25/135] verificadas · 29s decorridos · 690s restantes
-  [50/135] verificadas · 47s decorridos · 672s restantes
-  [75/135] verificadas · 67s decorridos · 652s restantes
-  [100/135] verificadas · 82s decorridos · 637s restantes
-  [125/135] verificadas · 99s decorridos · 620s restantes
-  [135/135] verificadas · 109s decorridos · 610s restantes
-Fase 1 concluída em 109.0s · 137 verificadas · 610s de orçamento restantes
+  [25/135] verificadas · 22s decorridos · 697s restantes
+  [50/135] verificadas · 39s decorridos · 680s restantes
+  [75/135] verificadas · 57s decorridos · 662s restantes
+  [100/135] verificadas · 71s decorridos · 648s restantes
+  [125/135] verificadas · 86s decorridos · 633s restantes
+  [135/135] verificadas · 95s decorridos · 624s restantes
+Fase 1 concluída em 95.7s · 137 verificadas · 624s de orçamento restantes
 Descobrindo novas proposições (Câmara)...
   0 candidatas a detalhar
 Descobrindo novas proposições (Senado)...
@@ -14,23 +14,24 @@ Descobrindo novas proposições (Senado)...
 Atualizando agenda de eventos...
 Coletando fontes multiórgão (ANPD, CNJ, TSE, DOU, Planalto, MCTI)...
   · fonte 'anpd' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=58 · consultados=294 · canais_ok=8 · canais_falhos=0
+    → status=ok · itens=0 · consultados=0 · canais_ok=8 · canais_falhos=0
   · fonte 'cnj' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=16 · consultados=130 · canais_ok=5 · canais_falhos=0
+    → status=ok · itens=14 · consultados=100 · canais_ok=5 · canais_falhos=0
   · fonte 'tse' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=1 · consultados=6 · canais_ok=2 · canais_falhos=3
+    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=5
   · fonte 'dou' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=102 · consultados=150 · canais_ok=1 · canais_falhos=0
+    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=1
   · fonte 'planalto' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=11 · consultados=68 · canais_ok=4 · canais_falhos=0
+    → status=parcial · itens=3 · consultados=52 · canais_ok=2 · canais_falhos=2
   · fonte 'mcti' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=34 · consultados=103 · canais_ok=3 · canais_falhos=1
-    anpd: 58 itens relevantes · 57 novidades · status ok
-    cnj: 16 itens relevantes · 16 novidades · status ok
-    tse: 1 itens relevantes · 1 novidades · status ok
-    dou: 102 itens relevantes · 102 novidades · status ok
-    planalto: 11 itens relevantes · 11 novidades · status ok
-    mcti: 34 itens relevantes · 34 novidades · status ok
+    → status=parcial · itens=18 · consultados=86 · canais_ok=2 · canais_falhos=2
+    anpd: 0 itens relevantes · 0 novidades · status ok
+    cnj: 14 itens relevantes · 1 novidades · status ok
+    tse: 0 itens relevantes · 0 novidades · status falha
+    dou: 0 itens relevantes · 0 novidades · status falha
+    planalto: 3 itens relevantes · 0 novidades · status parcial
+    mcti: 18 itens relevantes · 0 novidades · status parcial
 
-Mudanças detectadas: 0 · novas: 0 · atualizadas: 0 · verificadas: 137 · erros: 0 · status: concluida · duração: 256s
+Mudanças detectadas: 0 · novas: 0 · atualizadas: 0 · verificadas: 137 · erros: 0 · status: parcial · duração: 163s
 DRY-RUN: nada foi gravado.
+[aviso] execução parcial: o excedente entra na próxima execução.

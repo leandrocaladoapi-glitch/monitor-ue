@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metodologia — como monitoramos a regulação de IA da União Europeia</title>
+<meta name="description" content="Metodologia do Monitor UE de IA: fontes oficiais (Parlamento Europeu, EUR-Lex, Conselho, Comissão, AI Office, EDPB, EDPS), frequência diária, critérios de inclusão, AI Legislative Impact Score, detecção de mudanças e limitações.">
+<link rel="canonical" href="https://monitor.lcfconsulting.com.br/uniao-europeia/metodologia/">
+<meta property="og:site_name" content="Monitor UE de IA">
+<meta property="og:title" content="Metodologia — como monitoramos a regulação de IA da União Europeia">
+<meta property="og:description" content="Metodologia do Monitor UE de IA: fontes oficiais (Parlamento Europeu, EUR-Lex, Conselho, Comissão, AI Office, EDPB, EDPS), frequência diária, critérios de inclusão, AI Legislative Impact Score, detecção de mudanças e limitações.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://monitor.lcfconsulting.com.br/uniao-europeia/metodologia/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="https://monitor.lcfconsulting.com.br/uniao-europeia/assets/style.css">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Metodologia do Monitor UE de IA", "description": "Fontes, frequência, critérios de inclusão, AI Legislative Impact Score, detecção de mudanças, limitações e política de correção.", "url": "https://monitor.lcfconsulting.com.br/uniao-europeia/metodologia/", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Monitor UE de IA", "url": "https://monitor.lcfconsulting.com.br/uniao-europeia/"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://monitor.lcfconsulting.com.br/uniao-europeia/"}, {"@type": "ListItem", "position": 2, "name": "Metodologia"}]}]}</script>
+<link rel="alternate" type="text/plain" href="https://monitor.lcfconsulting.com.br/uniao-europeia/llms.txt" title="LLM discovery">
+<link rel="mcp-actions" href="https://monitor.lcfconsulting.com.br/uniao-europeia/mcp-actions.json">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "LCF Consulting", "url": "https://lcfconsulting.com.br/", "founder": {"@type": "Person", "name": "Leandro Calado", "url": "https://leandrocaladoferreira.com/"}}</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <div class="brand">
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/">Monitor UE de IA</a>
+      <small>Inteligência Artificial · União Europeia</small>
+    </div>
+    <nav class="links" aria-label="Principal"><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/">Início</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/procedimentos-legislativos/">Procedimentos</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/atualizacoes/">Atualizações</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/legislacao-e-atos/">Legislação e atos</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/timeline/">Timeline</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/atores-legislativos/">Atores legislativos</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/agenda/">Agenda</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/monitoramento/">Monitoramento</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/metodologia/" class="active">Metodologia</a><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/relatorio/">Relatório</a></nav>
+    <a class="fresh" href="https://monitor.lcfconsulting.com.br/uniao-europeia/monitoramento/" data-freshness="2026-09-18T10:00:00-03:00" data-estado="ok" title="Idade da última execução do monitoramento (recalculada agora)"><span class="dot"></span><span data-fresh-label>Última verificação: 18/09/2026 10:00</span></a>
+  </div>
+</header>
+<main>
+
+<div class="page-head"><div class="wrap">
+  <div class="crumbs"><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/">Início</a> › Metodologia</div>
+  <h1>Metodologia do monitoramento</h1>
+  <p class="sub">Como coletamos, validamos e publicamos a legislação e a regulação de IA da União Europeia — com fontes, critérios, frequência e limitações declaradas.</p>
+</div></div>
+<section class="block"><div class="wrap">
+  <h2 class="section-title">Fontes utilizadas</h2>
+  <ul class="plain facts">
+    <li>▸ <b>Parlamento Europeu</b> — Open Data Portal, API oficial v2 (procedimentos, eventos de procedimento, estágios, votações, assinatura e publicação no JO; JSON-LD) e <b>Legislative Train Schedule</b>. <code>/scripts/sources/eu_parliament.py</code></li>
+    <li>▸ <b>EUR-Lex / Jornal Oficial da UE</b> — busca oficial pública (metadados de atos: CELEX, ELI, JO, status) e RSS oficial de publicações. <code>/scripts/sources/eurlex.py</code></li>
+    <li>▸ <b>Conselho da UE</b> — registro público de documentos (últimos documentos, documentos legislativos preparatórios, com número de arquivo interinstitucional). <code>/scripts/sources/eu_council.py</code></li>
+    <li>▸ <b>Comissão Europeia</b> — Press Corner (RSS oficial) e portal <b>Have Your Say</b> (consultas públicas e calls for evidence, com período de feedback). <code>/scripts/sources/eu_commission.py</code></li>
+    <li>▸ <b>European AI Office</b> — portal digital-strategy da Comissão: implementação do AI Act, GPAI, códigos de prática e guidelines. <code>/scripts/sources/ai_office.py</code></li>
+    <li>▸ <b>EDPB</b> — RSS oficial (notícias, guidelines adotadas, decisões coordenadas sobre IA/dados). <code>/scripts/sources/edpb.py</code></li>
+    <li>▸ <b>EDPS</b> — press releases, notícias e publicações oficiais (opiniões e guidelines). <code>/scripts/sources/edps.py</code></li>
+    <li>▸ <b>Bloqueio/indisponibilidade:</b> quando uma fonte oficial não responde ou muda de layout, o canal é registrado como <b>falho</b> no painel — a falha fica explícita, nunca escondida, e nada é preenchido com dado estimado.</li>
+    <li>▸ <b>Imprensa</b> — apenas comunicados oficiais das próprias instituições (Press Corner do Parlamento/Comissão/Conselho); nunca imprensa de terceiros como fonte primária.</li>
+  </ul>
+  <h2 class="section-title" style="margin-top:26px">Frequência de atualização</h2>
+  <p>Coleta automática <b>diária</b> (GitHub Action, horário de Bruxelas) com rebuild e validação do site. Última execução: <b>18/09/2026</b> às <b>10:00 (BRT)</b> — 2 fichas de procedimento verificadas, 0 mudanças detectadas. Execuções sem mudança relevante registram apenas a verificação.</p>
+  <h2 class="section-title" style="margin-top:26px">Critérios de inclusão</h2>
+  <ul class="plain facts">
+    <li>▸ Procedimentos legislativos e não legislativos das instituições da UE sobre IA e temas correlatos: AI Act e seus atos delegados/de execução, IA generativa e modelos de uso geral (GPAI), deepfakes e conteúdo sintético, decisão automatizada, biometria e reconhecimento facial, plataformas digitais, dados pessoais, cibersegurança, computação/semicondutores e impactos setoriais (trabalho, direitos de autor, educação, saúde, defesa, segurança, eleições).</li>
+    <li>▸ Legislação da UE diretamente relacionada a IA com efeito sobre sistemas de IA — laws.json contém apenas atos com relação direta (AI Act e correlatos), não o acervo digital completo.</li>
+    <li>▸ Descobertas automáticas entram com flag <b>“aguardando curadoria”</b> e score preliminar conservador (nunca CRÍTICO automático). Falsos positivos são removidos na revisão.</li>
+  </ul>
+  <h2 class="section-title" style="margin-top:26px">AI Legislative Impact Score (0–100)</h2>
+  <p>O score mede <b>importância regulatória para o monitoramento</b>, não mérito. Rúbrica pública e reproduzível (implementada em <code>scripts/scoring.py</code>):</p>
+  <div style="overflow-x:auto;margin-top:12px"><table class="tbl"><thead><tr><th>Critério</th><th>Pontos</th><th>Como pontuar (resumo)</th></tr></thead><tbody><tr><td><b>Abrangência regulatória</b></td><td>0–20</td><td>Quadro horizontal da UE/AI Act (20) · pilar setorial amplo (12) · tema pontual (6) · simbólico (0–2)</td></tr><tr><td><b>Estágio do procedimento</b></td><td>0–15</td><td>Publicado no JO/aplicável (15) · assinado (13) · adotado pelo plenário (12) · acordo provisório (11) · trílogos (10) · posição 1ª leitura (9) · relatório em comissão (8) · em comissão (6) · encaminhamento (4) · sem confirmação (2)</td></tr><tr><td><b>Próximas datas aplicáveis</b></td><td>0–10</td><td>Data de aplicação/obrigação confirmada (10) · votação em pauta (10) · trílogos ativos (6) · agenda não confirmada (2)</td></tr><tr><td><b>Regime do procedimento</b></td><td>0–10</td><td>Ato delegado/de execução (8) · legislativo ordinário COD (5) · especial CNS/CONS (5) · não legislativo NLE/INI (3) · resolução (2)</td></tr><tr><td><b>Densidade do dossiê</b></td><td>0–5</td><td>5+ documentos oficiais (5) · 3–4 (3) · 1–2 (1) · nenhum (0)</td></tr><tr><td><b>Impacto econômico</b></td><td>0–15</td><td>Mercado único/sanções milionárias (15) · custos p/ provedores e utilizadores (9) · moderado (5) · baixo (0–2)</td></tr><tr><td><b>Impacto sobre direitos</b></td><td>0–10</td><td>Direitos fundamentais/dados/práticas proibidas (10) · trabalho/consumidor/saúde (6) · indireto (3) · nenhum (0)</td></tr><tr><td><b>Alcance setorial</b></td><td>0–5</td><td>Multissetorial (5) · 2–3 setores (3) · 1 setor (1)</td></tr><tr><td><b>Relevância institucional</b></td><td>0–10</td><td>Cria/governa autoridade da UE (10) · altera competências relevantes (6) · pontual (3) · nenhum (0)</td></tr></tbody></table></div>
+  <p style="margin-top:12px">Faixas: <b>90–100 CRÍTICO · 75–89 MUITO RELEVANTE · 60–74 RELEVANTE · 40–59 MONITORAR · 0–39 BAIXA PRIORIDADE</b>. O score mede apenas <b>impacto regulatório</b> — nunca aprovação, probabilidade ou posição política. Scores da curadoria de referência são preservados; scores nunca são inflados para gerar manchetes.</p>
+  <h2 class="section-title" style="margin-top:26px">Como mudanças são detectadas</h2>
+  <p>Antes de sobrescrever qualquer registro, o coletor compara o <b>estado anterior</b> (dataset versionado) com o <b>estado coletado</b> nas fontes oficiais. Cada alteração relevante gera um registro em <code>updates.json</code> com procedimento, campo alterado, valor anterior e novo, data do evento, data da detecção, fonte, URL oficial e timestamp da execução. Tipos monitorados: eventos de procedimento (encaminhamento, relatório, parecer, debate, emendas, votação, negociações interinstitucionais, acordo provisório), situação, relatoria, assinatura, publicação no JO, novos documentos oficiais e novos procedimentos. A identidade de cada dossiê é o <b>número de procedimento interinstitucional</b> (ex.: 2021/0106(COD)), compartilhado entre Parlamento, Conselho e Comissão — nunca o título.</p>
+  <h2 class="section-title" style="margin-top:26px">Limitações</h2>
+  <ul class="plain facts">
+    <li>▸ Publicações no JO e eventos de procedimento podem levar horas ou dias para se refletir na API oficial; a confirmação final é sempre a ficha oficial e o texto publicado no EUR-Lex.</li>
+    <li>▸ A API v2 do Parlamento não expõe documentos de reuniões (agenda de plenos/comissões) em formato público estável — a agenda futura do monitor usa as consultas oficiais do portal Have Your Say (limitação declarada).</li>
+    <li>▸ O <b>EU Law Tracker</b> (law-tracker.europa.eu) exige autenticação para uso interativo e não possui API pública estável documentada; por isso não é usado como conector automático — o estado dos dossiês vem da API do Parlamento e do registro público do Conselho.</li>
+    <li>▸ Itens de fontes regulatórias (AI Office, EDPB, EDPS, Comissão) são detectados automaticamente e entram marcados como <b>aguardando curadoria</b> quando o sinal temático é duvidoso; a confirmação jurídica final é sempre o texto oficial.</li>
+    <li>▸ O monitoramento multiórgão é conservador por desenho: item sem sinal temático claro é descartado, item duvidoso entra como <b>revisar</b>, e órgão que não respondeu aparece como <b>falha</b> no painel — nunca como monitorado.</li>
+    <li>▸ Registros automáticos (“aguardando curadoria”) podem conter título preliminar e categorias incompletas.</li>
+  </ul>
+  <h2 class="section-title" style="margin-top:26px">Política de correção</h2>
+  <p>Erros são corrigidos no dataset com registro da correção em <code>updates.json</code> (nunca sobrescrita silenciosa). O histórico versionado no Git permite auditar qualquer alteração. <b>Dados legislativos devem sempre ser conferidos nas fontes oficiais.</b></p>
+  <h2 class="section-title" style="margin-top:26px">Automação, orçamento de tempo e auditoria</h2>
+  <p>A coleta roda <b>diariamente</b> (agendamentos da GitHub Action em horário compatível com Bruxelas; sujeitos a atraso do GitHub) com <b>orçamento de tempo</b> declarado:
+  ao se aproximar do teto, o coletor para de iniciar novas consultas, grava o que já verificou e
+  registra a execução como <b>parcial</b> — a cobertura de cada execução fica visível no
+  <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/monitoramento/">painel de monitoramento</a>. A verificação segue ordem de
+  prioridade (maior AI Legislative Impact Score primeiro; em empate, a matéria há mais tempo sem
+  verificação), de modo que o excedente de uma execução é sempre o de menor prioridade e entra
+  primeiro na seguinte. Fichas novas descobertas nas APIs entram com teto por execução, priorizando
+  relevância temática, tipo de procedimento e recência.</p>
+  <p style="margin-top:10px">Cada execução registra no <code>updates.json</code>: início e fim,
+  duração, orçamento, cobertura, proposições pendentes, mudanças detectadas, novas proposições,
+  chamadas HTTP (total, cache, falhas, tempo por endpoint e por fase), erros e a fotografia do banco
+  ao final. O painel <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/monitoramento/">/monitoramento/</a> publica essas métricas
+  a cada rebuild e recalcula no navegador a idade da última execução: <b>se o cron parar, o site
+  avisa</b>. As mesmas métricas ficam em <code>data/monitoramento.json</code> para uso externo.</p>
+
+  <h2 class="section-title" style="margin-top:26px">Monitoramento multiórgão: status por fonte</h2>
+  <p>Cada execução consulta <b>sete fontes regulatórias obrigatórias</b> — European AI Office, EUR-Lex,
+  Conselho da UE, Comissão Europeia, Parlamento Europeu, EDPB e EDPS — além do motor legislativo
+  (Parlamento — Open Data Portal v2; EUR-Lex) — e grava, em <code>updates.json</code> (campo <code>fontes_monitoradas</code>),
+  para cada órgão: <b>timestamp da última tentativa</b>, <b>timestamp da última execução
+  bem-sucedida</b>, <b>status</b>, <b>itens consultados</b>, <b>novidades</b>, <b>erros</b> e os
+  <b>endpoints oficiais</b> usados. O campo <code>status_global</code> resume o resultado:</p>
+  <ul class="plain facts">
+    <li>▸ <b>OK</b> — todos os órgãos obrigatórios consultados com sucesso.</li>
+    <li>▸ <b>PARCIAL</b> — pelo menos uma fonte falhou; o dataset preserva o último estado verificado e a falha fica registrada e visível no <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/monitoramento/">painel</a>.</li>
+    <li>▸ <b>FALHA</b> — execução incapaz de produzir dados confiáveis; nesse caso o workflow <b>não publica</b> (nenhum commit é feito com dados não confiáveis).</li>
+  </ul>
+  <p style="margin-top:10px">Cada fonte roda em um subprocesso com timeout próprio e retentativas: uma fonte lenta ou bloqueada
+  não impede as outras, os resultados já coletados são persistidos e o erro é registrado no painel. Os itens desses
+  órgãos ficam em <code>data/legislation/atos.json</code>, com URL oficial, fonte, data do evento, data de detecção
+  e a execução responsável; alterações de texto ou de status de um item já conhecido geram novo registro em
+  <code>updates.json</code> (histórico por item, sem sobrescrita silenciosa). O arquivo histórico completo de
+  mudanças é rotacionado para <code>data/legislation/updates_arquivo.json</code> em vez de ser descartado.</p>
+  <h2 class="section-title" style="margin-top:26px">Cobertura atual</h2>
+  <p>2 procedimentos monitorados · 2 atos mapeados · 0 mudanças registradas · última execução em 18/09/2026.</p>
+  <p style="margin-top:6px">Status global da última execução: <b>—</b> · fontes monitoradas: 0.</p>
+</div></section>
+</main>
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <h4>Monitor UE de IA</h4>
+      <p>Monitoramento público, documentado e auditável da legislação e da regulação de IA da União Europeia. Dados estruturados, fontes oficiais e histórico de alterações versionados no repositório.</p>
+      <p class="author-line">Projeto desenvolvido por Leandro Calado / LCF Consulting — <a href="https://leandrocaladoferreira.com/">Leandro Calado</a> · <a href="https://lcfconsulting.com.br/">LCF Consulting</a></p>
+      <p class="disclaimer">Dados legislativos devem sempre ser conferidos nas fontes oficiais.</p>
+    </div>
+    <div>
+      <h4>Dados</h4>
+      <p><a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/propositions.json">propositions.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/laws.json">laws.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/timeline.json">timeline.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/updates.json">updates.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/events.json">events.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/parliamentarians.json">parliamentarians.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/categories.json">categories.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/monitoramento.json">monitoramento.json</a><br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/data/atos.json">atos.json</a>
+      <span style="color:var(--muted)">(métricas do cron)</span></p>
+    </div>
+    <div>
+      <h4>Metodologia</h4>
+      <p>Última execução do monitoramento: <b>18/09/2026</b>.<br>
+      Fontes primárias: Parlamento Europeu, Conselho da UE, Comissão Europeia,<br>
+      EUR-Lex/JO, European AI Office, EDPB e EDPS.<br>
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/metodologia/">Metodologia completa</a> ·
+      <a href="https://monitor.lcfconsulting.com.br/uniao-europeia/relatorio/">Relatório da execução</a></p>
+    </div>
+    <div>
+      <h4>Aviso</h4>
+      <p>Conteúdo informativo baseado em fontes oficiais. Não substitui os textos legais publicados no Jornal Oficial da União Europeia nem as fichas oficiais dos procedimentos.</p>
+      <p class="cta-mini">Precisa acompanhar impactos regulatórios de IA para sua empresa? <a href="https://lcfconsulting.com.br/">Fale com a LCF Consulting →</a></p>
+    </div>
+  </div>
+</footer>
+<script src="https://monitor.lcfconsulting.com.br/uniao-europeia/assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+name: Atualizar monitor UE (União Europeia)
+
+# Coleta automática das fontes oficiais da UE (API v2 do Parlamento, EUR-Lex,
+# registro do Conselho, Comissão/HYS, AI Office, EDPB, EDPS) para o dataset
+# data/legislation-eu, rebuild da seção docs/uniao-europeia/ e validação.
+# Camada ADICIONAL ao monitor brasileiro (update-legislation.yml), que segue
+# intocado na raiz do site. Crontabs em horário de Bruxelas (CEST/CET ~ UTC+2/+1).
+on:
+  schedule:
+    # Diário às 05:17 UTC (07:17 em Bruxelas no verão europeu).
+    - cron: "17 5 * * *"
+    # Repetições a cada 4h: 08:43, 12:43 e 16:43 UTC.
+    - cron: "43 8,12,16 * * *"
+  workflow_dispatch:
+    inputs:
+      orcamento_minutos:
+        description: "Teto de duração da coleta UE, em minutos (padrão: 25)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-ue-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  PYTHONUNBUFFERED: "1"
+  MONITOR_BUDGET_SEGUNDOS: "1500"   # 25 min
+  MONITOR_MAX_NOVAS: "25"           # fichas novas detalhadas por execução
+
+jobs:
+  update-ue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Coletar fontes oficiais da UE
+        id: coleta
+        continue-on-error: true
+        timeout-minutes: 40
+        env:
+          ORCAMENTO_MINUTOS: ${{ inputs.orcamento_minutos }}
+        run: |
+          ARGS=()
+          if [ -n "${ORCAMENTO_MINUTOS}" ]; then
+            ARGS=(--budget-min "${ORCAMENTO_MINUTOS}")
+          fi
+          python3 scripts/update_legislation_eu.py "${ARGS[@]}"
+
+      - name: Rebuild da seção UE
+        id: build
+        if: always()
+        run: python3 scripts/build_site_eu.py
+
+      - name: Validar dataset e páginas da seção UE
+        id: validate
+        if: always()
+        run: python3 scripts/validate_site_eu.py
+
+      - name: Resumo da execução (UE)
+        if: always()
+        run: |
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, pathlib
+          p = pathlib.Path("data/legislation-eu/updates.json")
+          if not p.exists():
+              print("Sem updates.json (UE)"); raise SystemExit(0)
+          ups = json.loads(p.read_text(encoding="utf-8"))
+          ex = (ups.get("execucoes") or [{}])[0]
+          http = ex.get("http") or {}
+          linhas = [
+              "## Monitor UE — execução do dia",
+              "",
+              f"- **Status:** `{ex.get('status', '—')}`",
+              f"- **Início/fim:** {ex.get('data_hora', '—')} → {ex.get('fim', '—')}",
+              f"- **Procedimentos:** {ex.get('procedimentos_distintos_verificados', '—')} verificados de "
+              f"{ex.get('procedimentos_monitoradas', ex.get('procedimentos_monitorados', '—'))} monitorados "
+              f"({ex.get('cobertura_pct', '—')}% de cobertura; "
+              f"{ex.get('procedimentos_pendentes', 0)} pendentes)",
+              f"- **Mudanças:** {ex.get('mudancas_detectadas', '—')} · "
+              f"**novos procedimentos:** {ex.get('novos_procedimentos', ex.get('novas_proposicoes', '—'))} · "
+              f"**eventos:** {ex.get('eventos_adicionados', '—')}",
+              f"- **HTTP:** {http.get('chamadas', '—')} chamadas · "
+              f"{http.get('cache', 0)} do cache · {http.get('falhas', 0)} falhas · "
+              f"{http.get('tempo_total', '—')}s em rede",
+              f"- **Erros:** {len(ex.get('erros') or [])}",
+              f"- **Status global (multiórgão):** `{ex.get('status_global', '—')}`",
+          ]
+          fm = ex.get("fontes_monitoradas") or {}
+          if fm:
+              linhas += ["", "| fonte | status | itens consultados | novidades | erros |",
+                         "|---|---|---|---|---|"]
+              for orgao, f in fm.items():
+                  linhas.append(f"| {orgao} | {f.get('status', '—')} | "
+                                f"{f.get('itens_consultados', '—')} | "
+                                f"{f.get('novidades', '—')} | {f.get('erros', 0)} |")
+          falhas = ex.get("fontes_falha") or []
+          if falhas:
+              linhas.append("")
+              linhas.append("**Fontes com falha nesta execução:** "
+                            + ", ".join(falhas))
+          print("\n".join(linhas))
+          PY
+
+      - name: Detectar mudanças reais
+        id: diff
+        if: always()
+        run: |
+          if git status --porcelain | grep .; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit e push (somente se houver alteração)
+        if: always() && steps.diff.outputs.changed == 'true' && steps.build.outcome == 'success' && steps.validate.outcome == 'success'
+        run: |
+          git config user.name "monitor-ia-ue-bot"
+          git config user.email "monitor-ia-ue-bot@users.noreply.github.com"
+          git add -A data/legislation-eu docs/uniao-europeia
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração real. Nada a commitar."
+          else
+            DATA=$(date -u +%Y-%m-%d)
+            STATUS=$(python3 -c "import json;print((json.load(open('data/legislation-eu/updates.json')).get('execucoes') or [{}])[0].get('status','?'))")
+            git commit -m "chore: atualização automática do monitor UE ($DATA) [$STATUS]" -m "Execução do coletor UE (update_legislation_eu.py) + rebuild (build_site_eu.py). Mudanças e métricas em data/legislation-eu/updates.json — painel em /uniao-europeia/monitoramento/."
+            git push
+          fi
+
+      - name: Conferir saúde da coleta UE publicada
+        if: always() && steps.build.outcome == 'success' && steps.validate.outcome == 'success'
+        run: python3 scripts/check_collection.py data/legislation-eu/updates.json
+
+      - name: Preservar dados coletados em caso de falha
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coleta-ue-${{ github.run_id }}-${{ github.run_attempt }}
+          path: data/legislation-eu/*.json
+          retention-days: 14
+
+      - name: Sinalizar coleta incompleta (após tentativa de publicação)
+        if: steps.coleta.outcome == 'failure'
+        run: |
+          echo "::error::A coleta UE não terminou com sucesso. Consulte as etapas de build e commit para confirmar a publicação — verifique o painel /uniao-europeia/monitoramento/ e os logs da etapa 'Coletar fontes oficiais da UE'."
+          exit 1

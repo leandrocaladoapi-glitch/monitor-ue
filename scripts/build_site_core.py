@@ -330,6 +330,8 @@ def page(title, desc, path, body, extra_head="", og_type="website", jsonld=None)
     for u, l in nav_items:
         cls = ' class="active"' if path == u else ""
         nav_parts.append(f'<a href="{SITE_URL}/{u}"{cls}>{l}</a>')
+    # Seção adicional: monitor da União Europeia (mesmo domínio, pasta própria)
+    nav_parts.append(f'<a href="{SITE_URL}/uniao-europeia/">União Europeia</a>')
     nav = "".join(nav_parts)
     ld = ""
     if jsonld:
@@ -1967,8 +1969,19 @@ def main():
     build_slugs(props)
 
     if os.path.isdir(OUT):
-        shutil.rmtree(OUT)
-    os.makedirs(OUT)
+        # Limpa tudo, EXCETO a seção UE (docs/uniao-europeia/) — produto do
+        # build_site_eu.py. Os dois monitores convivem no mesmo docs/: este
+        # build é responsável apenas pela raiz (monitor brasileiro).
+        for entry in os.listdir(OUT):
+            if entry == "uniao-europeia":
+                continue
+            caminho = os.path.join(OUT, entry)
+            if os.path.isdir(caminho):
+                shutil.rmtree(caminho)
+            else:
+                os.remove(caminho)
+    else:
+        os.makedirs(OUT)
     shutil.copytree(os.path.join(BASE, "data", "legislation"), os.path.join(OUT, "data"))
     shutil.copytree(ASSETS, os.path.join(OUT, "assets"))
 

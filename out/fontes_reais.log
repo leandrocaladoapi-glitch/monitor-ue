@@ -1,48 +1,25 @@
   · fonte 'anpd' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=58 · consultados=294 · canais_ok=8 · canais_falhos=0
+    → status=ok · itens=0 · consultados=0 · canais_ok=8 · canais_falhos=0
   · fonte 'cnj' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=16 · consultados=130 · canais_ok=5 · canais_falhos=0
+    → status=ok · itens=14 · consultados=100 · canais_ok=5 · canais_falhos=0
   · fonte 'tse' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=1 · consultados=6 · canais_ok=2 · canais_falhos=3
+    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=5
   · fonte 'dou' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=102 · consultados=150 · canais_ok=1 · canais_falhos=0
+    → status=falha · itens=0 · consultados=0 · canais_ok=0 · canais_falhos=1
   · fonte 'planalto' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=11 · consultados=68 · canais_ok=4 · canais_falhos=0
+    → status=parcial · itens=3 · consultados=52 · canais_ok=2 · canais_falhos=2
   · fonte 'mcti' (timeout 150s, subprocesso isolado)
-    → status=ok · itens=34 · consultados=103 · canais_ok=3 · canais_falhos=1
+    → status=parcial · itens=18 · consultados=86 · canais_ok=2 · canais_falhos=2
 [anpd] ANPD — Autoridade Nacional de Proteção de Dados
-  status: ok · duração 11.2s
-  itens consultados: 294 · relevantes: 58 · descartados (tema): 154
+  status: ok · duração 10.0s
+  itens consultados: 0 · relevantes: 0 · descartados (tema): 0
   canais ok: notícias recentes, notícias por tema, regulação e normas, consultas públicas, tomada de subsídios, atos normativos (arquivos), fiscalização (pasta oficial), agenda regulatória (pasta oficial)
-    - [2026-09-16] (noticia, forte) ECA Digital completa um ano e é marco na proteção de crianças e adolescentes na internet
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/eca-digital-completa-um-ano-e-e-marco-na-protecao-de-criancas-e-adolescentes-na-internet
-    - [2026-09-16] (noticia, forte) Projeto Sandbox Regulatório de IA da ANPD é finalista de prêmio internacional
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/projeto-sandbox-regulatorio-de-ia-da-anpd-e-finalista-de-premio-internacional
-    - [2026-09-01] (noticia, forte) ANPD abre tomadas de subsídios sobre próxima agenda regulatória e avaliação do resultado regulatório
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-abre-ts-agenda-regulatoria-e-avaliacao-de-resultado-regulatorio
-    - [2026-08-25] (noticia, forte) ANPD multa TikTok em R$ 153,7 milhões por falhas na proteção de dados de crianças e adolescentes
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-multa-tiktok-em-r-153-7-milhoes-por-falhas-na-protecao-de-dados-de-criancas-e-adolescentes
-    - [2026-08-21] (noticia, forte) ANPD avalia como plataformas digitais atuam para prevenir conteúdos criminosos e proteger crianças e mulheres 
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-avalia-como-plataformas-digitais-atuam-para-prevenir-conteudos-criminosos-e-proteger-criancas-e-mulheres-na-internet
-    - [2026-08-21] (noticia, forte) ANPD e PNUD divulgam resultado da seleção de consultores que vão elaborar estudos sobre IA e proteção de dados
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-resultado-da-selecao-para-consultores-que-vao-elaborar-relatorios-em-protecao-de-dados
-    - [2026-08-19] (noticia, forte) ANPD publica metodologia de testagem do Sandbox Regulatório em IA e Proteção de Dados
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-metodologia-de-testagem-do-sandbox-regulatorio-em-inteligencia-artificial-e-protecao-de-dados
-    - [2026-08-18] (noticia, revisar) ANPD publica relatório de acompanhamento e execução da agenda regulatória do 1º semestre deste ano
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-relatorio-de-acompanhamento-e-execucao-da-agenda-regulatoria-no-1o-semestre-deste-ano
-    - [2026-08-14] (noticia, forte) ANPD realiza consulta multissetorial sobre Sandbox Regulatório de Inteligência Artificial
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-realiza-consulta-multissetorial-sobre-sandbox-regulatorio-de-inteligencia-artificial
-    - [2026-08-12] (noticia, forte) ANPD realiza 3º Encontro de Encarregados na próxima quarta
-      https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-realiza-encontro-anpd-de-encarregados-na-proxima-quarta
-    ... (+48 itens)
 [cnj] CNJ — Conselho Nacional de Justiça
   status: ok · duração 5.1s
-  itens consultados: 130 · relevantes: 16 · descartados (tema): 112
+  itens consultados: 100 · relevantes: 14 · descartados (tema): 86
   canais ok: atos normativos recentes, atos normativos recentes (página 2), atos normativos recentes (página 3), notícias oficiais, notícias oficiais (página 2)
-    - [2026-09-08] (ato_normativo, revisar) Portaria CNJ nº 420
-      https://atos.cnj.jus.br/atos/detalhar/7034
-    - [2026-08-26] (ato_normativo, revisar) Portaria CNJ nº 404
-      https://atos.cnj.jus.br/atos/detalhar/7016
+    - [2026-09-18] (noticia, revisar) TST e TRTs passam a usar remessa digital de ofícios pelo Jus.br
+      https://www.cnj.jus.br/justica-do-trabalho-passa-a-usar-remessa-digital-de-oficios-pelo-jus-br/
     - [2026-09-17] (noticia, revisar) CNJ vai ao território Kalunga, em Goiás, para ouvir comunidade e ampliar acesso à Justiça
       https://www.cnj.jus.br/cnj-vai-ao-territorio-kalunga-em-goias-para-ouvir-comunidade-e-ampliar-acesso-a-justica/
     - [2026-09-14] (noticia, forte) Telegram detalha ações contra desinformação em plano para Eleições de 2026
@@ -59,91 +36,59 @@
       https://www.cnj.jus.br/oficinas-buscam-solucoes-inovadoras-para-tratamento-de-processos-estruturais/
     - [2026-09-04] (noticia, revisar) Comunidade quilombola do Amapá ganha ponto de inclusão digital
       https://www.cnj.jus.br/comunidade-quilombola-do-amapa-ganha-ponto-de-inclusao-digital/
-    ... (+6 itens)
+    - [2026-09-04] (noticia, forte) Webinário apresenta ferramentas de IA para o Judiciário
+      https://www.cnj.jus.br/webinario-apresenta-ferramentas-de-ia-para-o-judiciario/
+    ... (+4 itens)
 [tse] TSE — Tribunal Superior Eleitoral
-  status: ok · duração 20.1s
-  itens consultados: 6 · relevantes: 1 · descartados (tema): 5
-  canais ok: atos do TSE por tema (DOU), resoluções do TSE (DOU, órgão/subórgão)
-  canais com falha: atos normativos (portal oficial), notícias oficiais (portal oficial), atos e notícias por tema (portal oficial)
+  status: falha · duração 3.6s
+  itens consultados: 0 · relevantes: 0 · descartados (tema): 0
+  canais ok: —
+  canais com falha: atos normativos (portal oficial), notícias oficiais (portal oficial), atos e notícias por tema (portal oficial), atos do TSE por tema (DOU), resoluções do TSE (DOU, órgão/subórgão)
   erro: atos normativos (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Flegislacao; notícias oficiais (portal oficial): JSON indisponível: https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&portal_type=Noticia; atos e notícias por tema (portal oficial): JSON indisponível: https://www
-    - [2026-07-14] (ato_normativo, forte) PORTARIA Nº 424, DE 8 DE JULHO DE 2026
-      https://www.in.gov.br/web/dou/-/portaria-n-424-de-8-de-julho-de-2026-718977388
 [dou] DOU — Diário Oficial da União (Imprensa Nacional)
-  status: ok · duração 13.9s
-  itens consultados: 150 · relevantes: 102 · descartados (tema): 34
-  canais ok: busca por tema (7 dias)
-    - [2026-09-17] (publicacao, revisar) PORTARIAS PGJ DE 10 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/portarias-pgj-de-10-de-setembro-de-2026-732363510
-    - [2026-09-17] (publicacao, forte) PORTARIA MRE Nº 689, DE 16 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/portaria-mre-n-689-de-16-de-setembro-de-2026-732326298
-    - [2026-09-17] (publicacao, revisar) PORTARIA SEFIC/MINC Nº 616, DE 16 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/portaria-sefic/minc-n-616-de-16-de-setembro-de-2026-732307581
-    - [2026-09-17] (publicacao, revisar) extrato de acordo
-      https://www.in.gov.br/web/dou/-/extrato-de-acordo-732271066
-    - [2026-09-17] (publicacao, revisar) AVISO DE LICITAÇÃO
-      https://www.in.gov.br/web/dou/-/aviso-de-licitacao-732207899
-    - [2026-09-16] (publicacao, revisar) PORTARIA CJF nº 600, DE 10 DE setembro DE 2026
-      https://www.in.gov.br/web/dou/-/portaria-cjf-n-600-de-10-de-setembro-de-2026-732127850
-    - [2026-09-16] (publicacao, forte) DESPACHO
-      https://www.in.gov.br/web/dou/-/despacho-732103379
-    - [2026-09-16] (publicacao, revisar) EXTRATO DE ACORDO DE COOPERAÇÃO TÉCNICA
-      https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-cooperacao-tecnica-732073254
-    - [2026-09-16] (publicacao, forte) PORTARIA Nº 5.827/IFSP, DE 15 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/portaria-n-5.827/ifsp-de-15-de-setembro-de-2026-732066376
-    - [2026-09-16] (publicacao, forte) PORTARIA Nº 5.825/IFSP, DE 15 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/portaria-n-5.825/ifsp-de-15-de-setembro-de-2026-732046805
-    ... (+92 itens)
+  status: falha · duração 1.4s
+  itens consultados: 0 · relevantes: 0 · descartados (tema): 0
+  canais ok: —
+  canais com falha: busca por tema (7 dias)
+  erro: busca por tema (7 dias): listagem sem itens reconhecíveis (228655 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=13-09-2026&publishTo=20-09-2026; nenhum canal respondeu — busca por tema (7 dias): listagem sem itens reconhecíveis (228655 bytes): https://www.in.gov.br/consulta/-/
 [planalto] Planalto — Presidência da República
-  status: ok · duração 43.9s
-  itens consultados: 68 · relevantes: 11 · descartados (tema): 24
-  canais ok: atos do Poder Legislativo (leis, vetos), atos da Presidência (decretos, MPs), notícias do Planalto (RSS oficial), notícias do Planalto (página oficial)
-    - [2026-09-15] (lei, forte) LEI Nº 15.504, DE 15 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.504-de-15-de-setembro-de-2026-731892072
-    - [2026-08-07] (lei, forte) LEI Nº 15.487, DE 6 DE AGOSTO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.487-de-6-de-agosto-de-2026-724081324
-    - [2026-09-14] (lei, forte) LEI Nº 15.503, DE 14 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.503-de-14-de-setembro-de-2026-731640068
-    - [2026-08-06] (lei, forte) LEI Nº 15.485, DE 5 DE AGOSTO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.485-de-5-de-agosto-de-2026-723789887
-    - [2026-07-30] (lei, forte) LEI Nº 15.479, DE 29 DE JULHO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.479-de-29-de-julho-de-2026-722121785
-    - [2026-07-24] (lei, forte) LEI Nº 15.474, DE 23 DE JULHO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.474-de-23-de-julho-de-2026-722990031
-    - [2026-09-10] (lei, forte) LEI Nº 15.502, DE 10 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/lei-n-15.502-de-10-de-setembro-de-2026-730982911
-    - [2026-08-06] (decreto, forte) DESPACHO DO PRESIDENTE DA REPÚBLICA
-      https://www.in.gov.br/web/dou/-/despacho-do-presidente-da-republica-723734376
+  status: parcial · duração 4.9s
+  itens consultados: 52 · relevantes: 3 · descartados (tema): 23
+  canais ok: notícias do Planalto (RSS oficial), notícias do Planalto (página oficial)
+  canais com falha: atos do Poder Legislativo (leis, vetos), atos da Presidência (decretos, MPs)
+  erro: atos do Poder Legislativo (leis, vetos): listagem sem itens reconhecíveis (177735 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publishTo=20-09-2026&orgPrin=Atos%20do%20Poder%20Legislativo; atos da Presidência (decretos, MPs): listagem sem itens reconhecíveis (19342
     - [2026-07-11] (noticia, revisar) Visita presidencial ao Instituto Mauá de Tecnologia, em São Caetano do Sul (SP)
       https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/visita-presidencial-ao-instituto-maua-de-tecnologia-em-sao-caetano-do-sul-sp
     - [2026-08-18] (noticia, forte) Visita presidencial ao Parque Tecnológico de Macaíba e anúncios relativos aos supercomputadores e soberania di
       https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/visita-presidencial-ao-parque-tecnologico-de-macaiba-e-anuncios-relativos-aos-supercomputadores-e-soberania-digital
-    ... (+1 itens)
+    - [2026-07-23] (noticia, revisar) Presidente da República participa de encontro com lideranças do sistema de ciência e tecnologia no Brasil
+      https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/presidente-da-republica-participa-de-encontro-com-liderancas-do-sistema-de-ciencia-e-tecnologia-no-brasil
 [mcti] MCTI — Ministério da Ciência, Tecnologia e Inovação
-  status: ok · duração 20.6s
-  itens consultados: 103 · relevantes: 34 · descartados (tema): 33
-  canais ok: atos do MCTI por tema (DOU), notícias institucionais, planos, programas e políticas
-  canais com falha: portarias publicadas
-  erro: portarias publicadas: listagem sem itens reconhecíveis (157956 bytes): https://www.gov.br/mcti/pt-br/acesso-a-informacao/legislacao/portarias
-    - [2026-09-14] (portaria, forte) DESPACHO DE 11 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/despacho-de-11-de-setembro-de-2026-731457497
-    - [2026-09-14] (portaria, forte) DESPACHO DE 10 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/despacho-de-10-de-setembro-de-2026-731410875
-    - [2026-09-09] (portaria, revisar) DESPACHO DE 4 DE SETEMBRO DE 2026
-      https://www.in.gov.br/web/dou/-/despacho-de-4-de-setembro-de-2026-730752779
-    - [2026-09-08] (portaria, revisar) EXTRATO DE ACORDO DE COOPERAÇÃO TÉCNICA
-      https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-cooperacao-tecnica-730456843
-    - [2026-09-08] (portaria, forte) EXTRATO DE TERMO ADITIVO
-      https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-730450194
-    - [2026-09-03] (portaria, forte) AVISO DE CHAMADA PÚBLICA MCTI/CNPQ/ANR Nº 32/2026
-      https://www.in.gov.br/web/dou/-/aviso-de-chamada-publica-mcti/cnpq/anr-n-32/2026-729875159
-    - [2026-09-02] (portaria, revisar) DESPACHO DE 31 DE AGOSTO DE 2026
-      https://www.in.gov.br/web/dou/-/despacho-de-31-de-agosto-de-2026-729462005
-    - [2026-08-26] (portaria, forte) RESULTADO DE JULGAMENTO
-      https://www.in.gov.br/web/dou/-/resultado-de-julgamento-727821785
-    - [2026-08-20] (portaria, forte) DESPACHO DE 18 DE AGOSTO DE 2026
-      https://www.in.gov.br/web/dou/-/despacho-de-18-de-agosto-de-2026-726686638
-    - [2026-08-20] (portaria, revisar) DESPACHO DE 14 DE AGOSTO DE 2026
-      https://www.in.gov.br/web/dou/-/despacho-de-14-de-agosto-de-2026-726678071
-    ... (+24 itens)
+  status: parcial · duração 5.6s
+  itens consultados: 86 · relevantes: 18 · descartados (tema): 34
+  canais ok: notícias institucionais, planos, programas e políticas
+  canais com falha: atos do MCTI por tema (DOU), portarias publicadas
+  erro: atos do MCTI por tema (DOU): listagem sem itens reconhecíveis (187167 bytes): https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=21-08-2026&publishTo=20-09-2026&orgPrin=Minist%C3%A9rio%20da%20Ci%C3%AAncia%2C%20Tecnologia%20e%20Inova%C3%A7%C3%A3o; portarias publicadas: listagem sem itens re
+    - [2026-09-11] (noticia, revisar) AEB abre inscrições para 37 cursos gratuitos sobre ciência e tecnologia espacial
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/aeb-abre-inscricoes-para-37-cursos-gratuitos-sobre-ciencia-e-tecnologia-espacial
+    - [2026-09-09] (noticia, revisar) Pesquisa desenvolve equipamento para recuperação muscular e reabilitação de pacientes
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/pesquisa-desenvolve-equipamento-para-recuperacao-muscular-e-reabilitacao-de-pacientes
+    - [2026-09-08] (noticia, forte) Ada Lovelace: como a mãe da programação teceu o primeiro algoritmo
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/ada-lovelace-como-a-mae-da-programacao-teceu-o-primeiro-algoritmo
+    - [2026-09-04] (noticia, forte) Banco nacional reúne soluções de inteligência artificial para o setor público
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/banco-nacional-reune-solucoes-de-inteligencia-artificial-para-o-setor-publico
+    - [2026-08-31] (noticia, revisar) Tecnologias de reúso de água garantem qualidade de vida de moradores do semiárido da Amazônia
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/tecnologias-de-reuso-de-agua-garantem-qualidade-de-vida-de-moradores-do-semiarido-da-amazonia
+    - [2026-08-27] (noticia, revisar) Programa Granioter Acelera 2026 recebe inscrições até 30 de agosto
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/programa-granioter-acelera-2026-recebe-inscricoes-ate-30-de-agosto
+    - [2026-08-27] (noticia, revisar) Saiba como acompanhar a seca no Brasil pela plataforma Alerta Secas do Cemaden
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/saiba-como-acompanhar-a-seca-no-brasil-pela-plataforma-alerta-secas-do-cemaden
+    - [2026-08-26] (noticia, revisar) Brics adota Consenso de Chennai com prioridades para cooperação em ciência, tecnologia e inovação
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026/brics-adota-consenso-de-chennai-com-prioridades-para-cooperacao-em-ciencia-tecnologia-e-inovacao
+    - [—] (programa, revisar) Tecnologias Habilitadoras
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/tecnologias-convergentes-e-habilitadoras
+    - [—] (programa, revisar) Nanotecnologia
+      https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/tecnologias-convergentes-e-habilitadoras/nanotecnologia
+    ... (+8 itens)
 
-relatório: out/fontes_reais.json · status global: OK
+relatório: out/fontes_reais.json · status global: PARCIAL

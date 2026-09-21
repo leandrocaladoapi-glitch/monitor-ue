@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "descricao": "Legislação da União Europeia diretamente relacionada à inteligência artificial — AI Act e atos correlatos (não é o acervo digital completo).",
+    "criterio": "Somente atos com relação direta com IA, com URL oficial no EUR-Lex (CELEX preservado). Nada estimado.",
+    "execucao": "2026-09-18",
+    "total": 1
+  },
+  "normas": [
+    {
+      "id": "32024R1689",
+      "tipo": "Regulamento (UE) 2024/1689",
+      "numero": "2024/1689",
+      "data": "2024-07-12",
+      "nome": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending Regulation (EC) No 300/2008, Regulation (EC) No 1107/2009 and Regulation (EU) No 1025/2012",
+      "relacao_ia": "AI Act — o ato âncora deste monitor: abordagem baseada em risco, práticas proibidas, sistemas de alto risco, modelos de uso geral (GPAI) e European AI Office.",
+      "orgao": "União Europeia (Parlamento Europeu e Conselho)",
+      "status": "Em vigor desde 1 de agosto de 2024; aplicação faseada: proibições 02/02/2025, GPAI 02/08/2025, aplicação geral 02/08/2026; alto risco Anexo III 02/12/2027 e Anexo I 02/08/2028 (calendário alterado pelo Regulamento (UE) 2026/1744).",
+      "procedimento": "2021/0106(COD)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+      "url_consolidada": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+      "celex": "32024R1689",
+      "jornal_oficial": "JO L, 12.7.2024"
+    },
+    {
+      "id": "32026R1744",
+      "tipo": "Regulamento (UE) 2026/1744",
+      "numero": "2026/1744",
+      "data": "2026-07-24",
+      "nome": "Regulation (EU) 2026/1744 of the European Parliament and of the Council of 8 July 2026 amending Regulations (EU) 2024/1689, (EU) 2018/1139 and (EU) 2023/1230 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI) (Text with EEA relevance)",
+      "relacao_ia": "Digital Omnibus on AI — altera diretamente o AI Act: reprograma a aplicação das obrigações de alto risco (Anexo III 02/12/2027; Anexo I 02/08/2028), cria novas proibições aplicáveis a 02/12/2026 e reforça a execução pela European AI Office (Art. 102–110 aplicáveis desde 27/07/2026).",
+      "orgao": "União Europeia (Parlamento Europeu e Conselho)",
+      "status": "Em vigor desde 27 de julho de 2026 (terceiro dia após a publicação no JO).",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744",
+      "celex": "32026R1744",
+      "jornal_oficial": "JO L, 24.7.2026"
+    }
+  ]
+}

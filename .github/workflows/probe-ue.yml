@@ -1,0 +1,53 @@
+name: Sondas de fontes UE (evidência de rede)
+
+# Sonda ao vivo cada endpoint oficial usado pelo monitor da União Europeia
+# (26 alvos) + dry-run do pipeline. A evidência sai como artifact e fica no
+# log — em ambiente de desenvolvimento local *.europa.eu costuma estar
+# bloqueado; este workflow é a prova de que as fontes respondem em CI.
+on:
+  schedule:
+    # Segundas-feiras 06:23 UTC (08:23 em Bruxelas no verão).
+    - cron: "23 6 * * 1"
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/sources/**"
+      - "scripts/probe_sources_eu.py"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: probe-ue-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  probe-ue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Sondar endpoints oficiais da UE (e canais dos conectores)
+        run: python3 scripts/probe_sources_eu.py --conjunto eu --canais
+
+      - name: Dry-run do pipeline UE (consulta sem gravar)
+        run: |
+          MONITOR_MAX_NOVAS=5 python3 scripts/update_legislation_eu.py --dry-run --budget-min 12
+
+      - name: Preservar evidência das sondas
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: probe-ue-${{ github.run_id }}-${{ github.run_attempt }}
+          path: out/probe/
+          retention-days: 30

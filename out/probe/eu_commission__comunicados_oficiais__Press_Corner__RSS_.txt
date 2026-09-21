@@ -1,0 +1,111 @@
+URL: https://ec.europa.eu/commission/presscorner/api/rss?language=en
+STATUS: 200 CT: application/rss+xml;charset=UTF-8
+INFO: {"feed": 10}
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Press releases - RSS</title>
+    <link>https://ec.europa.eu/commission/presscorner/api/rss?language=en</link>
+    <description>Search={format=RSS,size=10}</description>
+    <language>en</language>
+    <copyright>Copyright European Commission DG COMM</copyright>
+    <item>
+      <title>Remarks by Commissioner Dombrovskis at the informal ECOFIN press conference</title>
+      <link>https://ec.europa.eu/commission/presscorner/detail/en/statement_26_1906</link>
+      <description>European Commission Statement Dublin, 19 Sep 2026 Thank you, Simon. Good afternoon, everyone.
+We started our discussions on competitiveness in the banking sector. Europe needs a competitive banking sector to fi...</description>
+      <category>POLICY_AREA=ECOMONAFF</category>
+      <pubDate>Fri, 18 Sep 2026 22:00:00 GMT</pubDate>
+      <guid>https://ec.europa.eu/commission/presscorner/detail/en/statement_26_1906</guid>
+    </item>
+    <item>
+      <title>Commissioner Roswall's speech at the Clean Growth Summit – Road to COP31</title>
+      <link>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1909</link>
+      <description>European Commission Speech Lisbon, 18 Sep 2026 Ladies and gentlemen, distinguished guests,
+ 
+Mayor Araújo, Professor Arezes, dear Lidia – thank you for the invitation. 
+ 
+I am delighted to be here in beautif...</description>
+      <category>POLICY_AREA=ENVIRO</category>
+      <pubDate>Fri, 18 Sep 2026 11:42:54 GMT</pubDate>
+      <guid>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1909</guid>
+    </item>
+    <item>
+      <title>Speech by Commissioner Jørgensen at the inauguration of the Greensand CCS project</title>
+      <link>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1908</link>
+      <description>European Commission Speech Esbjerg, 18 Sep 2026 Your Majesty,
+Your excellency, Sir James,
+Minister Hummelgaard, dear Peter;
+Distinguished guests,
+Dear friends,
+It is a great pleasure to be here today.
+I've ha...</description>
+      <category>POLICY_AREA=ENERGY</category>
+      <pubDate>Fri, 18 Sep 2026 11:39:53 GMT</pubDate>
+      <guid>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1908</guid>
+    </item>
+    <item>
+      <title>Remarks by Commissioner Dombrovskis at Eurogroup press conference</title>
+      <link>https://ec.europa.eu/commission/presscorner/detail/en/statement_26_1905</link>
+      <description>European Commission Statement Dublin, 18 Sep 2026 Thank you, Kyriakos. Good morning, everyone. It's good to be back in Dublin.
+This week is well suited to taking stock, looking ahead, and preparing for a busy e...</description>
+      <category>POLICY_AREA=ECOMONAFF</category>
+      <pubDate>Fri, 18 Sep 2026 10:53:32 GMT</pubDate>
+      <guid>https://ec.europa.eu/commission/presscorner/detail/en/statement_26_1905</guid>
+    </item>
+    <item>
+      <title>Daily News 18 / 09 / 2026</title>
+      <link>https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1902</link>
+      <description>European Commission Daily news Brussels, 18 Sep 2026 Commission collects feedback on its proposed list of non-OECD countries authorised to receive EU waste after May 2027
+The Commission has today launched a public...</description>
+      <category>POLICY_AREA=GENINFO</category>
+      <pubDate>Fri, 18 Sep 2026 09:20:07 GMT</pubDate>
+      <guid>https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1902</guid>
+    </item>
+    <item>
+      <title>Commission disburses €3.3 billion in defence funding to Ukraine</title>
+      <link>https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1900</link>
+      <description>European Commission Press release Brussels, 18 Sep 2026 The European Commission will today disburse €3.3 billion to Ukraine for defence procurement under the €90 billion Ukraine Support Loan.</description>
+      <category>POLICY_AREA=DEFENCE,UKRAINE</category>
+      <pubDate>Fri, 18 Sep 2026 07:30:35 GMT</pubDate>
+      <guid>https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1900</guid>
+    </item>
+    <item>
+      <title>Factsheet - EU solidarity with Ukraine</title>
+      <link>https://ec.europa.eu/commission/presscorner/detail/en/fs_22_3862</link>
+      <description>European Commission Factsheet Brussels, 18 Sep 2026   Factsheet - EU solidarity with Ukraine Factsheet - EU solidarity with Ukraine</description>
+      <category>POLICY_AREA=ENLNEIG,ICHACR,UKRAINE</category>
+      <pubDate>Thu, 17 Sep 2026 22:00:00 GMT</pubDate>
+      <guid>https://ec.europa.eu/commission/presscorner/detail/en/fs_22_3862</guid>
+    </item>
+    <item>
+      <title>Read-out by President von der Leyen following her call with President Zelenskyy</title>
+      <link>https://ec.europa.eu/commission/presscorner/detail/en/read_26_1899</link>
+      <description>European Commission Read-out Brussels, 17 Sep 2026 I just had a phone call with President Zelenskyy.
+Russia is relentlessly targeting Kyiv, trying to make daily life impossible for its inhabitants.
+We stand with...</description>
+      <category>POLICY_AREA=HREXTRELS</category>
+      <pubDate>Thu, 17 Sep 2026 17:55:33 GMT</pubDate>
+      <guid>https://ec.europa.eu/commission/presscorner/detail/en/read_26_1899</guid>
+    </item>
+    <item>
+      <title>Speech by Executive Vice-President Teresa Ribera at Fordham's 53rd Annual Conference “Building a democratic, competitive and sustainable future for artificial intelligence”</title>
+      <link>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1898</link>
+      <description>European Commission Speech Brussels, 17 Sep 2026 Thank you, James for the introduction.
+It is good to be back in New York and at Fordham for the annual conference, one of the first major antitrust events of th...</description>
+      <category>POLICY_AREA=COMPETITIVE</category>
+      <pubDate>Thu, 17 Sep 2026 14:13:26 GMT</pubDate>
+      <guid>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1898</guid>
+    </item>
+    <item>
+      <title>Speech by Commissioner Albuquerque at Eurofi's Financial Forum 2026</title>
+      <link>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1897</link>
+      <description>European Commission Speech Dublin, 17 Sep 2026 Good afternoon, ladies and gentlemen.
+It is a pleasure to be here in Dublin, as always. This city is now widely regarded as one of Europe's most dynamic and int...</description>
+      <category>POLICY_AREA=FINSTAB</category>
+      <pubDate>Thu, 17 Sep 2026 10:41:37 GMT</pubDate>
+      <guid>https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1897</guid>
+    </item>
+  </channel>
+</rss>

@@ -8,6 +8,13 @@ O ativo principal é o **dataset legislativo histórico** (`/data/legislation`),
 - **Dados:** `/data/legislation/*.json` (fonte única da verdade, versionada no Git)
 - **Build:** `python3 scripts/build_site.py` (sem dependências externas)
 
+> **Este repositório hospeda dois monitores.** O monitor brasileiro (esta seção,
+> raiz do site) permanece intacto — conectores, dataset, motor, crons e páginas.
+> Em paralelo, roda o **[Monitor Legislativo e Regulatório de IA da União Europeia](#monitor-da-união-europeia-seção-adicional)**,
+> camada adicional com dataset próprio (`/data/legislation-eu`), conectores
+> próprios e seção própria do site (`/uniao-europeia/`). Nenhum dos dois
+> substitui o outro.
+
 ---
 
 ## O que este repositório monitora
@@ -144,6 +151,56 @@ cobertura da verificação, proposições pendentes, mudanças por dia/mês/tipo
 latência de detecção, evolução do banco, curadoria pendente, custo em chamadas
 HTTP por endpoint e o histórico completo de execuções. As mesmas métricas são
 publicadas em `docs/data/monitoramento.json` para uso externo (BI, planilhas).
+
+## Monitor da União Europeia (seção adicional)
+
+O **Monitor Legislativo e Regulatório de IA da União Europeia** reutiliza esta
+mesma arquitetura (coleta com orçamento de tempo, cache, telemetria HTTP,
+dedup/diff, checkpoint, scoring, build estático, validação, painel DataViz)
+sobre as fontes oficiais da UE. Interface em português; coleta em inglês.
+
+| | Monitor Brasil (raiz) | Monitor UE (`/uniao-europeia/`) |
+|---|---|---|
+| Dataset | `data/legislation/` | `data/legislation-eu/` (mesmos nomes de arquivo) |
+| Motor | `scripts/update_legislation.py` | `scripts/update_legislation_eu.py` |
+| Multiórgão | `scripts/update_sources.py` | `scripts/update_sources_eu.py` |
+| Conectores extras | ANPD, CNJ, TSE, DOU, Planalto, MCTI | `eu_parliament`, `eurlex`, `eu_council`, `eu_commission`, `ai_office`, `edpb`, `edps` |
+| Score | `scripts/scoring.py` | `scripts/scoring_eu.py` (impacto — nunca previsão política) |
+| Build/validação | `build_site.py` / `validate_site.py` | `build_site_eu.py` / `validate_site_eu.py` → `docs/uniao-europeia/` |
+| Cron | `update-legislation.yml` (horário de Brasília) | `update-ue.yml` (horário de Bruxelas) + `probe-ue.yml` (sondas) |
+| Testes | `test_fontes_multiorgao.py` etc. | `test_fontes_ue.py`, `test_site_contract_ue.py`, `selftest_offline_eu.py` |
+
+**Fontes oficiais monitoradas (UE):** API v2 do Open Data Portal do Parlamento
+(procedimentos, eventos, textos adotados), Legislative Train, sala de imprensa
+do Parlamento, EUR-Lex/Jornal Oficial (busca CELEX, versões consolidadas),
+registro público do Conselho, propostas e consultas Have Your Say da Comissão,
+newsroom do European AI Office, e temas de IA/dados do EDPB e do EDPS.
+**Limitações documentadas (nada inventado):** o TJUE/CURIA não tem conector —
+não existe fonte oficial automatizada estável; os endpoints de reuniões da API
+v2 do Parlamento retornam corpo vazio — a agenda futura vem das consultas
+oficiais do Have Your Say.
+
+**Identidade dos itens:** o número de procedimento interinstitucional
+(ex.: `2021/0106(COD)` → id `ue_2021_0106_cod`) é a chave compartilhada entre
+Parlamento, Conselho e Comissão; CELEX para normas; dedupe por URL canônica +
+hash. `laws.json` (UE) contém somente normas diretamente relacionadas a IA.
+Falha de fonte aparece como `FALHA`/`PARCIAL` no painel — nunca sucesso
+silencioso. Campos não confirmados em fonte oficial ficam ausentes.
+
+```bash
+python3 scripts/update_legislation_eu.py    # motor UE (Parlamento/EUR-Lex/Train/HYS)
+python3 scripts/update_sources_eu.py        # conectores regulatórios UE
+python3 scripts/build_site_eu.py            # regenera docs/uniao-europeia/
+python3 scripts/validate_site_eu.py         # valida a seção UE
+python3 scripts/selftest_offline_eu.py      # dupla execução: popula sem duplicar
+python3 scripts/probe_sources_eu.py --conjunto eu --canais
+```
+
+Detalhes: [Metodologia UE](docs/uniao-europeia/metodologia/index.html) ·
+[Painel UE](docs/uniao-europeia/monitoramento/index.html) ·
+[llms.txt UE](docs/uniao-europeia/llms.txt) · [AGENTS UE](docs/uniao-europeia/AGENTS.md).
+
+---
 
 ## Autoria
 

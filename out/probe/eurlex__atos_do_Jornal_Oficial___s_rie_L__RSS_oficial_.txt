@@ -1,0 +1,391 @@
+URL: https://eur-lex.europa.eu/EN/display-feed.rss?rssId=222
+STATUS: 200 CT: application/xml
+INFO: {"feed": 100}
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="./../screen-rss.xsl"?>
+<rss version="2.0">
+<channel xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <title>5 - Acts of the Official Journal L</title>
+   <pubDate>Sun, 20 Sep 2026 06:40:52 +0200</pubDate>
+   <description>This feed retrieves individual acts published in the latest editions of the L series (Legislation) of the &lt;em&gt;Official Journal of the European Union&lt;/em&gt;.</description>
+   <language>en</language>
+   <link>https://eur-lex.europa.eu/homepage.html</link>
+   <image>
+      <title>5 - Acts of the Official Journal L</title>
+      <url>https://eur-lex.europa.eu/images/eurlex_logo.png</url>
+      <link>https://eur-lex.europa.eu/homepage.html</link>
+   </image>
+   <item>
+      <title>CELEX:32026R2108: Regulation (EU) 2026/2108 of the European Parliament and of the Council of 16 September 2026 establishing the Union Customs Code and the European Union Customs Authority, and repealing Regulation (EU) No 952/2013 (Text with EEA relevance)</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2108</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:2ca62864-b3c2-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Council of the European Union, European Parliament,</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2057: Commission Implementing Regulation (EU) 2026/2057 of 17 September 2026 adding to the 2026 fishing quotas certain quantities withheld in the year 2025 pursuant to Article 4(2) of Council Regulation (EC) No 847/96</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2057</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:cbb69fd4-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Maritime Affairs and Fisheries</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2077: Commission Implementing Regulation (EU) 2026/2077 of 17 September 2026 concerning the renewal of the authorisation of a preparation of benzoic acid, thymol, eugenol and piperine as a feed additive for chickens for fattening, chickens reared for laying, minor poultry species for fattening and minor poultry species reared for laying, the authorisation of that preparation as a feed additive for turkeys for fattening and poultry reared for reproduction (holder of authorisation: DSM Nutritional Products Ltd represented by DSM Nutritional Products Sp. z.o.o.), and repealing Implementing Regulation (EU) 2015/1426</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2077</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:3171102b-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Health and Food Safety, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2070: Commission Implementing Regulation (EU) 2026/2070 of 17 September 2026 correcting Implementing Regulation (EU) 2026/164 as regards 2-chloroethanol</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2070</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:261c5e05-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Health and Food Safety, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2074: Commission Implementing Regulation (EU) 2026/2074 of 17 September 2026 concerning the authorisation of a preparation of Bacillus subtilis DSM 33862 and Lentilactobacillus buchneri DSM 12856 as a feed additive for all animal species</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2074</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:834f9edb-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Health and Food Safety, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32024R1351R(03)</title>
+      <description>The corrigendum does not concern the English version.</description>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32024R1351R(03)</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:99ffe401-b322-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Parliament, Council of the European Union,</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32025R0040R(07)</title>
+      <description>The corrigendum does not concern the English version.</description>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32025R0040R(07)</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:3df3e211-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Parliament, Council of the European Union,</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32023D1809R(01)</title>
+      <description>The corrigendum does not concern the English version.</description>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32023D1809R(01)</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:21f5bebf-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Translation, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026D2059: Commission Implementing Decision (EU) 2026/2059 of 17 September 2026 laying down rules for the application of Directive (EU) 2016/797 of the European Parliament and of the Council as regards a request from Poland not to apply the requirement to install ETCS on-board of locomotives set out in Commission Implementing Regulation (EU) 2023/1695 (notified under document C(2026) 6338)</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2059</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:e1bdd0af-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Mobility and Transport, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2061: Commission Implementing Regulation (EU) 2026/2061 of 17 September 2026 concerning the authorisation of a preparation of narasin and diclazuril (Interban) as a feed additive for chickens for fattening and chickens reared for laying (holder of authorisation: Elanco GmbH)</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2061</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:e82e38e5-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Health and Food Safety</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2104: Commission Implementing Regulation (EU) 2026/2104 of 17 September 2026 amending Annexes V and XIV to Implementing Regulation (EU) 2021/404 as regards the entries for the United States in the lists of third countries, territories, or zones thereof authorised for the entry into the Union of consignments of poultry and germinal products of poultry, and of fresh meat of poultry and game birds</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2104</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:22473a20-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Health and Food Safety, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32025R2547R(02)</title>
+      <description>The corrigendum does not concern the English version.</description>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32025R2547R(02)</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:828a04ea-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Translation, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2072: Commission Implementing Regulation (EU) 2026/2072 of 17 September 2026 concerning the authorisation of perlite as a feed additive for poultry for fattening, poultry reared for laying or reproduction, ornamental birds, piglets and pigs for fattening</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2072</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:e27e1373-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Health and Food Safety, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R1123R(01)</title>
+      <description>The corrigendum does not concern the English version.</description>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R1123R(01)</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:3e4de8f2-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Translation, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2079: Commission Implementing Regulation (EU) 2026/2079 of 17 September 2026 concerning the authorisation of a preparation of alpha-galactosidase produced with Aspergillus tubingensis ATCC SD 6740 and endo-1,4-beta-xylanase produced with Trichoderma orientale CBS 139997 as a feed additive for weaned piglets (holder of authorisation: Industrial Técnica Pecuaria, S.A.)</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2079</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:e92b3686-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Health and Food Safety, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R1061R(01): Corrigendum to Commission Delegated Regulation (EU) 2026/1061 of 7 May 2026 amending Delegated Regulation (EU) 2019/980 as regards the standardised format and sequence and the streamlined content, scrutiny and approval of the prospectus (OJ L, 2026/1061, 13.8.2026)</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R1061R(01)</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:312c660a-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Financial Stability, Financial Services and Capital Markets Union</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2064: Commission Implementing Regulation (EU) 2026/2064 of 17 September 2026 amending Implementing Regulation (EU) 2025/4 imposing a definitive anti-dumping duty and definitively collecting the provisional duty imposed on imports of titanium dioxide originating in the People’s Republic of China</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2064</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:cc5f3be6-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Trade and Economic Security</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2106: Commission Implementing Regulation (EU) 2026/2106 of 14 September 2026 on the approval of a Union amendment to the product specification of the protected designation of origin Segarcea pursuant to of Regulation (EU) 2024/1143 of the European Parliament and of the Council</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2106</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:cc002bf5-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Agriculture and Rural Development</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R0877R(01)</title>
+      <description>The corrigendum does not concern the English version.</description>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R0877R(01)</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:257e7054-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Translation</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2076: Commission Implementing Regulation (EU) 2026/2076 of 17 September 2026 concerning the authorisation of nutmeg essential oil from Myristica fragrans Houtt. as a feed additive for all animal species</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2076</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:3577cb5e-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Health and Food Safety</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026D2109: Commission Implementing Decision (EU) 2026/2109 of 17 September 2026 amending the Annex to Implementing Decision (EU) 2023/2447 concerning emergency measures in relation to outbreaks of highly pathogenic avian influenza in certain Member States (notified under document C(2026) 6659)</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2109</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:77fa2964-b2f9-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Health and Food Safety</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32021R2115R(12): Corrigendum to Regulation (EU) 2021/2115 of the European Parliament and of the Council of 2 December 2021 establishing rules on support for strategic plans to be drawn up by Member States under the common agricultural policy (CAP Strategic Plans) and financed by the European Agricultural Guarantee Fund (EAGF) and by the European Agricultural Fund for Rural Development (EAFRD) and repealing Regulations (EU) No 1305/2013 and (EU) No 1307/2013 (OJ L 435, 6.12.2021)</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32021R2115R(12)</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:9a3a2de2-b322-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Parliament, Council of the European Union,</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2133: Commission Implementing Regulation (EU) 2026/2133 of 18 September 2026 imposing a provisional safeguard measure with regard to imports of certain grain-oriented flat-rolled products of silicon-electrical steel</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2133</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:07180dfc-b36d-11f1-81de-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Trade and Economic Security, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026D2065: Council Decision (EU) 2026/2065 of 14 July 2026 on the signing and provisional application of the Agreement between the European Union, of the one part, and the Government of Japan, of the other part, on the participation of the Government of Japan in Union programmes</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2065</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:dacb279d-b22f-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Thu, 17 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Council of the European Union</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2102: Commission Delegated Regulation (EU) 2026/2102 of 13 July 2026 amending Regulation (EU) 2023/1115 of the European Parliament and of the Council as regards the list of relevant commodities and relevant products</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2102</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:42f36e5a-b230-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Thu, 17 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Environment, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:22026A02066: Agreement between the European Union, of the one part, and the Government of Japan, of the other part, on the participation of the Government of Japan in Union programmes</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:22026A02066</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:85591ca3-b230-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Thu, 17 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Japan, European Union</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2046: Commission Implementing Regulation (EU) 2026/2046 of 14 September 2026 amending Implementing Regulation (EU) 2022/964 as regards administrative and minor changes to the Union authorisation for the biocidal product family SOPUROXID</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2046</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:cb3cb61d-b166-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Health and Food Safety</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026D2048: Commission Implementing Decision (EU) 2026/2048 of 14 September 2026 on the harmonised standard for batteries drafted in support of Regulation (EU) 2023/1542</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2048</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:b76cb090-b166-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Internal Market, Industry, Entrepreneurship and SMEs, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2078: Commission Implementing Regulation (EU) 2026/2078 of 9 September 2026 on the registration of the geographical indication Olio dei Colli di Bologna (PGI) in the Union register of geographical indications pursuant to Regulation (EU) 2024/1143 of the European Parliament and of the Council</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2078</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:c3338579-b166-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Agriculture and Rural Development</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32014L0051R(10)</title>
+      <description>The corrigendum does not concern the English version.</description>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32014L0051R(10)</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:ac1650be-b166-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Council of the European Union, European Parliament,</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2093: Commission Delegated Regulation (EU) 2026/2093 of 10 July 2026 supplementing Regulation (EU) No 1308/2013 of the European Parliament and of the Council as regards national payments for the distillation of wine, green harvesting and grubbing up of productive vineyards in justified cases of crisis</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2093</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:bb42bed3-b166-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Agriculture and Rural Development, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:22026D2080: Decision No 1/2026 of the Joint Committee established under the Protocol to the Agreement on the international occasional carriage of passengers by coach and bus (Interbus Agreement) regarding the international regular and special regular carriage of passengers by coach and bus of 2 June 2026 establishing its Rules of Procedure [2026/2080]</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:22026D2080</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:bb7d2fc4-b166-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Moldova, Montenegro, Joint Committee, European Union, Andorra, North Macedonia, Bosnia and Herzegovina, Türkiye, Ukraine, Serbia, Albania, United Kingdom</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32025R1176R(02)</title>
+      <description>The corrigendum does not concern the English version.</description>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32025R1176R(02)</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:cee1e2b5-b09d-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Translation</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2045: Commission Implementing Regulation (EU) 2026/2045 of 14 September 2026 amending Regulation (EU) No 468/2010 establishing the EU list of vessels engaged in illegal, unreported and unregulated fishing</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2045</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:dd55fd4a-b09d-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Maritime Affairs and Fisheries</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026D2063: Political and Security Committee Decision (CFSP) 2026/2063 of 10 September 2026 on the appointment of the EU Mission Force Commander for the European Union CSDP Military Training Mission in the Central African Republic (EUTM RCA), and repealing Decision (CFSP) 2025/2010 (EUTM RCA/1/2026)</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2063</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:b20d0e6d-b09d-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Political and Security Committee</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026H2069: Commission Recommendation (EU) 2026/2069 of 9 September 2026 on housing affordability and supply in areas under housing stress</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026H2069</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:ddade14b-b09d-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>European Commission, Directorate-General for Energy</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026D2060: Council Decision (EU) 2026/2060 of 20 November 2025 on the position to be taken on behalf of the European Union within the EU-Armenia Partnership Council as regards the adoption of the Strategic Agenda for the EU-Armenia Partnership</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2060</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:c3991769-b09d-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Council of the European Union</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026D2103: Council Decision (CFSP) 2026/2103 of 15 September 2026 amending Decision 2014/145/CFSP concerning restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026D2103</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:44e92eca-b0f3-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Council of the European Union</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2049: Commission Implementing Regulation (EU) 2026/2049 of 14 September 2026 making imports of primary cells and primary batteries of alkaline manganese dioxide originating in People’s Republic of China subject to registration with a view to allowing the levy of anti-dumping duties on the imports subject to registration</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2049</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:bd6eb8e3-b09d-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Trade and Economic Security, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2047: Commission Implementing Regulation (EU) 2026/2047 of 14 September 2026 extending the retrospective Union surveillance of imports of renewable ethanol for fuel</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2047</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:cd460d03-b09d-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Trade and Economic Security, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026R2094: Commission Implementing Regulation (EU) 2026/2094 of 11 September 2026 amending Annexes I and II to Implementing Regulation (EU) 2023/594 laying down special disease control measures for African swine fever</title>
+      <description/>
+      <link>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R2094</link>
+      <guid>https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELLAR:d054fab6-b09d-11f1-b9e5-01aa75ed71a1</guid>
+      <category>Lex Alerts</category>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0200</pubDate>
+      <dc:creator>Directorate-General for Health and Food Safety, European Commission</dc:creator>
+   </item>
+   <item>
+      <title>CELEX:32026D2075: Commission Implementing Decision (EU) 2026/2075 of 10 September 2026 amending Implementing Decision (EU) 2026/1108 concerning certain emergency measures relating to sheep pox and goat pox in Romania (notified under document C(2026) 6510)</title>
+      <description/>
+   

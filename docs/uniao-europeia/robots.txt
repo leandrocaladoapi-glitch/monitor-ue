@@ -1,0 +1,29 @@
+# Search and AI crawler policy — generated 2026-09-18
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://monitor.lcfconsulting.com.br/uniao-europeia/sitemap.xml

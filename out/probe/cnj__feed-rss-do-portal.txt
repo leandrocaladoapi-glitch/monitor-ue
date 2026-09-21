@@ -1,6 +1,6 @@
 URL: https://www.cnj.jus.br/feed/
 STATUS: 200 CT: text/html; charset=UTF-8
-INFO: {"links": 711}
+INFO: {"links": 712}
 ---
 <!DOCTYPE html>
 <html class="html" lang="pt-BR">
@@ -15,15 +15,15 @@ INFO: {"links": 711}
 <meta property="og:locale" content="pt_BR" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Página Inicial - Portal CNJ" />
-<meta property="og:description" content="Últimas notícias Mais notícias Acesso rápido 16 e 17 de set. | 6º Ciclo de Capacitação Online da Ação Nacional de Identificação Civil e Emissão de Documentos.22 e 23 de set. | Seminário Nacional de Magistrados e Servidores que atuam em Varas do Tribunal do Júri.30 de set. | 32ª edição do evento Disseminando Boas [&hellip;]" />
+<meta property="og:description" content="Últimas notícias Mais notícias Acesso rápido 22 e 23 de set. | Seminário Nacional de Magistrados e Servidores que atuam em Varas do Tribunal do Júri.24 de set. | Prêmio CNJ Memória do Poder Judiciário 2026: apresentação do vencedor e das menções honrosas da Subcategoria Especial “Escravidão e liberdade: passado e presente”.30 de set. | [&hellip;]" />
 <meta property="og:url" content="https://www.cnj.jus.br/" />
 <meta property="og:site_name" content="Portal CNJ" />
 <meta property="article:publisher" content="https://www.facebook.com/cnj.oficial" />
-<meta property="article:modified_time" content="2026-09-17T13:03:20+00:00" />
+<meta property="article:modified_time" content="2026-09-18T14:04:10+00:00" />
 <meta property="og:image" content="https://www.cnj.jus.br/wp-content/uploads/2024/03/corte-lady-justice-1-2048x1371.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@cnj_oficial" />
-<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.cnj.jus.br/","url":"https://www.cnj.jus.br/","name":"Página Inicial - Portal CNJ","isPartOf":{"@id":"https://www.cnj.jus.br/#website"},"about":{"@id":"https://www.cnj.jus.br/#organization"},"primaryImageOfPage":{"@id":"https://www.cnj.jus.br/#primaryimage"},"image":{"@id":"https://www.cnj.jus.br/#primaryimage"},"thumbnailUrl":"https://www.cnj.jus.br/wp-content/uploads/2024/03/corte-lady-justice-1-2048x1371.png","datePublished":"2024-03-11T12:44:51+00:00","dateModified":"2026-09-17T13:03:20+00:00","breadcrumb":{"@id":"https://www.cnj.jus.br/#breadcrumb"},"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://www.cnj.jus.br/"]}]},{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://www.cnj.jus.br/#primaryimage","url":"https://www.cnj.jus.br/wp-content/uploads/2024/03/corte-lady-justice-1.png","contentUrl":"https://www.cnj.jus.br/wp-content/uploads/2024/03/corte-lady-justice-1.png","width":3881,"height":2598},{"@type":"BreadcrumbList","@id":"https://www.cnj.jus.br/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.cnj.jus.br/#website","url":"https://www.cnj.jus.br/","name":"Portal CNJ","description":"Conselho Nacional de Justiça","publisher":{"@id":"https://www.cnj.jus.br/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.cnj.jus.br/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"pt-BR"},{"@type":"Organization","@id":"https://www.cnj.jus.br/#organization","name":"CNJ","url":"https://www.cnj.jus.br/","logo":{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://www.cnj.jus.br/#/schema/logo/image/","url":"https://www.cnj.jus.br/wp-content/uploads/2022/05/logomarcacnj-preta-fundotransparente.png","contentUrl":"https://www.cnj.jus.br/wp-content/uploads/2022/05/logomarcacnj-preta-fundotransparente.png","width":1060,"height":292,"caption":"CNJ"},"image":{"@id":"https://www.cnj.jus.br/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/cnj.oficial","https://x.com/cnj_oficial","https://www.instagram.com/cnj_oficial/","https://www.flickr.com/photos/cnj_oficial","https://www.youtube.com/user/cnj"]}]}</script>
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.cnj.jus.br/","url":"https://www.cnj.jus.br/","name":"Página Inicial - Portal CNJ","isPartOf":{"@id":"https://www.cnj.jus.br/#website"},"about":{"@id":"https://www.cnj.jus.br/#organization"},"primaryImageOfPage":{"@id":"https://www.cnj.jus.br/#primaryimage"},"image":{"@id":"https://www.cnj.jus.br/#primaryimage"},"thumbnailUrl":"https://www.cnj.jus.br/wp-content/uploads/2024/03/corte-lady-justice-1-2048x1371.png","datePublished":"2024-03-11T12:44:51+00:00","dateModified":"2026-09-18T14:04:10+00:00","breadcrumb":{"@id":"https://www.cnj.jus.br/#breadcrumb"},"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://www.cnj.jus.br/"]}]},{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://www.cnj.jus.br/#primaryimage","url":"https://www.cnj.jus.br/wp-content/uploads/2024/03/corte-lady-justice-1.png","contentUrl":"https://www.cnj.jus.br/wp-content/uploads/2024/03/corte-lady-justice-1.png","width":3881,"height":2598},{"@type":"BreadcrumbList","@id":"https://www.cnj.jus.br/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.cnj.jus.br/#website","url":"https://www.cnj.jus.br/","name":"Portal CNJ","description":"Conselho Nacional de Justiça","publisher":{"@id":"https://www.cnj.jus.br/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.cnj.jus.br/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"pt-BR"},{"@type":"Organization","@id":"https://www.cnj.jus.br/#organization","name":"CNJ","url":"https://www.cnj.jus.br/","logo":{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://www.cnj.jus.br/#/schema/logo/image/","url":"https://www.cnj.jus.br/wp-content/uploads/2022/05/logomarcacnj-preta-fundotransparente.png","contentUrl":"https://www.cnj.jus.br/wp-content/uploads/2022/05/logomarcacnj-preta-fundotransparente.png","width":1060,"height":292,"caption":"CNJ"},"image":{"@id":"https://www.cnj.jus.br/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/cnj.oficial","https://x.com/cnj_oficial","https://www.instagram.com/cnj_oficial/","https://www.flickr.com/photos/cnj_oficial","https://www.youtube.com/user/cnj"]}]}</script>
 <meta name="google-site-verification" content="d08YSOq2iiEzJQXRDumrHLvw93ZJ1-l2swSjkmqHuVM" />
 <!-- / Yoast SEO plugin. -->
 <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
@@ -115,7 +115,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <!-- <link rel='stylesheet' id='widget-slides-css' href='https://www.cnj.jus.br/wp-content/plugins/elementor-pro/assets/css/widget-slides.min.css?ver=3.31.2' media='all' /> -->
 <!-- <link rel='stylesheet' id='widget-toggle-css' href='https://www.cnj.jus.br/wp-content/plugins/elementor/assets/css/widget-toggle.min.css?ver=3.30.0' media='all' /> -->
 <link rel="stylesheet" type="text/css" href="//www.cnj.jus.br/wp-content/cache/wpfc-minified/d7zkg1rk/47h64.css" media="all"/>
-<link rel='stylesheet' id='elementor-post-318648-css' href='https://www.cnj.jus.br/wp-content/uploads/elementor/css/post-318648.css?ver=1789650215' media='all' />
+<link rel='stylesheet' id='elementor-post-318648-css' href='https://www.cnj.jus.br/wp-content/uploads/elementor/css/post-318648.css?ver=1789740253' media='all' />
 <!-- <link rel='stylesheet' id='oe-widgets-style-css' href='https://www.cnj.jus.br/wp-content/plugins/ocean-extra/assets/css/widgets.css?ver=6.5.3' media='all' /> -->
 <!-- <link rel='stylesheet' id='glossary-hint-css' href='https://www.cnj.jus.br/wp-content/plugins/glossary-by-codeat/assets/css/tooltip-classic.css?ver=2.3.6' media='all' /> -->
 <!-- <link rel='stylesheet' id='elementor-gf-local-roboto-css' href='https://www.cnj.jus.br/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1752198725' media='all' /> -->
@@ -126,11 +126,10 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <link rel="stylesheet" type="text/css" href="//www.cnj.jus.br/wp-content/cache/wpfc-minified/f28570h0/47h64.css" media="all"/>
 <script id="acy_front_messages_js-js-before">
 var ACYM_AJAX_START = "https://www.cnj.jus.br/wp-admin/admin-ajax.php";
-var ACYM_AJAX_PARAMS = "?action=acymailing_router&noheader=1&nocache=1789656244";
+var ACYM_AJAX_PARAMS = "?action=acymailing_router&noheader=1&nocache=1789763167";
 var ACYM_AJAX = ACYM_AJAX_START + ACYM_AJAX_PARAMS;
 </script>
 <script src="https://www.cnj.jus.br/wp-content/plugins/acymailing/media/js/front/messages.min.js?v=1783970664&amp;ver=6.5.3" id="acy_front_messages_js-js"></script>
 <script src="https://www.cnj.jus.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script src="https://www.cnj.jus.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-<script src="https://www.cnj.jus.br/wp-content/plugins/acymailing-newsletter-single/public/js/acymailing-newsletter-single-public.js?ver=1.0.0" id="acymailing-newsletter-single-js"></script>
-<scrip
+<script src="https://www.cnj.jus.br/wp-content/plugins/acymailing-newsletter-single/public/js/acymailing-newsletter-single-public.js?ver=1.0.0" id="acymailing-newsletter-sin

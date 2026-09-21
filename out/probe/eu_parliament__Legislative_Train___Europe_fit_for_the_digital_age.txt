@@ -1,0 +1,48 @@
+URL: https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age
+STATUS: 202 CT: text/html; charset=UTF-8
+INFO: {}
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        body {
+            font-family: "Arial";
+        }
+    </style>
+    <script type="text/javascript">
+    window.awsWafCookieDomainList = [];
+    window.gokuProps = {
+"key":"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AFz9nbdv7qA/6Bb+PQxlFSQAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMFgt5D+NIPPqyb68fAgEQgDuGA+f1DNU5dwS+E7IIW9iFj0Cv2YYv4SVdm4vJ4twFLzX97e8wPrjU2Lsc7Qx6y2FWRD/RNEmxe1NovQ==",
+          "iv":"NC48RAEQHAAACE73",
+          "context":"EHMXl0SfMvJ2QB3yBELGYx0q5RujsAc6sXvmc8500hFVmhAAhVQvXSuurlFjmJ4vy3gImob/2TQ+szmcVCsHGSEsrDylT8k+LzFu10KxZS1P6NHed3nkIgcRxqqbQNc2RCv99Ovt215Qkr8OJ6qBGxmcESLM7rhF9VVHC9moUoUzpOFQpD0S/nEJ5gFGZIWiH/xO19H7UBs1s2S8w349/vsNi9taTXCj3KVurx5CbI4sdpzoankhmaVkraOqoB1/EuSo7NjI1xiiwqYJlA5RDv3b7ziNCPvvhPtmycUsGxDaGQujAXxbHogAK22RogGWRdkAf6hhD291MyBocxiXQF9r8wPUDR1iQszizuxQbOhNX59gAze3ABtNmbO/mHaIrqJzPg85G4h4nMpLMniCD0St4EGB960lJe1gch0MXXUEuJykGdd4wJGeRXKVKCCCbrZ/iQ1as62MD6W4T9X0pz7JvKX0hz+4ynZ1+rDNIoE9JsGNYFEAkHngc6mDUAvpGwcMxYok50sForxN6qXHoFhVix4+7lDPAefg5boGm1iJH4uemQZlxjUeB2hVyVmqamFmwPxJhDfU5qdBqEXpkYNSc5CYb0+IAdpMq9a8i4VFxG1zEx9GbG5Z+QvYTthg+e1vHguc0SkFme/RXhUZpH2RN5dIPsGc/xzHAWYj67st/JgF31uFQv+XrgmFsS2sLi0RNlJvDzaT1aNqc6v55nKitqwRWPnYd33gVHhjJsSZHOAIY0Xt/ENF0p8AyyrdF/Kf6ogl6xm1tZvYpOvpdkTNZDpyZtnWCv+ocTEZF95Y7ucU"
+};
+    </script>
+    <script src="https://e3c1b12827d4.3535c7cd.us-east-1.token.awswaf.com/e3c1b12827d4/d7f65e927fcd/f9998b2f6105/challenge.js"></script>
+</head>
+<body>
+    <div id="challenge-container"></div>
+    <script type="text/javascript">
+        AwsWafIntegration.saveReferrer();
+        AwsWafIntegration.checkForceRefresh().then((forceRefresh) => {
+            if (forceRefresh) {
+                AwsWafIntegration.forceRefreshToken().then(() => {
+                    window.location.reload(true);
+                });
+            } else {
+                AwsWafIntegration.getToken().then(() => {
+                    window.location.reload(true);
+                });
+            }
+        });
+    </script>
+    <noscript>
+        <h1>JavaScript is disabled</h1>
+        In order to continue, we need to verify that you're not a robot.
+        This requires JavaScript. Enable JavaScript and then reload the page.
+    </noscript>
+</body>
+</html>

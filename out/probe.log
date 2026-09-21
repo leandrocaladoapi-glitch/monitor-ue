@@ -1,415 +1,415 @@
 
 === [anpd] path-noticias (modo=urllib)
     GET https://www.gov.br/anpd/++api++/@search?path=/pt-br/assuntos/noticias&b_size=5&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=16644 t=0.67s
+    status=200 ct=application/json bytes=16644 t=0.59s
     info: {"items_total": 779, "items_len": 5, "amostra_titulos": ["ECA Digital completa um ano e é marco na proteção de criança|", "Projeto Sandbox Regulatório de IA da ANPD é finalista de prê|", "ANPD abre inscrições para audiência e inicia consulta públic|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Fassuntos%2Fnoticias", "batching": { "@id": "https://www.gov.br/anpd/@search?path=/pt-br/assuntos/noticias&b_size=5&sort_on=effective&sort_order=descending", "first": "https://www.gov.br/anpd/@search?b_start=0&path=%2Fpt-br%2Fass
 
 === [anpd] path-regulacao (modo=urllib)
     GET https://www.gov.br/anpd/++api++/@search?path=/pt-br/assuntos/regulacao&b_size=10&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=20847 t=0.63s
+    status=200 ct=application/json bytes=20847 t=0.56s
     info: {"items_total": 85, "items_len": 10, "amostra_titulos": ["relatorio_inteligencia_regulatória.pdf|", "SEI_0325517_Nota_Tecnica_5_assinado_assinado_Hugo Jordane Lu|", "capa balanço agenda regulatoria 2025-2026 - 1 SEM 2026|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Fassuntos%2Fregulacao", "batching": { "@id": "https://www.gov.br/anpd/@search?path=/pt-br/assuntos/regulacao&b_size=10&sort_on=effective&sort_order=descending", "first": "https://www.gov.br/anpd/@search?b_start=0&path=%2Fpt-br%2F
 
 === [anpd] path-processo-regulatorio (modo=urllib)
     GET https://www.gov.br/anpd/++api++/@search?path=/pt-br/assuntos/processo-regulatorio&b_size=5
-    status=200 ct=application/json bytes=131 t=0.65s
+    status=200 ct=application/json bytes=131 t=0.54s
     info: {"items_total": 0, "items_len": 0, "amostra_titulos": []}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Fassuntos%2Fprocesso-regulatorio", "items": [], "items_total": 0 }
 
 === [anpd] path-consultas-publicas (modo=urllib)
     GET https://www.gov.br/anpd/++api++/@search?path=/pt-br/assuntos/consultas-publicas&b_size=5
-    status=200 ct=application/json bytes=129 t=0.62s
+    status=200 ct=application/json bytes=129 t=0.54s
     info: {"items_total": 0, "items_len": 0, "amostra_titulos": []}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Fassuntos%2Fconsultas-publicas", "items": [], "items_total": 0 }
 
 === [anpd] path-participacao (modo=urllib)
     GET https://www.gov.br/anpd/++api++/@search?path=/pt-br/acesso-a-informacao/participacao-social&b_size=5
-    status=200 ct=application/json bytes=3769 t=0.62s
+    status=200 ct=application/json bytes=3769 t=0.58s
     info: {"items_total": 328, "items_len": 5, "amostra_titulos": ["TS_6_22_ Contribuicoes.pdf|", "TS_4_22_ Contribuicoes.pdf|", "TS_2__2021_Contribuicoes_Parte2.pdf|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Facesso-a-informacao%2Fparticipacao-social", "batching": { "@id": "https://www.gov.br/anpd/@search?path=/pt-br/acesso-a-informacao/participacao-social&b_size=5", "first": "https://www.gov.br/anpd/@search?b_start=0&path=%2Fpt-br%2
 
 === [anpd] path-agenda-regulatoria (modo=urllib)
     GET https://www.gov.br/anpd/++api++/@search?path=/pt-br/assuntos/agenda-regulatoria&b_size=5
-    status=200 ct=application/json bytes=129 t=0.61s
+    status=200 ct=application/json bytes=129 t=0.53s
     info: {"items_total": 0, "items_len": 0, "amostra_titulos": []}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Fassuntos%2Fagenda-regulatoria", "items": [], "items_total": 0 }
 
 === [anpd] path-fiscalizacao (modo=urllib)
     GET https://www.gov.br/anpd/++api++/@search?path=/pt-br/assuntos/fiscalizacao&b_size=5
-    status=200 ct=application/json bytes=14618 t=0.62s
+    status=200 ct=application/json bytes=14618 t=0.54s
     info: {"items_total": 121, "items_len": 5, "amostra_titulos": ["banner-desktop_fiscalização.png|", "pg_fiscalizacao_portal_topo.jpg|", "pg_fiscalizacao_portal_fig_atuacao_cgf 1.jpg|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Fassuntos%2Ffiscalizacao", "batching": { "@id": "https://www.gov.br/anpd/@search?path=/pt-br/assuntos/fiscalizacao&b_size=5", "first": "https://www.gov.br/anpd/@search?b_start=0&path=%2Fpt-br%2Fassuntos%2Ffiscalizacao&b_size=5", 
 
 === [anpd] path-sandbox (modo=urllib)
     GET https://www.gov.br/anpd/++api++/@search?path=/pt-br/assuntos/sandbox-regulatorio&b_size=5
-    status=200 ct=application/json bytes=130 t=0.61s
+    status=200 ct=application/json bytes=130 t=0.53s
     info: {"items_total": 0, "items_len": 0, "amostra_titulos": []}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Fassuntos%2Fsandbox-regulatorio", "items": [], "items_total": 0 }
 
 === [anpd] busca-tema-portal-type (modo=urllib)
     GET https://www.gov.br/anpd/++api++/@search?SearchableText=intelig%C3%AAncia%20artificial&portal_type=News%20Item&b_size=10
-    status=200 ct=application/json bytes=29686 t=0.81s
+    status=200 ct=application/json bytes=29686 t=0.71s
     info: {"items_total": 23, "items_len": 10, "amostra_titulos": ["ANPD publica metodologia de testagem do Sandbox Regulatório |", "ANPD realiza consulta multissetorial sobre Sandbox Regulatór|", "ANPD debate proteção de dados na educação municipal durante |"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?SearchableText=intelig%C3%AAncia+artificial&portal_type=News+Item", "batching": { "@id": "https://www.gov.br/anpd/@search?SearchableText=intelig%C3%AAncia%20artificial&portal_type=News%20Item&b_size=10", "first": "https://www.gov.br/anpd/@searc
 
 === [anpd] busca-consulta-publica (modo=urllib)
     GET https://www.gov.br/anpd/++api++/@search?SearchableText=consulta%20p%C3%BAblica&b_size=10&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=25050 t=0.67s
+    status=200 ct=application/json bytes=25050 t=0.7s
     info: {"items_total": 288, "items_len": 10, "amostra_titulos": ["ECA Digital completa um ano e é marco na proteção de criança|", "AVISO DE CONSULTA PÚBLICA - ANPD Nº 1:2026.pdf|", "ANPD abre inscrições para audiência e inicia consulta públic|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?SearchableText=consulta+p%C3%BAblica", "batching": { "@id": "https://www.gov.br/anpd/@search?SearchableText=consulta%20p%C3%BAblica&b_size=10&sort_on=effective&sort_order=descending", "first": "https://www.gov.br/anpd/@search?b_start=0&Searchab
 
 === [anpd] busca-resolucao (modo=urllib)
     GET https://www.gov.br/anpd/++api++/@search?SearchableText=resolu%C3%A7%C3%A3o&portal_type=File&b_size=10&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=7109 t=0.64s
+    status=200 ct=application/json bytes=7109 t=0.55s
     info: {"items_total": 293, "items_len": 10, "amostra_titulos": ["TS 05.2026 - Minuta da Resolução Agenda de ARR.pdf|", "T_S_05.2022_Contribuições.pdf|", "T_S_01.2023_Contribuições.pdf|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?SearchableText=resolu%C3%A7%C3%A3o&portal_type=File", "batching": { "@id": "https://www.gov.br/anpd/@search?SearchableText=resolu%C3%A7%C3%A3o&portal_type=File&b_size=10&sort_on=effective&sort_order=descending", "first": "https://www.gov.br/anp
 
 === [anpd] tipos-portal (modo=urllib)
     GET https://www.gov.br/anpd/++api++/@types
-    status=401 ct=application/json bytes=99 t=0.63s
+    status=401 ct=application/json bytes=99 t=0.53s
     info: {}
     amostra: { "context": "https://www.gov.br/anpd", "message": "Unauthorized()", "type": "Unauthorized" }
 
 === [anpd] noticias-html-curl (modo=curl)
     GET https://www.gov.br/anpd/pt-br/assuntos/noticias
-    status=200 ct=text/html; charset=utf-8 bytes=325596 t=1.05s
+    status=200 ct=text/html; charset=utf-8 bytes=325596 t=0.93s
     info: {"links": 72}
     amostra: <!doctype html> <html lang="pt-br"><head><meta charSet="utf-8"/><title data-react-helmet="true">Notícias</title><meta data-react-helmet="true" name="description" content=""/><meta data-react-helmet="true" property="og:site_name" content="Agência Nacional de Proteção de Dados"/><meta data-rea
 
 === [cnj] atos-search-param (modo=urllib)
     GET https://atos.cnj.jus.br/api/atos?search=inteligencia%20artificial
-    status=200 ct=application/json bytes=42201 t=1.4s
+    status=200 ct=application/json bytes=42201 t=0.73s
     info: {"total": 6695, "data_len": 10, "amostra_titulos": ["<p style=\"text-align:justify\">Altera a Resolução CNJ n&ordm;|", "<p style=\"text-align:justify\">Altera o Provimento n. 255, de|", "<p>1. Conceder, durante o plantão judiciário, medida com imp|"], "links": 37}
     amostra: {"message":"Atos encontrados","total":6695,"per_page":10,"current_page":1,"last_page":670,"from":1,"to":10,"data":[{"id":7043,"tipo":"Resolu\u00e7\u00e3o","numero":697,"data_publicacao":"2026-09-16","situacao":"Vigente","assunto":null,"ementa":"<p style=\"text-align:justify\">Altera a Resolu\u00e7\u
 
 === [cnj] atos-ementa-param (modo=urllib)
     GET https://atos.cnj.jus.br/api/atos?ementa=inteligencia
-    status=200 ct=application/json bytes=42201 t=0.96s
+    status=200 ct=application/json bytes=42201 t=0.73s
     info: {"total": 6695, "data_len": 10, "amostra_titulos": ["<p style=\"text-align:justify\">Altera a Resolução CNJ n&ordm;|", "<p style=\"text-align:justify\">Altera o Provimento n. 255, de|", "<p>1. Conceder, durante o plantão judiciário, medida com imp|"], "links": 37}
     amostra: {"message":"Atos encontrados","total":6695,"per_page":10,"current_page":1,"last_page":670,"from":1,"to":10,"data":[{"id":7043,"tipo":"Resolu\u00e7\u00e3o","numero":697,"data_publicacao":"2026-09-16","situacao":"Vigente","assunto":null,"ementa":"<p style=\"text-align:justify\">Altera a Resolu\u00e7\u
 
 === [cnj] atos-busca-param (modo=urllib)
     GET https://atos.cnj.jus.br/api/atos?busca=inteligencia
-    status=200 ct=application/json bytes=42201 t=0.96s
+    status=200 ct=application/json bytes=42201 t=0.75s
     info: {"total": 6695, "data_len": 10, "amostra_titulos": ["<p style=\"text-align:justify\">Altera a Resolução CNJ n&ordm;|", "<p style=\"text-align:justify\">Altera o Provimento n. 255, de|", "<p>1. Conceder, durante o plantão judiciário, medida com imp|"], "links": 37}
     amostra: {"message":"Atos encontrados","total":6695,"per_page":10,"current_page":1,"last_page":670,"from":1,"to":10,"data":[{"id":7043,"tipo":"Resolu\u00e7\u00e3o","numero":697,"data_publicacao":"2026-09-16","situacao":"Vigente","assunto":null,"ementa":"<p style=\"text-align:justify\">Altera a Resolu\u00e7\u
 
 === [cnj] atos-palavra-param (modo=urllib)
     GET https://atos.cnj.jus.br/api/atos?palavra_chave=inteligencia
-    status=200 ct=application/json bytes=42201 t=0.41s
+    status=200 ct=application/json bytes=42201 t=0.72s
     info: {"total": 6695, "data_len": 10, "amostra_titulos": ["<p style=\"text-align:justify\">Altera a Resolução CNJ n&ordm;|", "<p style=\"text-align:justify\">Altera o Provimento n. 255, de|", "<p>1. Conceder, durante o plantão judiciário, medida com imp|"], "links": 37}
     amostra: {"message":"Atos encontrados","total":6695,"per_page":10,"current_page":1,"last_page":670,"from":1,"to":10,"data":[{"id":7043,"tipo":"Resolu\u00e7\u00e3o","numero":697,"data_publicacao":"2026-09-16","situacao":"Vigente","assunto":null,"ementa":"<p style=\"text-align:justify\">Altera a Resolu\u00e7\u
 
 === [cnj] atos-tipo-resolucao (modo=urllib)
     GET https://atos.cnj.jus.br/api/atos?tipo=Resolu%C3%A7%C3%A3o&per_page=3
-    status=200 ct=application/json bytes=42201 t=0.96s
+    status=200 ct=application/json bytes=42201 t=0.38s
     info: {"total": 6695, "data_len": 10, "amostra_titulos": ["<p style=\"text-align:justify\">Altera a Resolução CNJ n&ordm;|", "<p style=\"text-align:justify\">Altera o Provimento n. 255, de|", "<p>1. Conceder, durante o plantão judiciário, medida com imp|"], "links": 37}
     amostra: {"message":"Atos encontrados","total":6695,"per_page":10,"current_page":1,"last_page":670,"from":1,"to":10,"data":[{"id":7043,"tipo":"Resolu\u00e7\u00e3o","numero":697,"data_publicacao":"2026-09-16","situacao":"Vigente","assunto":null,"ementa":"<p style=\"text-align:justify\">Altera a Resolu\u00e7\u
 
 === [cnj] atos-ordenado (modo=urllib)
     GET https://atos.cnj.jus.br/api/atos?order=data_publicacao&sort=desc&per_page=3
-    status=200 ct=application/json bytes=42201 t=0.41s
+    status=200 ct=application/json bytes=42201 t=0.33s
     info: {"total": 6695, "data_len": 10, "amostra_titulos": ["<p style=\"text-align:justify\">Altera a Resolução CNJ n&ordm;|", "<p style=\"text-align:justify\">Altera o Provimento n. 255, de|", "<p>1. Conceder, durante o plantão judiciário, medida com imp|"], "links": 37}
     amostra: {"message":"Atos encontrados","total":6695,"per_page":10,"current_page":1,"last_page":670,"from":1,"to":10,"data":[{"id":7043,"tipo":"Resolu\u00e7\u00e3o","numero":697,"data_publicacao":"2026-09-16","situacao":"Vigente","assunto":null,"ementa":"<p style=\"text-align:justify\">Altera a Resolu\u00e7\u
 
 === [cnj] atos-html-params (modo=curl)
     GET https://atos.cnj.jus.br/atos
-    status=200 ct=text/html; charset=UTF-8 bytes=76252 t=0.41s
+    status=200 ct=text/html; charset=UTF-8 bytes=76252 t=0.26s
     info: {}
     amostra: <script src="https://atos.cnj.jus.br/js/jquery-3.3.1.js"></script> <link href="https://atos.cnj.jus.br/css/app.css" rel="stylesheet"> <link rel="stylesheet" href="https://atos.cnj.jus.br/font-awesome/css/font-awesome.min.css"> <script type="text/javascript" src="https://atos.cnj.jus.br/DataTables/da
 
 === [cnj] wp-posts-50 (modo=urllib)
     GET https://www.cnj.jus.br/wp-json/wp/v2/posts?per_page=50&_fields=id,date,link,title,excerpt,type
-    status=200 ct=application/json; charset=UTF-8 bytes=39724 t=1.55s
+    status=200 ct=application/json; charset=UTF-8 bytes=39525 t=0.9s
     info: {"lista_len": 50}
-    amostra: [{"id":427453,"date":"2026-09-17T14:07:49","type":"post","link":"https:\/\/www.cnj.jus.br\/meio-ambiente-concurso-de-decisoes-judiciais-recebe-inscricoes-ate-domingo-20-9\/","title":{"rendered":"Meio ambiente: concurso de decis\u00f5es judiciais recebe inscri\u00e7\u00f5es at\u00e9 domingo (20\/9)\u
+    amostra: [{"id":427718,"date":"2026-09-18T21:12:50","type":"post","link":"https:\/\/www.cnj.jus.br\/forum-debate-carreira-de-servidores-combate-ao-assedio-e-valorizacao-do-1o-grau\/","title":{"rendered":"F\u00f3rum debate carreira de servidores, combate ao ass\u00e9dio e valoriza\u00e7\u00e3o do 1\u00ba grau
 
 === [cnj] wp-tipos (modo=urllib)
     GET https://www.cnj.jus.br/wp-json/wp/v2/types
-    status=403 ct=text/html bytes=548 t=0.59s
+    status=403 ct=text/html bytes=548 t=0.21s
     info: {"bloqueio": "403"}
     amostra: <html> <head><title>403 Forbidden</title></head> <body> <center><h1>403 Forbidden</h1></center> <hr><center>nginx</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to di
 
 === [cnj] wp-busca-ia-espaco (modo=urllib)
     GET https://www.cnj.jus.br/wp-json/wp/v2/posts?search=inteligencia&per_page=3&_fields=id,date,link,title
-    status=200 ct=application/json; charset=UTF-8 bytes=2 t=1.13s
+    status=200 ct=application/json; charset=UTF-8 bytes=2 t=1.38s
     info: {"lista_len": 0}
     amostra: []
 
 === [cnj] wp-busca-s-html (modo=curl)
     GET https://www.cnj.jus.br/?s=intelig%C3%AAncia+artificial
-    status=200 ct=text/html; charset=UTF-8 bytes=275459 t=5.49s
+    status=200 ct=text/html; charset=UTF-8 bytes=275459 t=4.76s
     info: {"links": 463}
     amostra: <!DOCTYPE html> <html class="html" lang="pt-BR"> <head> <meta charset="UTF-8"> <link rel="profile" href="https://gmpg.org/xfn/11"> <meta name='robots' content='noindex, follow' /> <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This site is optimized with the Yoast SEO
 
 === [cnj] consultas-publicas (modo=curl)
     GET https://www.cnj.jus.br/consultas-publicas/
-    status=200 ct=text/html; charset=UTF-8 bytes=296089 t=1.5s
+    status=200 ct=text/html; charset=UTF-8 bytes=296088 t=1.56s
     info: {"links": 515}
     amostra: <!DOCTYPE html> <html class="html" lang="pt-BR"> <head> <meta charset="UTF-8"> <link rel="profile" href="https://gmpg.org/xfn/11"> <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' /> <meta name="viewport" content="width=device-width, initial-
 
 === [dou] filtro-presidencia (modo=urllib)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=intelig%C3%AAncia%20artificial&s=todos&exactDate=personalizado&sortType=0&delta=20&currentPage=1&publishFrom=01-01
-    status=200 ct=text/html;charset=UTF-8 bytes=201705 t=2.25s
+    status=200 ct=text/html;charset=UTF-8 bytes=201705 t=1.97s
     info: {"jsonArray_ref": "presente", "hits": 20, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial da União - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" nam
 
 === [dou] filtro-legislativo (modo=urllib)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=intelig%C3%AAncia%20artificial&s=todos&exactDate=personalizado&sortType=0&delta=20&currentPage=1&publishFrom=01-01
-    status=200 ct=text/html;charset=UTF-8 bytes=188244 t=1.75s
+    status=200 ct=text/html;charset=UTF-8 bytes=188244 t=1.93s
     info: {"jsonArray_ref": "presente", "hits": 12, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial da União - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" nam
 
 === [dou] filtro-arttype-lei (modo=urllib)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=&s=todos&exactDate=personalizado&sortType=0&delta=20&currentPage=1&publishFrom=01-01-2026&publishTo=17-09-2026&org
-    status=200 ct=text/html;charset=UTF-8 bytes=194449 t=3.01s
+    status=200 ct=text/html;charset=UTF-8 bytes=194449 t=0.86s
     info: {"jsonArray_ref": "presente", "hits": 20, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial da União - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" nam
 
 === [dou] filtro-mcti (modo=urllib)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=intelig%C3%AAncia%20artificial&s=todos&exactDate=personalizado&sortType=0&delta=20&currentPage=1&publishFrom=01-01
-    status=200 ct=text/html;charset=UTF-8 bytes=204041 t=0.64s
+    status=200 ct=text/html;charset=UTF-8 bytes=204042 t=1.66s
     info: {"jsonArray_ref": "presente", "hits": 20, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial da União - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" nam
 
 === [dou] filtro-poder-judiciario (modo=urllib)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=resolu%C3%A7%C3%A3o&s=todos&exactDate=personalizado&sortType=0&delta=20&currentPage=1&publishFrom=01-09-2026&publi
-    status=200 ct=text/html;charset=UTF-8 bytes=189826 t=0.77s
+    status=200 ct=text/html;charset=UTF-8 bytes=189827 t=1.85s
     info: {"jsonArray_ref": "presente", "hits": 11, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial da União - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" nam
 
 === [dou] filtro-tse-resolucao-ia (modo=urllib)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=resolu%C3%A7%C3%A3o%20intelig%C3%AAncia%20artificial%20elei%C3%A7%C3%B5es&s=todos&exactDate=personalizado&sortType
-    status=200 ct=text/html;charset=UTF-8 bytes=208336 t=0.98s
+    status=200 ct=text/html;charset=UTF-8 bytes=208335 t=1.86s
     info: {"jsonArray_ref": "presente", "hits": 20, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial da União - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" nam
 
 === [dou] s1-mes-corrente (modo=urllib)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=&s=todos&exactDate=personalizado&sortType=0&delta=20&currentPage=1&publishFrom=01-09-2026&publishTo=17-09-2026&s=d
-    status=200 ct=text/html;charset=UTF-8 bytes=210387 t=2.54s
+    status=200 ct=text/html;charset=UTF-8 bytes=209604 t=1.77s
     info: {"jsonArray_ref": "presente", "hits": 20, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial da União - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" nam
 
 === [dou] delivery-oficial (modo=curl)
     GET https://www.in.gov.br/servicos/dou/
-    status=404 ct=text/html;charset=UTF-8 bytes=141874 t=0.45s
+    status=404 ct=text/html;charset=UTF-8 bytes=141874 t=0.91s
     info: {"jsonArray_ref": "presente", "hits": 0, "links": 73}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Estado - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" name="viewport" /> 
 
 === [mcti] noticias-rss-oficial (modo=urllib)
     GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/RSS
-    status=404 ct=application/json bytes=26 t=0.59s
+    status=404 ct=application/json bytes=26 t=0.5s
     info: {}
     amostra: {"error_type": "NotFound"}
 
 === [mcti] noticias-rss-xml (modo=urllib)
     GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/rss.xml
-    status=404 ct=application/json bytes=26 t=0.59s
+    status=404 ct=application/json bytes=26 t=0.53s
     info: {}
     amostra: {"error_type": "NotFound"}
 
 === [mcti] consultas-publicas (modo=urllib)
     GET https://www.gov.br/mcti/pt-br/acesso-a-informacao/participacao-social/consultas-publicas
-    status=404 ct=text/html;charset=utf-8 bytes=2000 t=1.35s
+    status=404 ct=text/html;charset=utf-8 bytes=2000 t=4.9s
     info: {}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <meta charset="utf-8" /> <!-- Google Tag Manager --> <script type="text">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByT
 
 === [mcti] acoes-e-programas (modo=urllib)
     GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/acoes-e-programas
-    status=404 ct=text/html;charset=utf-8 bytes=2000 t=1.16s
+    status=404 ct=text/html;charset=utf-8 bytes=2000 t=4.52s
     info: {}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <meta charset="utf-8" /> <!-- Google Tag Manager --> <script type="text">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByT
 
 === [planalto] noticias-rss-oficial (modo=urllib)
     GET https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/RSS
-    status=200 ct=application/atom+xml; charset=utf-8 bytes=85543 t=1.35s
+    status=200 ct=application/atom+xml; charset=utf-8 bytes=85543 t=1.03s
     info: {}
     amostra: <?xml version="1.0" encoding="utf-8" ?> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:syn="http://purl.org/rss/1.0/modules/syndication/" xmlns="http://purl.org/rss/1.0/"> <channel rdf:about="https://www.gov.br/planalto/pt-br/aco
 
 === [planalto] noticias-rss-xml (modo=urllib)
     GET https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/rss.xml
-    status=200 ct=application/atom+xml; charset=utf-8 bytes=71450 t=0.97s
+    status=200 ct=application/atom+xml; charset=utf-8 bytes=71450 t=0.83s
     info: {"feed": 26}
     amostra: <?xml version="1.0" encoding="utf-8" ?> <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <atom:link rel="self" type="application/rss+xml" href="https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/rss.xml" /> <title>Notícias</title> <link
 
 === [planalto] noticias-pagina (modo=urllib)
     GET https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias
-    status=200 ct=text/html;charset=utf-8 bytes=178858 t=1.76s
+    status=200 ct=text/html;charset=utf-8 bytes=179924 t=1.16s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 435}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); </script> <script type="text/javascript" src="/TSPD/?type=18"></script> <APM_DO_NOT_TOUCH> <
 
 === [cnj] feed-rss-do-portal (modo=urllib)
     GET https://www.cnj.jus.br/feed/
-    status=200 ct=text/html; charset=UTF-8 bytes=364956 t=1.89s
-    info: {"links": 711}
+    status=200 ct=text/html; charset=UTF-8 bytes=365555 t=2.48s
+    info: {"links": 712}
     amostra: <!DOCTYPE html> <html class="html" lang="pt-BR"> <head> <meta charset="UTF-8"> <link rel="profile" href="https://gmpg.org/xfn/11"> <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' /> <meta name="viewport" content="width=device-width, initial-
 
 === [dou] tse-resolucoes-titulo-orgsub (modo=urllib)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=RESOLU%C3%87%C3%83O&s=titulo&exactDate=personalizado&sortType=0&delta=20&currentPage=1&publishFrom=01-09-2026&publ
-    status=200 ct=text/html;charset=UTF-8 bytes=173276 t=1.34s
+    status=200 ct=text/html;charset=UTF-8 bytes=173276 t=1.53s
     info: {"jsonArray_ref": "presente", "hits": 0, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial da União - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" nam
 
 === [dou] presidencia-decretos (modo=urllib)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=DECRETO&s=titulo&exactDate=personalizado&sortType=0&delta=20&currentPage=1&publishFrom=18-08-2026&publishTo=17-09-
-    status=200 ct=text/html;charset=UTF-8 bytes=172012 t=1.59s
+    status=200 ct=text/html;charset=UTF-8 bytes=172012 t=1.54s
     info: {"jsonArray_ref": "presente", "hits": 0, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial da União - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" nam
 
 === [tse] noticias-curl (modo=curl)
     GET https://www.tse.jus.br/comunicacao/noticias
-    status=403 ct=text/html bytes=397 t=0.38s
+    status=403 ct=text/html bytes=397 t=0.28s
     info: {"bloqueio": "403"}
-    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;www&#46;tse&#46;jus&#46;br&#47;comunicacao&#47;noticias" on this server.<P> Reference&#32;&#35;18&#46;917b3517&#46;1789682757&#46;2a14eaa4 <P>https&#58;&#47;&#47;e
+    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;www&#46;tse&#46;jus&#46;br&#47;comunicacao&#47;noticias" on this server.<P> Reference&#32;&#35;18&#46;fd352f17&#46;1789880926&#46;1ac5be74 <P>https&#58;&#47;&#47;e
 
 === [tse] noticias-urllib-browser (modo=urllib)
     GET https://www.tse.jus.br/comunicacao/noticias
-    status=200 ct=text/html;charset=utf-8 bytes=190177 t=0.13s
+    status=200 ct=text/html;charset=utf-8 bytes=191601 t=0.33s
     info: {"links": 292}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><base href="https://www.tse.jus.br/comunicacao/noticias" /> <meta name="viewport" content="width=device-width, initial-scale=1, shri
 
 === [tse] rss-curl (modo=curl)
     GET https://www.tse.jus.br/comunicacao/noticias/RSS
-    status=403 ct=text/html bytes=405 t=0.05s
+    status=403 ct=text/html bytes=403 t=0.1s
     info: {"bloqueio": "403"}
-    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;www&#46;tse&#46;jus&#46;br&#47;comunicacao&#47;noticias&#47;RSS" on this server.<P> Reference&#32;&#35;18&#46;917b3517&#46;1789682757&#46;2a14ef84 <P>https&#58;&#4
+    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;www&#46;tse&#46;jus&#46;br&#47;comunicacao&#47;noticias&#47;RSS" on this server.<P> Reference&#32;&#35;18&#46;d2352f17&#46;1789880927&#46;aab1b04 <P>https&#58;&#47
 
 === [tse] restapi-curl (modo=curl)
     GET https://www.tse.jus.br/++api++/@search?b_size=3&sort_on=effective&sort_order=descending
-    status=403 ct=text/html bytes=417 t=0.05s
+    status=403 ct=text/html bytes=415 t=0.11s
     info: {"bloqueio": "403"}
-    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;www&#46;tse&#46;jus&#46;br&#47;&#43;&#43;api&#43;&#43;&#47;&#64;search&#63;" on this server.<P> Reference&#32;&#35;18&#46;917b3517&#46;1789682757&#46;2a14f0af <P>h
+    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;www&#46;tse&#46;jus&#46;br&#47;&#43;&#43;api&#43;&#43;&#47;&#64;search&#63;" on this server.<P> Reference&#32;&#35;18&#46;d2352f17&#46;1789880927&#46;aab1b73 <P>ht
 
 === [tse] legislacao-curl (modo=curl)
     GET https://www.tse.jus.br/legislacao/compilada
-    status=403 ct=text/html bytes=397 t=0.06s
+    status=403 ct=text/html bytes=397 t=0.07s
     info: {"bloqueio": "403"}
-    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;www&#46;tse&#46;jus&#46;br&#47;legislacao&#47;compilada" on this server.<P> Reference&#32;&#35;18&#46;917b3517&#46;1789682757&#46;2a14f27d <P>https&#58;&#47;&#47;e
+    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;www&#46;tse&#46;jus&#46;br&#47;legislacao&#47;compilada" on this server.<P> Reference&#32;&#35;18&#46;fd352f17&#46;1789880927&#46;1ac5c1bc <P>https&#58;&#47;&#47;e
 
 === [tse] ckan-curl (modo=curl)
     GET https://dadosabertos.tse.jus.br/api/3/action/package_list
-    status=403 ct=text/html bytes=423 t=0.27s
+    status=403 ct=text/html bytes=419 t=0.39s
     info: {"bloqueio": "403"}
-    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;dadosabertos&#46;tse&#46;jus&#46;br&#47;api&#47;3&#47;action&#47;package&#95;list" on this server.<P> Reference&#32;&#35;18&#46;8d7b3517&#46;1789682758&#46;5aca4ad
+    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;dadosabertos&#46;tse&#46;jus&#46;br&#47;api&#47;3&#47;action&#47;package&#95;list" on this server.<P> Reference&#32;&#35;18&#46;882b3417&#46;1789880927&#46;7ec870 
 
 === [tse] internet-api (modo=curl)
     GET https://www.tse.jus.br/api/1.0/noticias
-    status=403 ct=text/html bytes=401 t=0.05s
+    status=403 ct=text/html bytes=399 t=0.1s
     info: {"bloqueio": "403"}
-    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;www&#46;tse&#46;jus&#46;br&#47;api&#47;1&#46;0&#47;noticias" on this server.<P> Reference&#32;&#35;18&#46;8a7b3517&#46;1789682758&#46;f202e614 <P>https&#58;&#47;&#
+    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;www&#46;tse&#46;jus&#46;br&#47;api&#47;1&#46;0&#47;noticias" on this server.<P> Reference&#32;&#35;18&#46;d2352f17&#46;1789880928&#46;aab1e09 <P>https&#58;&#47;&#4
 
 === [tse] noticias-tse-jus-br-fontes (modo=curl)
     GET https://www.tse.jus.br/++api++/comunicacao/noticias
-    status=403 ct=text/html bytes=425 t=0.05s
+    status=403 ct=text/html bytes=423 t=0.07s
     info: {"bloqueio": "403"}
-    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;www&#46;tse&#46;jus&#46;br&#47;&#43;&#43;api&#43;&#43;&#47;comunicacao&#47;noticias" on this server.<P> Reference&#32;&#35;18&#46;917b3517&#46;1789682758&#46;2a14f
+    amostra: <HTML><HEAD> <TITLE>Access Denied</TITLE> </HEAD><BODY> <H1>Access Denied</H1> You don't have permission to access "http&#58;&#47;&#47;www&#46;tse&#46;jus&#46;br&#47;&#43;&#43;api&#43;&#43;&#47;comunicacao&#47;noticias" on this server.<P> Reference&#32;&#35;18&#46;d2352f17&#46;1789880928&#46;aab1e
 
 === [planalto] planalto-lgpd (modo=urllib)
     GET https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709.htm
-    status=200 ct=text/html bytes=310252 t=3.4s
+    status=200 ct=text/html bytes=310252 t=3.26s
     info: {"links": 350}
     amostra: <html xmlns="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml"> <head> <meta content="Microsoft FrontPage 6.0" name="GENERATOR"/> <title> L13709 </title> <style> <!-- table.MsoNormalTable {mso-style-parent:""; fo
 
 === [planalto] planalto-lgpd-curl (modo=curl)
     GET https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm
-    status=200 ct=text/html bytes=310253 t=2.48s
+    status=200 ct=text/html bytes=310253 t=2.52s
     info: {"links": 350}
     amostra: <html xmlns="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml"> <head> <meta content="Microsoft FrontPage 6.0" name="GENERATOR"/> <title> L13709 </title> <style> <!-- table.MsoNormalTable {mso-style-parent:""; fo
 
 === [planalto] planalto-atos-2026 (modo=urllib)
     GET https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/
-    status=403 ct= bytes=392 t=0.78s
+    status=403 ct= bytes=392 t=0.98s
     info: {}
     amostra: <html><head><title>Ocorreu um erro!</title></head><body><table border="0" cellpadding="0" cellspacing="0" width="70%"> <tr> <td width="14%"><p align="center"><img src="http://www.planalto.gov.br/Brastra.gif" alt="Brastra.gif (4376 bytes)" width="74" height="82"></td> </tr> </table><br><b
 
 === [planalto] govbr-noticias-curl (modo=curl)
     GET https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias
-    status=200 ct=text/html;charset=utf-8 bytes=178859 t=1.56s
+    status=200 ct=text/html;charset=utf-8 bytes=179931 t=1.16s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 435}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); </script> <script type="text/javascript" src="/TSPD/?type=18"></script> <APM_DO_NOT_TOUCH> <
 
 === [planalto] legislacao-portal-curl (modo=curl)
     GET https://www4.planalto.gov.br/legislacao/
-    status=200 ct=text/html bytes=6179 t=0.96s
+    status=200 ct=text/html bytes=6871 t=1.19s
     info: {"bloqueio": "F5-TSPD (desafio JS)"}
     amostra: <!DOCTYPE html> <html><head> <meta http-equiv="Pragma" content="no-cache"/> <meta http-equiv="Expires" content="-1"/> <meta http-equiv="CacheControl" content="no-cache"/> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> <link rel="shortcut icon" href="data:;base64,iVBORw0KG
 
 === [planalto] lexml-sru-v2 (modo=curl)
     GET https://www.lexml.gov.br/busca/SRU?operation=searchRetrieve&version=1.1&maximumRecords=3&query=%22inteligencia+artificial%22
-    status=200 ct=text/html; charset=UTF-8 bytes=9051 t=3.38s
+    status=200 ct=text/html; charset=UTF-8 bytes=9051 t=2.02s
     info: {}
     amostra: <!DOCTYPE html> <meta name="viewport" content="width=device-width"> <title>Verificação de segurança — Senado Federal</title> <style> * { box-sizing: border-box; } body { background: #f1f1f1; color: #222; margin: 0; padding: 0; min-height: 100vh; font-family: Arial, Helvetica, sans-serif; } .s
 
 === [planalto] lexml-sru-v3 (modo=curl)
     GET https://www.lexml.gov.br/sru?operation=searchRetrieve&version=1.1&maximumRecords=3&query=%22inteligencia%20artificial%22
-    status=404 ct=text/html;charset=utf-8 bytes=696 t=0.97s
+    status=404 ct=text/html;charset=utf-8 bytes=696 t=1.44s
     info: {}
     amostra: <!doctype html><html lang="pt"><head><title>HTTP Status 404 – Não Encontrado</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:bla
 
 === [planalto] lexml-busca-curl (modo=curl)
     GET https://www.lexml.gov.br/busca/search?keyword=inteligencia+artificial
-    status=200 ct=text/html; charset=UTF-8 bytes=9051 t=1.69s
+    status=200 ct=text/html; charset=UTF-8 bytes=9051 t=1.61s
     info: {}
     amostra: <!DOCTYPE html> <meta name="viewport" content="width=device-width"> <title>Verificação de segurança — Senado Federal</title> <style> * { box-sizing: border-box; } body { background: #f1f1f1; color: #222; margin: 0; padding: 0; min-height: 100vh; font-family: Arial, Helvetica, sans-serif; } .s
 
 === [planalto] lexml-oai-curl (modo=curl)
     GET https://www.lexml.gov.br/oai/request?verb=Identify
-    status=404 ct=text/html;charset=utf-8 bytes=696 t=1.64s
+    status=404 ct=text/html;charset=utf-8 bytes=696 t=1.4s
     info: {}
     amostra: <!doctype html><html lang="pt"><head><title>HTTP Status 404 – Não Encontrado</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:bla
 
 === [planalto] camara-legislacao-federal (modo=curl)
     GET https://www.camara.leg.br/legislacao/
-    status=200 ct=text/html; charset=utf-8 bytes=56854 t=1.67s
+    status=200 ct=text/html; charset=utf-8 bytes=56854 t=0.84s
     info: {"links": 82}
     amostra: <!doctype html> <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br"> <![endif]--> <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="pt-br"> <![endif]--> <!--[if IE 8]> <html class="no-js lt-ie9" lang="pt-br"> <![endif]--> <!--[if gt IE 8]><!--> <html cla
 
 === [mcti] noticias-curl (modo=curl)
     GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias
-    status=302 ct=text/plain; charset=utf-8 bytes=84 t=0.59s
+    status=302 ct=text/plain; charset=utf-8 bytes=84 t=0.51s
     info: {}
     amostra: https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026 
 
 === [mcti] noticias-curl-mes (modo=curl)
     GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026
-    status=200 ct=text/html;charset=utf-8 bytes=234194 t=1.55s
+    status=200 ct=text/html;charset=utf-8 bytes=235260 t=5.95s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 582}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); </script> <script type="text/javascript" src="/TSPD/?type=18"></script> <APM_DO_NOT_TOUCH> <
 
 === [mcti] rss-noticias-curl (modo=curl)
     GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/RSS
-    status=404 ct=text/html;charset=utf-8 bytes=149254 t=1.18s
+    status=404 ct=text/html;charset=utf-8 bytes=149254 t=4.23s
     info: {"links": 543}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <meta charset="utf-8" /> <!-- Google Tag Manager --> <script type="text">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByT
 
 === [mcti] portarias-curl (modo=curl)
     GET https://www.gov.br/mcti/pt-br/acesso-a-informacao/legislacao/portarias
-    status=200 ct=text/html;charset=utf-8 bytes=158570 t=1.36s
+    status=200 ct=text/html;charset=utf-8 bytes=159636 t=1.15s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 547}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); </script> <script type="text/javascript" src="/TSPD/?type=18"></script> <APM_DO_NOT_TOUCH> <
 
 === [mcti] portarias-ano (modo=curl)
     GET https://www.gov.br/mcti/pt-br/acesso-a-informacao/legislacao/portarias/2026
-    status=404 ct=text/html;charset=utf-8 bytes=149793 t=1.17s
+    status=404 ct=text/html;charset=utf-8 bytes=149799 t=4.3s
     info: {"links": 544}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <meta charset="utf-8" /> <!-- Google Tag Manager --> <script type="text">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByT
 
 === [mcti] participa-consultas (modo=curl)
     GET https://www.gov.br/participamaisbrasil/consultas-publicas
-    status=200 ct=text/html; charset=UTF-8 bytes=21171 t=1.21s
+    status=200 ct=text/html; charset=UTF-8 bytes=21171 t=0.7s
     info: {"links": 36}
     amostra: <!DOCTYPE html> <html xmlns="https://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <base href="https://www.gov.br/participamaisbrasil/" target="_self" /> <meta charset="UTF-8" /> <!-- Folhas de estilo --> <lin
 
 === [mcti] mcti-antigo (modo=curl)
     GET https://www.mcti.gov.br/
-    status=403 ct=text/html; charset=UTF-8 bytes=5713 t=0.23s
+    status=403 ct=text/html; charset=UTF-8 bytes=5713 t=0.24s
     info: {}
     amostra: <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
 
 === [mcti] dou-mcti-portarias (modo=urllib)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=intelig%C3%AAncia%20artificial&s=todos&exactDate=personalizado&sortType=0&delta=20&currentPage=1&publishFrom=01-01
-    status=200 ct=text/html;charset=UTF-8 bytes=204042 t=1.1s
+    status=200 ct=text/html;charset=UTF-8 bytes=204042 t=1.84s
     info: {"jsonArray_ref": "presente", "hits": 20, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial da União - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" nam
 
@@ -417,424 +417,604 @@
 
 === [tse] noticias-headers-coletor (modo=base)
     GET https://www.tse.jus.br/comunicacao/noticias
-    status=200 ct=text/html;charset=utf-8 bytes=190177 t=0.56s
+    status=200 ct=text/html;charset=utf-8 bytes=191601 t=0.26s
     info: {"links": 292}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><base href="https://www.tse.jus.br/comunicacao/noticias" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <title>Notícias — Tribu
 
 === [tse] noticias-headers-navegador (modo=urllib)
     GET https://www.tse.jus.br/comunicacao/noticias
-    status=200 ct=text/html;charset=utf-8 bytes=190177 t=0.16s
+    status=200 ct=text/html;charset=utf-8 bytes=191601 t=0.08s
     info: {"links": 292}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><base href="https://www.tse.jus.br/comunicacao/noticias" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <title>Notícias — Tribu
 
 === [tse] noticias-pagina2 (modo=base)
     GET https://www.tse.jus.br/comunicacao/noticias?b_start:int=20
-    status=200 ct=text/html;charset=utf-8 bytes=190123 t=2.23s
+    status=200 ct=text/html;charset=utf-8 bytes=191601 t=1.07s
     info: {"links": 292}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><base href="https://www.tse.jus.br/comunicacao/noticias" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <title>Notícias — Tribu
 
 === [tse] noticias-raiz (modo=base)
     GET https://www.tse.jus.br/noticias
-    status=404 ct=text/html bytes=636 t=0.63s
+    status=404 ct=text/html bytes=636 t=1.05s
     info: {}
     amostra:  �      �Qt�w� pU�(�ͱ�Q 9�y�J%�NAJ ���;. ��M-ITH�H,*N-�U qӵ �@H�%��*�e����()$�畤���g��dئ��e&��9: �y�%��9��ɉ9���z0�J2KrR�/L���yxq�Bj Ȩ�ĔD�ܔ�� k������\sR3K�sl�!:!��d�e+���*e�*)d���*���g��%]��������J* ����MLOկ�k�0���2'�8#5�9������z@(��!�f���R ���<�M�,SH�I,.�UJN,J�Z�M:'?=_ @R�����EqIq��BqQ2��� -.KWRH��HHQfRi^b�BpiAjQf~" � ѥddh �fjfzP�,~� �:M(�� `T����
 
 === [tse] noticias-rss (modo=base)
     GET https://www.tse.jus.br/comunicacao/noticias/RSS
-    status=404 ct=text/html bytes=636 t=0.28s
+    status=404 ct=text/html bytes=636 t=0.27s
     info: {}
     amostra:  �      �Qt�w� pU�(�ͱ�Q 9�y�J%�NAJ ���;. ��M-ITH�H,*N-�U qӵ �@H�%��*�e����()$�畤���g��dئ��e&��9: �y�%��9��ɉ9���z0�J2KrR�/L���yxq�Bj Ȩ�ĔD�ܔ�� k������\sR3K�sl�!:!��d�e+���*e�*)d���*���g��%]��������J* ����MLOկ�k�0���2'�8#5�9������z@(��!�f���R ���<�M�,SH�I,.�UJN,J�Z�M:'?=_ @R�����EqIq��BqQ2��� -.KWRH��HHQfRi^b�BpiAjQf~" � ѥddh �fjfzP�,~� �:M(�� `T����
 
 === [tse] restapi-headers-coletor (modo=base)
     GET https://www.tse.jus.br/++api++/@search?b_size=3&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=2787 t=0.25s
-    info: {"items_total": 83127, "items_len": 3, "amostra_titulos": ["Delegação de Timor-Leste visita TSE para conhecer sistema el|", "Hertz Dias - Propostas de Governo|", "Escritor Augusto Cury - Propostas de Governo|"]}
-    amostra: { "@id": "https://www.tse.jus.br/++api++/@search", "batching": { "@id": "https://www.tse.jus.br/++api++/@search?b_size=3&sort_on=effective&sort_order=descending", "first": "https://www.tse.jus.br/++api++/@search?b_start=0&b_size=3&sort_on=effective&sort_order=descending", "last": "https://www.tse.jus.br/++api++/@search?b_start=83124&b_size=3&sort_on=effective&sort_order=descendi
+    status=200 ct=application/json bytes=2897 t=1.76s
+    info: {"items_total": 83194, "items_len": 3, "amostra_titulos": ["Título Eleitoral - FAQ|", "Lei dos Partidos Políticos completa 31 anos e estrutura a at|", "Faltam 15 dias: candidatas e candidatos não podem ser presos|"]}
+    amostra: { "@id": "https://www.tse.jus.br/++api++/@search", "batching": { "@id": "https://www.tse.jus.br/++api++/@search?b_size=3&sort_on=effective&sort_order=descending", "first": "https://www.tse.jus.br/++api++/@search?b_start=0&b_size=3&sort_on=effective&sort_order=descending", "last": "https://www.tse.jus.br/++api++/@search?b_start=83193&b_size=3&sort_on=effective&sort_order=descendi
 
 === [tse] legislacao-resolucao (modo=base)
     GET https://www.tse.jus.br/legislacao/compilada/resolucao
-    status=404 ct=text/html bytes=636 t=0.49s
+    status=404 ct=text/html bytes=636 t=0.45s
     info: {}
     amostra:  �      �Qt�w� pU�(�ͱ�Q 9�y�J%�NAJ ���;. ��M-ITH�H,*N-�U qӵ �@H�%��*�e����()$�畤���g��dئ��e&��9: �y�%��9��ɉ9���z0�J2KrR�/L���yxq�Bj Ȩ�ĔD�ܔ�� k������\sR3K�sl�!:!��d�e+���*e�*)d���*���g��%]��������J* ����MLOկ�k�0���2'�8#5�9������z@(��!�f���R ���<�M�,SH�I,.�UJN,J�Z�M:'?=_ @R�����EqIq��BqQ2��� -.KWRH��HHQfRi^b�BpiAjQf~" � ѥddh �fjfzP�,~� �:M(�� `T����
 
 === [tse] atos-normativos (modo=base)
     GET https://www.tse.jus.br/legislacao/atos-normativos
-    status=404 ct=text/html bytes=636 t=0.27s
+    status=404 ct=text/html bytes=636 t=0.43s
     info: {}
     amostra:  �      �Qt�w� pU�(�ͱ�Q 9�y�J%�NAJ ���;. ��M-ITH�H,*N-�U qӵ �@H�%��*�e����()$�畤���g��dئ��e&��9: �y�%��9��ɉ9���z0�J2KrR�/L���yxq�Bj Ȩ�ĔD�ܔ�� k������\sR3K�sl�!:!��d�e+���*e�*)d���*���g��%]��������J* ����MLOկ�k�0���2'�8#5�9������z@(��!�f���R ���<�M�,SH�I,.�UJN,J�Z�M:'?=_ @R�����EqIq��BqQ2��� -.KWRH��HHQfRi^b�BpiAjQf~" � ѥddh �fjfzP�,~� �:M(�� `T����
 
 === [tse] ckan-package-search (modo=base)
     GET https://dadosabertos.tse.jus.br/api/3/action/package_search?q=inteligencia+artificial&rows=3
-    status=200 ct=application/json;charset=utf-8 bytes=198 t=0.34s
+    status=200 ct=application/json;charset=utf-8 bytes=198 t=0.85s
     info: {}
     amostra: {"help": "https://dadosabertos.tse.jus.br/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 0, "facets": {}, "results": [], "sort": "name desc", "search_facets": {}}}
 
 === [planalto] dou-executivo-presidencia (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=intelig%C3%AAncia%20artificial&s=todos&exactDate=personalizado&sortType=0&delta=20&currentPage=1&publishFrom=01-01
-    status=200 ct=text/html;charset=UTF-8 bytes=174050 t=1.21s
+    status=200 ct=text/html;charset=UTF-8 bytes=174051 t=0.97s
     info: {"jsonArray_ref": "presente", "hits": 0, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial da União - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" name="viewport" /> <meta property="creator.productor" content="http://estruturaorganizacional.dados.
 
 === [planalto] dou-presidencia-arttype-decreto (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=&s=todos&exactDate=personalizado&sortType=0&delta=20&currentPage=1&publishFrom=18-08-2026&publishTo=17-09-2026&org
-    status=200 ct=text/html;charset=UTF-8 bytes=172407 t=0.37s
+    status=200 ct=text/html;charset=UTF-8 bytes=172407 t=0.96s
     info: {"jsonArray_ref": "presente", "hits": 0, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial da União - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" name="viewport" /> <meta property="creator.productor" content="http://estruturaorganizacional.dados.
 
 === [planalto] api-noticias (modo=base)
     GET https://www.gov.br/planalto/++api++/@search?path=/planalto/pt-br/acompanhe-o-planalto/noticias&portal_type=Noticia&b_size=10&sort_on=effective&sort_order=descen
-    status=404 ct=text/html bytes=2000 t=0.98s
+    status=404 ct=text/html bytes=2000 t=0.99s
     info: {"links": 1}
     amostra: <!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Estamos em manutenção</title> <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="http://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> <style> html, body { margin: 0; 
 
 === [planalto] api-noticias-sem-path (modo=base)
     GET https://www.gov.br/planalto/++api++/@search?portal_type=Noticia&b_size=10&sort_on=effective&sort_order=descending
-    status=404 ct=text/html bytes=2000 t=0.78s
+    status=404 ct=text/html bytes=2000 t=0.66s
     info: {"links": 1}
     amostra: <!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Estamos em manutenção</title> <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="http://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> <style> html, body { margin: 0; 
 
 === [planalto] dou-leiturajornal (modo=base)
     GET https://www.in.gov.br/leiturajornal?data=17-09-2026&secao=do1
-    status=200 ct=text/html;charset=UTF-8 bytes=601823 t=0.13s
+    status=200 ct=text/html;charset=UTF-8 bytes=601823 t=0.3s
     info: {"jsonArray_ref": "presente", "hits": 440, "links": 57}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Leitura do Jornal - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" name="viewport" /> <meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br
 
 === [planalto] www4-legislacao (modo=base)
     GET https://www4.planalto.gov.br/legislacao/
-    status=200 ct=text/html bytes=6178 t=0.96s
+    status=200 ct=text/html bytes=6870 t=0.95s
     info: {"bloqueio": "F5-TSPD (desafio JS)"}
     amostra: <!DOCTYPE html> <html><head> <meta http-equiv="Pragma" content="no-cache"/> <meta http-equiv="Expires" content="-1"/> <meta http-equiv="CacheControl" content="no-cache"/> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> <link rel="shortcut icon" href="data:;base64,iVBORw0KGgo="/> <script type="text/javascript"> (function(){ window["bobcmn"] = "10111110101010200000005
 
 === [planalto] www4-legislacao-api (modo=base)
     GET https://www4.planalto.gov.br/legislacao/++api++/@search?b_size=5&sort_on=effective&sort_order=descending
-    status=200 ct=text/html bytes=6178 t=0.96s
+    status=200 ct=text/html bytes=6870 t=0.94s
     info: {"bloqueio": "F5-TSPD (desafio JS)"}
     amostra: <!DOCTYPE html> <html><head> <meta http-equiv="Pragma" content="no-cache"/> <meta http-equiv="Expires" content="-1"/> <meta http-equiv="CacheControl" content="no-cache"/> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> <link rel="shortcut icon" href="data:;base64,iVBORw0KGgo="/> <script type="text/javascript"> (function(){ window["bobcmn"] = "10111110101010200000005
 
 === [mcti] api-noticias (modo=base)
     GET https://www.gov.br/mcti/++api++/@search?path=/mcti/pt-br/acompanhe-o-mcti/noticias&portal_type=Noticia&b_size=10&sort_on=effective&sort_order=descending
-    status=404 ct=application/json bytes=93 t=0.59s
+    status=404 ct=application/json bytes=93 t=0.52s
     info: {}
     amostra: { "message": "Resource not found: https://www.gov.br/mcti/++api++", "type": "NotFound" }
 
 === [mcti] api-noticias-sem-path (modo=base)
     GET https://www.gov.br/mcti/++api++/@search?portal_type=Noticia&b_size=10&sort_on=effective&sort_order=descending
-    status=404 ct=application/json bytes=93 t=0.59s
+    status=404 ct=application/json bytes=93 t=0.5s
     info: {}
     amostra: { "message": "Resource not found: https://www.gov.br/mcti/++api++", "type": "NotFound" }
 
 === [mcti] api-portarias (modo=base)
     GET https://www.gov.br/mcti/++api++/@search?path=/mcti/pt-br/acesso-a-informacao/legislacao/portarias&b_size=10&sort_on=effective&sort_order=descending
-    status=404 ct=application/json bytes=93 t=0.58s
+    status=404 ct=application/json bytes=93 t=0.51s
     info: {}
     amostra: { "message": "Resource not found: https://www.gov.br/mcti/++api++", "type": "NotFound" }
 
 === [mcti] api-consultas (modo=base)
     GET https://www.gov.br/mcti/++api++/@search?path=/mcti/pt-br/acesso-a-informacao/participacao-social&b_size=10&sort_on=effective&sort_order=descending
-    status=404 ct=application/json bytes=93 t=0.59s
+    status=404 ct=application/json bytes=93 t=0.51s
     info: {}
     amostra: { "message": "Resource not found: https://www.gov.br/mcti/++api++", "type": "NotFound" }
 
 === [mcti] api-tema-ia (modo=base)
     GET https://www.gov.br/mcti/++api++/@search?SearchableText=intelig%C3%AAncia%20artificial&b_size=10&sort_on=effective&sort_order=descending
-    status=404 ct=application/json bytes=93 t=0.59s
+    status=404 ct=application/json bytes=93 t=0.52s
     info: {}
     amostra: { "message": "Resource not found: https://www.gov.br/mcti/++api++", "type": "NotFound" }
 
 === [mcti] noticias-folder-mes (modo=base)
     GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026
-    status=200 ct=text/html;charset=utf-8 bytes=234193 t=1.55s
+    status=200 ct=text/html;charset=utf-8 bytes=235259 t=1.31s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 582}
-    amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); </script> <script type="text/javascript" src="/TSPD/?type=18"></script> <APM_DO_NOT_TOUCH> <script type="text/javascript"> (function(){ window.XhEj=!!window.XhEj;try{(function(){(function(){
+    amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); </script> <script type="text/javascript" src="/TSPD/?type=18"></script> <APM_DO_NOT_TOUCH> <script type="text/javascript"> (function(){ window.ytWy=!!window.ytWy;try{(function(){(function(){
 
 === [mcti] portarias-outros-atos (modo=base)
     GET https://www.gov.br/mcti/pt-br/acesso-a-informacao/legislacao/outros-atos-normativos
-    status=404 ct=text/html;charset=utf-8 bytes=2000 t=1.21s
+    status=404 ct=text/html;charset=utf-8 bytes=2000 t=4.56s
     info: {}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <meta charset="utf-8" /> <!-- Google Tag Manager --> <script type="text">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www
 
 === [cnj] atos-page2 (modo=base)
     GET https://atos.cnj.jus.br/api/atos?page=2
-    status=200 ct=application/json bytes=69082 t=1.17s
+    status=200 ct=application/json bytes=69082 t=1.08s
     info: {"total": 6695, "data_len": 10, "amostra_titulos": ["<p style=\"text-align:justify\">Altera a Portaria Presidência |", "<p style=\"text-align:justify\">Dispõe sobre a prorrogação do |", "<p>1. Nova resolução para os concursos de cartórios;</p>\r\n\r\n|"], "links": 25}
     amostra: {"message":"Atos encontrados","total":6695,"per_page":10,"current_page":2,"last_page":670,"from":11,"to":20,"data":[{"id":7034,"tipo":"Portaria","numero":420,"data_publicacao":"2026-09-08","situacao":"Vigente","assunto":null,"ementa":"<p style=\"text-align:justify\">Altera a Portaria Presid\u00eancia n&ordm; 191\/2026, que institui Grupo de Trabalho para elabora\u00e7\u00e3o de estudos e propostas
 
 === [cnj] atos-offset (modo=base)
     GET https://atos.cnj.jus.br/api/atos?offset=10
-    status=200 ct=application/json bytes=42201 t=0.78s
+    status=200 ct=application/json bytes=42201 t=0.6s
     info: {"total": 6695, "data_len": 10, "amostra_titulos": ["<p style=\"text-align:justify\">Altera a Resolução CNJ n&ordm;|", "<p style=\"text-align:justify\">Altera o Provimento n. 255, de|", "<p>1. Conceder, durante o plantão judiciário, medida com imp|"], "links": 37}
     amostra: {"message":"Atos encontrados","total":6695,"per_page":10,"current_page":1,"last_page":670,"from":1,"to":10,"data":[{"id":7043,"tipo":"Resolu\u00e7\u00e3o","numero":697,"data_publicacao":"2026-09-16","situacao":"Vigente","assunto":null,"ementa":"<p style=\"text-align:justify\">Altera a Resolu\u00e7\u00e3o CNJ n&ordm; 595\/2024, para retificar erro material ocorrido na edi\u00e7\u00e3o da Resolu\u00
 
 === [cnj] atos-detalhe (modo=base)
     GET https://atos.cnj.jus.br/api/atos/7034
-    status=200 ct=application/json bytes=629 t=0.26s
+    status=200 ct=application/json bytes=629 t=0.23s
     info: {}
     amostra: {"data":{"id":7034,"tipo_ato":"Portaria","numero":420,"ano_publicacao":"2026","ementa":"<p style=\"text-align:justify\">Altera a Portaria Presid\u00eancia n&ordm; 191\/2026, que institui Grupo de Trabalho para elabora\u00e7\u00e3o de estudos e propostas voltados \u00e0 an\u00e1lise de iniciativas de desjudicializa\u00e7\u00e3o, autocomposi\u00e7\u00e3o digital e amplia\u00e7\u00e3o do acesso \u00e
 
 === [cnj] wp-page2 (modo=base)
     GET https://www.cnj.jus.br/wp-json/wp/v2/posts?per_page=3&page=2&_fields=id,date,link,title
-    status=200 ct=application/json; charset=UTF-8 bytes=903 t=1.02s
+    status=200 ct=application/json; charset=UTF-8 bytes=877 t=1.24s
     info: {"lista_len": 3}
-    amostra: [{"id":427308,"date":"2026-09-16T19:23:05","link":"https:\/\/www.cnj.jus.br\/delegacao-de-timor-leste-conhece-acoes-da-justica-brasileira-de-atencao-a-mulher\/","title":{"rendered":"Delega\u00e7\u00e3o de Timor-Leste conhece a\u00e7\u00f5es da Justi\u00e7a brasileira de aten\u00e7\u00e3o \u00e0 mulher"}},{"id":427294,"date":"2026-09-16T18:27:12","link":"https:\/\/www.cnj.jus.br\/estados-se-mobiliz
+    amostra: [{"id":427658,"date":"2026-09-18T12:30:51","link":"https:\/\/www.cnj.jus.br\/superendividamento-comite-gestor-da-conciliacao-participa-de-primeira-reuniao-de-forum-da-justica\/","title":{"rendered":"Superendividamento: Comit\u00ea Gestor\u00a0da Concilia\u00e7\u00e3o participa de primeira reuni\u00e3o de\u00a0f\u00f3rum da Justi\u00e7a"}},{"id":427632,"date":"2026-09-18T11:24:18","link":"https:\/\
 
 === [cnj] wp-page1 (modo=base)
     GET https://www.cnj.jus.br/wp-json/wp/v2/posts?per_page=3&page=1&_fields=id,date,link,title
-    status=200 ct=application/json; charset=UTF-8 bytes=868 t=0.55s
+    status=200 ct=application/json; charset=UTF-8 bytes=836 t=0.84s
     info: {"lista_len": 3}
-    amostra: [{"id":427453,"date":"2026-09-17T14:07:49","link":"https:\/\/www.cnj.jus.br\/meio-ambiente-concurso-de-decisoes-judiciais-recebe-inscricoes-ate-domingo-20-9\/","title":{"rendered":"Meio ambiente: concurso de decis\u00f5es judiciais recebe inscri\u00e7\u00f5es at\u00e9 domingo (20\/9)\u00a0"}},{"id":427441,"date":"2026-09-17T11:49:06","link":"https:\/\/www.cnj.jus.br\/tjpi-apresenta-robo-soseverino
+    amostra: [{"id":427718,"date":"2026-09-18T21:12:50","link":"https:\/\/www.cnj.jus.br\/forum-debate-carreira-de-servidores-combate-ao-assedio-e-valorizacao-do-1o-grau\/","title":{"rendered":"F\u00f3rum debate carreira de servidores, combate ao ass\u00e9dio e valoriza\u00e7\u00e3o do 1\u00ba grau"}},{"id":427697,"date":"2026-09-18T18:27:43","link":"https:\/\/www.cnj.jus.br\/acao-com-lideres-religiosos-fortal
 
 === [cnj] wp-pages-consultas (modo=base)
     GET https://www.cnj.jus.br/wp-json/wp/v2/pages?search=consulta%20p%C3%BAblica&per_page=5&_fields=id,date,link,title
-    status=403 ct=text/html bytes=169 t=0.24s
+    status=403 ct=text/html bytes=169 t=0.2s
     info: {}
     amostra:  �     퐱�0 Dw$��|@�V_�b�DJ��d�O ���}��t2��%�\``OK,��n��c�&��}�h_HE�L���V�a� �� �+4]�Fy|zvn��1��DQZ((�}�Η����ᦑ�� ���&Zc�e��_�� [0� $  
 
 === [cnj] wp-categorias (modo=base)
     GET https://www.cnj.jus.br/wp-json/wp/v2/categories?per_page=30&_fields=id,name,count
-    status=200 ct=application/json; charset=UTF-8 bytes=1690 t=0.54s
+    status=200 ct=application/json; charset=UTF-8 bytes=1690 t=0.82s
     info: {"lista_len": 30}
     amostra: [{"id":979,"count":46,"name":"Corregedoria"},{"id":985,"count":5,"name":"Plant\u00e3o do Judici\u00e1rio"},{"id":989,"count":2,"name":"Composi\u00e7\u00f5es Anteriores"},{"id":1008,"count":12,"name":"Licita\u00e7\u00f5es e Contratos"},{"id":1030,"count":2,"name":"Cadastro Nacional de Condenados por Crimes de Improbidade Administrativa"},{"id":1047,"count":4,"name":"Justi\u00e7a em N\u00fameros"},{
 
 === [anpd] api-noticias (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?path=/anpd/pt-br/assuntos/noticias&portal_type=News%20Item&b_size=5&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=148 t=0.61s
+    status=200 ct=application/json bytes=148 t=0.54s
     info: {"items_total": 0, "items_len": 0, "amostra_titulos": []}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fanpd%2Fpt-br%2Fassuntos%2Fnoticias&portal_type=News+Item", "items": [], "items_total": 0 }
 
 === [anpd] api-tema-ia (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?SearchableText=intelig%C3%AAncia%20artificial&b_size=5&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=16677 t=0.74s
+    status=200 ct=application/json bytes=16677 t=0.53s
     info: {"items_total": 213, "items_len": 5, "amostra_titulos": ["ECA Digital completa um ano e é marco na proteção de criança|", "Projeto Sandbox Regulatório de IA da ANPD é finalista de prê|", "ANPD abre tomadas de subsídios sobre próxima agenda regulató|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?SearchableText=intelig%C3%AAncia+artificial", "batching": { "@id": "https://www.gov.br/anpd/@search?SearchableText=intelig%C3%AAncia%20artificial&b_size=5&sort_on=effective&sort_order=descending", "first": "https://www.gov.br/anpd/@search?b_start=0&SearchableText=intelig%C3%AAncia+artificial&b_size=5&sort_on=effective&sort_order=descending", 
 
 === [anpd] noticias-rss (modo=base)
     GET https://www.gov.br/anpd/pt-br/assuntos/noticias/RSS
-    status=404 ct=text/html; charset=utf-8 bytes=2000 t=0.84s
+    status=404 ct=text/html; charset=utf-8 bytes=2000 t=0.71s
     info: {}
-    amostra:  �      ��Y� Yv&�>����e�ܝ�oY�D0H&)q�����l����[���ef K29�~�A�/���P��R@>�R��O����9w1s� ��zTJ���s�˹g?����׷�$����W�[���K<F�ɧ{�z����_����6�xf��~�[֓�A���~Y�u�D��͠L̸ ̒l��\&T���ոLu�.�,�� |c����EU9~�{P.o��L�����|~r���������������������������'�����') �L�g� _�l ��n�w�^m�lo�mo��l|s��������j8*�+�EQ�o���rty�l �7��;���`gs�``��x`6�������}g����x{wswwk�=�l��kS���&���e��T���|W�yM�˛r:N��x9~
+    amostra:  �      ��Y� W�&�>��ʫgR�rw�� !QB0Y�%2"H!�������hn�eK,�8�~�A�/]/ݍj�4LA�)Q/��D�d�wι������,1�잻�]�=�����|R�.�`^-�/��@��s<i�� �����Y���q}��"��`2��zث��`����ϫ�J� �pP����t���c�������ɲ �%��7ՃoëP�����<�=(ꛤ gqV}[^>;>�{�f����r��������?��mlmm �-{�iTM�l��p�$zx����������_,��hsD��G�;�G�"L������Y~5 ��2/��E��A1�<�G��������^4� m��h'�������d2w��ˇ�h��3��ٜlM�[����uX���qX�E�4,���������b6��Ǥ�
 
 === [dou] busca-formato-json (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=intelig%C3%AAncia%20artificial&s=todos&exactDate=personalizado&sortType=0&delta=20&currentPage=1&publishFrom=01-09
-    status=200 ct=text/html;charset=UTF-8 bytes=211365 t=2.55s
+    status=200 ct=text/html;charset=UTF-8 bytes=211365 t=1.59s
     info: {"jsonArray_ref": "presente", "hits": 20, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial da União - Imprensa Nacional</title> <meta content="initial-scale=1.0, width=device-width" name="viewport" /> <meta property="creator.productor" content="http://estruturaorganizacional.dados.
 
 === [dou] api-consulta-publicacao (modo=base)
     GET https://www.in.gov.br/api/consulta/publicacao?q=inteligencia+artificial
-    status=404 ct=text/html;charset=UTF-8 bytes=330 t=1.84s
+    status=404 ct=text/html;charset=UTF-8 bytes=330 t=0.68s
     info: {}
     amostra:  �      Ւ�N�0E��+�4 E��ea_�RQP"(i g��u<ƞ���I ��`��ǖ��W�q����;}��8��aO�hQԇ���k<�tNo � I��p�,��;]�2��٦�իS�8l �6�<L�$��� d4��L>�Ix��&)X�� Z-$��>.�F��i0*n�4�{�`��B�BMg��X4Jk�-x;��'�V�Д�3���Ȣ�WP^�� �� ����֒�Sґ��3I]^c#z͙���䥪�c�G��~��ܮ6�54�#�AP���C�Y8��� C��p�l�Xޯ כ��o蟉��OF�`�8֐����t���  
 
 --- 20/35 responderam 200 ---
 
+=== [ai_office] notícias e comunicados do portal (modo=base)
+    GET https://digital-strategy.ec.europa.eu/en/news?type=5%7C13
+    status=200 ct=text/html; charset=UTF-8 bytes=69911 t=0.39s
+    info: {}
+    amostra: <!DOCTYPE html> <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#"> <head> <meta charset="utf-8" /> <link rel="canonical" href="https://digital-strategy.ec.europa.eu/en/news" /> <meta nam
+
+=== [ai_office] página da AI Office (políticas e ações) (modo=base)
+    GET https://digital-strategy.ec.europa.eu/en/policies/ai-office
+    status=200 ct=text/html; charset=UTF-8 bytes=79272 t=0.05s
+    info: {"links": 126}
+    amostra: <!DOCTYPE html> <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#"> <head> <meta charset="utf-8" /> <meta name="description" content="The European AI Office supports the development and a
+
+=== [ai_office] AI Act — quadro regulatório e implementação (modo=base)
+    GET https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+    status=200 ct=text/html; charset=UTF-8 bytes=92376 t=0.07s
+    info: {"links": 141}
+    amostra: <!DOCTYPE html> <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#"> <head> <meta charset="utf-8" /> <meta name="description" content="The AI Act is the first-ever legal framework on AI, w
+
+=== [ai_office] General-Purpose AI — página oficial (modo=base)
+    GET https://digital-strategy.ec.europa.eu/en/policies/general-purpose-ai
+    status=200 ct=text/html; charset=UTF-8 bytes=46165 t=0.25s
+    info: {"links": 67}
+    amostra: <!DOCTYPE html> <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#"> <head> <meta charset="utf-8" /> <meta name="robots" content="noindex" /> <link rel="canonical" href="https://digital-st
+
+=== [ai_office] AI Act — página do serviço (modo=base)
+    GET https://digital-strategy.ec.europa.eu/en/ai-act
+    status=200 ct=text/html; charset=UTF-8 bytes=46165 t=0.25s
+    info: {"links": 67}
+    amostra: <!DOCTYPE html> <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#"> <head> <meta charset="utf-8" /> <meta name="robots" content="noindex" /> <link rel="canonical" href="https://digital-st
+
 === [anpd] notícias recentes (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&portal_type=News+Item
-    status=200 ct=application/json bytes=147204 t=0.76s
+    status=200 ct=application/json bytes=147204 t=0.67s
     info: {"items_total": 91, "items_len": 50, "amostra_titulos": ["ECA Digital completa um ano e é marco na proteção de criança|", "Projeto Sandbox Regulatório de IA da ANPD é finalista de prê|", "ANPD abre inscrições para audiência e inicia consulta públic|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?portal_type=News+Item", "batching": { "@id": "https://www.gov.br/anpd/@search?b_size=50&sort_on=effective&sort_order=descending&portal_type=News+Item
 
 === [anpd] notícias por tema :: inteligência artificial (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?SearchableText=intelig%C3%AAncia%20artificial&portal_type=News%20Item&b_size=20&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=61774 t=0.66s
+    status=200 ct=application/json bytes=61774 t=0.51s
     info: {"items_total": 23, "items_len": 20, "amostra_titulos": ["ECA Digital completa um ano e é marco na proteção de criança|", "Projeto Sandbox Regulatório de IA da ANPD é finalista de prê|", "ANPD abre tomadas de subsídios sobre próxima agenda regulató|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?SearchableText=intelig%C3%AAncia+artificial&portal_type=News+Item", "batching": { "@id": "https://www.gov.br/anpd/@search?SearchableText=intelig%C3%A
 
 === [anpd] notícias por tema :: algoritmo (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?SearchableText=algoritmo&portal_type=News%20Item&b_size=20&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=130 t=0.66s
+    status=200 ct=application/json bytes=130 t=0.51s
     info: {"items_total": 0, "items_len": 0, "amostra_titulos": []}
     amostra: { "@id": "https://www.gov.br/anpd/@search?SearchableText=algoritmo&portal_type=News+Item", "items": [], "items_total": 0 }
 
 === [anpd] regulação e normas (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Fpt-br%2Fassuntos%2Fregulacao
-    status=200 ct=application/json bytes=74957 t=0.66s
+    status=200 ct=application/json bytes=74957 t=0.53s
     info: {"items_total": 85, "items_len": 50, "amostra_titulos": ["relatorio_inteligencia_regulatória.pdf|", "SEI_0325517_Nota_Tecnica_5_assinado_assinado_Hugo Jordane Lu|", "capa balanço agenda regulatoria 2025-2026 - 1 SEM 2026|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Fassuntos%2Fregulacao", "batching": { "@id": "https://www.gov.br/anpd/@search?b_size=50&sort_on=effective&sort_order=descending&path=%
 
 === [anpd] consultas públicas (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&SearchableText=consulta+p%C3%BAblica
-    status=200 ct=application/json bytes=64482 t=0.76s
+    status=200 ct=application/json bytes=64482 t=0.51s
     info: {"items_total": 288, "items_len": 50, "amostra_titulos": ["ECA Digital completa um ano e é marco na proteção de criança|", "AVISO DE CONSULTA PÚBLICA - ANPD Nº 1:2026.pdf|", "ANPD abre inscrições para audiência e inicia consulta públic|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?SearchableText=consulta+p%C3%BAblica", "batching": { "@id": "https://www.gov.br/anpd/@search?b_size=50&sort_on=effective&sort_order=descending&Search
 
 === [anpd] tomada de subsídios (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&SearchableText=tomada+de+subs%C3%ADdios
-    status=200 ct=application/json bytes=64345 t=0.89s
+    status=200 ct=application/json bytes=64345 t=0.51s
     info: {"items_total": 243, "items_len": 50, "amostra_titulos": ["ECA Digital completa um ano e é marco na proteção de criança|", "ANPD abre tomadas de subsídios sobre próxima agenda regulató|", "PORTARIA Nº 11, DE 27 DE JANEIRO DE 2021|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?SearchableText=tomada+de+subs%C3%ADdios", "batching": { "@id": "https://www.gov.br/anpd/@search?b_size=50&sort_on=effective&sort_order=descending&Sea
 
 === [anpd] atos normativos (arquivos) (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&portal_type=File&SearchableText=resolu%C3%A7%C3%A3o
-    status=200 ct=application/json bytes=31880 t=0.67s
+    status=200 ct=application/json bytes=31880 t=0.5s
     info: {"items_total": 293, "items_len": 50, "amostra_titulos": ["TS 05.2026 - Minuta da Resolução Agenda de ARR.pdf|", "Reunião CIG 09.2023 - 06.10.2023.pdf|", "Ata CIG 06 2023_30062023.pdf|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?portal_type=File&SearchableText=resolu%C3%A7%C3%A3o", "batching": { "@id": "https://www.gov.br/anpd/@search?b_size=50&sort_on=effective&sort_order=de
 
 === [anpd] fiscalização (pasta oficial) (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Fpt-br%2Fassuntos%2Ffiscalizacao
-    status=200 ct=application/json bytes=107648 t=0.6s
+    status=200 ct=application/json bytes=107648 t=0.51s
     info: {"items_total": 121, "items_len": 50, "amostra_titulos": ["BancodadosPainelFISem03.07.2026.xlsx|", "DadosPainelFiscalizacao.xlsx|", "banner-mobile_fiscalização.png|"]}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Fassuntos%2Ffiscalizacao", "batching": { "@id": "https://www.gov.br/anpd/@search?b_size=50&sort_on=effective&sort_order=descending&pat
 
 === [anpd] agenda regulatória (pasta oficial) (modo=base)
     GET https://www.gov.br/anpd/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Fpt-br%2Fassuntos%2Fagenda-regulatoria
-    status=200 ct=application/json bytes=129 t=0.59s
+    status=200 ct=application/json bytes=129 t=0.5s
     info: {"items_total": 0, "items_len": 0, "amostra_titulos": []}
     amostra: { "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Fassuntos%2Fagenda-regulatoria", "items": [], "items_total": 0 }
 
 === [cnj] atos normativos recentes (modo=base)
     GET https://atos.cnj.jus.br/api/atos
-    status=200 ct=application/json bytes=42201 t=0.8s
+    status=200 ct=application/json bytes=42201 t=0.63s
     info: {"total": 6695, "data_len": 10, "amostra_titulos": ["<p style=\"text-align:justify\">Altera a Resolução CNJ n&ordm;|", "<p style=\"text-align:justify\">Altera o Provimento n. 255, de|", "<p>1. Conceder, durante o plantão judiciário, medida com imp|"], "links": 37}
     amostra: {"message":"Atos encontrados","total":6695,"per_page":10,"current_page":1,"last_page":670,"from":1,"to":10,"data":[{"id":7043,"tipo":"Resolu\u00e7\u00e3o","numero":697,"data_publicacao":"2026-09-16","
 
 === [cnj] atos normativos recentes (página 2) (modo=base)
     GET https://atos.cnj.jus.br/api/atos?page=2
-    status=200 ct=application/json bytes=69082 t=0.37s
+    status=200 ct=application/json bytes=69082 t=0.32s
     info: {"total": 6695, "data_len": 10, "amostra_titulos": ["<p style=\"text-align:justify\">Altera a Portaria Presidência |", "<p style=\"text-align:justify\">Dispõe sobre a prorrogação do |", "<p>1. Nova resolução para os concursos de cartórios;</p>\r\n\r\n|"], "links": 25}
     amostra: {"message":"Atos encontrados","total":6695,"per_page":10,"current_page":2,"last_page":670,"from":11,"to":20,"data":[{"id":7034,"tipo":"Portaria","numero":420,"data_publicacao":"2026-09-08","situacao":
 
 === [cnj] atos normativos recentes (página 3) (modo=base)
     GET https://atos.cnj.jus.br/api/atos?page=3
-    status=200 ct=application/json bytes=265901 t=1.05s
+    status=200 ct=application/json bytes=265901 t=0.46s
     info: {"total": 6695, "data_len": 10, "amostra_titulos": ["<p>Dispõe sobre as atribuições do Assessor-chefe da Correged|", "<p style=\"text-align:justify\">Altera a Portaria Presidência |", "<p style=\"text-align:justify\">Altera a Portaria Presidência |"], "links": 99}
     amostra: {"message":"Atos encontrados","total":6695,"per_page":10,"current_page":3,"last_page":670,"from":21,"to":30,"data":[{"id":7013,"tipo":"Portaria","numero":101,"data_publicacao":"2026-08-28","situacao":
 
 === [cnj] notícias oficiais (modo=base)
     GET https://www.cnj.jus.br/wp-json/wp/v2/posts?per_page=50&_fields=id%2Cdate%2Clink%2Ctitle%2Cexcerpt%2Ctype
-    status=200 ct=application/json; charset=UTF-8 bytes=39724 t=1.15s
+    status=200 ct=application/json; charset=UTF-8 bytes=39525 t=0.86s
     info: {"lista_len": 50}
-    amostra: [{"id":427453,"date":"2026-09-17T14:07:49","type":"post","link":"https:\/\/www.cnj.jus.br\/meio-ambiente-concurso-de-decisoes-judiciais-recebe-inscricoes-ate-domingo-20-9\/","title":{"rendered":"Meio 
+    amostra: [{"id":427718,"date":"2026-09-18T21:12:50","type":"post","link":"https:\/\/www.cnj.jus.br\/forum-debate-carreira-de-servidores-combate-ao-assedio-e-valorizacao-do-1o-grau\/","title":{"rendered":"F\u00
 
 === [cnj] notícias oficiais (página 2) (modo=base)
     GET https://www.cnj.jus.br/wp-json/wp/v2/posts?per_page=50&page=2&_fields=id%2Cdate%2Clink%2Ctitle%2Cexcerpt%2Ctype
-    status=200 ct=application/json; charset=UTF-8 bytes=39423 t=1.32s
+    status=200 ct=application/json; charset=UTF-8 bytes=39543 t=0.97s
     info: {"lista_len": 50}
-    amostra: [{"id":425689,"date":"2026-09-07T10:00:24","type":"post","link":"https:\/\/www.cnj.jus.br\/normas-e-politicas-de-gestao-de-precatorios-serao-tema-de-audiencia-publica-no-cnj\/","title":{"rendered":"No
+    amostra: [{"id":426119,"date":"2026-09-08T17:56:10","type":"post","link":"https:\/\/www.cnj.jus.br\/oficinas-buscam-solucoes-inovadoras-para-tratamento-de-processos-estruturais\/","title":{"rendered":"Oficinas
 
 === [dou] busca por tema (7 dias) :: inteligência artificial (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom
-    status=200 ct=text/html;charset=UTF-8 bytes=241340 t=2.22s
-    info: {"jsonArray_ref": "presente", "hits": 50, "links": 64}
+    status=200 ct=text/html;charset=UTF-8 bytes=229928 t=1.21s
+    info: {"jsonArray_ref": "presente", "hits": 40, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [dou] busca por tema (7 dias) :: algoritmo (modo=base)
-    GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=10-09-2026&publishTo
-    status=200 ct=text/html;charset=UTF-8 bytes=176269 t=1.1s
+    GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=13-09-2026&publishTo
+    status=200 ct=text/html;charset=UTF-8 bytes=176179 t=1.11s
     info: {"jsonArray_ref": "presente", "hits": 2, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
+=== [edpb] notícias e guidelines (RSS oficial) (modo=base)
+    GET https://www.edpb.europa.eu/feed/news_en
+    status=200 ct=application/rss+xml; charset=utf-8 bytes=43109 t=0.8s
+    info: {"feed": 10}
+    amostra: <?xml version="1.0" encoding="utf-8"?> <rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://www.edpb.europa.eu/home_en"> <channel> <title>EDPB News</title> <link>
+
+=== [edps] press releases (listagem oficial) (modo=base)
+    GET https://www.edps.europa.eu/press-publications/press-news/press-releases_en
+    status=202 ct=text/html; charset=UTF-8 bytes=1983 t=0.6s
+    info: {}
+    amostra: <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title></title> <style> body { f
+
+=== [edps] notícias oficiais (listagem) (modo=base)
+    GET https://www.edps.europa.eu/press-publications/press-news/news_en
+    status=202 ct=text/html; charset=UTF-8 bytes=1983 t=0.28s
+    info: {}
+    amostra: <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title></title> <style> body { f
+
+=== [edps] publicações (opiniões e guidelines) (modo=base)
+    GET https://www.edps.europa.eu/data-protection/our-work/publications_en
+    status=202 ct=text/html; charset=UTF-8 bytes=1983 t=0.36s
+    info: {}
+    amostra: <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title></title> <style> body { f
+
+=== [eu_commission] comunicados oficiais (Press Corner, RSS) (modo=base)
+    GET https://ec.europa.eu/commission/presscorner/api/rss?language=en
+    status=200 ct=application/rss+xml;charset=UTF-8 bytes=6834 t=1.26s
+    info: {"feed": 10}
+    amostra: <?xml version="1.0" encoding="UTF-8"?> <rss version="2.0"> <channel> <title>Press releases - RSS</title> <link>https://ec.europa.eu/commission/presscorner/api/rss?language=en</link> 
+
+=== [eu_commission] consultas públicas e calls for evidence (Have Your Say) (modo=base)
+    GET https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?page=1
+    status=200 ct=text/html;charset=UTF-8 bytes=4043 t=0.34s
+    info: {}
+    amostra: <!doctype html> <html class="eui-t-eui-legacy"> <head> <meta charset="utf-8"> <!-- General --> <meta name="description" content="European Commission - Have your say"> <meta nam
+
+=== [eu_commission] consultas públicas (Have Your Say, página 2) (modo=base)
+    GET https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?page=2
+    status=200 ct=text/html;charset=UTF-8 bytes=4043 t=0.35s
+    info: {}
+    amostra: <!doctype html> <html class="eui-t-eui-legacy"> <head> <meta charset="utf-8"> <!-- General --> <meta name="description" content="European Commission - Have your say"> <meta nam
+
+=== [eu_commission] consultas por tema (Have Your Say, keywords) :: artificial intelligence (modo=base)
+    GET https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?keywords=artificial%20intelligence
+    status=200 ct=text/html;charset=UTF-8 bytes=4043 t=0.37s
+    info: {}
+    amostra: <!doctype html> <html class="eui-t-eui-legacy"> <head> <meta charset="utf-8"> <!-- General --> <meta name="description" content="European Commission - Have your say"> <meta nam
+
+=== [eu_commission] consultas por tema (Have Your Say, keywords) :: AI Act (modo=base)
+    GET https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?keywords=AI%20Act
+    status=200 ct=text/html;charset=UTF-8 bytes=4043 t=0.34s
+    info: {}
+    amostra: <!doctype html> <html class="eui-t-eui-legacy"> <head> <meta charset="utf-8"> <!-- General --> <meta name="description" content="European Commission - Have your say"> <meta nam
+
+=== [eu_council] últimos documentos adicionados ao registro (modo=base)
+    GET https://www.consilium.europa.eu/en/documents/public-register/latest/
+    status=403 ct=text/html; charset=UTF-8 bytes=2000 t=0.2s
+    info: {}
+    amostra:  �      ���W��H�%������\`2 ^�NQUYj�r:�X,>Pk����}_f��ڞ� hN׮�kv���O����q ��6����?}� M����v?|�I��*?>�ԦK��4��/?��3���m]ئ�����>����G�wK�]}�2Y�_�t+����/��(�r)���9�������\������s:]�q����ws
+
+=== [eu_council] últimos documentos (página 2) (modo=base)
+    GET https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2
+    status=403 ct=text/html; charset=UTF-8 bytes=2000 t=0.07s
+    info: {}
+    amostra:  �      �����H�&��}��\`2 ^T�U�U�&��t����Sk�F��2nf���� ��4q�h�N������/_g?���� �j?��~�!m�ޓ���~|��I��#��qJ�_~�_��� �?��a����Z�[ߍ� q��i{�݊d�Iҵ�ӟ�����h��럧8��_�O�o��b��?Sc�M�xm����� t�NE],͟�_
+
+=== [eu_council] documentos legislativos preparatórios (página 1) (modo=base)
+    GET https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/
+    status=403 ct=text/html; charset=UTF-8 bytes=2000 t=0.05s
+    info: {}
+    amostra:  �      ��{g��F����?���$��.z#�f@W,�b�,�áA��b���_iF�5s�a� 4��&#��?��2/�ɽeS]����?}�o�ߤ�|��/�zb?:۷�?��俅�?�����u�J|y��a�����/K �];L_�¶���]�h�~��%��^~|˛|�����U� ���הOU�gzh�1 ��|��ƴ͘W�\���+�)۷U
+
+=== [eu_parliament] API v2 — procedimentos do termo parlamentar corrente (modo=base)
+    GET https://data.europarl.europa.eu/api/v2/procedures?parliamentary_term=10&limit=100&format=application/ld%2Bjson
+    status=200 ct=application/ld+json bytes=15064 t=1.93s
+    info: {"data_len": 100, "amostra_titulos": ["|", "|", "|"]}
+    amostra: {"data":[{"id":"eli/dl/proc/2024-2511","type":"Process","process_id":"2024-2511","process_type":"RSP","label":"2024/2511(RSP)"},{"id":"eli/dl/proc/2024-2516","type":"Process","process_id":"2024-2516",
+
+=== [eu_parliament] API v2 — procedimentos de IA (busca por texto) :: artificial intelligence (modo=base)
+    GET https://data.europarl.europa.eu/api/v2/procedures?text=artificial%20intelligence&limit=25&format=application/ld%2Bjson
+    status=404 ct= bytes=0 t=0.42s
+    info: {}
+    amostra: 
+
+=== [eu_parliament] API v2 — procedimentos de IA (busca por texto) :: AI Act (modo=base)
+    GET https://data.europarl.europa.eu/api/v2/procedures?text=AI%20Act&limit=25&format=application/ld%2Bjson
+    status=404 ct= bytes=0 t=0.43s
+    info: {}
+    amostra: 
+
+=== [eu_parliament] Legislative Train — Europe fit for the digital age (modo=base)
+    GET https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age
+    status=202 ct=text/html; charset=UTF-8 bytes=2431 t=0.23s
+    info: {}
+    amostra: <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title></title> <style> body { f
+
+=== [eu_parliament] Legislative Train — unicidade e poderes de execução (modo=base)
+    GET https://www.europarl.europa.eu/legislative-train/file-artificial-intelligence-act
+    status=202 ct=text/html; charset=UTF-8 bytes=2431 t=0.1s
+    info: {}
+    amostra: <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title></title> <style> body { f
+
+=== [eu_parliament] sala de imprensa — por tema :: artificial intelligence (modo=base)
+    GET https://www.europarl.europa.eu/news/en/press-room?keywords=artificial%20intelligence
+    status=202 ct=text/html; charset=UTF-8 bytes=2431 t=0.1s
+    info: {}
+    amostra: <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title></title> <style> body { f
+
+=== [eu_parliament] sala de imprensa — por tema :: AI Act (modo=base)
+    GET https://www.europarl.europa.eu/news/en/press-room?keywords=AI%20Act
+    status=202 ct=text/html; charset=UTF-8 bytes=2431 t=0.09s
+    info: {}
+    amostra: <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title></title> <style> body { f
+
+=== [eurlex] busca por tema (legislação do ano corrente) :: artificial intelligence (modo=base)
+    GET https://eur-lex.europa.eu/search.html?text=%22artificial%20intelligence%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR=2026
+    status=200 ct=text/html; charset=UTF-8 bytes=195020 t=1.67s
+    info: {"links": 241}
+    amostra:  <!DOCTYPE html> <html lang="en" class="no-js" xml:lang="en" > <head> <meta charset="utf-8"> <meta http-equiv="X-U
+
+=== [eurlex] busca por tema (legislação do ano corrente) :: AI Act (modo=base)
+    GET https://eur-lex.europa.eu/search.html?text=%22AI%20Act%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR=2026
+    status=200 ct=text/html; charset=UTF-8 bytes=174947 t=1.7s
+    info: {"links": 235}
+    amostra:  <!DOCTYPE html> <html lang="en" class="no-js" xml:lang="en" > <head> <meta charset="utf-8"> <meta http-equiv="X-U
+
+=== [eurlex] busca por tema (legislação do ano anterior) :: artificial intelligence (modo=base)
+    GET https://eur-lex.europa.eu/search.html?text=%22artificial%20intelligence%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR=2025
+    status=200 ct=text/html; charset=UTF-8 bytes=198205 t=1.79s
+    info: {"links": 241}
+    amostra:  <!DOCTYPE html> <html lang="en" class="no-js" xml:lang="en" > <head> <meta charset="utf-8"> <meta http-equiv="X-U
+
+=== [eurlex] busca por tema (legislação do ano anterior) :: AI Act (modo=base)
+    GET https://eur-lex.europa.eu/search.html?text=%22AI%20Act%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR=2025
+    status=200 ct=text/html; charset=UTF-8 bytes=179443 t=1.52s
+    info: {"links": 235}
+    amostra:  <!DOCTYPE html> <html lang="en" class="no-js" xml:lang="en" > <head> <meta charset="utf-8"> <meta http-equiv="X-U
+
+=== [eurlex] atos do Jornal Oficial — série L (RSS oficial) (modo=base)
+    GET https://eur-lex.europa.eu/EN/display-feed.rss?rssId=222
+    status=200 ct=application/xml bytes=69942 t=0.16s
+    info: {"feed": 100}
+    amostra: <?xml version="1.0" encoding="UTF-8"?> <?xml-stylesheet type="text/xsl" media="screen" href="./../screen-rss.xsl"?> <rss version="2.0"> <channel xmlns:dc="http://purl.org/dc/elements/1.1/"> <title>
+
+=== [eurlex] AI Act — versão consolidada (ato âncora) (modo=base)
+    GET https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727
+    status=200 ct=text/html; charset=UTF-8 bytes=1103982 t=0.91s
+    info: {"links": 383}
+    amostra:  <!DOCTYPE html> <html lang="en" class="no-js" xml:lang="en" prefix="eli: http://data.europa.eu/eli/ontology#" > <head> 
+
 === [mcti] atos do MCTI por tema (DOU) :: inteligência artificial (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom
-    status=200 ct=text/html;charset=UTF-8 bytes=192173 t=0.45s
-    info: {"jsonArray_ref": "presente", "hits": 12, "links": 64}
+    status=200 ct=text/html;charset=UTF-8 bytes=187584 t=1.04s
+    info: {"jsonArray_ref": "presente", "hits": 8, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [mcti] atos do MCTI por tema (DOU) :: algoritmo (modo=base)
-    GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=18-08-2026&publishTo
-    status=200 ct=text/html;charset=UTF-8 bytes=173698 t=0.99s
+    GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=21-08-2026&publishTo
+    status=200 ct=text/html;charset=UTF-8 bytes=173698 t=0.92s
     info: {"jsonArray_ref": "presente", "hits": 0, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [mcti] notícias institucionais (modo=base)
     GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias
-    status=200 ct=text/html;charset=utf-8 bytes=234193 t=2.33s
+    status=200 ct=text/html;charset=utf-8 bytes=235259 t=1.98s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 582}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); <
 
 === [mcti] notícias institucionais (modo=base)
-    GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias?b_start:int=20
-    status=200 ct=text/html;charset=utf-8 bytes=234193 t=2.53s
+    GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias
+    status=200 ct=text/html;charset=utf-8 bytes=235259 t=1.99s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 582}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); <
 
 === [mcti] portarias publicadas (modo=base)
     GET https://www.gov.br/mcti/pt-br/acesso-a-informacao/legislacao/portarias
-    status=200 ct=text/html;charset=utf-8 bytes=158569 t=1.36s
+    status=200 ct=text/html;charset=utf-8 bytes=159629 t=1.15s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 547}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); <
 
 === [mcti] planos, programas e políticas (modo=base)
     GET https://www.gov.br/mcti/pt-br/acompanhe-o-mcti
-    status=200 ct=text/html;charset=utf-8 bytes=160918 t=1.36s
+    status=200 ct=text/html;charset=utf-8 bytes=161984 t=1.15s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 559}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); <
 
 === [planalto] atos do Poder Legislativo (leis, vetos) :: inteligência artificial (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom
-    status=200 ct=text/html;charset=UTF-8 bytes=177927 t=1.9s
+    status=200 ct=text/html;charset=UTF-8 bytes=177927 t=0.52s
     info: {"jsonArray_ref": "presente", "hits": 2, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [planalto] atos do Poder Legislativo (leis, vetos) :: algoritmo (modo=base)
-    GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=19-06-2026&publishTo
-    status=200 ct=text/html;charset=UTF-8 bytes=171989 t=1.09s
+    GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publishTo
+    status=200 ct=text/html;charset=UTF-8 bytes=171989 t=0.5s
     info: {"jsonArray_ref": "presente", "hits": 0, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [planalto] atos da Presidência (decretos, MPs) :: inteligência artificial (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom
-    status=200 ct=text/html;charset=UTF-8 bytes=195099 t=1.3s
-    info: {"jsonArray_ref": "presente", "hits": 15, "links": 64}
+    status=200 ct=text/html;charset=UTF-8 bytes=193983 t=1.68s
+    info: {"jsonArray_ref": "presente", "hits": 14, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [planalto] atos da Presidência (decretos, MPs) :: algoritmo (modo=base)
-    GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=19-06-2026&publishTo
-    status=200 ct=text/html;charset=UTF-8 bytes=183699 t=1.8s
+    GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publishTo
+    status=200 ct=text/html;charset=UTF-8 bytes=183699 t=1.4s
     info: {"jsonArray_ref": "presente", "hits": 7, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [planalto] notícias do Planalto (RSS oficial) (modo=base)
     GET https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/RSS
-    status=200 ct=application/atom+xml; charset=utf-8 bytes=85543 t=0.98s
+    status=200 ct=application/atom+xml; charset=utf-8 bytes=85543 t=0.82s
     info: {}
     amostra: <?xml version="1.0" encoding="utf-8" ?> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:syn="http://purl.org/rss/1.0/modules/syndicat
 
 === [planalto] notícias do Planalto (página oficial) (modo=base)
     GET https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias
-    status=200 ct=text/html;charset=utf-8 bytes=178858 t=1.36s
+    status=200 ct=text/html;charset=utf-8 bytes=179924 t=1.15s
     info: {"bloqueio": "F5-TSPD (desafio JS)", "links": 435}
     amostra: <!DOCTYPE html> <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"> <head> <script type="text/javascript"> (function(){ window["loaderConfig"] = "/TSPD/?type=20"; })(); <
 
 === [tse] atos normativos (portal oficial) (modo=base)
     GET https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Flegislacao
-    status=200 ct=application/json bytes=30616 t=0.98s
-    info: {"items_total": 21226, "items_len": 50, "amostra_titulos": ["PORTARIA Nº 623, DE 15 DE SETEMBRO DE 2026|", "PORTARIA Nº 621, DE 14 DE SETEMBRO DE 2026|", "PORTARIA Nº 619, DE 14 DE SETEMBRO DE 2026|"]}
+    status=200 ct=application/json bytes=30620 t=0.76s
+    info: {"items_total": 21227, "items_len": 50, "amostra_titulos": ["PORTARIA Nº 626, DE 16 DE SETEMBRO DE 2026|", "PORTARIA Nº 623, DE 15 DE SETEMBRO DE 2026|", "PORTARIA Nº 621, DE 14 DE SETEMBRO DE 2026|"]}
     amostra: { "@id": "https://www.tse.jus.br/++api++/@search?path=%2Flegislacao", "batching": { "@id": "https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&path=%2Fle
 
 === [tse] notícias oficiais (portal oficial) (modo=base)
     GET https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&portal_type=Noticia
-    status=200 ct=application/json bytes=42045 t=0.36s
-    info: {"items_total": 18650, "items_len": 50, "amostra_titulos": ["Delegação de Timor-Leste visita TSE para conhecer sistema el|", "TSE intensifica prevenção e combate a crimes contra as mulhe|", "TSE lança projeto \"Meu Primeiro Confirma\" para engajar joven|"]}
+    status=200 ct=application/json bytes=42220 t=1.08s
+    info: {"items_total": 18661, "items_len": 50, "amostra_titulos": ["Lei dos Partidos Políticos completa 31 anos e estrutura a at|", "Faltam 15 dias: candidatas e candidatos não podem ser presos|", "Clica e Confirma mostra a importância do trabalho de mesária|"]}
     amostra: { "@id": "https://www.tse.jus.br/++api++/@search?portal_type=Noticia", "batching": { "@id": "https://www.tse.jus.br/++api++/@search?b_size=50&sort_on=effective&sort_order=descending&portal_ty
 
 === [tse] atos e notícias por tema (portal oficial) :: inteligência artificial (modo=base)
     GET https://www.tse.jus.br/++api++/@search?SearchableText=intelig%C3%AAncia%20artificial&b_size=20&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=31788 t=0.95s
-    info: {"items_total": 83127, "items_len": 20, "amostra_titulos": ["Delegação de Timor-Leste visita TSE para conhecer sistema el|", "Wilson Grassi|", "Leonardo Avalanche|"]}
+    status=200 ct=application/json bytes=33738 t=1.02s
+    info: {"items_total": 83194, "items_len": 20, "amostra_titulos": ["Título Eleitoral - FAQ|", "Lei dos Partidos Políticos completa 31 anos e estrutura a at|", "Faltam 15 dias: candidatas e candidatos não podem ser presos|"]}
     amostra: { "@id": "https://www.tse.jus.br/++api++/@search", "batching": { "@id": "https://www.tse.jus.br/++api++/@search?b_size=20&sort_on=effective&sort_order=descending", "first": "https://www.
 
 === [tse] atos e notícias por tema (portal oficial) :: algoritmo (modo=base)
     GET https://www.tse.jus.br/++api++/@search?SearchableText=algoritmo&b_size=20&sort_on=effective&sort_order=descending
-    status=200 ct=application/json bytes=31788 t=0.57s
-    info: {"items_total": 83127, "items_len": 20, "amostra_titulos": ["Delegação de Timor-Leste visita TSE para conhecer sistema el|", "Wilson Grassi|", "Leonardo Avalanche|"]}
+    status=200 ct=application/json bytes=33738 t=0.48s
+    info: {"items_total": 83194, "items_len": 20, "amostra_titulos": ["Título Eleitoral - FAQ|", "Lei dos Partidos Políticos completa 31 anos e estrutura a at|", "Faltam 15 dias: candidatas e candidatos não podem ser presos|"]}
     amostra: { "@id": "https://www.tse.jus.br/++api++/@search", "batching": { "@id": "https://www.tse.jus.br/++api++/@search?b_size=20&sort_on=effective&sort_order=descending", "first": "https://www.
 
 === [tse] atos do TSE por tema (DOU) :: inteligência artificial (modo=base)
     GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22intelig%C3%AAncia%20artificial%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom
-    status=200 ct=text/html;charset=UTF-8 bytes=221387 t=1.51s
+    status=200 ct=text/html;charset=UTF-8 bytes=221386 t=0.95s
     info: {"jsonArray_ref": "presente", "hits": 37, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [tse] atos do TSE por tema (DOU) :: algoritmo (modo=base)
-    GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=19-06-2026&publishTo
-    status=200 ct=text/html;charset=UTF-8 bytes=177331 t=1.22s
+    GET https://www.in.gov.br/consulta/-/buscar/dou?q=%22algoritmo%22&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publishTo
+    status=200 ct=text/html;charset=UTF-8 bytes=177332 t=1.2s
     info: {"jsonArray_ref": "presente", "hits": 2, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
 === [tse] resoluções do TSE (DOU, órgão/subórgão) (modo=base)
-    GET https://www.in.gov.br/consulta/-/buscar/dou?q=RESOLU%C3%87%C3%83O&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=19-06-2026&publi
-    status=200 ct=text/html;charset=UTF-8 bytes=199201 t=1.11s
-    info: {"jsonArray_ref": "presente", "hits": 20, "links": 64}
+    GET https://www.in.gov.br/consulta/-/buscar/dou?q=RESOLU%C3%87%C3%83O&s=todos&exactDate=personalizado&sortType=0&delta=50&currentPage=1&publishFrom=22-06-2026&publi
+    status=200 ct=text/html;charset=UTF-8 bytes=198214 t=1.04s
+    info: {"jsonArray_ref": "presente", "hits": 19, "links": 64}
     amostra:  <!DOCTYPE html> <html class="ltr" dir="ltr" lang="pt-BR" > <head> <title>Diário Oficial
 
---- 35/35 responderam 200 ---
+--- 53/65 responderam 200 ---

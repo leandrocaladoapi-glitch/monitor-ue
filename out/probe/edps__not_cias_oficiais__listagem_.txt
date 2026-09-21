@@ -1,0 +1,48 @@
+URL: https://www.edps.europa.eu/press-publications/press-news/news_en
+STATUS: 202 CT: text/html; charset=UTF-8
+INFO: {}
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        body {
+            font-family: "Arial";
+        }
+    </style>
+    <script type="text/javascript">
+    window.awsWafCookieDomainList = [];
+    window.gokuProps = {
+"key":"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AFR5AVT55AfvazdheMc0QL7AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMAnXBULSzkhuisHosAgEQgDuBL+A/TF/xWJKKn3TZfr1hsUKzhjKF/69aoRaoRLSqkNaAmKAIOPXeFXH3Bvw15l9njg9C4k6sw8qNFw==",
+          "iv":"CgAFvR7I0AAAAHWy",
+          "context":"JXhuTKkfjU8dQ8ywvHTGkEY+34CCW7UDuqILoSrw/5EWYeV1s0wai8F+22VzKQ39soE99iiGLIgP21TuDQEAbuOnaWbP7l1PizjCd53Lyx7+Ly2MbAx/Q2OOijLo53tr1wfCZe/B4IZ+W6TZTXZAf42KZJerpjxa8fp5hJhWtyrZzKxgHkKs6ef0fTYjUsbbGJ1aHmed/lISuTP4scf2vhjrnWZq8phnwWG4+lMFEzl0wdfTjOgdGdY/Z41HbHz1NqTLhf4onLCEtqSU7+Z649BW1X4cSX+eAKljXKml3uUiId152IE2dxrKe0QIzsFRL9eKJFG6gs+xQeuE5Vr5ICYs9w6JOlFNum6h8GBXrXXs/g=="
+};
+    </script>
+    <script src="https://cbc118bbfbdf.c336fc65.eu-west-1.token.awswaf.com/cbc118bbfbdf/2c2b3b92d1df/ff464a5e0ee8/challenge.js"></script>
+</head>
+<body>
+    <div id="challenge-container"></div>
+    <script type="text/javascript">
+        AwsWafIntegration.saveReferrer();
+        AwsWafIntegration.checkForceRefresh().then((forceRefresh) => {
+            if (forceRefresh) {
+                AwsWafIntegration.forceRefreshToken().then(() => {
+                    window.location.reload(true);
+                });
+            } else {
+                AwsWafIntegration.getToken().then(() => {
+                    window.location.reload(true);
+                });
+            }
+        });
+    </script>
+    <noscript>
+        <h1>JavaScript is disabled</h1>
+        In order to continue, we need to verify that you're not a robot.
+        This requires JavaScript. Enable JavaScript and then reload the page.
+    </noscript>
+</body>
+</html>

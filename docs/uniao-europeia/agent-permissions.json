@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "site": "https://monitor.lcfconsulting.com.br/uniao-europeia",
+  "updated": "2026-09-18",
+  "public_access": {
+    "crawl": true,
+    "read_html": true,
+    "read_structured_feeds": true,
+    "citation": true
+  },
+  "write_actions": false,
+  "authentication_required_for_public_content": false,
+  "high_stakes_notice": "Dados legislativos devem sempre ser conferidos nas fontes oficiais.",
+  "commercial_contact": "https://lcfconsulting.com.br/"
+}

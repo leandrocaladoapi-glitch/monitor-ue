@@ -28,6 +28,7 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE, "scripts"))
 
 import update_legislation as ul  # noqa: E402
+import update_sources as us  # noqa: E402
 
 FALHAS = []
 
@@ -85,10 +86,39 @@ def copiar_dataset(destino):
     return destino
 
 
+# Fontes multiórgão (update_sources) também simuladas: o selftest é offline
+# e não pode depender de rede real (em CI a fase roda em subprocessos).
+ORGAOS_BR_FAKE = ("anpd", "cnj", "tse", "dou", "planalto", "mcti")
+
+
+def _resultados_br_fake():
+    resultados = {}
+    for orgao in ORGAOS_BR_FAKE:
+        resultados[orgao] = {
+            "orgao": orgao, "nome": orgao, "obrigatoria": True, "itens": [],
+            "saude": {
+                "nome": orgao, "status": "ok",
+                "ultima_tentativa": "2026-09-18T12:00:00-03:00",
+                "ultima_execucao_ok": None, "itens_consultados": 1,
+                "itens_relevantes": 0, "itens_descartados": 0,
+                "itens_duplicados": 0, "revisao_pendente": 0, "novidades": 0,
+                "erros": 0, "duracao_segundos": 0.1,
+                "endpoints": [f"https://{orgao}.gov.br/"],
+                "canais_ok": ["canal-fixado-no-selftest"], "canais_falhos": [],
+                "erro_detalhe": None,
+                "http": {"chamadas": 1, "falhas": 0, "cache": 0,
+                         "tempo_total": 0.1, "por_endpoint": {}},
+            },
+            "duracao_segundos": 0.1,
+        }
+    return resultados
+
+
 def preparar_simulacao(tmp):
     ul.DATA = tmp
     ul._CURL_BIN = None
     ul._http_urllib = fake_urllib          # transporte simulado (sem rede)
+    us.executar_todas = lambda **_kw: _resultados_br_fake()
     ul._HTTP_CACHE.clear()
     with ul._HTTP_LOCK:
         ul._HTTP_STATS.update({"chamadas": 0, "cache": 0, "falhas": 0,

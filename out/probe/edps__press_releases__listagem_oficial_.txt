@@ -1,0 +1,48 @@
+URL: https://www.edps.europa.eu/press-publications/press-news/press-releases_en
+STATUS: 202 CT: text/html; charset=UTF-8
+INFO: {}
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        body {
+            font-family: "Arial";
+        }
+    </style>
+    <script type="text/javascript">
+    window.awsWafCookieDomainList = [];
+    window.gokuProps = {
+"key":"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AFR5AVT55AfvazdheMc0QL7AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMAnXBULSzkhuisHosAgEQgDuBL+A/TF/xWJKKn3TZfr1hsUKzhjKF/69aoRaoRLSqkNaAmKAIOPXeFXH3Bvw15l9njg9C4k6sw8qNFw==",
+          "iv":"CgAGVR7HCQAAC+Z3",
+          "context":"SbFAoFQzy5nQPV6yMBH/zAswzPqi4PBYwmT9TgCu6spM/OX1es+qrONvI3Em4Or3gioMKmiLziyYoP6ReVPoSHxbjLOC6n6YqUfW96PVwu8riPrC6rxfGON19xcAUadgl/affnrCsyvBkrsYwxsm3SUaSKauQWf45C7kOyCeLow5lLQcTteKMFdLlc36M/eOCoC5HFe53YFuETLKnToSxOjtNJ0f7iVQxhX+ttgcsx/cM96o0uxnQj0qx/h3KWEvY7S9eqEE2hjARDv90B0Eouo+u2WnUAe7Bf6T7fzwYqQUCeUZd+zgiRqx/+3dcONgpm3Ny3JPFbW9Y08DxCDWTc5Q5cWY55Q4ktQFvjewqORMHA=="
+};
+    </script>
+    <script src="https://cbc118bbfbdf.c336fc65.eu-west-1.token.awswaf.com/cbc118bbfbdf/2c2b3b92d1df/ff464a5e0ee8/challenge.js"></script>
+</head>
+<body>
+    <div id="challenge-container"></div>
+    <script type="text/javascript">
+        AwsWafIntegration.saveReferrer();
+        AwsWafIntegration.checkForceRefresh().then((forceRefresh) => {
+            if (forceRefresh) {
+                AwsWafIntegration.forceRefreshToken().then(() => {
+                    window.location.reload(true);
+                });
+            } else {
+                AwsWafIntegration.getToken().then(() => {
+                    window.location.reload(true);
+                });
+            }
+        });
+    </script>
+    <noscript>
+        <h1>JavaScript is disabled</h1>
+        In order to continue, we need to verify that you're not a robot.
+        This requires JavaScript. Enable JavaScript and then reload the page.
+    </noscript>
+</body>
+</html>

@@ -26,13 +26,19 @@ def problems(record, now=None):
             errors.append("Cobertura inferior a 100%.")
     except (TypeError, ValueError):
         errors.append("Cobertura inválida.")
-    if record.get("erros") or record.get("proposicoes_pendentes"):
-        errors.append("Há erros ou proposições pendentes.")
+    pendentes = record.get("procedimentos_pendentes",
+                           record.get("proposicoes_pendentes"))
+    if record.get("erros") or pendentes:
+        errors.append("Há erros ou procedimentos pendentes.")
     return errors
 
-def main():
+def main(argv=None):
+    # Caminho do dataset por argv: raiz (BR) por padrão; o cron UE passa
+    # data/legislation-eu/updates.json.
+    caminho = (argv or sys.argv)[1] if len((argv or sys.argv)) > 1 \
+        else "data/legislation/updates.json"
     try:
-        data = json.loads(Path("data/legislation/updates.json").read_text())
+        data = json.loads(Path(caminho).read_text())
         found = problems((data.get("execucoes") or [{}])[0])
     except (OSError, ValueError, TypeError, AttributeError):
         found = ["Não foi possível verificar o registro da coleta."]
