@@ -1,13 +1,465 @@
 {
-  "gerado_em": "2026-09-18",
+  "gerado_em": "2026-09-21",
   "execucoes": [
+    {
+      "id": "run_2026_09_21_0745",
+      "data_hora": "2026-09-21T07:45:40-03:00",
+      "fim": "2026-09-21T07:46:35-03:00",
+      "ts": "2026-09-21T10:45:40+00:00",
+      "ts_fim": "2026-09-21T10:46:35+00:00",
+      "idade_horas": 0.0,
+      "tipo": "atualizacao",
+      "status": "parcial",
+      "duracao_segundos": 54,
+      "orcamento_segundos": 1500,
+      "verificadas": 0,
+      "monitoradas": 2,
+      "pendentes": 0,
+      "atualizadas": 0,
+      "novas": 0,
+      "mudancas": 0,
+      "eventos": 0,
+      "cobertura_pct": 0.0,
+      "erros": 2,
+      "chamadas_http": 17,
+      "cache_http": 0,
+      "falhas_http": 4,
+      "tempo_rede_s": 81.85,
+      "por_endpoint": {
+        "comissao:info/law/better-regulation": {
+          "chamadas": 2,
+          "falhas": 0,
+          "tempo_total": 0.67
+        },
+        "eurlex:search.html": {
+          "chamadas": 10,
+          "falhas": 0,
+          "tempo_total": 0.95
+        },
+        "parlamento:api/v2/procedures": {
+          "chamadas": 0,
+          "falhas": 4,
+          "tempo_total": 0.0
+        },
+        "parlamento:legislative-train/theme-a-europe-fit-for-the-digital-age": {
+          "chamadas": 1,
+          "falhas": 0,
+          "tempo_total": 0.14
+        }
+      },
+      "fases_segundos": {
+        "agenda_consultas": 1.3,
+        "atualizacao_procedimentos": 42.4,
+        "descoberta_procedimentos": 4.4,
+        "fontes_multiorgao": 6.6
+      },
+      "snapshot": {
+        "proposicoes_total": 2,
+        "por_situacao": {
+          "em_tramitacao": 2
+        },
+        "normas_total": 2,
+        "eventos_total": 1,
+        "mudancas_registradas": 12
+      },
+      "fontes": 2,
+      "engine": {
+        "orcamento_segundos": 1500,
+        "max_novas": 25,
+        "workers": 5,
+        "http_concorrencia": 4
+      },
+      "status_global": "PARCIAL",
+      "fontes_monitoradas": {
+        "ai_office": {
+          "nome": "European AI Office — Comissão Europeia (digital-strategy)",
+          "status": "falha",
+          "ultima_tentativa": "2026-09-21T07:46:28-03:00",
+          "ultima_execucao_ok": null,
+          "itens_consultados": 0,
+          "itens_relevantes": 0,
+          "itens_descartados": 0,
+          "itens_duplicados": 0,
+          "revisao_pendente": 0,
+          "novidades": 0,
+          "erros": 6,
+          "duracao_segundos": 0.8,
+          "endpoints": [
+            "https://digital-strategy.ec.europa.eu/en/news?type=5%7C13",
+            "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+            "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+            "https://digital-strategy.ec.europa.eu/en/policies/general-purpose-ai",
+            "https://digital-strategy.ec.europa.eu/en/ai-act"
+          ],
+          "canais_detalhe": [],
+          "canais_ok": [],
+          "canais_falhos": [
+            "notícias e comunicados do portal",
+            "página da AI Office (políticas e ações)",
+            "AI Act — quadro regulatório e implementação",
+            "General-Purpose AI — página oficial",
+            "AI Act — página do serviço"
+          ],
+          "canais_falhos_obrigatorios": [
+            "notícias e comunicados do portal"
+          ],
+          "canais_opcionais_falhos": [
+            "página da AI Office (políticas e ações)",
+            "AI Act — quadro regulatório e implementação",
+            "General-Purpose AI — página oficial",
+            "AI Act — página do serviço"
+          ],
+          "erro_detalhe": "notícias e comunicados do portal: ModuleNotFoundError: No module named 'eu_parsers'; página da AI Office (políticas e ações): ModuleNotFoundError: No module named 'eu_parsers'; AI Act — quadro regulatório e implementação: ModuleNotFoundError: No module named 'eu_parsers'; General-Purpose AI — página oficial: ModuleNotFoundError: No module named 'eu_parsers'",
+          "atos_registrados": 0,
+          "atos_descartados_por_retencao": 0
+        },
+        "edpb": {
+          "nome": "EDPB — European Data Protection Board",
+          "status": "ok",
+          "ultima_tentativa": "2026-09-21T07:46:33-03:00",
+          "ultima_execucao_ok": "2026-09-21T07:46:35-03:00",
+          "itens_consultados": 10,
+          "itens_relevantes": 10,
+          "itens_descartados": 0,
+          "itens_duplicados": 0,
+          "revisao_pendente": 0,
+          "novidades": 9,
+          "erros": 0,
+          "duracao_segundos": 0.8,
+          "endpoints": [
+            "https://www.edpb.europa.eu/feed/news_en"
+          ],
+          "canais_detalhe": [
+            {
+              "canal": "notícias e guidelines (RSS oficial)",
+              "url": "https://www.edpb.europa.eu/feed/news_en",
+              "itens_brutos": 10,
+              "amostra_hierarquia": [],
+              "itens_relevantes": 10
+            }
+          ],
+          "canais_ok": [
+            "notícias e guidelines (RSS oficial)"
+          ],
+          "canais_falhos": [],
+          "canais_falhos_obrigatorios": [],
+          "canais_opcionais_falhos": [],
+          "erro_detalhe": null,
+          "atos_registrados": 9,
+          "atos_descartados_por_retencao": 0
+        },
+        "edps": {
+          "nome": "EDPS — European Data Protection Supervisor",
+          "status": "falha",
+          "ultima_tentativa": "2026-09-21T07:46:34-03:00",
+          "ultima_execucao_ok": null,
+          "itens_consultados": 0,
+          "itens_relevantes": 0,
+          "itens_descartados": 0,
+          "itens_duplicados": 0,
+          "revisao_pendente": 0,
+          "novidades": 0,
+          "erros": 4,
+          "duracao_segundos": 1.1,
+          "endpoints": [
+            "https://www.edps.europa.eu/press-publications/press-news/press-releases_en",
+            "https://www.edps.europa.eu/press-publications/press-news/news_en",
+            "https://www.edps.europa.eu/data-protection/our-work/publications_en"
+          ],
+          "canais_detalhe": [],
+          "canais_ok": [],
+          "canais_falhos": [
+            "press releases (listagem oficial)",
+            "notícias oficiais (listagem)",
+            "publicações (opiniões e guidelines)"
+          ],
+          "canais_falhos_obrigatorios": [
+            "press releases (listagem oficial)"
+          ],
+          "canais_opcionais_falhos": [
+            "notícias oficiais (listagem)",
+            "publicações (opiniões e guidelines)"
+          ],
+          "erro_detalhe": "press releases (listagem oficial): ModuleNotFoundError: No module named 'eu_parsers'; notícias oficiais (listagem): ModuleNotFoundError: No module named 'eu_parsers'; publicações (opiniões e guidelines): ModuleNotFoundError: No module named 'eu_parsers'; nenhum canal respondeu — press releases (listagem oficial): ModuleNotFoundError: No module named 'eu_parsers'; notícias oficiais (listagem): ModuleNotFoundError: No module named 'eu_parsers'; publicações (opiniões e guidelines): ModuleNotFoundError: No module named 'eu_parsers'",
+          "atos_registrados": 0,
+          "atos_descartados_por_retencao": 0
+        },
+        "eu_commission": {
+          "nome": "Comissão Europeia — Press Corner e Have Your Say",
+          "status": "parcial",
+          "ultima_tentativa": "2026-09-21T07:46:30-03:00",
+          "ultima_execucao_ok": null,
+          "itens_consultados": 10,
+          "itens_relevantes": 2,
+          "itens_descartados": 8,
+          "itens_duplicados": 0,
+          "revisao_pendente": 0,
+          "novidades": 2,
+          "erros": 3,
+          "duracao_segundos": 1.6,
+          "endpoints": [
+            "https://ec.europa.eu/commission/presscorner/api/rss?language=en",
+            "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?page=1",
+            "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?page=2",
+            "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?keywords={topico}"
+          ],
+          "canais_detalhe": [
+            {
+              "canal": "comunicados oficiais (Press Corner, RSS)",
+              "url": "https://ec.europa.eu/commission/presscorner/api/rss?language=en",
+              "itens_brutos": 10,
+              "amostra_hierarquia": [],
+              "itens_relevantes": 2
+            }
+          ],
+          "canais_ok": [
+            "comunicados oficiais (Press Corner, RSS)"
+          ],
+          "canais_falhos": [
+            "consultas públicas e calls for evidence (Have Your Say)",
+            "consultas públicas (Have Your Say, página 2)",
+            "consultas por tema (Have Your Say, keywords)"
+          ],
+          "canais_falhos_obrigatorios": [
+            "consultas públicas e calls for evidence (Have Your Say)"
+          ],
+          "canais_opcionais_falhos": [
+            "consultas públicas (Have Your Say, página 2)",
+            "consultas por tema (Have Your Say, keywords)"
+          ],
+          "erro_detalhe": "consultas públicas e calls for evidence (Have Your Say): ModuleNotFoundError: No module named 'eu_parsers'; consultas públicas (Have Your Say, página 2): ModuleNotFoundError: No module named 'eu_parsers'; consultas por tema (Have Your Say, keywords): ModuleNotFoundError: No module named 'eu_parsers'",
+          "atos_registrados": 2,
+          "atos_descartados_por_retencao": 0
+        },
+        "eu_council": {
+          "nome": "Conselho da UE — Registro público de documentos",
+          "status": "falha",
+          "ultima_tentativa": "2026-09-21T07:46:30-03:00",
+          "ultima_execucao_ok": null,
+          "itens_consultados": 0,
+          "itens_relevantes": 0,
+          "itens_descartados": 0,
+          "itens_duplicados": 0,
+          "revisao_pendente": 0,
+          "novidades": 0,
+          "erros": 4,
+          "duracao_segundos": 0.5,
+          "endpoints": [
+            "https://www.consilium.europa.eu/en/documents/public-register/latest/",
+            "https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2",
+            "https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/"
+          ],
+          "canais_detalhe": [],
+          "canais_ok": [],
+          "canais_falhos": [
+            "últimos documentos adicionados ao registro",
+            "últimos documentos (página 2)",
+            "documentos legislativos preparatórios (página 1)"
+          ],
+          "canais_falhos_obrigatorios": [
+            "últimos documentos adicionados ao registro"
+          ],
+          "canais_opcionais_falhos": [
+            "últimos documentos (página 2)",
+            "documentos legislativos preparatórios (página 1)"
+          ],
+          "erro_detalhe": "últimos documentos adicionados ao registro: HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/ (HTTP 403); últimos documentos (página 2): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2 (HTTP 403); documentos legislativos preparatórios (página 1): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/ (HTTP 403); nenhum canal respondeu — últimos documentos adicionados ao registro: HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/ (HTTP 403); últimos documentos (página 2): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2 (HTTP 403); documentos legislativos preparatórios (página 1): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/ (HTTP 403)",
+          "atos_registrados": 0,
+          "atos_descartados_por_retencao": 0
+        },
+        "eu_parliament": {
+          "nome": "Parlamento Europeu — Open Data Portal v2 / Legislative Train",
+          "status": "falha",
+          "ultima_tentativa": "2026-09-21T07:46:32-03:00",
+          "ultima_execucao_ok": null,
+          "itens_consultados": 0,
+          "itens_relevantes": 0,
+          "itens_descartados": 0,
+          "itens_duplicados": 0,
+          "revisao_pendente": 0,
+          "novidades": 0,
+          "erros": 6,
+          "duracao_segundos": 1.1,
+          "endpoints": [
+            "https://data.europarl.europa.eu/api/v2/procedures?parliamentary_term=10&limit=100&format=application/ld%2Bjson",
+            "https://data.europarl.europa.eu/api/v2/procedures?text={topico}&limit=25&format=application/ld%2Bjson",
+            "https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age",
+            "https://www.europarl.europa.eu/legislative-train/file-artificial-intelligence-act",
+            "https://www.europarl.europa.eu/news/en/press-room?keywords={topico}"
+          ],
+          "canais_detalhe": [],
+          "canais_ok": [],
+          "canais_falhos": [
+            "API v2 — procedimentos do termo parlamentar corrente",
+            "API v2 — procedimentos de IA (busca por texto)",
+            "Legislative Train — Europe fit for the digital age",
+            "Legislative Train — unicidade e poderes de execução",
+            "sala de imprensa — por tema"
+          ],
+          "canais_falhos_obrigatorios": [
+            "API v2 — procedimentos do termo parlamentar corrente"
+          ],
+          "canais_opcionais_falhos": [
+            "API v2 — procedimentos de IA (busca por texto)",
+            "Legislative Train — Europe fit for the digital age",
+            "Legislative Train — unicidade e poderes de execução",
+            "sala de imprensa — por tema"
+          ],
+          "erro_detalhe": "API v2 — procedimentos do termo parlamentar corrente: JSON indisponível: https://data.europarl.europa.eu/api/v2/procedures?parliamentary_term=10&limit=100&format=application/ld%2Bjson; API v2 — procedimentos de IA (busca por texto): JSON indisponível: https://data.europarl.europa.eu/api/v2/procedures?text=artificial%20intelligence&limit=25&format=application/ld%2Bjson; Legislative Train — Europe fit for the digital age: ModuleNotFoundError: No module named 'eu_parsers'; Legislative Train — unicidade e poderes de execução: ModuleNotFoundError: No module named 'eu_parsers'",
+          "atos_registrados": 0,
+          "atos_descartados_por_retencao": 0
+        },
+        "eurlex": {
+          "nome": "EUR-Lex — Jornal Oficial da União Europeia (Publications Office)",
+          "status": "parcial",
+          "ultima_tentativa": "2026-09-21T07:46:29-03:00",
+          "ultima_execucao_ok": null,
+          "itens_consultados": 100,
+          "itens_relevantes": 0,
+          "itens_descartados": 1,
+          "itens_duplicados": 99,
+          "revisao_pendente": 0,
+          "novidades": 0,
+          "erros": 3,
+          "duracao_segundos": 0.2,
+          "endpoints": [
+            "https://eur-lex.europa.eu/search.html?text=%22{topico}%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR={year}",
+            "https://eur-lex.europa.eu/search.html?text=%22{topico}%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR={prev_year}",
+            "https://eur-lex.europa.eu/EN/display-feed.rss?rssId=222",
+            "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727"
+          ],
+          "canais_detalhe": [
+            {
+              "canal": "atos do Jornal Oficial — série L (RSS oficial)",
+              "url": "https://eur-lex.europa.eu/EN/display-feed.rss?rssId=222",
+              "itens_brutos": 100,
+              "amostra_hierarquia": [],
+              "itens_relevantes": 0
+            }
+          ],
+          "canais_ok": [
+            "atos do Jornal Oficial — série L (RSS oficial)"
+          ],
+          "canais_falhos": [
+            "busca por tema (legislação do ano corrente)",
+            "busca por tema (legislação do ano anterior)",
+            "AI Act — versão consolidada (ato âncora)"
+          ],
+          "canais_falhos_obrigatorios": [
+            "busca por tema (legislação do ano corrente)"
+          ],
+          "canais_opcionais_falhos": [
+            "busca por tema (legislação do ano anterior)",
+            "AI Act — versão consolidada (ato âncora)"
+          ],
+          "erro_detalhe": "busca por tema (legislação do ano corrente): ModuleNotFoundError: No module named 'eu_parsers'; busca por tema (legislação do ano anterior): ModuleNotFoundError: No module named 'eu_parsers'; AI Act — versão consolidada (ato âncora): ModuleNotFoundError: No module named 'eu_parsers'",
+          "atos_registrados": 0,
+          "atos_descartados_por_retencao": 0
+        },
+        "eurlex_motor": {
+          "nome": "EUR-Lex — busca oficial (motor legislativo)",
+          "status": "ok",
+          "ultima_tentativa": "2026-09-21T07:45:40-03:00",
+          "ultima_execucao_ok": "2026-09-21T07:45:40-03:00",
+          "itens_consultados": 10,
+          "novidades": 0,
+          "erros": 0,
+          "chamadas_http": 10,
+          "falhas_http": 0,
+          "endpoints": [
+            "https://eur-lex.europa.eu/"
+          ],
+          "canais_ok": [
+            "eurlex_motor:search.html"
+          ],
+          "canais_falhos": [],
+          "erro_detalhe": null
+        },
+        "parlamento": {
+          "nome": "Parlamento Europeu — Open Data Portal v2 (motor legislativo)",
+          "status": "falha",
+          "ultima_tentativa": "2026-09-21T07:45:40-03:00",
+          "ultima_execucao_ok": null,
+          "itens_consultados": 0,
+          "novidades": 0,
+          "erros": 0,
+          "chamadas_http": 1,
+          "falhas_http": 4,
+          "endpoints": [
+            "https://data.europarl.europa.eu/"
+          ],
+          "canais_ok": [
+            "parlamento:legislative-train/theme-a-europe-fit-for-the-digital-age"
+          ],
+          "canais_falhos": [
+            "parlamento:api/v2/procedures"
+          ],
+          "erro_detalhe": null
+        }
+      },
+      "fontes_falha": [
+        "ai_office",
+        "edps",
+        "eu_council",
+        "eu_parliament",
+        "parlamento"
+      ],
+      "fontes_parciais": [
+        "eu_commission",
+        "eurlex"
+      ],
+      "http_fontes": {
+        "chamadas": 25,
+        "falhas": 5,
+        "cache": 0,
+        "tempo_total": 6.05,
+        "por_orgao": {
+          "ai_office": {
+            "chamadas": 5,
+            "falhas": 0,
+            "tempo_total": 0.83
+          },
+          "eurlex": {
+            "chamadas": 4,
+            "falhas": 0,
+            "tempo_total": 0.21
+          },
+          "eu_council": {
+            "chamadas": 3,
+            "falhas": 3,
+            "tempo_total": 0.5
+          },
+          "eu_commission": {
+            "chamadas": 4,
+            "falhas": 0,
+            "tempo_total": 1.6
+          },
+          "eu_parliament": {
+            "chamadas": 5,
+            "falhas": 2,
+            "tempo_total": 1.05
+          },
+          "edpb": {
+            "chamadas": 1,
+            "falhas": 0,
+            "tempo_total": 0.79
+          },
+          "edps": {
+            "chamadas": 3,
+            "falhas": 0,
+            "tempo_total": 1.07
+          }
+        }
+      },
+      "mudancas_multiorgao": 12
+    },
     {
       "id": "bootstrap_ue_2026_09_18",
       "data_hora": "2026-09-18T10:00:00-03:00",
       "fim": "2026-09-18T10:00:00-03:00",
       "ts": "2026-09-18T13:00:00+00:00",
       "ts_fim": "2026-09-18T13:00:00+00:00",
-      "idade_horas": 40.1,
+      "idade_horas": 69.8,
       "tipo": "bootstrap",
       "status": "concluida",
       "duracao_segundos": null,
@@ -39,60 +491,476 @@
     }
   ],
   "ultima": {
-    "id": "bootstrap_ue_2026_09_18",
-    "data_hora": "2026-09-18T10:00:00-03:00",
-    "fim": "2026-09-18T10:00:00-03:00",
-    "ts": "2026-09-18T13:00:00+00:00",
-    "ts_fim": "2026-09-18T13:00:00+00:00",
-    "idade_horas": 40.1,
-    "tipo": "bootstrap",
-    "status": "concluida",
-    "duracao_segundos": null,
-    "orcamento_segundos": null,
-    "verificadas": 2,
+    "id": "run_2026_09_21_0745",
+    "data_hora": "2026-09-21T07:45:40-03:00",
+    "fim": "2026-09-21T07:46:35-03:00",
+    "ts": "2026-09-21T10:45:40+00:00",
+    "ts_fim": "2026-09-21T10:46:35+00:00",
+    "idade_horas": 0.0,
+    "tipo": "atualizacao",
+    "status": "parcial",
+    "duracao_segundos": 54,
+    "orcamento_segundos": 1500,
+    "verificadas": 0,
     "monitoradas": 2,
-    "pendentes": [],
+    "pendentes": 0,
     "atualizadas": 0,
     "novas": 0,
     "mudancas": 0,
     "eventos": 0,
-    "cobertura_pct": 100.0,
-    "erros": 0,
-    "chamadas_http": null,
-    "cache_http": null,
-    "falhas_http": null,
-    "tempo_rede_s": null,
-    "por_endpoint": {},
-    "fases_segundos": {},
-    "snapshot": {},
-    "fontes": 6,
-    "engine": {},
-    "status_global": null,
-    "fontes_monitoradas": {},
-    "fontes_falha": [],
-    "fontes_parciais": [],
-    "http_fontes": {},
-    "mudancas_multiorgao": null
+    "cobertura_pct": 0.0,
+    "erros": 2,
+    "chamadas_http": 17,
+    "cache_http": 0,
+    "falhas_http": 4,
+    "tempo_rede_s": 81.85,
+    "por_endpoint": {
+      "comissao:info/law/better-regulation": {
+        "chamadas": 2,
+        "falhas": 0,
+        "tempo_total": 0.67
+      },
+      "eurlex:search.html": {
+        "chamadas": 10,
+        "falhas": 0,
+        "tempo_total": 0.95
+      },
+      "parlamento:api/v2/procedures": {
+        "chamadas": 0,
+        "falhas": 4,
+        "tempo_total": 0.0
+      },
+      "parlamento:legislative-train/theme-a-europe-fit-for-the-digital-age": {
+        "chamadas": 1,
+        "falhas": 0,
+        "tempo_total": 0.14
+      }
+    },
+    "fases_segundos": {
+      "agenda_consultas": 1.3,
+      "atualizacao_procedimentos": 42.4,
+      "descoberta_procedimentos": 4.4,
+      "fontes_multiorgao": 6.6
+    },
+    "snapshot": {
+      "proposicoes_total": 2,
+      "por_situacao": {
+        "em_tramitacao": 2
+      },
+      "normas_total": 2,
+      "eventos_total": 1,
+      "mudancas_registradas": 12
+    },
+    "fontes": 2,
+    "engine": {
+      "orcamento_segundos": 1500,
+      "max_novas": 25,
+      "workers": 5,
+      "http_concorrencia": 4
+    },
+    "status_global": "PARCIAL",
+    "fontes_monitoradas": {
+      "ai_office": {
+        "nome": "European AI Office — Comissão Europeia (digital-strategy)",
+        "status": "falha",
+        "ultima_tentativa": "2026-09-21T07:46:28-03:00",
+        "ultima_execucao_ok": null,
+        "itens_consultados": 0,
+        "itens_relevantes": 0,
+        "itens_descartados": 0,
+        "itens_duplicados": 0,
+        "revisao_pendente": 0,
+        "novidades": 0,
+        "erros": 6,
+        "duracao_segundos": 0.8,
+        "endpoints": [
+          "https://digital-strategy.ec.europa.eu/en/news?type=5%7C13",
+          "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+          "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "https://digital-strategy.ec.europa.eu/en/policies/general-purpose-ai",
+          "https://digital-strategy.ec.europa.eu/en/ai-act"
+        ],
+        "canais_detalhe": [],
+        "canais_ok": [],
+        "canais_falhos": [
+          "notícias e comunicados do portal",
+          "página da AI Office (políticas e ações)",
+          "AI Act — quadro regulatório e implementação",
+          "General-Purpose AI — página oficial",
+          "AI Act — página do serviço"
+        ],
+        "canais_falhos_obrigatorios": [
+          "notícias e comunicados do portal"
+        ],
+        "canais_opcionais_falhos": [
+          "página da AI Office (políticas e ações)",
+          "AI Act — quadro regulatório e implementação",
+          "General-Purpose AI — página oficial",
+          "AI Act — página do serviço"
+        ],
+        "erro_detalhe": "notícias e comunicados do portal: ModuleNotFoundError: No module named 'eu_parsers'; página da AI Office (políticas e ações): ModuleNotFoundError: No module named 'eu_parsers'; AI Act — quadro regulatório e implementação: ModuleNotFoundError: No module named 'eu_parsers'; General-Purpose AI — página oficial: ModuleNotFoundError: No module named 'eu_parsers'",
+        "atos_registrados": 0,
+        "atos_descartados_por_retencao": 0
+      },
+      "edpb": {
+        "nome": "EDPB — European Data Protection Board",
+        "status": "ok",
+        "ultima_tentativa": "2026-09-21T07:46:33-03:00",
+        "ultima_execucao_ok": "2026-09-21T07:46:35-03:00",
+        "itens_consultados": 10,
+        "itens_relevantes": 10,
+        "itens_descartados": 0,
+        "itens_duplicados": 0,
+        "revisao_pendente": 0,
+        "novidades": 9,
+        "erros": 0,
+        "duracao_segundos": 0.8,
+        "endpoints": [
+          "https://www.edpb.europa.eu/feed/news_en"
+        ],
+        "canais_detalhe": [
+          {
+            "canal": "notícias e guidelines (RSS oficial)",
+            "url": "https://www.edpb.europa.eu/feed/news_en",
+            "itens_brutos": 10,
+            "amostra_hierarquia": [],
+            "itens_relevantes": 10
+          }
+        ],
+        "canais_ok": [
+          "notícias e guidelines (RSS oficial)"
+        ],
+        "canais_falhos": [],
+        "canais_falhos_obrigatorios": [],
+        "canais_opcionais_falhos": [],
+        "erro_detalhe": null,
+        "atos_registrados": 9,
+        "atos_descartados_por_retencao": 0
+      },
+      "edps": {
+        "nome": "EDPS — European Data Protection Supervisor",
+        "status": "falha",
+        "ultima_tentativa": "2026-09-21T07:46:34-03:00",
+        "ultima_execucao_ok": null,
+        "itens_consultados": 0,
+        "itens_relevantes": 0,
+        "itens_descartados": 0,
+        "itens_duplicados": 0,
+        "revisao_pendente": 0,
+        "novidades": 0,
+        "erros": 4,
+        "duracao_segundos": 1.1,
+        "endpoints": [
+          "https://www.edps.europa.eu/press-publications/press-news/press-releases_en",
+          "https://www.edps.europa.eu/press-publications/press-news/news_en",
+          "https://www.edps.europa.eu/data-protection/our-work/publications_en"
+        ],
+        "canais_detalhe": [],
+        "canais_ok": [],
+        "canais_falhos": [
+          "press releases (listagem oficial)",
+          "notícias oficiais (listagem)",
+          "publicações (opiniões e guidelines)"
+        ],
+        "canais_falhos_obrigatorios": [
+          "press releases (listagem oficial)"
+        ],
+        "canais_opcionais_falhos": [
+          "notícias oficiais (listagem)",
+          "publicações (opiniões e guidelines)"
+        ],
+        "erro_detalhe": "press releases (listagem oficial): ModuleNotFoundError: No module named 'eu_parsers'; notícias oficiais (listagem): ModuleNotFoundError: No module named 'eu_parsers'; publicações (opiniões e guidelines): ModuleNotFoundError: No module named 'eu_parsers'; nenhum canal respondeu — press releases (listagem oficial): ModuleNotFoundError: No module named 'eu_parsers'; notícias oficiais (listagem): ModuleNotFoundError: No module named 'eu_parsers'; publicações (opiniões e guidelines): ModuleNotFoundError: No module named 'eu_parsers'",
+        "atos_registrados": 0,
+        "atos_descartados_por_retencao": 0
+      },
+      "eu_commission": {
+        "nome": "Comissão Europeia — Press Corner e Have Your Say",
+        "status": "parcial",
+        "ultima_tentativa": "2026-09-21T07:46:30-03:00",
+        "ultima_execucao_ok": null,
+        "itens_consultados": 10,
+        "itens_relevantes": 2,
+        "itens_descartados": 8,
+        "itens_duplicados": 0,
+        "revisao_pendente": 0,
+        "novidades": 2,
+        "erros": 3,
+        "duracao_segundos": 1.6,
+        "endpoints": [
+          "https://ec.europa.eu/commission/presscorner/api/rss?language=en",
+          "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?page=1",
+          "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?page=2",
+          "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?keywords={topico}"
+        ],
+        "canais_detalhe": [
+          {
+            "canal": "comunicados oficiais (Press Corner, RSS)",
+            "url": "https://ec.europa.eu/commission/presscorner/api/rss?language=en",
+            "itens_brutos": 10,
+            "amostra_hierarquia": [],
+            "itens_relevantes": 2
+          }
+        ],
+        "canais_ok": [
+          "comunicados oficiais (Press Corner, RSS)"
+        ],
+        "canais_falhos": [
+          "consultas públicas e calls for evidence (Have Your Say)",
+          "consultas públicas (Have Your Say, página 2)",
+          "consultas por tema (Have Your Say, keywords)"
+        ],
+        "canais_falhos_obrigatorios": [
+          "consultas públicas e calls for evidence (Have Your Say)"
+        ],
+        "canais_opcionais_falhos": [
+          "consultas públicas (Have Your Say, página 2)",
+          "consultas por tema (Have Your Say, keywords)"
+        ],
+        "erro_detalhe": "consultas públicas e calls for evidence (Have Your Say): ModuleNotFoundError: No module named 'eu_parsers'; consultas públicas (Have Your Say, página 2): ModuleNotFoundError: No module named 'eu_parsers'; consultas por tema (Have Your Say, keywords): ModuleNotFoundError: No module named 'eu_parsers'",
+        "atos_registrados": 2,
+        "atos_descartados_por_retencao": 0
+      },
+      "eu_council": {
+        "nome": "Conselho da UE — Registro público de documentos",
+        "status": "falha",
+        "ultima_tentativa": "2026-09-21T07:46:30-03:00",
+        "ultima_execucao_ok": null,
+        "itens_consultados": 0,
+        "itens_relevantes": 0,
+        "itens_descartados": 0,
+        "itens_duplicados": 0,
+        "revisao_pendente": 0,
+        "novidades": 0,
+        "erros": 4,
+        "duracao_segundos": 0.5,
+        "endpoints": [
+          "https://www.consilium.europa.eu/en/documents/public-register/latest/",
+          "https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2",
+          "https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/"
+        ],
+        "canais_detalhe": [],
+        "canais_ok": [],
+        "canais_falhos": [
+          "últimos documentos adicionados ao registro",
+          "últimos documentos (página 2)",
+          "documentos legislativos preparatórios (página 1)"
+        ],
+        "canais_falhos_obrigatorios": [
+          "últimos documentos adicionados ao registro"
+        ],
+        "canais_opcionais_falhos": [
+          "últimos documentos (página 2)",
+          "documentos legislativos preparatórios (página 1)"
+        ],
+        "erro_detalhe": "últimos documentos adicionados ao registro: HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/ (HTTP 403); últimos documentos (página 2): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2 (HTTP 403); documentos legislativos preparatórios (página 1): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/ (HTTP 403); nenhum canal respondeu — últimos documentos adicionados ao registro: HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/ (HTTP 403); últimos documentos (página 2): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2 (HTTP 403); documentos legislativos preparatórios (página 1): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/ (HTTP 403)",
+        "atos_registrados": 0,
+        "atos_descartados_por_retencao": 0
+      },
+      "eu_parliament": {
+        "nome": "Parlamento Europeu — Open Data Portal v2 / Legislative Train",
+        "status": "falha",
+        "ultima_tentativa": "2026-09-21T07:46:32-03:00",
+        "ultima_execucao_ok": null,
+        "itens_consultados": 0,
+        "itens_relevantes": 0,
+        "itens_descartados": 0,
+        "itens_duplicados": 0,
+        "revisao_pendente": 0,
+        "novidades": 0,
+        "erros": 6,
+        "duracao_segundos": 1.1,
+        "endpoints": [
+          "https://data.europarl.europa.eu/api/v2/procedures?parliamentary_term=10&limit=100&format=application/ld%2Bjson",
+          "https://data.europarl.europa.eu/api/v2/procedures?text={topico}&limit=25&format=application/ld%2Bjson",
+          "https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age",
+          "https://www.europarl.europa.eu/legislative-train/file-artificial-intelligence-act",
+          "https://www.europarl.europa.eu/news/en/press-room?keywords={topico}"
+        ],
+        "canais_detalhe": [],
+        "canais_ok": [],
+        "canais_falhos": [
+          "API v2 — procedimentos do termo parlamentar corrente",
+          "API v2 — procedimentos de IA (busca por texto)",
+          "Legislative Train — Europe fit for the digital age",
+          "Legislative Train — unicidade e poderes de execução",
+          "sala de imprensa — por tema"
+        ],
+        "canais_falhos_obrigatorios": [
+          "API v2 — procedimentos do termo parlamentar corrente"
+        ],
+        "canais_opcionais_falhos": [
+          "API v2 — procedimentos de IA (busca por texto)",
+          "Legislative Train — Europe fit for the digital age",
+          "Legislative Train — unicidade e poderes de execução",
+          "sala de imprensa — por tema"
+        ],
+        "erro_detalhe": "API v2 — procedimentos do termo parlamentar corrente: JSON indisponível: https://data.europarl.europa.eu/api/v2/procedures?parliamentary_term=10&limit=100&format=application/ld%2Bjson; API v2 — procedimentos de IA (busca por texto): JSON indisponível: https://data.europarl.europa.eu/api/v2/procedures?text=artificial%20intelligence&limit=25&format=application/ld%2Bjson; Legislative Train — Europe fit for the digital age: ModuleNotFoundError: No module named 'eu_parsers'; Legislative Train — unicidade e poderes de execução: ModuleNotFoundError: No module named 'eu_parsers'",
+        "atos_registrados": 0,
+        "atos_descartados_por_retencao": 0
+      },
+      "eurlex": {
+        "nome": "EUR-Lex — Jornal Oficial da União Europeia (Publications Office)",
+        "status": "parcial",
+        "ultima_tentativa": "2026-09-21T07:46:29-03:00",
+        "ultima_execucao_ok": null,
+        "itens_consultados": 100,
+        "itens_relevantes": 0,
+        "itens_descartados": 1,
+        "itens_duplicados": 99,
+        "revisao_pendente": 0,
+        "novidades": 0,
+        "erros": 3,
+        "duracao_segundos": 0.2,
+        "endpoints": [
+          "https://eur-lex.europa.eu/search.html?text=%22{topico}%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR={year}",
+          "https://eur-lex.europa.eu/search.html?text=%22{topico}%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR={prev_year}",
+          "https://eur-lex.europa.eu/EN/display-feed.rss?rssId=222",
+          "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727"
+        ],
+        "canais_detalhe": [
+          {
+            "canal": "atos do Jornal Oficial — série L (RSS oficial)",
+            "url": "https://eur-lex.europa.eu/EN/display-feed.rss?rssId=222",
+            "itens_brutos": 100,
+            "amostra_hierarquia": [],
+            "itens_relevantes": 0
+          }
+        ],
+        "canais_ok": [
+          "atos do Jornal Oficial — série L (RSS oficial)"
+        ],
+        "canais_falhos": [
+          "busca por tema (legislação do ano corrente)",
+          "busca por tema (legislação do ano anterior)",
+          "AI Act — versão consolidada (ato âncora)"
+        ],
+        "canais_falhos_obrigatorios": [
+          "busca por tema (legislação do ano corrente)"
+        ],
+        "canais_opcionais_falhos": [
+          "busca por tema (legislação do ano anterior)",
+          "AI Act — versão consolidada (ato âncora)"
+        ],
+        "erro_detalhe": "busca por tema (legislação do ano corrente): ModuleNotFoundError: No module named 'eu_parsers'; busca por tema (legislação do ano anterior): ModuleNotFoundError: No module named 'eu_parsers'; AI Act — versão consolidada (ato âncora): ModuleNotFoundError: No module named 'eu_parsers'",
+        "atos_registrados": 0,
+        "atos_descartados_por_retencao": 0
+      },
+      "eurlex_motor": {
+        "nome": "EUR-Lex — busca oficial (motor legislativo)",
+        "status": "ok",
+        "ultima_tentativa": "2026-09-21T07:45:40-03:00",
+        "ultima_execucao_ok": "2026-09-21T07:45:40-03:00",
+        "itens_consultados": 10,
+        "novidades": 0,
+        "erros": 0,
+        "chamadas_http": 10,
+        "falhas_http": 0,
+        "endpoints": [
+          "https://eur-lex.europa.eu/"
+        ],
+        "canais_ok": [
+          "eurlex_motor:search.html"
+        ],
+        "canais_falhos": [],
+        "erro_detalhe": null
+      },
+      "parlamento": {
+        "nome": "Parlamento Europeu — Open Data Portal v2 (motor legislativo)",
+        "status": "falha",
+        "ultima_tentativa": "2026-09-21T07:45:40-03:00",
+        "ultima_execucao_ok": null,
+        "itens_consultados": 0,
+        "novidades": 0,
+        "erros": 0,
+        "chamadas_http": 1,
+        "falhas_http": 4,
+        "endpoints": [
+          "https://data.europarl.europa.eu/"
+        ],
+        "canais_ok": [
+          "parlamento:legislative-train/theme-a-europe-fit-for-the-digital-age"
+        ],
+        "canais_falhos": [
+          "parlamento:api/v2/procedures"
+        ],
+        "erro_detalhe": null
+      }
+    },
+    "fontes_falha": [
+      "ai_office",
+      "edps",
+      "eu_council",
+      "eu_parliament",
+      "parlamento"
+    ],
+    "fontes_parciais": [
+      "eu_commission",
+      "eurlex"
+    ],
+    "http_fontes": {
+      "chamadas": 25,
+      "falhas": 5,
+      "cache": 0,
+      "tempo_total": 6.05,
+      "por_orgao": {
+        "ai_office": {
+          "chamadas": 5,
+          "falhas": 0,
+          "tempo_total": 0.83
+        },
+        "eurlex": {
+          "chamadas": 4,
+          "falhas": 0,
+          "tempo_total": 0.21
+        },
+        "eu_council": {
+          "chamadas": 3,
+          "falhas": 3,
+          "tempo_total": 0.5
+        },
+        "eu_commission": {
+          "chamadas": 4,
+          "falhas": 0,
+          "tempo_total": 1.6
+        },
+        "eu_parliament": {
+          "chamadas": 5,
+          "falhas": 2,
+          "tempo_total": 1.05
+        },
+        "edpb": {
+          "chamadas": 1,
+          "falhas": 0,
+          "tempo_total": 0.79
+        },
+        "edps": {
+          "chamadas": 3,
+          "falhas": 0,
+          "tempo_total": 1.07
+        }
+      }
+    },
+    "mudancas_multiorgao": 12
   },
   "frescor": {
-    "horas": 40.1,
-    "estado": "atencao",
+    "horas": 0.0,
+    "estado": "ok",
     "cron_utc": "10:17, 13:43, 17:43, 21:43",
     "cron_brt": "07:17, 10:43, 14:43, 18:43"
   },
   "kpis": {
-    "execucoes_registradas": 1,
-    "execucoes_com_metricas": 1,
-    "execucoes_ok": 1,
-    "cobertura_media": 100.0,
-    "mudancas_total": 0,
-    "mudancas_30d": 0,
-    "latencia_media_dias": null,
-    "incorporacoes_historicas": 0,
-    "fontes_monitoradas": 0,
-    "fontes_falha": 0,
-    "fontes_parciais": 0,
-    "status_global": null,
+    "execucoes_registradas": 2,
+    "execucoes_com_metricas": 2,
+    "execucoes_ok": 2,
+    "cobertura_media": 50.0,
+    "mudancas_total": 12,
+    "mudancas_30d": 4,
+    "latencia_media_dias": 6.8,
+    "incorporacoes_historicas": 6,
+    "fontes_monitoradas": 9,
+    "fontes_falha": 5,
+    "fontes_parciais": 2,
+    "status_global": "PARCIAL",
     "procedimentos": 2,
     "proposicoes": 2,
     "curadoria_pendente": 1,
@@ -101,21 +969,32 @@
   },
   "series": {
     "rotulos": [
-      "09/18"
+      "09/18",
+      "09/21"
     ],
     "cobertura_pct": [
-      100.0
+      100.0,
+      0.0
     ],
     "mudancas": [
+      0,
       0
     ],
     "novas": [
+      0,
       0
     ],
-    "chamadas_http": [],
-    "cache_http": [],
-    "duracao_s": [],
+    "chamadas_http": [
+      17
+    ],
+    "cache_http": [
+      0
+    ],
+    "duracao_s": [
+      54
+    ],
     "monitoradas": [
+      2,
       2
     ]
   },
@@ -147,19 +1026,76 @@
     "revisao_pendente": 1
   },
   "mudancas": {
-    "total": 0,
-    "por_tipo": {},
-    "por_mes": {},
-    "por_dia": {},
-    "latencia_media_dias": null,
-    "incorporacoes_historicas": 0
+    "total": 12,
+    "por_tipo": {
+      "nova guideline": 4,
+      "novo comunicado oficial": 2,
+      "enforcement": 3,
+      "alteração de texto": 1,
+      "nova orientação oficial": 2
+    },
+    "por_mes": {
+      "2026-09": 6,
+      "2026-07": 6
+    },
+    "por_dia": {
+      "2026-09-21": 2,
+      "2026-09-20": 1,
+      "2026-09-11": 1,
+      "2026-09-09": 1,
+      "2026-09-03": 1,
+      "2026-07-30": 1,
+      "2026-07-23": 1,
+      "2026-07-17": 1,
+      "2026-07-14": 1,
+      "2026-07-08": 1,
+      "2026-07-01": 1
+    },
+    "latencia_media_dias": 6.8,
+    "incorporacoes_historicas": 6
   },
-  "http_por_endpoint": {},
+  "http_por_endpoint": {
+    "comissao:info/law/better-regulation": {
+      "chamadas": 2,
+      "falhas": 0,
+      "tempo_total": 0.67
+    },
+    "eurlex:search.html": {
+      "chamadas": 10,
+      "falhas": 0,
+      "tempo_total": 0.95
+    },
+    "parlamento:api/v2/procedures": {
+      "chamadas": 0,
+      "falhas": 4,
+      "tempo_total": 0.0
+    },
+    "parlamento:legislative-train/theme-a-europe-fit-for-the-digital-age": {
+      "chamadas": 1,
+      "falhas": 0,
+      "tempo_total": 0.14
+    }
+  },
   "alertas": [
     {
+      "nivel": "ok",
+      "titulo": "Monitoramento em dia",
+      "detalhe": "Última execução há 0h."
+    },
+    {
       "nivel": "atencao",
-      "titulo": "Execução atrasada",
-      "detalhe": "Última execução há 40 horas. Há quatro agendamentos diários; confira o histórico de execuções."
+      "titulo": "Última execução foi parcial",
+      "detalhe": "0 proposição(ões) ficaram para a próxima execução (cobertura 0.0%)."
+    },
+    {
+      "nivel": "atencao",
+      "titulo": "2 erro(s) na última execução",
+      "detalhe": "Cada erro guarda a proposição e a URL oficial; ver updates.json."
+    },
+    {
+      "nivel": "atencao",
+      "titulo": "Monitoramento parcial — fonte não consultada",
+      "detalhe": "Fontes com falha nesta execução: ai_office (European AI Office — Comissão Europeia (digital-strategy)), edps (EDPS — European Data Protection Supervisor), eu_council (Conselho da UE — Registro público de documentos), eu_parliament (Parlamento Europeu — Open Data Portal v2 / Legislative Train), parlamento (Parlamento Europeu — Open Data Portal v2 (motor legislativo))"
     },
     {
       "nivel": "atencao",

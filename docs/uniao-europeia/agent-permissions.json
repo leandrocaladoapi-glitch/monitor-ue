@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "site": "https://monitor.lcfconsulting.com.br/uniao-europeia",
-  "updated": "2026-09-18",
+  "updated": "2026-09-21",
   "public_access": {
     "crawl": true,
     "read_html": true,

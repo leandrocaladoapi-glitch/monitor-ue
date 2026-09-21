@@ -37,4 +37,4 @@
 ## Source and trust policy
 Facts are grounded in primary sources including the European Parliament (Open Data Portal v2), EUR-Lex / Official Journal, the Council of the EU public register, the European Commission (Press Corner and Have Your Say), the European AI Office, the EDPB and the EDPS. The interinstitutional procedure number is the shared identity across institutions; automatic discoveries can be flagged as awaiting editorial review. Corrections are recorded rather than silently overwritten.
 
-Last build reference: 2026-09-18.
+Last build reference: 2026-09-21.

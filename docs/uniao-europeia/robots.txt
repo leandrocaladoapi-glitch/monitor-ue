@@ -1,4 +1,4 @@
-# Search and AI crawler policy — generated 2026-09-18
+# Search and AI crawler policy — generated 2026-09-21
 User-agent: *
 Allow: /
 
