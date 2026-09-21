@@ -31,8 +31,8 @@
 - [Briefing executivo](https://monitor.lcfconsulting.com.br/uniao-europeia/briefing-executivo/): amostra com fonte oficial e interpretação separadas.
 
 ## High-impact monitored propositions
-- [COD 106/2021 — Regulation laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)](https://monitor.lcfconsulting.com.br/uniao-europeia/procedimentos-legislativos/2021-0106-cod/) — score 85/100; situação: Em vigor desde 01/08/2024, com aplicação faseada: proibições 02/02/2025, GPAI 02/08/2025, aplicação geral (transparência e demais regras) 02/08/2026; alto risco Anexo III 02/12/2027 e Anexo I 02/08/2028 — calendário reprogramado pelo Regulamento (UE) 2026/1744 (Digital Omnibus on
-- [INI 2058/2025 — Copyright and generative artificial intelligence — opportunities and challenges](https://monitor.lcfconsulting.com.br/uniao-europeia/procedimentos-legislativos/2025-2058-ini/) — score 36/100; situação: Resolução adotada pelo Plenário — 2026-03-10
+- [COD 106/2021 — 2021/0106(COD)](https://monitor.lcfconsulting.com.br/uniao-europeia/procedimentos-legislativos/2021-0106-cod/) — score 85/100; situação: Em vigor desde 01/08/2024, com aplicação faseada: proibições 02/02/2025, GPAI 02/08/2025, aplicação geral (transparência e demais regras) 02/08/2026; alto risco Anexo III 02/12/2027 e Anexo I 02/08/2028 — calendário reprogramado pelo Regulamento (UE) 2026/1744 (Digital Omnibus on
+- [INI 2058/2025 — 2025/2058(INI)](https://monitor.lcfconsulting.com.br/uniao-europeia/procedimentos-legislativos/2025-2058-ini/) — score 36/100; situação: Votado no plenário (resultado registado) — 2026-03-10
 
 ## Source and trust policy
 Facts are grounded in primary sources including the European Parliament (Open Data Portal v2), EUR-Lex / Official Journal, the Council of the EU public register, the European Commission (Press Corner and Have Your Say), the European AI Office, the EDPB and the EDPS. The interinstitutional procedure number is the shared identity across institutions; automatic discoveries can be flagged as awaiting editorial review. Corrections are recorded rather than silently overwritten.
