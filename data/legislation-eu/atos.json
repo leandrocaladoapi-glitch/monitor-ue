@@ -30,8 +30,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:f6f56cdd3df81271",
-      "ultima_verificacao": "2026-09-22T06:58:50-03:00",
-      "ultima_execucao": "run_2026_09_22_0658",
+      "ultima_verificacao": "2026-09-22T10:38:57-03:00",
+      "ultima_execucao": "run_2026_09_22_1038",
       "primeira_deteccao": "2026-09-22T06:58:50-03:00",
       "id_execucao_primeira": "run_2026_09_22_0658",
       "historico": []
@@ -89,7 +89,7 @@
       "orgao": "edpb",
       "tipo": "orientacao",
       "titulo": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
-      "descricao": "Brussels, 21 September – During its latest plenary, the EDPB has adopted guidelines on the application of the power to impose administrative fines in relation to other corrective powers under the GDPR and the final version of its guidelines on the interplay between the Digital Services Act (DSA) and the GDPR . The new EDPB guidelines are a major step in further aligning how Data Protection Authorities decide whether an administrative fine should be imposed, either on its own or alongside other corrective measures. The GDPR significantly increased the corrective powers of DPAs, with fines servi",
+      "descricao": "Brussels, 21 September – During its latest plenary, the EDPB has adopted guidelines on the application of the power to impose administrative fines in relation to other corrective powers under the GDPR and the final version of its guidelines on interplay between the Digital Service Act (DSA) and the GDPR . The new EDPB guidelines are a major step in further aligning how Data Protection Authorities decide whether an administrative fine should be imposed, either on its own or alongside other corrective measures. The GDPR significantly increased the corrective powers of DPAs, with fines serving as",
       "data": "2026-09-21",
       "url_oficial": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
       "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
@@ -101,9 +101,9 @@
       "situacao": null,
       "tipo_ato": null,
       "hierarquia": null,
-      "texto_hash": "sha1:e5d11e48d6df3b8b",
-      "ultima_verificacao": "2026-09-22T06:58:50-03:00",
-      "ultima_execucao": "run_2026_09_22_0658",
+      "texto_hash": "sha1:d1e1dc9a969fb478",
+      "ultima_verificacao": "2026-09-22T10:38:57-03:00",
+      "ultima_execucao": "run_2026_09_22_1038",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": [
@@ -113,6 +113,13 @@
           "campo": "texto",
           "anterior": "sha1:5af34d54eabc6c24",
           "novo": "sha1:e5d11e48d6df3b8b"
+        },
+        {
+          "data_deteccao": "2026-09-22T10:38:57-03:00",
+          "id_execucao": "run_2026_09_22_1038",
+          "campo": "texto",
+          "anterior": "sha1:e5d11e48d6df3b8b",
+          "novo": "sha1:d1e1dc9a969fb478"
         }
       ]
     },
@@ -158,8 +165,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:5bf1aa88370bcfa6",
-      "ultima_verificacao": "2026-09-22T06:58:50-03:00",
-      "ultima_execucao": "run_2026_09_22_0658",
+      "ultima_verificacao": "2026-09-22T10:38:57-03:00",
+      "ultima_execucao": "run_2026_09_22_1038",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -182,8 +189,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:2380b025e8412fe5",
-      "ultima_verificacao": "2026-09-22T06:58:50-03:00",
-      "ultima_execucao": "run_2026_09_22_0658",
+      "ultima_verificacao": "2026-09-22T10:38:57-03:00",
+      "ultima_execucao": "run_2026_09_22_1038",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -206,8 +213,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:60e474bdba39fbf7",
-      "ultima_verificacao": "2026-09-22T06:58:50-03:00",
-      "ultima_execucao": "run_2026_09_22_0658",
+      "ultima_verificacao": "2026-09-22T10:38:57-03:00",
+      "ultima_execucao": "run_2026_09_22_1038",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -230,8 +237,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:b376184e0ea66969",
-      "ultima_verificacao": "2026-09-22T06:58:50-03:00",
-      "ultima_execucao": "run_2026_09_22_0658",
+      "ultima_verificacao": "2026-09-22T10:38:57-03:00",
+      "ultima_execucao": "run_2026_09_22_1038",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": [
@@ -283,6 +290,20 @@
           "campo": "texto",
           "anterior": "sha1:ac89070ea719aaad",
           "novo": "sha1:b376184e0ea66969"
+        },
+        {
+          "data_deteccao": "2026-09-22T10:38:57-03:00",
+          "id_execucao": "run_2026_09_22_1038",
+          "campo": "texto",
+          "anterior": "sha1:b376184e0ea66969",
+          "novo": "sha1:ac89070ea719aaad"
+        },
+        {
+          "data_deteccao": "2026-09-22T10:38:57-03:00",
+          "id_execucao": "run_2026_09_22_1038",
+          "campo": "texto",
+          "anterior": "sha1:ac89070ea719aaad",
+          "novo": "sha1:b376184e0ea66969"
         }
       ]
     },
@@ -304,8 +325,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:a3ef6a31dafdd114",
-      "ultima_verificacao": "2026-09-22T06:58:50-03:00",
-      "ultima_execucao": "run_2026_09_22_0658",
+      "ultima_verificacao": "2026-09-22T10:38:57-03:00",
+      "ultima_execucao": "run_2026_09_22_1038",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -328,8 +349,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:733d5312239886ee",
-      "ultima_verificacao": "2026-09-22T06:58:50-03:00",
-      "ultima_execucao": "run_2026_09_22_0658",
+      "ultima_verificacao": "2026-09-22T10:38:57-03:00",
+      "ultima_execucao": "run_2026_09_22_1038",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -352,8 +373,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:3889caa02bbde8d3",
-      "ultima_verificacao": "2026-09-22T06:58:50-03:00",
-      "ultima_execucao": "run_2026_09_22_0658",
+      "ultima_verificacao": "2026-09-22T10:38:57-03:00",
+      "ultima_execucao": "run_2026_09_22_1038",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -416,7 +437,7 @@
     "eu_parliament": {},
     "edpb": {
       "edpb_edpb_europa_eu_news_edpb_harmonises_fining_methodology_and_adopts_final_dsa_gdpr_guidelines_en": {
-        "h": "sha1:e5d11e48d6df3b8b",
+        "h": "sha1:d1e1dc9a969fb478",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
         "v": "2026-09-22"
