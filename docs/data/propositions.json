@@ -191,7 +191,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2487262,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-02T15:06",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -219,7 +219,7 @@
       },
       "api_senado": {
         "codigo_materia": "157233",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Dispõe sobre o uso da Inteligência Artificial.",
         "apelido": "Marco Legal da Inteligência Artificial",
@@ -319,7 +319,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2594000,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-04-06T14:29",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -440,7 +440,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2600838,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-15T00:00",
         "descricao_situacao": "Aguardando Sanção",
         "descricao_tramitacao": "Transformação em Norma Jurídica",
@@ -537,7 +537,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2528433,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-18T15:08",
         "descricao_situacao": "Transformado em Norma Jurídica",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -567,7 +567,7 @@
       "forma_apreciacao": "Proposição Sujeita à Apreciação do Plenário",
       "api_senado": {
         "codigo_materia": "174481",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Institui medidas de enfrentamento e repressão ao crime de violência sexual contra criança ou adolescente, inclusive no ambiente digital e com uso de inteligência artificial; e altera os Decretos-Leis nºs 2.848, de 7 de dezembro de 1940 (Código Penal), e 3.689, de 3 de outubro de 1941 (Código de Processo Penal), e as Leis nºs 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), 8.072, de 25 de julho de 1990 (Lei dos Crimes Hediondos), e 12.850, de 2 de agosto de 2013, para recrudescer o tratamento penal aos criminosos sexuais.",
         "apelido": null,
@@ -649,7 +649,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2555663,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-02T15:06",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -743,7 +743,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2604767,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-04-06T14:27",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Recebimento",
@@ -838,7 +838,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2606324,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-02T15:06",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -919,7 +919,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2612814,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-05-27T18:09",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Recebimento",
@@ -1004,7 +1004,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2612845,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-05-27T18:09",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Recebimento",
@@ -1091,7 +1091,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2612896,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-03T00:00",
         "descricao_situacao": null,
         "descricao_tramitacao": "Publicação de Proposição",
@@ -1171,7 +1171,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2604315,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-04-06T14:34",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -1265,7 +1265,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2599741,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-04-06T14:31",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -1356,7 +1356,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2589443,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-17T19:25",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -1440,7 +1440,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2543191,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-05-25T21:38",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -1532,7 +1532,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2595639,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-05-25T21:38",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -1620,7 +1620,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2631787,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-03T00:00",
         "descricao_situacao": null,
         "descricao_tramitacao": "Publicação de Proposição",
@@ -1700,7 +1700,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2577251,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-17T19:25",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Despacho de Apensação",
@@ -1776,7 +1776,7 @@
       "timeline": [],
       "api_camara": {
         "id_proposicao": 2583896,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-03-27T14:10",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -1859,7 +1859,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2607218,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-19T16:24",
         "descricao_situacao": "Aguardando Apensação",
         "descricao_tramitacao": "Recebimento",
@@ -1936,7 +1936,7 @@
       "timeline": [],
       "api_camara": {
         "id_proposicao": 2497660,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-03-19T11:59",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -2024,7 +2024,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2592508,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-04-06T14:31",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -2107,7 +2107,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2599301,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-04-06T14:32",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -2183,7 +2183,7 @@
       "timeline": [],
       "api_camara": {
         "id_proposicao": 2526910,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2025-10-06T08:41",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -2266,7 +2266,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2541085,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-17T19:25",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -2349,7 +2349,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2644599,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-26T11:03",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -2422,7 +2422,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2345261,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2025-09-12T14:43",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Recebimento - Relator(a) (Sem Manifestação)",
@@ -2505,7 +2505,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2502877,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-04-06T14:31",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -2594,7 +2594,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2597476,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-04-07T10:34",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -2689,7 +2689,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2236340,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2025-01-20T00:00",
         "descricao_situacao": "Arquivada",
         "descricao_tramitacao": "Arquivamento",
@@ -2776,7 +2776,7 @@
       ],
       "api_senado": {
         "codigo_materia": "138790",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Estabelece os princípios para o uso da Inteligência Artificial no Brasil.",
         "apelido": null,
@@ -2844,7 +2844,7 @@
       ],
       "api_senado": {
         "codigo_materia": "139586",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Institui a Política Nacional de Inteligência Artificial.",
         "apelido": null,
@@ -2910,7 +2910,7 @@
       ],
       "api_senado": {
         "codigo_materia": "147434",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Dispõe sobre o uso da Inteligência Artificial.",
         "apelido": null,
@@ -2995,7 +2995,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2646306,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-09T18:46",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3081,7 +3081,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641936,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-04T15:58",
         "descricao_situacao": "Aguardando Autorização do Despacho",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3166,7 +3166,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641766,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-31T15:18",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3251,7 +3251,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641236,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T20:02",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3336,7 +3336,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641196,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T20:02",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3422,7 +3422,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641166,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T19:58",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3505,7 +3505,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641087,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T19:57",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3591,7 +3591,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641080,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T19:57",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3677,7 +3677,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641079,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T19:57",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3762,7 +3762,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641078,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T19:57",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3847,7 +3847,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641072,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T19:57",
         "descricao_situacao": "Ag. Análise de Inconstitucionalidade",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3932,7 +3932,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641070,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T19:57",
         "descricao_situacao": "Ag. Análise de Inconstitucionalidade",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4018,7 +4018,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640985,
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T18:23",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4104,7 +4104,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640981,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T18:23",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4189,7 +4189,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640954,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T18:22",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4275,7 +4275,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640952,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T18:22",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4361,7 +4361,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640857,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T18:22",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4440,7 +4440,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640697,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T18:06",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4525,7 +4525,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640657,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T18:05",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4608,7 +4608,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640641,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T18:05",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4695,7 +4695,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640552,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T18:05",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4782,7 +4782,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2639860,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-15T18:31",
         "descricao_situacao": "Aguardando Autorização do Despacho",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4867,7 +4867,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2639491,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-08T16:24",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Recebimento",
@@ -4952,7 +4952,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2638506,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-09T12:16",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -5039,7 +5039,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2638224,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-08T14:02",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -5124,7 +5124,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2636431,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-01T16:43",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -5211,7 +5211,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2636065,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-04T00:00",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Publicação de Proposição",
@@ -5297,7 +5297,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2636062,
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-01T10:46",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -5382,7 +5382,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2636044,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-01T10:26",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -5467,7 +5467,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2630094,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-29T00:00",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Publicação de Proposição",
@@ -5556,7 +5556,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2630042,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-03T09:45",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -5647,7 +5647,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2629940,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-03T09:46",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -5734,7 +5734,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2626607,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-02T00:00",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Publicação de Proposição",
@@ -5820,7 +5820,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2625435,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-03T10:41",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Recebimento",
@@ -5905,7 +5905,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2625204,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-08T19:42",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -5997,7 +5997,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2619913,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-25T13:13",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Recebimento",
@@ -6082,7 +6082,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2618844,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-03T09:46",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -6165,7 +6165,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2617795,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-30T20:11",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -6256,7 +6256,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2610302,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-02T11:21",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -6344,7 +6344,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2607741,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-08T00:00",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Publicação de Proposição",
@@ -6437,7 +6437,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2601059,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-07T16:29",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Parecer do(a) Relator(a)",
@@ -6525,7 +6525,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2600713,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-16T00:00",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Parecer do(a) Relator(a)",
@@ -6615,7 +6615,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2600015,
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-14T15:47",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Apresentação de Requerimento",
@@ -6704,7 +6704,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2599744,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-04T00:00",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Publicação de Proposição",
@@ -6796,7 +6796,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2599299,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-08T14:42",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Recebimento",
@@ -6889,7 +6889,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2561378,
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-15T15:56",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Designação de Relator(a)",
@@ -6980,7 +6980,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2555654,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-04T00:00",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Publicação de Proposição",
@@ -7071,7 +7071,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2555351,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-08T19:12",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -7163,7 +7163,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2527110,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-17T19:25",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -7256,7 +7256,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2496418,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-02T15:57",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Parecer do(a) Relator(a)",
@@ -7345,7 +7345,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2484379,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-17T13:26",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -7436,7 +7436,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2482618,
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-12T18:29",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Parecer do(a) Relator(a)",
@@ -7525,7 +7525,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2479396,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-10T18:02",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -7618,7 +7618,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2464691,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-13T12:55",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -7709,7 +7709,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2447165,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-03T16:31",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -7797,7 +7797,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2445849,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-30T20:11",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -7889,7 +7889,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2433206,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-10T18:02",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -7978,7 +7978,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2430325,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-13T12:55",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -8062,7 +8062,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2422387,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-17T13:26",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -8151,7 +8151,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2421855,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-17T13:26",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -8242,7 +8242,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2418795,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-01T13:55",
         "descricao_situacao": null,
         "descricao_tramitacao": "Aprovação de Urgência (154, 155 ou 64 CF)",
@@ -8332,7 +8332,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2418048,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-08T13:58",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Recebimento",
@@ -8423,7 +8423,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2417362,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-02T11:21",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -8514,7 +8514,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2411874,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-17T13:26",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -8605,7 +8605,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2406516,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-01T13:55",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Aprovação de Urgência (154, 155 ou 64 CF)",
@@ -8696,7 +8696,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2380982,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-16T22:15",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -8788,7 +8788,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2351386,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-17T13:26",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -8877,7 +8877,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2349685,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-03T17:29",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -8968,7 +8968,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2625561,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-19T09:04",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Parecer do(a) Relator(a)",
@@ -9062,7 +9062,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2609587,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-08T10:15",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -9153,7 +9153,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2487301,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-06-10T18:33",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -9245,7 +9245,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2487176,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-01T18:28",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Designação de Relator(a)",
@@ -9337,7 +9337,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2419443,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-12T00:00",
         "descricao_situacao": "Arquivada",
         "descricao_tramitacao": "Prejudicialidade (Plenário)",
@@ -9429,7 +9429,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2364072,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-12T00:00",
         "descricao_situacao": "Arquivada",
         "descricao_tramitacao": "Desapensação",
@@ -9515,7 +9515,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2355883,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-08-31T00:00",
         "descricao_situacao": "Aguardando Apreciação pelo Senado Federal",
         "descricao_tramitacao": "Expedição de Documento",
@@ -9604,7 +9604,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641396,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T20:05",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -9689,7 +9689,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641387,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-17T20:05",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -9774,7 +9774,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2598626,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-07-07T17:59",
         "descricao_situacao": null,
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -9855,7 +9855,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172683",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer licença para desempenhar missão oficial, a fim de participar de Missão Parlamentar sobre Inteligência Artificial, em Nova Delhi, Índia, e em Seul, Coreia do Sul.",
         "apelido": null,
@@ -9921,7 +9921,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172783",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Institui o Programa Nacional de Monitoramento de Agressores com Uso de Tecnologia por Inteligência Artificial (PNM-IA), com a finalidade de prevenir a violência doméstica; assegurar a efetividade das medidas protetivas de urgência; ampliar a proteção das vítimas por meio do uso de tecnologias digitais e de inteligência artificial; e subsidiar a atuação preventiva e repressiva dos órgãos de segurança pública, do Ministério Público e do Poder Judiciário.",
         "apelido": null,
@@ -9995,7 +9995,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172838",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Sim",
         "ementa_api": "Institui a Lei de Governança de Inteligência Artificial no Setor Público",
         "apelido": null,
@@ -10070,7 +10070,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172856",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a realização de audiência pública no âmbito da Comissão de Ciência, Tecnologia, Inovação e Informática, com o objetivo de instruir o Projeto de Lei nº 3018, de 2024, que dispõe sobre a regulamentação dos data centers de inteligência artificial.",
         "apelido": null,
@@ -10145,7 +10145,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172900",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Sim",
         "ementa_api": "Dispõe sobre os princípios éticos, diretrizes de governança, requisitos de transparência e mecanismos de controle aplicáveis ao uso de sistemas de Inteligência Artificial (IA) na área da saúde, e dá outras providências.",
         "apelido": null,
@@ -10224,7 +10224,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172910",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidados na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10299,7 +10299,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172996",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer voto de aplauso ao Sr. Guilherme Cunha Lima, por suas contribuições no campo da tecnologia e inovação, em especial pela concepção e implementação de sistema de pesquisa de dados apoiado em inteligência artificial, que atingiu níveis de confiabilidade inéditos, testado e validado com sucesso pelo Banco Mundial em Washington, D.C.",
         "apelido": null,
@@ -10364,7 +10364,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173016",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Debater a proteção dos direitos das mulheres no contexto de uso de inteligência artificial, especialmente considerando a prevenção e o combate aos crimes cometidos por meio da produção, veiculação e circulação de imagens de nudez falsas (deep nudes) em ambientes digitais, realizadas por Inteligência Artificial.",
         "apelido": null,
@@ -10438,7 +10438,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173045",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidado na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10512,7 +10512,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173133",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidado na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10586,7 +10586,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173258",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidados na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10660,7 +10660,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173322",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidados na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10734,7 +10734,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173474",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidados na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10808,7 +10808,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173567",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidado na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10882,7 +10882,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173616",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidado na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10956,7 +10956,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "174154",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Sim",
         "ementa_api": "Estabelece os parâmetros de ética nacional para o uso da inteligência artificial nas instituições de ensino públicas e privadas e dá outras providências.",
         "apelido": null,
@@ -11030,7 +11030,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "174212",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão do Senhor Carlos Baigorri, Presidente da Anatel, na audiência pública objeto do REQ 6/2026-CCT, destinada a instruir o Projeto de Lei nº 3018, de 2024, que dispõe sobre a regulamentação dos data centers de inteligência artificial.",
         "apelido": null,
@@ -11104,7 +11104,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "174521",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Sim",
         "ementa_api": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para dispor sobre o crime de manipulação fraudulenta de sistema de inteligência artificial, quando o fato não constituir crime mais grave.",
         "apelido": null,
@@ -11178,7 +11178,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "174866",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidado na audiência pública objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -11252,7 +11252,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "174922",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer urgência para o PRS 38/2025, que \"institui, no âmbito do Senado Federal, a Frente Parlamentar de Inteligência Artificial, Proteção de Dados e Segurança Digital\".",
         "apelido": null,
@@ -11327,7 +11327,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "174923",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Sim",
         "ementa_api": "Altera a Lei nº 14.533, de 11 de janeiro de 2023, que institui a Política Nacional de Educação Digital, para incluir o letramento em inteligência artificial e o enfrentamento da desinformação sintética entre as competências do eixo Educação Digital Escolar.",
         "apelido": null,
@@ -11401,7 +11401,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "175362",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Sim",
         "ementa_api": "Requer a inclusão do Senhor Alan Patrick Cavalcante da Silveira, Secretário Executivo da Frente Parlamentar Mista das Startups e do Empreendedorismo Inovador (FPSTARTUPS), na audiência pública objeto do REQ 6/2026-CCT, destinada a instruir o Projeto de Lei nº 3018, de 2024, que dispõe sobre a regulamentação dos data centers de inteligência artificial.",
         "apelido": null,
@@ -11475,7 +11475,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "164831",
-        "verificado_em": "2026-09-21T15:54:13-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "tramitando": "Sim",
         "ementa_api": "Dispõe sobre a regulamentação dos data centers de inteligência artificial.",
         "apelido": "PL dos data centers",
@@ -11562,7 +11562,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2646413,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-14T14:45",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -11647,7 +11647,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2646420,
-        "verificado_em": "2026-09-21T13:28:29-03:00",
+        "verificado_em": "2026-09-21T21:17:08-03:00",
         "status_datahora": "2026-09-14T15:47",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
