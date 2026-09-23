@@ -3,15 +3,63 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 13,
+    "total": 15,
     "por_orgao": {
-      "edpb": 9,
-      "eu_commission": 4
+      "edpb": 10,
+      "eu_commission": 5
     },
-    "indice_total": 13,
-    "execucao": "2026-09-22"
+    "indice_total": 15,
+    "execucao": "2026-09-23"
   },
   "atos": [
+    {
+      "id": "edpb_edpb_europa_eu_news_the_irish_data_protection_commission_fines_google_403_000_000_eur_following_inquiry_en",
+      "orgao": "edpb",
+      "tipo": "orientacao",
+      "titulo": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+      "descricao": "Background information Date of final decision: 21 September 2026 National case Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 6 (Lawfulness of processing), Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine, compliance order Key words: GDPR enforcement, technology, accountability, data subjects rights Summary of the Decision Origin of the case The Irish Da",
+      "data": "2026-09-23",
+      "url_oficial": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
+      "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
+      "canais": [
+        "notícias e guidelines (RSS oficial)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:8a4494639da8da63",
+      "ultima_verificacao": "2026-09-23T07:00:31-03:00",
+      "ultima_execucao": "run_2026_09_23_0700",
+      "primeira_deteccao": "2026-09-23T07:00:31-03:00",
+      "id_execucao_primeira": "run_2026_09_23_0700",
+      "historico": []
+    },
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_1942",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Speech by President von der Leyen at the high-level dialogue on ‘Protecting Children's Rights facing Artificial Intelligence'",
+      "descricao": "European Commission Speech New York, 23 Sep 2026 Thank you very much for convening this meeting, it is absolutely high time. I would like to tell you a little bit about what we are doing here in the European U...",
+      "data": "2026-09-22",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1942",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:512609a24549a30b",
+      "ultima_verificacao": "2026-09-23T07:00:31-03:00",
+      "ultima_execucao": "run_2026_09_23_0700",
+      "primeira_deteccao": "2026-09-23T07:00:31-03:00",
+      "id_execucao_primeira": "run_2026_09_23_0700",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_1935",
       "orgao": "eu_commission",
@@ -102,8 +150,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:d1e1dc9a969fb478",
-      "ultima_verificacao": "2026-09-22T16:52:20-03:00",
-      "ultima_execucao": "run_2026_09_22_1652",
+      "ultima_verificacao": "2026-09-23T07:00:31-03:00",
+      "ultima_execucao": "run_2026_09_23_0700",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": [
@@ -165,8 +213,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:5bf1aa88370bcfa6",
-      "ultima_verificacao": "2026-09-22T16:52:20-03:00",
-      "ultima_execucao": "run_2026_09_22_1652",
+      "ultima_verificacao": "2026-09-23T07:00:31-03:00",
+      "ultima_execucao": "run_2026_09_23_0700",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -189,8 +237,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:2380b025e8412fe5",
-      "ultima_verificacao": "2026-09-22T16:52:20-03:00",
-      "ultima_execucao": "run_2026_09_22_1652",
+      "ultima_verificacao": "2026-09-23T07:00:31-03:00",
+      "ultima_execucao": "run_2026_09_23_0700",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -213,8 +261,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:60e474bdba39fbf7",
-      "ultima_verificacao": "2026-09-22T16:52:20-03:00",
-      "ultima_execucao": "run_2026_09_22_1652",
+      "ultima_verificacao": "2026-09-23T07:00:31-03:00",
+      "ultima_execucao": "run_2026_09_23_0700",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -237,8 +285,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:b376184e0ea66969",
-      "ultima_verificacao": "2026-09-22T16:52:20-03:00",
-      "ultima_execucao": "run_2026_09_22_1652",
+      "ultima_verificacao": "2026-09-23T07:00:31-03:00",
+      "ultima_execucao": "run_2026_09_23_0700",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": [
@@ -318,6 +366,20 @@
           "campo": "texto",
           "anterior": "sha1:ac89070ea719aaad",
           "novo": "sha1:b376184e0ea66969"
+        },
+        {
+          "data_deteccao": "2026-09-23T07:00:31-03:00",
+          "id_execucao": "run_2026_09_23_0700",
+          "campo": "texto",
+          "anterior": "sha1:b376184e0ea66969",
+          "novo": "sha1:ac89070ea719aaad"
+        },
+        {
+          "data_deteccao": "2026-09-23T07:00:31-03:00",
+          "id_execucao": "run_2026_09_23_0700",
+          "campo": "texto",
+          "anterior": "sha1:ac89070ea719aaad",
+          "novo": "sha1:b376184e0ea66969"
         }
       ]
     },
@@ -339,8 +401,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:a3ef6a31dafdd114",
-      "ultima_verificacao": "2026-09-22T16:52:20-03:00",
-      "ultima_execucao": "run_2026_09_22_1652",
+      "ultima_verificacao": "2026-09-23T07:00:31-03:00",
+      "ultima_execucao": "run_2026_09_23_0700",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -363,8 +425,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:733d5312239886ee",
-      "ultima_verificacao": "2026-09-22T16:52:20-03:00",
-      "ultima_execucao": "run_2026_09_22_1652",
+      "ultima_verificacao": "2026-09-23T07:00:31-03:00",
+      "ultima_execucao": "run_2026_09_23_0700",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -446,6 +508,12 @@
         "s": null,
         "d": "2026-09-22T06:58:50-03:00",
         "v": "2026-09-22"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_1942": {
+        "h": "sha1:512609a24549a30b",
+        "s": null,
+        "d": "2026-09-23T07:00:31-03:00",
+        "v": "2026-09-23"
       }
     },
     "eu_parliament": {},
@@ -454,43 +522,43 @@
         "h": "sha1:d1e1dc9a969fb478",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-22"
+        "v": "2026-09-23"
       },
       "edpb_edpb_europa_eu_news_failure_to_respect_the_rights_of_individuals_the_cnil_fined_extia_300_000_eur_en": {
         "h": "sha1:5bf1aa88370bcfa6",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-22"
+        "v": "2026-09-23"
       },
       "edpb_edpb_europa_eu_news_health_data_breach_the_cnil_fined_hopital_prive_de_la_loire_500_000_eur_en": {
         "h": "sha1:2380b025e8412fe5",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-22"
+        "v": "2026-09-23"
       },
       "edpb_edpb_europa_eu_news_data_protection_commission_announces_final_decision_following_inquiry_into_the_health_serv": {
         "h": "sha1:60e474bdba39fbf7",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-22"
+        "v": "2026-09-23"
       },
       "edpb_edpb_europa_eu_news_stakeholder_event_on_guidelines_on_the_interplay_between_data_protection_and_competition_l": {
         "h": "sha1:b376184e0ea66969",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-22"
+        "v": "2026-09-23"
       },
       "edpb_edpb_europa_eu_news_edpb_calls_for_legal_basis_for_cross_regulatory_information_sharing_en": {
         "h": "sha1:a3ef6a31dafdd114",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-22"
+        "v": "2026-09-23"
       },
       "edpb_edpb_europa_eu_news_edpb_requires_belgian_dpa_to_handle_the_merits_of_noyb_cookie_banner_complaint_en": {
         "h": "sha1:733d5312239886ee",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-22"
+        "v": "2026-09-23"
       },
       "edpb_edpb_europa_eu_news_edpb_sheds_light_on_anonymisation_and_web_scraping_for_generative_ai_and_adopts_final_vers": {
         "h": "sha1:3889caa02bbde8d3",
@@ -503,6 +571,12 @@
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
         "v": "2026-09-22"
+      },
+      "edpb_edpb_europa_eu_news_the_irish_data_protection_commission_fines_google_403_000_000_eur_following_inquiry_en": {
+        "h": "sha1:8a4494639da8da63",
+        "s": null,
+        "d": "2026-09-23T07:00:31-03:00",
+        "v": "2026-09-23"
       }
     },
     "edps": {}
