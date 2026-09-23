@@ -1150,10 +1150,10 @@
           "id_atividade": "2025-2058-ANPRO-2025-03-13"
         },
         {
-          "data": "2025-06-27",
-          "evento": "Relatório apresentado na comissão (fase RDG1)",
+          "data": "2025-03-13",
+          "evento": "Encaminhamento à comissão (fase RDG1)",
           "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2058?format=application/ld%2Bjson",
-          "id_atividade": "JURI-PR-775433-DEPOT-2025-06-27"
+          "id_atividade": "2025-2058-ANPRO-2025-03-13"
         },
         {
           "data": "2025-06-27",
@@ -1190,6 +1190,24 @@
           "evento": "Relatório apresentado na comissão (fase RDG1)",
           "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2058?format=application/ld%2Bjson",
           "id_atividade": "JURI-PR-775433-DEPOT-2025-06-27"
+        },
+        {
+          "data": "2025-06-27",
+          "evento": "Relatório apresentado na comissão (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2058?format=application/ld%2Bjson",
+          "id_atividade": "JURI-PR-775433-DEPOT-2025-06-27"
+        },
+        {
+          "data": "2025-06-27",
+          "evento": "Relatório apresentado na comissão (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2058?format=application/ld%2Bjson",
+          "id_atividade": "JURI-PR-775433-DEPOT-2025-06-27"
+        },
+        {
+          "data": "2025-09-15",
+          "evento": "Committee tabling amendment (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2058?format=application/ld%2Bjson",
+          "id_atividade": "JURI-AM-777015-DEPOT-2025-09-15"
         },
         {
           "data": "2025-09-15",
@@ -1276,10 +1294,10 @@
           "id_atividade": "2025-2058-DEC-ADCP-2026-01-28"
         },
         {
-          "data": "2026-02-25",
-          "evento": "Inscrição em pauta do plenário (fase RDG1)",
+          "data": "2026-01-28",
+          "evento": "Relatório adotado na comissão (fase RDG1)",
           "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2058?format=application/ld%2Bjson",
-          "id_atividade": "2025-2058-DEPOT-2026-02-25"
+          "id_atividade": "2025-2058-DEC-ADCP-2026-01-28"
         },
         {
           "data": "2026-02-25",
@@ -1316,6 +1334,24 @@
           "evento": "Inscrição em pauta do plenário (fase RDG1)",
           "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2058?format=application/ld%2Bjson",
           "id_atividade": "2025-2058-DEPOT-2026-02-25"
+        },
+        {
+          "data": "2026-02-25",
+          "evento": "Inscrição em pauta do plenário (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2058?format=application/ld%2Bjson",
+          "id_atividade": "2025-2058-DEPOT-2026-02-25"
+        },
+        {
+          "data": "2026-02-25",
+          "evento": "Inscrição em pauta do plenário (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2058?format=application/ld%2Bjson",
+          "id_atividade": "2025-2058-DEPOT-2026-02-25"
+        },
+        {
+          "data": "2026-03-04",
+          "evento": "Inscrição em pauta do plenário (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2058?format=application/ld%2Bjson",
+          "id_atividade": "A-10-2026-0019-AM-001-002-DEPOT-2026-03-04"
         },
         {
           "data": "2026-03-04",
@@ -1407,7 +1443,7 @@
         "label": "2025/2058(INI)",
         "process_type": "def/ep-procedure-types/INI",
         "eventos_total": 8,
-        "verificado_em": "2026-09-23T10:50:09-03:00",
+        "verificado_em": "2026-09-23T16:47:49-03:00",
         "ultimo_evento": {
           "data": "2026-03-10",
           "tipo": "PLENARY_VOTE_RESULTS",
@@ -1753,10 +1789,10 @@
           "id_atividade": "2025-2060-ANPRO-2025-03-13"
         },
         {
-          "data": "2025-05-15",
-          "evento": "Relatório apresentado na comissão (fase RDG1)",
+          "data": "2025-03-13",
+          "evento": "Encaminhamento à comissão (fase RDG1)",
           "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
-          "id_atividade": "IMCO-PR-772053-DEPOT-2025-05-15"
+          "id_atividade": "2025-2060-ANPRO-2025-03-13"
         },
         {
           "data": "2025-05-15",
@@ -1787,6 +1823,24 @@
           "evento": "Relatório apresentado na comissão (fase RDG1)",
           "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
           "id_atividade": "IMCO-PR-772053-DEPOT-2025-05-15"
+        },
+        {
+          "data": "2025-05-15",
+          "evento": "Relatório apresentado na comissão (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
+          "id_atividade": "IMCO-PR-772053-DEPOT-2025-05-15"
+        },
+        {
+          "data": "2025-05-15",
+          "evento": "Relatório apresentado na comissão (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
+          "id_atividade": "IMCO-PR-772053-DEPOT-2025-05-15"
+        },
+        {
+          "data": "2025-06-24",
+          "evento": "Parecer apresentado na comissão (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
+          "id_atividade": "CULT-PA-775391-DEPOT-2025-06-24"
         },
         {
           "data": "2025-06-24",
@@ -1864,7 +1918,7 @@
           "data": "2025-07-10",
           "evento": "Committee tabling amendment (fase RDG1)",
           "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
-          "id_atividade": "IMCO-AM-775649-DEPOT-2025-07-10"
+          "id_atividade": "IMCO-AM-774602-DEPOT-2025-07-10"
         },
         {
           "data": "2025-07-10",
@@ -1897,10 +1951,16 @@
           "id_atividade": "IMCO-AM-775649-DEPOT-2025-07-10"
         },
         {
-          "data": "2025-09-24",
-          "evento": "Parecer adotado na comissão (fase RDG1)",
+          "data": "2025-07-10",
+          "evento": "Committee tabling amendment (fase RDG1)",
           "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
-          "id_atividade": "2025-2060-DEC-ADCP-CULT-2025-09-24"
+          "id_atividade": "IMCO-AM-775649-DEPOT-2025-07-10"
+        },
+        {
+          "data": "2025-07-10",
+          "evento": "Committee tabling amendment (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
+          "id_atividade": "IMCO-AM-775649-DEPOT-2025-07-10"
         },
         {
           "data": "2025-09-24",
@@ -1931,6 +1991,24 @@
           "evento": "Parecer adotado na comissão (fase RDG1)",
           "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
           "id_atividade": "2025-2060-DEC-ADCP-CULT-2025-09-24"
+        },
+        {
+          "data": "2025-09-24",
+          "evento": "Parecer adotado na comissão (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
+          "id_atividade": "2025-2060-DEC-ADCP-CULT-2025-09-24"
+        },
+        {
+          "data": "2025-09-24",
+          "evento": "Parecer adotado na comissão (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
+          "id_atividade": "2025-2060-DEC-ADCP-CULT-2025-09-24"
+        },
+        {
+          "data": "2025-10-16",
+          "evento": "Relatório adotado na comissão (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
+          "id_atividade": "2025-2060-DEC-ADCP-2025-10-16"
         },
         {
           "data": "2025-10-16",
@@ -2005,10 +2083,10 @@
           "id_atividade": "2025-2060-DEPOT-2025-11-04"
         },
         {
-          "data": "2025-11-19",
+          "data": "2025-11-04",
           "evento": "Inscrição em pauta do plenário (fase RDG1)",
           "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
-          "id_atividade": "A-10-2025-0213-AM-001-003-DEPOT-2025-11-19"
+          "id_atividade": "2025-2060-DEPOT-2025-11-04"
         },
         {
           "data": "2025-11-19",
@@ -2039,6 +2117,24 @@
           "evento": "Inscrição em pauta do plenário (fase RDG1)",
           "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
           "id_atividade": "A-10-2025-0213-AM-001-003-DEPOT-2025-11-19"
+        },
+        {
+          "data": "2025-11-19",
+          "evento": "Inscrição em pauta do plenário (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
+          "id_atividade": "A-10-2025-0213-AM-001-003-DEPOT-2025-11-19"
+        },
+        {
+          "data": "2025-11-19",
+          "evento": "Inscrição em pauta do plenário (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
+          "id_atividade": "A-10-2025-0213-AM-001-003-DEPOT-2025-11-19"
+        },
+        {
+          "data": "2025-11-19",
+          "evento": "Inscrição em pauta do plenário (fase RDG1)",
+          "fonte": "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson",
+          "id_atividade": "A-10-2025-0213-AM-004-008-DEPOT-2025-11-19"
         },
         {
           "data": "2025-11-19",
@@ -2102,7 +2198,7 @@
         "process_id": "2025-2060",
         "label": "2025/2060(INI)",
         "process_type": "def/ep-procedure-types/INI",
-        "verificado_em": "2026-09-23T10:50:09-03:00",
+        "verificado_em": "2026-09-23T16:47:49-03:00",
         "eventos_total": 13,
         "titulo_pendente": false,
         "ultimo_evento": {
