@@ -219,7 +219,7 @@
       },
       "api_senado": {
         "codigo_materia": "157233",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Dispõe sobre o uso da Inteligência Artificial.",
         "apelido": "Marco Legal da Inteligência Artificial",
@@ -567,7 +567,7 @@
       "forma_apreciacao": "Proposição Sujeita à Apreciação do Plenário",
       "api_senado": {
         "codigo_materia": "174481",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Institui medidas de enfrentamento e repressão ao crime de violência sexual contra criança ou adolescente, inclusive no ambiente digital e com uso de inteligência artificial; e altera os Decretos-Leis nºs 2.848, de 7 de dezembro de 1940 (Código Penal), e 3.689, de 3 de outubro de 1941 (Código de Processo Penal), e as Leis nºs 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), 8.072, de 25 de julho de 1990 (Lei dos Crimes Hediondos), e 12.850, de 2 de agosto de 2013, para recrudescer o tratamento penal aos criminosos sexuais.",
         "apelido": null,
@@ -2183,7 +2183,7 @@
       "timeline": [],
       "api_camara": {
         "id_proposicao": 2526910,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "status_datahora": "2025-10-06T08:41",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -2266,7 +2266,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2541085,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "status_datahora": "2026-06-17T19:25",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -2776,7 +2776,7 @@
       ],
       "api_senado": {
         "codigo_materia": "138790",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Estabelece os princípios para o uso da Inteligência Artificial no Brasil.",
         "apelido": null,
@@ -2844,7 +2844,7 @@
       ],
       "api_senado": {
         "codigo_materia": "139586",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Institui a Política Nacional de Inteligência Artificial.",
         "apelido": null,
@@ -2910,7 +2910,7 @@
       ],
       "api_senado": {
         "codigo_materia": "147434",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Dispõe sobre o uso da Inteligência Artificial.",
         "apelido": null,
@@ -3932,7 +3932,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641070,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "status_datahora": "2026-07-17T19:57",
         "descricao_situacao": "Ag. Análise de Inconstitucionalidade",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -7889,7 +7889,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2433206,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "status_datahora": "2026-06-10T18:02",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -8788,7 +8788,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2351386,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "status_datahora": "2026-06-17T13:26",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -9855,7 +9855,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172683",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer licença para desempenhar missão oficial, a fim de participar de Missão Parlamentar sobre Inteligência Artificial, em Nova Delhi, Índia, e em Seul, Coreia do Sul.",
         "apelido": null,
@@ -9921,7 +9921,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172783",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Institui o Programa Nacional de Monitoramento de Agressores com Uso de Tecnologia por Inteligência Artificial (PNM-IA), com a finalidade de prevenir a violência doméstica; assegurar a efetividade das medidas protetivas de urgência; ampliar a proteção das vítimas por meio do uso de tecnologias digitais e de inteligência artificial; e subsidiar a atuação preventiva e repressiva dos órgãos de segurança pública, do Ministério Público e do Poder Judiciário.",
         "apelido": null,
@@ -9995,7 +9995,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172838",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Sim",
         "ementa_api": "Institui a Lei de Governança de Inteligência Artificial no Setor Público",
         "apelido": null,
@@ -10070,7 +10070,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172856",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a realização de audiência pública no âmbito da Comissão de Ciência, Tecnologia, Inovação e Informática, com o objetivo de instruir o Projeto de Lei nº 3018, de 2024, que dispõe sobre a regulamentação dos data centers de inteligência artificial.",
         "apelido": null,
@@ -10145,7 +10145,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172900",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Sim",
         "ementa_api": "Dispõe sobre os princípios éticos, diretrizes de governança, requisitos de transparência e mecanismos de controle aplicáveis ao uso de sistemas de Inteligência Artificial (IA) na área da saúde, e dá outras providências.",
         "apelido": null,
@@ -10224,7 +10224,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172910",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidados na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10299,7 +10299,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "172996",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer voto de aplauso ao Sr. Guilherme Cunha Lima, por suas contribuições no campo da tecnologia e inovação, em especial pela concepção e implementação de sistema de pesquisa de dados apoiado em inteligência artificial, que atingiu níveis de confiabilidade inéditos, testado e validado com sucesso pelo Banco Mundial em Washington, D.C.",
         "apelido": null,
@@ -10364,7 +10364,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173016",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Debater a proteção dos direitos das mulheres no contexto de uso de inteligência artificial, especialmente considerando a prevenção e o combate aos crimes cometidos por meio da produção, veiculação e circulação de imagens de nudez falsas (deep nudes) em ambientes digitais, realizadas por Inteligência Artificial.",
         "apelido": null,
@@ -10438,7 +10438,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173045",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidado na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10512,7 +10512,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173133",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidado na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10586,7 +10586,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173258",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidados na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10660,7 +10660,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173322",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidados na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10734,7 +10734,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173474",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidados na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10808,7 +10808,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173567",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidado na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10882,7 +10882,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "173616",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidado na audiência pública, objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -10956,7 +10956,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "174154",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Sim",
         "ementa_api": "Estabelece os parâmetros de ética nacional para o uso da inteligência artificial nas instituições de ensino públicas e privadas e dá outras providências.",
         "apelido": null,
@@ -11030,7 +11030,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "174212",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão do Senhor Carlos Baigorri, Presidente da Anatel, na audiência pública objeto do REQ 6/2026-CCT, destinada a instruir o Projeto de Lei nº 3018, de 2024, que dispõe sobre a regulamentação dos data centers de inteligência artificial.",
         "apelido": null,
@@ -11104,7 +11104,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "174521",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Sim",
         "ementa_api": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para dispor sobre o crime de manipulação fraudulenta de sistema de inteligência artificial, quando o fato não constituir crime mais grave.",
         "apelido": null,
@@ -11178,7 +11178,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "174866",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer a inclusão de convidado na audiência pública objeto do REQ 6/2026-CCT, destinada a instruir o PL 3018/2024, que “dispõe sobre a regulamentação dos data centers de inteligência artificial”.",
         "apelido": null,
@@ -11252,7 +11252,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "174922",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Não",
         "ementa_api": "Requer urgência para o PRS 38/2025, que \"institui, no âmbito do Senado Federal, a Frente Parlamentar de Inteligência Artificial, Proteção de Dados e Segurança Digital\".",
         "apelido": null,
@@ -11327,7 +11327,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "174923",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Sim",
         "ementa_api": "Altera a Lei nº 14.533, de 11 de janeiro de 2023, que institui a Política Nacional de Educação Digital, para incluir o letramento em inteligência artificial e o enfrentamento da desinformação sintética entre as competências do eixo Educação Digital Escolar.",
         "apelido": null,
@@ -11401,7 +11401,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "175362",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Sim",
         "ementa_api": "Requer a inclusão do Senhor Alan Patrick Cavalcante da Silveira, Secretário Executivo da Frente Parlamentar Mista das Startups e do Empreendedorismo Inovador (FPSTARTUPS), na audiência pública objeto do REQ 6/2026-CCT, destinada a instruir o Projeto de Lei nº 3018, de 2024, que dispõe sobre a regulamentação dos data centers de inteligência artificial.",
         "apelido": null,
@@ -11475,7 +11475,7 @@
       "revisao_pendente": true,
       "api_senado": {
         "codigo_materia": "164831",
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T14:57:09-03:00",
         "tramitando": "Sim",
         "ementa_api": "Dispõe sobre a regulamentação dos data centers de inteligência artificial.",
         "apelido": "PL dos data centers",
