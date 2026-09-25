@@ -191,7 +191,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2487262,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-02T15:06",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -319,7 +319,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2594000,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-04-06T14:29",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -440,7 +440,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2600838,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-15T00:00",
         "descricao_situacao": "Aguardando Sanção",
         "descricao_tramitacao": "Transformação em Norma Jurídica",
@@ -537,7 +537,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2528433,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-18T15:08",
         "descricao_situacao": "Transformado em Norma Jurídica",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -649,7 +649,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2555663,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-02T15:06",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -743,7 +743,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2604767,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-04-06T14:27",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Recebimento",
@@ -838,7 +838,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2606324,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-02T15:06",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -919,7 +919,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2612814,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-05-27T18:09",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Recebimento",
@@ -1004,7 +1004,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2612845,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-05-27T18:09",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Recebimento",
@@ -1091,7 +1091,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2612896,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-03T00:00",
         "descricao_situacao": null,
         "descricao_tramitacao": "Publicação de Proposição",
@@ -1171,7 +1171,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2604315,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-04-06T14:34",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -1265,7 +1265,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2599741,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-04-06T14:31",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -1356,7 +1356,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2589443,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-17T19:25",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -1440,7 +1440,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2543191,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-05-25T21:38",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -1532,7 +1532,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2595639,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-05-25T21:38",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -1620,7 +1620,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2631787,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-03T00:00",
         "descricao_situacao": null,
         "descricao_tramitacao": "Publicação de Proposição",
@@ -1700,7 +1700,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2577251,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-17T19:25",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Despacho de Apensação",
@@ -1776,7 +1776,7 @@
       "timeline": [],
       "api_camara": {
         "id_proposicao": 2583896,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-03-27T14:10",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -1859,7 +1859,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2607218,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-19T16:24",
         "descricao_situacao": "Aguardando Apensação",
         "descricao_tramitacao": "Recebimento",
@@ -1936,7 +1936,7 @@
       "timeline": [],
       "api_camara": {
         "id_proposicao": 2497660,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-03-19T11:59",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -2024,7 +2024,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2592508,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-04-06T14:31",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -2107,7 +2107,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2599301,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-04-06T14:32",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -2183,7 +2183,7 @@
       "timeline": [],
       "api_camara": {
         "id_proposicao": 2526910,
-        "verificado_em": "2026-09-24T14:57:09-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2025-10-06T08:41",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -2266,7 +2266,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2541085,
-        "verificado_em": "2026-09-24T14:57:09-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-17T19:25",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -2349,7 +2349,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2644599,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-26T11:03",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -2422,7 +2422,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2345261,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2025-09-12T14:43",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Recebimento - Relator(a) (Sem Manifestação)",
@@ -2505,7 +2505,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2502877,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-04-06T14:31",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -2594,7 +2594,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2597476,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-04-07T10:34",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -2689,7 +2689,7 @@
       ],
       "api_camara": {
         "id_proposicao": 2236340,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2025-01-20T00:00",
         "descricao_situacao": "Arquivada",
         "descricao_tramitacao": "Arquivamento",
@@ -2944,12 +2944,12 @@
         "estado": "AM"
       },
       "data_apresentacao": "2026-09-09",
-      "situacao": "Aguardando Recebimento — Apresentação do RIC n. 2595/2026 (Requerimento de Informação), pelo Deputado Capitão Alberto Neto (PL/AM), que \"Requer informações do Ministério da Justiça e Segurança Pública sobre o crescimento das ",
+      "situacao": "Recebimento - Relator(a) (MESA): Apresentação do PRL n. 1 MESA (Parecer do Relator), pelo 1ª Vice-Presidência da Câmara dos Deputados.",
       "regime_tramitacao": ".",
       "forma_apreciacao": "Indefinida",
       "ultima_movimentacao": {
-        "data": "2026-09-09",
-        "descricao": "Apresentação do RIC n. 2595/2026 (Requerimento de Informação), pelo Deputado Capitão Alberto Neto (PL/AM), que \"Requer informações do Ministério da Justiça e Segurança Pública sobre o crescimento das fraudes de identidade mediante utilização de reconhecimento facial e biometria, inclusive a modalidade conhecida como “golpe do sósia”\"."
+        "data": "2026-09-24",
+        "descricao": "Apresentação do PRL n. 1 MESA (Parecer do Relator), pelo 1ª Vice-Presidência da Câmara dos Deputados."
       },
       "resumo": "Requer informações do Ministério da Justiça e Segurança Pública sobre o crescimento das fraudes de identidade mediante utilização de reconhecimento facial e biometria, inclusive a modalidade conhecida como “golpe do sósia”.",
       "categorias": [
@@ -2995,11 +2995,11 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2646306,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
-        "status_datahora": "2026-09-09T18:46",
-        "descricao_situacao": "Aguardando Designação de Relator(a)",
-        "descricao_tramitacao": "Apresentação de Proposição",
-        "despacho": "Apresentação do RIC n. 2595/2026 (Requerimento de Informação), pelo Deputado Capitão Alberto Neto (PL/AM), que \"Requer informações do Ministério da Justiça e Segurança Pública sobre o crescimento das fraudes de identidade mediante utilização de reconhecimento facial e biometria, inclusive a modalidade conhecida como “golpe do sósia”\".",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
+        "status_datahora": "2026-09-24T18:06",
+        "descricao_situacao": "Aguardando Análise de Parecer",
+        "descricao_tramitacao": "Recebimento - Relator(a)",
+        "despacho": "Apresentação do PRL n. 1 MESA (Parecer do Relator), pelo 1ª Vice-Presidência da Câmara dos Deputados.",
         "sigla_orgao": "MESA",
         "keywords": "",
         "regime": ".",
@@ -3008,11 +3008,16 @@
         "url_inteiro_teor": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=3179364",
         "ementa_api": "Requer informações do Ministério da Justiça e Segurança Pública sobre o crescimento das fraudes de identidade mediante utilização de reconhecimento facial e biometria, inclusive a modalidade conhecida como “golpe do sósia”.",
         "ultima_tramitacao": {
-          "data": "2026-09-09",
+          "data": "2026-09-24",
           "orgao": "MESA",
-          "tramitacao": "Apresentação de Proposição",
-          "despacho": "Apresentação do RIC n. 2595/2026 (Requerimento de Informação), pelo Deputado Capitão Alberto Neto (PL/AM), que \"Requer informações do Ministério da Justiça e Segurança Pública sobre o crescimento das fraudes de identidade mediante utilização de reconhecimento facial e biometria, inclusive a modalidade conhecida como “golpe do sósia”\".",
-          "sequencia": 1
+          "tramitacao": "Recebimento - Relator(a)",
+          "despacho": "Apresentação do PRL n. 1 MESA (Parecer do Relator), pelo 1ª Vice-Presidência da Câmara dos Deputados.",
+          "sequencia": 7
+        },
+        "relator_api": {
+          "nome": "Altineu Côrtes",
+          "partido": "PL",
+          "estado": "RJ"
         }
       }
     },
@@ -3081,7 +3086,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641936,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-04T15:58",
         "descricao_situacao": "Aguardando Autorização do Despacho",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3166,7 +3171,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641766,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-31T15:18",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3251,7 +3256,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641236,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T20:02",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3336,7 +3341,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641196,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T20:02",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3422,7 +3427,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641166,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T19:58",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3505,7 +3510,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641087,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T19:57",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3591,7 +3596,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641080,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T19:57",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3677,7 +3682,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641079,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T19:57",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3762,7 +3767,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641078,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T19:57",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3847,7 +3852,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641072,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T19:57",
         "descricao_situacao": "Ag. Análise de Inconstitucionalidade",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -3932,7 +3937,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641070,
-        "verificado_em": "2026-09-24T14:57:09-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T19:57",
         "descricao_situacao": "Ag. Análise de Inconstitucionalidade",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4018,7 +4023,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640985,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T18:23",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4104,7 +4109,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640981,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T18:23",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4189,7 +4194,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640954,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T18:22",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4275,7 +4280,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640952,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T18:22",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4361,7 +4366,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640857,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T18:22",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4440,7 +4445,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640697,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T18:06",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4525,7 +4530,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640657,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T18:05",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4608,7 +4613,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640641,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T18:05",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4695,7 +4700,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2640552,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T18:05",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4782,7 +4787,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2639860,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-15T18:31",
         "descricao_situacao": "Aguardando Autorização do Despacho",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -4867,7 +4872,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2639491,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-08T16:24",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Recebimento",
@@ -4952,7 +4957,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2638506,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-09T12:16",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -5039,7 +5044,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2638224,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-08T14:02",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -5124,7 +5129,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2636431,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-01T16:43",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -5211,7 +5216,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2636065,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-04T00:00",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Publicação de Proposição",
@@ -5297,7 +5302,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2636062,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-01T10:46",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -5382,7 +5387,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2636044,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-01T10:26",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados (Chancela)",
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -5467,7 +5472,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2630094,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-29T00:00",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Publicação de Proposição",
@@ -5556,7 +5561,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2630042,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-03T09:45",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -5647,7 +5652,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2629940,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-03T09:46",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -5734,7 +5739,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2626607,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-02T00:00",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Publicação de Proposição",
@@ -5820,7 +5825,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2625435,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-03T10:41",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Recebimento",
@@ -5905,7 +5910,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2625204,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-08T19:42",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Apensação",
@@ -5997,7 +6002,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2619913,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-25T13:13",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Recebimento",
@@ -6082,7 +6087,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2618844,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-03T09:46",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -6165,7 +6170,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2617795,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-30T20:11",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -6256,7 +6261,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2610302,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-02T11:21",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -6344,7 +6349,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2607741,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-08T00:00",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Publicação de Proposição",
@@ -6437,7 +6442,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2601059,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-07T16:29",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Parecer do(a) Relator(a)",
@@ -6525,7 +6530,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2600713,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-16T00:00",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Parecer do(a) Relator(a)",
@@ -6615,7 +6620,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2600015,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-14T15:47",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Apresentação de Requerimento",
@@ -6704,7 +6709,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2599744,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-04T00:00",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Publicação de Proposição",
@@ -6796,7 +6801,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2599299,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-08T14:42",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Recebimento",
@@ -6889,7 +6894,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2561378,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-15T15:56",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Designação de Relator(a)",
@@ -6980,7 +6985,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2555654,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-04T00:00",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Publicação de Proposição",
@@ -7071,7 +7076,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2555351,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-08T19:12",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -7163,7 +7168,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2527110,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-17T19:25",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -7256,7 +7261,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2496418,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-02T15:57",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Parecer do(a) Relator(a)",
@@ -7345,7 +7350,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2484379,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-17T13:26",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -7436,7 +7441,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2482618,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-12T18:29",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Parecer do(a) Relator(a)",
@@ -7525,7 +7530,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2479396,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-10T18:02",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -7618,7 +7623,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2464691,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-13T12:55",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -7709,7 +7714,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2447165,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-03T16:31",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -7797,7 +7802,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2445849,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-30T20:11",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -7889,7 +7894,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2433206,
-        "verificado_em": "2026-09-24T14:57:09-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-10T18:02",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -7978,7 +7983,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2430325,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-13T12:55",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -8062,7 +8067,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2422387,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-17T13:26",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -8151,7 +8156,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2421855,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-17T13:26",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -8242,7 +8247,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2418795,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-01T13:55",
         "descricao_situacao": null,
         "descricao_tramitacao": "Aprovação de Urgência (154, 155 ou 64 CF)",
@@ -8332,7 +8337,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2418048,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-08T13:58",
         "descricao_situacao": "Aguardando Designação de Relator(a)",
         "descricao_tramitacao": "Recebimento",
@@ -8423,7 +8428,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2417362,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-02T11:21",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -8514,7 +8519,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2411874,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-17T13:26",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -8605,7 +8610,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2406516,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-01T13:55",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Aprovação de Urgência (154, 155 ou 64 CF)",
@@ -8696,7 +8701,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2380982,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-16T22:15",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -8788,7 +8793,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2351386,
-        "verificado_em": "2026-09-24T14:57:09-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-17T13:26",
         "descricao_situacao": "Tramitando em Conjunto",
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -8877,7 +8882,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2349685,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-03T17:29",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -8968,7 +8973,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2625561,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-19T09:04",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Parecer do(a) Relator(a)",
@@ -9062,7 +9067,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2609587,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-08T10:15",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Notificação de Apensação",
@@ -9153,7 +9158,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2487301,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-06-10T18:33",
         "descricao_situacao": "Pronta para Pauta",
         "descricao_tramitacao": "Encerramento de Prazo",
@@ -9245,7 +9250,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2487176,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-01T18:28",
         "descricao_situacao": "Aguardando Parecer",
         "descricao_tramitacao": "Designação de Relator(a)",
@@ -9337,7 +9342,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2419443,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-12T00:00",
         "descricao_situacao": "Arquivada",
         "descricao_tramitacao": "Prejudicialidade (Plenário)",
@@ -9429,7 +9434,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2364072,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-12T00:00",
         "descricao_situacao": "Arquivada",
         "descricao_tramitacao": "Desapensação",
@@ -9515,7 +9520,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2355883,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-08-31T00:00",
         "descricao_situacao": "Aguardando Apreciação pelo Senado Federal",
         "descricao_tramitacao": "Expedição de Documento",
@@ -9604,7 +9609,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641396,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T20:05",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -9689,7 +9694,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2641387,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-17T20:05",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -9774,7 +9779,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2598626,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-07-07T17:59",
         "descricao_situacao": null,
         "descricao_tramitacao": "Notificacao para Publicação Intermediária",
@@ -11562,7 +11567,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2646413,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-14T14:45",
         "descricao_situacao": null,
         "descricao_tramitacao": "Apresentação de Proposição",
@@ -11647,7 +11652,7 @@
       "revisao_pendente": true,
       "api_camara": {
         "id_proposicao": 2646420,
-        "verificado_em": "2026-09-24T12:06:29-03:00",
+        "verificado_em": "2026-09-24T21:00:06-03:00",
         "status_datahora": "2026-09-14T15:47",
         "descricao_situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
         "descricao_tramitacao": "Apresentação de Proposição",

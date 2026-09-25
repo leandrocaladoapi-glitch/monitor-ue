@@ -3,19 +3,43 @@
     "descricao": "Atos, publicações e consultas dos órgãos monitorados (ANPD, CNJ, TSE, DOU, Planalto e MCTI), coletados automaticamente de fontes oficiais.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, órgão, fonte e as datas de detecção. Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 242,
+    "total": 243,
     "por_orgao": {
       "anpd": 57,
-      "cnj": 22,
+      "cnj": 23,
       "dou": 115,
       "mcti": 36,
       "planalto": 11,
       "tse": 1
     },
-    "indice_total": 242,
+    "indice_total": 243,
     "execucao": "2026-09-24"
   },
   "atos": [
+    {
+      "id": "cnj_cnj_jus_br_concurso_de_desenho_sobre_direitos_no_eca_digital_tem_inscricoes_prorrogadas_ate_30_11428386_2",
+      "orgao": "cnj",
+      "tipo": "noticia",
+      "titulo": "Concurso de desenho sobre direitos no ECA Digital tem inscrições prorrogadas até 30/11",
+      "descricao": "Escolas públicas e privadas de todo o Brasil podem inscrever seus alunos para participar do Concurso Nacional Infantojuvenil de Desenho “Juventude Conectada com Direitos: ECA Digital tá on” até o dia 30 de novembro. O prazo foi prorrogado pelo Conselho Nacional de Justiça (CNJ) e pelo Ministério da Justiça e Segurança Pública (MJSP), a fim […]",
+      "data": "2026-09-24",
+      "url_oficial": "https://www.cnj.jus.br/concurso-de-desenho-sobre-direitos-no-eca-digital-tem-inscricoes-prorrogadas-ate-30-11428386-2/",
+      "fonte": "CNJ — Conselho Nacional de Justiça — notícias oficiais",
+      "canais": [
+        "notícias oficiais"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": "post",
+      "hierarquia": null,
+      "texto_hash": "sha1:54b93ddccf2868bd",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
+      "primeira_deteccao": "2026-09-24T21:00:06-03:00",
+      "id_execucao_primeira": "run_2026_09_24_2100",
+      "historico": []
+    },
     {
       "id": "cnj_cnj_jus_br_saude_judiciario_debatera_inovacoes_e_judicializacao_em_novembro",
       "orgao": "cnj",
@@ -34,8 +58,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:7055830e5afe5808",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-24T12:06:29-03:00",
       "id_execucao_primeira": "run_2026_09_24_1206",
       "historico": []
@@ -58,8 +82,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:141e4f8627fccac5",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-23T14:58:08-03:00",
       "id_execucao_primeira": "run_2026_09_23_1458",
       "historico": []
@@ -106,8 +130,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:6af5a498c1c1041c",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-21T21:17:08-03:00",
       "id_execucao_primeira": "run_2026_09_21_2117",
       "historico": []
@@ -154,8 +178,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:86820ee492e2a03c",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-21T13:28:29-03:00",
       "id_execucao_primeira": "run_2026_09_21_1328",
       "historico": []
@@ -178,8 +202,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:89dfc5baeda9d454",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-21T13:28:29-03:00",
       "id_execucao_primeira": "run_2026_09_21_1328",
       "historico": [
@@ -210,8 +234,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:b382e28e86de2eeb",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-21T13:28:29-03:00",
       "id_execucao_primeira": "run_2026_09_21_1328",
       "historico": []
@@ -570,8 +594,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:77dadb840efc2af4",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2202,8 +2226,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:62e0143bc2211903",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2226,8 +2250,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:58c3dc5746e8476e",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2539,8 +2563,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:830172f6c825cf4b",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2972,8 +2996,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:6744bd4a822e1893",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2997,8 +3021,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:6e90401bef20b9cb",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3526,8 +3550,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:180b85e02b701f53",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3574,8 +3598,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:89733c4e562a91e7",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3598,8 +3622,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:bafb64756d5ac798",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3694,8 +3718,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:bc1b501eea33c922",
-      "ultima_verificacao": "2026-09-24T12:06:29-03:00",
-      "ultima_execucao": "run_2026_09_24_1206",
+      "ultima_verificacao": "2026-09-24T21:00:06-03:00",
+      "ultima_execucao": "run_2026_09_24_2100",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -6335,6 +6359,12 @@
         "h": "sha1:7055830e5afe5808",
         "s": null,
         "d": "2026-09-24T12:06:29-03:00",
+        "v": "2026-09-24"
+      },
+      "cnj_cnj_jus_br_concurso_de_desenho_sobre_direitos_no_eca_digital_tem_inscricoes_prorrogadas_ate_30_11428386_2": {
+        "h": "sha1:54b93ddccf2868bd",
+        "s": null,
+        "d": "2026-09-24T21:00:06-03:00",
         "v": "2026-09-24"
       }
     },
