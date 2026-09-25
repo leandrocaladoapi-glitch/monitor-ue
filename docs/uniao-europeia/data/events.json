@@ -2,7 +2,7 @@
   "meta": {
     "descricao": "Agenda futura oficial relacionada a IA/dados na União Europeia: consultas públicas com prazo de feedback (Comissão Europeia — Have Your Say) e eventos oficiais documentados nas fontes monitoradas.",
     "criterio": "Somente eventos futuros com data documentada em fonte oficial.",
-    "execucao": "2026-09-24",
+    "execucao": "2026-09-25",
     "total": 1
   },
   "eventos": [
@@ -30,7 +30,7 @@
     }
   ],
   "verificacao": {
-    "data": "2026-09-24",
+    "data": "2026-09-25",
     "fontes_consultadas": [
       {
         "titulo": "Comissão Europeia — Have Your Say (agenda de consultas)",
