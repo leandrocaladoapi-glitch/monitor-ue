@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "site": "https://monitor.lcfconsulting.com.br",
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "public_access": {
     "crawl": true,
     "read_html": true,

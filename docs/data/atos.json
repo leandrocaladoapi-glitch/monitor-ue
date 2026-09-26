@@ -13,7 +13,7 @@
       "tse": 1
     },
     "indice_total": 245,
-    "execucao": "2026-09-25"
+    "execucao": "2026-09-26"
   },
   "atos": [
     {
@@ -34,8 +34,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:d426c4b046601dd9",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-25T12:16:20-03:00",
       "id_execucao_primeira": "run_2026_09_25_1216",
       "historico": []
@@ -58,8 +58,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:091403ee40bae904",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-25T12:16:20-03:00",
       "id_execucao_primeira": "run_2026_09_25_1216",
       "historico": []
@@ -82,8 +82,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:54b93ddccf2868bd",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-24T21:00:06-03:00",
       "id_execucao_primeira": "run_2026_09_24_2100",
       "historico": []
@@ -106,8 +106,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:7055830e5afe5808",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-24T12:06:29-03:00",
       "id_execucao_primeira": "run_2026_09_24_1206",
       "historico": []
@@ -130,8 +130,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:141e4f8627fccac5",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-23T14:58:08-03:00",
       "id_execucao_primeira": "run_2026_09_23_1458",
       "historico": []
@@ -154,8 +154,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:0c79fdb293c5cd6d",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-23T14:58:08-03:00",
       "id_execucao_primeira": "run_2026_09_23_1458",
       "historico": []
@@ -178,8 +178,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:6af5a498c1c1041c",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-21T21:17:08-03:00",
       "id_execucao_primeira": "run_2026_09_21_2117",
       "historico": []
@@ -202,8 +202,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:ee435534e45d134a",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-21T21:17:08-03:00",
       "id_execucao_primeira": "run_2026_09_21_2117",
       "historico": []
@@ -226,8 +226,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:86820ee492e2a03c",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-21T13:28:29-03:00",
       "id_execucao_primeira": "run_2026_09_21_1328",
       "historico": []
@@ -250,8 +250,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:89dfc5baeda9d454",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-21T13:28:29-03:00",
       "id_execucao_primeira": "run_2026_09_21_1328",
       "historico": [
@@ -282,8 +282,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:b382e28e86de2eeb",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-21T13:28:29-03:00",
       "id_execucao_primeira": "run_2026_09_21_1328",
       "historico": []
@@ -642,8 +642,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:77dadb840efc2af4",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2275,8 +2275,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:62e0143bc2211903",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2300,8 +2300,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:58c3dc5746e8476e",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2613,8 +2613,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:830172f6c825cf4b",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -2997,8 +2997,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:a5431837fe866b1b",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3046,8 +3046,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:6744bd4a822e1893",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3071,8 +3071,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:6e90401bef20b9cb",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3479,8 +3479,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:a566205e3efdbf67",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3600,8 +3600,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:180b85e02b701f53",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3624,8 +3624,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:83cd2ebe5e0056dd",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3648,8 +3648,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:89733c4e562a91e7",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3672,8 +3672,8 @@
       "tipo_ato": "post",
       "hierarquia": null,
       "texto_hash": "sha1:bafb64756d5ac798",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -3696,8 +3696,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:070aaea38e12819b",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -4272,8 +4272,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:9c4674da3784164c",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -4750,8 +4750,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:3b877d11a05c65d7",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -4870,8 +4870,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:e00775e83b8168bb",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5686,8 +5686,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:999018efbf2bb88e",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5710,8 +5710,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:f8774dad424f1808",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5734,8 +5734,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:1a8930e106f4bf3b",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5758,8 +5758,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:4d49d80ef22da6fc",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5782,8 +5782,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:e346d0d4c0564cb8",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5806,8 +5806,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:a3e16149ae38013e",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5830,8 +5830,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:4380b47b680a0226",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5854,8 +5854,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:4b8e05ae05bbf431",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5878,8 +5878,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:88c772c47a0b8bba",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -5926,8 +5926,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:2514d6bfd2cffa4f",
-      "ultima_verificacao": "2026-09-25T21:09:13-03:00",
-      "ultima_execucao": "run_2026_09_25_2109",
+      "ultima_verificacao": "2026-09-26T11:29:40-03:00",
+      "ultima_execucao": "run_2026_09_26_1129",
       "primeira_deteccao": "2026-09-17T20:41:49-03:00",
       "id_execucao_primeira": "run_2026_09_17_2041",
       "historico": []
@@ -6295,55 +6295,55 @@
         "h": "sha1:77dadb840efc2af4",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_telegram_detalha_acoes_contra_desinformacao_em_plano_para_eleicoes_de_2026": {
         "h": "sha1:62e0143bc2211903",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_abertas_inscricoes_para_reuniao_sobre_decente_nas_plataformas_digitais": {
         "h": "sha1:58c3dc5746e8476e",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_inteligencia_artificial_e_tema_de_debate_no_para": {
         "h": "sha1:830172f6c825cf4b",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_tjpe_lanca_dje_com_navegacao_mais_rapida_novo_visual_e_acesso_facilitado": {
         "h": "sha1:6744bd4a822e1893",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_debates_contribuem_para_elaboracao_de_norma_sobre_processos_estruturais": {
         "h": "sha1:6e90401bef20b9cb",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_oficinas_buscam_solucoes_inovadoras_para_tratamento_de_processos_estruturais": {
         "h": "sha1:180b85e02b701f53",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_comunidade_quilombola_do_amapa_ganha_ponto_de_inclusao_digital": {
         "h": "sha1:89733c4e562a91e7",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_webinario_apresenta_ferramentas_de_ia_para_o_judiciario": {
         "h": "sha1:bafb64756d5ac798",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_justica_4_0_oferta_cursos_avancados_de_ciencia_de_dados": {
         "h": "sha1:bc1b501eea33c922",
@@ -6379,43 +6379,43 @@
         "h": "sha1:86820ee492e2a03c",
         "s": null,
         "d": "2026-09-21T13:28:29-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_agenda_justica_juvenil_adolescentes_do_sistema_socioeducativo_sao_capacitados_em_economia_criativa": {
         "h": "sha1:89dfc5baeda9d454",
         "s": null,
         "d": "2026-09-21T13:28:29-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_justica_do_trabalho_passa_a_usar_remessa_digital_de_oficios_pelo_jus_br": {
         "h": "sha1:b382e28e86de2eeb",
         "s": null,
         "d": "2026-09-21T13:28:29-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_inclusao_e_escuta_fortalecem_acesso_a_justica_no_territorio_kalunga": {
         "h": "sha1:6af5a498c1c1041c",
         "s": null,
         "d": "2026-09-21T21:17:08-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_observatorio_do_cnj_reune_setores_para_discutir_trabalho_decente_nas_plataformas": {
         "h": "sha1:141e4f8627fccac5",
         "s": null,
         "d": "2026-09-23T14:58:08-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_saude_judiciario_debatera_inovacoes_e_judicializacao_em_novembro": {
         "h": "sha1:7055830e5afe5808",
         "s": null,
         "d": "2026-09-24T12:06:29-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "cnj_cnj_jus_br_concurso_de_desenho_sobre_direitos_no_eca_digital_tem_inscricoes_prorrogadas_ate_30_11428386_2": {
         "h": "sha1:54b93ddccf2868bd",
         "s": null,
         "d": "2026-09-24T21:00:06-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       }
     },
     "tse": {
@@ -7123,19 +7123,19 @@
         "h": "sha1:e00775e83b8168bb",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "planalto_gov_br_planalto_pt_br_acompanhe_o_planalto_noticias_visita_presidencial_ao_parque_tecnologico_de_macaiba_e_anu": {
         "h": "sha1:9c4674da3784164c",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "planalto_gov_br_planalto_pt_br_acompanhe_o_planalto_noticias_presidente_da_republica_participa_de_encontro_com_lideranc": {
         "h": "sha1:3b877d11a05c65d7",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "planalto_in_gov_br_web_dou_lei_n_15_504_de_15_de_setembro_de_2026_731892072": {
         "h": "sha1:91f731aeb48fde8a",
@@ -7191,25 +7191,25 @@
         "h": "sha1:a5431837fe866b1b",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_pesquisa_desenvolve_equipamento_para_r": {
         "h": "sha1:a566205e3efdbf67",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_ada_lovelace_como_a_mae_da_programacao": {
         "h": "sha1:83cd2ebe5e0056dd",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_banco_nacional_reune_solucoes_de_intel": {
         "h": "sha1:070aaea38e12819b",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_tecnologias_de_reuso_de_agua_garantem_": {
         "h": "sha1:cda23403fdf23620",
@@ -7239,55 +7239,55 @@
         "h": "sha1:999018efbf2bb88e",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_tecnologias_convergentes_e_habilitadoras_nanotecnologia": {
         "h": "sha1:f8774dad424f1808",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital": {
         "h": "sha1:1a8930e106f4bf3b",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital_estrategia_brasileira_de_inteligencia_artificial": {
         "h": "sha1:4d49d80ef22da6fc",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital_seguranca_cibernetica": {
         "h": "sha1:e346d0d4c0564cb8",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital_internet_das_coisas_2": {
         "h": "sha1:a3e16149ae38013e",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital_observatorio_de_tecnologias_digitais": {
         "h": "sha1:4380b47b680a0226",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital_plano_brasileiro_de_inteligencia_artificial": {
         "h": "sha1:4b8e05ae05bbf431",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_transformacaodigital_internet_20das_20coisas": {
         "h": "sha1:88c772c47a0b8bba",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_semicondutores": {
         "h": "sha1:89e41f884c9b5c2d",
@@ -7299,7 +7299,7 @@
         "h": "sha1:2514d6bfd2cffa4f",
         "s": null,
         "d": "2026-09-17T20:41:49-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_in_gov_br_web_dou_despacho_de_11_de_setembro_de_2026_731457497": {
         "h": "sha1:468bb9d676437396",
@@ -7395,25 +7395,25 @@
         "h": "sha1:ee435534e45d134a",
         "s": null,
         "d": "2026-09-21T21:17:08-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_residuos_da_producao_do_oleo_de_palma_": {
         "h": "sha1:0c79fdb293c5cd6d",
         "s": null,
         "d": "2026-09-23T14:58:08-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_testes_com_b20_e_b25_avancam_para_etap": {
         "h": "sha1:d426c4b046601dd9",
         "s": null,
         "d": "2026-09-25T12:16:20-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       },
       "mcti_gov_br_mcti_pt_br_acompanhe_o_mcti_noticias_noticias_julho_outubro_2026_chamada_para_projetos_de_transformacao": {
         "h": "sha1:091403ee40bae904",
         "s": null,
         "d": "2026-09-25T12:16:20-03:00",
-        "v": "2026-09-25"
+        "v": "2026-09-26"
       }
     }
   }
