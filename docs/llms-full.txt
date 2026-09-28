@@ -33,7 +33,7 @@
 ## High-impact monitored propositions
 - [PL 2338/2023 — Marco Legal da Inteligência Artificial](https://monitor.lcfconsulting.com.br/proposicoes/pl-2338-2023/) — score 95/100; situação: Aguardando Parecer do(a) Relator(a) na Comissão Especial (PL233823)
 - [PL 6237/2025 — Sistema Nacional para Desenvolvimento, Regulação e Governança de IA (SIA)](https://monitor.lcfconsulting.com.br/proposicoes/pl-6237-2025/) — score 88/100; situação: Apensado ao PL 2338/2023 — Aguardando Parecer do(a) Relator(a) na Comissão Especial PL233823
-- [PL 278/2026 — Redata — Regime Especial de Tributação para Serviços de Datacenter](https://monitor.lcfconsulting.com.br/proposicoes/pl-278-2026/) — score 85/100; situação: Aprovado pelo Congresso Nacional; aguarda sanção presidencial
+- [PL 278/2026 — Redata — Regime Especial de Tributação para Serviços de Datacenter](https://monitor.lcfconsulting.com.br/proposicoes/pl-278-2026/) — score 85/100; situação: Convertida em norma — Apresentação de Proposição: Recebido o Ofício nº 1385/2026-SF que comunica a restituição de Projeto de Lei sancionado.
 - [PL 3066/2025 — Enfrentamento da violência sexual contra crianças com uso de IA (convertido na Lei 15.487/2026)](https://monitor.lcfconsulting.com.br/proposicoes/pl-3066-2025/) — score 78/100; situação: Transformada em norma jurídica — Lei nº 15.487/2026, sancionada em 06/08/2026, publicada no DOU de 07/08/2026, em vigor desde 07/08/2026
 - [PL 4358/2025 — Marco setorial de princípios, direitos e governança de IA](https://monitor.lcfconsulting.com.br/proposicoes/pl-4358-2025/) — score 70/100; situação: Apensado ao PL 2338/2023 — Aguardando Parecer do(a) Relator(a) na Comissão Especial PL233823
 - [PL 762/2026 — Marco regulatório para IA em setores de alta consequência](https://monitor.lcfconsulting.com.br/proposicoes/pl-762-2026/) — score 68/100; situação: Apensado ao PL 7132/2025 (subcluster do PL 2338/2023) — Aguardando Parecer do(a) Relator(a) na Comissão Especial PL233823
@@ -55,4 +55,4 @@
 ## Source and trust policy
 Facts are grounded in primary sources including Câmara dos Deputados, Senado Federal, Congresso Nacional, Planalto, Diário Oficial da União, TSE, CNJ and ANPD. Automatic discoveries can be flagged as awaiting editorial review. Corrections are recorded rather than silently overwritten.
 
-Last build reference: 2026-09-27.
+Last build reference: 2026-09-28.
