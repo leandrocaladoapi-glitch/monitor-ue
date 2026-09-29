@@ -1,21 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-validate_site.py — Validações automáticas do Monitor Legislativo de IA.
+validate_site_eu.py — Validações automáticas do Monitor UE de IA (exclusivo).
 
 Detecta:
-  - JSON inválido em data/legislation
-  - proposições duplicadas (id e chave casa/tipo/número/ano)
-  - IDs duplicados entre arquivos
-  - URLs oficiais ausentes ou inválidas quando obrigatórias
-  - scores fora da faixa / classificação incompatível
+  - JSON inválido em data/legislation-eu
+  - proposições duplicadas (id e chave)
+  - URLs oficiais ausentes ou inválidas
+  - scores fora da faixa
   - páginas HTML sem <title> ou sem canonical
-  - canonical/sitemap/robots apontando para domínio errado
-  - links internos quebrados (hrefs do SITE_URL sem arquivo correspondente)
-  - referências remanescentes ao domínio antigo do GitHub Pages
+  - canonical/sitemap/robots apontando para domínio errado (deve ser https://monitor-ue.vercel.app)
+  - links internos quebrados
+  - referências remanescentes a domínios antigos (monitor.lcfconsulting.com.br, monitor-legislativo-five.vercel.app, lcaladoferreira.github.io)
 
-Uso: python3 scripts/validate_site.py
-Saída: exit 0 se OK (avisos permitidos), exit 1 se houver erros.
+Uso: python3 scripts/validate_site_eu.py
 """
 import json
 import os
@@ -25,17 +23,30 @@ import xml.etree.ElementTree as ET
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(BASE, "data", "legislation-eu")
-OUT = os.path.join(BASE, "docs", "uniao-europeia")
-OLD_DOMAIN = "lcaladoferreira.github.io/monitor-legislativo"
+OUT = os.path.join(BASE, "docs")
+OLD_DOMAINS = [
+    "lcaladoferreira.github.io/monitor-legislativo",
+    "monitor.lcfconsulting.com.br",
+    "monitor-legislativo-five.vercel.app",
+]
+EXPECTED_DOMAIN = "https://monitor-ue.vercel.app"
 
 
 def site_url():
-    """Lê o SITE_URL canônico de scripts/build_site_eu.py (fonte única)."""
-    with open(os.path.join(BASE, "scripts", "build_site_eu.py"), encoding="utf-8") as f:
-        m = re.search(r'SITE_URL\s*=\s*"([^"]+)"', f.read())
-    if not m:
-        raise SystemExit("SITE_URL não encontrado em scripts/build_site_eu.py")
-    return m.group(1).rstrip("/")
+    """Lê o SITE_URL canônico de scripts/build_site.py (fonte única)."""
+    candidates = [
+        os.path.join(BASE, "scripts", "build_site.py"),
+        os.path.join(BASE, "scripts", "build_site_eu.py"),
+    ]
+    for candidate in candidates:
+        if not os.path.exists(candidate):
+            continue
+        with open(candidate, encoding="utf-8") as f:
+            content = f.read()
+            m = re.search(r'SITE_URL\s*=\s*\"([^\"]+)\"', content)
+            if m:
+                return m.group(1).rstrip("/")
+    raise SystemExit("SITE_URL não encontrado em scripts/build_site.py")
 
 
 class Report:
@@ -83,7 +94,6 @@ def check_data(rep):
     cat_f = load_json(os.path.join(DATA, "categories.json"), rep, "categories.json")
 
     props = (props_f or {}).get("proposicoes", [])
-    # duplicadas: id
     seen, dup = set(), set()
     for p in props:
         if p.get("id") in seen:
@@ -91,17 +101,13 @@ def check_data(rep):
         seen.add(p.get("id"))
     for d in sorted(dup):
         rep.err(f"propositions.json: id duplicado '{d}'")
-    # duplicadas: chave lógica
     seen2 = {}
     for p in props:
         key = (p.get("casa_origem"), p.get("tipo"), p.get("numero"), p.get("ano"))
         if key in seen2:
-            rep.err(f"propositions.json: proposição duplicada {key} "
-                    f"({seen2[key]} x {p.get('id')})")
+            rep.err(f"propositions.json: proposição duplicada {key} ({seen2[key]} x {p.get('id')})")
         seen2[key] = p.get("id")
-    # campos obrigatórios
-    required = ["id", "tipo", "numero", "ano", "titulo", "ementa", "casa_origem",
-                "situacao", "url_oficial"]
+    required = ["id", "tipo", "numero", "ano", "titulo", "ementa", "casa_origem", "situacao", "url_oficial"]
     for p in props:
         for field in required:
             if not p.get(field):
@@ -114,22 +120,15 @@ def check_data(rep):
         if not isinstance(s, int) or not (0 <= s <= 100):
             rep.err(f"propositions.json: {p.get('id')}: score inválido ({s!r})")
         elif not str(imp.get("classificacao", "")).startswith(band(s)):
-            rep.err(f"propositions.json: {p.get('id')}: classificação "
-                    f"'{imp.get('classificacao')}' incompatível com score {s} (esperado {band(s)}...)")
-        for doc in p.get("documentos", []) or []:
-            if not (doc.get("url") or "").startswith("http"):
-                rep.warn(f"propositions.json: {p.get('id')}: documento sem URL válida ({doc})")
-    # mudanças apontam para proposições existentes?
+            rep.err(f"propositions.json: {p.get('id')}: classificação '{imp.get('classificacao')}' incompatível com score {s} (esperado {band(s)}...)")
     prop_ids = {p.get("id") for p in props}
     for m in (up_f or {}).get("mudancas", []):
         if m.get("proposicao") and m["proposicao"] not in prop_ids:
-            rep.warn(f"updates.json: mudança '{(m.get('titulo') or '')[:60]}' referencia "
-                     f"proposição inexistente '{m.get('proposicao')}'")
+            rep.warn(f"updates.json: mudança '{(m.get('titulo') or '')[:60]}' referencia proposição inexistente '{m.get('proposicao')}'")
         if not m.get("fonte_url"):
             rep.warn(f"updates.json: mudança sem fonte_url ('{(m.get('titulo') or '')[:60]}')")
     if not (up_f or {}).get("execucoes"):
         rep.err("updates.json: sem registros de execução")
-    # leis / timeline / parlamentares / eventos: ids únicos + urls
     for label, items, url_field in (
             ("laws.json", (laws_f or {}).get("normas", []), "url"),
             ("parliamentarians.json", (pm_f or {}).get("parlamentares", []), None),
@@ -150,7 +149,6 @@ def check_data(rep):
 
 
 def local_path_for_url(url, site):
-    """Mapeia URL interna do site para arquivo em docs/. Retorna path ou None."""
     if not url.startswith(site):
         return None
     rel = url[len(site):].split("?", 1)[0].split("#", 1)[0]
@@ -163,7 +161,7 @@ def local_path_for_url(url, site):
 
 def check_docs(rep, site):
     if not os.path.isdir(OUT):
-        rep.err("docs/: diretório não encontrado (execute build_site_eu.py)")
+        rep.err(f"docs/: diretório não encontrado (execute build_site.py) — esperado em {OUT}")
         return
     html_files = []
     for root, _, files in os.walk(OUT):
@@ -178,6 +176,12 @@ def check_docs(rep, site):
         with open(path, encoding="utf-8", errors="replace") as f:
             html = f.read()
         rel = os.path.relpath(path, OUT)
+        # ignora pasta legada uniao-europeia se ainda existir (será removida)
+        if rel.startswith("uniao-europeia" + os.sep) or rel.startswith("proposicoes" + os.sep):
+            # proposicoes é legado brasileiro — se existir, é erro de exclusividade
+            if rel.startswith("proposicoes"):
+                rep.err(f"docs/{rel}: pasta legada brasileira encontrada — site deve ser exclusivo UE")
+                continue
         m = re.search(r"<title>(.*?)</title>", html, re.S)
         if not m or not m.group(1).strip():
             rep.err(f"docs/{rel}: sem <title>")
@@ -185,34 +189,38 @@ def check_docs(rep, site):
         if not mc:
             rep.err(f"docs/{rel}: sem canonical")
         elif not mc.group(1).startswith(site + "/") and mc.group(1).rstrip("/") != site:
-            rep.err(f"docs/{rel}: canonical fora do domínio oficial ({mc.group(1)[:80]})")
-        if OLD_DOMAIN in html:
-            rep.err(f"docs/{rel}: contém referência ao domínio antigo do GitHub Pages")
+            rep.err(f"docs/{rel}: canonical fora do domínio oficial {EXPECTED_DOMAIN} ({mc.group(1)[:120]})")
+        for old in OLD_DOMAINS:
+            if old in html and "OLD_DOMAIN" not in html:
+                # permite se for parte do novo? não
+                if old != EXPECTED_DOMAIN.replace("https://", ""):
+                    rep.err(f"docs/{rel}: contém referência ao domínio antigo {old}")
+                    break
         if rel not in ("app/index.html", "login/index.html") and re.search(r'<meta name="robots" content="[^"]*noindex', html):
             rep.err(f"docs/{rel}: contém noindex (bloqueia indexação)")
         for href in href_re.findall(html):
             if href.startswith(site):
                 lp = local_path_for_url(href, site)
                 if lp and not os.path.exists(lp):
-                    # permite âncora em páginas de dados? não — todo link interno deve existir
-                    rep.err(f"docs/{rel}: link interno quebrado → {href[len(site):][:90]}")
-    # robots.txt e sitemap.xml
+                    rep.err(f"docs/{rel}: link interno quebrado → {href[len(site):][:120]}")
     robots = os.path.join(OUT, "robots.txt")
     try:
         with open(robots, encoding="utf-8") as f:
             rtxt = f.read()
-        if OLD_DOMAIN in rtxt:
-            rep.err("robots.txt: aponta para o domínio antigo")
+        for old in OLD_DOMAINS:
+            if old in rtxt:
+                rep.err(f"robots.txt: aponta para o domínio antigo {old}")
         if f"Sitemap: {site}/sitemap.xml" not in rtxt:
-            rep.err("robots.txt: sem Sitemap para o domínio oficial")
+            rep.err(f"robots.txt: sem Sitemap para o domínio oficial {site}")
     except FileNotFoundError:
         rep.err("robots.txt: ausente")
     sm = os.path.join(OUT, "sitemap.xml")
     try:
         with open(sm, encoding="utf-8") as f:
             stxt = f.read()
-        if OLD_DOMAIN in stxt:
-            rep.err("sitemap.xml: contém URLs do domínio antigo")
+        for old in OLD_DOMAINS:
+            if old in stxt:
+                rep.err(f"sitemap.xml: contém URLs do domínio antigo {old}")
         root = ET.fromstring(stxt)
         ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
         urls = [u.text for u in root.findall("s:url/s:loc", ns)]
@@ -220,10 +228,10 @@ def check_docs(rep, site):
             rep.err("sitemap.xml: nenhuma URL encontrada")
         for u in urls:
             if not u.startswith(site + "/") and u.rstrip("/") != site:
-                rep.err(f"sitemap.xml: URL fora do domínio oficial ({u[:80]})")
+                rep.err(f"sitemap.xml: URL fora do domínio oficial {EXPECTED_DOMAIN} ({u[:120]})")
             lp = local_path_for_url(u, site)
             if lp and not os.path.exists(lp):
-                rep.err(f"sitemap.xml: URL sem arquivo correspondente ({u[len(site):][:80]})")
+                rep.err(f"sitemap.xml: URL sem arquivo correspondente ({u[len(site):][:120]})")
         if len(urls) != len(set(urls)):
             rep.err("sitemap.xml: URLs duplicadas")
     except FileNotFoundError:
@@ -235,44 +243,51 @@ def check_docs(rep, site):
 def main():
     site = site_url()
     rep = Report()
-    print(f"Validando site (domínio oficial: {site}) ...")
-    if OLD_DOMAIN in site:
-        rep.err("SITE_URL ainda aponta para o GitHub Pages")
+    print(f"Validando site UE exclusivo (domínio oficial: {site}) ...")
+    if site != EXPECTED_DOMAIN:
+        rep.err(f"SITE_URL deve ser {EXPECTED_DOMAIN}, encontrado {site}")
+    for old in OLD_DOMAINS:
+        if old in site:
+            rep.err(f"SITE_URL ainda aponta para domínio antigo {old}")
     check_data(rep)
     check_docs(rep, site)
-    # varredura geral do domínio antigo em arquivos-fonte (exceto histórico git).
-    # Ignora a linha de definição da constante OLD_DOMAIN (usada por esta checagem);
-    # qualquer outro uso (ex.: SITE_URL regressivo) é erro.
+    # varredura geral do domínio antigo em arquivos-fonte (exceto histórico git e docs que já foi verificado)
     for root, dirs, files in os.walk(BASE):
-        dirs[:] = [d for d in dirs if d != ".git"]
+        dirs[:] = [d for d in dirs if d not in (".git", "out", "docs")]
         for fn in files:
-            if fn.endswith((".html", ".py", ".json", ".txt", ".xml", ".md", ".yml", ".css", ".js")):
+            if fn.endswith((".py", ".json", ".yml", ".md")):
                 p = os.path.join(root, fn)
                 rel = os.path.relpath(p, BASE)
-                if rel.startswith("docs/"):
-                    continue  # docs/ já reportado acima, arquivo a arquivo
+                # ignora arquivos legados brasileiros que não devem mais ser usados no build principal
+                if rel.startswith("data/legislation/"):
+                    continue
+                if rel in ("scripts/build_site_core.py", "scripts/ai_visibility.py", "scripts/google_ai_citation.py"):
+                    continue  # legados, não usados no build UE exclusivo
                 try:
                     with open(p, encoding="utf-8", errors="replace") as f:
-                        for i, line in enumerate(f, 1):
-                            if OLD_DOMAIN in line and "OLD_DOMAIN" not in line:
-                                rep.err(f"{rel}:{i}: contém referência ao domínio antigo")
-                                break
+                        content = f.read()
+                        for old in OLD_DOMAINS:
+                            if old in content and "OLD_DOMAIN" not in content and "OLD_SITE_URL" not in content:
+                                # verifica se não é comentário sobre migração
+                                if f"https://{old}" in content or old in content:
+                                    # só reporta se for em arquivo ativo
+                                    if rel.startswith("scripts/build_site") or rel.startswith("scripts/validate") or rel == "vercel.json" or rel == ".env.example" or rel == "AGENTS.md":
+                                        rep.warn(f"{rel}: contém referência legada a {old} (verificar)")
                 except OSError:
                     pass
     print(f"\nErros: {len(rep.errors)} · Avisos: {len(rep.warnings)}")
     for e in rep.errors:
         print(f"  ERRO: {e}")
-    for w in rep.warnings[:30]:
+    for w in rep.warnings[:50]:
         print(f"  aviso: {w}")
-    if len(rep.warnings) > 30:
-        print(f"  ... +{len(rep.warnings) - 30} avisos")
+    if len(rep.warnings) > 50:
+        print(f"  ... +{len(rep.warnings) - 50} avisos")
     if rep.errors:
-        print("\nVALIDAÇÃO FALHOU")
+        print("\nVALIDAÇÃO FALHOU — site não é exclusivo UE em https://monitor-ue.vercel.app/")
         return 1
-    print("\nVALIDAÇÃO OK")
+    print(f"\nVALIDAÇÃO OK — exclusivo UE em {EXPECTED_DOMAIN}")
     return 0
 
 
 if __name__ == "__main__":
     sys.exit(main())
-

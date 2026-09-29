@@ -116,7 +116,7 @@ class CommercialTests(unittest.TestCase):
     def test_http_origin_validation_and_failure_semantics(self):
         server=ThreadingHTTPServer(('127.0.0.1',0),handler)
         thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
-        def request(route,data=None,origin='https://monitor.lcfconsulting.com.br',method='POST'):
+        def request(route,data=None,origin='https://monitor-ue.vercel.app',method='POST'):
             conn=http.client.HTTPConnection('127.0.0.1',server.server_port)
             conn.request(method,route,json.dumps(data) if data is not None else None,{'Origin':origin,'Content-Type':'application/json'})
             response=conn.getresponse();result=(response.status,json.loads(response.read()));conn.close();return result

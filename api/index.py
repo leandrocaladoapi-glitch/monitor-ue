@@ -61,7 +61,7 @@ class handler(BaseHTTPRequestHandler):
                 return self.send_json(200,self.status())
             data={}
             if method=='POST':
-                site=os.environ.get('SITE_URL','https://monitor.lcfconsulting.com.br').rstrip('/')
+                site=os.environ.get('SITE_URL','https://monitor-ue.vercel.app').rstrip('/')
                 origins={site}
                 if os.environ.get('VERCEL_URL'):origins.add('https://'+os.environ['VERCEL_URL'])
                 if os.environ.get('MONITOR_DEV')=='1' and not os.environ.get('VERCEL'):origins.update({'http://127.0.0.1:8765','http://localhost:8765'})

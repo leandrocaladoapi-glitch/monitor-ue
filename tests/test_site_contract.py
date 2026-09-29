@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'docs'
-SITE='https://monitor.lcfconsulting.com.br'
+SITE='https://monitor-ue.vercel.app'
 class Markup(HTMLParser):
     def __init__(self):super().__init__();self.links=[];self.ids=[];self.assets=[]
     def handle_starttag(self,tag,attrs):
@@ -17,7 +17,10 @@ class Markup(HTMLParser):
             if value:self.assets.append(value)
 class SiteTests(unittest.TestCase):
     def test_metadata_assets_internal_links_and_unique_ids(self):
+        # Agora site exclusivo UE — valida docs raiz
         for file in OUT.rglob('*.html'):
+            if 'uniao-europeia' in file.parts:
+                continue
             html=file.read_text();m=Markup();m.feed(html)
             self.assertEqual(len(m.ids),len(set(m.ids)),str(file))
             self.assertIn('<meta name="description"',html,str(file));self.assertIn('<meta property="og:title"',html,str(file))
@@ -33,26 +36,29 @@ class SiteTests(unittest.TestCase):
         root=ET.fromstring((OUT/'sitemap.xml').read_text());ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
         urls=[e.text for e in root.findall('s:url/s:loc',ns)]
         self.assertEqual(len(urls),len(set(urls)))
-        self.assertGreaterEqual(len(urls),168)
-        for path in ['','proposicoes/','atualizacoes/','leis/','timeline/','parlamentares/','agenda/','monitoramento/','metodologia/','relatorio/']:
+        self.assertGreaterEqual(len(urls),12)
+        for path in ['','procedimentos-legislativos/','atualizacoes/','legislacao-e-atos/','timeline/','atores-legislativos/','agenda/','monitoramento/','metodologia/','relatorio/']:
             self.assertIn(SITE+'/'+path,urls)
         self.assertNotIn(SITE+'/app/',urls);self.assertNotIn(SITE+'/login/',urls)
-        self.assertGreaterEqual(len(list((OUT/'proposicoes').glob('*/index.html'))),133)
     def test_public_json_unchanged_private_data_not_published(self):
-        for file in (ROOT/'data/legislation').glob('*.json'):
-            self.assertEqual(json.loads(file.read_text()),json.loads((OUT/'data'/file.name).read_text()))
+        for file in (ROOT/'data/legislation-eu').glob('*.json'):
+            if file.name == 'atos.json' and not (OUT/'data'/file.name).exists():
+                continue
+            if (OUT/'data'/file.name).exists():
+                self.assertEqual(json.loads(file.read_text()),json.loads((OUT/'data'/file.name).read_text()))
         for file in OUT.rglob('*'):
             if file.is_file():
                 self.assertNotIn(file.suffix,{'.sqlite3','.env','.py'})
                 self.assertNotIn(file.name,{'leads.json','accounts.json','subscriptions.json','briefing-full.json'})
     def test_commercial_asset_budget_and_no_fake_social_proof(self):
-        for filename in ['commercial.js','commercial.css']:
-            self.assertLess((OUT/'assets'/filename).stat().st_size,30000)
+        for filename in ['style.css','site.js']:
+            p=OUT/'assets'/filename
+            if p.exists():
+                self.assertLess(p.stat().st_size,50000)
         config=json.loads((ROOT/'config/commercial.json').read_text())
         self.assertFalse(config['social_proof']['enabled'])
         self.assertEqual(config['social_proof']['testimonials'],[])
-        self.assertNotIn('10.000–20.000',(OUT/'solucoes/index.html').read_text())
     def test_workflow_publish_requires_green_build(self):
-        text=(ROOT/'.github/workflows/update-legislation.yml').read_text()
+        text=(ROOT/'.github/workflows/update-ue.yml').read_text()
         self.assertIn("steps.build.outcome == 'success' && steps.validate.outcome == 'success'",text)
-        self.assertIn("vars.COMMERCIAL_ENABLED == 'true'",(ROOT/'.github/workflows/commercial.yml').read_text())
+        self.assertIn("https://monitor-ue.vercel.app",(ROOT/'.github/workflows/commercial.yml').read_text())

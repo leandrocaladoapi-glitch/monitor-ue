@@ -225,7 +225,7 @@ def subscribe(s,d,user=None):
     record={'email':address,**prefs,'active':False,'created_at':int(time.time()),'consent_at':int(time.time()),'account_id':account,'user_id':user['id'] if user else None}
     s.put('subscription',key,record,account)
     token=token_record(s,'confirm',key,{'subscription':key},account)
-    site=os.environ.get('SITE_URL','https://monitor.lcfconsulting.com.br').rstrip('/')
+    site=os.environ.get('SITE_URL','https://monitor-ue.vercel.app').rstrip('/')
     queue_now(s,'confirm-'+key,address,'Confirme seus alertas de regulação de IA',f'Você solicitou alertas do Monitor Legislativo de IA. Confirme em {site}/alertas/#confirm={token}\nO link expira em 7 dias. Se não solicitou, ignore. Nenhum alerta será enviado sem confirmação.',account)
     return {'ok':True,'message':'Solicitação registrada. Confirme o endereço pelo link que será enviado por e-mail.'}
 

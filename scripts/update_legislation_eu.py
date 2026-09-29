@@ -94,7 +94,7 @@ TRAIN_THEMES = [
 DOCEO = "https://www.europarl.europa.eu/doceo/document"
 
 BRT = timezone(timedelta(hours=-3))
-UA = {"User-Agent": "monitor-ia-ue/1.0 (+https://monitor.lcfconsulting.com.br)",
+UA = {"User-Agent": "monitor-ia-ue/1.0 (+https://monitor-ue.vercel.app)",
       "Accept": "application/json, text/html;q=0.9, */*;q=0.8"}
 
 OLD_DOMAIN = "lcaladoferreira.github.io/monitor-legislativo"

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "site": "https://monitor.lcfconsulting.com.br",
+  "site": "https://monitor-ue.vercel.app",
   "updated": "2026-09-29",
   "public_access": {
     "crawl": true,
@@ -11,5 +11,6 @@
   "write_actions": false,
   "authentication_required_for_public_content": false,
   "high_stakes_notice": "Dados legislativos devem sempre ser conferidos nas fontes oficiais.",
-  "commercial_contact": "https://lcfconsulting.com.br/"
+  "commercial_contact": "https://lcfconsulting.com.br/",
+  "exclusive_scope": "European Union — AI Act and related EU regulation"
 }

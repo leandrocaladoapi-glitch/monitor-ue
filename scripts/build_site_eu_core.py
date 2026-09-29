@@ -23,9 +23,9 @@ DATA = os.path.join(BASE, "data", "legislation-eu")
 ASSETS = os.path.join(BASE, "scripts", "assets")
 OUT = os.path.join(BASE, "docs")
 
-# Domínio oficial (Vercel). Usado em canonical/OG/sitemap/navegação.
-SITE_URL = "https://monitor-legislativo-five.vercel.app"
-OLD_DOMAIN = "lcaladoferreira.github.io/monitor-legislativo"
+# Domínio oficial (Vercel) — Monitor exclusivo da União Europeia.
+SITE_URL = "https://monitor-ue.vercel.app"
+OLD_DOMAIN = "monitor.lcfconsulting.com.br"
 SITE_NAME = "Monitor UE de IA"
 TAGLINE = "Monitoramento público, documentado e auditável da legislação e da regulação de IA da União Europeia"
 

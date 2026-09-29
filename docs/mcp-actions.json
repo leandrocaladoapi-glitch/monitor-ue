@@ -1,29 +1,29 @@
 {
   "version": "1.0",
   "status": "draft-compatible-declaration",
-  "site": "https://monitor.lcfconsulting.com.br",
+  "site": "https://monitor-ue.vercel.app",
   "actions": [
     {
       "id": "contact-lcf-consulting",
       "name": "Contact LCF Consulting",
-      "description": "Open LCF Consulting to request legislative and regulatory intelligence services.",
+      "description": "Open LCF Consulting to request legislative and regulatory intelligence services for EU AI regulation.",
       "method": "declarative",
       "element": "a[data-mcp-action='contact-lcf-consulting']",
       "endpoint": "https://lcfconsulting.com.br/"
     },
     {
       "id": "read-legislative-updates",
-      "name": "Read legislative updates feed",
-      "description": "Retrieve the public structured feed of detected legislative changes.",
+      "name": "Read EU legislative updates feed",
+      "description": "Retrieve the public structured feed of detected EU legislative changes.",
       "method": "GET",
-      "endpoint": "https://monitor.lcfconsulting.com.br/data/updates.json"
+      "endpoint": "https://monitor-ue.vercel.app/data/updates.json"
     },
     {
       "id": "read-propositions",
-      "name": "Read monitored propositions",
-      "description": "Retrieve the public structured feed of monitored AI-related propositions.",
+      "name": "Read monitored EU procedures",
+      "description": "Retrieve the public structured feed of monitored EU AI-related procedures.",
       "method": "GET",
-      "endpoint": "https://monitor.lcfconsulting.com.br/data/propositions.json"
+      "endpoint": "https://monitor-ue.vercel.app/data/propositions.json"
     }
   ]
 }

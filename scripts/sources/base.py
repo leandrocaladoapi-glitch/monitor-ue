@@ -53,8 +53,8 @@ from datetime import date, datetime, timedelta, timezone
 
 BRT = timezone(timedelta(hours=-3))
 UA_PADRAO = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
-             "Chrome/124.0 Safari/537.36 monitor-legislativo-ia/1.0 monitor-ia-ue/1.0 "
-             "(+https://monitor.lcfconsulting.com.br)")
+             "Chrome/124.0 Safari/537.36 monitor-ue-ia/1.0 monitor-ia-ue/1.0 "
+             "(+https://monitor-ue.vercel.app)")
 
 
 # --------------------------------------------------------------------- erros
