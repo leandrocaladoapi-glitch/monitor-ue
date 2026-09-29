@@ -80,7 +80,7 @@ def prepare(s,now=None):
         weekly=sub['frequencia']=='semanal'
         if not selected and not weekly:continue
         unsubscribe=token_record(s,'unsubscribe','',{'subscription':key},account,days=3650)
-        site=os.environ.get('SITE_URL','https://monitor.lcfconsulting.com.br').rstrip('/')
+        site=os.environ.get('SITE_URL','https://monitor-ue.vercel.app').rstrip('/')
         lines=['Monitor Legislativo de IA — alerta regulatório','FATOS OFICIAIS: mudanças detectadas no registro. Confirme o texto na fonte.']
         for cid,c in selected:
             r=c['record'];lines+=['',r['title']+' — '+', '.join(c['types']),'AI Legislative Impact Score: '+str(r.get('score') if r.get('score') is not None else 'não atribuído'),r['source']]
@@ -101,7 +101,7 @@ def prepare(s,now=None):
 def send_smtp(mail,key):
     message=EmailMessage()
     message['From']=os.environ['SMTP_FROM'];message['To']=mail['to'];message['Subject']=mail['subject']
-    message['Message-ID']='<'+hashlib.sha256(key.encode()).hexdigest()+'@monitor.lcfconsulting.com.br>'
+    message['Message-ID']='<'+hashlib.sha256(key.encode()).hexdigest()+'@monitor-ue.vercel.app>'
     message.set_content(mail['text'])
     if mail.get('html'):message.add_alternative(mail['html'],subtype='html')
     notify.smtp_send(message)

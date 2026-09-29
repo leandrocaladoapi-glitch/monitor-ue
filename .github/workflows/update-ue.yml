@@ -1,10 +1,11 @@
-name: Atualizar monitor UE (União Europeia)
+name: Atualizar monitor UE (exclusivo)
 
 # Coleta automática das fontes oficiais da UE (API v2 do Parlamento, EUR-Lex,
 # registro do Conselho, Comissão/HYS, AI Office, EDPB, EDPS) para o dataset
-# data/legislation-eu, rebuild da seção docs/uniao-europeia/ e validação.
-# Camada ADICIONAL ao monitor brasileiro (update-legislation.yml), que segue
-# intocado na raiz do site. Crontabs em horário de Bruxelas (CEST/CET ~ UTC+2/+1).
+# data/legislation-eu, rebuild do site EXCLUSIVO em docs/ (https://monitor-ue.vercel.app/)
+# e validação. Este repositório agora é exclusivamente UE — não há monitor brasileiro.
+# Crontabs em horário de Bruxelas (CEST/CET ~ UTC+2/+1).
+
 on:
   schedule:
     # Diário às 05:17 UTC (07:17 em Bruxelas no verão europeu).
@@ -29,6 +30,7 @@ env:
   PYTHONUNBUFFERED: "1"
   MONITOR_BUDGET_SEGUNDOS: "1500"   # 25 min
   MONITOR_MAX_NOVAS: "25"           # fichas novas detalhadas por execução
+  SITE_URL: "https://monitor-ue.vercel.app"
 
 jobs:
   update-ue:
@@ -58,17 +60,17 @@ jobs:
           fi
           python3 scripts/update_legislation_eu.py "${ARGS[@]}"
 
-      - name: Rebuild da seção UE
+      - name: Rebuild do site UE exclusivo (raiz docs/)
         id: build
         if: always()
-        run: python3 scripts/build_site_eu.py
+        run: python3 scripts/build_site.py
 
-      - name: Validar dataset e páginas da seção UE
+      - name: Validar dataset e páginas UE exclusivas
         id: validate
         if: always()
         run: python3 scripts/validate_site_eu.py
 
-      - name: Resumo da execução (UE)
+      - name: Resumo da execução (UE exclusivo)
         if: always()
         run: |
           python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
@@ -80,7 +82,7 @@ jobs:
           ex = (ups.get("execucoes") or [{}])[0]
           http = ex.get("http") or {}
           linhas = [
-              "## Monitor UE — execução do dia",
+              "## Monitor UE Exclusivo — execução do dia (https://monitor-ue.vercel.app/)",
               "",
               f"- **Status:** `{ex.get('status', '—')}`",
               f"- **Início/fim:** {ex.get('data_hora', '—')} → {ex.get('fim', '—')}",
@@ -96,6 +98,7 @@ jobs:
               f"{http.get('tempo_total', '—')}s em rede",
               f"- **Erros:** {len(ex.get('erros') or [])}",
               f"- **Status global (multiórgão):** `{ex.get('status_global', '—')}`",
+              f"- **Domínio oficial:** https://monitor-ue.vercel.app/",
           ]
           fm = ex.get("fontes_monitoradas") or {}
           if fm:
@@ -128,13 +131,13 @@ jobs:
         run: |
           git config user.name "monitor-ia-ue-bot"
           git config user.email "monitor-ia-ue-bot@users.noreply.github.com"
-          git add -A data/legislation-eu docs/uniao-europeia
+          git add -A data/legislation-eu docs
           if git diff --cached --quiet; then
             echo "Nenhuma alteração real. Nada a commitar."
           else
             DATA=$(date -u +%Y-%m-%d)
             STATUS=$(python3 -c "import json;print((json.load(open('data/legislation-eu/updates.json')).get('execucoes') or [{}])[0].get('status','?'))")
-            git commit -m "chore: atualização automática do monitor UE ($DATA) [$STATUS]" -m "Execução do coletor UE (update_legislation_eu.py) + rebuild (build_site_eu.py). Mudanças e métricas em data/legislation-eu/updates.json — painel em /uniao-europeia/monitoramento/."
+            git commit -m "chore: atualização automática do monitor UE exclusivo ($DATA) [$STATUS]" -m "Execução do coletor UE (update_legislation_eu.py) + rebuild exclusivo (build_site.py → docs/) para https://monitor-ue.vercel.app/. Mudanças e métricas em data/legislation-eu/updates.json — painel em /monitoramento/."
             git push
           fi
 
@@ -153,5 +156,5 @@ jobs:
       - name: Sinalizar coleta incompleta (após tentativa de publicação)
         if: steps.coleta.outcome == 'failure'
         run: |
-          echo "::error::A coleta UE não terminou com sucesso. Consulte as etapas de build e commit para confirmar a publicação — verifique o painel /uniao-europeia/monitoramento/ e os logs da etapa 'Coletar fontes oficiais da UE'."
+          echo "::error::A coleta UE não terminou com sucesso. Consulte as etapas de build e commit para confirmar a publicação — verifique o painel /monitoramento/ em https://monitor-ue.vercel.app/monitoramento/ e os logs da etapa 'Coletar fontes oficiais da UE'."
           exit 1

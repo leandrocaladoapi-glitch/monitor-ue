@@ -1,31 +1,31 @@
-# Monitor Legislativo de IA
+# Monitor UE de IA — Monitor Exclusivo da União Europeia
 
-> Monitor público e auditável da legislação brasileira de Inteligência Artificial, mantido pela LCF Consulting a partir de fontes oficiais.
+> Monitor público, documentado e auditável da legislação e da regulação de IA da União Europeia (AI Act e correlatos), mantido pela LCF Consulting a partir de fontes oficiais europeias. Domínio oficial: https://monitor-ue.vercel.app/
 
 ## Key Pages
-- [Início](https://monitor.lcfconsulting.com.br/): visão geral, mudanças recentes e matérias de maior impacto
-- [Proposições](https://monitor.lcfconsulting.com.br/proposicoes/): projetos de lei monitorados e filtros
-- [Atualizações](https://monitor.lcfconsulting.com.br/atualizacoes/): histórico de mudanças detectadas
-- [Leis e normas](https://monitor.lcfconsulting.com.br/leis/): normas vigentes relacionadas a IA
-- [Agenda](https://monitor.lcfconsulting.com.br/agenda/): eventos e marcos futuros
-- [Monitoramento](https://monitor.lcfconsulting.com.br/monitoramento/): saúde, cobertura e telemetria da coleta
-- [Metodologia](https://monitor.lcfconsulting.com.br/metodologia/): fontes, critérios, score e política de correção
-- [Relatório](https://monitor.lcfconsulting.com.br/relatorio/): síntese executiva do estado regulatório
+- [Início](https://monitor-ue.vercel.app/): visão geral, mudanças recentes e dossiês de maior impacto
+- [Procedimentos](https://monitor-ue.vercel.app/procedimentos-legislativos/): procedimentos legislativos da UE monitorados e filtros
+- [Atualizações](https://monitor-ue.vercel.app/atualizacoes/): histórico de mudanças detectadas
+- [Legislação e atos](https://monitor-ue.vercel.app/legislacao-e-atos/): AI Act (Regulamento (UE) 2024/1689) e atos correlatos
+- [Timeline](https://monitor-ue.vercel.app/timeline/): linha do tempo do AI Act
+- [Atores legislativos](https://monitor-ue.vercel.app/atores-legislativos/): relatores e instituições da UE
+- [Agenda](https://monitor-ue.vercel.app/agenda/): consultas públicas e marcos de aplicação
+- [Monitoramento](https://monitor-ue.vercel.app/monitoramento/): saúde, cobertura e telemetria da coleta
+- [Metodologia](https://monitor-ue.vercel.app/metodologia/): fontes oficiais da UE, critérios, score e política de correção
+- [Relatório](https://monitor-ue.vercel.app/relatorio/): síntese executiva do estado regulatório da UE
 
 ## Structured Data
-- [Propositions JSON](https://monitor.lcfconsulting.com.br/data/propositions.json)
-- [Updates JSON](https://monitor.lcfconsulting.com.br/data/updates.json)
-- [Laws JSON](https://monitor.lcfconsulting.com.br/data/laws.json)
-- [Events JSON](https://monitor.lcfconsulting.com.br/data/events.json)
-- [Monitoring JSON](https://monitor.lcfconsulting.com.br/data/monitoramento.json)
+- [Propositions JSON](https://monitor-ue.vercel.app/data/propositions.json)
+- [Updates JSON](https://monitor-ue.vercel.app/data/updates.json)
+- [Laws JSON](https://monitor-ue.vercel.app/data/laws.json)
+- [Events JSON](https://monitor-ue.vercel.app/data/events.json)
+- [Monitoring JSON](https://monitor-ue.vercel.app/data/monitoramento.json)
 
 ## AI / Agent Discovery
-- [LLMs full](https://monitor.lcfconsulting.com.br/llms-full.txt)
-- [AI-readable content index](https://monitor.lcfconsulting.com.br/ai-content.md)
-- [Agent permissions](https://monitor.lcfconsulting.com.br/agent-permissions.json)
-- [MCP actions](https://monitor.lcfconsulting.com.br/mcp-actions.json)
+- [LLMs full](https://monitor-ue.vercel.app/llms-full.txt)
+- [AI-readable content index](https://monitor-ue.vercel.app/ai-content.md)
+- [Agent permissions](https://monitor-ue.vercel.app/agent-permissions.json)
+- [MCP actions](https://monitor-ue.vercel.app/mcp-actions.json)
 
-## Commercial
-- [Diagnóstico regulatório](https://monitor.lcfconsulting.com.br/diagnostico/): solicite uma conversa sobre exposição regulatória.
-- [Soluções](https://monitor.lcfconsulting.com.br/solucoes/): escopos de contratação.
-- [Briefing executivo](https://monitor.lcfconsulting.com.br/briefing-executivo/): amostra com fonte oficial e interpretação separadas.
+## Exclusividade
+Este site é o monitor EXCLUSIVO da União Europeia em https://monitor-ue.vercel.app/. Não há seção brasileira. Todo o conteúdo refere-se ao AI Act, EUR-Lex, Parlamento Europeu, Conselho da UE, Comissão Europeia, European AI Office, EDPB e EDPS.

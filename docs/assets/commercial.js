@@ -36,7 +36,7 @@
   }
   all('a[href]').forEach(link => {
     const url = new URL(link.href, location.href);
-    const sameSite = url.origin === location.origin || url.origin === 'https://monitor.lcfconsulting.com.br';
+    const sameSite = url.origin === location.origin || url.origin === 'https://monitor-ue.vercel.app';
     if (sameSite && /^\/(diagnostico|solucoes|para-empresas|briefing-executivo|setores|casos-de-uso|alto-impacto|alertas)(\/|$)/.test(url.pathname)) {
       Object.keys(attribution).filter(k => k.startsWith('utm_')).forEach(k => { if (!url.searchParams.has(k)) url.searchParams.set(k, attribution[k]); });
       link.href = url.origin === location.origin ? url.pathname + url.search + url.hash : url.href;

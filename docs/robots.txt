@@ -1,4 +1,5 @@
 # Search and AI crawler policy — generated 2026-09-29
+# Monitor UE de IA — Exclusive EU Monitor at https://monitor-ue.vercel.app/
 User-agent: *
 Allow: /
 
@@ -26,4 +27,4 @@ Allow: /
 User-agent: Bytespider
 Disallow: /
 
-Sitemap: https://monitor.lcfconsulting.com.br/sitemap.xml
+Sitemap: https://monitor-ue.vercel.app/sitemap.xml

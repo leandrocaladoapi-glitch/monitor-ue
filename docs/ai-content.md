@@ -1,30 +1,36 @@
-# Monitor Legislativo de IA — AI-readable index
+# Monitor UE de IA — AI-readable index (Exclusive EU Monitor)
 
-Canonical site: https://monitor.lcfconsulting.com.br/
+Canonical site: https://monitor-ue.vercel.app/
 
 ## What this site provides
-Public, structured monitoring of Brazilian federal legislation and regulation related to artificial intelligence. The site is statically generated, so the core content is available in HTML without requiring client-side JavaScript.
+Public, structured, exclusive monitoring of European Union legislation and regulation related to artificial intelligence. The site is statically generated from official EU sources and is available in HTML without requiring client-side JavaScript. This repository is EXCLUSIVELY for the EU — there is no Brazilian section.
+
+## Coverage
+- AI Act (Regulation (EU) 2024/1689) and delegated/implementing acts
+- European Parliament procedures, Council documents, Commission proposals and consultations (Have Your Say)
+- European AI Office, EDPB and EDPS guidance and enforcement
+- Timeline, agenda, actors and audit trail
 
 ## Main collections
-- Propositions: https://monitor.lcfconsulting.com.br/proposicoes/
-- Recent changes: https://monitor.lcfconsulting.com.br/atualizacoes/
-- Laws and regulations: https://monitor.lcfconsulting.com.br/leis/
-- Timeline: https://monitor.lcfconsulting.com.br/timeline/
-- Parliamentary actors: https://monitor.lcfconsulting.com.br/parlamentares/
-- Agenda: https://monitor.lcfconsulting.com.br/agenda/
-- Monitoring health: https://monitor.lcfconsulting.com.br/monitoramento/
-- Methodology: https://monitor.lcfconsulting.com.br/metodologia/
-- Executive report: https://monitor.lcfconsulting.com.br/relatorio/
+- Procedures: https://monitor-ue.vercel.app/procedimentos-legislativos/
+- Legislation and acts: https://monitor-ue.vercel.app/legislacao-e-atos/
+- Recent changes: https://monitor-ue.vercel.app/atualizacoes/
+- Timeline: https://monitor-ue.vercel.app/timeline/
+- Legislative actors: https://monitor-ue.vercel.app/atores-legislativos/
+- Agenda: https://monitor-ue.vercel.app/agenda/
+- Monitoring health: https://monitor-ue.vercel.app/monitoramento/
+- Methodology: https://monitor-ue.vercel.app/metodologia/
+- Executive report: https://monitor-ue.vercel.app/relatorio/
 
 ## Machine-readable feeds
-- https://monitor.lcfconsulting.com.br/data/propositions.json
-- https://monitor.lcfconsulting.com.br/data/updates.json
-- https://monitor.lcfconsulting.com.br/data/laws.json
-- https://monitor.lcfconsulting.com.br/data/events.json
-- https://monitor.lcfconsulting.com.br/data/timeline.json
-- https://monitor.lcfconsulting.com.br/data/parliamentarians.json
-- https://monitor.lcfconsulting.com.br/data/categories.json
-- https://monitor.lcfconsulting.com.br/data/monitoramento.json
+- https://monitor-ue.vercel.app/data/propositions.json
+- https://monitor-ue.vercel.app/data/updates.json
+- https://monitor-ue.vercel.app/data/laws.json
+- https://monitor-ue.vercel.app/data/events.json
+- https://monitor-ue.vercel.app/data/timeline.json
+- https://monitor-ue.vercel.app/data/parliamentarians.json
+- https://monitor-ue.vercel.app/data/categories.json
+- https://monitor-ue.vercel.app/data/monitoramento.json
 
 ## Usage
-Public reading and citation are allowed. Legislative facts should be verified against the linked primary official source before high-stakes use. For commercial monitoring or briefings, use https://lcfconsulting.com.br/.
+Public reading and citation are allowed. Legislative facts should be verified against the linked primary official source (europa.eu) before high-stakes use. For commercial monitoring or briefings, use https://lcfconsulting.com.br/.

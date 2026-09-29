@@ -1,22 +1,41 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Entry point do build com domínio oficial e camada de visibilidade SEO/AEO/agentic."""
+"""Entry point do build EXCLUSIVO UE — Monitor da União Europeia.
+
+Gera o site completo da UE na raiz /docs com domínio oficial
+https://monitor-ue.vercel.app/ a partir de /data/legislation-eu.
+Este repositório agora é exclusivo da União Europeia — não há mais
+monitor brasileiro na raiz.
+"""
 import os
+import sys
 
-import build_site_core as _core
-import ai_visibility as _ai_visibility
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(BASE, "scripts"))
+
+import build_site_eu_core as _core
+import ai_visibility_eu as _ai_visibility
+import google_ai_citation_eu as _google_ai_citation
 import commercial_pages as _commercial
-import google_ai_citation as _google_ai_citation
 
-SITE_URL = "https://monitor.lcfconsulting.com.br"
-OLD_SITE_URL = "https://monitor-legislativo-five.vercel.app"
+SITE_URL = "https://monitor-ue.vercel.app"
+OLD_SITE_URLS = [
+    "https://monitor.lcfconsulting.com.br",
+    "https://monitor.lcfconsulting.com.br/uniao-europeia",
+    "https://monitor-legislativo-five.vercel.app",
+    "lcaladoferreira.github.io/monitor-legislativo",
+]
 
-# Força o domínio oficial em toda a geração: canonical, OG, navegação,
-# sitemap.xml, robots.txt, JSON-LD e arquivos de descoberta para agentes.
+# Domínio + dataset exclusivos UE em toda a geração
 _core.SITE_URL = SITE_URL
+_core.OUT = os.path.join(BASE, "docs")
+_core.DATA = os.path.join(BASE, "data", "legislation-eu")
+_core.SITE_NAME = "Monitor UE de IA"
+_core.TAGLINE = "Monitoramento público, documentado e auditável da legislação e da regulação de IA da União Europeia"
+
 _ai_visibility.install(_core)
-_commercial.install(_core)
 _google_ai_citation.install(_core)
+_commercial.install(_core)
 
 # Preserva compatibilidade para qualquer código/teste que importe build_site.
 for _name, _value in vars(_core).items():
@@ -25,7 +44,7 @@ for _name, _value in vars(_core).items():
 
 
 def _assert_domain_migration():
-    """Falha o build se qualquer artefato crítico ainda publicar o domínio antigo."""
+    """Falha o build se qualquer artefato crítico ainda publicar domínio antigo."""
     critical = [
         "sitemap.xml",
         "robots.txt",
@@ -43,11 +62,15 @@ def _assert_domain_migration():
             continue
         with open(path, encoding="utf-8") as f:
             content = f.read()
-        if OLD_SITE_URL in content:
-            problems.append(rel)
+        for old in OLD_SITE_URLS:
+            # ignora se o old for substring do novo? Não, queremos bloquear todos antigos
+            if old in content and old != SITE_URL:
+                # evita falso positivo quando old está contido no novo? não se aplica aqui
+                problems.append(f"{rel} contém {old}")
+                break
     if problems:
         raise RuntimeError(
-            "Build bloqueado: domínio antigo ainda presente em: " + ", ".join(problems)
+            "Build bloqueado: domínio antigo ainda presente: " + "; ".join(problems)
         )
 
     sitemap = os.path.join(_core.OUT, "sitemap.xml")
@@ -56,11 +79,10 @@ def _assert_domain_migration():
     with open(sitemap, encoding="utf-8") as f:
         xml = f.read()
     if f"<loc>{SITE_URL}/" not in xml:
-        raise RuntimeError("Build bloqueado: sitemap.xml não usa o domínio oficial")
+        raise RuntimeError(f"Build bloqueado: sitemap.xml não usa o domínio oficial {SITE_URL}")
 
 
 if __name__ == "__main__":
     _core.main()
     _assert_domain_migration()
-    print(f"OK: sitemap e arquivos críticos validados em {SITE_URL}")
-
+    print(f"OK: site UE exclusivo validado em {SITE_URL} — {len(OLD_SITE_URLS)} domínios antigos verificados")

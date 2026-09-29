@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""AI/search visibility layer for the Monitor Legislativo de IA.
+"""AI/search visibility layer for the Monitor UE de IA (exclusivo União Europeia).
 
-Implements technical foundations without changing title/H1/keyword targeting:
+Implements technical foundations for https://monitor-ue.vercel.app/
 - AI-aware robots.txt
 - llms.txt / llms-full.txt / AI-readable Markdown index
 - agent-permissions.json and mcp-actions.json
@@ -35,8 +35,7 @@ def install(core):
         org_script = '<script type="application/ld+json">' + json.dumps(organization, ensure_ascii=False) + '</script>\n'
         html = html.replace('</head>', discovery + org_script + '</head>', 1)
 
-        # Declarative WebMCP on the existing high-value task: contacting LCF Consulting.
-        old = f'<a class="cta-btn" href="{core.CONSULTING_URL}">'
+        old = f'<a class="cta-btn" href="{core.CONSULTING_URL}\">'
         new = (f'<a class="cta-btn" href="{core.CONSULTING_URL}" '
                'data-mcp-action="contact-lcf-consulting" '
                'data-mcp-description="Open LCF Consulting to request legislative and regulatory intelligence services">')
@@ -47,19 +46,21 @@ def install(core):
         props = core.load("propositions.json").get("proposicoes", [])
         top = sorted(props, key=lambda p: -(p.get("impacto") or {}).get("score", 0))[:20]
 
-        llms = f"""# Monitor Legislativo de IA
+        llms = f"""# Monitor UE de IA — Monitor Exclusivo da União Europeia
 
-> Monitor público e auditável da legislação e da regulação de IA da União Europeia, mantido pela LCF Consulting a partir de fontes oficiais.
+> Monitor público, documentado e auditável da legislação e da regulação de IA da União Europeia (AI Act e correlatos), mantido pela LCF Consulting a partir de fontes oficiais europeias. Domínio oficial: {core.SITE_URL}/
 
 ## Key Pages
-- [Início]({core.SITE_URL}/): visão geral, mudanças recentes e matérias de maior impacto
-- [Procedimentos]({core.SITE_URL}/procedimentos-legislativos/): procedimentos da UE monitorados e filtros
+- [Início]({core.SITE_URL}/): visão geral, mudanças recentes e dossiês de maior impacto
+- [Procedimentos]({core.SITE_URL}/procedimentos-legislativos/): procedimentos legislativos da UE monitorados e filtros
 - [Atualizações]({core.SITE_URL}/atualizacoes/): histórico de mudanças detectadas
-- [Leis e normas]({core.SITE_URL}/leis/): normas vigentes relacionadas a IA
-- [Agenda]({core.SITE_URL}/agenda/): eventos e marcos futuros
+- [Legislação e atos]({core.SITE_URL}/legislacao-e-atos/): AI Act (Regulamento (UE) 2024/1689) e atos correlatos
+- [Timeline]({core.SITE_URL}/timeline/): linha do tempo do AI Act
+- [Atores legislativos]({core.SITE_URL}/atores-legislativos/): relatores e instituições da UE
+- [Agenda]({core.SITE_URL}/agenda/): consultas públicas e marcos de aplicação
 - [Monitoramento]({core.SITE_URL}/monitoramento/): saúde, cobertura e telemetria da coleta
-- [Metodologia]({core.SITE_URL}/metodologia/): fontes, critérios, score e política de correção
-- [Relatório]({core.SITE_URL}/relatorio/): síntese executiva do estado regulatório
+- [Metodologia]({core.SITE_URL}/metodologia/): fontes oficiais da UE, critérios, score e política de correção
+- [Relatório]({core.SITE_URL}/relatorio/): síntese executiva do estado regulatório da UE
 
 ## Structured Data
 - [Propositions JSON]({core.SITE_URL}/data/propositions.json)
@@ -74,12 +75,9 @@ def install(core):
 - [Agent permissions]({core.SITE_URL}/agent-permissions.json)
 - [MCP actions]({core.SITE_URL}/mcp-actions.json)
 
-## Commercial
-- [Diagnóstico regulatório]({core.SITE_URL}/diagnostico/): solicite uma conversa sobre exposição regulatória.
-- [Soluções]({core.SITE_URL}/solucoes/): escopos de contratação.
-- [Briefing executivo]({core.SITE_URL}/briefing-executivo/): amostra com fonte oficial e interpretação separadas.
+## Exclusividade
+Este site é o monitor EXCLUSIVO da União Europeia em {core.SITE_URL}/. Não há seção brasileira. Todo o conteúdo refere-se ao AI Act, EUR-Lex, Parlamento Europeu, Conselho da UE, Comissão Europeia, European AI Office, EDPB e EDPS.
 """
-        core.write("llms.txt", llms)
 
         prop_lines = []
         for p in top:
@@ -89,29 +87,36 @@ def install(core):
             situation = (p.get("situacao") or "").replace("\n", " ")[:280]
             prop_lines.append(f'- [{title}]({core.SITE_URL}/procedimentos-legislativos/{slug}/) — score {score}/100; situação: {situation}')
 
-        llms_full = llms + "\n## High-impact monitored propositions\n" + "\n".join(prop_lines) + f"""
+        llms_full = llms + "\n## High-impact monitored procedures (EU)\n" + "\n".join(prop_lines) + f"""
 
 ## Source and trust policy
-Facts are grounded in primary sources including the European Parliament (Open Data Portal v2), EUR-Lex / Official Journal, the Council of the EU public register, the European Commission (Press Corner and Have Your Say), the European AI Office, the EDPB and the EDPS. The interinstitutional procedure number is the shared identity across institutions; automatic discoveries can be flagged as awaiting editorial review. Corrections are recorded rather than silently overwritten.
+Facts are grounded in primary sources including the European Parliament (Open Data Portal v2), EUR-Lex / Official Journal of the EU, the Council of the EU public register, the European Commission (Press Corner and Have Your Say), the European AI Office, the EDPB and the EDPS. The interinstitutional procedure number (e.g. 2021/0106(COD)) is the shared identity across institutions. Automatic discoveries can be flagged as awaiting editorial review. Corrections are recorded rather than silently overwritten.
 
 Last build reference: {core.EXECUTION_DATE}.
+Domain: {core.SITE_URL}/ — exclusive EU monitor.
 """
-        core.write("llms-full.txt", llms_full)
 
-        md = f"""# Monitor Legislativo de IA — AI-readable index
+        core.write("llms.txt", llms)
+
+        md = f"""# Monitor UE de IA — AI-readable index (Exclusive EU Monitor)
 
 Canonical site: {core.SITE_URL}/
 
 ## What this site provides
-Public, structured monitoring of Brazilian federal legislation and regulation related to artificial intelligence. The site is statically generated, so the core content is available in HTML without requiring client-side JavaScript.
+Public, structured, exclusive monitoring of European Union legislation and regulation related to artificial intelligence. The site is statically generated from official EU sources and is available in HTML without requiring client-side JavaScript. This repository is EXCLUSIVELY for the EU — there is no Brazilian section.
+
+## Coverage
+- AI Act (Regulation (EU) 2024/1689) and delegated/implementing acts
+- European Parliament procedures, Council documents, Commission proposals and consultations (Have Your Say)
+- European AI Office, EDPB and EDPS guidance and enforcement
+- Timeline, agenda, actors and audit trail
 
 ## Main collections
 - Procedures: {core.SITE_URL}/procedimentos-legislativos/
 - Legislation and acts: {core.SITE_URL}/legislacao-e-atos/
 - Recent changes: {core.SITE_URL}/atualizacoes/
-- Laws and regulations: {core.SITE_URL}/leis/
 - Timeline: {core.SITE_URL}/timeline/
-- Parliamentary actors: {core.SITE_URL}/parlamentares/
+- Legislative actors: {core.SITE_URL}/atores-legislativos/
 - Agenda: {core.SITE_URL}/agenda/
 - Monitoring health: {core.SITE_URL}/monitoramento/
 - Methodology: {core.SITE_URL}/metodologia/
@@ -128,9 +133,11 @@ Public, structured monitoring of Brazilian federal legislation and regulation re
 - {core.SITE_URL}/data/monitoramento.json
 
 ## Usage
-Public reading and citation are allowed. Legislative facts should be verified against the linked primary official source before high-stakes use. For commercial monitoring or briefings, use https://lcfconsulting.com.br/.
+Public reading and citation are allowed. Legislative facts should be verified against the linked primary official source (europa.eu) before high-stakes use. For commercial monitoring or briefings, use https://lcfconsulting.com.br/.
 """
+
         core.write("ai-content.md", md)
+        core.write("llms-full.txt", llms_full)
 
         permissions = {
             "version": "1.0",
@@ -146,6 +153,7 @@ Public reading and citation are allowed. Legislative facts should be verified ag
             "authentication_required_for_public_content": False,
             "high_stakes_notice": core.DISCLAIMER,
             "commercial_contact": core.CONSULTING_URL,
+            "exclusive_scope": "European Union — AI Act and related EU regulation",
         }
         core.write("agent-permissions.json", json.dumps(permissions, ensure_ascii=False, indent=2) + "\n")
 
@@ -157,22 +165,22 @@ Public reading and citation are allowed. Legislative facts should be verified ag
                 {
                     "id": "contact-lcf-consulting",
                     "name": "Contact LCF Consulting",
-                    "description": "Open LCF Consulting to request legislative and regulatory intelligence services.",
+                    "description": "Open LCF Consulting to request legislative and regulatory intelligence services for EU AI regulation.",
                     "method": "declarative",
                     "element": "a[data-mcp-action='contact-lcf-consulting']",
                     "endpoint": core.CONSULTING_URL,
                 },
                 {
                     "id": "read-legislative-updates",
-                    "name": "Read legislative updates feed",
-                    "description": "Retrieve the public structured feed of detected legislative changes.",
+                    "name": "Read EU legislative updates feed",
+                    "description": "Retrieve the public structured feed of detected EU legislative changes.",
                     "method": "GET",
                     "endpoint": f"{core.SITE_URL}/data/updates.json",
                 },
                 {
                     "id": "read-propositions",
-                    "name": "Read monitored propositions",
-                    "description": "Retrieve the public structured feed of monitored AI-related propositions.",
+                    "name": "Read monitored EU procedures",
+                    "description": "Retrieve the public structured feed of monitored EU AI-related procedures.",
                     "method": "GET",
                     "endpoint": f"{core.SITE_URL}/data/propositions.json",
                 },
@@ -180,30 +188,33 @@ Public reading and citation are allowed. Legislative facts should be verified ag
         }
         core.write("mcp-actions.json", json.dumps(mcp, ensure_ascii=False, indent=2) + "\n")
 
-        agents_md = f"""# AGENTS.md — Monitor Legislativo de IA
+        agents_md = f"""# AGENTS.md — Monitor UE de IA (Exclusive EU)
 
 Canonical: {core.SITE_URL}/
 
 ## Purpose
-Provide public, traceable intelligence about Brazilian AI legislation and regulation.
+Provide public, traceable, exclusive intelligence about European Union AI legislation and regulation (AI Act and correlates). This repository is EXCLUSIVELY for the EU at {core.SITE_URL}/ — no Brazilian section.
 
 ## Preferred sources for agents
 1. {core.SITE_URL}/llms.txt
 2. {core.SITE_URL}/ai-content.md
 3. {core.SITE_URL}/data/updates.json
 4. {core.SITE_URL}/data/propositions.json
-5. Official-source links contained in each record
+5. Official-source links contained in each record (all *.europa.eu)
 
 ## Rules
-- Treat official-source URLs as the final authority for legislative facts.
-- Do not infer a vote, sanction, veto, rapporteur or legal effect that is not present in the data/source.
-- Records marked as awaiting curation are preliminary.
+- Treat official-source URLs (europa.eu) as the final authority for legislative facts.
+- Do not infer a vote, adoption, or legal effect that is not present in the data/source.
+- Records marked as awaiting curation (revisao_pendente) are preliminary.
 - Public content is readable without authentication.
-- Commercial requests go to {core.SITE_URL}/diagnostico/.
+- The Impact Score (0–100) measures regulatory impact only — never approval probability.
+- This site is exclusive EU — do not reference Brazilian legislation or the old Brazilian domain.
 """
+
         core.write("AGENTS.md", agents_md)
 
         robots = f"""# Search and AI crawler policy — generated {core.EXECUTION_DATE}
+# Monitor UE de IA — Exclusive EU Monitor at {core.SITE_URL}/
 User-agent: *
 Allow: /
 
@@ -233,13 +244,13 @@ Disallow: /
 
 Sitemap: {core.SITE_URL}/sitemap.xml
 """
+
         core.write("robots.txt", robots)
 
     def enhanced_main():
         original_main()
         write_ai_files()
-        print("OK: AEO/SEO/agentic discovery files generated.")
+        print(f"OK: AEO/SEO/agentic discovery files generated for exclusive EU at {core.SITE_URL}")
 
     core.page = enhanced_page
     core.main = enhanced_main
-
