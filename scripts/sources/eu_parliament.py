@@ -10,7 +10,7 @@ Fontes oficiais:
    · /procedures (listagem de procedimentos legislativos, filtrável por
      parliamentary_term; JSON-LD)
    · /procedures/{id} (ficha completa: eventos, estágios, votações — consumida
-     pelo motor legislativo em update_legislation.py)
+     pelo motor legislativo em update_legislation_eu.py)
 
    Evidência da sonda (18/09/2026):
    · /procedures?parliamentary_term=10&limit=N responde JSON-LD filtrado;

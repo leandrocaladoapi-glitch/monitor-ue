@@ -16,8 +16,8 @@ def snapshots():
     records={}
     for p in load('propositions')['proposicoes']:
         if not official(p.get('url_oficial')):continue
-        api=p.get('api_camara') or {}
-        records['proposition:'+p['id']]={'id':p['id'],'entity':'proposition','title':f'{p["tipo"]} {p["numero"]}/{p["ano"]}', 'source':p['url_oficial'],'themes':p.get('categorias',[]),'org':p.get('casa_atual') or p.get('casa_origem'),'score':score(p),'status':api.get('descricao_situacao') or p.get('situacao'), 'movement':api.get('ultima_tramitacao') or p.get('ultima_movimentacao'), 'rapporteur':api.get('relator_api') or p.get('relator') or p.get('relator_camara'), 'votes':api.get('votacoes_total')}
+        api=p.get('api_ep') or {}
+        records['proposition:'+p['id']]={'id':p['id'],'entity':'proposition','title':f'{p["tipo"]} {p["numero"]}/{p["ano"]}', 'source':p['url_oficial'],'themes':p.get('categorias',[]),'org':p.get('casa_atual') or p.get('casa_origem'),'score':score(p),'status':p.get('situacao'), 'movement':api.get('ultimo_evento') or p.get('ultima_movimentacao'), 'rapporteur':p.get('relator'), 'votes':None}
     for p in load('laws')['normas']:
         if official(p.get('url')):records['law:'+p['id']]={'id':p['id'],'entity':'law','title':p['nome'],'source':p['url'],'themes':p.get('categorias',[]),'org':p.get('orgao',''),'score':None,'status':p.get('status'),'date':p.get('data')}
     for p in load('events')['eventos']:

@@ -39,7 +39,7 @@ def parse_ep_procedimentos(dados, canal=None, topico=None):
                  "process_id": "2024-2526", "process_type": "RSP",
                  "label": "2024/2526(RSP)"}], "meta": {"total": N}}
     O título oficial completo não vem na listagem — a ficha completa do
-    procedimento é obtida por update_legislation.py em /procedures/{id}.
+    procedimento é obtida por update_legislation_eu.py em /procedures/{id}.
     Aqui a listagem serve de descoberta de referências novas.
     """
     itens = []

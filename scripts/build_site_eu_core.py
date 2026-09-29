@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-build_site_eu_core.py — Gera a seção UE do site a partir de /data/legislation-eu.
+build_site_eu_core.py — Gera o site EXCLUSIVO da União Europeia a partir de /data/legislation-eu.
 
 Uso: python3 scripts/build_site.py
-Saída: /docs (publicado pela Vercel; build = este script, output = docs/).
+Saída: /docs (publicado pela Vercel em https://monitor-ue.vercel.app/; build = este script, output = docs/).
 
 Sem dependências externas. Cada execução regenera todas as páginas a partir do
-dataset versionado em /data/legislation (fonte única da verdade).
+dataset versionado em /data/legislation-eu (fonte única da verdade).
 """
 import json
 import os
@@ -313,7 +313,7 @@ def _atos_footer_link():
     `build_site.py` troca o domínio para o oficial depois de importar este
     módulo, e um valor congelado no import publicaria o domínio antigo.
     """
-    if os.path.exists(os.path.join(BASE, "data", "legislation", "atos.json")):
+    if os.path.exists(os.path.join(BASE, "data", "legislation-eu", "atos.json")):
         return '<br>\n      <a href="{0}/data/atos.json">atos.json</a>'.format(SITE_URL)
     return ""
 
@@ -1057,7 +1057,7 @@ def build_metodologia(props, laws, updates):
     <li>▸ Descobertas automáticas entram com flag <b>“aguardando curadoria”</b> e score preliminar conservador (nunca CRÍTICO automático). Falsos positivos são removidos na revisão.</li>
   </ul>
   <h2 class="section-title" style="margin-top:26px">AI Legislative Impact Score (0–100)</h2>
-  <p>O score mede <b>importância regulatória para o monitoramento</b>, não mérito. Rúbrica pública e reproduzível (implementada em <code>scripts/scoring.py</code>):</p>
+  <p>O score mede <b>importância regulatória para o monitoramento</b>, não mérito. Rúbrica pública e reproduzível (implementada em <code>scripts/scoring_eu.py</code>):</p>
   <div style="overflow-x:auto;margin-top:12px"><table class="tbl"><thead><tr><th>Critério</th><th>Pontos</th><th>Como pontuar (resumo)</th></tr></thead><tbody>{rubric_rows}</tbody></table></div>
   <p style="margin-top:12px">Faixas: <b>90–100 CRÍTICO · 75–89 MUITO RELEVANTE · 60–74 RELEVANTE · 40–59 MONITORAR · 0–39 BAIXA PRIORIDADE</b>. O score mede apenas <b>impacto regulatório</b> — nunca aprovação, probabilidade ou posição política. Scores da curadoria de referência são preservados; scores nunca são inflados para gerar manchetes.</p>
   <h2 class="section-title" style="margin-top:26px">Como mudanças são detectadas</h2>
@@ -1103,10 +1103,10 @@ def build_metodologia(props, laws, updates):
   </ul>
   <p style="margin-top:10px">Cada fonte roda em um subprocesso com timeout próprio e retentativas: uma fonte lenta ou bloqueada
   não impede as outras, os resultados já coletados são persistidos e o erro é registrado no painel. Os itens desses
-  órgãos ficam em <code>data/legislation/atos.json</code>, com URL oficial, fonte, data do evento, data de detecção
+  órgãos ficam em <code>data/legislation-eu/atos.json</code>, com URL oficial, fonte, data do evento, data de detecção
   e a execução responsável; alterações de texto ou de status de um item já conhecido geram novo registro em
   <code>updates.json</code> (histórico por item, sem sobrescrita silenciosa). O arquivo histórico completo de
-  mudanças é rotacionado para <code>data/legislation/updates_arquivo.json</code> em vez de ser descartado.</p>
+  mudanças é rotacionado para <code>data/legislation-eu/updates_arquivo.json</code> em vez de ser descartado.</p>
   <h2 class="section-title" style="margin-top:26px">Cobertura atual</h2>
   <p>{len(props)} procedimentos monitorados · {len(laws)} atos mapeados · {len(updates.get("mudancas", []))} mudanças registradas · última execução em {rs["data"]}.</p>
   <p style="margin-top:6px">Status global da última execução: <b>{(EXECUTION_RUN or {}).get("status_global") or "—"}</b> · fontes monitoradas: {len((EXECUTION_RUN or {}).get("fontes_monitoradas") or {})}.</p>
@@ -1734,7 +1734,7 @@ def build_monitoramento(props, laws, events, updates, met):
   estado verificado e a falha fica registrada em <code>updates.json</code>);
   <b>FALHA</b> = execução incapaz de produzir dados confiáveis — nesse caso nada é publicado.
   O detalhe por canal (o que respondeu e o que não respondeu) está em
-  <code>data/legislation/updates.json</code>.</p>
+  <code>data/legislation-eu/updates.json</code>.</p>
 </div></section>
 '''
 
@@ -1834,7 +1834,7 @@ def build_monitoramento(props, laws, events, updates, met):
 <section class="block"><div class="wrap">
   <h2 class="section-title">Saúde do monitoramento</h2>
   <p class="section-sub">Sinais automáticos calculados a partir do histórico de execuções
-  (<code>data/legislation/updates.json</code>).</p>
+  (<code>data/legislation-eu/updates.json</code>).</p>
   <div data-freshness-panel="{esc((ultima.get('fim') or ultima.get('data_hora')) or '')}">
   {alertas_html}
   </div>

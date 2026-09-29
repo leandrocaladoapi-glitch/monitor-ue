@@ -1,5 +1,7 @@
 # Auditoria inicial — 12/09/2026
 
+> **NOTA HISTÓRICA:** este relatório descreve a fase ORIGINAL brasileira do projeto (anterior à migração). Este repositório é hoje **EXCLUSIVO do Monitor UE de IA** — https://monitor-ue.vercel.app/ — e não contém mais monitoramento brasileiro. As menções a Câmara/Senado/ANPD/CNJ/TSE/DOU abaixo referem-se apenas ao passado.
+
 Referência remota: `317bff62d36417ae0f53d7c39b125caaec5f9d08`. Auditoria concluída antes das alterações de implementação.
 
 - Arquitetura: Python stdlib, gerador estático, HTML/CSS/JavaScript sem framework frontend. `build_site.py` envolve `build_site_core.py` e `ai_visibility.py`. Não existiam backend, banco comercial, autenticação, formulário ou dependências externas de build.

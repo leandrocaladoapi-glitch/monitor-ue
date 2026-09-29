@@ -1,5 +1,0 @@
-URL: https://dadosabertos.tse.jus.br/api/3/action/package_search?q=inteligencia+artificial&rows=3
-STATUS: 200 CT: application/json;charset=utf-8
-INFO: {}
----
-{"help": "https://dadosabertos.tse.jus.br/api/3/action/help_show?name=package_search", "success": true, "result": {"count": 0, "facets": {}, "results": [], "sort": "name desc", "search_facets": {}}}

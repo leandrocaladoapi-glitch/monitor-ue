@@ -1,5 +1,0 @@
-URL: https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias
-STATUS: 302 CT: text/plain; charset=utf-8
-INFO: {}
----
-https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/noticias-julho-outubro-2026

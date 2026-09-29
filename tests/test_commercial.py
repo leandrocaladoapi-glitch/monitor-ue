@@ -74,7 +74,7 @@ class CommercialTests(unittest.TestCase):
             with self.assertRaises(RuntimeError):
                 with connect():pass
     def test_alert_baseline_diff_dedupe_filter(self):
-        record={'id':'p','entity':'proposition','title':'P','source':'https://www.camara.leg.br/test','themes':[3],'org':'Câmara dos Deputados','score':70,'movement':{'despacho':'Original'},'votes':1,'rapporteur':None,'status':'Aguardando'}
+        record={'id':'p','entity':'proposition','title':'P','source':'https://www.europarl.europa.eu/procedures/test','themes':[3],'org':'Parlamento Europeu','score':70,'movement':{'despacho':'Original'},'votes':1,'rapporteur':None,'status':'Em tramitação'}
         with connect() as db:
             alerts.capture(db,{'p':record},100);self.assertEqual(db.list('alert_change'),[])
             updated={**record,'score':80,'rapporteur':'Novo','votes':2,'movement':{'despacho':'Inclusão em pauta'}}
@@ -87,13 +87,13 @@ class CommercialTests(unittest.TestCase):
             self.assertIn('votação',change['types']);self.assertIn('inclusão em pauta',change['types'])
             self.assertFalse(alerts.matches({**sub,'score_min':90},change))
             self.assertFalse(alerts.matches({**sub,'temas':[29]},change))
-            self.assertFalse(alerts.matches({**sub,'orgaos':['ANPD']},change))
+            self.assertFalse(alerts.matches({**sub,'orgaos':['EDPB']},change))
     def test_daily_weekly_and_unscored_norms(self):
         sub={**PREFS,'email':'a@example.test','active':True,'created_at':1,'confirmed_at':1}
-        change={'detected_at':100,'record':{'id':'x','themes':[3],'org':'ANPD','score':None}}
+        change={'detected_at':100,'record':{'id':'x','themes':[3],'org':'EDPB','score':None}}
         self.assertTrue(alerts.matches(sub,change));self.assertFalse(alerts.matches({**sub,'score_min':1},change))
         with connect() as db:
-            db.put('subscription','weekly',{**sub,'frequencia':'semanal'});db.put('alert_change','c',{**change,'types':['nova norma'],'record':{**change['record'],'title':'Norma','source':'https://www.gov.br/anpd'}})
+            db.put('subscription','weekly',{**sub,'frequencia':'semanal'});db.put('alert_change','c',{**change,'types':['nova norma'],'record':{**change['record'],'title':'Norma','source':'https://www.edpb.europa.eu/news'}})
             alerts.prepare(db,604799);self.assertEqual(db.list('outbox'),[])
             alerts.prepare(db,604802);self.assertEqual(len(db.list('outbox')),1)
     def test_smtp_retry_and_idempotent_delivery(self):
@@ -109,7 +109,10 @@ class CommercialTests(unittest.TestCase):
             db.put('subscription','s',{'active':False});s.queue(db,'m','a@example.test','Subject','Body');m=db.get('outbox','m');m['subscription_id']='s';db.put('outbox','m',m)
         self.assertEqual(alerts.deliver(connect,lambda *x:self.fail('must not send')),0)
     def test_official_sources_and_report_dates(self):
-        self.assertFalse(official('https://camara.leg.br.evil.example/x'))
+        self.assertTrue(official('https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2004'))
+        self.assertTrue(official('https://www.edpb.europa.eu/news/example'))
+        self.assertFalse(official('https://europa.eu.evil.example/x'))
+        self.assertFalse(official('http://ec.europa.eu/x'))
         b=briefing(as_of='2026-09-12',sector='fintech')
         self.assertTrue(all(official(c['fonte_url']) for c in b['changes']))
         self.assertTrue(all('2026-09-12'<=e['data_inicio'][:10]<='2026-09-19' for e in b['events']))

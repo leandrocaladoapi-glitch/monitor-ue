@@ -6,7 +6,7 @@ update_sources.py — Coleta regulatória multiórgão da União Europeia.
 Executa cada conector do pacote `scripts/sources` (eu_parliament, eurlex,
 eu_council, eu_commission, ai_office, edpb, edps) em um **subprocesso com
 timeout próprio** (uma fonte travada não derruba as outras), compara o que foi
-coletado com o estado anterior versionado em `data/legislation/atos.json`,
+coletado com o estado anterior versionado em `data/legislation-eu/atos.json`,
 registra as mudanças em `updates.json` (fonte, URL oficial, data do evento,
 data da detecção e execução responsável) e devolve o **status de saúde por
 fonte** para o painel.
@@ -15,8 +15,8 @@ Uso:
     python3 scripts/update_sources_eu.py --listar
     python3 scripts/update_sources_eu.py --fonte edpb          # testa uma fonte
     python3 scripts/update_sources_eu.py --fonte edps --dry-run  # consulta e relata
-    python3 scripts/update_sources.py --todos --dry-run       # todas, sem gravar
-    python3 scripts/update_sources.py --todos --gravar        # grava atos.json
+    python3 scripts/update_sources_eu.py --todos --dry-run     # todas, sem gravar
+    python3 scripts/update_sources_eu.py --todos --gravar      # grava atos.json
 
 Regras:
   · Nada é inventado: todo item vem de resposta oficial, com URL oficial;

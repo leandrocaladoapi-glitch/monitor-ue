@@ -1,5 +1,0 @@
-URL: https://www.cnj.jus.br/wp-json/wp/v2/posts?per_page=3&page=2&_fields=id,date,link,title
-STATUS: 200 CT: application/json; charset=UTF-8
-INFO: {"lista_len": 3}
----
-[{"id":427658,"date":"2026-09-18T12:30:51","link":"https:\/\/www.cnj.jus.br\/superendividamento-comite-gestor-da-conciliacao-participa-de-primeira-reuniao-de-forum-da-justica\/","title":{"rendered":"Superendividamento: Comit\u00ea Gestor\u00a0da Concilia\u00e7\u00e3o participa de primeira reuni\u00e3o de\u00a0f\u00f3rum da Justi\u00e7a"}},{"id":427632,"date":"2026-09-18T11:24:18","link":"https:\/\/www.cnj.jus.br\/cnj-debate-avancos-e-desafios-do-pena-justa-em-encontro-sobre-seguranca-publica\/","title":{"rendered":"CNJ debate avan\u00e7os e desafios do Pena Justa em encontro sobre seguran\u00e7a p\u00fablica"}},{"id":427618,"date":"2026-09-18T10:53:10","link":"https:\/\/www.cnj.jus.br\/tjma-automatiza-atos-no-pje-e-passa-a-comunicar-decisoes-em-microssegundos\/","title":{"rendered":"TJMA automatiza atos no PJe e passa a comunicar decis\u00f5es em microssegundos"}}]

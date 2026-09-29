@@ -17,3 +17,7 @@ docs/_tmp/
 *.sqlite3
 *.sqlite3-*
 .private/
+
+# Dataset legado do monitor brasileiro — removido: este repositório é
+# EXCLUSIVO do Monitor UE (https://monitor-ue.vercel.app/).
+data/legislation/

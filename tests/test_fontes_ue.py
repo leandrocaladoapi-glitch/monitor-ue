@@ -268,7 +268,7 @@ class RodapeAtosTests(unittest.TestCase):
 
     def setUp(self):
         sys.path.insert(0, str(ROOT / "scripts"))
-        import build_site_core as core  # noqa: PLC0415
+        import build_site_eu_core as core  # noqa: PLC0415
         self.core = core
         self._base, self._site = core.BASE, core.SITE_URL
 
@@ -278,9 +278,9 @@ class RodapeAtosTests(unittest.TestCase):
     def _preparar(self, com_atos):
         tmp = tempfile.mkdtemp(prefix="rodape_")
         self.addCleanup(shutil.rmtree, tmp, True)
-        os.makedirs(os.path.join(tmp, "data", "legislation"), exist_ok=True)
+        os.makedirs(os.path.join(tmp, "data", "legislation-eu"), exist_ok=True)
         if com_atos:
-            with open(os.path.join(tmp, "data", "legislation", "atos.json"), "w",
+            with open(os.path.join(tmp, "data", "legislation-eu", "atos.json"), "w",
                       encoding="utf-8") as f:
                 f.write("{}")
         self.core.BASE = tmp

@@ -5,6 +5,13 @@
   "outputDirectory": "docs",
   "functions": {"api/index.py": {"maxDuration": 30, "excludeFiles": "{reports/**,tests/**,.git/**}"}},
   "rewrites": [{"source": "/api/:path*", "destination": "/api?route=:path*"}],
+  "redirects": [
+    {"source": "/(.*)", "has": [{"type": "host", "value": "monitor.lcfconsulting.com.br"}], "destination": "https://monitor-ue.vercel.app/$1", "permanent": true},
+    {"source": "/(.*)", "has": [{"type": "host", "value": "monitor-legislativo-five.vercel.app"}], "destination": "https://monitor-ue.vercel.app/$1", "permanent": true},
+    {"source": "/uniao-europeia", "destination": "https://monitor-ue.vercel.app/", "permanent": true},
+    {"source": "/uniao-europeia/", "destination": "https://monitor-ue.vercel.app/", "permanent": true},
+    {"source": "/uniao-europeia/:path*", "destination": "https://monitor-ue.vercel.app/:path*", "permanent": true}
+  ],
   "headers": [
     {"source": "/api/:path*", "headers": [{"key": "Cache-Control", "value": "no-store"}, {"key": "X-Robots-Tag", "value": "noindex"}]},
     {"source": "/(.*)", "headers": [{"key": "X-Content-Type-Options", "value": "nosniff"}, {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"}, {"key": "X-Frame-Options", "value": "DENY"}]}
