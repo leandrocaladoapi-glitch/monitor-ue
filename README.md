@@ -2,7 +2,7 @@
 
 **Sistema de inteligência legislativa e regulatória** — monitoramento público, documentado e auditável de toda a atividade legislativa e regulatória da **União Europeia** relacionada à Inteligência Artificial, exclusivamente em **https://monitor-ue.vercel.app/**.
 
-> **Este repositório é EXCLUSIVO da União Europeia.** Não há monitor brasileiro. Todo o conteúdo, dataset, conectores, crons e páginas referem-se ao AI Act e à regulação de IA da UE. O domínio oficial é **https://monitor-ue.vercel.app/** — qualquer referência ao domínio brasileiro antigo é legada e foi removida.
+> **Este repositório é EXCLUSIVO da União Europeia.** Não há monitor brasileiro. Todo o conteúdo, dataset, conectores, crons e páginas referem-se ao AI Act e à regulação de IA da UE. O domínio oficial é **https://monitor-ue.vercel.app/** — qualquer referência ao domínio brasileiro antigo é legada e foi removida, e qualquer acesso pelo domínio antigo (`monitor.lcfconsulting.com.br`) é redirecionado (301) para o domínio oficial (`vercel.json`).
 
 O ativo principal é o **dataset legislativo e regulatório histórico da UE** (`/data/legislation-eu`), estruturado e continuamente atualizado. O site em `/docs` é a interface pública desse dataset, publicado pela Vercel.
 

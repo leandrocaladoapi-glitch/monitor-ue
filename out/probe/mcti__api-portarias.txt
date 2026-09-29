@@ -1,8 +1,0 @@
-URL: https://www.gov.br/mcti/++api++/@search?path=/mcti/pt-br/acesso-a-informacao/legislacao/portarias&b_size=10&sort_on=effective&sort_order=descending
-STATUS: 404 CT: application/json
-INFO: {}
----
-{
-  "message": "Resource not found: https://www.gov.br/mcti/++api++", 
-  "type": "NotFound"
-}

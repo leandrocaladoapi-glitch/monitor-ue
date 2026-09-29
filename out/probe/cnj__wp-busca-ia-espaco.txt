@@ -1,5 +1,0 @@
-URL: https://www.cnj.jus.br/wp-json/wp/v2/posts?search=inteligencia&per_page=3&_fields=id,date,link,title
-STATUS: 200 CT: application/json; charset=UTF-8
-INFO: {"lista_len": 0}
----
-[]

@@ -1,9 +1,0 @@
-URL: https://www.gov.br/anpd/++api++/@search?path=/pt-br/assuntos/processo-regulatorio&b_size=5
-STATUS: 200 CT: application/json
-INFO: {"items_total": 0, "items_len": 0, "amostra_titulos": []}
----
-{
-  "@id": "https://www.gov.br/anpd/@search?path=%2Fpt-br%2Fassuntos%2Fprocesso-regulatorio", 
-  "items": [], 
-  "items_total": 0
-}

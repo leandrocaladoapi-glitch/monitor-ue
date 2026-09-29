@@ -202,7 +202,7 @@ def preferences(d):
     props={p['id'] for p in load('propositions')['proposicoes']}
     themes={c['id'] for c in load('categories')['categorias']}
     result={}
-    for key,allowed in [('temas',themes),('proposicoes',props),('orgaos',{'Câmara dos Deputados','Senado Federal','ANPD','TSE','CNJ'})]:
+    for key,allowed in [('temas',themes),('proposicoes',props),('orgaos',{'Comissão Europeia','Parlamento Europeu','Conselho'})]:
         values=d.get(key,[])
         if not isinstance(values,list) or len(values)>200 or any(isinstance(v,bool) or not isinstance(v,(str,int)) or v not in allowed for v in values):raise Problem(400,'Filtros inválidos.')
         result[key]=list(dict.fromkeys(values))

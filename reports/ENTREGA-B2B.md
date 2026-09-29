@@ -1,5 +1,7 @@
 # Entrega B2B — Monitor Legislativo de IA
 
+> **NOTA HISTÓRICA:** este relatório descreve a fase ORIGINAL brasileira do projeto (anterior à migração). Este repositório é hoje **EXCLUSIVO do Monitor UE de IA** — https://monitor-ue.vercel.app/ — e não contém mais monitoramento brasileiro. As menções a Câmara/Senado/ANPD/CNJ/TSE/DOU abaixo referem-se apenas ao passado.
+
 Implementação incremental sobre `317bff62d36417ae0f53d7c39b125caaec5f9d08`.
 
 **Estado:** código P0/P1 e base de piloto implementados e testados localmente. Não confundir implementação com ativação comercial em produção: o repositório não fornece credenciais de PostgreSQL/SMTP, nem acesso de administração da Vercel. Captura pública e entrega de e-mail precisam da ativação descrita abaixo. Nenhum e-mail real foi enviado, nenhuma conta real foi provisionada e nenhuma mudança foi mesclada em `main` durante a implementação.
@@ -25,7 +27,7 @@ O inventário [ARQUIVOS-ALTERADOS.md](ARQUIVOS-ALTERADOS.md) lista cada arquivo 
 
 ## C. Novas URLs
 
-Domínio de destino: `https://monitor.lcfconsulting.com.br`. A lista abaixo descreve rotas da branch; não declara que já foram publicadas em produção.
+Domínio de destino: `https://monitor-ue.vercel.app` (domínio oficial e exclusivo do Monitor UE de IA). A lista abaixo descreve rotas da branch; não declara que já foram publicadas em produção.
 
 | Rota | Finalidade |
 |---|---|

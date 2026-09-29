@@ -1,5 +1,0 @@
-URL: https://atos.cnj.jus.br/api/atos/7034
-STATUS: 200 CT: application/json
-INFO: {}
----
-{"data":{"id":7034,"tipo_ato":"Portaria","numero":420,"ano_publicacao":"2026","ementa":"<p style=\"text-align:justify\">Altera a Portaria Presid\u00eancia n&ordm; 191\/2026, que institui Grupo de Trabalho para elabora\u00e7\u00e3o de estudos e propostas voltados \u00e0 an\u00e1lise de iniciativas de desjudicializa\u00e7\u00e3o, autocomposi\u00e7\u00e3o digital e amplia\u00e7\u00e3o do acesso \u00e0 Justi\u00e7a, com foco na avalia\u00e7\u00e3o da replicabilidade nacional de modelos tecnol\u00f3gicos de&nbsp;resolu\u00e7\u00e3o consensual de conflitos.<\/p>","assunto":null,"situacao":"Vigente","origem":"Presid\u00eancia"}}

@@ -12,6 +12,8 @@ Detecta:
   - canonical/sitemap/robots apontando para domínio errado (deve ser https://monitor-ue.vercel.app)
   - links internos quebrados
   - referências remanescentes a domínios antigos (monitor.lcfconsulting.com.br, monitor-legislativo-five.vercel.app, lcaladoferreira.github.io)
+  - conteúdo de fontes brasileiras (senado.leg.br, camara.leg.br, planalto.gov.br, in.gov.br, ANPD, CNJ, TSE) no dataset ou nas páginas
+  - domínio antigo em QUALQUER arquivo do repositório fora das guardas de migração
 
 Uso: python3 scripts/validate_site_eu.py
 """
@@ -30,6 +32,35 @@ OLD_DOMAINS = [
     "monitor-legislativo-five.vercel.app",
 ]
 EXPECTED_DOMAIN = "https://monitor-ue.vercel.app"
+# Marcadores de fontes/legislação brasileira — proibidos no dataset e nas
+# páginas: este repositório é EXCLUSIVO da União Europeia.
+BR_MARKERS = [
+    "senado.leg.br",
+    "camara.leg.br",
+    "planalto.gov.br",
+    "in.gov.br",
+    "anpd.gov.br",
+    "cnj.jus.br",
+    "tse.jus.br",
+    "congressonacional.leg.br",
+]
+# Arquivos onde o domínio antigo aparece APENAS como guarda de migração
+# (listas de bloqueio/redirect/teste) — qualquer outro arquivo é erro.
+OLD_DOMAIN_GUARD_FILES = {
+    "scripts/build_site.py",
+    "scripts/build_site_eu.py",
+    "scripts/build_site_eu_core.py",
+    "scripts/update_legislation_eu.py",
+    "scripts/validate_site_eu.py",
+    "tests/test_site_contract_ue.py",
+    "tests/test_fontes_ue.py",
+    "tests/browser_smoke.cjs",
+    "vercel.json",
+}
+TEXT_SUFFIXES = (
+    ".py", ".json", ".yml", ".yaml", ".md", ".txt", ".xml", ".html",
+    ".js", ".cjs", ".css", ".svg", ".example", ".gitignore",
+)
 
 
 def site_url():
@@ -240,6 +271,49 @@ def check_docs(rep, site):
         rep.err(f"sitemap.xml: XML inválido — {e}")
 
 
+def check_markers(rep, base_dir, label):
+    """Bloqueia marcadores de fontes/legislação brasileiras no dataset UE."""
+    if not os.path.isdir(base_dir):
+        return
+    for root, _, files in os.walk(base_dir):
+        for fn in files:
+            p = os.path.join(root, fn)
+            try:
+                with open(p, encoding="utf-8", errors="replace") as f:
+                    content = f.read()
+            except OSError:
+                continue
+            low = content.lower()
+            for marker in BR_MARKERS:
+                if marker in low:
+                    rep.err(f"{label}/{os.path.relpath(p, base_dir)}: conteúdo brasileiro "
+                            f"proibido ('{marker}') — repositório exclusivo da UE")
+
+
+def check_all_generated(rep, site):
+    """Varre TODOS os arquivos gerados em docs/ (não só HTML) procurando
+    domínios antigos ou fontes brasileiras."""
+    if not os.path.isdir(OUT):
+        return
+    for root, _, files in os.walk(OUT):
+        for fn in files:
+            p = os.path.join(root, fn)
+            rel = os.path.relpath(p, OUT)
+            try:
+                with open(p, encoding="utf-8", errors="replace") as f:
+                    content = f.read()
+            except OSError:
+                continue
+            low = content.lower()
+            for old in OLD_DOMAINS:
+                if old in low:
+                    rep.err(f"docs/{rel}: contém o domínio antigo {old}")
+            for marker in BR_MARKERS:
+                if marker in low:
+                    rep.err(f"docs/{rel}: conteúdo brasileiro proibido ('{marker}') "
+                            f"— site exclusivo da UE em {site}")
+
+
 def main():
     site = site_url()
     rep = Report()
@@ -250,31 +324,30 @@ def main():
         if old in site:
             rep.err(f"SITE_URL ainda aponta para domínio antigo {old}")
     check_data(rep)
+    check_markers(rep, DATA, "data/legislation-eu")
     check_docs(rep, site)
-    # varredura geral do domínio antigo em arquivos-fonte (exceto histórico git e docs que já foi verificado)
+    check_all_generated(rep, site)
+    # Varredura estrita de todo o repositório: o domínio antigo só é permitido
+    # como literal de guarda (listas de bloqueio/redirect/teste). Qualquer
+    # outro arquivo — fonte, dado, doc ou workflow — é erro de exclusividade.
     for root, dirs, files in os.walk(BASE):
-        dirs[:] = [d for d in dirs if d not in (".git", "out", "docs")]
+        dirs[:] = [d for d in dirs if d not in (".git", "__pycache__", "node_modules", ".vercel", ".private")]
         for fn in files:
-            if fn.endswith((".py", ".json", ".yml", ".md")):
-                p = os.path.join(root, fn)
-                rel = os.path.relpath(p, BASE)
-                # ignora arquivos legados brasileiros que não devem mais ser usados no build principal
-                if rel.startswith("data/legislation/"):
-                    continue
-                if rel in ("scripts/build_site_core.py", "scripts/ai_visibility.py", "scripts/google_ai_citation.py"):
-                    continue  # legados, não usados no build UE exclusivo
-                try:
-                    with open(p, encoding="utf-8", errors="replace") as f:
-                        content = f.read()
-                        for old in OLD_DOMAINS:
-                            if old in content and "OLD_DOMAIN" not in content and "OLD_SITE_URL" not in content:
-                                # verifica se não é comentário sobre migração
-                                if f"https://{old}" in content or old in content:
-                                    # só reporta se for em arquivo ativo
-                                    if rel.startswith("scripts/build_site") or rel.startswith("scripts/validate") or rel == "vercel.json" or rel == ".env.example" or rel == "AGENTS.md":
-                                        rep.warn(f"{rel}: contém referência legada a {old} (verificar)")
-                except OSError:
-                    pass
+            if fn.endswith((".pyc", ".pyo")):
+                continue
+            if not fn.endswith(TEXT_SUFFIXES):
+                continue
+            p = os.path.join(root, fn)
+            rel = os.path.relpath(p, BASE).replace(os.sep, "/")
+            try:
+                with open(p, encoding="utf-8", errors="replace") as f:
+                    content = f.read()
+            except OSError:
+                continue
+            for old in OLD_DOMAINS:
+                if old in content and rel not in OLD_DOMAIN_GUARD_FILES:
+                    rep.err(f"{rel}: contém referência ao domínio antigo {old} "
+                            f"— site deve ser exclusivo de {EXPECTED_DOMAIN}")
     print(f"\nErros: {len(rep.errors)} · Avisos: {len(rep.warnings)}")
     for e in rep.errors:
         print(f"  ERRO: {e}")
