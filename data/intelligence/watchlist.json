@@ -80,6 +80,11 @@
    "events": 3
   },
   {
+   "key": "cybersecurity",
+   "label": "Cibersegurança e resiliência",
+   "events": 2
+  },
+  {
    "key": "health_data",
    "label": "Dados de saúde e EHDS",
    "events": 2
@@ -92,11 +97,6 @@
   {
    "key": "dsa",
    "label": "Digital Services Act",
-   "events": 1
-  },
-  {
-   "key": "cybersecurity",
-   "label": "Cibersegurança e resiliência",
    "events": 1
   },
   {
@@ -127,7 +127,7 @@
   },
   {
    "name": "Comissão Europeia",
-   "events": 5
+   "events": 6
   },
   {
    "name": "Parlamento Europeu",
@@ -136,15 +136,15 @@
  ],
  "act_types": [
   {
+   "label": "Consulta pública",
+   "events": 6
+  },
+  {
    "label": "Enforcement / sanção",
    "events": 5
   },
   {
    "label": "Guideline / orientação",
-   "events": 5
-  },
-  {
-   "label": "Consulta pública",
    "events": 5
   },
   {
@@ -160,7 +160,7 @@
   {
    "slug": "cloud",
    "name": "Cloud",
-   "changes": 15
+   "changes": 16
   },
   {
    "slug": "provedores-de-ia",
@@ -200,22 +200,22 @@
   {
    "slug": "data-centers",
    "name": "Data Centers",
-   "changes": 3
+   "changes": 4
   },
   {
    "slug": "energia",
    "name": "Energia",
-   "changes": 3
+   "changes": 4
   },
   {
    "slug": "bancos",
    "name": "Bancos",
-   "changes": 1
+   "changes": 2
   },
   {
    "slug": "ciberseguranca",
    "name": "Cibersegurança",
-   "changes": 1
+   "changes": 2
   },
   {
    "slug": "hr-tech",
@@ -245,6 +245,11 @@
   {
    "slug": "pharma",
    "name": "Pharma e Life Sciences",
+   "changes": 1
+  },
+  {
+   "slug": "utilities",
+   "name": "Utilities e Água",
    "changes": 1
   },
   {

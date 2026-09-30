@@ -89,7 +89,7 @@
     "Product"
    ],
    "deadline": "2026-12-02",
-   "deadline_label": "Aplicação das proibições — 2026-12-02 (64 dias)",
+   "deadline_label": "Aplicação das proibições — 2026-12-02 (63 dias)",
    "title": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
    "what_changed": "Digital Omnibus on AI — altera diretamente o AI Act: reprograma a aplicação das obrigações de alto risco (Anexo III 02/12/2027; Anexo I 02/08/2028), cria novas proibições aplicáveis a 02/12/2026 e reforça a execução pela European AI Office (Art. 102–110 aplicáveis desde 27/07/2026).",
    "recommended_action": "Inventariar sistemas de IA por caso de uso, risco e papel regulatório.",
@@ -97,7 +97,7 @@
    "official_sources": [
     "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\nRegulamento (UE) 2026/1744 — Digital Omnibus on AI\n\nImpacto:\nCRÍTICO\n\nAfeta:\nCloud, Modelos de Fundação (GPAI), Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nDigital Omnibus on AI — altera diretamente o AI Act: reprograma a aplicação das obrigações de alto risco (Anexo III 02/12/2027; Anexo I 02/08/2028), cria novas proibições aplicáveis a 02/12/2026 e reforça a execução pela European AI Office (Art. 102–110 aplicáveis desde 27/07/2026).\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nAplicação das proibições — 2026-12-02 (64 dias)\n\nFonte oficial:\nhttps://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nRegulamento (UE) 2026/1744 — Digital Omnibus on AI\n\nImpacto:\nCRÍTICO\n\nAfeta:\nCloud, Modelos de Fundação (GPAI), Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nDigital Omnibus on AI — altera diretamente o AI Act: reprograma a aplicação das obrigações de alto risco (Anexo III 02/12/2027; Anexo I 02/08/2028), cria novas proibições aplicáveis a 02/12/2026 e reforça a execução pela European AI Office (Art. 102–110 aplicáveis desde 27/07/2026).\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nAplicação das proibições — 2026-12-02 (63 dias)\n\nFonte oficial:\nhttps://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
   },
   {
    "id": "al_re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
@@ -306,7 +306,7 @@
     "Product"
    ],
    "deadline": "2027-12-02",
-   "deadline_label": "Obrigações de alto risco — Anexo III — 2027-12-02 (429 dias)",
+   "deadline_label": "Obrigações de alto risco — Anexo III — 2027-12-02 (428 dias)",
    "title": "Regulamento (UE) 2024/1689 — AI Act",
    "what_changed": "AI Act — o ato âncora deste monitor: abordagem baseada em risco, práticas proibidas, sistemas de alto risco, modelos de uso geral (GPAI) e European AI Office.",
    "recommended_action": "Inventariar sistemas de IA por caso de uso, risco e papel regulatório.",
@@ -314,7 +314,7 @@
    "official_sources": [
     "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\nRegulamento (UE) 2024/1689 — AI Act\n\nImpacto:\nALTO\n\nAfeta:\nModelos de Fundação (GPAI), Cloud, Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nAI Act — o ato âncora deste monitor: abordagem baseada em risco, práticas proibidas, sistemas de alto risco, modelos de uso geral (GPAI) e European AI Office.\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nObrigações de alto risco — Anexo III — 2027-12-02 (429 dias)\n\nFonte oficial:\nhttps://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nRegulamento (UE) 2024/1689 — AI Act\n\nImpacto:\nALTO\n\nAfeta:\nModelos de Fundação (GPAI), Cloud, Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nAI Act — o ato âncora deste monitor: abordagem baseada em risco, práticas proibidas, sistemas de alto risco, modelos de uso geral (GPAI) e European AI Office.\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nObrigações de alto risco — Anexo III — 2027-12-02 (428 dias)\n\nFonte oficial:\nhttps://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
   },
   {
    "id": "al_re_ato_edpb-edpb-europa-eu-news-stakeholder-event-on-guidelines-c9491c",
@@ -350,7 +350,7 @@
     "Strategy"
    ],
    "deadline": "2026-10-15",
-   "deadline_label": "Data referida no texto oficial — 2026-10-15 (16 dias)",
+   "deadline_label": "Data referida no texto oficial — 2026-10-15 (15 dias)",
    "title": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date",
    "what_changed": "Brussels, 23 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…",
    "recommended_action": "Assinar as atualizações do AI Office e do registo oficial antes de cada release relevante.",
@@ -358,7 +358,7 @@
    "official_sources": [
     "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\nStakeholder event on guidelines on the interplay between data protection and competition law: save the date\n\nImpacto:\nALTO\n\nAfeta:\nAdTech, Cloud, E-commerce, Marketplaces\n\nÁreas internas:\nPublic Policy, Government Affairs, Regulatory Affairs, Jurídico, Strategy\n\nO que mudou:\nBrussels, 23 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…\n\nAção recomendada:\nAssinar as atualizações do AI Office e do registo oficial antes de cada release relevante.\n\nPrazo:\nData referida no texto oficial — 2026-10-15 (16 dias)\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nStakeholder event on guidelines on the interplay between data protection and competition law: save the date\n\nImpacto:\nALTO\n\nAfeta:\nAdTech, Cloud, E-commerce, Marketplaces\n\nÁreas internas:\nPublic Policy, Government Affairs, Regulatory Affairs, Jurídico, Strategy\n\nO que mudou:\nBrussels, 23 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…\n\nAção recomendada:\nAssinar as atualizações do AI Office e do registo oficial antes de cada release relevante.\n\nPrazo:\nData referida no texto oficial — 2026-10-15 (15 dias)\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en"
   },
   {
    "id": "al_re_procedimento_ue-2021-0106-cod",
@@ -392,7 +392,7 @@
     "Product"
    ],
    "deadline": "2027-12-02",
-   "deadline_label": "Obrigações de alto risco — Anexo III — 2027-12-02 (429 dias)",
+   "deadline_label": "Obrigações de alto risco — Anexo III — 2027-12-02 (428 dias)",
    "title": "2021/0106(COD)",
    "what_changed": "Primeiro quadro jurídico vinculante do mundo para a inteligência artificial: abordagem baseada em risco, práticas proibidas, obrigações para sistemas de alto risco e para modelos de uso geral (GPAI), European AI Office.",
    "recommended_action": "Inventariar sistemas de IA por caso de uso, risco e papel regulatório.",
@@ -400,7 +400,7 @@
    "official_sources": [
     "https://data.europarl.europa.eu/api/v2/procedures/2021-0106?format=application/ld%2Bjson"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\n2021/0106(COD)\n\nImpacto:\nALTO\n\nAfeta:\nModelos de Fundação (GPAI), Cloud, Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nPrimeiro quadro jurídico vinculante do mundo para a inteligência artificial: abordagem baseada em risco, práticas proibidas, obrigações para sistemas de alto risco e para modelos de uso geral (GPAI), European AI Office.\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nObrigações de alto risco — Anexo III — 2027-12-02 (429 dias)\n\nFonte oficial:\nhttps://data.europarl.europa.eu/api/v2/procedures/2021-0106?format=application/ld%2Bjson"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\n2021/0106(COD)\n\nImpacto:\nALTO\n\nAfeta:\nModelos de Fundação (GPAI), Cloud, Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nPrimeiro quadro jurídico vinculante do mundo para a inteligência artificial: abordagem baseada em risco, práticas proibidas, obrigações para sistemas de alto risco e para modelos de uso geral (GPAI), European AI Office.\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nObrigações de alto risco — Anexo III — 2027-12-02 (428 dias)\n\nFonte oficial:\nhttps://data.europarl.europa.eu/api/v2/procedures/2021-0106?format=application/ld%2Bjson"
   }
  ]
 }

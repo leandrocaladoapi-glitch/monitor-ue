@@ -1,33 +1,33 @@
 {
  "meta": {
   "generated_from": "data/legislation-eu/*.json",
-  "dataset_execution": "2026-09-29",
-  "reference_date": "2026-09-29",
+  "dataset_execution": "2026-09-30",
+  "reference_date": "2026-09-30",
   "description": "Métricas de qualidade e cobertura da camada de inteligência."
  },
- "events_total": 19,
- "events_published": 19,
+ "events_total": 20,
+ "events_published": 20,
  "events_excluded_low_confidence": 0,
  "events_excluded_no_material_relation": 7,
  "events_without_official_source": 0,
  "events_by_priority": {
   "urgent": 6,
   "high": 3,
-  "medium": 6,
+  "medium": 7,
   "monitor": 4
  },
  "events_by_impact": {
   "critical": 6,
   "high": 3,
-  "medium": 6,
+  "medium": 7,
   "low": 4
  },
  "confidence_min": 0.6,
- "confidence_avg": 0.779,
+ "confidence_avg": 0.78,
  "deadlines_tracked": 31,
  "deadlines_next_90_days": 2,
  "enforcement_cases": 5,
- "sectors_covered": 19,
+ "sectors_covered": 20,
  "sectors_total": 24,
  "alerts_generated": 9,
  "official_hosts": [
@@ -37,7 +37,7 @@
   },
   {
    "host": "ec.europa.eu",
-   "citations": 5
+   "citations": 6
   },
   {
    "host": "eur-lex.europa.eu",
