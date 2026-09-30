@@ -3,15 +3,39 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 19,
+    "total": 20,
     "por_orgao": {
       "edpb": 10,
-      "eu_commission": 9
+      "eu_commission": 10
     },
-    "indice_total": 19,
-    "execucao": "2026-09-29"
+    "indice_total": 20,
+    "execucao": "2026-09-30"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2020",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Three in four EU employees faced cyber threats at work, new Eurobarometer finds",
+      "descricao": "European Commission Press release Brussels, 30 Sep 2026 Three in four employees in the European Union encountered suspicious emails, messages or links at work, according to a new Eurobarometer survey published by the European Commission today. The results were released as European Cybersecurity Month begins across all 27 Member States.",
+      "data": "2026-09-30",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2020",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:eec5d8d643e18e67",
+      "ultima_verificacao": "2026-09-30T08:11:09-03:00",
+      "ultima_execucao": "run_2026_09_30_0811",
+      "primeira_deteccao": "2026-09-30T08:11:09-03:00",
+      "id_execucao_primeira": "run_2026_09_30_0811",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2004",
       "orgao": "eu_commission",
@@ -134,8 +158,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:8a4494639da8da63",
-      "ultima_verificacao": "2026-09-29T18:00:51-03:00",
-      "ultima_execucao": "run_2026_09_29_1800",
+      "ultima_verificacao": "2026-09-30T08:11:09-03:00",
+      "ultima_execucao": "run_2026_09_30_0811",
       "primeira_deteccao": "2026-09-23T07:00:31-03:00",
       "id_execucao_primeira": "run_2026_09_23_0700",
       "historico": []
@@ -254,8 +278,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:d1e1dc9a969fb478",
-      "ultima_verificacao": "2026-09-29T18:00:51-03:00",
-      "ultima_execucao": "run_2026_09_29_1800",
+      "ultima_verificacao": "2026-09-30T08:11:09-03:00",
+      "ultima_execucao": "run_2026_09_30_0811",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": [
@@ -317,8 +341,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:5bf1aa88370bcfa6",
-      "ultima_verificacao": "2026-09-29T18:00:51-03:00",
-      "ultima_execucao": "run_2026_09_29_1800",
+      "ultima_verificacao": "2026-09-30T08:11:09-03:00",
+      "ultima_execucao": "run_2026_09_30_0811",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -341,8 +365,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:2380b025e8412fe5",
-      "ultima_verificacao": "2026-09-29T18:00:51-03:00",
-      "ultima_execucao": "run_2026_09_29_1800",
+      "ultima_verificacao": "2026-09-30T08:11:09-03:00",
+      "ultima_execucao": "run_2026_09_30_0811",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -365,8 +389,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:60e474bdba39fbf7",
-      "ultima_verificacao": "2026-09-29T18:00:51-03:00",
-      "ultima_execucao": "run_2026_09_29_1800",
+      "ultima_verificacao": "2026-09-30T08:11:09-03:00",
+      "ultima_execucao": "run_2026_09_30_0811",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -389,26 +413,12 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:b376184e0ea66969",
-      "ultima_verificacao": "2026-09-29T18:00:51-03:00",
-      "ultima_execucao": "run_2026_09_29_1800",
+      "ultima_verificacao": "2026-09-30T08:11:09-03:00",
+      "ultima_execucao": "run_2026_09_30_0811",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": [
         {
-          "data_deteccao": "2026-09-26T10:21:56-03:00",
-          "id_execucao": "run_2026_09_26_1021",
-          "campo": "texto",
-          "anterior": "sha1:b376184e0ea66969",
-          "novo": "sha1:ac89070ea719aaad"
-        },
-        {
-          "data_deteccao": "2026-09-26T10:21:56-03:00",
-          "id_execucao": "run_2026_09_26_1021",
-          "campo": "texto",
-          "anterior": "sha1:ac89070ea719aaad",
-          "novo": "sha1:b376184e0ea66969"
-        },
-        {
           "data_deteccao": "2026-09-26T16:21:29-03:00",
           "id_execucao": "run_2026_09_26_1621",
           "campo": "texto",
@@ -530,6 +540,20 @@
         {
           "data_deteccao": "2026-09-29T18:00:51-03:00",
           "id_execucao": "run_2026_09_29_1800",
+          "campo": "texto",
+          "anterior": "sha1:27d90c0b6c82a82c",
+          "novo": "sha1:b376184e0ea66969"
+        },
+        {
+          "data_deteccao": "2026-09-30T08:11:09-03:00",
+          "id_execucao": "run_2026_09_30_0811",
+          "campo": "texto",
+          "anterior": "sha1:b376184e0ea66969",
+          "novo": "sha1:27d90c0b6c82a82c"
+        },
+        {
+          "data_deteccao": "2026-09-30T08:11:09-03:00",
+          "id_execucao": "run_2026_09_30_0811",
           "campo": "texto",
           "anterior": "sha1:27d90c0b6c82a82c",
           "novo": "sha1:b376184e0ea66969"
@@ -554,8 +578,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:a3ef6a31dafdd114",
-      "ultima_verificacao": "2026-09-29T18:00:51-03:00",
-      "ultima_execucao": "run_2026_09_29_1800",
+      "ultima_verificacao": "2026-09-30T08:11:09-03:00",
+      "ultima_execucao": "run_2026_09_30_0811",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -578,8 +602,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:733d5312239886ee",
-      "ultima_verificacao": "2026-09-29T18:00:51-03:00",
-      "ultima_execucao": "run_2026_09_29_1800",
+      "ultima_verificacao": "2026-09-30T08:11:09-03:00",
+      "ultima_execucao": "run_2026_09_30_0811",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -691,6 +715,12 @@
         "s": null,
         "d": "2026-09-29T08:23:06-03:00",
         "v": "2026-09-29"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2020": {
+        "h": "sha1:eec5d8d643e18e67",
+        "s": null,
+        "d": "2026-09-30T08:11:09-03:00",
+        "v": "2026-09-30"
       }
     },
     "eu_parliament": {},
@@ -699,43 +729,43 @@
         "h": "sha1:d1e1dc9a969fb478",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-29"
+        "v": "2026-09-30"
       },
       "edpb_edpb_europa_eu_news_failure_to_respect_the_rights_of_individuals_the_cnil_fined_extia_300_000_eur_en": {
         "h": "sha1:5bf1aa88370bcfa6",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-29"
+        "v": "2026-09-30"
       },
       "edpb_edpb_europa_eu_news_health_data_breach_the_cnil_fined_hopital_prive_de_la_loire_500_000_eur_en": {
         "h": "sha1:2380b025e8412fe5",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-29"
+        "v": "2026-09-30"
       },
       "edpb_edpb_europa_eu_news_data_protection_commission_announces_final_decision_following_inquiry_into_the_health_serv": {
         "h": "sha1:60e474bdba39fbf7",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-29"
+        "v": "2026-09-30"
       },
       "edpb_edpb_europa_eu_news_stakeholder_event_on_guidelines_on_the_interplay_between_data_protection_and_competition_l": {
         "h": "sha1:b376184e0ea66969",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-29"
+        "v": "2026-09-30"
       },
       "edpb_edpb_europa_eu_news_edpb_calls_for_legal_basis_for_cross_regulatory_information_sharing_en": {
         "h": "sha1:a3ef6a31dafdd114",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-29"
+        "v": "2026-09-30"
       },
       "edpb_edpb_europa_eu_news_edpb_requires_belgian_dpa_to_handle_the_merits_of_noyb_cookie_banner_complaint_en": {
         "h": "sha1:733d5312239886ee",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-09-29"
+        "v": "2026-09-30"
       },
       "edpb_edpb_europa_eu_news_edpb_sheds_light_on_anonymisation_and_web_scraping_for_generative_ai_and_adopts_final_vers": {
         "h": "sha1:3889caa02bbde8d3",
@@ -753,7 +783,7 @@
         "h": "sha1:8a4494639da8da63",
         "s": null,
         "d": "2026-09-23T07:00:31-03:00",
-        "v": "2026-09-29"
+        "v": "2026-09-30"
       }
     },
     "edps": {}
