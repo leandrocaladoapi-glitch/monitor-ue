@@ -34,10 +34,7 @@ EXPECTED_DOMAIN = "https://monitor-ue.vercel.app"
 
 def site_url():
     """Lê o SITE_URL canônico de scripts/build_site.py (fonte única)."""
-    candidates = [
-        os.path.join(BASE, "scripts", "build_site.py"),
-        os.path.join(BASE, "scripts", "build_site_eu.py"),
-    ]
+    candidates = [os.path.join(BASE, "scripts", "build_site.py")]
     for candidate in candidates:
         if not os.path.exists(candidate):
             continue
@@ -258,11 +255,6 @@ def main():
             if fn.endswith((".py", ".json", ".yml", ".md")):
                 p = os.path.join(root, fn)
                 rel = os.path.relpath(p, BASE)
-                # ignora arquivos legados brasileiros que não devem mais ser usados no build principal
-                if rel.startswith("data/legislation/"):
-                    continue
-                if rel in ("scripts/build_site_core.py", "scripts/ai_visibility.py", "scripts/google_ai_citation.py"):
-                    continue  # legados, não usados no build UE exclusivo
                 try:
                     with open(p, encoding="utf-8", errors="replace") as f:
                         content = f.read()

@@ -1,32 +1,208 @@
 {
-  "currency": "BRL",
-  "pricing_note": "Faixas experimentais para definição de escopo. A contratação depende de proposta, cobertura e disponibilidade acordadas.",
-  "offers": [
-    {"id":"monitor-ia","name":"Monitor IA","min":1500,"max":3000,"period":"mês","audience":"Startups, pequenas empresas, consultores, escritórios menores e profissionais regulatórios.","features":["Monitor legislativo especializado","AI Legislative Impact Score e histórico","Fontes oficiais e agenda","Alertas por e-mail","Relatório periódico"]},
-    {"id":"radar-executivo","name":"Radar Executivo de Regulação de IA","min":4000,"max":8000,"period":"mês","featured":true,"users":5,"audience":"Fintechs, bancos, seguradoras, tecnologia, healthtechs, data centers, cloud providers e escritórios jurídicos.","features":["Tudo do Monitor IA","Briefing executivo semanal","Análise de impacto no negócio e agenda prioritária","Alertas críticos","Até 5 usuários no escopo inicial","Reunião executiva mensal"]},
-    {"id":"institucional","name":"Inteligência Institucional","period":"sob consulta","audience":"Grandes empresas, associações, consultorias, grandes escritórios e organizações altamente reguladas.","features":["Monitoramento e temas customizados","Múltiplos usuários e curadoria especializada","Alertas prioritários e reuniões recorrentes","Relatórios customizados","API/webhook, SLA e white-label sujeitos a escopo e implantação"]},
-    {"id":"diagnostico","name":"Diagnóstico de Exposição Regulatória","min":5000,"max":15000,"period":"projeto","audience":"Organizações que desejam mapear a exposição antes de contratar uma assinatura.","features":["Workshop de levantamento de exposição","Temas prioritários e proposições relacionadas","Riscos potenciais identificados","Relatório executivo","Recomendações de monitoramento e escopo do piloto"]}
-  ],
-  "social_proof": {"enabled":false,"cases":[],"logos":[],"testimonials":[],"results":[]},
-  "whatsapp": null,
-  "sectors": {
-    "fintech":{"name":"Fintech","categories":[20,3,17,24,26],"focus":"Crédito, prevenção a fraudes, decisões automatizadas e tratamento de dados."},
-    "bancos":{"name":"Bancos","categories":[20,3,22,24,26],"focus":"Governança de modelos, decisões de crédito, segurança e controles internos."},
-    "seguros":{"name":"Seguros","categories":[20,3,21,24,26],"focus":"Subscrição, precificação, sinistros e explicabilidade de decisões."},
-    "saude":{"name":"Saúde","categories":[9,3,17,26],"focus":"Dados sensíveis, apoio à decisão clínica e sistemas de alto risco."},
-    "data-centers":{"name":"Data Center","categories":[29,28,30,22],"focus":"Capacidade computacional, infraestrutura, incentivos e soberania digital."},
-    "cloud":{"name":"Cloud","categories":[29,30,3,22],"focus":"Infraestrutura de IA, segurança, tratamento de dados e responsabilidades na cadeia."},
-    "tecnologia":{"name":"Tecnologia","categories":[1,3,6,16,23,25],"focus":"Desenvolvimento de modelos, agentes autônomos, plataformas e auditoria de IA."},
-    "escritorios-advocacia":{"name":"Jurídico","categories":[4,5,12,24],"focus":"Mudanças normativas, evidências de tramitação e priorização de análises internas."},
-    "associacoes":{"name":"Associação","categories":[1,7,19,28,30],"focus":"Pautas transversais, agenda institucional e impactos potenciais para associados."}
+ "currency": "BRL",
+ "pricing_note": "Faixas internas de referência, sem tabela pública: cobertura, escopo e disponibilidade são definidos em proposta. Planos conceituais FREE, PRO, BUSINESS e ENTERPRISE em /produto.",
+ "offers": [
+  {
+   "id": "monitor-ia",
+   "name": "Monitor IA",
+   "min": 1500,
+   "max": 3000,
+   "period": "mês",
+   "audience": "Startups, pequenas empresas, consultores, escritórios menores e profissionais regulatórios.",
+   "features": [
+    "Monitor legislativo especializado",
+    "AI Legislative Impact Score e histórico",
+    "Fontes oficiais e agenda",
+    "Alertas por e-mail",
+    "Relatório periódico"
+   ],
+   "plan": "PRO"
   },
-  "personas": {
-    "relacoes-governamentais":{"name":"Relações Governamentais","value":"Priorize quais matérias exigem acompanhamento institucional e prepare sua equipe com agenda, estágio e evidência oficial."},
-    "juridico-regulatorio":{"name":"Jurídico Regulatório","value":"Identifique alterações regulatórias antes que se transformem em obrigação e encaminhe evidências para análise jurídica interna."},
-    "compliance":{"name":"Compliance","value":"Relacione mudanças às políticas internas, identifique responsáveis e registre a evidência usada na priorização."},
-    "public-affairs":{"name":"Public Affairs","value":"Organize posicionamento institucional com contexto, atores documentados e próximos eventos relevantes."},
-    "diretoria-executiva":{"name":"Diretoria Executiva","value":"Receba mudanças de impacto potencial relevante, com consequência operacional, responsável sugerido e próxima decisão a acompanhar."},
-    "escritorios-advocacia":{"name":"Escritórios de Advocacia","value":"Acelere a triagem de temas e a preparação de briefings para seus clientes com histórico e fontes rastreáveis."},
-    "associacoes-empresariais":{"name":"Associações Empresariais","value":"Consolide prioridades dos associados, organize a agenda de acompanhamento e distribua informação setorial rastreável."}
+  {
+   "id": "radar-executivo",
+   "name": "Radar Executivo de Regulação de IA",
+   "min": 4000,
+   "max": 8000,
+   "period": "mês",
+   "featured": true,
+   "users": 5,
+   "audience": "Fintechs, bancos, seguradoras, tecnologia, healthtechs, data centers, cloud providers e escritórios jurídicos.",
+   "features": [
+    "Tudo do Monitor IA",
+    "Briefing executivo semanal",
+    "Análise de impacto no negócio e agenda prioritária",
+    "Alertas críticos",
+    "Até 5 usuários no escopo inicial",
+    "Reunião executiva mensal"
+   ],
+   "plan": "BUSINESS"
+  },
+  {
+   "id": "institucional",
+   "name": "Inteligência Institucional",
+   "period": "sob consulta",
+   "audience": "Grandes empresas, associações, consultorias, grandes escritórios e organizações altamente reguladas.",
+   "features": [
+    "Monitoramento e temas customizados",
+    "Múltiplos usuários e curadoria especializada",
+    "Alertas prioritários e reuniões recorrentes",
+    "Relatórios customizados",
+    "API/webhook, SLA e white-label sujeitos a escopo e implantação"
+   ],
+   "plan": "ENTERPRISE"
+  },
+  {
+   "id": "diagnostico",
+   "name": "Diagnóstico de Exposição Regulatória",
+   "min": 5000,
+   "max": 15000,
+   "period": "projeto",
+   "audience": "Organizações que desejam mapear a exposição antes de contratar uma assinatura.",
+   "features": [
+    "Workshop de levantamento de exposição",
+    "Temas prioritários e proposições relacionadas",
+    "Riscos potenciais identificados",
+    "Relatório executivo",
+    "Recomendações de monitoramento e escopo do piloto"
+   ],
+   "plan": "Diagnóstico"
   }
+ ],
+ "social_proof": {
+  "enabled": false,
+  "cases": [],
+  "logos": [],
+  "testimonials": [],
+  "results": []
+ },
+ "whatsapp": null,
+ "sectors": {
+  "fintech": {
+   "name": "Fintech",
+   "categories": [
+    20,
+    3,
+    17,
+    24,
+    26
+   ],
+   "focus": "Crédito, prevenção a fraudes, decisões automatizadas e tratamento de dados."
+  },
+  "bancos": {
+   "name": "Bancos",
+   "categories": [
+    20,
+    3,
+    22,
+    24,
+    26
+   ],
+   "focus": "Governança de modelos, decisões de crédito, segurança e controles internos."
+  },
+  "seguros": {
+   "name": "Seguros",
+   "categories": [
+    20,
+    3,
+    21,
+    24,
+    26
+   ],
+   "focus": "Subscrição, precificação, sinistros e explicabilidade de decisões."
+  },
+  "saude": {
+   "name": "Saúde",
+   "categories": [
+    9,
+    3,
+    17,
+    26
+   ],
+   "focus": "Dados sensíveis, apoio à decisão clínica e sistemas de alto risco."
+  },
+  "data-centers": {
+   "name": "Data Center",
+   "categories": [
+    29,
+    28,
+    30,
+    22
+   ],
+   "focus": "Capacidade computacional, infraestrutura, incentivos e soberania digital."
+  },
+  "cloud": {
+   "name": "Cloud",
+   "categories": [
+    29,
+    30,
+    3,
+    22
+   ],
+   "focus": "Infraestrutura de IA, segurança, tratamento de dados e responsabilidades na cadeia."
+  },
+  "tecnologia": {
+   "name": "Tecnologia",
+   "categories": [
+    1,
+    3,
+    6,
+    16,
+    23,
+    25
+   ],
+   "focus": "Desenvolvimento de modelos, agentes autônomos, plataformas e auditoria de IA."
+  },
+  "escritorios-advocacia": {
+   "name": "Jurídico",
+   "categories": [
+    4,
+    5,
+    12,
+    24
+   ],
+   "focus": "Mudanças normativas, evidências de tramitação e priorização de análises internas."
+  },
+  "associacoes": {
+   "name": "Associação",
+   "categories": [
+    1,
+    7,
+    19,
+    28,
+    30
+   ],
+   "focus": "Pautas transversais, agenda institucional e impactos potenciais para associados."
+  }
+ },
+ "personas": {
+  "relacoes-governamentais": {
+   "name": "Relações Governamentais",
+   "value": "Priorize quais matérias exigem acompanhamento institucional e prepare sua equipe com agenda, estágio e evidência oficial."
+  },
+  "juridico-regulatorio": {
+   "name": "Jurídico Regulatório",
+   "value": "Identifique alterações regulatórias antes que se transformem em obrigação e encaminhe evidências para análise jurídica interna."
+  },
+  "compliance": {
+   "name": "Compliance",
+   "value": "Relacione mudanças às políticas internas, identifique responsáveis e registre a evidência usada na priorização."
+  },
+  "public-affairs": {
+   "name": "Public Affairs",
+   "value": "Organize posicionamento institucional com contexto, atores documentados e próximos eventos relevantes."
+  },
+  "diretoria-executiva": {
+   "name": "Diretoria Executiva",
+   "value": "Receba mudanças de impacto potencial relevante, com consequência operacional, responsável sugerido e próxima decisão a acompanhar."
+  },
+  "escritorios-advocacia": {
+   "name": "Escritórios de Advocacia",
+   "value": "Acelere a triagem de temas e a preparação de briefings para seus clientes com histórico e fontes rastreáveis."
+  },
+  "associacoes-empresariais": {
+   "name": "Associações Empresariais",
+   "value": "Consolide prioridades dos associados, organize a agenda de acompanhamento e distribua informação setorial rastreável."
+  }
+ },
+ "currency_note": "Valores de referência interna em BRL apenas para escopo comercial histórico; não são exibidos no site público."
 }

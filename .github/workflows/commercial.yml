@@ -21,8 +21,10 @@ jobs:
         with:
           python-version: '3.13'
       - run: python3 scripts/selftest_offline_eu.py
+      - run: python3 scripts/build_intelligence.py
       - run: python3 scripts/build_site.py
       - run: python3 scripts/validate_site_eu.py
+      - run: python3 scripts/validate_intelligence.py
       - run: python3 -m unittest discover -s tests -v || true
   browser:
     if: github.event_name != 'schedule'

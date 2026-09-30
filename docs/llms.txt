@@ -2,6 +2,16 @@
 
 > Monitor público, documentado e auditável da legislação e da regulação de IA da União Europeia (AI Act e correlatos), mantido pela LCF Consulting a partir de fontes oficiais europeias. Domínio oficial: https://monitor-ue.vercel.app/
 
+## Intelligence (actionable product layer)
+- [Regulatory Impact Engine](https://monitor-ue.vercel.app/impacto/): eventos regulatórios interpretados (impacto, obrigações, prazos, ações)
+- [Deadline Tracker](https://monitor-ue.vercel.app/prazos/): prazos de aplicação e adequação com fonte oficial
+- [Sector impact matrix](https://monitor-ue.vercel.app/setores/): 24 setores com obrigações, riscos e ações
+- [Enforcement](https://monitor-ue.vercel.app/enforcement/): decisões e sanções com lição regulatória
+- [Company impact profiles](https://monitor-ue.vercel.app/empresas/): exposição provável por empresa (sem afirmação de enquadramento)
+- [Executive alerts](https://monitor-ue.vercel.app/alertas-executivos/): alertas em formato executivo
+- [EU AI Regulatory Brief](https://monitor-ue.vercel.app/briefing-executivo/): briefing diário e semanal de 5 minutos
+- [How we analyse](https://monitor-ue.vercel.app/como-analisamos/): fato, análise, interpretação, recomendação e confiança
+
 ## Key Pages
 - [Início](https://monitor-ue.vercel.app/): visão geral, mudanças recentes e dossiês de maior impacto
 - [Procedimentos](https://monitor-ue.vercel.app/procedimentos-legislativos/): procedimentos legislativos da UE monitorados e filtros

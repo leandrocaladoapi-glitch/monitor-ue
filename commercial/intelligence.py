@@ -19,7 +19,6 @@ OFFICIAL_EU = (
     'commission.europa.eu',
     'data.consilium.europa.eu',
 )
-# Keep Brazilian official for backward compatibility check, but EU is primary
 OFFICIAL = OFFICIAL_EU
 
 

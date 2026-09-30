@@ -1,0 +1,233 @@
+{
+ "meta": {
+  "total": 5,
+  "description": "Enforcement monitorado a partir de fontes oficiais (EDPB, EDPS, Comissão e autoridades nacionais citadas nas decisões).",
+  "structure": "Evento → empresa/setor → autoridade → base legal → decisão → consequência → lição regulatória.",
+  "rule": "A base legal é a indicada pela autoridade na fonte; o monitor não a reinterpreta."
+ },
+ "cases": [
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
+   "event": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+   "date": "2026-09-23",
+   "authority": "Data Protection Commission (Irlanda)",
+   "company_or_sector": "Google / Alphabet",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — princípios (art. 5.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Background information Date of final decision: 21 September 2026 National case Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 6 (Lawfulness of processing), Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine, compliance order Key words: GDPR enforcement, technology, accountability, data subjects rights Summary of the Decision Origin of the case The Irish Da",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em AdTech, Cloud, E-commerce.",
+   "regulatory_lesson": "Lição regulatória: proteção de dados em produtos digitais é fiscalizada de forma ativa — base legal, transparência e resposta a pedidos de direitos são verificadas na prática.",
+   "affected_sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "AI Governance"
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+   "event": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+   "date": "2026-09-21",
+   "authority": "EDPB",
+   "company_or_sector": "AdTech",
+   "legal_basis": "Base legal não explicitada no resumo oficial — verificar a decisão na fonte oficial.",
+   "legal_basis_confidence": 0.6,
+   "decision": "Brussels, 21 September – During its latest plenary, the EDPB has adopted guidelines on the application of the power to impose administrative fines in relation to other corrective powers under the GDPR and the final version of its guidelines on interplay between the Digital Service Act (DSA) and the GDPR . The new EDPB guidelines are a major step in further aligning how Data Protection Authorities decide whether an administrative fine should be imposed, either on its own or alongside other corrective measures. The GDPR significantly increased the corrective powers of DPAs, with fines serving as",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em AdTech, Cloud, E-commerce.",
+   "regulatory_lesson": "Lição regulatória: proteção de dados em produtos digitais é fiscalizada de forma ativa — base legal, transparência e resposta a pedidos de direitos são verificadas na prática.",
+   "affected_sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "MarTech",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "Product"
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
+   "event": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
+   "date": "2026-09-11",
+   "authority": "CNIL (França)",
+   "company_or_sector": "Recrutamento e Seleção",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — informação e direitos do titular (arts. 12.º/13.º/17.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Background information Date of final decision: 21 July 2026 National case Legal Reference(s): Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 17 (Right to erasure ‘right to be forgotten’) Decision: Administrative fine Key words: Data subject rights Summary of the Decision Origin of the case EXTIA, which specialises in IT and engineering, recruits consultants for various technical projects from its client companies. In 2024, the French Data Protection Authority (CNIL) received several complaints from former employees",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em Recrutamento e Seleção, AdTech, Cloud.",
+   "regulatory_lesson": "Lição regulatória: proteção de dados em produtos digitais é fiscalizada de forma ativa — base legal, transparência e resposta a pedidos de direitos são verificadas na prática.",
+   "affected_sectors": [
+    "Recrutamento e Seleção",
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "HR Tech",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS"
+   ],
+   "affected_functions": [
+    "Public Policy",
+    "Government Affairs",
+    "Regulatory Affairs",
+    "Jurídico",
+    "Strategy",
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance"
+   ],
+   "recommended_actions": [
+    "Assinar as atualizações do AI Office e do registo oficial antes de cada release relevante.",
+    "Registar em ata a versão da orientação usada para decidir.",
+    "Envolver produto e jurídico na leitura de novas orientações.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
+   "event": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
+   "date": "2026-09-09",
+   "authority": "CNIL (França)",
+   "company_or_sector": "Saúde",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — segurança (art. 32.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Background information Date of final decision: 3 September 2026 National case Controller: Hôpital Privé de la Loire Legal Reference: Article 32 (Security of processing), Article 34 (Communication of a personal data breach to the data subject), Decision: Administrative fine Keywords: Cybersecurity, Personal data breaches, Health and research Summary of the Decision Origin of the case In summer 2025, an attacker managed to connect to the Computerised Patient Summary (DPI) of the Hôpital Privé de la Loire (Loire’s private hospital), which centralises all the data of the individuals under care. It",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em Saúde, Cibersegurança, AdTech.",
+   "regulatory_lesson": "Lição regulatória: proteção de dados em produtos digitais é fiscalizada de forma ativa — base legal, transparência e resposta a pedidos de direitos são verificadas na prática.",
+   "affected_sectors": [
+    "Saúde",
+    "Cibersegurança",
+    "AdTech",
+    "Bancos",
+    "Cloud",
+    "Data Centers",
+    "E-commerce",
+    "Energia"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Cybersecurity",
+    "Risk",
+    "Engenharia / ML"
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
+   "event": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
+   "date": "2026-09-03",
+   "authority": "Data Protection Commission (Irlanda)",
+   "company_or_sector": "Saúde",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — princípios (art. 5.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Background information Date of final decision: 28 August 2026 National case Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 32 (Security of processing), Article 33 (Notification of a personal data breach to the supervisory authority), Article 34 (Communication of a personal data breach to the data subject) Decision: Administrative fine, Compliance order, Communication order personal data breach Key words: GDPR enforcement, Data subjects rights, Fines, Health and research Summary of the Decision Origin of the case This Inquiry commenced on 24 May 2024",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em Saúde, AdTech, Cloud.",
+   "regulatory_lesson": "Lição regulatória: proteção de dados em produtos digitais é fiscalizada de forma ativa — base legal, transparência e resposta a pedidos de direitos são verificadas na prática.",
+   "affected_sectors": [
+    "Saúde",
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "Assuntos clínicos / regulatórios"
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
+   ]
+  }
+ ]
+}
