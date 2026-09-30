@@ -1,0 +1,347 @@
+{
+ "meta": {
+  "description": "Watchlists prontas por tema, setor, norma, empresa e regulador.",
+  "rule": "Contagens reais do dataset; nenhum item é inferido."
+ },
+ "presets": [
+  {
+   "id": "ai-act-gpai",
+   "name": "EU AI Act + GPAI + Foundation Models",
+   "themes": [
+    "ai_act",
+    "gpai",
+    "ai_office"
+   ],
+   "sectors": [
+    "modelos-de-fundacao",
+    "provedores-de-ia"
+   ],
+   "regulators": [
+    "European AI Office",
+    "Comissão Europeia"
+   ]
+  },
+  {
+   "id": "data-protection",
+   "name": "Proteção de dados e EDPB",
+   "themes": [
+    "edpb",
+    "edps"
+   ],
+   "sectors": [],
+   "regulators": [
+    "EDPB",
+    "EDPS"
+   ]
+  },
+  {
+   "id": "enforcement",
+   "name": "Enforcement e sanções",
+   "themes": [
+    "enforcement"
+   ],
+   "sectors": [],
+   "regulators": [
+    "EDPB",
+    "CNIL (França)",
+    "Data Protection Commission (Irlanda)"
+   ]
+  }
+ ],
+ "themes": [
+  {
+   "key": "edpb",
+   "label": "EDPB e proteção de dados em IA",
+   "events": 10
+  },
+  {
+   "key": "enforcement",
+   "label": "Enforcement e sanções",
+   "events": 5
+  },
+  {
+   "key": "ai_act",
+   "label": "EU AI Act",
+   "events": 4
+  },
+  {
+   "key": "consultation",
+   "label": "Consultas públicas e agenda",
+   "events": 3
+  },
+  {
+   "key": "ai_office",
+   "label": "European AI Office",
+   "events": 3
+  },
+  {
+   "key": "gpai",
+   "label": "GPAI e modelos de fundação",
+   "events": 3
+  },
+  {
+   "key": "cybersecurity",
+   "label": "Cibersegurança e resiliência",
+   "events": 2
+  },
+  {
+   "key": "health_data",
+   "label": "Dados de saúde e EHDS",
+   "events": 2
+  },
+  {
+   "key": "employment",
+   "label": "Trabalho e emprego",
+   "events": 1
+  },
+  {
+   "key": "dsa",
+   "label": "Digital Services Act",
+   "events": 1
+  },
+  {
+   "key": "competition",
+   "label": "Concorrência e mercados digitais",
+   "events": 1
+  },
+  {
+   "key": "judicial",
+   "label": "Jurisprudência e tribunais da UE",
+   "events": 1
+  },
+  {
+   "key": "edps",
+   "label": "EDPS e instituições da UE",
+   "events": 1
+  },
+  {
+   "key": "copyright",
+   "label": "Direitos de autor e conteúdo",
+   "events": 1
+  }
+ ],
+ "regulators": [
+  {
+   "name": "EDPB",
+   "events": 10
+  },
+  {
+   "name": "Comissão Europeia",
+   "events": 6
+  },
+  {
+   "name": "Parlamento Europeu",
+   "events": 4
+  }
+ ],
+ "act_types": [
+  {
+   "label": "Consulta pública",
+   "events": 6
+  },
+  {
+   "label": "Enforcement / sanção",
+   "events": 5
+  },
+  {
+   "label": "Guideline / orientação",
+   "events": 5
+  },
+  {
+   "label": "Regulamento",
+   "events": 2
+  },
+  {
+   "label": "Procedimento legislativo",
+   "events": 2
+  }
+ ],
+ "sectors": [
+  {
+   "slug": "cloud",
+   "name": "Cloud",
+   "changes": 16
+  },
+  {
+   "slug": "provedores-de-ia",
+   "name": "Provedores de IA",
+   "changes": 14
+  },
+  {
+   "slug": "saas",
+   "name": "SaaS",
+   "changes": 14
+  },
+  {
+   "slug": "adtech",
+   "name": "AdTech",
+   "changes": 12
+  },
+  {
+   "slug": "ecommerce",
+   "name": "E-commerce",
+   "changes": 11
+  },
+  {
+   "slug": "marketplaces",
+   "name": "Marketplaces",
+   "changes": 10
+  },
+  {
+   "slug": "saude",
+   "name": "Saúde",
+   "changes": 9
+  },
+  {
+   "slug": "modelos-de-fundacao",
+   "name": "Modelos de Fundação (GPAI)",
+   "changes": 5
+  },
+  {
+   "slug": "data-centers",
+   "name": "Data Centers",
+   "changes": 4
+  },
+  {
+   "slug": "energia",
+   "name": "Energia",
+   "changes": 4
+  },
+  {
+   "slug": "bancos",
+   "name": "Bancos",
+   "changes": 2
+  },
+  {
+   "slug": "ciberseguranca",
+   "name": "Cibersegurança",
+   "changes": 2
+  },
+  {
+   "slug": "hr-tech",
+   "name": "HR Tech",
+   "changes": 1
+  },
+  {
+   "slug": "martech",
+   "name": "MarTech",
+   "changes": 1
+  },
+  {
+   "slug": "recrutamento",
+   "name": "Recrutamento e Seleção",
+   "changes": 1
+  },
+  {
+   "slug": "fintech",
+   "name": "Fintech",
+   "changes": 1
+  },
+  {
+   "slug": "legaltech",
+   "name": "LegalTech",
+   "changes": 1
+  },
+  {
+   "slug": "pharma",
+   "name": "Pharma e Life Sciences",
+   "changes": 1
+  },
+  {
+   "slug": "utilities",
+   "name": "Utilities e Água",
+   "changes": 1
+  },
+  {
+   "slug": "educacao",
+   "name": "Educação",
+   "changes": 1
+  }
+ ],
+ "companies": [
+  {
+   "slug": "aws",
+   "name": "Amazon / AWS",
+   "themes": [
+    "Dados, cloud e infraestrutura digital",
+    "Digital Services Act",
+    "Cibersegurança e resiliência",
+    "Consumidor e transparência"
+   ]
+  },
+  {
+   "slug": "anthropic",
+   "name": "Anthropic",
+   "themes": [
+    "GPAI e modelos de fundação",
+    "EU AI Act",
+    "EU AI Act",
+    "Direitos de autor e conteúdo"
+   ]
+  },
+  {
+   "slug": "google",
+   "name": "Google / Alphabet",
+   "themes": [
+    "GPAI e modelos de fundação",
+    "Digital Services Act",
+    "EDPB e proteção de dados em IA",
+    "Consumidor e transparência",
+    "EU AI Act"
+   ]
+  },
+  {
+   "slug": "meta",
+   "name": "Meta",
+   "themes": [
+    "Digital Services Act",
+    "EDPB e proteção de dados em IA",
+    "Consumidor e transparência",
+    "GPAI e modelos de fundação",
+    "EU AI Act"
+   ]
+  },
+  {
+   "slug": "microsoft",
+   "name": "Microsoft",
+   "themes": [
+    "Dados, cloud e infraestrutura digital",
+    "Digital Services Act",
+    "GPAI e modelos de fundação",
+    "EU AI Act",
+    "Cibersegurança e resiliência"
+   ]
+  },
+  {
+   "slug": "mistral-ai",
+   "name": "Mistral AI",
+   "themes": [
+    "GPAI e modelos de fundação",
+    "EU AI Act",
+    "EU AI Act",
+    "EU AI Act",
+    "Direitos de autor e conteúdo"
+   ]
+  },
+  {
+   "slug": "nvidia",
+   "name": "NVIDIA",
+   "themes": [
+    "Dados, cloud e infraestrutura digital",
+    "Cibersegurança e resiliência",
+    "GPAI e modelos de fundação"
+   ]
+  },
+  {
+   "slug": "openai",
+   "name": "OpenAI",
+   "themes": [
+    "GPAI e modelos de fundação",
+    "EU AI Act",
+    "Direitos de autor e conteúdo",
+    "EU AI Act",
+    "EU AI Act"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1568 @@
+{
+ "meta": {
+  "total": 8,
+  "rule": "Nenhuma empresa é declarada juridicamente enquadrada; apenas exposição provável a temas.",
+  "evidence_rule": "Itens relacionados exigem menção da empresa no texto da fonte oficial."
+ },
+ "companies": [
+  {
+   "slug": "aws",
+   "name": "Amazon / AWS",
+   "aliases": [
+    "Amazon / AWS",
+    "amazon",
+    "aws",
+    "amazon web services",
+    "bedrock",
+    "alexa"
+   ],
+   "hq": "Estados Unidos / Luxemburgo",
+   "public_activities": [
+    "Infraestrutura cloud e serviços de IA gerenciada",
+    "Marketplace de e-commerce e logística",
+    "Serviços de dados e analytics para empresas"
+   ],
+   "sectors": [
+    {
+     "slug": "cloud",
+     "name": "Cloud"
+    },
+    {
+     "slug": "data-centers",
+     "name": "Data Centers"
+    },
+    {
+     "slug": "marketplaces",
+     "name": "Marketplaces"
+    },
+    {
+     "slug": "ecommerce",
+     "name": "E-commerce"
+    },
+    {
+     "slug": "provedores-de-ia",
+     "name": "Provedores de IA"
+    }
+   ],
+   "themes": [
+    {
+     "key": "data_act",
+     "label": "Dados, cloud e infraestrutura digital"
+    },
+    {
+     "key": "dsa",
+     "label": "Digital Services Act"
+    },
+    {
+     "key": "cybersecurity",
+     "label": "Cibersegurança e resiliência"
+    },
+    {
+     "key": "consumer",
+     "label": "Consumidor e transparência"
+    }
+   ],
+   "evidence_status": "sem menção direta no dataset atual",
+   "evidence_matches": [],
+   "related_acts": [],
+   "exposure_themes": [
+    {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
+    },
+    {
+     "title": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "priority": "urgent",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
+    },
+    {
+     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
+    },
+    {
+     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
+    }
+   ],
+   "possible_obligations": [
+    {
+     "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    },
+    {
+     "text": "Ativação das obrigações do capítulo aplicável ao nível de risco identificado.",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    }
+   ],
+   "deadlines": [
+    {
+     "date": "2026-12-02",
+     "label": "Aplicação das proibições",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    }
+   ],
+   "regulatory_risk": "critical",
+   "risk_label": "Crítico",
+   "watchlist": [
+    "Obrigações de infraestrutura digital, portabilidade e troca de provedor",
+    "Deveres de plataforma em marketplace e transparência com consumidores",
+    "Requisitos de resiliência operacional digital para clientes financeiros",
+    "Condições contratuais de uso de dados em serviços de IA gerenciada"
+   ],
+   "assessment_questions": [
+    "Quais cargas de trabalho críticas dependem de um único provedor cloud?",
+    "O contrato permite portabilidade e define custos de saída?",
+    "Como a empresa verifica o uso de dados em serviços gerenciados de IA?",
+    "Existe avaliação de risco de concentração de fornecedor?"
+   ],
+   "hedge": "potencialmente afetada — exposição provável por perfil público de atuação; a aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica."
+  },
+  {
+   "slug": "anthropic",
+   "name": "Anthropic",
+   "aliases": [
+    "Anthropic",
+    "anthropic",
+    "claude"
+   ],
+   "hq": "Estados Unidos / Reino Unido",
+   "public_activities": [
+    "Modelos Claude e APIs corporativas",
+    "Serviços de IA generativa para empresas",
+    "Pesquisa em segurança e alinhamento de modelos"
+   ],
+   "sectors": [
+    {
+     "slug": "modelos-de-fundacao",
+     "name": "Modelos de Fundação (GPAI)"
+    },
+    {
+     "slug": "provedores-de-ia",
+     "name": "Provedores de IA"
+    },
+    {
+     "slug": "saas",
+     "name": "SaaS"
+    }
+   ],
+   "themes": [
+    {
+     "key": "gpai",
+     "label": "GPAI e modelos de fundação"
+    },
+    {
+     "key": "ai_act",
+     "label": "EU AI Act"
+    },
+    {
+     "key": "ai_act",
+     "label": "EU AI Act"
+    },
+    {
+     "key": "copyright",
+     "label": "Direitos de autor e conteúdo"
+    }
+   ],
+   "evidence_status": "sem menção direta no dataset atual",
+   "evidence_matches": [],
+   "related_acts": [],
+   "exposure_themes": [
+    {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
+    },
+    {
+     "title": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "priority": "urgent",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
+    },
+    {
+     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
+    },
+    {
+     "title": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "priority": "high",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    }
+   ],
+   "possible_obligations": [
+    {
+     "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    },
+    {
+     "text": "Ativação das obrigações do capítulo aplicável ao nível de risco identificado.",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    }
+   ],
+   "deadlines": [
+    {
+     "date": "2026-12-02",
+     "label": "Aplicação das proibições",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    }
+   ],
+   "regulatory_risk": "critical",
+   "risk_label": "Crítico",
+   "watchlist": [
+    "Obrigações de documentação e política de direitos de autor para GPAI",
+    "Códigos de prática e orientações do European AI Office",
+    "Requisitos de transparência em conteúdo gerado e uso corporativo",
+    "Regras de aquisição por clientes regulados que exigem conformidade demonstrável"
+   ],
+   "assessment_questions": [
+    "O modelo é classificado como de risco sistêmico nas regras aplicáveis?",
+    "Há documentação técnica e sumário público de treino disponíveis ao cliente?",
+    "Como o fornecedor trata dados do cliente e retenção em inferências?",
+    "Quem assume o dever de informação ao usuário final no produto da empresa?"
+   ],
+   "hedge": "potencialmente afetada — exposição provável por perfil público de atuação; a aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica."
+  },
+  {
+   "slug": "google",
+   "name": "Google / Alphabet",
+   "aliases": [
+    "Google / Alphabet",
+    "google",
+    "alphabet",
+    "deepmind",
+    "youtube",
+    "android",
+    "gemini"
+   ],
+   "hq": "Estados Unidos / Irlanda",
+   "public_activities": [
+    "Modelos Gemini e infraestrutura de IA",
+    "Serviços de publicidade digital e personalização",
+    "Cloud, Android e plataformas de conteúdo"
+   ],
+   "sectors": [
+    {
+     "slug": "modelos-de-fundacao",
+     "name": "Modelos de Fundação (GPAI)"
+    },
+    {
+     "slug": "adtech",
+     "name": "AdTech"
+    },
+    {
+     "slug": "martech",
+     "name": "MarTech"
+    },
+    {
+     "slug": "marketplaces",
+     "name": "Marketplaces"
+    },
+    {
+     "slug": "cloud",
+     "name": "Cloud"
+    },
+    {
+     "slug": "data-centers",
+     "name": "Data Centers"
+    }
+   ],
+   "themes": [
+    {
+     "key": "gpai",
+     "label": "GPAI e modelos de fundação"
+    },
+    {
+     "key": "dsa",
+     "label": "Digital Services Act"
+    },
+    {
+     "key": "edpb",
+     "label": "EDPB e proteção de dados em IA"
+    },
+    {
+     "key": "consumer",
+     "label": "Consumidor e transparência"
+    },
+    {
+     "key": "ai_act",
+     "label": "EU AI Act"
+    }
+   ],
+   "evidence_status": "menção em fonte oficial do dataset",
+   "evidence_matches": [
+    {
+     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
+     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
+     "date": "2026-09-23"
+    }
+   ],
+   "related_acts": [
+    {
+     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "act_type": "Enforcement / sanção",
+     "stage": "A classificar",
+     "date": "2026-09-23",
+     "priority": "urgent",
+     "impact_level": "critical",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
+     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
+    }
+   ],
+   "exposure_themes": [
+    {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
+    },
+    {
+     "title": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "priority": "urgent",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
+    },
+    {
+     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
+    },
+    {
+     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
+    }
+   ],
+   "possible_obligations": [
+    {
+     "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    },
+    {
+     "text": "Ativação das obrigações do capítulo aplicável ao nível de risco identificado.",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    }
+   ],
+   "deadlines": [
+    {
+     "date": "2026-12-02",
+     "label": "Aplicação das proibições",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    }
+   ],
+   "regulatory_risk": "critical",
+   "risk_label": "Crítico",
+   "watchlist": [
+    "Decisões de autoridades nacionais de proteção de dados envolvendo publicidade e consentimento",
+    "Obrigações de GPAI (documentação, direitos de autor, risco sistêmico)",
+    "Deveres de plataforma designada (DSA/DMA) e cooperação com reguladores",
+    "Regras de transparência de publicidade política e de conteúdo sintético"
+   ],
+   "assessment_questions": [
+    "Quais dados de usuários alimentam personalização e qual a base legal documentada?",
+    "Como a empresa registra consentimento e revogação em produtos que usam IA?",
+    "Há dependência de plataforma cujo descumprimento afeta a cadeia da empresa?",
+    "A empresa monitora decisões de enforcement contra fornecedores de plataforma?"
+   ],
+   "hedge": "potencialmente afetada — exposição provável por perfil público de atuação; a aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica."
+  },
+  {
+   "slug": "meta",
+   "name": "Meta",
+   "aliases": [
+    "Meta",
+    "meta platforms",
+    "meta",
+    "facebook",
+    "instagram",
+    "whatsapp",
+    "llama"
+   ],
+   "hq": "Estados Unidos / Irlanda",
+   "public_activities": [
+    "Redes sociais e sistemas de recomendação",
+    "Modelos Llama e oferta de IA generativa",
+    "Publicidade digital e personalização"
+   ],
+   "sectors": [
+    {
+     "slug": "marketplaces",
+     "name": "Marketplaces"
+    },
+    {
+     "slug": "adtech",
+     "name": "AdTech"
+    },
+    {
+     "slug": "martech",
+     "name": "MarTech"
+    },
+    {
+     "slug": "modelos-de-fundacao",
+     "name": "Modelos de Fundação (GPAI)"
+    },
+    {
+     "slug": "data-centers",
+     "name": "Data Centers"
+    }
+   ],
+   "themes": [
+    {
+     "key": "dsa",
+     "label": "Digital Services Act"
+    },
+    {
+     "key": "edpb",
+     "label": "EDPB e proteção de dados em IA"
+    },
+    {
+     "key": "consumer",
+     "label": "Consumidor e transparência"
+    },
+    {
+     "key": "gpai",
+     "label": "GPAI e modelos de fundação"
+    },
+    {
+     "key": "ai_act",
+     "label": "EU AI Act"
+    }
+   ],
+   "evidence_status": "sem menção direta no dataset atual",
+   "evidence_matches": [],
+   "related_acts": [],
+   "exposure_themes": [
+    {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
+    },
+    {
+     "title": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "priority": "urgent",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
+    },
+    {
+     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
+    },
+    {
+     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
+    }
+   ],
+   "possible_obligations": [
+    {
+     "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    },
+    {
+     "text": "Ativação das obrigações do capítulo aplicável ao nível de risco identificado.",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    }
+   ],
+   "deadlines": [
+    {
+     "date": "2026-12-02",
+     "label": "Aplicação das proibições",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    }
+   ],
+   "regulatory_risk": "critical",
+   "risk_label": "Crítico",
+   "watchlist": [
+    "Decisões e investigações sobre publicidade comportamental e consentimento",
+    "Moderação de conteúdo, transparência e deveres de plataforma designada",
+    "Obrigações de GPAI aplicáveis à oferta de modelos",
+    "Transferência internacional de dados e decisões de autoridades nacionais"
+   ],
+   "assessment_questions": [
+    "Quais serviços da empresa dependem de plataformas com designação oficial?",
+    "Há cláusulas de transparência e de acesso a dados documentadas em contrato?",
+    "Como a empresa avalia riscos de conteúdo sintético e rotulagem?",
+    "Existe monitoramento de decisões que afetem fornecedores críticos?"
+   ],
+   "hedge": "potencialmente afetada — exposição provável por perfil público de atuação; a aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica."
+  },
+  {
+   "slug": "microsoft",
+   "name": "Microsoft",
+   "aliases": [
+    "Microsoft",
+    "microsoft",
+    "azure",
+    "copilot",
+    "linkedin",
+    "bing"
+   ],
+   "hq": "Estados Unidos",
+   "public_activities": [
+    "Azure OpenAI Service e plataforma de IA corporativa",
+    "Copilot integrado a produtos de produtividade",
+    "Serviços de nuvem e infraestrutura para clientes regulados"
+   ],
+   "sectors": [
+    {
+     "slug": "cloud",
+     "name": "Cloud"
+    },
+    {
+     "slug": "provedores-de-ia",
+     "name": "Provedores de IA"
+    },
+    {
+     "slug": "saas",
+     "name": "SaaS"
+    },
+    {
+     "slug": "modelos-de-fundacao",
+     "name": "Modelos de Fundação (GPAI)"
+    },
+    {
+     "slug": "data-centers",
+     "name": "Data Centers"
+    }
+   ],
+   "themes": [
+    {
+     "key": "data_act",
+     "label": "Dados, cloud e infraestrutura digital"
+    },
+    {
+     "key": "dsa",
+     "label": "Digital Services Act"
+    },
+    {
+     "key": "gpai",
+     "label": "GPAI e modelos de fundação"
+    },
+    {
+     "key": "ai_act",
+     "label": "EU AI Act"
+    },
+    {
+     "key": "cybersecurity",
+     "label": "Cibersegurança e resiliência"
+    }
+   ],
+   "evidence_status": "sem menção direta no dataset atual",
+   "evidence_matches": [],
+   "related_acts": [],
+   "exposure_themes": [
+    {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
+    },
+    {
+     "title": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "priority": "urgent",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
+    },
+    {
+     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
+    },
+    {
+     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
+    }
+   ],
+   "possible_obligations": [
+    {
+     "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    },
+    {
+     "text": "Ativação das obrigações do capítulo aplicável ao nível de risco identificado.",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    }
+   ],
+   "deadlines": [
+    {
+     "date": "2026-12-02",
+     "label": "Aplicação das proibições",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    }
+   ],
+   "regulatory_risk": "critical",
+   "risk_label": "Crítico",
+   "watchlist": [
+    "Deveres de transparência e de governança de IA em produtos corporativos",
+    "Obrigações de infraestrutura digital (Data Act, NIS2 e resiliência operacional)",
+    "Regras de plataforma aplicáveis a serviços com designação oficial (DSA/DMA)",
+    "Condições contratuais de clientes regulados que exigem conformidade com o AI Act"
+   ],
+   "assessment_questions": [
+    "Quais produtos usados pela empresa carregam declaração de conformidade do fornecedor?",
+    "O contrato cobre localização e transferência de dados e uso em treino de modelos?",
+    "Como o fornecedor documenta o uso de IA de alto risco dentro do produto contratado?",
+    "Existe plano de contingência para indisponibilidade de serviço de IA crítico?"
+   ],
+   "hedge": "potencialmente afetada — exposição provável por perfil público de atuação; a aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica."
+  },
+  {
+   "slug": "mistral-ai",
+   "name": "Mistral AI",
+   "aliases": [
+    "Mistral AI",
+    "mistral",
+    "mistral ai",
+    "mixtral"
+   ],
+   "hq": "França",
+   "public_activities": [
+    "Modelos abertos e comerciais de IA generativa",
+    "Plataforma corporativa e APIs",
+    "Serviços para setores regulados e setor público"
+   ],
+   "sectors": [
+    {
+     "slug": "modelos-de-fundacao",
+     "name": "Modelos de Fundação (GPAI)"
+    },
+    {
+     "slug": "provedores-de-ia",
+     "name": "Provedores de IA"
+    },
+    {
+     "slug": "saas",
+     "name": "SaaS"
+    },
+    {
+     "slug": "cloud",
+     "name": "Cloud"
+    }
+   ],
+   "themes": [
+    {
+     "key": "gpai",
+     "label": "GPAI e modelos de fundação"
+    },
+    {
+     "key": "ai_act",
+     "label": "EU AI Act"
+    },
+    {
+     "key": "ai_act",
+     "label": "EU AI Act"
+    },
+    {
+     "key": "ai_act",
+     "label": "EU AI Act"
+    },
+    {
+     "key": "copyright",
+     "label": "Direitos de autor e conteúdo"
+    }
+   ],
+   "evidence_status": "sem menção direta no dataset atual",
+   "evidence_matches": [],
+   "related_acts": [],
+   "exposure_themes": [
+    {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
+    },
+    {
+     "title": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "priority": "urgent",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
+    },
+    {
+     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
+    },
+    {
+     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
+    }
+   ],
+   "possible_obligations": [
+    {
+     "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    },
+    {
+     "text": "Ativação das obrigações do capítulo aplicável ao nível de risco identificado.",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    }
+   ],
+   "deadlines": [
+    {
+     "date": "2026-12-02",
+     "label": "Aplicação das proibições",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    }
+   ],
+   "regulatory_risk": "critical",
+   "risk_label": "Crítico",
+   "watchlist": [
+    "Obrigações de GPAI e códigos de prática europeus",
+    "Regras de soberania digital e preferência por fornecedores europeus em contratos públicos",
+    "Transparência de modelo e documentação técnica para clientes regulados",
+    "Direitos de autor e dados de treino"
+   ],
+   "assessment_questions": [
+    "Quais obrigações de GPAI já estão documentadas e auditáveis?",
+    "Como a empresa trata reservas de direitos em dados de treino?",
+    "Há requisitos de localização de dados em contratos com o setor público?",
+    "Como se demonstra supervisão humana em casos de uso de alto risco?"
+   ],
+   "hedge": "potencialmente afetada — exposição provável por perfil público de atuação; a aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica."
+  },
+  {
+   "slug": "nvidia",
+   "name": "NVIDIA",
+   "aliases": [
+    "NVIDIA",
+    "nvidia",
+    "cuda",
+    "h100",
+    "gb200"
+   ],
+   "hq": "Estados Unidos",
+   "public_activities": [
+    "Aceleradores e sistemas de computação para treino e inferência",
+    "Software de desenvolvimento para IA",
+    "Infraestrutura para data centers de IA"
+   ],
+   "sectors": [
+    {
+     "slug": "data-centers",
+     "name": "Data Centers"
+    },
+    {
+     "slug": "provedores-de-ia",
+     "name": "Provedores de IA"
+    },
+    {
+     "slug": "cloud",
+     "name": "Cloud"
+    },
+    {
+     "slug": "modelos-de-fundacao",
+     "name": "Modelos de Fundação (GPAI)"
+    }
+   ],
+   "themes": [
+    {
+     "key": "data_act",
+     "label": "Dados, cloud e infraestrutura digital"
+    },
+    {
+     "key": "cybersecurity",
+     "label": "Cibersegurança e resiliência"
+    },
+    {
+     "key": "gpai",
+     "label": "GPAI e modelos de fundação"
+    }
+   ],
+   "evidence_status": "sem menção direta no dataset atual",
+   "evidence_matches": [],
+   "related_acts": [],
+   "exposure_themes": [
+    {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
+    },
+    {
+     "title": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "priority": "urgent",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
+    },
+    {
+     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
+    },
+    {
+     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
+    }
+   ],
+   "possible_obligations": [
+    {
+     "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    },
+    {
+     "text": "Ativação das obrigações do capítulo aplicável ao nível de risco identificado.",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    }
+   ],
+   "deadlines": [
+    {
+     "date": "2026-12-02",
+     "label": "Aplicação das proibições",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    }
+   ],
+   "regulatory_risk": "critical",
+   "risk_label": "Crítico",
+   "watchlist": [
+    "Especificações de eficiência energética e requisitos de data centers",
+    "Regras de infraestrutura digital e de cadeia de fornecimento crítico",
+    "Exigências de transparência em cadeias que abastecem GPAI",
+    "Requisitos de segurança e resiliência em infraestrutura crítica"
+   ],
+   "assessment_questions": [
+    "Quais requisitos de eficiência e de reporte aplicam-se aos data centers usados?",
+    "Há exposição a controles de exportação ou de soberania digital que afetem a cadeia?",
+    "Como a empresa documenta origem e segurança dos componentes críticos?",
+    "Existem cláusulas de auditoria e de continuidade com fornecedores de hardware?"
+   ],
+   "hedge": "potencialmente afetada — exposição provável por perfil público de atuação; a aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica."
+  },
+  {
+   "slug": "openai",
+   "name": "OpenAI",
+   "aliases": [
+    "OpenAI",
+    "openai",
+    "chatgpt",
+    "gpt-4",
+    "gpt-5",
+    "dall-e",
+    "sora"
+   ],
+   "hq": "Estados Unidos",
+   "public_activities": [
+    "Modelos de fundação e assistentes de IA generativa",
+    "APIs para desenvolvedores e empresas",
+    "Ferramentas de imagem, vídeo e voz sintéticos"
+   ],
+   "sectors": [
+    {
+     "slug": "modelos-de-fundacao",
+     "name": "Modelos de Fundação (GPAI)"
+    },
+    {
+     "slug": "provedores-de-ia",
+     "name": "Provedores de IA"
+    },
+    {
+     "slug": "saas",
+     "name": "SaaS"
+    },
+    {
+     "slug": "educacao",
+     "name": "Educação"
+    }
+   ],
+   "themes": [
+    {
+     "key": "gpai",
+     "label": "GPAI e modelos de fundação"
+    },
+    {
+     "key": "ai_act",
+     "label": "EU AI Act"
+    },
+    {
+     "key": "copyright",
+     "label": "Direitos de autor e conteúdo"
+    },
+    {
+     "key": "ai_act",
+     "label": "EU AI Act"
+    },
+    {
+     "key": "ai_act",
+     "label": "EU AI Act"
+    }
+   ],
+   "evidence_status": "sem menção direta no dataset atual",
+   "evidence_matches": [],
+   "related_acts": [],
+   "exposure_themes": [
+    {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
+    },
+    {
+     "title": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "priority": "urgent",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
+    },
+    {
+     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
+    },
+    {
+     "title": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "priority": "high",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    }
+   ],
+   "possible_obligations": [
+    {
+     "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+    },
+    {
+     "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    },
+    {
+     "text": "Ativação das obrigações do capítulo aplicável ao nível de risco identificado.",
+     "reference": "EU AI Act",
+     "event_id": "re_norma_32026r1744"
+    }
+   ],
+   "deadlines": [
+    {
+     "date": "2026-12-02",
+     "label": "Aplicação das proibições",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
+     "event_id": "re_norma_32026r1744",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+    },
+    {
+     "date": "2027-12-02",
+     "label": "Obrigações de alto risco — Anexo III",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    },
+    {
+     "date": "2028-08-02",
+     "label": "Obrigações de alto risco — Anexo I",
+     "norm": "Regulamento (UE) 2024/1689 — AI Act",
+     "event_id": "re_norma_32024r1689",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    }
+   ],
+   "regulatory_risk": "critical",
+   "risk_label": "Crítico",
+   "watchlist": [
+    "Obrigações de documentação técnica e política de direitos de autor para GPAI (AI Act, arts. 53 e 55)",
+    "Regras de transparência e rotulagem de conteúdo sintético (AI Act, art. 50)",
+    "Orientações do European AI Office e códigos de prática para GPAI",
+    "Discussões sobre direitos de autor em dados de treino e reservas de direitos"
+   ],
+   "assessment_questions": [
+    "Qual é a versão do modelo e qual a data de corte de treino em uso na empresa?",
+    "Quem é o fornecedor de GP AI e quem é o operador no contrato firmado?",
+    "Existe cláusula de documentação técnica, notificação de incidentes e direito de auditoria?",
+    "Como o fornecedor comunica alterações de modelo que afetam o produto da empresa?"
+   ],
+   "hedge": "potencialmente afetada — exposição provável por perfil público de atuação; a aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica."
+  }
+ ]
+}

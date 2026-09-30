@@ -17,6 +17,7 @@ import build_site_eu_core as _core
 import ai_visibility_eu as _ai_visibility
 import google_ai_citation_eu as _google_ai_citation
 import commercial_pages as _commercial
+import intelligence_pages as _intelligence
 
 SITE_URL = "https://monitor-ue.vercel.app"
 OLD_SITE_URLS = [
@@ -36,6 +37,7 @@ _core.TAGLINE = "Monitoramento público, documentado e auditável da legislaçã
 _ai_visibility.install(_core)
 _google_ai_citation.install(_core)
 _commercial.install(_core)
+_intelligence.install(_core)
 
 # Preserva compatibilidade para qualquer código/teste que importe build_site.
 for _name, _value in vars(_core).items():

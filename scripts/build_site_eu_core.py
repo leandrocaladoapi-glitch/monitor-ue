@@ -313,7 +313,7 @@ def _atos_footer_link():
     `build_site.py` troca o domínio para o oficial depois de importar este
     módulo, e um valor congelado no import publicaria o domínio antigo.
     """
-    if os.path.exists(os.path.join(BASE, "data", "legislation", "atos.json")):
+    if os.path.exists(os.path.join(BASE, "data", "legislation-eu", "atos.json")):
         return '<br>\n      <a href="{0}/data/atos.json">atos.json</a>'.format(SITE_URL)
     return ""
 
@@ -1057,7 +1057,7 @@ def build_metodologia(props, laws, updates):
     <li>▸ Descobertas automáticas entram com flag <b>“aguardando curadoria”</b> e score preliminar conservador (nunca CRÍTICO automático). Falsos positivos são removidos na revisão.</li>
   </ul>
   <h2 class="section-title" style="margin-top:26px">AI Legislative Impact Score (0–100)</h2>
-  <p>O score mede <b>importância regulatória para o monitoramento</b>, não mérito. Rúbrica pública e reproduzível (implementada em <code>scripts/scoring.py</code>):</p>
+  <p>O score mede <b>importância regulatória para o monitoramento</b>, não mérito. Rúbrica pública e reproduzível (implementada em <code>scripts/scoring_eu.py</code>):</p>
   <div style="overflow-x:auto;margin-top:12px"><table class="tbl"><thead><tr><th>Critério</th><th>Pontos</th><th>Como pontuar (resumo)</th></tr></thead><tbody>{rubric_rows}</tbody></table></div>
   <p style="margin-top:12px">Faixas: <b>90–100 CRÍTICO · 75–89 MUITO RELEVANTE · 60–74 RELEVANTE · 40–59 MONITORAR · 0–39 BAIXA PRIORIDADE</b>. O score mede apenas <b>impacto regulatório</b> — nunca aprovação, probabilidade ou posição política. Scores da curadoria de referência são preservados; scores nunca são inflados para gerar manchetes.</p>
   <h2 class="section-title" style="margin-top:26px">Como mudanças são detectadas</h2>

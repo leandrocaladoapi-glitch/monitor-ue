@@ -50,6 +50,16 @@ def install(core):
 
 > Monitor público, documentado e auditável da legislação e da regulação de IA da União Europeia (AI Act e correlatos), mantido pela LCF Consulting a partir de fontes oficiais europeias. Domínio oficial: {core.SITE_URL}/
 
+## Intelligence (actionable product layer)
+- [Regulatory Impact Engine]({core.SITE_URL}/impacto/): eventos regulatórios interpretados (impacto, obrigações, prazos, ações)
+- [Deadline Tracker]({core.SITE_URL}/prazos/): prazos de aplicação e adequação com fonte oficial
+- [Sector impact matrix]({core.SITE_URL}/setores/): 24 setores com obrigações, riscos e ações
+- [Enforcement]({core.SITE_URL}/enforcement/): decisões e sanções com lição regulatória
+- [Company impact profiles]({core.SITE_URL}/empresas/): exposição provável por empresa (sem afirmação de enquadramento)
+- [Executive alerts]({core.SITE_URL}/alertas-executivos/): alertas em formato executivo
+- [EU AI Regulatory Brief]({core.SITE_URL}/briefing-executivo/): briefing diário e semanal de 5 minutos
+- [How we analyse]({core.SITE_URL}/como-analisamos/): fato, análise, interpretação, recomendação e confiança
+
 ## Key Pages
 - [Início]({core.SITE_URL}/): visão geral, mudanças recentes e dossiês de maior impacto
 - [Procedimentos]({core.SITE_URL}/procedimentos-legislativos/): procedimentos legislativos da UE monitorados e filtros
@@ -103,7 +113,7 @@ Domain: {core.SITE_URL}/ — exclusive EU monitor.
 Canonical site: {core.SITE_URL}/
 
 ## What this site provides
-Public, structured, exclusive monitoring of European Union legislation and regulation related to artificial intelligence. The site is statically generated from official EU sources and is available in HTML without requiring client-side JavaScript. This repository is EXCLUSIVELY for the EU — there is no Brazilian section.
+Public, structured, exclusive monitoring of European Union legislation and regulation related to artificial intelligence, plus an actionable intelligence layer that answers: what changed, why it matters, who is affected, which sectors and internal functions must act, which obligation, deadline, recommended action, official evidence and priority. The site is statically generated from official EU sources and is available in HTML without requiring client-side JavaScript. This repository is EXCLUSIVELY for the EU — there is no Brazilian section. Rules: no event without an official source; analysis below 0.60 confidence is not auto-published; fact, analysis, interpretation and recommendation are always separate.
 
 ## Coverage
 - AI Act (Regulation (EU) 2024/1689) and delegated/implementing acts
@@ -112,6 +122,7 @@ Public, structured, exclusive monitoring of European Union legislation and regul
 - Timeline, agenda, actors and audit trail
 
 ## Main collections
+- Regulatory intelligence: {core.SITE_URL}/impacto/ · {core.SITE_URL}/prazos/ · {core.SITE_URL}/setores/
 - Procedures: {core.SITE_URL}/procedimentos-legislativos/
 - Legislation and acts: {core.SITE_URL}/legislacao-e-atos/
 - Recent changes: {core.SITE_URL}/atualizacoes/
@@ -123,6 +134,9 @@ Public, structured, exclusive monitoring of European Union legislation and regul
 - Executive report: {core.SITE_URL}/relatorio/
 
 ## Machine-readable feeds
+- {core.SITE_URL}/data/intelligence/events.json
+- {core.SITE_URL}/data/intelligence/deadlines.json
+- {core.SITE_URL}/data/intelligence/manifest.json
 - {core.SITE_URL}/data/propositions.json
 - {core.SITE_URL}/data/updates.json
 - {core.SITE_URL}/data/laws.json

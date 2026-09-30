@@ -1,0 +1,205 @@
+{
+  "disclaimer": "Perfis de exposição regulatória construídos a partir da taxonomia pública do produto e das fontes oficiais capturadas. A linguagem é condicional: as empresas são potencialmente afetadas pelas regras de IA, dados e plataformas digitais da UE; nada aqui afirma enquadramento jurídico, conduta irregular ou prática ilícita. Toda decisão exige avaliação jurídica específica com base nas fontes oficiais citadas.",
+  "companies": {
+    "openai": {
+      "name": "OpenAI",
+      "aliases": ["openai", "chatgpt", "gpt-4", "gpt-5", "dall-e", "sora"],
+      "hq": "Estados Unidos",
+      "role": "Fornecedor de modelos de uso geral (GPAI) e de sistemas de IA generativa oferecidos no mercado da União",
+      "activities": [
+        "Modelos de fundação e assistentes de IA generativa",
+        "APIs para desenvolvedores e empresas",
+        "Ferramentas de imagem, vídeo e voz sintéticos"
+      ],
+      "sectors": ["modelos-de-fundacao", "provedores-de-ia", "saas", "educacao"],
+      "themes": ["gpai", "transparencia", "direitos-autor", "praticas-proibidas", "ai-act"],
+      "watchlist": [
+        "Obrigações de documentação técnica e política de direitos de autor para GPAI (AI Act, arts. 53 e 55)",
+        "Regras de transparência e rotulagem de conteúdo sintético (AI Act, art. 50)",
+        "Orientações do European AI Office e códigos de prática para GPAI",
+        "Discussões sobre direitos de autor em dados de treino e reservas de direitos"
+      ],
+      "questions": [
+        "Qual é a versão do modelo e qual a data de corte de treino em uso na empresa?",
+        "Quem é o fornecedor de GP AI e quem é o operador no contrato firmado?",
+        "Existe cláusula de documentação técnica, notificação de incidentes e direito de auditoria?",
+        "Como o fornecedor comunica alterações de modelo que afetam o produto da empresa?"
+      ]
+    },
+    "microsoft": {
+      "name": "Microsoft",
+      "aliases": ["microsoft", "azure", "copilot", "linkedin", "bing"],
+      "hq": "Estados Unidos",
+      "role": "Provedor de infraestrutura cloud, de serviços de IA corporativa e de produtos com IA embarcada",
+      "activities": [
+        "Azure OpenAI Service e plataforma de IA corporativa",
+        "Copilot integrado a produtos de produtividade",
+        "Serviços de nuvem e infraestrutura para clientes regulados"
+      ],
+      "sectors": ["cloud", "provedores-de-ia", "saas", "modelos-de-fundacao", "data-centers"],
+      "themes": ["dados-e-infraestrutura", "plataformas", "gpai", "transparencia", "ciberseguranca"],
+      "watchlist": [
+        "Deveres de transparência e de governança de IA em produtos corporativos",
+        "Obrigações de infraestrutura digital (Data Act, NIS2 e resiliência operacional)",
+        "Regras de plataforma aplicáveis a serviços com designação oficial (DSA/DMA)",
+        "Condições contratuais de clientes regulados que exigem conformidade com o AI Act"
+      ],
+      "questions": [
+        "Quais produtos usados pela empresa carregam declaração de conformidade do fornecedor?",
+        "O contrato cobre localização e transferência de dados e uso em treino de modelos?",
+        "Como o fornecedor documenta o uso de IA de alto risco dentro do produto contratado?",
+        "Existe plano de contingência para indisponibilidade de serviço de IA crítico?"
+      ]
+    },
+    "google": {
+      "name": "Google / Alphabet",
+      "aliases": ["google", "alphabet", "deepmind", "youtube", "android", "gemini"],
+      "hq": "Estados Unidos / Irlanda",
+      "role": "Provedor de modelos de fundação, de plataformas digitais e de serviços de publicidade e cloud",
+      "activities": [
+        "Modelos Gemini e infraestrutura de IA",
+        "Serviços de publicidade digital e personalização",
+        "Cloud, Android e plataformas de conteúdo"
+      ],
+      "sectors": ["modelos-de-fundacao", "adtech", "martech", "marketplaces", "cloud", "data-centers"],
+      "themes": ["gpai", "plataformas", "dados-pessoais", "consumo-publicidade", "transparencia"],
+      "watchlist": [
+        "Decisões de autoridades nacionais de proteção de dados envolvendo publicidade e consentimento",
+        "Obrigações de GPAI (documentação, direitos de autor, risco sistêmico)",
+        "Deveres de plataforma designada (DSA/DMA) e cooperação com reguladores",
+        "Regras de transparência de publicidade política e de conteúdo sintético"
+      ],
+      "questions": [
+        "Quais dados de usuários alimentam personalização e qual a base legal documentada?",
+        "Como a empresa registra consentimento e revogação em produtos que usam IA?",
+        "Há dependência de plataforma cujo descumprimento afeta a cadeia da empresa?",
+        "A empresa monitora decisões de enforcement contra fornecedores de plataforma?"
+      ]
+    },
+    "meta": {
+      "name": "Meta",
+      "aliases": ["meta platforms", "meta", "facebook", "instagram", "whatsapp", "llama"],
+      "hq": "Estados Unidos / Irlanda",
+      "role": "Provedor de plataformas digitais, sistemas de recomendação e modelos de IA de uso geral",
+      "activities": [
+        "Redes sociais e sistemas de recomendação",
+        "Modelos Llama e oferta de IA generativa",
+        "Publicidade digital e personalização"
+      ],
+      "sectors": ["marketplaces", "adtech", "martech", "modelos-de-fundacao", "data-centers"],
+      "themes": ["plataformas", "dados-pessoais", "consumo-publicidade", "gpai", "transparencia"],
+      "watchlist": [
+        "Decisões e investigações sobre publicidade comportamental e consentimento",
+        "Moderação de conteúdo, transparência e deveres de plataforma designada",
+        "Obrigações de GPAI aplicáveis à oferta de modelos",
+        "Transferência internacional de dados e decisões de autoridades nacionais"
+      ],
+      "questions": [
+        "Quais serviços da empresa dependem de plataformas com designação oficial?",
+        "Há cláusulas de transparência e de acesso a dados documentadas em contrato?",
+        "Como a empresa avalia riscos de conteúdo sintético e rotulagem?",
+        "Existe monitoramento de decisões que afetem fornecedores críticos?"
+      ]
+    },
+    "aws": {
+      "name": "Amazon / AWS",
+      "aliases": ["amazon", "aws", "amazon web services", "bedrock", "alexa"],
+      "hq": "Estados Unidos / Luxemburgo",
+      "role": "Provedor de infraestrutura cloud, marketplace e serviços de IA corporativa",
+      "activities": [
+        "Infraestrutura cloud e serviços de IA gerenciada",
+        "Marketplace de e-commerce e logística",
+        "Serviços de dados e analytics para empresas"
+      ],
+      "sectors": ["cloud", "data-centers", "marketplaces", "ecommerce", "provedores-de-ia"],
+      "themes": ["dados-e-infraestrutura", "plataformas", "ciberseguranca", "consumo-publicidade"],
+      "watchlist": [
+        "Obrigações de infraestrutura digital, portabilidade e troca de provedor",
+        "Deveres de plataforma em marketplace e transparência com consumidores",
+        "Requisitos de resiliência operacional digital para clientes financeiros",
+        "Condições contratuais de uso de dados em serviços de IA gerenciada"
+      ],
+      "questions": [
+        "Quais cargas de trabalho críticas dependem de um único provedor cloud?",
+        "O contrato permite portabilidade e define custos de saída?",
+        "Como a empresa verifica o uso de dados em serviços gerenciados de IA?",
+        "Existe avaliação de risco de concentração de fornecedor?"
+      ]
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "aliases": ["anthropic", "claude"],
+      "hq": "Estados Unidos / Reino Unido",
+      "role": "Fornecedor de modelos de fundação e assistentes de IA oferecidos a empresas na União",
+      "activities": [
+        "Modelos Claude e APIs corporativas",
+        "Serviços de IA generativa para empresas",
+        "Pesquisa em segurança e alinhamento de modelos"
+      ],
+      "sectors": ["modelos-de-fundacao", "provedores-de-ia", "saas"],
+      "themes": ["gpai", "transparencia", "ai-act", "direitos-autor"],
+      "watchlist": [
+        "Obrigações de documentação e política de direitos de autor para GPAI",
+        "Códigos de prática e orientações do European AI Office",
+        "Requisitos de transparência em conteúdo gerado e uso corporativo",
+        "Regras de aquisição por clientes regulados que exigem conformidade demonstrável"
+      ],
+      "questions": [
+        "O modelo é classificado como de risco sistêmico nas regras aplicáveis?",
+        "Há documentação técnica e sumário público de treino disponíveis ao cliente?",
+        "Como o fornecedor trata dados do cliente e retenção em inferências?",
+        "Quem assume o dever de informação ao usuário final no produto da empresa?"
+      ]
+    },
+    "nvidia": {
+      "name": "NVIDIA",
+      "aliases": ["nvidia", "cuda", "h100", "gb200"],
+      "hq": "Estados Unidos",
+      "role": "Fornecedor de infraestrutura de computação para IA, com papel na cadeia de valor de GPAI",
+      "activities": [
+        "Aceleradores e sistemas de computação para treino e inferência",
+        "Software de desenvolvimento para IA",
+        "Infraestrutura para data centers de IA"
+      ],
+      "sectors": ["data-centers", "provedores-de-ia", "cloud", "modelos-de-fundacao"],
+      "themes": ["dados-e-infraestrutura", "ciberseguranca", "gpai"],
+      "watchlist": [
+        "Especificações de eficiência energética e requisitos de data centers",
+        "Regras de infraestrutura digital e de cadeia de fornecimento crítico",
+        "Exigências de transparência em cadeias que abastecem GPAI",
+        "Requisitos de segurança e resiliência em infraestrutura crítica"
+      ],
+      "questions": [
+        "Quais requisitos de eficiência e de reporte aplicam-se aos data centers usados?",
+        "Há exposição a controles de exportação ou de soberania digital que afetem a cadeia?",
+        "Como a empresa documenta origem e segurança dos componentes críticos?",
+        "Existem cláusulas de auditoria e de continuidade com fornecedores de hardware?"
+      ]
+    },
+    "mistral-ai": {
+      "name": "Mistral AI",
+      "aliases": ["mistral", "mistral ai", "mixtral"],
+      "hq": "França",
+      "role": "Fornecedor europeu de modelos de fundação e de serviços de IA corporativa",
+      "activities": [
+        "Modelos abertos e comerciais de IA generativa",
+        "Plataforma corporativa e APIs",
+        "Serviços para setores regulados e setor público"
+      ],
+      "sectors": ["modelos-de-fundacao", "provedores-de-ia", "saas", "cloud"],
+      "themes": ["gpai", "ai-act", "transparencia", "governanca-ia", "direitos-autor"],
+      "watchlist": [
+        "Obrigações de GPAI e códigos de prática europeus",
+        "Regras de soberania digital e preferência por fornecedores europeus em contratos públicos",
+        "Transparência de modelo e documentação técnica para clientes regulados",
+        "Direitos de autor e dados de treino"
+      ],
+      "questions": [
+        "Quais obrigações de GPAI já estão documentadas e auditáveis?",
+        "Como a empresa trata reservas de direitos em dados de treino?",
+        "Há requisitos de localização de dados em contratos com o setor público?",
+        "Como se demonstra supervisão humana em casos de uso de alto risco?"
+      ]
+    }
+  }
+}
