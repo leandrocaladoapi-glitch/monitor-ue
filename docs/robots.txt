@@ -1,4 +1,4 @@
-# Search and AI crawler policy — generated 2026-10-04
+# Search and AI crawler policy — generated 2026-10-05
 # Monitor UE de IA — Exclusive EU Monitor at https://monitor-ue.vercel.app/
 User-agent: *
 Allow: /

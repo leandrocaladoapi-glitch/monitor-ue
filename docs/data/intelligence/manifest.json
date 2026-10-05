@@ -1,8 +1,8 @@
 {
  "meta": {
   "generated_from": "data/legislation-eu/*.json",
-  "dataset_execution": "2026-10-04",
-  "reference_date": "2026-10-04",
+  "dataset_execution": "2026-10-05",
+  "reference_date": "2026-10-05",
   "description": "Métricas de qualidade e cobertura da camada de inteligência."
  },
  "events_total": 21,
