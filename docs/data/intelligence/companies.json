@@ -67,6 +67,12 @@
    "related_acts": [],
    "exposure_themes": [
     {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
      "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "priority": "urgent",
@@ -85,54 +91,48 @@
      "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
     },
     {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
      "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
-    },
-    {
-     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
-    },
-    {
-     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
     }
    ],
    "possible_obligations": [
     {
      "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
@@ -249,6 +249,12 @@
    "related_acts": [],
    "exposure_themes": [
     {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
      "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "priority": "urgent",
@@ -273,48 +279,42 @@
      "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
     },
     {
-     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "title": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
-    },
-    {
-     "title": "Regulamento (UE) 2024/1689 — AI Act",
-     "event_id": "re_norma_32024r1689",
-     "priority": "high",
-     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
     }
    ],
    "possible_obligations": [
     {
      "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
@@ -449,7 +449,7 @@
    "evidence_status": "menção em fonte oficial do dataset",
    "evidence_matches": [
     {
-     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "title": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
      "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
      "date": "2026-09-23"
@@ -457,7 +457,7 @@
    ],
    "related_acts": [
     {
-     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "title": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
      "act_type": "Enforcement / sanção",
      "stage": "A classificar",
      "date": "2026-09-23",
@@ -468,6 +468,12 @@
     }
    ],
    "exposure_themes": [
+    {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
     {
      "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
@@ -487,54 +493,48 @@
      "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
     },
     {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
      "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
-    },
-    {
-     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
-    },
-    {
-     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
     }
    ],
    "possible_obligations": [
     {
      "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
@@ -667,6 +667,12 @@
    "related_acts": [],
    "exposure_themes": [
     {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
      "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "priority": "urgent",
@@ -685,54 +691,48 @@
      "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
     },
     {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
      "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
-    },
-    {
-     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
-    },
-    {
-     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
     }
    ],
    "possible_obligations": [
     {
      "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
@@ -864,6 +864,12 @@
    "related_acts": [],
    "exposure_themes": [
     {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
      "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "priority": "urgent",
@@ -882,54 +888,48 @@
      "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
     },
     {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
      "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
-    },
-    {
-     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
-    },
-    {
-     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
     }
    ],
    "possible_obligations": [
     {
      "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
@@ -1055,6 +1055,12 @@
    "related_acts": [],
    "exposure_themes": [
     {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
      "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "priority": "urgent",
@@ -1073,54 +1079,48 @@
      "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
     },
     {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
      "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
-    },
-    {
-     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
-    },
-    {
-     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
     }
    ],
    "possible_obligations": [
     {
      "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
@@ -1239,6 +1239,12 @@
    "related_acts": [],
    "exposure_themes": [
     {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
      "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "priority": "urgent",
@@ -1257,54 +1263,48 @@
      "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
     },
     {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
      "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
-    },
-    {
-     "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
-    },
-    {
-     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
     }
    ],
    "possible_obligations": [
     {
      "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",
@@ -1433,6 +1433,12 @@
    "related_acts": [],
    "exposure_themes": [
     {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
      "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "priority": "urgent",
@@ -1457,48 +1463,42 @@
      "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
     },
     {
-     "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "title": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
-    },
-    {
-     "title": "Regulamento (UE) 2024/1689 — AI Act",
-     "event_id": "re_norma_32024r1689",
-     "priority": "high",
-     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
     }
    ],
    "possible_obligations": [
     {
      "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
      "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0"
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
     },
     {
      "text": "Classificação de risco do sistema de IA e mapeamento do papel exercido (provedor, deployer, importador).",

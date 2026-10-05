@@ -3,11 +3,420 @@
   "reference_date": "2026-10-05",
   "description": "Eventos regulatórios interpretados pelo Regulatory Impact Engine.",
   "rule": "FATO, ANÁLISE, INTERPRETAÇÃO e RECOMENDAÇÃO são objetos distintos. Confiança mínima 0.6. Nenhum evento sem fonte oficial é publicado.",
-  "total": 21,
+  "total": 23,
   "excluded_low_confidence": 0,
   "excluded_no_material_relation": 9
  },
  "events": [
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+   "regulatory_event": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+   "summary": "Background information Date of final decision: 21 July 2026 National case Legal Reference(s): Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 17 (Right to erasure ‘right to be forgotten’) Decision: Administrative fine Key words: Data subject rights Summary of the Decision Origin of the case EXTIA, which specialises in…",
+   "affected_sectors": [
+    "Recrutamento e Seleção",
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "HR Tech",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS"
+   ],
+   "affected_company_types": [
+    "Grande empresa",
+    "PME (pequena e média empresa)",
+    "Startup / empresa em formação",
+    "Provedor de sistema de IA",
+    "Plataforma digital / marketplace",
+    "Setor público",
+    "Ensino e investigação",
+    "Provedor de cloud, infraestrutura ou capacidade computacional"
+   ],
+   "affected_functions": [
+    "Public Policy",
+    "Government Affairs",
+    "Regulatory Affairs",
+    "Jurídico",
+    "Strategy",
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance"
+   ],
+   "obligations": [
+    "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
+    "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
+    "Participação em consultas e códigos de prática quando existir canal aberto.",
+    "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+    "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+    "Informação transparente sobre decisões automatizadas e revisão humana efetiva."
+   ],
+   "deadlines": [
+    {
+     "date": "2026-07-21",
+     "label": "Data referida no texto oficial",
+     "days_remaining": -76
+    }
+   ],
+   "risks": [
+    "Tomar decisão de arquitetura com base em orientação desatualizada.",
+    "Desalinhamento entre o produto e o entendimento da autoridade europeia.",
+    "Custo de retrabalho por implementação tardia de requisitos técnicos.",
+    "Treino ou fine-tuning sem base legal documentada.",
+    "Uso de web scraping e conteúdo pessoal sem avaliação registada.",
+    "Decisões automatizadas sem intervenção humana significativa."
+   ],
+   "opportunities": [
+    "Contribuir para o desenho das regras através de consultas e códigos de prática.",
+    "Usar orientações oficiais como referência de garantia de qualidade interna.",
+    "Redução de risco antes de escalar o produto para novos mercados.",
+    "Uso de orientações do EDPB como argumento de confiança em vendas a clientes regulados.",
+    "Parcerias de dados estruturadas de forma defensável."
+   ],
+   "recommended_actions": [
+    "Assinar as atualizações do AI Office e do registo oficial antes de cada release relevante.",
+    "Registar em ata a versão da orientação usada para decidir.",
+    "Envolver produto e jurídico na leitura de novas orientações.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+    "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+    "Formar produto e marketing sobre limites de uso de dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+   ],
+   "source_kind": "ato",
+   "source_id": "edpb_edpb_europa_eu_news_failure_to_respect_the_rights_of_individuals_the_cnil_fined_extia_eur_300_000_en",
+   "territory": "União Europeia",
+   "regulator": "EDPB",
+   "regulator_key": "edpb",
+   "act_type": "enforcement",
+   "act_type_label": "Enforcement / sanção",
+   "stage": "consulta",
+   "stage_label": "Consulta aberta",
+   "change_date": "2026-09-11",
+   "publication_date": null,
+   "entry_into_force": null,
+   "compliance_deadline": null,
+   "themes": [
+    "consultation",
+    "edpb",
+    "employment",
+    "enforcement"
+   ],
+   "theme_labels": [
+    "Consultas públicas e agenda",
+    "EDPB e proteção de dados em IA",
+    "Trabalho e emprego",
+    "Enforcement e sanções"
+   ],
+   "flags": [
+    "penalty",
+    "consultation"
+   ],
+   "impact_score": 92,
+   "confidence_label": "Interpretação fortemente suportada pela fonte oficial",
+   "requires_legal_review": true,
+   "hedge": "Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+   "watchlist_tags": [
+    "adtech",
+    "cloud",
+    "consultation",
+    "ecommerce",
+    "edpb",
+    "employment",
+    "enforcement",
+    "hr-tech",
+    "marketplaces",
+    "provedores-de-ia",
+    "recrutamento",
+    "saas"
+   ],
+   "fact": {
+    "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+    "description": "Background information Date of final decision: 21 July 2026 National case Legal Reference(s): Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 17 (Right to erasure ‘right to be forgotten’) Decision: Administrative fine Key words: Data subject rights Summary of the Decision Origin of the case EXTIA, which specialises in IT and engineering, recruits consultants for various technical projects from its client companies. In 2024, the French Data Protection Authority (CNIL) received several complaints from former employees",
+    "date": "2026-09-11",
+    "date_label": "Data do item na fonte oficial",
+    "regulator": "EDPB",
+    "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
+    "sources": [
+     {
+      "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+      "url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
+      "type": "fonte primária",
+      "official": true
+     }
+    ],
+    "note": "Texto e data preservados do item do dataset; nenhum fato foi acrescentado."
+   },
+   "analysis": {
+    "why_it_matters": "Leitura: o item é classificado como Consultas públicas e agenda, EDPB e proteção de dados em IA, Trabalho e emprego, o que normalmente desloca obrigações de documentação, transparência ou controlo interno para as equipas responsáveis.",
+    "sector_exposure": [
+     {
+      "slug": "recrutamento",
+      "name": "Recrutamento e Seleção",
+      "why": "Termo do item oficial relacionado ao setor.",
+      "basis": "explicit"
+     },
+     {
+      "slug": "adtech",
+      "name": "AdTech",
+      "why": "Tema «Consultas públicas e agenda» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "cloud",
+      "name": "Cloud",
+      "why": "Tema «Consultas públicas e agenda» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "ecommerce",
+      "name": "E-commerce",
+      "why": "Tema «Consultas públicas e agenda» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "hr-tech",
+      "name": "HR Tech",
+      "why": "Tema «Trabalho e emprego» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "marketplaces",
+      "name": "Marketplaces",
+      "why": "Tema «Consultas públicas e agenda» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "provedores-de-ia",
+      "name": "Provedores de IA",
+      "why": "Tema «Consultas públicas e agenda» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "saas",
+      "name": "SaaS",
+      "why": "Tema «Consultas públicas e agenda» afeta tipicamente este setor.",
+      "basis": "thematic"
+     }
+    ],
+    "obligations": [
+     {
+      "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
+      "reference": "Consultas públicas e agenda",
+      "basis": "Fonte menciona: consultas públicas e agenda, enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
+      "reference": "Consultas públicas e agenda",
+      "basis": "Fonte menciona: consultas públicas e agenda, enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
+      "reference": "Consultas públicas e agenda",
+      "basis": "Fonte menciona: consultas públicas e agenda, enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+      "reference": "Consultas públicas e agenda",
+      "basis": "Fonte menciona: consultas públicas e agenda, enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+      "reference": "Consultas públicas e agenda",
+      "basis": "Fonte menciona: consultas públicas e agenda, enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+      "reference": "Consultas públicas e agenda",
+      "basis": "Fonte menciona: consultas públicas e agenda, enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     }
+    ],
+    "risks": [
+     {
+      "text": "Tomar decisão de arquitetura com base em orientação desatualizada.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Desalinhamento entre o produto e o entendimento da autoridade europeia.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Custo de retrabalho por implementação tardia de requisitos técnicos.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Treino ou fine-tuning sem base legal documentada.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Uso de web scraping e conteúdo pessoal sem avaliação registada.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Decisões automatizadas sem intervenção humana significativa.",
+      "event_id": null,
+      "confidence": 0.8
+     }
+    ],
+    "opportunities": [
+     {
+      "text": "Contribuir para o desenho das regras através de consultas e códigos de prática.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Usar orientações oficiais como referência de garantia de qualidade interna.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Redução de risco antes de escalar o produto para novos mercados.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Uso de orientações do EDPB como argumento de confiança em vendas a clientes regulados.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Parcerias de dados estruturadas de forma defensável.",
+      "confidence": 0.8
+     }
+    ],
+    "confidence": 0.8
+   },
+   "interpretation": {
+    "text": "Exposição provável em: Recrutamento e Seleção, AdTech, Cloud, E-commerce. Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+    "company_types": [
+     "large-enterprise",
+     "sme",
+     "startup",
+     "ai-system-provider",
+     "digital-platform",
+     "public-sector",
+     "research",
+     "cloud-infra"
+    ],
+    "functions": [
+     "public-policy",
+     "government-affairs",
+     "regulatory-affairs",
+     "legal",
+     "strategy",
+     "dpo",
+     "privacy",
+     "compliance"
+    ],
+    "flags": [
+     "penalty",
+     "consultation"
+    ],
+    "confidence": 0.8,
+    "limits": "Classificação por palavras-chave e tema. Não estabelece que qualquer organização específica esteja juridicamente enquadrada no ato."
+   },
+   "recommendations": {
+    "actions": [
+     {
+      "text": "Assinar as atualizações do AI Office e do registo oficial antes de cada release relevante.",
+      "theme": "Consultas públicas e agenda",
+      "owner_function": "regulatory-affairs",
+      "priority": "Alta"
+     },
+     {
+      "text": "Registar em ata a versão da orientação usada para decidir.",
+      "theme": "Consultas públicas e agenda",
+      "owner_function": "regulatory-affairs",
+      "priority": "Alta"
+     },
+     {
+      "text": "Envolver produto e jurídico na leitura de novas orientações.",
+      "theme": "Consultas públicas e agenda",
+      "owner_function": "regulatory-affairs",
+      "priority": "Alta"
+     },
+     {
+      "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+      "theme": "Consultas públicas e agenda",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     },
+     {
+      "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+      "theme": "Consultas públicas e agenda",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     },
+     {
+      "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
+      "theme": "Consultas públicas e agenda",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     }
+    ],
+    "priority": "urgent",
+    "sla": "agir em dias",
+    "owner_functions": [
+     "public-policy",
+     "government-affairs",
+     "regulatory-affairs",
+     "legal",
+     "strategy",
+     "dpo",
+     "privacy",
+     "compliance"
+    ],
+    "next_step": "Assinar as atualizações do AI Office e do registo oficial antes de cada release relevante."
+   },
+   "so_what": {
+    "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em Recrutamento e Seleção, AdTech, Cloud.",
+    "functions": [
+     "Public Policy",
+     "Government Affairs",
+     "Regulatory Affairs",
+     "Jurídico",
+     "Strategy",
+     "Data Protection Officer",
+     "Privacy",
+     "Compliance"
+    ],
+    "possible_costs": "Custo de adequação não quantificado pelo monitor: depende do número de sistemas afetados, da obrigação aplicável e do desenho do controlo.",
+    "adaptation_needed": "Provável necessidade de adequação em documentação, contratos ou controlos internos quando a obrigação se confirmar aplicável.",
+    "risk_of_inaction": "Tomar decisão de arquitetura com base em orientação desatualizada.",
+    "next_step": "Assinar as atualizações do AI Office e do registo oficial antes de cada release relevante."
+   },
+   "diff": null,
+   "changes_summary": null,
+   "published": true,
+   "relevance": "forte",
+   "deadlines_full": [
+    {
+     "date": "2026-07-21",
+     "label": "Data referida no texto oficial",
+     "tracker": false,
+     "source_title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
+     "basis": "Data escrita no texto oficial preservado no dataset.",
+     "days_remaining": -76
+    }
+   ]
+  },
   {
    "id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
    "regulatory_event": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
@@ -1256,6 +1665,413 @@
    "deadlines_full": []
   },
   {
+   "id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+   "regulatory_event": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+   "summary": "Background information Date of final decision: 3 September 2026 National case Controller: Hôpital Privé de la Loire Legal Reference: Article 32 (Security of processing), Article 34 (Communication of a personal data breach to the data subject), Decision: Administrative fine Keywords: Cybersecurity, Personal data breaches, Health and research Summary of the Decision Origin of the case In summer…",
+   "affected_sectors": [
+    "Saúde",
+    "Cibersegurança",
+    "AdTech",
+    "Bancos",
+    "Cloud",
+    "Data Centers",
+    "E-commerce",
+    "Energia"
+   ],
+   "affected_company_types": [
+    "Plataforma digital / marketplace",
+    "Grande empresa",
+    "PME (pequena e média empresa)",
+    "Provedor de cloud, infraestrutura ou capacidade computacional",
+    "Operador (deployer) de sistema de IA",
+    "Serviços profissionais (jurídico, consultoria, auditoria)",
+    "Instituição financeira regulada",
+    "Indústria transformadora"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Cybersecurity",
+    "Risk",
+    "Engenharia / ML"
+   ],
+   "obligations": [
+    "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+    "Registo do risco e do plano de correção no sistema de compliance.",
+    "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+    "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+    "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+    "Informação transparente sobre decisões automatizadas e revisão humana efetiva."
+   ],
+   "deadlines": [
+    {
+     "date": "2026-09-03",
+     "label": "Data referida no texto oficial",
+     "days_remaining": -32
+    }
+   ],
+   "risks": [
+    "Repetir o padrão sancionado na sua própria operação.",
+    "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+    "Medidas corretivas que obrigam a alterar produto já em produção.",
+    "Perda de confiança de clientes e de investidores após incidente público.",
+    "Treino ou fine-tuning sem base legal documentada.",
+    "Uso de web scraping e conteúdo pessoal sem avaliação registada."
+   ],
+   "opportunities": [
+    "Utilizar as decisões publicadas como teste-padrão interno antes de uma auditoria.",
+    "Demonstrar diligência documentada a clientes regulados e seguradoras.",
+    "Redução de risco antes de escalar o produto para novos mercados.",
+    "Uso de orientações do EDPB como argumento de confiança em vendas a clientes regulados.",
+    "Contribuir para o desenho das regras através de consultas e códigos de prática."
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+    "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+    "Formar produto e marketing sobre limites de uso de dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+   ],
+   "source_kind": "ato",
+   "source_id": "edpb_edpb_europa_eu_news_health_data_breach_the_cnil_fined_hopital_prive_de_la_loire_eur_500_000_en",
+   "territory": "União Europeia",
+   "regulator": "EDPB",
+   "regulator_key": "edpb",
+   "act_type": "enforcement",
+   "act_type_label": "Enforcement / sanção",
+   "stage": "nao_classificado",
+   "stage_label": "A classificar",
+   "change_date": "2026-09-09",
+   "publication_date": null,
+   "entry_into_force": null,
+   "compliance_deadline": null,
+   "themes": [
+    "edpb",
+    "cybersecurity",
+    "enforcement",
+    "health_data"
+   ],
+   "theme_labels": [
+    "EDPB e proteção de dados em IA",
+    "Cibersegurança e resiliência",
+    "Enforcement e sanções",
+    "Dados de saúde e EHDS"
+   ],
+   "flags": [
+    "penalty"
+   ],
+   "impact_score": 89,
+   "confidence_label": "Interpretação fortemente suportada pela fonte oficial",
+   "requires_legal_review": true,
+   "hedge": "Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+   "watchlist_tags": [
+    "adtech",
+    "bancos",
+    "ciberseguranca",
+    "cloud",
+    "cybersecurity",
+    "data-centers",
+    "ecommerce",
+    "edpb",
+    "energia",
+    "enforcement",
+    "health_data",
+    "saude"
+   ],
+   "fact": {
+    "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+    "description": "Background information Date of final decision: 3 September 2026 National case Controller: Hôpital Privé de la Loire Legal Reference: Article 32 (Security of processing), Article 34 (Communication of a personal data breach to the data subject), Decision: Administrative fine Keywords: Cybersecurity, Personal data breaches, Health and research Summary of the Decision Origin of the case In summer 2025, an attacker managed to connect to the Computerised Patient Summary (DPI) of the Hôpital Privé de la Loire (Loire’s private hospital), which centralises all the data of the individuals under care. It",
+    "date": "2026-09-09",
+    "date_label": "Data do item na fonte oficial",
+    "regulator": "EDPB",
+    "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
+    "sources": [
+     {
+      "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+      "url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
+      "type": "fonte primária",
+      "official": true
+     }
+    ],
+    "note": "Texto e data preservados do item do dataset; nenhum fato foi acrescentado."
+   },
+   "analysis": {
+    "why_it_matters": "Leitura: o item é classificado como EDPB e proteção de dados em IA, Cibersegurança e resiliência, Enforcement e sanções, o que normalmente desloca obrigações de documentação, transparência ou controlo interno para as equipas responsáveis.",
+    "sector_exposure": [
+     {
+      "slug": "saude",
+      "name": "Saúde",
+      "why": "Termo do item oficial relacionado ao setor.",
+      "basis": "explicit"
+     },
+     {
+      "slug": "ciberseguranca",
+      "name": "Cibersegurança",
+      "why": "Termo do item oficial relacionado ao setor.",
+      "basis": "explicit"
+     },
+     {
+      "slug": "adtech",
+      "name": "AdTech",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "bancos",
+      "name": "Bancos",
+      "why": "Tema «Cibersegurança e resiliência» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "cloud",
+      "name": "Cloud",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "data-centers",
+      "name": "Data Centers",
+      "why": "Tema «Cibersegurança e resiliência» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "ecommerce",
+      "name": "E-commerce",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "energia",
+      "name": "Energia",
+      "why": "Tema «Cibersegurança e resiliência» afeta tipicamente este setor.",
+      "basis": "thematic"
+     }
+    ],
+    "obligations": [
+     {
+      "text": "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções, dados de saúde e ehds",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Registo do risco e do plano de correção no sistema de compliance.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções, dados de saúde e ehds",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções, dados de saúde e ehds",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções, dados de saúde e ehds",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções, dados de saúde e ehds",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções, dados de saúde e ehds",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     }
+    ],
+    "risks": [
+     {
+      "text": "Repetir o padrão sancionado na sua própria operação.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Medidas corretivas que obrigam a alterar produto já em produção.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Perda de confiança de clientes e de investidores após incidente público.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Treino ou fine-tuning sem base legal documentada.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Uso de web scraping e conteúdo pessoal sem avaliação registada.",
+      "event_id": null,
+      "confidence": 0.8
+     }
+    ],
+    "opportunities": [
+     {
+      "text": "Utilizar as decisões publicadas como teste-padrão interno antes de uma auditoria.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Demonstrar diligência documentada a clientes regulados e seguradoras.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Redução de risco antes de escalar o produto para novos mercados.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Uso de orientações do EDPB como argumento de confiança em vendas a clientes regulados.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Contribuir para o desenho das regras através de consultas e códigos de prática.",
+      "confidence": 0.8
+     }
+    ],
+    "confidence": 0.8
+   },
+   "interpretation": {
+    "text": "Exposição provável em: Saúde, Cibersegurança, AdTech, Bancos. Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+    "company_types": [
+     "digital-platform",
+     "large-enterprise",
+     "sme",
+     "cloud-infra",
+     "ai-deployer",
+     "professional-services",
+     "financial-institution",
+     "manufacturer"
+    ],
+    "functions": [
+     "dpo",
+     "privacy",
+     "compliance",
+     "legal",
+     "data-governance",
+     "cybersecurity",
+     "risk",
+     "engineering"
+    ],
+    "flags": [
+     "penalty"
+    ],
+    "confidence": 0.8,
+    "limits": "Classificação por palavras-chave e tema. Não estabelece que qualquer organização específica esteja juridicamente enquadrada no ato."
+   },
+   "recommendations": {
+    "actions": [
+     {
+      "text": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     },
+     {
+      "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     },
+     {
+      "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     }
+    ],
+    "priority": "urgent",
+    "sla": "agir em dias",
+    "owner_functions": [
+     "dpo",
+     "privacy",
+     "compliance",
+     "legal",
+     "data-governance",
+     "cybersecurity",
+     "risk",
+     "engineering"
+    ],
+    "next_step": "Atualizar a matriz de risco com o padrão sancionado nesta decisão."
+   },
+   "so_what": {
+    "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em Saúde, Cibersegurança, AdTech.",
+    "functions": [
+     "Data Protection Officer",
+     "Privacy",
+     "Compliance",
+     "Jurídico",
+     "Data Governance",
+     "Cybersecurity",
+     "Risk",
+     "Engenharia / ML"
+    ],
+    "possible_costs": "Custo de adequação não quantificado pelo monitor: depende do número de sistemas afetados, da obrigação aplicável e do desenho do controlo.",
+    "adaptation_needed": "Provável necessidade de adequação em documentação, contratos ou controlos internos quando a obrigação se confirmar aplicável.",
+    "risk_of_inaction": "Repetir o padrão sancionado na sua própria operação.",
+    "next_step": "Atualizar a matriz de risco com o padrão sancionado nesta decisão."
+   },
+   "diff": null,
+   "changes_summary": null,
+   "published": true,
+   "relevance": "forte",
+   "deadlines_full": [
+    {
+     "date": "2026-09-03",
+     "label": "Data referida no texto oficial",
+     "tracker": false,
+     "source_title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
+     "basis": "Data escrita no texto oficial preservado no dataset.",
+     "days_remaining": -32
+    }
+   ]
+  },
+  {
    "id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
    "regulatory_event": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
    "summary": "Background information Date of final decision: 3 September 2026 National case Controller: Hôpital Privé de la Loire Legal Reference: Article 32 (Security of processing), Article 34 (Communication of a personal data breach to the data subject), Decision: Administrative fine Keywords: Cybersecurity, Personal data breaches, Health and research Summary of the Decision Origin of the case In summer…",
@@ -2073,7 +2889,7 @@
   },
   {
    "id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
-   "regulatory_event": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+   "regulatory_event": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
    "summary": "Background information Date of final decision: 21 September 2026 National case Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 6 (Lawfulness of processing), Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject) and Article 13 (Information to be provided where personal data are collected…",
    "affected_sectors": [
     "AdTech",
@@ -2189,7 +3005,7 @@
     "saude"
    ],
    "fact": {
-    "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+    "title": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
     "description": "Background information Date of final decision: 21 September 2026 National case Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 6 (Lawfulness of processing), Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine, compliance order Key words: GDPR enforcement, technology, accountability, data subjects rights Summary of the Decision Origin of the case The Irish Da",
     "date": "2026-09-23",
     "date_label": "Data do item na fonte oficial",
@@ -2197,7 +3013,7 @@
     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
     "sources": [
      {
-      "title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+      "title": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
       "url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
       "type": "fonte primária",
       "official": true
@@ -2459,7 +3275,7 @@
      "date": "2026-09-21",
      "label": "Data referida no texto oficial",
      "tracker": false,
-     "source_title": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+     "source_title": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
      "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
      "basis": "Data escrita no texto oficial preservado no dataset.",
      "days_remaining": -14

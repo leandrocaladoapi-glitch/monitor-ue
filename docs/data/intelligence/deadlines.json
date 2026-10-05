@@ -2,7 +2,7 @@
  "meta": {
   "reference_date": "2026-10-05",
   "description": "Calendário regulatório operacional. Cada prazo traz a data escrita na fonte oficial, a norma e a ação necessária.",
-  "total": 31,
+  "total": 33,
   "upcoming": 8,
   "rule": "Somente datas escritas em texto oficial preservado no dataset; nenhuma data é estimada."
  },
@@ -532,6 +532,44 @@
    "source_url": "https://www.edpb.europa.eu/news/edpb-calls-for-legal-basis-for-cross-regulatory-information-sharing_en"
   },
   {
+   "id": "dl_re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f_1",
+   "date": "2026-07-21",
+   "days_remaining": -76,
+   "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+   "norm_source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
+   "obligation": "Data referida no texto oficial",
+   "entity": "Grande empresa, PME (pequena e média empresa), Startup / empresa em formação",
+   "affected_functions": [
+    "Public Policy",
+    "Government Affairs",
+    "Regulatory Affairs",
+    "Jurídico",
+    "Strategy",
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance"
+   ],
+   "affected_sectors": [
+    "Recrutamento e Seleção",
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "HR Tech",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS"
+   ],
+   "action_needed": "Assinar as atualizações do AI Office e do registo oficial antes de cada release relevante.",
+   "priority": "urgent",
+   "impact_level": "critical",
+   "urgency": "histórico",
+   "status": "cumprido",
+   "regulator": "EDPB",
+   "basis": "Data escrita no texto oficial preservado no dataset.",
+   "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+   "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+  },
+  {
    "id": "dl_re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0_1",
    "date": "2026-07-21",
    "days_remaining": -76,
@@ -743,6 +781,44 @@
    "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
   },
   {
+   "id": "dl_re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4_1",
+   "date": "2026-09-03",
+   "days_remaining": -32,
+   "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+   "norm_source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
+   "obligation": "Data referida no texto oficial",
+   "entity": "Plataforma digital / marketplace, Grande empresa, PME (pequena e média empresa)",
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Cybersecurity",
+    "Risk",
+    "Engenharia / ML"
+   ],
+   "affected_sectors": [
+    "Saúde",
+    "Cibersegurança",
+    "AdTech",
+    "Bancos",
+    "Cloud",
+    "Data Centers",
+    "E-commerce",
+    "Energia"
+   ],
+   "action_needed": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+   "priority": "urgent",
+   "impact_level": "critical",
+   "urgency": "histórico",
+   "status": "cumprido",
+   "regulator": "EDPB",
+   "basis": "Data escrita no texto oficial preservado no dataset.",
+   "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+   "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+  },
+  {
    "id": "dl_re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5_1",
    "date": "2026-09-03",
    "days_remaining": -32,
@@ -784,7 +860,7 @@
    "id": "dl_re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85_1",
    "date": "2026-09-21",
    "days_remaining": -14,
-   "norm": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+   "norm": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
    "norm_source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
    "obligation": "Data referida no texto oficial",
    "entity": "Plataforma digital / marketplace, Grande empresa, PME (pequena e média empresa)",

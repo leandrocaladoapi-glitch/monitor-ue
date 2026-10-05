@@ -3,12 +3,12 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 23,
+    "total": 25,
     "por_orgao": {
-      "edpb": 10,
+      "edpb": 12,
       "eu_commission": 13
     },
-    "indice_total": 23,
+    "indice_total": 25,
     "execucao": "2026-10-05"
   },
   "atos": [
@@ -216,7 +216,7 @@
       "id": "edpb_edpb_europa_eu_news_the_irish_data_protection_commission_fines_google_403_000_000_eur_following_inquiry_en",
       "orgao": "edpb",
       "tipo": "orientacao",
-      "titulo": "The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data",
+      "titulo": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
       "descricao": "Background information Date of final decision: 21 September 2026 National case Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 6 (Lawfulness of processing), Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine, compliance order Key words: GDPR enforcement, technology, accountability, data subjects rights Summary of the Decision Origin of the case The Irish Da",
       "data": "2026-09-23",
       "url_oficial": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
@@ -229,12 +229,20 @@
       "situacao": null,
       "tipo_ato": null,
       "hierarquia": null,
-      "texto_hash": "sha1:8a4494639da8da63",
-      "ultima_verificacao": "2026-10-05T09:18:05-03:00",
-      "ultima_execucao": "run_2026_10_05_0918",
+      "texto_hash": "sha1:5773d4fe57e6c94e",
+      "ultima_verificacao": "2026-10-05T14:23:01-03:00",
+      "ultima_execucao": "run_2026_10_05_1423",
       "primeira_deteccao": "2026-09-23T07:00:31-03:00",
       "id_execucao_primeira": "run_2026_09_23_0700",
-      "historico": []
+      "historico": [
+        {
+          "data_deteccao": "2026-10-05T14:23:01-03:00",
+          "id_execucao": "run_2026_10_05_1423",
+          "campo": "texto",
+          "anterior": "sha1:8a4494639da8da63",
+          "novo": "sha1:5773d4fe57e6c94e"
+        }
+      ]
     },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_1942",
@@ -350,8 +358,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:d1e1dc9a969fb478",
-      "ultima_verificacao": "2026-10-05T09:18:05-03:00",
-      "ultima_execucao": "run_2026_10_05_0918",
+      "ultima_verificacao": "2026-10-05T14:23:01-03:00",
+      "ultima_execucao": "run_2026_10_05_1423",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": [
@@ -396,6 +404,30 @@
       "historico": []
     },
     {
+      "id": "edpb_edpb_europa_eu_news_failure_to_respect_the_rights_of_individuals_the_cnil_fined_extia_eur_300_000_en",
+      "orgao": "edpb",
+      "tipo": "orientacao",
+      "titulo": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+      "descricao": "Background information Date of final decision: 21 July 2026 National case Legal Reference(s): Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 17 (Right to erasure ‘right to be forgotten’) Decision: Administrative fine Key words: Data subject rights Summary of the Decision Origin of the case EXTIA, which specialises in IT and engineering, recruits consultants for various technical projects from its client companies. In 2024, the French Data Protection Authority (CNIL) received several complaints from former employees",
+      "data": "2026-09-11",
+      "url_oficial": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
+      "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
+      "canais": [
+        "notícias e guidelines (RSS oficial)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:075867e4826a517b",
+      "ultima_verificacao": "2026-10-05T14:23:01-03:00",
+      "ultima_execucao": "run_2026_10_05_1423",
+      "primeira_deteccao": "2026-10-05T14:23:01-03:00",
+      "id_execucao_primeira": "run_2026_10_05_1423",
+      "historico": []
+    },
+    {
       "id": "edpb_edpb_europa_eu_news_failure_to_respect_the_rights_of_individuals_the_cnil_fined_extia_300_000_eur_en",
       "orgao": "edpb",
       "tipo": "orientacao",
@@ -417,6 +449,30 @@
       "ultima_execucao": "run_2026_10_05_0918",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
+      "historico": []
+    },
+    {
+      "id": "edpb_edpb_europa_eu_news_health_data_breach_the_cnil_fined_hopital_prive_de_la_loire_eur_500_000_en",
+      "orgao": "edpb",
+      "tipo": "orientacao",
+      "titulo": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+      "descricao": "Background information Date of final decision: 3 September 2026 National case Controller: Hôpital Privé de la Loire Legal Reference: Article 32 (Security of processing), Article 34 (Communication of a personal data breach to the data subject), Decision: Administrative fine Keywords: Cybersecurity, Personal data breaches, Health and research Summary of the Decision Origin of the case In summer 2025, an attacker managed to connect to the Computerised Patient Summary (DPI) of the Hôpital Privé de la Loire (Loire’s private hospital), which centralises all the data of the individuals under care. It",
+      "data": "2026-09-09",
+      "url_oficial": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
+      "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
+      "canais": [
+        "notícias e guidelines (RSS oficial)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:2faed5a3020629c5",
+      "ultima_verificacao": "2026-10-05T14:23:01-03:00",
+      "ultima_execucao": "run_2026_10_05_1423",
+      "primeira_deteccao": "2026-10-05T14:23:01-03:00",
+      "id_execucao_primeira": "run_2026_10_05_1423",
       "historico": []
     },
     {
@@ -461,8 +517,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:60e474bdba39fbf7",
-      "ultima_verificacao": "2026-10-05T09:18:05-03:00",
-      "ultima_execucao": "run_2026_10_05_0918",
+      "ultima_verificacao": "2026-10-05T14:23:01-03:00",
+      "ultima_execucao": "run_2026_10_05_1423",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -485,26 +541,12 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:b376184e0ea66969",
-      "ultima_verificacao": "2026-10-05T09:18:05-03:00",
-      "ultima_execucao": "run_2026_10_05_0918",
+      "ultima_verificacao": "2026-10-05T14:23:01-03:00",
+      "ultima_execucao": "run_2026_10_05_1423",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": [
         {
-          "data_deteccao": "2026-10-02T08:07:19-03:00",
-          "id_execucao": "run_2026_10_02_0807",
-          "campo": "texto",
-          "anterior": "sha1:b376184e0ea66969",
-          "novo": "sha1:27d90c0b6c82a82c"
-        },
-        {
-          "data_deteccao": "2026-10-02T08:07:19-03:00",
-          "id_execucao": "run_2026_10_02_0807",
-          "campo": "texto",
-          "anterior": "sha1:27d90c0b6c82a82c",
-          "novo": "sha1:b376184e0ea66969"
-        },
-        {
           "data_deteccao": "2026-10-02T11:57:34-03:00",
           "id_execucao": "run_2026_10_02_1157",
           "campo": "texto",
@@ -626,6 +668,20 @@
         {
           "data_deteccao": "2026-10-05T09:18:05-03:00",
           "id_execucao": "run_2026_10_05_0918",
+          "campo": "texto",
+          "anterior": "sha1:27d90c0b6c82a82c",
+          "novo": "sha1:b376184e0ea66969"
+        },
+        {
+          "data_deteccao": "2026-10-05T14:23:01-03:00",
+          "id_execucao": "run_2026_10_05_1423",
+          "campo": "texto",
+          "anterior": "sha1:b376184e0ea66969",
+          "novo": "sha1:27d90c0b6c82a82c"
+        },
+        {
+          "data_deteccao": "2026-10-05T14:23:01-03:00",
+          "id_execucao": "run_2026_10_05_1423",
           "campo": "texto",
           "anterior": "sha1:27d90c0b6c82a82c",
           "novo": "sha1:b376184e0ea66969"
@@ -650,8 +706,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:a3ef6a31dafdd114",
-      "ultima_verificacao": "2026-10-05T09:18:05-03:00",
-      "ultima_execucao": "run_2026_10_05_0918",
+      "ultima_verificacao": "2026-10-05T14:23:01-03:00",
+      "ultima_execucao": "run_2026_10_05_1423",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -674,8 +730,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:733d5312239886ee",
-      "ultima_verificacao": "2026-10-05T09:18:05-03:00",
-      "ultima_execucao": "run_2026_10_05_0918",
+      "ultima_verificacao": "2026-10-05T14:23:01-03:00",
+      "ultima_execucao": "run_2026_10_05_1423",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -870,9 +926,21 @@
         "v": "2026-09-22"
       },
       "edpb_edpb_europa_eu_news_the_irish_data_protection_commission_fines_google_403_000_000_eur_following_inquiry_en": {
-        "h": "sha1:8a4494639da8da63",
+        "h": "sha1:5773d4fe57e6c94e",
         "s": null,
         "d": "2026-09-23T07:00:31-03:00",
+        "v": "2026-10-05"
+      },
+      "edpb_edpb_europa_eu_news_failure_to_respect_the_rights_of_individuals_the_cnil_fined_extia_eur_300_000_en": {
+        "h": "sha1:075867e4826a517b",
+        "s": null,
+        "d": "2026-10-05T14:23:01-03:00",
+        "v": "2026-10-05"
+      },
+      "edpb_edpb_europa_eu_news_health_data_breach_the_cnil_fined_hopital_prive_de_la_loire_eur_500_000_en": {
+        "h": "sha1:2faed5a3020629c5",
+        "s": null,
+        "d": "2026-10-05T14:23:01-03:00",
         "v": "2026-10-05"
       }
     },
