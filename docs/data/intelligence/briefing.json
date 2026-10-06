@@ -4,7 +4,7 @@
   "rule": "Cada item tem fonte oficial; itens sem fonte não entram no brief."
  },
  "daily": {
-  "reference_date": "2026-10-05",
+  "reference_date": "2026-10-06",
   "reading_time_minutes": 5,
   "sections": [
    {
@@ -24,7 +24,7 @@
       "date": "2026-10-15",
       "label": "Data referida no texto oficial",
       "norm": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date",
-      "days_remaining": 10,
+      "days_remaining": 9,
       "event_id": "re_ato_edpb-edpb-europa-eu-news-stakeholder-event-on-guidelines-c9491c",
       "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en"
      },
@@ -32,7 +32,7 @@
       "date": "2026-12-02",
       "label": "Aplicação das proibições",
       "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
-      "days_remaining": 58,
+      "days_remaining": 57,
       "event_id": "re_norma_32026r1744",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
      },
@@ -40,7 +40,7 @@
       "date": "2027-12-02",
       "label": "Obrigações de alto risco — Anexo III",
       "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
-      "days_remaining": 423,
+      "days_remaining": 422,
       "event_id": "re_norma_32026r1744",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
      },
@@ -48,7 +48,7 @@
       "date": "2027-12-02",
       "label": "Obrigações de alto risco — Anexo III",
       "norm": "Regulamento (UE) 2024/1689 — AI Act",
-      "days_remaining": 423,
+      "days_remaining": 422,
       "event_id": "re_norma_32024r1689",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
      },
@@ -56,7 +56,7 @@
       "date": "2027-12-02",
       "label": "Obrigações de alto risco — Anexo III",
       "norm": "2021/0106(COD)",
-      "days_remaining": 423,
+      "days_remaining": 422,
       "event_id": "re_procedimento_ue-2021-0106-cod",
       "source_url": "https://data.europarl.europa.eu/api/v2/procedures/2021-0106?format=application/ld%2Bjson"
      },
@@ -64,7 +64,7 @@
       "date": "2028-08-02",
       "label": "Obrigações de alto risco — Anexo I",
       "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
-      "days_remaining": 667,
+      "days_remaining": 666,
       "event_id": "re_norma_32026r1744",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
      }
@@ -101,14 +101,6 @@
        "Saúde"
       ],
       "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2035"
-     },
-     {
-      "title": "Remarks by Commissioner McGrath at the General Assembly of the United Nations' Side-Event on Shaping Democratic Agency over the course of AI Development",
-      "impact_level": "low",
-      "priority": "monitor",
-      "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-bc3d9e",
-      "sectors": [],
-      "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1997"
      }
     ],
     "empty_message": "Nenhuma consulta aberta com fonte oficial neste recorte."
@@ -154,25 +146,25 @@
     "items": [
      {
       "title": "Data referida no texto oficial",
-      "reason": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date · 10 dias",
+      "reason": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date · 9 dias",
       "event_id": "re_ato_edpb-edpb-europa-eu-news-stakeholder-event-on-guidelines-c9491c",
       "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en"
      },
      {
       "title": "Aplicação das proibições",
-      "reason": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI · 58 dias",
+      "reason": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI · 57 dias",
       "event_id": "re_norma_32026r1744",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
      },
      {
       "title": "Obrigações de alto risco — Anexo III",
-      "reason": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI · 423 dias",
+      "reason": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI · 422 dias",
       "event_id": "re_norma_32026r1744",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
      },
      {
       "title": "Obrigações de alto risco — Anexo III",
-      "reason": "Regulamento (UE) 2024/1689 — AI Act · 423 dias",
+      "reason": "Regulamento (UE) 2024/1689 — AI Act · 422 dias",
       "event_id": "re_norma_32024r1689",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
      }
@@ -182,9 +174,9 @@
   ]
  },
  "weekly": {
-  "reference_date": "2026-10-05",
+  "reference_date": "2026-10-06",
   "reading_time_minutes": 5,
-  "period": "2026-09-28 a 2026-10-05",
+  "period": "2026-09-29 a 2026-10-06",
   "sections": [
    {
     "title": "1. Mudanças críticas",
@@ -330,7 +322,7 @@
       "date": "2026-10-15",
       "label": "Data referida no texto oficial",
       "norm": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date",
-      "days_remaining": 10,
+      "days_remaining": 9,
       "event_id": "re_ato_edpb-edpb-europa-eu-news-stakeholder-event-on-guidelines-c9491c",
       "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en"
      },
@@ -338,7 +330,7 @@
       "date": "2026-12-02",
       "label": "Aplicação das proibições",
       "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
-      "days_remaining": 58,
+      "days_remaining": 57,
       "event_id": "re_norma_32026r1744",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
      },
@@ -346,7 +338,7 @@
       "date": "2027-12-02",
       "label": "Obrigações de alto risco — Anexo III",
       "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
-      "days_remaining": 423,
+      "days_remaining": 422,
       "event_id": "re_norma_32026r1744",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
      },
@@ -354,7 +346,7 @@
       "date": "2027-12-02",
       "label": "Obrigações de alto risco — Anexo III",
       "norm": "Regulamento (UE) 2024/1689 — AI Act",
-      "days_remaining": 423,
+      "days_remaining": 422,
       "event_id": "re_norma_32024r1689",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
      },
@@ -362,7 +354,7 @@
       "date": "2027-12-02",
       "label": "Obrigações de alto risco — Anexo III",
       "norm": "2021/0106(COD)",
-      "days_remaining": 423,
+      "days_remaining": 422,
       "event_id": "re_procedimento_ue-2021-0106-cod",
       "source_url": "https://data.europarl.europa.eu/api/v2/procedures/2021-0106?format=application/ld%2Bjson"
      },
@@ -370,7 +362,7 @@
       "date": "2028-08-02",
       "label": "Obrigações de alto risco — Anexo I",
       "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
-      "days_remaining": 667,
+      "days_remaining": 666,
       "event_id": "re_norma_32026r1744",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
      }
