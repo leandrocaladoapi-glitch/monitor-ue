@@ -3,15 +3,39 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 25,
+    "total": 26,
     "por_orgao": {
       "edpb": 12,
-      "eu_commission": 13
+      "eu_commission": 14
     },
-    "indice_total": 25,
+    "indice_total": 26,
     "execucao": "2026-10-06"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2064",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Commission registers European Citizens' Initiative for sovereign European AI domains",
+      "descricao": "European Commission Press release Brussels, 06 Oct 2026 Today, the European Commission registered the European Citizens' Initiative (ECI) entitled ‘Creation of a European Digital Space (.IA) for Sovereign AI Governance'.",
+      "data": "2026-10-05",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2064",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:ac73c33c5526547f",
+      "ultima_verificacao": "2026-10-06T12:25:33-03:00",
+      "ultima_execucao": "run_2026_10_06_1225",
+      "primeira_deteccao": "2026-10-06T12:25:33-03:00",
+      "id_execucao_primeira": "run_2026_10_06_1225",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2041",
       "orgao": "eu_commission",
@@ -230,8 +254,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:5773d4fe57e6c94e",
-      "ultima_verificacao": "2026-10-06T09:02:44-03:00",
-      "ultima_execucao": "run_2026_10_06_0902",
+      "ultima_verificacao": "2026-10-06T12:25:33-03:00",
+      "ultima_execucao": "run_2026_10_06_1225",
       "primeira_deteccao": "2026-09-23T07:00:31-03:00",
       "id_execucao_primeira": "run_2026_09_23_0700",
       "historico": [
@@ -358,8 +382,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:d1e1dc9a969fb478",
-      "ultima_verificacao": "2026-10-06T09:02:44-03:00",
-      "ultima_execucao": "run_2026_10_06_0902",
+      "ultima_verificacao": "2026-10-06T12:25:33-03:00",
+      "ultima_execucao": "run_2026_10_06_1225",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": [
@@ -421,8 +445,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:075867e4826a517b",
-      "ultima_verificacao": "2026-10-06T09:02:44-03:00",
-      "ultima_execucao": "run_2026_10_06_0902",
+      "ultima_verificacao": "2026-10-06T12:25:33-03:00",
+      "ultima_execucao": "run_2026_10_06_1225",
       "primeira_deteccao": "2026-10-05T14:23:01-03:00",
       "id_execucao_primeira": "run_2026_10_05_1423",
       "historico": []
@@ -469,8 +493,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:2faed5a3020629c5",
-      "ultima_verificacao": "2026-10-06T09:02:44-03:00",
-      "ultima_execucao": "run_2026_10_06_0902",
+      "ultima_verificacao": "2026-10-06T12:25:33-03:00",
+      "ultima_execucao": "run_2026_10_06_1225",
       "primeira_deteccao": "2026-10-05T14:23:01-03:00",
       "id_execucao_primeira": "run_2026_10_05_1423",
       "historico": []
@@ -517,8 +541,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:60e474bdba39fbf7",
-      "ultima_verificacao": "2026-10-06T09:02:44-03:00",
-      "ultima_execucao": "run_2026_10_06_0902",
+      "ultima_verificacao": "2026-10-06T12:25:33-03:00",
+      "ultima_execucao": "run_2026_10_06_1225",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -541,26 +565,12 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:b376184e0ea66969",
-      "ultima_verificacao": "2026-10-06T09:02:44-03:00",
-      "ultima_execucao": "run_2026_10_06_0902",
+      "ultima_verificacao": "2026-10-06T12:25:33-03:00",
+      "ultima_execucao": "run_2026_10_06_1225",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": [
         {
-          "data_deteccao": "2026-10-02T17:56:56-03:00",
-          "id_execucao": "run_2026_10_02_1756",
-          "campo": "texto",
-          "anterior": "sha1:b376184e0ea66969",
-          "novo": "sha1:27d90c0b6c82a82c"
-        },
-        {
-          "data_deteccao": "2026-10-02T17:56:56-03:00",
-          "id_execucao": "run_2026_10_02_1756",
-          "campo": "texto",
-          "anterior": "sha1:27d90c0b6c82a82c",
-          "novo": "sha1:b376184e0ea66969"
-        },
-        {
           "data_deteccao": "2026-10-03T07:25:42-03:00",
           "id_execucao": "run_2026_10_03_0725",
           "campo": "texto",
@@ -682,6 +692,20 @@
         {
           "data_deteccao": "2026-10-06T09:02:44-03:00",
           "id_execucao": "run_2026_10_06_0902",
+          "campo": "texto",
+          "anterior": "sha1:27d90c0b6c82a82c",
+          "novo": "sha1:b376184e0ea66969"
+        },
+        {
+          "data_deteccao": "2026-10-06T12:25:33-03:00",
+          "id_execucao": "run_2026_10_06_1225",
+          "campo": "texto",
+          "anterior": "sha1:b376184e0ea66969",
+          "novo": "sha1:27d90c0b6c82a82c"
+        },
+        {
+          "data_deteccao": "2026-10-06T12:25:33-03:00",
+          "id_execucao": "run_2026_10_06_1225",
           "campo": "texto",
           "anterior": "sha1:27d90c0b6c82a82c",
           "novo": "sha1:b376184e0ea66969"
@@ -706,8 +730,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:a3ef6a31dafdd114",
-      "ultima_verificacao": "2026-10-06T09:02:44-03:00",
-      "ultima_execucao": "run_2026_10_06_0902",
+      "ultima_verificacao": "2026-10-06T12:25:33-03:00",
+      "ultima_execucao": "run_2026_10_06_1225",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -730,8 +754,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:733d5312239886ee",
-      "ultima_verificacao": "2026-10-06T09:02:44-03:00",
-      "ultima_execucao": "run_2026_10_06_0902",
+      "ultima_verificacao": "2026-10-06T12:25:33-03:00",
+      "ultima_execucao": "run_2026_10_06_1225",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -867,6 +891,12 @@
         "s": null,
         "d": "2026-10-01T08:38:24-03:00",
         "v": "2026-10-01"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2064": {
+        "h": "sha1:ac73c33c5526547f",
+        "s": null,
+        "d": "2026-10-06T12:25:33-03:00",
+        "v": "2026-10-06"
       }
     },
     "eu_parliament": {},

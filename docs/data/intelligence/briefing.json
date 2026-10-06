@@ -101,6 +101,14 @@
        "Saúde"
       ],
       "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2035"
+     },
+     {
+      "title": "Commission registers European Citizens' Initiative for sovereign European AI domains",
+      "impact_level": "low",
+      "priority": "monitor",
+      "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-f4645e",
+      "sectors": [],
+      "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2064"
      }
     ],
     "empty_message": "Nenhuma consulta aberta com fonte oficial neste recorte."
