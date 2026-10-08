@@ -3,7 +3,7 @@
   "reference_date": "2026-10-08",
   "description": "Eventos regulatórios interpretados pelo Regulatory Impact Engine.",
   "rule": "FATO, ANÁLISE, INTERPRETAÇÃO e RECOMENDAÇÃO são objetos distintos. Confiança mínima 0.6. Nenhum evento sem fonte oficial é publicado.",
-  "total": 24,
+  "total": 27,
   "excluded_low_confidence": 0,
   "excluded_no_material_relation": 9
  },
@@ -2479,6 +2479,795 @@
    ]
   },
   {
+   "id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
+   "regulatory_event": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+   "summary": "Background information Date of final decision: 22/09/2026 National case Legal Reference(s): Article 32 (Security of processing) Decision: Administrative fine Website topics: Cybersecurity, personal data breaches Summary of the Decision Origin of the case In August 2025, the IT service provider Miljödata was targeted in a cyberattack, during which a malicious actor gained access to a large volume…",
+   "affected_sectors": [
+    "Cibersegurança",
+    "AdTech",
+    "Bancos",
+    "Cloud",
+    "Data Centers",
+    "E-commerce",
+    "Energia",
+    "Marketplaces"
+   ],
+   "affected_company_types": [
+    "Provedor de cloud, infraestrutura ou capacidade computacional",
+    "Grande empresa",
+    "Instituição financeira regulada",
+    "Indústria transformadora",
+    "Provedor de sistema de IA",
+    "Plataforma digital / marketplace",
+    "PME (pequena e média empresa)",
+    "Operador (deployer) de sistema de IA"
+   ],
+   "affected_functions": [
+    "Cybersecurity",
+    "Risk",
+    "Engenharia / ML",
+    "Compliance",
+    "Data Protection Officer",
+    "Privacy",
+    "Jurídico",
+    "Data Governance"
+   ],
+   "obligations": [
+    "Reportar incidentes relevantes dentro do prazo aplicável e manter gestão de vulnerabilidades.",
+    "Exigir evidência de segurança dos fornecedores que tratam dados ou operam a infraestrutura crítica.",
+    "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+    "Registo do risco e do plano de correção no sistema de compliance.",
+    "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+    "Base legal documentada para tratamento de dados pessoais em sistemas de IA."
+   ],
+   "deadlines": [
+    {
+     "date": "2026-09-22",
+     "label": "Data referida no texto oficial",
+     "days_remaining": -16
+    }
+   ],
+   "risks": [
+    "Falha de segurança em sistema de IA crítico expõe a operação e a sanção administrativa.",
+    "Repetir o padrão sancionado na sua própria operação.",
+    "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+    "Medidas corretivas que obrigam a alterar produto já em produção.",
+    "Perda de confiança de clientes e de investidores após incidente público.",
+    "Treino ou fine-tuning sem base legal documentada."
+   ],
+   "opportunities": [
+    "Resiliência comprovada vira argumento de venda para clientes de setores regulados.",
+    "Utilizar as decisões publicadas como teste-padrão interno antes de uma auditoria.",
+    "Demonstrar diligência documentada a clientes regulados e seguradoras.",
+    "Redução de risco antes de escalar o produto para novos mercados.",
+    "Uso de orientações do EDPB como argumento de confiança em vendas a clientes regulados."
+   ],
+   "recommended_actions": [
+    "Testar resposta a incidentes e reporte nos prazos aplicáveis.",
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+    "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
+   ],
+   "source_kind": "ato",
+   "source_id": "edpb_edpb_europa_eu_news_swedish_dpa_fines_miljodata_i_karlskrona_approximately_eur_160_000_for_insufficient_techni",
+   "territory": "União Europeia",
+   "regulator": "EDPB",
+   "regulator_key": "edpb",
+   "act_type": "enforcement",
+   "act_type_label": "Enforcement / sanção",
+   "stage": "nao_classificado",
+   "stage_label": "A classificar",
+   "change_date": "2026-10-08",
+   "publication_date": null,
+   "entry_into_force": null,
+   "compliance_deadline": null,
+   "themes": [
+    "cybersecurity",
+    "edpb",
+    "enforcement"
+   ],
+   "theme_labels": [
+    "Cibersegurança e resiliência",
+    "EDPB e proteção de dados em IA",
+    "Enforcement e sanções"
+   ],
+   "flags": [
+    "penalty"
+   ],
+   "impact_score": 88,
+   "confidence_label": "Interpretação fortemente suportada pela fonte oficial",
+   "requires_legal_review": true,
+   "hedge": "Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+   "watchlist_tags": [
+    "adtech",
+    "bancos",
+    "ciberseguranca",
+    "cloud",
+    "cybersecurity",
+    "data-centers",
+    "ecommerce",
+    "edpb",
+    "energia",
+    "enforcement",
+    "marketplaces"
+   ],
+   "fact": {
+    "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+    "description": "Background information Date of final decision: 22/09/2026 National case Legal Reference(s): Article 32 (Security of processing) Decision: Administrative fine Website topics: Cybersecurity, personal data breaches Summary of the Decision Origin of the case In August 2025, the IT service provider Miljödata was targeted in a cyberattack, during which a malicious actor gained access to a large volume of personal data and subsequently published data on the darknet. According to the company, the incident affected 2.2 million individuals. Among Miljödata’s customers affected by the attack are a majori",
+    "date": "2026-10-08",
+    "date_label": "Data do item na fonte oficial",
+    "regulator": "EDPB",
+    "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en",
+    "sources": [
+     {
+      "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+      "url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en",
+      "type": "fonte primária",
+      "official": true
+     }
+    ],
+    "note": "Texto e data preservados do item do dataset; nenhum fato foi acrescentado."
+   },
+   "analysis": {
+    "why_it_matters": "Leitura: o item é classificado como Cibersegurança e resiliência, EDPB e proteção de dados em IA, Enforcement e sanções, o que normalmente desloca obrigações de documentação, transparência ou controlo interno para as equipas responsáveis.",
+    "sector_exposure": [
+     {
+      "slug": "ciberseguranca",
+      "name": "Cibersegurança",
+      "why": "Termo do item oficial relacionado ao setor.",
+      "basis": "explicit"
+     },
+     {
+      "slug": "adtech",
+      "name": "AdTech",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "bancos",
+      "name": "Bancos",
+      "why": "Tema «Cibersegurança e resiliência» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "cloud",
+      "name": "Cloud",
+      "why": "Tema «Cibersegurança e resiliência» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "data-centers",
+      "name": "Data Centers",
+      "why": "Tema «Cibersegurança e resiliência» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "ecommerce",
+      "name": "E-commerce",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "energia",
+      "name": "Energia",
+      "why": "Tema «Cibersegurança e resiliência» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "marketplaces",
+      "name": "Marketplaces",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     }
+    ],
+    "obligations": [
+     {
+      "text": "Reportar incidentes relevantes dentro do prazo aplicável e manter gestão de vulnerabilidades.",
+      "reference": "Cibersegurança e resiliência",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Exigir evidência de segurança dos fornecedores que tratam dados ou operam a infraestrutura crítica.",
+      "reference": "Cibersegurança e resiliência",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Registo do risco e do plano de correção no sistema de compliance.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     }
+    ],
+    "risks": [
+     {
+      "text": "Falha de segurança em sistema de IA crítico expõe a operação e a sanção administrativa.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Repetir o padrão sancionado na sua própria operação.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Medidas corretivas que obrigam a alterar produto já em produção.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Perda de confiança de clientes e de investidores após incidente público.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Treino ou fine-tuning sem base legal documentada.",
+      "event_id": null,
+      "confidence": 0.8
+     }
+    ],
+    "opportunities": [
+     {
+      "text": "Resiliência comprovada vira argumento de venda para clientes de setores regulados.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Utilizar as decisões publicadas como teste-padrão interno antes de uma auditoria.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Demonstrar diligência documentada a clientes regulados e seguradoras.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Redução de risco antes de escalar o produto para novos mercados.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Uso de orientações do EDPB como argumento de confiança em vendas a clientes regulados.",
+      "confidence": 0.8
+     }
+    ],
+    "confidence": 0.8
+   },
+   "interpretation": {
+    "text": "Exposição provável em: Cibersegurança, AdTech, Bancos, Cloud. Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+    "company_types": [
+     "cloud-infra",
+     "large-enterprise",
+     "financial-institution",
+     "manufacturer",
+     "ai-system-provider",
+     "digital-platform",
+     "sme",
+     "ai-deployer"
+    ],
+    "functions": [
+     "cybersecurity",
+     "risk",
+     "engineering",
+     "compliance",
+     "dpo",
+     "privacy",
+     "legal",
+     "data-governance"
+    ],
+    "flags": [
+     "penalty"
+    ],
+    "confidence": 0.8,
+    "limits": "Classificação por palavras-chave e tema. Não estabelece que qualquer organização específica esteja juridicamente enquadrada no ato."
+   },
+   "recommendations": {
+    "actions": [
+     {
+      "text": "Testar resposta a incidentes e reporte nos prazos aplicáveis.",
+      "theme": "Cibersegurança e resiliência",
+      "owner_function": "cybersecurity",
+      "priority": "Alta"
+     },
+     {
+      "text": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     },
+     {
+      "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     }
+    ],
+    "priority": "urgent",
+    "sla": "agir em dias",
+    "owner_functions": [
+     "cybersecurity",
+     "risk",
+     "engineering",
+     "compliance",
+     "dpo",
+     "privacy",
+     "legal",
+     "data-governance"
+    ],
+    "next_step": "Testar resposta a incidentes e reporte nos prazos aplicáveis."
+   },
+   "so_what": {
+    "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em Cibersegurança, AdTech, Bancos.",
+    "functions": [
+     "Cybersecurity",
+     "Risk",
+     "Engenharia / ML",
+     "Compliance",
+     "Data Protection Officer",
+     "Privacy",
+     "Jurídico",
+     "Data Governance"
+    ],
+    "possible_costs": "Custo de adequação não quantificado pelo monitor: depende do número de sistemas afetados, da obrigação aplicável e do desenho do controlo.",
+    "adaptation_needed": "Provável necessidade de adequação em documentação, contratos ou controlos internos quando a obrigação se confirmar aplicável.",
+    "risk_of_inaction": "Falha de segurança em sistema de IA crítico expõe a operação e a sanção administrativa.",
+    "next_step": "Testar resposta a incidentes e reporte nos prazos aplicáveis."
+   },
+   "diff": null,
+   "changes_summary": null,
+   "published": true,
+   "relevance": "forte",
+   "deadlines_full": [
+    {
+     "date": "2026-09-22",
+     "label": "Data referida no texto oficial",
+     "tracker": false,
+     "source_title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+     "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en",
+     "basis": "Data escrita no texto oficial preservado no dataset.",
+     "days_remaining": -16
+    }
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-dutch-dpa-fines-uber-eur-824-99-9a1d0d",
+   "regulatory_event": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+   "summary": "Background information Cross-border case Legal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine Key words: Automated decision making, profiling and online tracking, fines Summary of the Decision The Autoriteit Persoonsgegevens (AP),…",
+   "affected_sectors": [
+    "Fintech",
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_company_types": [
+    "Plataforma digital / marketplace",
+    "Grande empresa",
+    "PME (pequena e média empresa)",
+    "Provedor de cloud, infraestrutura ou capacidade computacional",
+    "Operador (deployer) de sistema de IA",
+    "Serviços profissionais (jurídico, consultoria, auditoria)",
+    "Provedor de sistema de IA",
+    "Startup / empresa em formação"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "Product"
+   ],
+   "obligations": [
+    "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+    "Registo do risco e do plano de correção no sistema de compliance.",
+    "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+    "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+    "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+    "Informação transparente sobre decisões automatizadas e revisão humana efetiva."
+   ],
+   "deadlines": [],
+   "risks": [
+    "Repetir o padrão sancionado na sua própria operação.",
+    "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+    "Medidas corretivas que obrigam a alterar produto já em produção.",
+    "Perda de confiança de clientes e de investidores após incidente público.",
+    "Treino ou fine-tuning sem base legal documentada.",
+    "Uso de web scraping e conteúdo pessoal sem avaliação registada."
+   ],
+   "opportunities": [
+    "Utilizar as decisões publicadas como teste-padrão interno antes de uma auditoria.",
+    "Demonstrar diligência documentada a clientes regulados e seguradoras.",
+    "Redução de risco antes de escalar o produto para novos mercados.",
+    "Uso de orientações do EDPB como argumento de confiança em vendas a clientes regulados.",
+    "Contribuir para o desenho das regras através de consultas e códigos de prática."
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+    "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+    "Formar produto e marketing sobre limites de uso de dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+   ],
+   "source_kind": "ato",
+   "source_id": "edpb_edpb_europa_eu_news_dutch_dpa_fines_uber_eur_824_990_000_for_unlawful_automated_decision_making_and_insufficie",
+   "territory": "União Europeia",
+   "regulator": "EDPB",
+   "regulator_key": "edpb",
+   "act_type": "enforcement",
+   "act_type_label": "Enforcement / sanção",
+   "stage": "nao_classificado",
+   "stage_label": "A classificar",
+   "change_date": "2026-10-08",
+   "publication_date": null,
+   "entry_into_force": null,
+   "compliance_deadline": null,
+   "themes": [
+    "edpb",
+    "enforcement"
+   ],
+   "theme_labels": [
+    "EDPB e proteção de dados em IA",
+    "Enforcement e sanções"
+   ],
+   "flags": [
+    "penalty"
+   ],
+   "impact_score": 88,
+   "confidence_label": "Interpretação fortemente suportada pela fonte oficial",
+   "requires_legal_review": true,
+   "hedge": "Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+   "watchlist_tags": [
+    "adtech",
+    "cloud",
+    "ecommerce",
+    "edpb",
+    "enforcement",
+    "fintech",
+    "marketplaces",
+    "provedores-de-ia",
+    "saas",
+    "saude"
+   ],
+   "fact": {
+    "title": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+    "description": "Background information Cross-border case Legal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine Key words: Automated decision making, profiling and online tracking, fines Summary of the Decision The Autoriteit Persoonsgegevens (AP), the Dutch data protection authority, imposes a fine of EUR 824 990 000 on Uber. The reason for this is that the AP has ruled that Uber made fully automated decisions about drivers. In case of suspicion",
+    "date": "2026-10-08",
+    "date_label": "Data do item na fonte oficial",
+    "regulator": "EDPB",
+    "source_url": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en",
+    "sources": [
+     {
+      "title": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+      "url": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en",
+      "type": "fonte primária",
+      "official": true
+     }
+    ],
+    "note": "Texto e data preservados do item do dataset; nenhum fato foi acrescentado."
+   },
+   "analysis": {
+    "why_it_matters": "Leitura: o item é classificado como EDPB e proteção de dados em IA, Enforcement e sanções, o que normalmente desloca obrigações de documentação, transparência ou controlo interno para as equipas responsáveis.",
+    "sector_exposure": [
+     {
+      "slug": "fintech",
+      "name": "Fintech",
+      "why": "Termo do item oficial relacionado ao setor.",
+      "basis": "explicit"
+     },
+     {
+      "slug": "adtech",
+      "name": "AdTech",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "cloud",
+      "name": "Cloud",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "ecommerce",
+      "name": "E-commerce",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "marketplaces",
+      "name": "Marketplaces",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "provedores-de-ia",
+      "name": "Provedores de IA",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "saas",
+      "name": "SaaS",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "saude",
+      "name": "Saúde",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     }
+    ],
+    "obligations": [
+     {
+      "text": "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Registo do risco e do plano de correção no sistema de compliance.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     }
+    ],
+    "risks": [
+     {
+      "text": "Repetir o padrão sancionado na sua própria operação.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Medidas corretivas que obrigam a alterar produto já em produção.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Perda de confiança de clientes e de investidores após incidente público.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Treino ou fine-tuning sem base legal documentada.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Uso de web scraping e conteúdo pessoal sem avaliação registada.",
+      "event_id": null,
+      "confidence": 0.8
+     }
+    ],
+    "opportunities": [
+     {
+      "text": "Utilizar as decisões publicadas como teste-padrão interno antes de uma auditoria.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Demonstrar diligência documentada a clientes regulados e seguradoras.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Redução de risco antes de escalar o produto para novos mercados.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Uso de orientações do EDPB como argumento de confiança em vendas a clientes regulados.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Contribuir para o desenho das regras através de consultas e códigos de prática.",
+      "confidence": 0.8
+     }
+    ],
+    "confidence": 0.8
+   },
+   "interpretation": {
+    "text": "Exposição provável em: Fintech, AdTech, Cloud, E-commerce. Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+    "company_types": [
+     "digital-platform",
+     "large-enterprise",
+     "sme",
+     "cloud-infra",
+     "ai-deployer",
+     "professional-services",
+     "ai-system-provider",
+     "startup"
+    ],
+    "functions": [
+     "dpo",
+     "privacy",
+     "compliance",
+     "legal",
+     "data-governance",
+     "risk",
+     "cybersecurity",
+     "product"
+    ],
+    "flags": [
+     "penalty"
+    ],
+    "confidence": 0.8,
+    "limits": "Classificação por palavras-chave e tema. Não estabelece que qualquer organização específica esteja juridicamente enquadrada no ato."
+   },
+   "recommendations": {
+    "actions": [
+     {
+      "text": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     },
+     {
+      "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     },
+     {
+      "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     }
+    ],
+    "priority": "urgent",
+    "sla": "agir em dias",
+    "owner_functions": [
+     "dpo",
+     "privacy",
+     "compliance",
+     "legal",
+     "data-governance",
+     "risk",
+     "cybersecurity",
+     "product"
+    ],
+    "next_step": "Atualizar a matriz de risco com o padrão sancionado nesta decisão."
+   },
+   "so_what": {
+    "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em Fintech, AdTech, Cloud.",
+    "functions": [
+     "Data Protection Officer",
+     "Privacy",
+     "Compliance",
+     "Jurídico",
+     "Data Governance",
+     "Risk",
+     "Cybersecurity",
+     "Product"
+    ],
+    "possible_costs": "Custo de adequação não quantificado pelo monitor: depende do número de sistemas afetados, da obrigação aplicável e do desenho do controlo.",
+    "adaptation_needed": "Provável necessidade de adequação em documentação, contratos ou controlos internos quando a obrigação se confirmar aplicável.",
+    "risk_of_inaction": "Repetir o padrão sancionado na sua própria operação.",
+    "next_step": "Atualizar a matriz de risco com o padrão sancionado nesta decisão."
+   },
+   "diff": null,
+   "changes_summary": null,
+   "published": true,
+   "relevance": "forte",
+   "deadlines_full": []
+  },
+  {
    "id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
    "regulatory_event": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
    "summary": "Background information Date of final decision: 28 August 2026 National case Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 32 (Security of processing), Article 33 (Notification of a personal data breach to the supervisory authority), Article 34 (Communication of a personal data breach to the data subject) Decision: Administrative fine, Compliance…",
@@ -2884,6 +3673,399 @@
      "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en",
      "basis": "Data escrita no texto oficial preservado no dataset.",
      "days_remaining": -41
+    }
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-hellenic-dpa-decision-on-a-data-7634ff",
+   "regulatory_event": "Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs",
+   "summary": "Background information Date of final decision: 28/07/2026 National case Controller: Ministry of Social Cohesion and Family Affairs Legal Reference(s): Article 25 (Data protection by design and by default), Article 28 (Processor), Article 32 (Security of processing), Article 33 (Notification of a personal data breach to the supervisory authority) and Article 34 (Communication of a personal data…",
+   "affected_sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_company_types": [
+    "Plataforma digital / marketplace",
+    "Grande empresa",
+    "PME (pequena e média empresa)",
+    "Provedor de cloud, infraestrutura ou capacidade computacional",
+    "Operador (deployer) de sistema de IA",
+    "Serviços profissionais (jurídico, consultoria, auditoria)",
+    "Provedor de sistema de IA",
+    "Startup / empresa em formação"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "AI Governance"
+   ],
+   "obligations": [
+    "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+    "Registo do risco e do plano de correção no sistema de compliance.",
+    "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+    "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+    "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+    "Informação transparente sobre decisões automatizadas e revisão humana efetiva."
+   ],
+   "deadlines": [
+    {
+     "date": "2026-07-28",
+     "label": "Data referida no texto oficial",
+     "days_remaining": -72
+    }
+   ],
+   "risks": [
+    "Repetir o padrão sancionado na sua própria operação.",
+    "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+    "Medidas corretivas que obrigam a alterar produto já em produção.",
+    "Perda de confiança de clientes e de investidores após incidente público.",
+    "Treino ou fine-tuning sem base legal documentada.",
+    "Uso de web scraping e conteúdo pessoal sem avaliação registada."
+   ],
+   "opportunities": [
+    "Utilizar as decisões publicadas como teste-padrão interno antes de uma auditoria.",
+    "Demonstrar diligência documentada a clientes regulados e seguradoras.",
+    "Redução de risco antes de escalar o produto para novos mercados.",
+    "Uso de orientações do EDPB como argumento de confiança em vendas a clientes regulados.",
+    "Contribuir para o desenho das regras através de consultas e códigos de prática."
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+    "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+    "Formar produto e marketing sobre limites de uso de dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en"
+   ],
+   "source_kind": "ato",
+   "source_id": "edpb_edpb_europa_eu_news_hellenic_dpa_decision_on_a_data_breach_involving_eetaa_sa_as_processor_for_the_ministry_of",
+   "territory": "União Europeia",
+   "regulator": "EDPB",
+   "regulator_key": "edpb",
+   "act_type": "enforcement",
+   "act_type_label": "Enforcement / sanção",
+   "stage": "nao_classificado",
+   "stage_label": "A classificar",
+   "change_date": "2026-10-08",
+   "publication_date": null,
+   "entry_into_force": null,
+   "compliance_deadline": null,
+   "themes": [
+    "edpb",
+    "enforcement"
+   ],
+   "theme_labels": [
+    "EDPB e proteção de dados em IA",
+    "Enforcement e sanções"
+   ],
+   "flags": [
+    "penalty"
+   ],
+   "impact_score": 87,
+   "confidence_label": "Interpretação fortemente suportada pela fonte oficial",
+   "requires_legal_review": true,
+   "hedge": "Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+   "watchlist_tags": [
+    "adtech",
+    "cloud",
+    "ecommerce",
+    "edpb",
+    "enforcement",
+    "marketplaces",
+    "provedores-de-ia",
+    "saas",
+    "saude"
+   ],
+   "fact": {
+    "title": "Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs",
+    "description": "Background information Date of final decision: 28/07/2026 National case Controller: Ministry of Social Cohesion and Family Affairs Legal Reference(s): Article 25 (Data protection by design and by default), Article 28 (Processor), Article 32 (Security of processing), Article 33 (Notification of a personal data breach to the supervisory authority) and Article 34 (Communication of a personal data breach to the data subject) Decision: Administrative fine, Compliance order, Summary of the Decision Origin of the case The Hellenic Data Protection Authority (DPA) investigated a large-scale personal da",
+    "date": "2026-10-08",
+    "date_label": "Data do item na fonte oficial",
+    "regulator": "EDPB",
+    "source_url": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en",
+    "sources": [
+     {
+      "title": "Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs",
+      "url": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en",
+      "type": "fonte primária",
+      "official": true
+     }
+    ],
+    "note": "Texto e data preservados do item do dataset; nenhum fato foi acrescentado."
+   },
+   "analysis": {
+    "why_it_matters": "Leitura: o item é classificado como EDPB e proteção de dados em IA, Enforcement e sanções, o que normalmente desloca obrigações de documentação, transparência ou controlo interno para as equipas responsáveis.",
+    "sector_exposure": [
+     {
+      "slug": "adtech",
+      "name": "AdTech",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "cloud",
+      "name": "Cloud",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "ecommerce",
+      "name": "E-commerce",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "marketplaces",
+      "name": "Marketplaces",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "provedores-de-ia",
+      "name": "Provedores de IA",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "saas",
+      "name": "SaaS",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "saude",
+      "name": "Saúde",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     }
+    ],
+    "obligations": [
+     {
+      "text": "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Registo do risco e do plano de correção no sistema de compliance.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: enforcement e sanções",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     }
+    ],
+    "risks": [
+     {
+      "text": "Repetir o padrão sancionado na sua própria operação.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Medidas corretivas que obrigam a alterar produto já em produção.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Perda de confiança de clientes e de investidores após incidente público.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Treino ou fine-tuning sem base legal documentada.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Uso de web scraping e conteúdo pessoal sem avaliação registada.",
+      "event_id": null,
+      "confidence": 0.8
+     }
+    ],
+    "opportunities": [
+     {
+      "text": "Utilizar as decisões publicadas como teste-padrão interno antes de uma auditoria.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Demonstrar diligência documentada a clientes regulados e seguradoras.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Redução de risco antes de escalar o produto para novos mercados.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Uso de orientações do EDPB como argumento de confiança em vendas a clientes regulados.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Contribuir para o desenho das regras através de consultas e códigos de prática.",
+      "confidence": 0.8
+     }
+    ],
+    "confidence": 0.8
+   },
+   "interpretation": {
+    "text": "Exposição provável em: AdTech, Cloud, E-commerce, Marketplaces. Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+    "company_types": [
+     "digital-platform",
+     "large-enterprise",
+     "sme",
+     "cloud-infra",
+     "ai-deployer",
+     "professional-services",
+     "ai-system-provider",
+     "startup"
+    ],
+    "functions": [
+     "dpo",
+     "privacy",
+     "compliance",
+     "legal",
+     "data-governance",
+     "risk",
+     "cybersecurity",
+     "ai-governance"
+    ],
+    "flags": [
+     "penalty"
+    ],
+    "confidence": 0.8,
+    "limits": "Classificação por palavras-chave e tema. Não estabelece que qualquer organização específica esteja juridicamente enquadrada no ato."
+   },
+   "recommendations": {
+    "actions": [
+     {
+      "text": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     },
+     {
+      "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     },
+     {
+      "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     }
+    ],
+    "priority": "urgent",
+    "sla": "agir em dias",
+    "owner_functions": [
+     "dpo",
+     "privacy",
+     "compliance",
+     "legal",
+     "data-governance",
+     "risk",
+     "cybersecurity",
+     "ai-governance"
+    ],
+    "next_step": "Atualizar a matriz de risco com o padrão sancionado nesta decisão."
+   },
+   "so_what": {
+    "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em AdTech, Cloud, E-commerce.",
+    "functions": [
+     "Data Protection Officer",
+     "Privacy",
+     "Compliance",
+     "Jurídico",
+     "Data Governance",
+     "Risk",
+     "Cybersecurity",
+     "AI Governance"
+    ],
+    "possible_costs": "Custo de adequação não quantificado pelo monitor: depende do número de sistemas afetados, da obrigação aplicável e do desenho do controlo.",
+    "adaptation_needed": "Provável necessidade de adequação em documentação, contratos ou controlos internos quando a obrigação se confirmar aplicável.",
+    "risk_of_inaction": "Repetir o padrão sancionado na sua própria operação.",
+    "next_step": "Atualizar a matriz de risco com o padrão sancionado nesta decisão."
+   },
+   "diff": null,
+   "changes_summary": null,
+   "published": true,
+   "relevance": "forte",
+   "deadlines_full": [
+    {
+     "date": "2026-07-28",
+     "label": "Data referida no texto oficial",
+     "tracker": false,
+     "source_title": "Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs",
+     "source_url": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en",
+     "basis": "Data escrita no texto oficial preservado no dataset.",
+     "days_remaining": -72
     }
    ]
   },
@@ -3773,8 +4955,8 @@
   },
   {
    "id": "re_ato_edpb-edpb-europa-eu-news-stakeholder-event-on-guidelines-c9491c",
-   "regulatory_event": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date",
-   "summary": "Brussels, 23 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…",
+   "regulatory_event": "Stakeholder event on guidelines on the interplay between data protection and competition law: agenda now available",
+   "summary": "Brussels, 30 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…",
    "affected_sectors": [
     "AdTech",
     "Cloud",
@@ -3785,22 +4967,22 @@
     "Saúde"
    ],
    "affected_company_types": [
+    "Plataforma digital / marketplace",
     "Grande empresa",
+    "Provedor de cloud, infraestrutura ou capacidade computacional",
     "PME (pequena e média empresa)",
     "Startup / empresa em formação",
     "Provedor de sistema de IA",
-    "Plataforma digital / marketplace",
     "Setor público",
-    "Ensino e investigação",
-    "Provedor de cloud, infraestrutura ou capacidade computacional"
+    "Ensino e investigação"
    ],
    "affected_functions": [
+    "Jurídico",
     "Public Policy",
     "Government Affairs",
-    "Regulatory Affairs",
-    "Jurídico",
     "Strategy",
     "Compliance",
+    "Regulatory Affairs",
     "Data Protection Officer",
     "Privacy"
    ],
@@ -3846,7 +5028,7 @@
    "priority": "high",
    "confidence": 0.8,
    "official_sources": [
-    "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en"
+    "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en"
    ],
    "source_kind": "ato",
    "source_id": "edpb_edpb_europa_eu_news_stakeholder_event_on_guidelines_on_the_interplay_between_data_protection_and_competition_l",
@@ -3857,18 +5039,18 @@
    "act_type_label": "Guideline / orientação",
    "stage": "nao_classificado",
    "stage_label": "A classificar",
-   "change_date": "2026-07-23",
+   "change_date": "2026-07-30",
    "publication_date": null,
    "entry_into_force": null,
    "compliance_deadline": null,
    "themes": [
-    "consultation",
     "competition",
+    "consultation",
     "edpb"
    ],
    "theme_labels": [
-    "Consultas públicas e agenda",
     "Concorrência e mercados digitais",
+    "Consultas públicas e agenda",
     "EDPB e proteção de dados em IA"
    ],
    "flags": [
@@ -3892,16 +5074,16 @@
     "saude"
    ],
    "fact": {
-    "title": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date",
-    "description": "Brussels, 23 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to stakeholder engagement and cross-regulatory cooperation, as outlined in the Helsinki statement and in the EDPB Strategy 2024-2027 . Join the event to have your say This is your chance to contribute directly t",
-    "date": "2026-07-23",
+    "title": "Stakeholder event on guidelines on the interplay between data protection and competition law: agenda now available",
+    "description": "Brussels, 30 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to stakeholder engagement and cross-regulatory cooperation, as outlined in the Helsinki statement and in the EDPB Strategy 2024-2027 . Who can participate? The EDPB and the European Commission welcome participat",
+    "date": "2026-07-30",
     "date_label": "Data do item na fonte oficial",
     "regulator": "EDPB",
-    "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en",
+    "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en",
     "sources": [
      {
-      "title": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date",
-      "url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en",
+      "title": "Stakeholder event on guidelines on the interplay between data protection and competition law: agenda now available",
+      "url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en",
       "type": "fonte primária",
       "official": true
      }
@@ -3909,18 +5091,18 @@
     "note": "Texto e data preservados do item do dataset; nenhum fato foi acrescentado."
    },
    "analysis": {
-    "why_it_matters": "Leitura: o item é classificado como Consultas públicas e agenda, Concorrência e mercados digitais, EDPB e proteção de dados em IA, o que normalmente desloca obrigações de documentação, transparência ou controlo interno para as equipas responsáveis.",
+    "why_it_matters": "Leitura: o item é classificado como Concorrência e mercados digitais, Consultas públicas e agenda, EDPB e proteção de dados em IA, o que normalmente desloca obrigações de documentação, transparência ou controlo interno para as equipas responsáveis.",
     "sector_exposure": [
      {
       "slug": "adtech",
       "name": "AdTech",
-      "why": "Tema «Consultas públicas e agenda» afeta tipicamente este setor.",
+      "why": "Tema «Concorrência e mercados digitais» afeta tipicamente este setor.",
       "basis": "thematic"
      },
      {
       "slug": "cloud",
       "name": "Cloud",
-      "why": "Tema «Consultas públicas e agenda» afeta tipicamente este setor.",
+      "why": "Tema «Concorrência e mercados digitais» afeta tipicamente este setor.",
       "basis": "thematic"
      },
      {
@@ -3932,13 +5114,13 @@
      {
       "slug": "marketplaces",
       "name": "Marketplaces",
-      "why": "Tema «Consultas públicas e agenda» afeta tipicamente este setor.",
+      "why": "Tema «Concorrência e mercados digitais» afeta tipicamente este setor.",
       "basis": "thematic"
      },
      {
       "slug": "provedores-de-ia",
       "name": "Provedores de IA",
-      "why": "Tema «Consultas públicas e agenda» afeta tipicamente este setor.",
+      "why": "Tema «Concorrência e mercados digitais» afeta tipicamente este setor.",
       "basis": "thematic"
      },
      {
@@ -3957,42 +5139,42 @@
     "obligations": [
      {
       "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
-      "reference": "Consultas públicas e agenda",
+      "reference": "Concorrência e mercados digitais",
       "basis": "Fonte menciona: concorrência e mercados digitais, edpb e proteção de dados em ia",
       "applies_if": "Requer avaliação jurídica específica do caso de uso.",
       "confidence": 0.8
      },
      {
       "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
-      "reference": "Consultas públicas e agenda",
+      "reference": "Concorrência e mercados digitais",
       "basis": "Fonte menciona: concorrência e mercados digitais, edpb e proteção de dados em ia",
       "applies_if": "Requer avaliação jurídica específica do caso de uso.",
       "confidence": 0.8
      },
      {
       "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
-      "reference": "Consultas públicas e agenda",
+      "reference": "Concorrência e mercados digitais",
       "basis": "Fonte menciona: concorrência e mercados digitais, edpb e proteção de dados em ia",
       "applies_if": "Requer avaliação jurídica específica do caso de uso.",
       "confidence": 0.8
      },
      {
       "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
-      "reference": "Consultas públicas e agenda",
+      "reference": "Concorrência e mercados digitais",
       "basis": "Fonte menciona: concorrência e mercados digitais, edpb e proteção de dados em ia",
       "applies_if": "Requer avaliação jurídica específica do caso de uso.",
       "confidence": 0.8
      },
      {
       "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
-      "reference": "Consultas públicas e agenda",
+      "reference": "Concorrência e mercados digitais",
       "basis": "Fonte menciona: concorrência e mercados digitais, edpb e proteção de dados em ia",
       "applies_if": "Requer avaliação jurídica específica do caso de uso.",
       "confidence": 0.8
      },
      {
       "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
-      "reference": "Consultas públicas e agenda",
+      "reference": "Concorrência e mercados digitais",
       "basis": "Fonte menciona: concorrência e mercados digitais, edpb e proteção de dados em ia",
       "applies_if": "Requer avaliação jurídica específica do caso de uso.",
       "confidence": 0.8
@@ -4057,22 +5239,22 @@
    "interpretation": {
     "text": "Exposição provável em: AdTech, Cloud, E-commerce, Marketplaces. Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
     "company_types": [
+     "digital-platform",
      "large-enterprise",
+     "cloud-infra",
      "sme",
      "startup",
      "ai-system-provider",
-     "digital-platform",
      "public-sector",
-     "research",
-     "cloud-infra"
+     "research"
     ],
     "functions": [
+     "legal",
      "public-policy",
      "government-affairs",
-     "regulatory-affairs",
-     "legal",
      "strategy",
      "compliance",
+     "regulatory-affairs",
      "dpo",
      "privacy"
     ],
@@ -4086,37 +5268,37 @@
     "actions": [
      {
       "text": "Assinar as atualizações do AI Office e do registo oficial antes de cada release relevante.",
-      "theme": "Consultas públicas e agenda",
+      "theme": "Concorrência e mercados digitais",
       "owner_function": "regulatory-affairs",
       "priority": "Alta"
      },
      {
       "text": "Registar em ata a versão da orientação usada para decidir.",
-      "theme": "Consultas públicas e agenda",
+      "theme": "Concorrência e mercados digitais",
       "owner_function": "regulatory-affairs",
       "priority": "Alta"
      },
      {
       "text": "Envolver produto e jurídico na leitura de novas orientações.",
-      "theme": "Consultas públicas e agenda",
+      "theme": "Concorrência e mercados digitais",
       "owner_function": "regulatory-affairs",
       "priority": "Alta"
      },
      {
       "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
-      "theme": "Consultas públicas e agenda",
+      "theme": "Concorrência e mercados digitais",
       "owner_function": "dpo",
       "priority": "Alta"
      },
      {
       "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
-      "theme": "Consultas públicas e agenda",
+      "theme": "Concorrência e mercados digitais",
       "owner_function": "dpo",
       "priority": "Alta"
      },
      {
       "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
-      "theme": "Consultas públicas e agenda",
+      "theme": "Concorrência e mercados digitais",
       "owner_function": "dpo",
       "priority": "Alta"
      }
@@ -4124,12 +5306,12 @@
     "priority": "high",
     "sla": "agir em semanas",
     "owner_functions": [
+     "legal",
      "public-policy",
      "government-affairs",
-     "regulatory-affairs",
-     "legal",
      "strategy",
      "compliance",
+     "regulatory-affairs",
      "dpo",
      "privacy"
     ],
@@ -4138,12 +5320,12 @@
    "so_what": {
     "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em AdTech, Cloud, E-commerce.",
     "functions": [
+     "Jurídico",
      "Public Policy",
      "Government Affairs",
-     "Regulatory Affairs",
-     "Jurídico",
      "Strategy",
      "Compliance",
+     "Regulatory Affairs",
      "Data Protection Officer",
      "Privacy"
     ],
@@ -4161,8 +5343,8 @@
      "date": "2026-10-15",
      "label": "Data referida no texto oficial",
      "tracker": false,
-     "source_title": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date",
-     "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en",
+     "source_title": "Stakeholder event on guidelines on the interplay between data protection and competition law: agenda now available",
+     "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en",
      "basis": "Data escrita no texto oficial preservado no dataset.",
      "days_remaining": 7
     }

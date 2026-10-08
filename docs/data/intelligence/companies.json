@@ -273,16 +273,16 @@
      "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
     },
     {
+     "title": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-dutch-dpa-fines-uber-eur-824-99-9a1d0d",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+    },
+    {
      "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
-    },
-    {
-     "title": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
     }
    ],
    "possible_obligations": [
@@ -1457,16 +1457,16 @@
      "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
     },
     {
+     "title": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-dutch-dpa-fines-uber-eur-824-99-9a1d0d",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+    },
+    {
      "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
-    },
-    {
-     "title": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
     }
    ],
    "possible_obligations": [

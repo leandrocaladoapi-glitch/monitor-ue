@@ -9,12 +9,89 @@
   "sections": [
    {
     "title": "1. Mudanças críticas",
-    "items": [],
+    "items": [
+     {
+      "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
+      "sectors": [
+       "Cibersegurança",
+       "AdTech",
+       "Bancos"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
+     },
+     {
+      "title": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-dutch-dpa-fines-uber-eur-824-99-9a1d0d",
+      "sectors": [
+       "Fintech",
+       "AdTech",
+       "Cloud"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+     },
+     {
+      "title": "Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-hellenic-dpa-decision-on-a-data-7634ff",
+      "sectors": [
+       "AdTech",
+       "Cloud",
+       "E-commerce"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en"
+     }
+    ],
     "empty_message": "Nenhuma mudança crítica nova na fonte oficial neste recorte."
    },
    {
     "title": "2. O que exige ação",
-    "items": [],
+    "items": [
+     {
+      "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
+      "sectors": [
+       "Cibersegurança",
+       "AdTech",
+       "Bancos"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en",
+      "action": "Testar resposta a incidentes e reporte nos prazos aplicáveis."
+     },
+     {
+      "title": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-dutch-dpa-fines-uber-eur-824-99-9a1d0d",
+      "sectors": [
+       "Fintech",
+       "AdTech",
+       "Cloud"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en",
+      "action": "Atualizar a matriz de risco com o padrão sancionado nesta decisão."
+     },
+     {
+      "title": "Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-hellenic-dpa-decision-on-a-data-7634ff",
+      "sectors": [
+       "AdTech",
+       "Cloud",
+       "E-commerce"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en",
+      "action": "Atualizar a matriz de risco com o padrão sancionado nesta decisão."
+     }
+    ],
     "empty_message": "Nenhuma ação obrigatória datada neste recorte; monitorização mantida."
    },
    {
@@ -23,10 +100,10 @@
      {
       "date": "2026-10-15",
       "label": "Data referida no texto oficial",
-      "norm": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date",
+      "norm": "Stakeholder event on guidelines on the interplay between data protection and competition law: agenda now available",
       "days_remaining": 7,
       "event_id": "re_ato_edpb-edpb-europa-eu-news-stakeholder-event-on-guidelines-c9491c",
-      "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en"
+      "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en"
      },
      {
       "date": "2026-12-02",
@@ -73,7 +150,44 @@
    },
    {
     "title": "4. Enforcement",
-    "items": [],
+    "items": [
+     {
+      "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
+      "sectors": [
+       "Cibersegurança",
+       "AdTech",
+       "Bancos"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
+     },
+     {
+      "title": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-dutch-dpa-fines-uber-eur-824-99-9a1d0d",
+      "sectors": [
+       "Fintech",
+       "AdTech",
+       "Cloud"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+     },
+     {
+      "title": "Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-hellenic-dpa-decision-on-a-data-7634ff",
+      "sectors": [
+       "AdTech",
+       "Cloud",
+       "E-commerce"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en"
+     }
+    ],
     "empty_message": "Nenhuma decisão de enforcement nova registada nas fontes monitoradas."
    },
    {
@@ -111,28 +225,28 @@
     "items": [
      {
       "sector": "Cloud",
-      "changes": 18,
+      "changes": 21,
       "slug": "cloud"
      },
      {
-      "sector": "Provedores de IA",
-      "changes": 15,
-      "slug": "provedores-de-ia"
-     },
-     {
-      "sector": "SaaS",
-      "changes": 15,
-      "slug": "saas"
-     },
-     {
       "sector": "AdTech",
-      "changes": 14,
+      "changes": 17,
       "slug": "adtech"
      },
      {
       "sector": "E-commerce",
-      "changes": 13,
+      "changes": 16,
       "slug": "ecommerce"
+     },
+     {
+      "sector": "Provedores de IA",
+      "changes": 17,
+      "slug": "provedores-de-ia"
+     },
+     {
+      "sector": "SaaS",
+      "changes": 17,
+      "slug": "saas"
      }
     ],
     "empty_message": "Nenhum setor classificado neste recorte."
@@ -142,9 +256,9 @@
     "items": [
      {
       "title": "Data referida no texto oficial",
-      "reason": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date · 7 dias",
+      "reason": "Stakeholder event on guidelines on the interplay between data protection and competition law: agenda now available · 7 dias",
       "event_id": "re_ato_edpb-edpb-europa-eu-news-stakeholder-event-on-guidelines-c9491c",
-      "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en"
+      "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en"
      },
      {
       "title": "Aplicação das proibições",
@@ -317,10 +431,10 @@
      {
       "date": "2026-10-15",
       "label": "Data referida no texto oficial",
-      "norm": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date",
+      "norm": "Stakeholder event on guidelines on the interplay between data protection and competition law: agenda now available",
       "days_remaining": 7,
       "event_id": "re_ato_edpb-edpb-europa-eu-news-stakeholder-event-on-guidelines-c9491c",
-      "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en"
+      "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en"
      },
      {
       "date": "2026-12-02",
@@ -369,6 +483,42 @@
     "title": "4. Enforcement",
     "items": [
      {
+      "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
+      "sectors": [
+       "Cibersegurança",
+       "AdTech",
+       "Bancos"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
+     },
+     {
+      "title": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-dutch-dpa-fines-uber-eur-824-99-9a1d0d",
+      "sectors": [
+       "Fintech",
+       "AdTech",
+       "Cloud"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+     },
+     {
+      "title": "Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-hellenic-dpa-decision-on-a-data-7634ff",
+      "sectors": [
+       "AdTech",
+       "Cloud",
+       "E-commerce"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en"
+     },
+     {
       "title": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
       "impact_level": "critical",
       "priority": "urgent",
@@ -379,42 +529,6 @@
        "E-commerce"
       ],
       "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
-     },
-     {
-      "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
-      "impact_level": "critical",
-      "priority": "urgent",
-      "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-      "sectors": [
-       "AdTech",
-       "Cloud",
-       "E-commerce"
-      ],
-      "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-     },
-     {
-      "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
-      "impact_level": "critical",
-      "priority": "urgent",
-      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-      "sectors": [
-       "Recrutamento e Seleção",
-       "AdTech",
-       "Cloud"
-      ],
-      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
-     },
-     {
-      "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
-      "impact_level": "critical",
-      "priority": "urgent",
-      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
-      "sectors": [
-       "Recrutamento e Seleção",
-       "AdTech",
-       "Cloud"
-      ],
-      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
      }
     ],
     "empty_message": "Nenhuma decisão de enforcement nova registada nas fontes monitoradas."
@@ -529,28 +643,28 @@
     "items": [
      {
       "sector": "Cloud",
-      "changes": 18,
+      "changes": 21,
       "slug": "cloud"
      },
      {
-      "sector": "Provedores de IA",
-      "changes": 15,
-      "slug": "provedores-de-ia"
-     },
-     {
-      "sector": "SaaS",
-      "changes": 15,
-      "slug": "saas"
-     },
-     {
       "sector": "AdTech",
-      "changes": 14,
+      "changes": 17,
       "slug": "adtech"
      },
      {
       "sector": "E-commerce",
-      "changes": 13,
+      "changes": 16,
       "slug": "ecommerce"
+     },
+     {
+      "sector": "Provedores de IA",
+      "changes": 17,
+      "slug": "provedores-de-ia"
+     },
+     {
+      "sector": "SaaS",
+      "changes": 17,
+      "slug": "saas"
      }
     ],
     "empty_message": "Nenhum setor classificado neste recorte."
@@ -571,6 +685,30 @@
       "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
      },
      {
+      "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
+      "sectors": [
+       "Cibersegurança",
+       "AdTech",
+       "Bancos"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
+     },
+     {
+      "title": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+      "impact_level": "critical",
+      "priority": "urgent",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-dutch-dpa-fines-uber-eur-824-99-9a1d0d",
+      "sectors": [
+       "Fintech",
+       "AdTech",
+       "Cloud"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+     },
+     {
       "title": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
       "impact_level": "critical",
       "priority": "urgent",
@@ -581,30 +719,6 @@
        "Cloud"
       ],
       "source_url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
-     },
-     {
-      "title": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
-      "impact_level": "critical",
-      "priority": "urgent",
-      "event_id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
-      "sectors": [
-       "AdTech",
-       "Cloud",
-       "E-commerce"
-      ],
-      "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
-     },
-     {
-      "title": "Regulamento (UE) 2024/1689 — AI Act",
-      "impact_level": "high",
-      "priority": "high",
-      "event_id": "re_norma_32024r1689",
-      "sectors": [
-       "Modelos de Fundação (GPAI)",
-       "Cloud",
-       "Provedores de IA"
-      ],
-      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
      }
     ],
     "empty_message": "Sem item adicional para acompanhamento; manter a watchlist ativa."

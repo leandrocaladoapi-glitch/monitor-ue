@@ -2,7 +2,7 @@
  "meta": {
   "reference_date": "2026-10-08",
   "description": "Calendário regulatório operacional. Cada prazo traz a data escrita na fonte oficial, a norma e a ação necessária.",
-  "total": 33,
+  "total": 35,
   "upcoming": 8,
   "rule": "Somente datas escritas em texto oficial preservado no dataset; nenhuma data é estimada."
  },
@@ -676,6 +676,43 @@
    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
   },
   {
+   "id": "dl_re_ato_edpb-edpb-europa-eu-news-hellenic-dpa-decision-on-a-data-7634ff_1",
+   "date": "2026-07-28",
+   "days_remaining": -72,
+   "norm": "Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs",
+   "norm_source_url": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en",
+   "obligation": "Data referida no texto oficial",
+   "entity": "Plataforma digital / marketplace, Grande empresa, PME (pequena e média empresa)",
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "AI Governance"
+   ],
+   "affected_sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "action_needed": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+   "priority": "urgent",
+   "impact_level": "critical",
+   "urgency": "histórico",
+   "status": "cumprido",
+   "regulator": "EDPB",
+   "basis": "Data escrita no texto oficial preservado no dataset.",
+   "event_id": "re_ato_edpb-edpb-europa-eu-news-hellenic-dpa-decision-on-a-data-7634ff",
+   "source_url": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en"
+  },
+  {
    "id": "dl_re_norma_32024r1689_6",
    "date": "2026-08-02",
    "days_remaining": -67,
@@ -894,20 +931,58 @@
    "source_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
   },
   {
+   "id": "dl_re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429_1",
+   "date": "2026-09-22",
+   "days_remaining": -16,
+   "norm": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure…",
+   "norm_source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en",
+   "obligation": "Data referida no texto oficial",
+   "entity": "Provedor de cloud, infraestrutura ou capacidade computacional, Grande empresa, Instituição financeira regulada",
+   "affected_functions": [
+    "Cybersecurity",
+    "Risk",
+    "Engenharia / ML",
+    "Compliance",
+    "Data Protection Officer",
+    "Privacy",
+    "Jurídico",
+    "Data Governance"
+   ],
+   "affected_sectors": [
+    "Cibersegurança",
+    "AdTech",
+    "Bancos",
+    "Cloud",
+    "Data Centers",
+    "E-commerce",
+    "Energia",
+    "Marketplaces"
+   ],
+   "action_needed": "Testar resposta a incidentes e reporte nos prazos aplicáveis.",
+   "priority": "urgent",
+   "impact_level": "critical",
+   "urgency": "histórico",
+   "status": "cumprido",
+   "regulator": "EDPB",
+   "basis": "Data escrita no texto oficial preservado no dataset.",
+   "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
+   "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
+  },
+  {
    "id": "dl_re_ato_edpb-edpb-europa-eu-news-stakeholder-event-on-guidelines-c9491c_1",
    "date": "2026-10-15",
    "days_remaining": 7,
-   "norm": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date",
-   "norm_source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en",
+   "norm": "Stakeholder event on guidelines on the interplay between data protection and competition law: agenda now available",
+   "norm_source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en",
    "obligation": "Data referida no texto oficial",
-   "entity": "Grande empresa, PME (pequena e média empresa), Startup / empresa em formação",
+   "entity": "Plataforma digital / marketplace, Grande empresa, Provedor de cloud, infraestrutura ou capacidade computacional",
    "affected_functions": [
+    "Jurídico",
     "Public Policy",
     "Government Affairs",
-    "Regulatory Affairs",
-    "Jurídico",
     "Strategy",
     "Compliance",
+    "Regulatory Affairs",
     "Data Protection Officer",
     "Privacy"
    ],
@@ -928,7 +1003,7 @@
    "regulator": "EDPB",
    "basis": "Data escrita no texto oficial preservado no dataset.",
    "event_id": "re_ato_edpb-edpb-europa-eu-news-stakeholder-event-on-guidelines-c9491c",
-   "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en"
+   "source_url": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en"
   },
   {
    "id": "dl_re_norma_32026r1744_4",

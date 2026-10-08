@@ -1,6 +1,6 @@
 {
  "meta": {
-  "total": 11,
+  "total": 14,
   "description": "Alertas em formato executivo, gerados a partir de eventos com fonte oficial.",
   "filters": [
    "setor",
@@ -279,6 +279,93 @@
    "text": "ALERTA REGULATÓRIO\n\nEvento:\nHealth data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR\n\nImpacto:\nCRÍTICO\n\nAfeta:\nSaúde, Cibersegurança, AdTech, Bancos\n\nÁreas internas:\nData Protection Officer, Privacy, Compliance, Jurídico, Data Governance\n\nO que mudou:\nBackground information Date of final decision: 3 September 2026 National case Controller: Hôpital Privé de la Loire Legal Reference: Article 32 (Security of processing), Article 34 (Communication of a personal data breach to the data subject), Decision: Administrative fine Keywords: Cybersecurity, Personal data breaches, Health and research Summary of the Decision Origin of the case In summer…\n\nAção recomendada:\nAtualizar a matriz de risco com o padrão sancionado nesta decisão.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
   },
   {
+   "id": "al_re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
+   "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
+   "priority": "urgent",
+   "impact_level": "critical",
+   "impact_score": 88,
+   "sectors": [
+    "Cibersegurança",
+    "AdTech",
+    "Bancos",
+    "Cloud",
+    "Data Centers",
+    "E-commerce"
+   ],
+   "themes": [
+    "Cibersegurança e resiliência",
+    "EDPB e proteção de dados em IA",
+    "Enforcement e sanções"
+   ],
+   "regulator": "EDPB",
+   "company_types": [
+    "Provedor de cloud, infraestrutura ou capacidade computacional",
+    "Grande empresa",
+    "Instituição financeira regulada",
+    "Indústria transformadora"
+   ],
+   "functions": [
+    "Cybersecurity",
+    "Risk",
+    "Engenharia / ML",
+    "Compliance",
+    "Data Protection Officer"
+   ],
+   "deadline": null,
+   "deadline_label": "Sem prazo futuro datado na fonte oficial.",
+   "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+   "what_changed": "Background information Date of final decision: 22/09/2026 National case Legal Reference(s): Article 32 (Security of processing) Decision: Administrative fine Website topics: Cybersecurity, personal data breaches Summary of the Decision Origin of the case In August 2025, the IT service provider Miljödata was targeted in a cyberattack, during which a malicious actor gained access to a large volume…",
+   "recommended_action": "Testar resposta a incidentes e reporte nos prazos aplicáveis.",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
+   ],
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nSwedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security\n\nImpacto:\nCRÍTICO\n\nAfeta:\nCibersegurança, AdTech, Bancos, Cloud\n\nÁreas internas:\nCybersecurity, Risk, Engenharia / ML, Compliance, Data Protection Officer\n\nO que mudou:\nBackground information Date of final decision: 22/09/2026 National case Legal Reference(s): Article 32 (Security of processing) Decision: Administrative fine Website topics: Cybersecurity, personal data breaches Summary of the Decision Origin of the case In August 2025, the IT service provider Miljödata was targeted in a cyberattack, during which a malicious actor gained access to a large volume…\n\nAção recomendada:\nTestar resposta a incidentes e reporte nos prazos aplicáveis.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
+  },
+  {
+   "id": "al_re_ato_edpb-edpb-europa-eu-news-dutch-dpa-fines-uber-eur-824-99-9a1d0d",
+   "event_id": "re_ato_edpb-edpb-europa-eu-news-dutch-dpa-fines-uber-eur-824-99-9a1d0d",
+   "priority": "urgent",
+   "impact_level": "critical",
+   "impact_score": 88,
+   "sectors": [
+    "Fintech",
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA"
+   ],
+   "themes": [
+    "EDPB e proteção de dados em IA",
+    "Enforcement e sanções"
+   ],
+   "regulator": "EDPB",
+   "company_types": [
+    "Plataforma digital / marketplace",
+    "Grande empresa",
+    "PME (pequena e média empresa)",
+    "Provedor de cloud, infraestrutura ou capacidade computacional"
+   ],
+   "functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance"
+   ],
+   "deadline": null,
+   "deadline_label": "Sem prazo futuro datado na fonte oficial.",
+   "title": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+   "what_changed": "Background information Cross-border case Legal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine Key words: Automated decision making, profiling and online tracking, fines Summary of the Decision The Autoriteit Persoonsgegevens (AP),…",
+   "recommended_action": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+   ],
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nDutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling\n\nImpacto:\nCRÍTICO\n\nAfeta:\nFintech, AdTech, Cloud, E-commerce\n\nÁreas internas:\nData Protection Officer, Privacy, Compliance, Jurídico, Data Governance\n\nO que mudou:\nBackground information Cross-border case Legal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine Key words: Automated decision making, profiling and online tracking, fines Summary of the Decision The Autoriteit Persoonsgegevens (AP),…\n\nAção recomendada:\nAtualizar a matriz de risco com o padrão sancionado nesta decisão.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+  },
+  {
    "id": "al_re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
    "event_id": "re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
    "priority": "urgent",
@@ -320,6 +407,49 @@
     "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
    ],
    "text": "ALERTA REGULATÓRIO\n\nEvento:\nData Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)\n\nImpacto:\nCRÍTICO\n\nAfeta:\nSaúde, AdTech, Cloud, E-commerce\n\nÁreas internas:\nData Protection Officer, Privacy, Compliance, Jurídico, Data Governance\n\nO que mudou:\nBackground information Date of final decision: 28 August 2026 National case Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 32 (Security of processing), Article 33 (Notification of a personal data breach to the supervisory authority), Article 34 (Communication of a personal data breach to the data subject) Decision: Administrative fine, Compliance…\n\nAção recomendada:\nAtualizar a matriz de risco com o padrão sancionado nesta decisão.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
+  },
+  {
+   "id": "al_re_ato_edpb-edpb-europa-eu-news-hellenic-dpa-decision-on-a-data-7634ff",
+   "event_id": "re_ato_edpb-edpb-europa-eu-news-hellenic-dpa-decision-on-a-data-7634ff",
+   "priority": "urgent",
+   "impact_level": "critical",
+   "impact_score": 87,
+   "sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS"
+   ],
+   "themes": [
+    "EDPB e proteção de dados em IA",
+    "Enforcement e sanções"
+   ],
+   "regulator": "EDPB",
+   "company_types": [
+    "Plataforma digital / marketplace",
+    "Grande empresa",
+    "PME (pequena e média empresa)",
+    "Provedor de cloud, infraestrutura ou capacidade computacional"
+   ],
+   "functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance"
+   ],
+   "deadline": null,
+   "deadline_label": "Sem prazo futuro datado na fonte oficial.",
+   "title": "Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs",
+   "what_changed": "Background information Date of final decision: 28/07/2026 National case Controller: Ministry of Social Cohesion and Family Affairs Legal Reference(s): Article 25 (Data protection by design and by default), Article 28 (Processor), Article 32 (Security of processing), Article 33 (Notification of a personal data breach to the supervisory authority) and Article 34 (Communication of a personal data…",
+   "recommended_action": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en"
+   ],
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nHellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs\n\nImpacto:\nCRÍTICO\n\nAfeta:\nAdTech, Cloud, E-commerce, Marketplaces\n\nÁreas internas:\nData Protection Officer, Privacy, Compliance, Jurídico, Data Governance\n\nO que mudou:\nBackground information Date of final decision: 28/07/2026 National case Controller: Ministry of Social Cohesion and Family Affairs Legal Reference(s): Article 25 (Data protection by design and by default), Article 28 (Processor), Article 32 (Security of processing), Article 33 (Notification of a personal data breach to the supervisory authority) and Article 34 (Communication of a personal data…\n\nAção recomendada:\nAtualizar a matriz de risco com o padrão sancionado nesta decisão.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en"
   },
   {
    "id": "al_re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
@@ -421,34 +551,34 @@
     "SaaS"
    ],
    "themes": [
-    "Consultas públicas e agenda",
     "Concorrência e mercados digitais",
+    "Consultas públicas e agenda",
     "EDPB e proteção de dados em IA"
    ],
    "regulator": "EDPB",
    "company_types": [
+    "Plataforma digital / marketplace",
     "Grande empresa",
-    "PME (pequena e média empresa)",
-    "Startup / empresa em formação",
-    "Provedor de sistema de IA"
+    "Provedor de cloud, infraestrutura ou capacidade computacional",
+    "PME (pequena e média empresa)"
    ],
    "functions": [
+    "Jurídico",
     "Public Policy",
     "Government Affairs",
-    "Regulatory Affairs",
-    "Jurídico",
-    "Strategy"
+    "Strategy",
+    "Compliance"
    ],
    "deadline": "2026-10-15",
    "deadline_label": "Data referida no texto oficial — 2026-10-15 (7 dias)",
-   "title": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date",
-   "what_changed": "Brussels, 23 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…",
+   "title": "Stakeholder event on guidelines on the interplay between data protection and competition law: agenda now available",
+   "what_changed": "Brussels, 30 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…",
    "recommended_action": "Assinar as atualizações do AI Office e do registo oficial antes de cada release relevante.",
    "confidence": 0.8,
    "official_sources": [
-    "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en"
+    "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\nStakeholder event on guidelines on the interplay between data protection and competition law: save the date\n\nImpacto:\nALTO\n\nAfeta:\nAdTech, Cloud, E-commerce, Marketplaces\n\nÁreas internas:\nPublic Policy, Government Affairs, Regulatory Affairs, Jurídico, Strategy\n\nO que mudou:\nBrussels, 23 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…\n\nAção recomendada:\nAssinar as atualizações do AI Office e do registo oficial antes de cada release relevante.\n\nPrazo:\nData referida no texto oficial — 2026-10-15 (7 dias)\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nStakeholder event on guidelines on the interplay between data protection and competition law: agenda now available\n\nImpacto:\nALTO\n\nAfeta:\nAdTech, Cloud, E-commerce, Marketplaces\n\nÁreas internas:\nJurídico, Public Policy, Government Affairs, Strategy, Compliance\n\nO que mudou:\nBrussels, 30 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…\n\nAção recomendada:\nAssinar as atualizações do AI Office e do registo oficial antes de cada release relevante.\n\nPrazo:\nData referida no texto oficial — 2026-10-15 (7 dias)\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en"
   },
   {
    "id": "al_re_procedimento_ue-2021-0106-cod",

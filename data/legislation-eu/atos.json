@@ -3,15 +3,87 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 26,
+    "total": 29,
     "por_orgao": {
-      "edpb": 12,
+      "edpb": 15,
       "eu_commission": 14
     },
-    "indice_total": 26,
+    "indice_total": 29,
     "execucao": "2026-10-08"
   },
   "atos": [
+    {
+      "id": "edpb_edpb_europa_eu_news_swedish_dpa_fines_miljodata_i_karlskrona_approximately_eur_160_000_for_insufficient_techni",
+      "orgao": "edpb",
+      "tipo": "orientacao",
+      "titulo": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+      "descricao": "Background information Date of final decision: 22/09/2026 National case Legal Reference(s): Article 32 (Security of processing) Decision: Administrative fine Website topics: Cybersecurity, personal data breaches Summary of the Decision Origin of the case In August 2025, the IT service provider Miljödata was targeted in a cyberattack, during which a malicious actor gained access to a large volume of personal data and subsequently published data on the darknet. According to the company, the incident affected 2.2 million individuals. Among Miljödata’s customers affected by the attack are a majori",
+      "data": "2026-10-08",
+      "url_oficial": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en",
+      "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
+      "canais": [
+        "notícias e guidelines (RSS oficial)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:6b069527163002e7",
+      "ultima_verificacao": "2026-10-08T12:50:26-03:00",
+      "ultima_execucao": "run_2026_10_08_1250",
+      "primeira_deteccao": "2026-10-08T12:50:26-03:00",
+      "id_execucao_primeira": "run_2026_10_08_1250",
+      "historico": []
+    },
+    {
+      "id": "edpb_edpb_europa_eu_news_hellenic_dpa_decision_on_a_data_breach_involving_eetaa_sa_as_processor_for_the_ministry_of",
+      "orgao": "edpb",
+      "tipo": "orientacao",
+      "titulo": "Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs",
+      "descricao": "Background information Date of final decision: 28/07/2026 National case Controller: Ministry of Social Cohesion and Family Affairs Legal Reference(s): Article 25 (Data protection by design and by default), Article 28 (Processor), Article 32 (Security of processing), Article 33 (Notification of a personal data breach to the supervisory authority) and Article 34 (Communication of a personal data breach to the data subject) Decision: Administrative fine, Compliance order, Summary of the Decision Origin of the case The Hellenic Data Protection Authority (DPA) investigated a large-scale personal da",
+      "data": "2026-10-08",
+      "url_oficial": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en",
+      "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
+      "canais": [
+        "notícias e guidelines (RSS oficial)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:eb693757bc82fe55",
+      "ultima_verificacao": "2026-10-08T12:50:26-03:00",
+      "ultima_execucao": "run_2026_10_08_1250",
+      "primeira_deteccao": "2026-10-08T12:50:26-03:00",
+      "id_execucao_primeira": "run_2026_10_08_1250",
+      "historico": []
+    },
+    {
+      "id": "edpb_edpb_europa_eu_news_dutch_dpa_fines_uber_eur_824_990_000_for_unlawful_automated_decision_making_and_insufficie",
+      "orgao": "edpb",
+      "tipo": "orientacao",
+      "titulo": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+      "descricao": "Background information Cross-border case Legal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine Key words: Automated decision making, profiling and online tracking, fines Summary of the Decision The Autoriteit Persoonsgegevens (AP), the Dutch data protection authority, imposes a fine of EUR 824 990 000 on Uber. The reason for this is that the AP has ruled that Uber made fully automated decisions about drivers. In case of suspicion",
+      "data": "2026-10-08",
+      "url_oficial": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en",
+      "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
+      "canais": [
+        "notícias e guidelines (RSS oficial)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:eff572de6dbc2ca1",
+      "ultima_verificacao": "2026-10-08T12:50:26-03:00",
+      "ultima_execucao": "run_2026_10_08_1250",
+      "primeira_deteccao": "2026-10-08T12:50:26-03:00",
+      "id_execucao_primeira": "run_2026_10_08_1250",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2064",
       "orgao": "eu_commission",
@@ -254,8 +326,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:5773d4fe57e6c94e",
-      "ultima_verificacao": "2026-10-08T09:03:19-03:00",
-      "ultima_execucao": "run_2026_10_08_0903",
+      "ultima_verificacao": "2026-10-08T12:50:26-03:00",
+      "ultima_execucao": "run_2026_10_08_1250",
       "primeira_deteccao": "2026-09-23T07:00:31-03:00",
       "id_execucao_primeira": "run_2026_09_23_0700",
       "historico": [
@@ -382,8 +454,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:d1e1dc9a969fb478",
-      "ultima_verificacao": "2026-10-08T09:03:19-03:00",
-      "ultima_execucao": "run_2026_10_08_0903",
+      "ultima_verificacao": "2026-10-08T12:50:26-03:00",
+      "ultima_execucao": "run_2026_10_08_1250",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": [
@@ -445,8 +517,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:075867e4826a517b",
-      "ultima_verificacao": "2026-10-08T09:03:19-03:00",
-      "ultima_execucao": "run_2026_10_08_0903",
+      "ultima_verificacao": "2026-10-08T12:50:26-03:00",
+      "ultima_execucao": "run_2026_10_08_1250",
       "primeira_deteccao": "2026-10-05T14:23:01-03:00",
       "id_execucao_primeira": "run_2026_10_05_1423",
       "historico": []
@@ -493,8 +565,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:2faed5a3020629c5",
-      "ultima_verificacao": "2026-10-08T09:03:19-03:00",
-      "ultima_execucao": "run_2026_10_08_0903",
+      "ultima_verificacao": "2026-10-08T12:50:26-03:00",
+      "ultima_execucao": "run_2026_10_08_1250",
       "primeira_deteccao": "2026-10-05T14:23:01-03:00",
       "id_execucao_primeira": "run_2026_10_05_1423",
       "historico": []
@@ -541,8 +613,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:60e474bdba39fbf7",
-      "ultima_verificacao": "2026-10-08T09:03:19-03:00",
-      "ultima_execucao": "run_2026_10_08_0903",
+      "ultima_verificacao": "2026-10-08T12:50:26-03:00",
+      "ultima_execucao": "run_2026_10_08_1250",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": []
@@ -551,10 +623,10 @@
       "id": "edpb_edpb_europa_eu_news_stakeholder_event_on_guidelines_on_the_interplay_between_data_protection_and_competition_l",
       "orgao": "edpb",
       "tipo": "orientacao",
-      "titulo": "Stakeholder event on guidelines on the interplay between data protection and competition law: save the date",
-      "descricao": "Brussels, 23 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to stakeholder engagement and cross-regulatory cooperation, as outlined in the Helsinki statement and in the EDPB Strategy 2024-2027 . Join the event to have your say This is your chance to contribute directly t",
-      "data": "2026-07-23",
-      "url_oficial": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law_en",
+      "titulo": "Stakeholder event on guidelines on the interplay between data protection and competition law: agenda now available",
+      "descricao": "Brussels, 30 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to stakeholder engagement and cross-regulatory cooperation, as outlined in the Helsinki statement and in the EDPB Strategy 2024-2027 . Who can participate? The EDPB and the European Commission welcome participat",
+      "data": "2026-07-30",
+      "url_oficial": "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en",
       "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
       "canais": [
         "notícias e guidelines (RSS oficial)"
@@ -564,9 +636,9 @@
       "situacao": null,
       "tipo_ato": null,
       "hierarquia": null,
-      "texto_hash": "sha1:b376184e0ea66969",
-      "ultima_verificacao": "2026-10-08T09:03:19-03:00",
-      "ultima_execucao": "run_2026_10_08_0903",
+      "texto_hash": "sha1:27d90c0b6c82a82c",
+      "ultima_verificacao": "2026-10-08T12:50:26-03:00",
+      "ultima_execucao": "run_2026_10_08_1250",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": [
@@ -574,13 +646,6 @@
           "data_deteccao": "2026-10-04T16:47:19-03:00",
           "id_execucao": "run_2026_10_04_1647",
           "campo": "texto",
-          "anterior": "sha1:b376184e0ea66969",
-          "novo": "sha1:27d90c0b6c82a82c"
-        },
-        {
-          "data_deteccao": "2026-10-04T16:47:19-03:00",
-          "id_execucao": "run_2026_10_04_1647",
-          "campo": "texto",
           "anterior": "sha1:27d90c0b6c82a82c",
           "novo": "sha1:b376184e0ea66969"
         },
@@ -709,6 +774,13 @@
           "campo": "texto",
           "anterior": "sha1:27d90c0b6c82a82c",
           "novo": "sha1:b376184e0ea66969"
+        },
+        {
+          "data_deteccao": "2026-10-08T12:50:26-03:00",
+          "id_execucao": "run_2026_10_08_1250",
+          "campo": "texto",
+          "anterior": "sha1:b376184e0ea66969",
+          "novo": "sha1:27d90c0b6c82a82c"
         }
       ]
     },
@@ -926,7 +998,7 @@
         "v": "2026-10-08"
       },
       "edpb_edpb_europa_eu_news_stakeholder_event_on_guidelines_on_the_interplay_between_data_protection_and_competition_l": {
-        "h": "sha1:b376184e0ea66969",
+        "h": "sha1:27d90c0b6c82a82c",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
         "v": "2026-10-08"
@@ -971,6 +1043,24 @@
         "h": "sha1:2faed5a3020629c5",
         "s": null,
         "d": "2026-10-05T14:23:01-03:00",
+        "v": "2026-10-08"
+      },
+      "edpb_edpb_europa_eu_news_swedish_dpa_fines_miljodata_i_karlskrona_approximately_eur_160_000_for_insufficient_techni": {
+        "h": "sha1:6b069527163002e7",
+        "s": null,
+        "d": "2026-10-08T12:50:26-03:00",
+        "v": "2026-10-08"
+      },
+      "edpb_edpb_europa_eu_news_hellenic_dpa_decision_on_a_data_breach_involving_eetaa_sa_as_processor_for_the_ministry_of": {
+        "h": "sha1:eb693757bc82fe55",
+        "s": null,
+        "d": "2026-10-08T12:50:26-03:00",
+        "v": "2026-10-08"
+      },
+      "edpb_edpb_europa_eu_news_dutch_dpa_fines_uber_eur_824_990_000_for_unlawful_automated_decision_making_and_insufficie": {
+        "h": "sha1:eff572de6dbc2ca1",
+        "s": null,
+        "d": "2026-10-08T12:50:26-03:00",
         "v": "2026-10-08"
       }
     },

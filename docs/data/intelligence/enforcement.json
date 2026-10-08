@@ -1,11 +1,145 @@
 {
  "meta": {
-  "total": 7,
+  "total": 10,
   "description": "Enforcement monitorado a partir de fontes oficiais (EDPB, EDPS, Comissão e autoridades nacionais citadas nas decisões).",
   "structure": "Evento → empresa/setor → autoridade → base legal → decisão → consequência → lição regulatória.",
   "rule": "A base legal é a indicada pela autoridade na fonte; o monitor não a reinterpreta."
  },
  "cases": [
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
+   "event": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+   "date": "2026-10-08",
+   "authority": "EDPB",
+   "company_or_sector": "Cibersegurança",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — segurança (art. 32.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Background information Date of final decision: 22/09/2026 National case Legal Reference(s): Article 32 (Security of processing) Decision: Administrative fine Website topics: Cybersecurity, personal data breaches Summary of the Decision Origin of the case In August 2025, the IT service provider Miljödata was targeted in a cyberattack, during which a malicious actor gained access to a large volume of personal data and subsequently published data on the darknet. According to the company, the incident affected 2.2 million individuals. Among Miljödata’s customers affected by the attack are a majori",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em Cibersegurança, AdTech, Bancos.",
+   "regulatory_lesson": "Lição regulatória: falha de segurança com exposição de dados gera sanção administrativa além do custo operacional.",
+   "affected_sectors": [
+    "Cibersegurança",
+    "AdTech",
+    "Bancos",
+    "Cloud",
+    "Data Centers",
+    "E-commerce",
+    "Energia",
+    "Marketplaces"
+   ],
+   "affected_functions": [
+    "Cybersecurity",
+    "Risk",
+    "Engenharia / ML",
+    "Compliance",
+    "Data Protection Officer",
+    "Privacy",
+    "Jurídico",
+    "Data Governance"
+   ],
+   "recommended_actions": [
+    "Testar resposta a incidentes e reporte nos prazos aplicáveis.",
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-dutch-dpa-fines-uber-eur-824-99-9a1d0d",
+   "event": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
+   "date": "2026-10-08",
+   "authority": "EDPB",
+   "company_or_sector": "Fintech",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — base legal (art. 6.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Background information Cross-border case Legal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine Key words: Automated decision making, profiling and online tracking, fines Summary of the Decision The Autoriteit Persoonsgegevens (AP), the Dutch data protection authority, imposes a fine of EUR 824 990 000 on Uber. The reason for this is that the AP has ruled that Uber made fully automated decisions about drivers. In case of suspicion",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em Fintech, AdTech, Cloud.",
+   "regulatory_lesson": "Lição regulatória: proteção de dados em produtos digitais é fiscalizada de forma ativa — base legal, transparência e resposta a pedidos de direitos são verificadas na prática.",
+   "affected_sectors": [
+    "Fintech",
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "Product"
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-hellenic-dpa-decision-on-a-data-7634ff",
+   "event": "Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs",
+   "date": "2026-10-08",
+   "authority": "EDPB",
+   "company_or_sector": "AdTech",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — segurança (art. 32.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Background information Date of final decision: 28/07/2026 National case Controller: Ministry of Social Cohesion and Family Affairs Legal Reference(s): Article 25 (Data protection by design and by default), Article 28 (Processor), Article 32 (Security of processing), Article 33 (Notification of a personal data breach to the supervisory authority) and Article 34 (Communication of a personal data breach to the data subject) Decision: Administrative fine, Compliance order, Summary of the Decision Origin of the case The Hellenic Data Protection Authority (DPA) investigated a large-scale personal da",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em AdTech, Cloud, E-commerce.",
+   "regulatory_lesson": "Lição regulatória: proteção de dados em produtos digitais é fiscalizada de forma ativa — base legal, transparência e resposta a pedidos de direitos são verificadas na prática.",
+   "affected_sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "AI Governance"
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en"
+   ]
+  },
   {
    "id": "re_ato_edpb-edpb-europa-eu-news-the-irish-data-protection-commi-50ae85",
    "event": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
