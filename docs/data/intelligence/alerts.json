@@ -1,6 +1,6 @@
 {
  "meta": {
-  "total": 14,
+  "total": 18,
   "description": "Alertas em formato executivo, gerados a partir de eventos com fonte oficial.",
   "filters": [
    "setor",
@@ -134,7 +134,7 @@
     "Product"
    ],
    "deadline": "2026-12-02",
-   "deadline_label": "Aplicação das proibições — 2026-12-02 (55 dias)",
+   "deadline_label": "Aplicação das proibições — 2026-12-02 (54 dias)",
    "title": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
    "what_changed": "Digital Omnibus on AI — altera diretamente o AI Act: reprograma a aplicação das obrigações de alto risco (Anexo III 02/12/2027; Anexo I 02/08/2028), cria novas proibições aplicáveis a 02/12/2026 e reforça a execução pela European AI Office (Art. 102–110 aplicáveis desde 27/07/2026).",
    "recommended_action": "Inventariar sistemas de IA por caso de uso, risco e papel regulatório.",
@@ -142,7 +142,7 @@
    "official_sources": [
     "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\nRegulamento (UE) 2026/1744 — Digital Omnibus on AI\n\nImpacto:\nCRÍTICO\n\nAfeta:\nCloud, Modelos de Fundação (GPAI), Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nDigital Omnibus on AI — altera diretamente o AI Act: reprograma a aplicação das obrigações de alto risco (Anexo III 02/12/2027; Anexo I 02/08/2028), cria novas proibições aplicáveis a 02/12/2026 e reforça a execução pela European AI Office (Art. 102–110 aplicáveis desde 27/07/2026).\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nAplicação das proibições — 2026-12-02 (55 dias)\n\nFonte oficial:\nhttps://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nRegulamento (UE) 2026/1744 — Digital Omnibus on AI\n\nImpacto:\nCRÍTICO\n\nAfeta:\nCloud, Modelos de Fundação (GPAI), Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nDigital Omnibus on AI — altera diretamente o AI Act: reprograma a aplicação das obrigações de alto risco (Anexo III 02/12/2027; Anexo I 02/08/2028), cria novas proibições aplicáveis a 02/12/2026 e reforça a execução pela European AI Office (Art. 102–110 aplicáveis desde 27/07/2026).\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nAplicação das proibições — 2026-12-02 (54 dias)\n\nFonte oficial:\nhttps://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
   },
   {
    "id": "al_re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
@@ -279,6 +279,137 @@
    "text": "ALERTA REGULATÓRIO\n\nEvento:\nHealth data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR\n\nImpacto:\nCRÍTICO\n\nAfeta:\nSaúde, Cibersegurança, AdTech, Bancos\n\nÁreas internas:\nData Protection Officer, Privacy, Compliance, Jurídico, Data Governance\n\nO que mudou:\nBackground information Date of final decision: 3 September 2026 National case Controller: Hôpital Privé de la Loire Legal Reference: Article 32 (Security of processing), Article 34 (Communication of a personal data breach to the data subject), Decision: Administrative fine Keywords: Cybersecurity, Personal data breaches, Health and research Summary of the Decision Origin of the case In summer…\n\nAção recomendada:\nAtualizar a matriz de risco com o padrão sancionado nesta decisão.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
   },
   {
+   "id": "al_re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-iqvia-eur-7-0-c1dcc4",
+   "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-iqvia-eur-7-0-c1dcc4",
+   "priority": "urgent",
+   "impact_level": "critical",
+   "impact_score": 88,
+   "sectors": [
+    "Saúde",
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Pharma e Life Sciences"
+   ],
+   "themes": [
+    "EDPB e proteção de dados em IA",
+    "Enforcement e sanções",
+    "Dados de saúde e EHDS"
+   ],
+   "regulator": "EDPB",
+   "company_types": [
+    "Plataforma digital / marketplace",
+    "Grande empresa",
+    "PME (pequena e média empresa)",
+    "Provedor de cloud, infraestrutura ou capacidade computacional"
+   ],
+   "functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance"
+   ],
+   "deadline": null,
+   "deadline_label": "Sem prazo futuro datado na fonte oficial.",
+   "title": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
+   "what_changed": "Background information Date of final decision: 23 September 2026 National case Controller: IQVIA Solutions Italy S.r.l Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 9 (Processing of special categories of personal data), Article 13 (Information to be provided where personal data are collected from the data subject), Article 25 (Data protection by…",
+   "recommended_action": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en"
+   ],
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nItalian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data\n\nImpacto:\nCRÍTICO\n\nAfeta:\nSaúde, AdTech, Cloud, E-commerce\n\nÁreas internas:\nData Protection Officer, Privacy, Compliance, Jurídico, Data Governance\n\nO que mudou:\nBackground information Date of final decision: 23 September 2026 National case Controller: IQVIA Solutions Italy S.r.l Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 9 (Processing of special categories of personal data), Article 13 (Information to be provided where personal data are collected from the data subject), Article 25 (Data protection by…\n\nAção recomendada:\nAtualizar a matriz de risco com o padrão sancionado nesta decisão.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en"
+  },
+  {
+   "id": "al_re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-emirates-eur-704c4d",
+   "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-emirates-eur-704c4d",
+   "priority": "urgent",
+   "impact_level": "critical",
+   "impact_score": 88,
+   "sectors": [
+    "Saúde",
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Pharma e Life Sciences"
+   ],
+   "themes": [
+    "EDPB e proteção de dados em IA",
+    "Enforcement e sanções",
+    "Dados de saúde e EHDS"
+   ],
+   "regulator": "EDPB",
+   "company_types": [
+    "Plataforma digital / marketplace",
+    "Grande empresa",
+    "PME (pequena e média empresa)",
+    "Provedor de cloud, infraestrutura ou capacidade computacional"
+   ],
+   "functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance"
+   ],
+   "deadline": null,
+   "deadline_label": "Sem prazo futuro datado na fonte oficial.",
+   "title": "Italian DPA fines Emirates EUR 180 000 for infringements concerning passengers’ health data",
+   "what_changed": "Background information Date of final decision: 14 May 2026 National case Controller: Emirates Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject) and Article 13 (Information to be provided where personal data are collected from the data subject)…",
+   "recommended_action": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/italian-dpa-fines-emirates-eur-180-000-for-infringements-concerning-passengers-health-data_en"
+   ],
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nItalian DPA fines Emirates EUR 180 000 for infringements concerning passengers’ health data\n\nImpacto:\nCRÍTICO\n\nAfeta:\nSaúde, AdTech, Cloud, E-commerce\n\nÁreas internas:\nData Protection Officer, Privacy, Compliance, Jurídico, Data Governance\n\nO que mudou:\nBackground information Date of final decision: 14 May 2026 National case Controller: Emirates Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject) and Article 13 (Information to be provided where personal data are collected from the data subject)…\n\nAção recomendada:\nAtualizar a matriz de risco com o padrão sancionado nesta decisão.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/italian-dpa-fines-emirates-eur-180-000-for-infringements-concerning-passengers-health-data_en"
+  },
+  {
+   "id": "al_re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-bbva-eur-5-50-817f87",
+   "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-bbva-eur-5-50-817f87",
+   "priority": "urgent",
+   "impact_level": "critical",
+   "impact_score": 88,
+   "sectors": [
+    "Bancos",
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA"
+   ],
+   "themes": [
+    "EDPB e proteção de dados em IA",
+    "Enforcement e sanções"
+   ],
+   "regulator": "EDPB",
+   "company_types": [
+    "Plataforma digital / marketplace",
+    "Grande empresa",
+    "PME (pequena e média empresa)",
+    "Provedor de cloud, infraestrutura ou capacidade computacional"
+   ],
+   "functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance"
+   ],
+   "deadline": null,
+   "deadline_label": "Sem prazo futuro datado na fonte oficial.",
+   "title": "Italian DPA fines BBVA EUR 5 508 000 for failing to respect a customer’s objection to direct marketing",
+   "what_changed": "Background information Date of final decision: 3 July 2026 National case Controller: Banco Bilbao Vizcaya Argentaria, S.A., Italian branch (BBVA) Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 21 (Right to object), Article 24…",
+   "recommended_action": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/italian-dpa-fines-bbva-eur-5-508-000-for-failing-to-respect-a-customers-objection-to-direct_en"
+   ],
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nItalian DPA fines BBVA EUR 5 508 000 for failing to respect a customer’s objection to direct marketing\n\nImpacto:\nCRÍTICO\n\nAfeta:\nBancos, AdTech, Cloud, E-commerce\n\nÁreas internas:\nData Protection Officer, Privacy, Compliance, Jurídico, Data Governance\n\nO que mudou:\nBackground information Date of final decision: 3 July 2026 National case Controller: Banco Bilbao Vizcaya Argentaria, S.A., Italian branch (BBVA) Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 21 (Right to object), Article 24…\n\nAção recomendada:\nAtualizar a matriz de risco com o padrão sancionado nesta decisão.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/italian-dpa-fines-bbva-eur-5-508-000-for-failing-to-respect-a-customers-objection-to-direct_en"
+  },
+  {
    "id": "al_re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
    "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
    "priority": "urgent",
@@ -357,13 +488,13 @@
    "deadline": null,
    "deadline_label": "Sem prazo futuro datado na fonte oficial.",
    "title": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
-   "what_changed": "Background information Cross-border case Legal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine Key words: Automated decision making, profiling and online tracking, fines Summary of the Decision The Autoriteit Persoonsgegevens (AP),…",
+   "what_changed": "Background information Cross-border case Controller: Uber B.V Legal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine Key words: Automated decision making, profiling and online tracking, fines Summary of the Decision The Autoriteit…",
    "recommended_action": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
    "confidence": 0.8,
    "official_sources": [
     "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\nDutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling\n\nImpacto:\nCRÍTICO\n\nAfeta:\nFintech, AdTech, Cloud, E-commerce\n\nÁreas internas:\nData Protection Officer, Privacy, Compliance, Jurídico, Data Governance\n\nO que mudou:\nBackground information Cross-border case Legal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine Key words: Automated decision making, profiling and online tracking, fines Summary of the Decision The Autoriteit Persoonsgegevens (AP),…\n\nAção recomendada:\nAtualizar a matriz de risco com o padrão sancionado nesta decisão.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nDutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling\n\nImpacto:\nCRÍTICO\n\nAfeta:\nFintech, AdTech, Cloud, E-commerce\n\nÁreas internas:\nData Protection Officer, Privacy, Compliance, Jurídico, Data Governance\n\nO que mudou:\nBackground information Cross-border case Controller: Uber B.V Legal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine Key words: Automated decision making, profiling and online tracking, fines Summary of the Decision The Autoriteit…\n\nAção recomendada:\nAtualizar a matriz de risco com o padrão sancionado nesta decisão.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en"
   },
   {
    "id": "al_re_ato_edpb-edpb-europa-eu-news-data-protection-commission-anno-251304",
@@ -407,6 +538,49 @@
     "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
    ],
    "text": "ALERTA REGULATÓRIO\n\nEvento:\nData Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)\n\nImpacto:\nCRÍTICO\n\nAfeta:\nSaúde, AdTech, Cloud, E-commerce\n\nÁreas internas:\nData Protection Officer, Privacy, Compliance, Jurídico, Data Governance\n\nO que mudou:\nBackground information Date of final decision: 28 August 2026 National case Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 32 (Security of processing), Article 33 (Notification of a personal data breach to the supervisory authority), Article 34 (Communication of a personal data breach to the data subject) Decision: Administrative fine, Compliance…\n\nAção recomendada:\nAtualizar a matriz de risco com o padrão sancionado nesta decisão.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en"
+  },
+  {
+   "id": "al_re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-security-comp-b3892a",
+   "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-security-comp-b3892a",
+   "priority": "urgent",
+   "impact_level": "critical",
+   "impact_score": 87,
+   "sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS"
+   ],
+   "themes": [
+    "EDPB e proteção de dados em IA",
+    "Enforcement e sanções"
+   ],
+   "regulator": "EDPB",
+   "company_types": [
+    "Plataforma digital / marketplace",
+    "Grande empresa",
+    "PME (pequena e média empresa)",
+    "Provedor de cloud, infraestrutura ou capacidade computacional"
+   ],
+   "functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance"
+   ],
+   "deadline": null,
+   "deadline_label": "Sem prazo futuro datado na fonte oficial.",
+   "title": "Italian DPA fines security company EUR 39 000 for violations concerning employees’ data",
+   "what_changed": "Background information Date of final decision: 6 August 2026 National case Controller: La Patria S.p.A. Legal Reference(s): Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 13 (Information to be provided where personal data are collected from the data subject) and Article 15 (Right to access by the data subject)…",
+   "recommended_action": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/italian-dpa-fines-security-company-eur-39-000-for-violations-concerning-employees-data_en"
+   ],
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nItalian DPA fines security company EUR 39 000 for violations concerning employees’ data\n\nImpacto:\nCRÍTICO\n\nAfeta:\nAdTech, Cloud, E-commerce, Marketplaces\n\nÁreas internas:\nData Protection Officer, Privacy, Compliance, Jurídico, Data Governance\n\nO que mudou:\nBackground information Date of final decision: 6 August 2026 National case Controller: La Patria S.p.A. Legal Reference(s): Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 13 (Information to be provided where personal data are collected from the data subject) and Article 15 (Right to access by the data subject)…\n\nAção recomendada:\nAtualizar a matriz de risco com o padrão sancionado nesta decisão.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/italian-dpa-fines-security-company-eur-39-000-for-violations-concerning-employees-data_en"
   },
   {
    "id": "al_re_ato_edpb-edpb-europa-eu-news-hellenic-dpa-decision-on-a-data-7634ff",
@@ -526,7 +700,7 @@
     "Product"
    ],
    "deadline": "2027-12-02",
-   "deadline_label": "Obrigações de alto risco — Anexo III — 2027-12-02 (420 dias)",
+   "deadline_label": "Obrigações de alto risco — Anexo III — 2027-12-02 (419 dias)",
    "title": "Regulamento (UE) 2024/1689 — AI Act",
    "what_changed": "AI Act — o ato âncora deste monitor: abordagem baseada em risco, práticas proibidas, sistemas de alto risco, modelos de uso geral (GPAI) e European AI Office.",
    "recommended_action": "Inventariar sistemas de IA por caso de uso, risco e papel regulatório.",
@@ -534,7 +708,7 @@
    "official_sources": [
     "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\nRegulamento (UE) 2024/1689 — AI Act\n\nImpacto:\nALTO\n\nAfeta:\nModelos de Fundação (GPAI), Cloud, Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nAI Act — o ato âncora deste monitor: abordagem baseada em risco, práticas proibidas, sistemas de alto risco, modelos de uso geral (GPAI) e European AI Office.\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nObrigações de alto risco — Anexo III — 2027-12-02 (420 dias)\n\nFonte oficial:\nhttps://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nRegulamento (UE) 2024/1689 — AI Act\n\nImpacto:\nALTO\n\nAfeta:\nModelos de Fundação (GPAI), Cloud, Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nAI Act — o ato âncora deste monitor: abordagem baseada em risco, práticas proibidas, sistemas de alto risco, modelos de uso geral (GPAI) e European AI Office.\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nObrigações de alto risco — Anexo III — 2027-12-02 (419 dias)\n\nFonte oficial:\nhttps://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
   },
   {
    "id": "al_re_ato_edpb-edpb-europa-eu-news-stakeholder-event-on-guidelines-c9491c",
@@ -570,7 +744,7 @@
     "Compliance"
    ],
    "deadline": "2026-10-15",
-   "deadline_label": "Data referida no texto oficial — 2026-10-15 (7 dias)",
+   "deadline_label": "Data referida no texto oficial — 2026-10-15 (6 dias)",
    "title": "Stakeholder event on guidelines on the interplay between data protection and competition law: agenda now available",
    "what_changed": "Brussels, 30 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…",
    "recommended_action": "Assinar as atualizações do AI Office e do registo oficial antes de cada release relevante.",
@@ -578,7 +752,7 @@
    "official_sources": [
     "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\nStakeholder event on guidelines on the interplay between data protection and competition law: agenda now available\n\nImpacto:\nALTO\n\nAfeta:\nAdTech, Cloud, E-commerce, Marketplaces\n\nÁreas internas:\nJurídico, Public Policy, Government Affairs, Strategy, Compliance\n\nO que mudou:\nBrussels, 30 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…\n\nAção recomendada:\nAssinar as atualizações do AI Office e do registo oficial antes de cada release relevante.\n\nPrazo:\nData referida no texto oficial — 2026-10-15 (7 dias)\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nStakeholder event on guidelines on the interplay between data protection and competition law: agenda now available\n\nImpacto:\nALTO\n\nAfeta:\nAdTech, Cloud, E-commerce, Marketplaces\n\nÁreas internas:\nJurídico, Public Policy, Government Affairs, Strategy, Compliance\n\nO que mudou:\nBrussels, 30 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…\n\nAção recomendada:\nAssinar as atualizações do AI Office e do registo oficial antes de cada release relevante.\n\nPrazo:\nData referida no texto oficial — 2026-10-15 (6 dias)\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en"
   },
   {
    "id": "al_re_procedimento_ue-2021-0106-cod",
@@ -612,7 +786,7 @@
     "Product"
    ],
    "deadline": "2027-12-02",
-   "deadline_label": "Obrigações de alto risco — Anexo III — 2027-12-02 (420 dias)",
+   "deadline_label": "Obrigações de alto risco — Anexo III — 2027-12-02 (419 dias)",
    "title": "2021/0106(COD)",
    "what_changed": "Primeiro quadro jurídico vinculante do mundo para a inteligência artificial: abordagem baseada em risco, práticas proibidas, obrigações para sistemas de alto risco e para modelos de uso geral (GPAI), European AI Office.",
    "recommended_action": "Inventariar sistemas de IA por caso de uso, risco e papel regulatório.",
@@ -620,7 +794,7 @@
    "official_sources": [
     "https://data.europarl.europa.eu/api/v2/procedures/2021-0106?format=application/ld%2Bjson"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\n2021/0106(COD)\n\nImpacto:\nALTO\n\nAfeta:\nModelos de Fundação (GPAI), Cloud, Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nPrimeiro quadro jurídico vinculante do mundo para a inteligência artificial: abordagem baseada em risco, práticas proibidas, obrigações para sistemas de alto risco e para modelos de uso geral (GPAI), European AI Office.\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nObrigações de alto risco — Anexo III — 2027-12-02 (420 dias)\n\nFonte oficial:\nhttps://data.europarl.europa.eu/api/v2/procedures/2021-0106?format=application/ld%2Bjson"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\n2021/0106(COD)\n\nImpacto:\nALTO\n\nAfeta:\nModelos de Fundação (GPAI), Cloud, Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nPrimeiro quadro jurídico vinculante do mundo para a inteligência artificial: abordagem baseada em risco, práticas proibidas, obrigações para sistemas de alto risco e para modelos de uso geral (GPAI), European AI Office.\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nObrigações de alto risco — Anexo III — 2027-12-02 (419 dias)\n\nFonte oficial:\nhttps://data.europarl.europa.eu/api/v2/procedures/2021-0106?format=application/ld%2Bjson"
   }
  ]
 }

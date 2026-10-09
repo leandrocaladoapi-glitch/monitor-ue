@@ -52,12 +52,17 @@
   {
    "key": "edpb",
    "label": "EDPB e proteção de dados em IA",
-   "events": 15
+   "events": 19
   },
   {
    "key": "enforcement",
    "label": "Enforcement e sanções",
-   "events": 10
+   "events": 14
+  },
+  {
+   "key": "health_data",
+   "label": "Dados de saúde e EHDS",
+   "events": 5
   },
   {
    "key": "consultation",
@@ -77,11 +82,6 @@
   {
    "key": "ai_office",
    "label": "European AI Office",
-   "events": 3
-  },
-  {
-   "key": "health_data",
-   "label": "Dados de saúde e EHDS",
    "events": 3
   },
   {
@@ -123,7 +123,7 @@
  "regulators": [
   {
    "name": "EDPB",
-   "events": 15
+   "events": 19
   },
   {
    "name": "Comissão Europeia",
@@ -137,7 +137,7 @@
  "act_types": [
   {
    "label": "Enforcement / sanção",
-   "events": 10
+   "events": 14
   },
   {
    "label": "Consulta pública",
@@ -160,37 +160,47 @@
   {
    "slug": "cloud",
    "name": "Cloud",
-   "changes": 21
+   "changes": 25
   },
   {
    "slug": "adtech",
    "name": "AdTech",
-   "changes": 17
+   "changes": 21
   },
   {
    "slug": "ecommerce",
    "name": "E-commerce",
-   "changes": 16
+   "changes": 20
   },
   {
    "slug": "provedores-de-ia",
    "name": "Provedores de IA",
-   "changes": 17
+   "changes": 21
   },
   {
    "slug": "saas",
    "name": "SaaS",
-   "changes": 17
+   "changes": 21
   },
   {
    "slug": "marketplaces",
    "name": "Marketplaces",
-   "changes": 14
+   "changes": 18
   },
   {
    "slug": "saude",
    "name": "Saúde",
-   "changes": 13
+   "changes": 17
+  },
+  {
+   "slug": "bancos",
+   "name": "Bancos",
+   "changes": 5
+  },
+  {
+   "slug": "ciberseguranca",
+   "name": "Cibersegurança",
+   "changes": 5
   },
   {
    "slug": "data-centers",
@@ -203,19 +213,14 @@
    "changes": 6
   },
   {
-   "slug": "bancos",
-   "name": "Bancos",
-   "changes": 4
-  },
-  {
-   "slug": "ciberseguranca",
-   "name": "Cibersegurança",
-   "changes": 5
-  },
-  {
    "slug": "modelos-de-fundacao",
    "name": "Modelos de Fundação (GPAI)",
    "changes": 5
+  },
+  {
+   "slug": "pharma",
+   "name": "Pharma e Life Sciences",
+   "changes": 3
   },
   {
    "slug": "hr-tech",
@@ -240,11 +245,6 @@
   {
    "slug": "legaltech",
    "name": "LegalTech",
-   "changes": 1
-  },
-  {
-   "slug": "pharma",
-   "name": "Pharma e Life Sciences",
    "changes": 1
   },
   {

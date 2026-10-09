@@ -49,5 +49,5 @@ Este site é o monitor EXCLUSIVO da União Europeia em https://monitor-ue.vercel
 ## Source and trust policy
 Facts are grounded in primary sources including the European Parliament (Open Data Portal v2), EUR-Lex / Official Journal of the EU, the Council of the EU public register, the European Commission (Press Corner and Have Your Say), the European AI Office, the EDPB and the EDPS. The interinstitutional procedure number (e.g. 2021/0106(COD)) is the shared identity across institutions. Automatic discoveries can be flagged as awaiting editorial review. Corrections are recorded rather than silently overwritten.
 
-Last build reference: 2026-10-08.
+Last build reference: 2026-10-09.
 Domain: https://monitor-ue.vercel.app/ — exclusive EU monitor.

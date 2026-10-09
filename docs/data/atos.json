@@ -3,15 +3,135 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 29,
+    "total": 34,
     "por_orgao": {
-      "edpb": 15,
-      "eu_commission": 14
+      "edpb": 19,
+      "eu_commission": 15
     },
-    "indice_total": 29,
-    "execucao": "2026-10-08"
+    "indice_total": 34,
+    "execucao": "2026-10-09"
   },
   "atos": [
+    {
+      "id": "edpb_edpb_europa_eu_news_italian_dpa_fines_iqvia_eur_7_000_000_for_unlawful_processing_of_patients_health_data_en",
+      "orgao": "edpb",
+      "tipo": "orientacao",
+      "titulo": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
+      "descricao": "Background information Date of final decision: 23 September 2026 National case Controller: IQVIA Solutions Italy S.r.l Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 9 (Processing of special categories of personal data), Article 13 (Information to be provided where personal data are collected from the data subject), Article 25 (Data protection by design and by default), Article 28 (Processor) and Article 35 (Data protection impact assessment) Decision: Administrative fine Key words: Data protection impact assessment, Health and research, Anonymisati",
+      "data": "2026-10-09",
+      "url_oficial": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en",
+      "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
+      "canais": [
+        "notícias e guidelines (RSS oficial)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:cec8f83b48cc400f",
+      "ultima_verificacao": "2026-10-09T08:55:04-03:00",
+      "ultima_execucao": "run_2026_10_09_0855",
+      "primeira_deteccao": "2026-10-09T08:55:04-03:00",
+      "id_execucao_primeira": "run_2026_10_09_0855",
+      "historico": []
+    },
+    {
+      "id": "edpb_edpb_europa_eu_news_italian_dpa_fines_security_company_eur_39_000_for_violations_concerning_employees_data_en",
+      "orgao": "edpb",
+      "tipo": "orientacao",
+      "titulo": "Italian DPA fines security company EUR 39 000 for violations concerning employees’ data",
+      "descricao": "Background information Date of final decision: 6 August 2026 National case Controller: La Patria S.p.A. Legal Reference(s): Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 13 (Information to be provided where personal data are collected from the data subject) and Article 15 (Right to access by the data subject) Decision: Administrative fine Key words: Data subjects rights, Fines Summary of the Decision Origin of the case The Italian Data Protection Authority (DPA) initiated an investigation following a complaint lod",
+      "data": "2026-10-09",
+      "url_oficial": "https://www.edpb.europa.eu/news/italian-dpa-fines-security-company-eur-39-000-for-violations-concerning-employees-data_en",
+      "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
+      "canais": [
+        "notícias e guidelines (RSS oficial)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:1642d01b1fb890b2",
+      "ultima_verificacao": "2026-10-09T08:55:04-03:00",
+      "ultima_execucao": "run_2026_10_09_0855",
+      "primeira_deteccao": "2026-10-09T08:55:04-03:00",
+      "id_execucao_primeira": "run_2026_10_09_0855",
+      "historico": []
+    },
+    {
+      "id": "edpb_edpb_europa_eu_news_italian_dpa_fines_emirates_eur_180_000_for_infringements_concerning_passengers_health_data",
+      "orgao": "edpb",
+      "tipo": "orientacao",
+      "titulo": "Italian DPA fines Emirates EUR 180 000 for infringements concerning passengers’ health data",
+      "descricao": "Background information Date of final decision: 14 May 2026 National case Controller: Emirates Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine, Compliance order Website topics: Health and research, Basic principles Summary of the Decision Origin of the case The Italian Data Protection Authority (DPA) initiated an in",
+      "data": "2026-10-09",
+      "url_oficial": "https://www.edpb.europa.eu/news/italian-dpa-fines-emirates-eur-180-000-for-infringements-concerning-passengers-health-data_en",
+      "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
+      "canais": [
+        "notícias e guidelines (RSS oficial)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:8ec95a5b45fc48ba",
+      "ultima_verificacao": "2026-10-09T08:55:04-03:00",
+      "ultima_execucao": "run_2026_10_09_0855",
+      "primeira_deteccao": "2026-10-09T08:55:04-03:00",
+      "id_execucao_primeira": "run_2026_10_09_0855",
+      "historico": []
+    },
+    {
+      "id": "edpb_edpb_europa_eu_news_italian_dpa_fines_bbva_eur_5_508_000_for_failing_to_respect_a_customers_objection_to_direc",
+      "orgao": "edpb",
+      "tipo": "orientacao",
+      "titulo": "Italian DPA fines BBVA EUR 5 508 000 for failing to respect a customer’s objection to direct marketing",
+      "descricao": "Background information Date of final decision: 3 July 2026 National case Controller: Banco Bilbao Vizcaya Argentaria, S.A., Italian branch (BBVA) Legal Reference(s): Article 5 (Principles relating to processing of personal data), Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 21 (Right to object), Article 24 (Responsibility of the controller) Decision: Administrative fine, Compliance order Website topics: Basic principles, Data subjects rights, Marketing Summary of the Decision Origin of the case The Italian Data P",
+      "data": "2026-10-09",
+      "url_oficial": "https://www.edpb.europa.eu/news/italian-dpa-fines-bbva-eur-5-508-000-for-failing-to-respect-a-customers-objection-to-direct_en",
+      "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
+      "canais": [
+        "notícias e guidelines (RSS oficial)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:eb78ce14cb391900",
+      "ultima_verificacao": "2026-10-09T08:55:04-03:00",
+      "ultima_execucao": "run_2026_10_09_0855",
+      "primeira_deteccao": "2026-10-09T08:55:04-03:00",
+      "id_execucao_primeira": "run_2026_10_09_0855",
+      "historico": []
+    },
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2052",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Speech by Commissioner Albuquerque (by video message) for the EIF Financial Institutions Shareholder Group Annual Meeting",
+      "descricao": "European Commission Speech Online, 09 Oct 2026 Good morning, ladies and gentlemen. Let me start by thanking our hosts Marjut, José, and Manuel for inviting me to join you today. It's rare to have so many ins...",
+      "data": "2026-10-08",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2052",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:44f2c0089f7bde29",
+      "ultima_verificacao": "2026-10-09T08:55:04-03:00",
+      "ultima_execucao": "run_2026_10_09_0855",
+      "primeira_deteccao": "2026-10-09T08:55:04-03:00",
+      "id_execucao_primeira": "run_2026_10_09_0855",
+      "historico": []
+    },
     {
       "id": "edpb_edpb_europa_eu_news_swedish_dpa_fines_miljodata_i_karlskrona_approximately_eur_160_000_for_insufficient_techni",
       "orgao": "edpb",
@@ -30,8 +150,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:6b069527163002e7",
-      "ultima_verificacao": "2026-10-08T18:28:41-03:00",
-      "ultima_execucao": "run_2026_10_08_1828",
+      "ultima_verificacao": "2026-10-09T08:55:04-03:00",
+      "ultima_execucao": "run_2026_10_09_0855",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": []
@@ -54,8 +174,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:eb693757bc82fe55",
-      "ultima_verificacao": "2026-10-08T18:28:41-03:00",
-      "ultima_execucao": "run_2026_10_08_1828",
+      "ultima_verificacao": "2026-10-09T08:55:04-03:00",
+      "ultima_execucao": "run_2026_10_09_0855",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": []
@@ -65,7 +185,7 @@
       "orgao": "edpb",
       "tipo": "orientacao",
       "titulo": "Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling",
-      "descricao": "Background information Cross-border case Legal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine Key words: Automated decision making, profiling and online tracking, fines Summary of the Decision The Autoriteit Persoonsgegevens (AP), the Dutch data protection authority, imposes a fine of EUR 824 990 000 on Uber. The reason for this is that the AP has ruled that Uber made fully automated decisions about drivers. In case of suspicion",
+      "descricao": "Background information Cross-border case Controller: Uber B.V Legal Reference(s): Article 22 (Automated individual decision making, including profiling) and Article 13 (Information to be provided where personal data are collected from the data subject) Decision: Administrative fine Key words: Automated decision making, profiling and online tracking, fines Summary of the Decision The Autoriteit Persoonsgegevens (AP), the Dutch data protection authority, imposes a fine of EUR 824 990 000 on Uber. The reason for this is that the AP has ruled that Uber made fully automated decisions about drivers.",
       "data": "2026-10-08",
       "url_oficial": "https://www.edpb.europa.eu/news/dutch-dpa-fines-uber-eur-824-990-000-for-unlawful-automated-decision-making-and-insufficient_en",
       "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
@@ -77,12 +197,20 @@
       "situacao": null,
       "tipo_ato": null,
       "hierarquia": null,
-      "texto_hash": "sha1:eff572de6dbc2ca1",
-      "ultima_verificacao": "2026-10-08T18:28:41-03:00",
-      "ultima_execucao": "run_2026_10_08_1828",
+      "texto_hash": "sha1:19a4f1dc94b8482a",
+      "ultima_verificacao": "2026-10-09T08:55:04-03:00",
+      "ultima_execucao": "run_2026_10_09_0855",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
-      "historico": []
+      "historico": [
+        {
+          "data_deteccao": "2026-10-09T08:55:04-03:00",
+          "id_execucao": "run_2026_10_09_0855",
+          "campo": "texto",
+          "anterior": "sha1:eff572de6dbc2ca1",
+          "novo": "sha1:19a4f1dc94b8482a"
+        }
+      ]
     },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2064",
@@ -326,8 +454,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:5773d4fe57e6c94e",
-      "ultima_verificacao": "2026-10-08T18:28:41-03:00",
-      "ultima_execucao": "run_2026_10_08_1828",
+      "ultima_verificacao": "2026-10-09T08:55:04-03:00",
+      "ultima_execucao": "run_2026_10_09_0855",
       "primeira_deteccao": "2026-09-23T07:00:31-03:00",
       "id_execucao_primeira": "run_2026_09_23_0700",
       "historico": [
@@ -454,8 +582,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:d1e1dc9a969fb478",
-      "ultima_verificacao": "2026-10-08T18:28:41-03:00",
-      "ultima_execucao": "run_2026_10_08_1828",
+      "ultima_verificacao": "2026-10-09T08:55:04-03:00",
+      "ultima_execucao": "run_2026_10_09_0855",
       "primeira_deteccao": "2026-09-21T07:45:40-03:00",
       "id_execucao_primeira": "run_2026_09_21_0745",
       "historico": [
@@ -969,6 +1097,12 @@
         "s": null,
         "d": "2026-10-06T12:25:33-03:00",
         "v": "2026-10-06"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2052": {
+        "h": "sha1:44f2c0089f7bde29",
+        "s": null,
+        "d": "2026-10-09T08:55:04-03:00",
+        "v": "2026-10-09"
       }
     },
     "eu_parliament": {},
@@ -977,7 +1111,7 @@
         "h": "sha1:d1e1dc9a969fb478",
         "s": null,
         "d": "2026-09-21T07:45:40-03:00",
-        "v": "2026-10-08"
+        "v": "2026-10-09"
       },
       "edpb_edpb_europa_eu_news_failure_to_respect_the_rights_of_individuals_the_cnil_fined_extia_300_000_eur_en": {
         "h": "sha1:5bf1aa88370bcfa6",
@@ -1031,7 +1165,7 @@
         "h": "sha1:5773d4fe57e6c94e",
         "s": null,
         "d": "2026-09-23T07:00:31-03:00",
-        "v": "2026-10-08"
+        "v": "2026-10-09"
       },
       "edpb_edpb_europa_eu_news_failure_to_respect_the_rights_of_individuals_the_cnil_fined_extia_eur_300_000_en": {
         "h": "sha1:075867e4826a517b",
@@ -1049,19 +1183,43 @@
         "h": "sha1:6b069527163002e7",
         "s": null,
         "d": "2026-10-08T12:50:26-03:00",
-        "v": "2026-10-08"
+        "v": "2026-10-09"
       },
       "edpb_edpb_europa_eu_news_hellenic_dpa_decision_on_a_data_breach_involving_eetaa_sa_as_processor_for_the_ministry_of": {
         "h": "sha1:eb693757bc82fe55",
         "s": null,
         "d": "2026-10-08T12:50:26-03:00",
-        "v": "2026-10-08"
+        "v": "2026-10-09"
       },
       "edpb_edpb_europa_eu_news_dutch_dpa_fines_uber_eur_824_990_000_for_unlawful_automated_decision_making_and_insufficie": {
-        "h": "sha1:eff572de6dbc2ca1",
+        "h": "sha1:19a4f1dc94b8482a",
         "s": null,
         "d": "2026-10-08T12:50:26-03:00",
-        "v": "2026-10-08"
+        "v": "2026-10-09"
+      },
+      "edpb_edpb_europa_eu_news_italian_dpa_fines_iqvia_eur_7_000_000_for_unlawful_processing_of_patients_health_data_en": {
+        "h": "sha1:cec8f83b48cc400f",
+        "s": null,
+        "d": "2026-10-09T08:55:04-03:00",
+        "v": "2026-10-09"
+      },
+      "edpb_edpb_europa_eu_news_italian_dpa_fines_security_company_eur_39_000_for_violations_concerning_employees_data_en": {
+        "h": "sha1:1642d01b1fb890b2",
+        "s": null,
+        "d": "2026-10-09T08:55:04-03:00",
+        "v": "2026-10-09"
+      },
+      "edpb_edpb_europa_eu_news_italian_dpa_fines_emirates_eur_180_000_for_infringements_concerning_passengers_health_data": {
+        "h": "sha1:8ec95a5b45fc48ba",
+        "s": null,
+        "d": "2026-10-09T08:55:04-03:00",
+        "v": "2026-10-09"
+      },
+      "edpb_edpb_europa_eu_news_italian_dpa_fines_bbva_eur_5_508_000_for_failing_to_respect_a_customers_objection_to_direc": {
+        "h": "sha1:eb78ce14cb391900",
+        "s": null,
+        "d": "2026-10-09T08:55:04-03:00",
+        "v": "2026-10-09"
       }
     },
     "edps": {}
