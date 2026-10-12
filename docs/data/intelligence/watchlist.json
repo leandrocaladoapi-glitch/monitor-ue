@@ -52,12 +52,12 @@
   {
    "key": "edpb",
    "label": "EDPB e proteção de dados em IA",
-   "events": 19
+   "events": 20
   },
   {
    "key": "enforcement",
    "label": "Enforcement e sanções",
-   "events": 14
+   "events": 15
   },
   {
    "key": "health_data",
@@ -123,7 +123,7 @@
  "regulators": [
   {
    "name": "EDPB",
-   "events": 19
+   "events": 20
   },
   {
    "name": "Comissão Europeia",
@@ -137,7 +137,7 @@
  "act_types": [
   {
    "label": "Enforcement / sanção",
-   "events": 14
+   "events": 15
   },
   {
    "label": "Consulta pública",
@@ -160,37 +160,37 @@
   {
    "slug": "cloud",
    "name": "Cloud",
-   "changes": 25
+   "changes": 26
   },
   {
    "slug": "adtech",
    "name": "AdTech",
-   "changes": 21
+   "changes": 22
   },
   {
    "slug": "ecommerce",
    "name": "E-commerce",
-   "changes": 20
+   "changes": 21
   },
   {
    "slug": "provedores-de-ia",
    "name": "Provedores de IA",
-   "changes": 21
+   "changes": 22
   },
   {
    "slug": "saas",
    "name": "SaaS",
-   "changes": 21
+   "changes": 22
   },
   {
    "slug": "marketplaces",
    "name": "Marketplaces",
-   "changes": 18
+   "changes": 19
   },
   {
    "slug": "saude",
    "name": "Saúde",
-   "changes": 17
+   "changes": 18
   },
   {
    "slug": "bancos",
