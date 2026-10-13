@@ -9,7 +9,7 @@
       "eu_commission": 17
     },
     "indice_total": 37,
-    "execucao": "2026-10-12"
+    "execucao": "2026-10-13"
   },
   "atos": [
     {
@@ -17,7 +17,7 @@
       "orgao": "eu_commission",
       "tipo": "comunicado",
       "titulo": "Daily News 12 / 10 / 2026",
-      "descricao": "European Commission Daily news Brussels, 12 Oct 2026 Commission welcomes adoption of €115 million ‘AGILE' programme for rapid defence innovation The European Commission welcomes the adoption of the Regulation esta...",
+      "descricao": "European Commission Daily news Brussels, 13 Oct 2026 Commission welcomes adoption of €115 million ‘AGILE' programme for rapid defence innovation The European Commission welcomes the adoption of the Regulation esta...",
       "data": "2026-10-12",
       "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2138",
       "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
@@ -29,12 +29,20 @@
       "situacao": null,
       "tipo_ato": null,
       "hierarquia": null,
-      "texto_hash": "sha1:d149d31bf2c070c0",
-      "ultima_verificacao": "2026-10-12T15:11:05-03:00",
-      "ultima_execucao": "run_2026_10_12_1511",
+      "texto_hash": "sha1:130909a34e4a4821",
+      "ultima_verificacao": "2026-10-13T09:43:36-03:00",
+      "ultima_execucao": "run_2026_10_13_0943",
       "primeira_deteccao": "2026-10-12T10:11:33-03:00",
       "id_execucao_primeira": "run_2026_10_12_1011",
-      "historico": []
+      "historico": [
+        {
+          "data_deteccao": "2026-10-13T09:43:36-03:00",
+          "id_execucao": "run_2026_10_13_0943",
+          "campo": "texto",
+          "anterior": "sha1:d149d31bf2c070c0",
+          "novo": "sha1:130909a34e4a4821"
+        }
+      ]
     },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2132",
@@ -78,8 +86,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:72d6e1dfd65715dc",
-      "ultima_verificacao": "2026-10-12T15:11:05-03:00",
-      "ultima_execucao": "run_2026_10_12_1511",
+      "ultima_verificacao": "2026-10-13T09:43:36-03:00",
+      "ultima_execucao": "run_2026_10_13_0943",
       "primeira_deteccao": "2026-10-12T10:11:33-03:00",
       "id_execucao_primeira": "run_2026_10_12_1011",
       "historico": []
@@ -102,8 +110,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:cec8f83b48cc400f",
-      "ultima_verificacao": "2026-10-12T15:11:05-03:00",
-      "ultima_execucao": "run_2026_10_12_1511",
+      "ultima_verificacao": "2026-10-13T09:43:36-03:00",
+      "ultima_execucao": "run_2026_10_13_0943",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -126,8 +134,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:1642d01b1fb890b2",
-      "ultima_verificacao": "2026-10-12T15:11:05-03:00",
-      "ultima_execucao": "run_2026_10_12_1511",
+      "ultima_verificacao": "2026-10-13T09:43:36-03:00",
+      "ultima_execucao": "run_2026_10_13_0943",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -150,8 +158,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:8ec95a5b45fc48ba",
-      "ultima_verificacao": "2026-10-12T15:11:05-03:00",
-      "ultima_execucao": "run_2026_10_12_1511",
+      "ultima_verificacao": "2026-10-13T09:43:36-03:00",
+      "ultima_execucao": "run_2026_10_13_0943",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -174,8 +182,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:eb78ce14cb391900",
-      "ultima_verificacao": "2026-10-12T15:11:05-03:00",
-      "ultima_execucao": "run_2026_10_12_1511",
+      "ultima_verificacao": "2026-10-13T09:43:36-03:00",
+      "ultima_execucao": "run_2026_10_13_0943",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -222,8 +230,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:6b069527163002e7",
-      "ultima_verificacao": "2026-10-12T15:11:05-03:00",
-      "ultima_execucao": "run_2026_10_12_1511",
+      "ultima_verificacao": "2026-10-13T09:43:36-03:00",
+      "ultima_execucao": "run_2026_10_13_0943",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": []
@@ -246,8 +254,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:eb693757bc82fe55",
-      "ultima_verificacao": "2026-10-12T15:11:05-03:00",
-      "ultima_execucao": "run_2026_10_12_1511",
+      "ultima_verificacao": "2026-10-13T09:43:36-03:00",
+      "ultima_execucao": "run_2026_10_13_0943",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": []
@@ -270,8 +278,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:19a4f1dc94b8482a",
-      "ultima_verificacao": "2026-10-12T15:11:05-03:00",
-      "ultima_execucao": "run_2026_10_12_1511",
+      "ultima_verificacao": "2026-10-13T09:43:36-03:00",
+      "ultima_execucao": "run_2026_10_13_0943",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": [
@@ -526,8 +534,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:5773d4fe57e6c94e",
-      "ultima_verificacao": "2026-10-12T15:11:05-03:00",
-      "ultima_execucao": "run_2026_10_12_1511",
+      "ultima_verificacao": "2026-10-13T09:43:36-03:00",
+      "ultima_execucao": "run_2026_10_13_0943",
       "primeira_deteccao": "2026-09-23T07:00:31-03:00",
       "id_execucao_primeira": "run_2026_09_23_0700",
       "historico": [
@@ -1177,10 +1185,10 @@
         "v": "2026-10-09"
       },
       "eu_commission_ec_europa_eu_commission_presscorner_detail_en_mex_26_2138": {
-        "h": "sha1:d149d31bf2c070c0",
+        "h": "sha1:130909a34e4a4821",
         "s": null,
         "d": "2026-10-12T10:11:33-03:00",
-        "v": "2026-10-12"
+        "v": "2026-10-13"
       },
       "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2132": {
         "h": "sha1:4411f7372c7ec367",
@@ -1249,7 +1257,7 @@
         "h": "sha1:5773d4fe57e6c94e",
         "s": null,
         "d": "2026-09-23T07:00:31-03:00",
-        "v": "2026-10-12"
+        "v": "2026-10-13"
       },
       "edpb_edpb_europa_eu_news_failure_to_respect_the_rights_of_individuals_the_cnil_fined_extia_eur_300_000_en": {
         "h": "sha1:075867e4826a517b",
@@ -1267,49 +1275,49 @@
         "h": "sha1:6b069527163002e7",
         "s": null,
         "d": "2026-10-08T12:50:26-03:00",
-        "v": "2026-10-12"
+        "v": "2026-10-13"
       },
       "edpb_edpb_europa_eu_news_hellenic_dpa_decision_on_a_data_breach_involving_eetaa_sa_as_processor_for_the_ministry_of": {
         "h": "sha1:eb693757bc82fe55",
         "s": null,
         "d": "2026-10-08T12:50:26-03:00",
-        "v": "2026-10-12"
+        "v": "2026-10-13"
       },
       "edpb_edpb_europa_eu_news_dutch_dpa_fines_uber_eur_824_990_000_for_unlawful_automated_decision_making_and_insufficie": {
         "h": "sha1:19a4f1dc94b8482a",
         "s": null,
         "d": "2026-10-08T12:50:26-03:00",
-        "v": "2026-10-12"
+        "v": "2026-10-13"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_iqvia_eur_7_000_000_for_unlawful_processing_of_patients_health_data_en": {
         "h": "sha1:cec8f83b48cc400f",
         "s": null,
         "d": "2026-10-09T08:55:04-03:00",
-        "v": "2026-10-12"
+        "v": "2026-10-13"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_security_company_eur_39_000_for_violations_concerning_employees_data_en": {
         "h": "sha1:1642d01b1fb890b2",
         "s": null,
         "d": "2026-10-09T08:55:04-03:00",
-        "v": "2026-10-12"
+        "v": "2026-10-13"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_emirates_eur_180_000_for_infringements_concerning_passengers_health_data": {
         "h": "sha1:8ec95a5b45fc48ba",
         "s": null,
         "d": "2026-10-09T08:55:04-03:00",
-        "v": "2026-10-12"
+        "v": "2026-10-13"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_bbva_eur_5_508_000_for_failing_to_respect_a_customers_objection_to_direc": {
         "h": "sha1:eb78ce14cb391900",
         "s": null,
         "d": "2026-10-09T08:55:04-03:00",
-        "v": "2026-10-12"
+        "v": "2026-10-13"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_wind_tre_eur_16_700_000_for_unlawful_telemarketing_and_data_protection_e": {
         "h": "sha1:72d6e1dfd65715dc",
         "s": null,
         "d": "2026-10-12T10:11:33-03:00",
-        "v": "2026-10-12"
+        "v": "2026-10-13"
       }
     },
     "edps": {}
