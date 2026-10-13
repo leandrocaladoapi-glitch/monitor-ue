@@ -267,27 +267,27 @@
     "items": [
      {
       "sector": "Cloud",
-      "changes": 26,
+      "changes": 27,
       "slug": "cloud"
      },
      {
       "sector": "AdTech",
-      "changes": 22,
+      "changes": 23,
       "slug": "adtech"
      },
      {
       "sector": "E-commerce",
-      "changes": 21,
+      "changes": 22,
       "slug": "ecommerce"
      },
      {
       "sector": "Provedores de IA",
-      "changes": 22,
+      "changes": 23,
       "slug": "provedores-de-ia"
      },
      {
       "sector": "SaaS",
-      "changes": 22,
+      "changes": 23,
       "slug": "saas"
      }
     ],
@@ -331,6 +331,18 @@
        "E-commerce"
       ],
       "source_url": "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en"
+     },
+     {
+      "title": "EDPB publishes statement on the data protection challenges of smart glasses",
+      "impact_level": "medium",
+      "priority": "medium",
+      "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+      "sectors": [
+       "AdTech",
+       "Cloud",
+       "Data Centers"
+      ],
+      "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en"
      }
     ],
     "empty_message": "Sem item adicional para acompanhamento; manter a watchlist ativa."
@@ -697,27 +709,27 @@
     "items": [
      {
       "sector": "Cloud",
-      "changes": 26,
+      "changes": 27,
       "slug": "cloud"
      },
      {
       "sector": "AdTech",
-      "changes": 22,
+      "changes": 23,
       "slug": "adtech"
      },
      {
       "sector": "E-commerce",
-      "changes": 21,
+      "changes": 22,
       "slug": "ecommerce"
      },
      {
       "sector": "Provedores de IA",
-      "changes": 22,
+      "changes": 23,
       "slug": "provedores-de-ia"
      },
      {
       "sector": "SaaS",
-      "changes": 22,
+      "changes": 23,
       "slug": "saas"
      }
     ],

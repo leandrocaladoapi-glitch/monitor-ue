@@ -22,7 +22,7 @@
     "Grande empresa",
     "PME (pequena e média empresa)"
    ],
-   "change_count": 26,
+   "change_count": 27,
    "cumulative_impact": 100,
    "top_priority": "urgent",
    "top_impact_level": "critical",
@@ -308,7 +308,7 @@
     "Grande empresa",
     "PME (pequena e média empresa)"
    ],
-   "change_count": 22,
+   "change_count": 23,
    "cumulative_impact": 87,
    "top_priority": "urgent",
    "top_impact_level": "critical",
@@ -586,7 +586,7 @@
     "Grande empresa",
     "PME (pequena e média empresa)"
    ],
-   "change_count": 21,
+   "change_count": 22,
    "cumulative_impact": 86,
    "top_priority": "urgent",
    "top_impact_level": "critical",
@@ -867,7 +867,7 @@
     "Grande empresa",
     "Startup / empresa em formação"
    ],
-   "change_count": 22,
+   "change_count": 23,
    "cumulative_impact": 84,
    "top_priority": "urgent",
    "top_impact_level": "critical",
@@ -1155,7 +1155,7 @@
     "Grande empresa",
     "PME (pequena e média empresa)"
    ],
-   "change_count": 22,
+   "change_count": 23,
    "cumulative_impact": 84,
    "top_priority": "urgent",
    "top_impact_level": "critical",
@@ -1441,7 +1441,7 @@
     "Grande empresa",
     "PME (pequena e média empresa)"
    ],
-   "change_count": 19,
+   "change_count": 20,
    "cumulative_impact": 76,
    "top_priority": "urgent",
    "top_impact_level": "critical",
@@ -1722,7 +1722,7 @@
     "PME (pequena e média empresa)"
    ],
    "change_count": 18,
-   "cumulative_impact": 70,
+   "cumulative_impact": 69,
    "top_priority": "urgent",
    "top_impact_level": "critical",
    "recent_changes": [
@@ -2001,7 +2001,7 @@
     "PME (pequena e média empresa)"
    ],
    "change_count": 5,
-   "cumulative_impact": 22,
+   "cumulative_impact": 21,
    "top_priority": "urgent",
    "top_impact_level": "critical",
    "recent_changes": [
@@ -2238,6 +2238,278 @@
    ],
    "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
    "rank": 8
+  },
+  {
+   "slug": "data-centers",
+   "name": "Data Centers",
+   "en": "Data Centers",
+   "focus": "Capacidade computacional, eficiência energética, água, soberania e localização de dados.",
+   "functions": [
+    "Engenharia / ML",
+    "Cybersecurity",
+    "Strategy",
+    "Compliance"
+   ],
+   "company_types": [
+    "Provedor de cloud, infraestrutura ou capacidade computacional",
+    "Grande empresa",
+    "PME (pequena e média empresa)"
+   ],
+   "change_count": 7,
+   "cumulative_impact": 18,
+   "top_priority": "urgent",
+   "top_impact_level": "critical",
+   "recent_changes": [
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+     "date": "2026-09-09",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
+     "date": "2026-09-09",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
+    },
+    {
+     "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+     "date": "2026-10-08",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
+     "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
+    },
+    {
+     "title": "EDPB publishes statement on the data protection challenges of smart glasses",
+     "date": "2026-10-13",
+     "impact_level": "medium",
+     "priority": "medium",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en"
+    },
+    {
+     "title": "Three in four EU employees faced cyber threats at work, new Eurobarometer finds",
+     "date": "2026-09-30",
+     "impact_level": "medium",
+     "priority": "medium",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-d6278c",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2020"
+    },
+    {
+     "title": "Daily News 21 / 09 / 2026",
+     "date": "2026-09-21",
+     "impact_level": "low",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-2cfaa1",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1918"
+    },
+    {
+     "title": "Commission enhances energy efficiency and sustainability of data centres in the EU",
+     "date": "2026-09-20",
+     "impact_level": "low",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-ef4970",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1667"
+    }
+   ],
+   "obligations": [
+    {
+     "text": "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Registo do risco e do plano de correção no sistema de compliance.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
+     "confidence": 0.8
+    }
+   ],
+   "risks": [
+    {
+     "text": "Repetir o padrão sancionado na sua própria operação.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
+     "text": "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
+     "text": "Medidas corretivas que obrigam a alterar produto já em produção.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
+     "text": "Perda de confiança de clientes e de investidores após incidente público.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
+     "text": "Treino ou fine-tuning sem base legal documentada.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    }
+   ],
+   "recommended_actions": [
+    {
+     "text": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+     "owner_function": "compliance",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4"
+    },
+    {
+     "text": "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+     "owner_function": "compliance",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4"
+    },
+    {
+     "text": "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+     "owner_function": "compliance",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4"
+    },
+    {
+     "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4"
+    },
+    {
+     "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4"
+    },
+    {
+     "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4"
+    }
+   ],
+   "deadlines": [
+    {
+     "date": "2026-09-03",
+     "label": "Data referida no texto oficial",
+     "days_remaining": -40,
+     "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
+     "date": "2026-09-03",
+     "label": "Data referida no texto oficial",
+     "days_remaining": -40,
+     "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
+    },
+    {
+     "date": "2026-09-22",
+     "label": "Data referida no texto oficial",
+     "days_remaining": -21,
+     "norm": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient…",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
+     "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
+    }
+   ],
+   "related_acts": [
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+     "act_type": "Enforcement / sanção",
+     "stage": "A classificar",
+     "date": "2026-09-09",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
+     "act_type": "Enforcement / sanção",
+     "stage": "A classificar",
+     "date": "2026-09-09",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
+    },
+    {
+     "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
+     "act_type": "Enforcement / sanção",
+     "stage": "A classificar",
+     "date": "2026-10-08",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
+     "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
+    },
+    {
+     "title": "EDPB publishes statement on the data protection challenges of smart glasses",
+     "act_type": "Guideline / orientação",
+     "stage": "Em plenário",
+     "date": "2026-10-13",
+     "priority": "medium",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en"
+    },
+    {
+     "title": "Three in four EU employees faced cyber threats at work, new Eurobarometer finds",
+     "act_type": "Consulta pública",
+     "stage": "A classificar",
+     "date": "2026-09-30",
+     "priority": "medium",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-d6278c",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2020"
+    },
+    {
+     "title": "Daily News 21 / 09 / 2026",
+     "act_type": "Consulta pública",
+     "stage": "A classificar",
+     "date": "2026-09-21",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-2cfaa1",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1918"
+    }
+   ],
+   "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
+   "rank": 9
   },
   {
    "slug": "ciberseguranca",
@@ -2481,270 +2753,6 @@
      "priority": "monitor",
      "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-4c5c8e",
      "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2035"
-    }
-   ],
-   "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
-   "rank": 9
-  },
-  {
-   "slug": "data-centers",
-   "name": "Data Centers",
-   "en": "Data Centers",
-   "focus": "Capacidade computacional, eficiência energética, água, soberania e localização de dados.",
-   "functions": [
-    "Engenharia / ML",
-    "Cybersecurity",
-    "Strategy",
-    "Compliance"
-   ],
-   "company_types": [
-    "Provedor de cloud, infraestrutura ou capacidade computacional",
-    "Grande empresa",
-    "PME (pequena e média empresa)"
-   ],
-   "change_count": 6,
-   "cumulative_impact": 17,
-   "top_priority": "urgent",
-   "top_impact_level": "critical",
-   "recent_changes": [
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
-     "date": "2026-09-09",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
-     "date": "2026-09-09",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
-    },
-    {
-     "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
-     "date": "2026-10-08",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
-     "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
-    },
-    {
-     "title": "Three in four EU employees faced cyber threats at work, new Eurobarometer finds",
-     "date": "2026-09-30",
-     "impact_level": "medium",
-     "priority": "medium",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-d6278c",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2020"
-    },
-    {
-     "title": "Daily News 21 / 09 / 2026",
-     "date": "2026-09-21",
-     "impact_level": "low",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-2cfaa1",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1918"
-    },
-    {
-     "title": "Commission enhances energy efficiency and sustainability of data centres in the EU",
-     "date": "2026-09-20",
-     "impact_level": "low",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-ef4970",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1667"
-    }
-   ],
-   "obligations": [
-    {
-     "text": "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Registo do risco e do plano de correção no sistema de compliance.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en",
-     "confidence": 0.8
-    }
-   ],
-   "risks": [
-    {
-     "text": "Repetir o padrão sancionado na sua própria operação.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "text": "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "text": "Medidas corretivas que obrigam a alterar produto já em produção.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "text": "Perda de confiança de clientes e de investidores após incidente público.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "text": "Treino ou fine-tuning sem base legal documentada.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    }
-   ],
-   "recommended_actions": [
-    {
-     "text": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
-     "owner_function": "compliance",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4"
-    },
-    {
-     "text": "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
-     "owner_function": "compliance",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4"
-    },
-    {
-     "text": "Levar o caso concreto à reunião de compliance com responsável nomeado.",
-     "owner_function": "compliance",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4"
-    },
-    {
-     "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
-     "owner_function": "dpo",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4"
-    },
-    {
-     "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
-     "owner_function": "dpo",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4"
-    },
-    {
-     "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
-     "owner_function": "dpo",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4"
-    }
-   ],
-   "deadlines": [
-    {
-     "date": "2026-09-03",
-     "label": "Data referida no texto oficial",
-     "days_remaining": -40,
-     "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "date": "2026-09-03",
-     "label": "Data referida no texto oficial",
-     "days_remaining": -40,
-     "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
-    },
-    {
-     "date": "2026-09-22",
-     "label": "Data referida no texto oficial",
-     "days_remaining": -21,
-     "norm": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient…",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
-     "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
-    }
-   ],
-   "related_acts": [
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
-     "act_type": "Enforcement / sanção",
-     "stage": "A classificar",
-     "date": "2026-09-09",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
-     "act_type": "Enforcement / sanção",
-     "stage": "A classificar",
-     "date": "2026-09-09",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
-    },
-    {
-     "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
-     "act_type": "Enforcement / sanção",
-     "stage": "A classificar",
-     "date": "2026-10-08",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
-     "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
-    },
-    {
-     "title": "Three in four EU employees faced cyber threats at work, new Eurobarometer finds",
-     "act_type": "Consulta pública",
-     "stage": "A classificar",
-     "date": "2026-09-30",
-     "priority": "medium",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-d6278c",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2020"
-    },
-    {
-     "title": "Daily News 21 / 09 / 2026",
-     "act_type": "Consulta pública",
-     "stage": "A classificar",
-     "date": "2026-09-21",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-2cfaa1",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1918"
-    },
-    {
-     "title": "Commission enhances energy efficiency and sustainability of data centres in the EU",
-     "act_type": "Consulta pública",
-     "stage": "A classificar",
-     "date": "2026-09-20",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-ef4970",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1667"
     }
    ],
    "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
@@ -4187,6 +4195,175 @@
    "rank": 17
   },
   {
+   "slug": "educacao",
+   "name": "Educação",
+   "en": "Education",
+   "focus": "Avaliação, tutoria automatizada, integridade académica e proteção de menores.",
+   "functions": [
+    "Compliance",
+    "Jurídico",
+    "AI Governance"
+   ],
+   "company_types": [
+    "Grande empresa",
+    "PME (pequena e média empresa)"
+   ],
+   "change_count": 2,
+   "cumulative_impact": 2,
+   "top_priority": "medium",
+   "top_impact_level": "medium",
+   "recent_changes": [
+    {
+     "title": "EDPB publishes statement on the data protection challenges of smart glasses",
+     "date": "2026-10-13",
+     "impact_level": "medium",
+     "priority": "medium",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en"
+    },
+    {
+     "title": "Speech by President von der Leyen at the high-level dialogue on ‘Protecting Children's Rights facing Artificial Intelligence'",
+     "date": "2026-09-22",
+     "impact_level": "low",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-1cec3f",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1942"
+    }
+   ],
+   "obligations": [
+    {
+     "text": "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Registo do risco e do plano de correção no sistema de compliance.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
+     "confidence": 0.8
+    }
+   ],
+   "risks": [
+    {
+     "text": "Repetir o padrão sancionado na sua própria operação.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en"
+    },
+    {
+     "text": "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en"
+    },
+    {
+     "text": "Medidas corretivas que obrigam a alterar produto já em produção.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en"
+    },
+    {
+     "text": "Perda de confiança de clientes e de investidores após incidente público.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en"
+    },
+    {
+     "text": "Treino ou fine-tuning sem base legal documentada.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en"
+    }
+   ],
+   "recommended_actions": [
+    {
+     "text": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+     "owner_function": "compliance",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd"
+    },
+    {
+     "text": "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+     "owner_function": "compliance",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd"
+    },
+    {
+     "text": "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+     "owner_function": "compliance",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd"
+    },
+    {
+     "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd"
+    },
+    {
+     "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd"
+    },
+    {
+     "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd"
+    }
+   ],
+   "deadlines": [],
+   "related_acts": [
+    {
+     "title": "EDPB publishes statement on the data protection challenges of smart glasses",
+     "act_type": "Guideline / orientação",
+     "stage": "Em plenário",
+     "date": "2026-10-13",
+     "priority": "medium",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en"
+    },
+    {
+     "title": "Speech by President von der Leyen at the high-level dialogue on ‘Protecting Children's Rights facing Artificial Intelligence'",
+     "act_type": "Consulta pública",
+     "stage": "A classificar",
+     "date": "2026-09-22",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-1cec3f",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1942"
+    }
+   ],
+   "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
+   "rank": 18
+  },
+  {
    "slug": "legaltech",
    "name": "LegalTech",
    "en": "LegalTech",
@@ -4345,7 +4522,7 @@
     }
    ],
    "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
-   "rank": 18
+   "rank": 19
   },
   {
    "slug": "utilities",
@@ -4419,7 +4596,7 @@
     }
    ],
    "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
-   "rank": 19
+   "rank": 20
   },
   {
    "slug": "automotivo",
@@ -4445,52 +4622,6 @@
    "recommended_actions": [],
    "deadlines": [],
    "related_acts": [],
-   "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
-   "rank": 20
-  },
-  {
-   "slug": "educacao",
-   "name": "Educação",
-   "en": "Education",
-   "focus": "Avaliação, tutoria automatizada, integridade académica e proteção de menores.",
-   "functions": [
-    "Compliance",
-    "Jurídico",
-    "AI Governance"
-   ],
-   "company_types": [
-    "Grande empresa",
-    "PME (pequena e média empresa)"
-   ],
-   "change_count": 1,
-   "cumulative_impact": 0,
-   "top_priority": "monitor",
-   "top_impact_level": "low",
-   "recent_changes": [
-    {
-     "title": "Speech by President von der Leyen at the high-level dialogue on ‘Protecting Children's Rights facing Artificial Intelligence'",
-     "date": "2026-09-22",
-     "impact_level": "low",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-1cec3f",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1942"
-    }
-   ],
-   "obligations": [],
-   "risks": [],
-   "recommended_actions": [],
-   "deadlines": [],
-   "related_acts": [
-    {
-     "title": "Speech by President von der Leyen at the high-level dialogue on ‘Protecting Children's Rights facing Artificial Intelligence'",
-     "act_type": "Consulta pública",
-     "stage": "A classificar",
-     "date": "2026-09-22",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-1cec3f",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1942"
-    }
-   ],
    "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
    "rank": 21
   },

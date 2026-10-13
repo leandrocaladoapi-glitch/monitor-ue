@@ -3,9 +3,9 @@
   "reference_date": "2026-10-13",
   "description": "Eventos regulatórios interpretados pelo Regulatory Impact Engine.",
   "rule": "FATO, ANÁLISE, INTERPRETAÇÃO e RECOMENDAÇÃO são objetos distintos. Confiança mínima 0.6. Nenhum evento sem fonte oficial é publicado.",
-  "total": 32,
+  "total": 33,
   "excluded_low_confidence": 0,
-  "excluded_no_material_relation": 12
+  "excluded_no_material_relation": 13
  },
  "events": [
   {
@@ -8228,6 +8228,388 @@
    ]
   },
   {
+   "id": "re_ato_edpb-edpb-europa-eu-news-edpb-publishes-statement-on-the-6570dd",
+   "regulatory_event": "EDPB publishes statement on the data protection challenges of smart glasses",
+   "summary": "Brussels, 13 October – During its latest plenary, the EDPB has adopted statement on smart glasses and published the report “The connected gaze. Video recording, surveillance and administering evidence in the age of smart glasses” *, developed in the context of the Support Pool of Expert (SPE) programme **. As smart glasses become widely available and more frequently used, they raise significant…",
+   "affected_sectors": [
+    "AdTech",
+    "Cloud",
+    "Data Centers",
+    "E-commerce",
+    "Educação",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS"
+   ],
+   "affected_company_types": [
+    "Plataforma digital / marketplace",
+    "Grande empresa",
+    "PME (pequena e média empresa)",
+    "Provedor de cloud, infraestrutura ou capacidade computacional",
+    "Operador (deployer) de sistema de IA",
+    "Serviços profissionais (jurídico, consultoria, auditoria)",
+    "Startup / empresa em formação",
+    "Ensino e investigação"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Strategy",
+    "Public Policy",
+    "Financeiro"
+   ],
+   "obligations": [
+    "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+    "Registo do risco e do plano de correção no sistema de compliance.",
+    "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+    "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+    "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+    "Informação transparente sobre decisões automatizadas e revisão humana efetiva."
+   ],
+   "deadlines": [],
+   "risks": [
+    "Repetir o padrão sancionado na sua própria operação.",
+    "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+    "Medidas corretivas que obrigam a alterar produto já em produção.",
+    "Perda de confiança de clientes e de investidores após incidente público.",
+    "Treino ou fine-tuning sem base legal documentada.",
+    "Uso de web scraping e conteúdo pessoal sem avaliação registada."
+   ],
+   "opportunities": [
+    "Utilizar as decisões publicadas como teste-padrão interno antes de uma auditoria.",
+    "Demonstrar diligência documentada a clientes regulados e seguradoras.",
+    "Redução de risco antes de escalar o produto para novos mercados.",
+    "Uso de orientações do EDPB como argumento de confiança em vendas a clientes regulados.",
+    "Contribuir para o desenho das regras através de consultas e códigos de prática."
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+    "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+    "Formar produto e marketing sobre limites de uso de dados pessoais."
+   ],
+   "impact_level": "medium",
+   "priority": "medium",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en"
+   ],
+   "source_kind": "ato",
+   "source_id": "edpb_edpb_europa_eu_news_edpb_publishes_statement_on_the_data_protection_challenges_of_smart_glasses_en",
+   "territory": "União Europeia",
+   "regulator": "EDPB",
+   "regulator_key": "edpb",
+   "act_type": "guideline",
+   "act_type_label": "Guideline / orientação",
+   "stage": "plenario",
+   "stage_label": "Em plenário",
+   "change_date": "2026-10-13",
+   "publication_date": null,
+   "entry_into_force": null,
+   "compliance_deadline": null,
+   "themes": [
+    "edpb",
+    "funding_innovation"
+   ],
+   "theme_labels": [
+    "EDPB e proteção de dados em IA",
+    "Financiamento e inovação"
+   ],
+   "flags": [],
+   "impact_score": 59,
+   "confidence_label": "Interpretação fortemente suportada pela fonte oficial",
+   "requires_legal_review": true,
+   "hedge": "Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+   "watchlist_tags": [
+    "adtech",
+    "cloud",
+    "data-centers",
+    "ecommerce",
+    "edpb",
+    "educacao",
+    "funding_innovation",
+    "guideline",
+    "marketplaces",
+    "provedores-de-ia",
+    "saas"
+   ],
+   "fact": {
+    "title": "EDPB publishes statement on the data protection challenges of smart glasses",
+    "description": "Brussels, 13 October – During its latest plenary, the EDPB has adopted statement on smart glasses and published the report “The connected gaze. Video recording, surveillance and administering evidence in the age of smart glasses” *, developed in the context of the Support Pool of Expert (SPE) programme **. As smart glasses become widely available and more frequently used, they raise significant questions for the protection of individuals’ personal data and rights and freedoms even if they create new opportunities for communication, assistance, and innovation. “These devices look like ordinary",
+    "date": "2026-10-13",
+    "date_label": "Data do item na fonte oficial",
+    "regulator": "EDPB",
+    "source_url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
+    "sources": [
+     {
+      "title": "EDPB publishes statement on the data protection challenges of smart glasses",
+      "url": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
+      "type": "fonte primária",
+      "official": true
+     }
+    ],
+    "note": "Texto e data preservados do item do dataset; nenhum fato foi acrescentado."
+   },
+   "analysis": {
+    "why_it_matters": "Leitura: o item é classificado como EDPB e proteção de dados em IA, Financiamento e inovação, o que normalmente desloca obrigações de documentação, transparência ou controlo interno para as equipas responsáveis.",
+    "sector_exposure": [
+     {
+      "slug": "adtech",
+      "name": "AdTech",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "cloud",
+      "name": "Cloud",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "data-centers",
+      "name": "Data Centers",
+      "why": "Tema «Financiamento e inovação» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "ecommerce",
+      "name": "E-commerce",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "educacao",
+      "name": "Educação",
+      "why": "Tema «Financiamento e inovação» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "marketplaces",
+      "name": "Marketplaces",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "provedores-de-ia",
+      "name": "Provedores de IA",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     },
+     {
+      "slug": "saas",
+      "name": "SaaS",
+      "why": "Tema «EDPB e proteção de dados em IA» afeta tipicamente este setor.",
+      "basis": "thematic"
+     }
+    ],
+    "obligations": [
+     {
+      "text": "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: edpb e proteção de dados em ia",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Registo do risco e do plano de correção no sistema de compliance.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: edpb e proteção de dados em ia",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: edpb e proteção de dados em ia",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: edpb e proteção de dados em ia",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: edpb e proteção de dados em ia",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+      "reference": "EDPB e proteção de dados em IA",
+      "basis": "Fonte menciona: edpb e proteção de dados em ia",
+      "applies_if": "Requer avaliação jurídica específica do caso de uso.",
+      "confidence": 0.8
+     }
+    ],
+    "risks": [
+     {
+      "text": "Repetir o padrão sancionado na sua própria operação.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Medidas corretivas que obrigam a alterar produto já em produção.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Perda de confiança de clientes e de investidores após incidente público.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Treino ou fine-tuning sem base legal documentada.",
+      "event_id": null,
+      "confidence": 0.8
+     },
+     {
+      "text": "Uso de web scraping e conteúdo pessoal sem avaliação registada.",
+      "event_id": null,
+      "confidence": 0.8
+     }
+    ],
+    "opportunities": [
+     {
+      "text": "Utilizar as decisões publicadas como teste-padrão interno antes de uma auditoria.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Demonstrar diligência documentada a clientes regulados e seguradoras.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Redução de risco antes de escalar o produto para novos mercados.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Uso de orientações do EDPB como argumento de confiança em vendas a clientes regulados.",
+      "confidence": 0.8
+     },
+     {
+      "text": "Contribuir para o desenho das regras através de consultas e códigos de prática.",
+      "confidence": 0.8
+     }
+    ],
+    "confidence": 0.8
+   },
+   "interpretation": {
+    "text": "Exposição provável em: AdTech, Cloud, Data Centers, E-commerce. Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+    "company_types": [
+     "digital-platform",
+     "large-enterprise",
+     "sme",
+     "cloud-infra",
+     "ai-deployer",
+     "professional-services",
+     "startup",
+     "research"
+    ],
+    "functions": [
+     "dpo",
+     "privacy",
+     "compliance",
+     "legal",
+     "data-governance",
+     "strategy",
+     "public-policy",
+     "finance"
+    ],
+    "flags": [],
+    "confidence": 0.8,
+    "limits": "Classificação por palavras-chave e tema. Não estabelece que qualquer organização específica esteja juridicamente enquadrada no ato."
+   },
+   "recommendations": {
+    "actions": [
+     {
+      "text": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "compliance",
+      "priority": "Alta"
+     },
+     {
+      "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     },
+     {
+      "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     },
+     {
+      "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
+      "theme": "EDPB e proteção de dados em IA",
+      "owner_function": "dpo",
+      "priority": "Alta"
+     }
+    ],
+    "priority": "medium",
+    "sla": "planejar no trimestre",
+    "owner_functions": [
+     "dpo",
+     "privacy",
+     "compliance",
+     "legal",
+     "data-governance",
+     "strategy",
+     "public-policy",
+     "finance"
+    ],
+    "next_step": "Atualizar a matriz de risco com o padrão sancionado nesta decisão."
+   },
+   "so_what": {
+    "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em AdTech, Cloud, Data Centers.",
+    "functions": [
+     "Data Protection Officer",
+     "Privacy",
+     "Compliance",
+     "Jurídico",
+     "Data Governance",
+     "Strategy",
+     "Public Policy",
+     "Financeiro"
+    ],
+    "possible_costs": "Custo de adequação não quantificado pelo monitor: depende do número de sistemas afetados, da obrigação aplicável e do desenho do controlo.",
+    "adaptation_needed": "Adequação recomendada: revisão de política, contratos e registos internos.",
+    "risk_of_inaction": "Repetir o padrão sancionado na sua própria operação.",
+    "next_step": "Atualizar a matriz de risco com o padrão sancionado nesta decisão."
+   },
+   "diff": null,
+   "changes_summary": null,
+   "published": true,
+   "relevance": "forte",
+   "deadlines_full": []
+  },
+  {
    "id": "re_ato_edpb-edpb-europa-eu-news-edpb-and-amla-to-develop-joint-a458d3",
    "regulatory_event": "EDPB and AMLA to develop Joint Guidelines on partnerships for information sharing",
    "summary": "Brussels/Frankfurt, 1 July – The EDPB and the Anti-Money Laundering Authority (AMLA) are working together to bring greater clarity to a question of growing importance for industry and authorities alike: how to share information to fight financial crime while protecting personal data. Why information sharing matters The fight against financial crime depends on cooperation, and information sharing…",
@@ -11205,6 +11587,15 @@
    "reason": "sem relação material com IA, dados, plataformas ou infraestrutura digital",
    "official_sources": [
     "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson"
+   ]
+  },
+  {
+   "id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-af41c8",
+   "regulatory_event": "Commissioner Roswall's opening speech at the event, 'Water Innovation Europe 2026'",
+   "confidence": 0.6,
+   "reason": "sem relação material com IA, dados, plataformas ou infraestrutura digital",
+   "official_sources": [
+    "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2152"
    ]
   },
   {

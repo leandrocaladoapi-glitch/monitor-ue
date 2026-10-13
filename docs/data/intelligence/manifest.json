@@ -5,21 +5,21 @@
   "reference_date": "2026-10-13",
   "description": "Métricas de qualidade e cobertura da camada de inteligência."
  },
- "events_total": 32,
- "events_published": 32,
+ "events_total": 33,
+ "events_published": 33,
  "events_excluded_low_confidence": 0,
- "events_excluded_no_material_relation": 12,
+ "events_excluded_no_material_relation": 13,
  "events_without_official_source": 0,
  "events_by_priority": {
   "urgent": 16,
   "high": 3,
-  "medium": 7,
+  "medium": 8,
   "monitor": 6
  },
  "events_by_impact": {
   "critical": 16,
   "high": 3,
-  "medium": 7,
+  "medium": 8,
   "low": 6
  },
  "confidence_min": 0.6,
@@ -33,7 +33,7 @@
  "official_hosts": [
   {
    "host": "www.edpb.europa.eu",
-   "citations": 20
+   "citations": 21
   },
   {
    "host": "ec.europa.eu",
@@ -52,6 +52,7 @@
  "skipped_no_material_relation": [
   "re_procedimento_ue-2025-2056-ini",
   "re_procedimento_ue-2025-2060-ini",
+  "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-af41c8",
   "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-59aa78",
   "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-9bde3f",
   "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-e23a02",

@@ -52,7 +52,7 @@
   {
    "key": "edpb",
    "label": "EDPB e proteção de dados em IA",
-   "events": 20
+   "events": 21
   },
   {
    "key": "enforcement",
@@ -115,6 +115,11 @@
    "events": 1
   },
   {
+   "key": "funding_innovation",
+   "label": "Financiamento e inovação",
+   "events": 1
+  },
+  {
    "key": "copyright",
    "label": "Direitos de autor e conteúdo",
    "events": 1
@@ -123,7 +128,7 @@
  "regulators": [
   {
    "name": "EDPB",
-   "events": 20
+   "events": 21
   },
   {
    "name": "Comissão Europeia",
@@ -145,7 +150,7 @@
   },
   {
    "label": "Guideline / orientação",
-   "events": 5
+   "events": 6
   },
   {
    "label": "Regulamento",
@@ -160,32 +165,32 @@
   {
    "slug": "cloud",
    "name": "Cloud",
-   "changes": 26
+   "changes": 27
   },
   {
    "slug": "adtech",
    "name": "AdTech",
-   "changes": 22
+   "changes": 23
   },
   {
    "slug": "ecommerce",
    "name": "E-commerce",
-   "changes": 21
+   "changes": 22
   },
   {
    "slug": "provedores-de-ia",
    "name": "Provedores de IA",
-   "changes": 22
+   "changes": 23
   },
   {
    "slug": "saas",
    "name": "SaaS",
-   "changes": 22
+   "changes": 23
   },
   {
    "slug": "marketplaces",
    "name": "Marketplaces",
-   "changes": 19
+   "changes": 20
   },
   {
    "slug": "saude",
@@ -198,14 +203,14 @@
    "changes": 5
   },
   {
+   "slug": "data-centers",
+   "name": "Data Centers",
+   "changes": 7
+  },
+  {
    "slug": "ciberseguranca",
    "name": "Cibersegurança",
    "changes": 5
-  },
-  {
-   "slug": "data-centers",
-   "name": "Data Centers",
-   "changes": 6
   },
   {
    "slug": "energia",
@@ -243,6 +248,11 @@
    "changes": 1
   },
   {
+   "slug": "educacao",
+   "name": "Educação",
+   "changes": 2
+  },
+  {
    "slug": "legaltech",
    "name": "LegalTech",
    "changes": 1
@@ -250,11 +260,6 @@
   {
    "slug": "utilities",
    "name": "Utilities e Água",
-   "changes": 1
-  },
-  {
-   "slug": "educacao",
-   "name": "Educação",
    "changes": 1
   }
  ],
