@@ -3,15 +3,63 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 39,
+    "total": 41,
     "por_orgao": {
       "edpb": 21,
-      "eu_commission": 18
+      "eu_commission": 20
     },
-    "indice_total": 39,
-    "execucao": "2026-10-13"
+    "indice_total": 41,
+    "execucao": "2026-10-14"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2160",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Eurobarometer survey highlights growing use of AI in European companies",
+      "descricao": "European Commission Press release Brussels, 14 Oct 2026 European businesses rely increasingly on artificial intelligence (AI). That is what the results of the latest Eurobarometer survey showed, published today.",
+      "data": "2026-10-14",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2160",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:00cf0673b5185042",
+      "ultima_verificacao": "2026-10-14T07:15:12-03:00",
+      "ultima_execucao": "run_2026_10_14_0715",
+      "primeira_deteccao": "2026-10-14T07:15:12-03:00",
+      "id_execucao_primeira": "run_2026_10_14_0715",
+      "historico": []
+    },
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2150",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Speech by Executive Vice-President Virkkunen at the International AI Summit in Dublin",
+      "descricao": "European Commission Speech Dublin, 14 Oct 2026 Prime Minister Martin, Minister Smyth, Minister Burke, thank you for inviting me. I would like to begin with a remarkable story from Ireland's past. In 1858, on...",
+      "data": "2026-10-13",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2150",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:8be76585b9aac399",
+      "ultima_verificacao": "2026-10-14T07:15:12-03:00",
+      "ultima_execucao": "run_2026_10_14_0715",
+      "primeira_deteccao": "2026-10-14T07:15:12-03:00",
+      "id_execucao_primeira": "run_2026_10_14_0715",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2152",
       "orgao": "eu_commission",
@@ -54,8 +102,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:df6218e95f0fabd6",
-      "ultima_verificacao": "2026-10-13T18:31:20-03:00",
-      "ultima_execucao": "run_2026_10_13_1831",
+      "ultima_verificacao": "2026-10-14T07:15:12-03:00",
+      "ultima_execucao": "run_2026_10_14_0715",
       "primeira_deteccao": "2026-10-13T13:24:37-03:00",
       "id_execucao_primeira": "run_2026_10_13_1324",
       "historico": []
@@ -134,8 +182,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:72d6e1dfd65715dc",
-      "ultima_verificacao": "2026-10-13T18:31:20-03:00",
-      "ultima_execucao": "run_2026_10_13_1831",
+      "ultima_verificacao": "2026-10-14T07:15:12-03:00",
+      "ultima_execucao": "run_2026_10_14_0715",
       "primeira_deteccao": "2026-10-12T10:11:33-03:00",
       "id_execucao_primeira": "run_2026_10_12_1011",
       "historico": []
@@ -158,8 +206,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:cec8f83b48cc400f",
-      "ultima_verificacao": "2026-10-13T18:31:20-03:00",
-      "ultima_execucao": "run_2026_10_13_1831",
+      "ultima_verificacao": "2026-10-14T07:15:12-03:00",
+      "ultima_execucao": "run_2026_10_14_0715",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -182,8 +230,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:1642d01b1fb890b2",
-      "ultima_verificacao": "2026-10-13T18:31:20-03:00",
-      "ultima_execucao": "run_2026_10_13_1831",
+      "ultima_verificacao": "2026-10-14T07:15:12-03:00",
+      "ultima_execucao": "run_2026_10_14_0715",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -206,8 +254,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:8ec95a5b45fc48ba",
-      "ultima_verificacao": "2026-10-13T18:31:20-03:00",
-      "ultima_execucao": "run_2026_10_13_1831",
+      "ultima_verificacao": "2026-10-14T07:15:12-03:00",
+      "ultima_execucao": "run_2026_10_14_0715",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -230,8 +278,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:eb78ce14cb391900",
-      "ultima_verificacao": "2026-10-13T18:31:20-03:00",
-      "ultima_execucao": "run_2026_10_13_1831",
+      "ultima_verificacao": "2026-10-14T07:15:12-03:00",
+      "ultima_execucao": "run_2026_10_14_0715",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -278,8 +326,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:6b069527163002e7",
-      "ultima_verificacao": "2026-10-13T18:31:20-03:00",
-      "ultima_execucao": "run_2026_10_13_1831",
+      "ultima_verificacao": "2026-10-14T07:15:12-03:00",
+      "ultima_execucao": "run_2026_10_14_0715",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": []
@@ -302,8 +350,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:eb693757bc82fe55",
-      "ultima_verificacao": "2026-10-13T18:31:20-03:00",
-      "ultima_execucao": "run_2026_10_13_1831",
+      "ultima_verificacao": "2026-10-14T07:15:12-03:00",
+      "ultima_execucao": "run_2026_10_14_0715",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": []
@@ -326,8 +374,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:19a4f1dc94b8482a",
-      "ultima_verificacao": "2026-10-13T18:31:20-03:00",
-      "ultima_execucao": "run_2026_10_13_1831",
+      "ultima_verificacao": "2026-10-14T07:15:12-03:00",
+      "ultima_execucao": "run_2026_10_14_0715",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": [
@@ -582,8 +630,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:5773d4fe57e6c94e",
-      "ultima_verificacao": "2026-10-13T18:31:20-03:00",
-      "ultima_execucao": "run_2026_10_13_1831",
+      "ultima_verificacao": "2026-10-14T07:15:12-03:00",
+      "ultima_execucao": "run_2026_10_14_0715",
       "primeira_deteccao": "2026-09-23T07:00:31-03:00",
       "id_execucao_primeira": "run_2026_09_23_0700",
       "historico": [
@@ -1249,6 +1297,18 @@
         "s": null,
         "d": "2026-10-13T13:24:37-03:00",
         "v": "2026-10-13"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2160": {
+        "h": "sha1:00cf0673b5185042",
+        "s": null,
+        "d": "2026-10-14T07:15:12-03:00",
+        "v": "2026-10-14"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2150": {
+        "h": "sha1:8be76585b9aac399",
+        "s": null,
+        "d": "2026-10-14T07:15:12-03:00",
+        "v": "2026-10-14"
       }
     },
     "eu_parliament": {},
@@ -1311,7 +1371,7 @@
         "h": "sha1:5773d4fe57e6c94e",
         "s": null,
         "d": "2026-09-23T07:00:31-03:00",
-        "v": "2026-10-13"
+        "v": "2026-10-14"
       },
       "edpb_edpb_europa_eu_news_failure_to_respect_the_rights_of_individuals_the_cnil_fined_extia_eur_300_000_en": {
         "h": "sha1:075867e4826a517b",
@@ -1329,55 +1389,55 @@
         "h": "sha1:6b069527163002e7",
         "s": null,
         "d": "2026-10-08T12:50:26-03:00",
-        "v": "2026-10-13"
+        "v": "2026-10-14"
       },
       "edpb_edpb_europa_eu_news_hellenic_dpa_decision_on_a_data_breach_involving_eetaa_sa_as_processor_for_the_ministry_of": {
         "h": "sha1:eb693757bc82fe55",
         "s": null,
         "d": "2026-10-08T12:50:26-03:00",
-        "v": "2026-10-13"
+        "v": "2026-10-14"
       },
       "edpb_edpb_europa_eu_news_dutch_dpa_fines_uber_eur_824_990_000_for_unlawful_automated_decision_making_and_insufficie": {
         "h": "sha1:19a4f1dc94b8482a",
         "s": null,
         "d": "2026-10-08T12:50:26-03:00",
-        "v": "2026-10-13"
+        "v": "2026-10-14"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_iqvia_eur_7_000_000_for_unlawful_processing_of_patients_health_data_en": {
         "h": "sha1:cec8f83b48cc400f",
         "s": null,
         "d": "2026-10-09T08:55:04-03:00",
-        "v": "2026-10-13"
+        "v": "2026-10-14"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_security_company_eur_39_000_for_violations_concerning_employees_data_en": {
         "h": "sha1:1642d01b1fb890b2",
         "s": null,
         "d": "2026-10-09T08:55:04-03:00",
-        "v": "2026-10-13"
+        "v": "2026-10-14"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_emirates_eur_180_000_for_infringements_concerning_passengers_health_data": {
         "h": "sha1:8ec95a5b45fc48ba",
         "s": null,
         "d": "2026-10-09T08:55:04-03:00",
-        "v": "2026-10-13"
+        "v": "2026-10-14"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_bbva_eur_5_508_000_for_failing_to_respect_a_customers_objection_to_direc": {
         "h": "sha1:eb78ce14cb391900",
         "s": null,
         "d": "2026-10-09T08:55:04-03:00",
-        "v": "2026-10-13"
+        "v": "2026-10-14"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_wind_tre_eur_16_700_000_for_unlawful_telemarketing_and_data_protection_e": {
         "h": "sha1:72d6e1dfd65715dc",
         "s": null,
         "d": "2026-10-12T10:11:33-03:00",
-        "v": "2026-10-13"
+        "v": "2026-10-14"
       },
       "edpb_edpb_europa_eu_news_edpb_publishes_statement_on_the_data_protection_challenges_of_smart_glasses_en": {
         "h": "sha1:df6218e95f0fabd6",
         "s": null,
         "d": "2026-10-13T13:24:37-03:00",
-        "v": "2026-10-13"
+        "v": "2026-10-14"
       }
     },
     "edps": {}
