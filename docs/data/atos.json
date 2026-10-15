@@ -3,15 +3,39 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 41,
+    "total": 42,
     "por_orgao": {
       "edpb": 21,
-      "eu_commission": 20
+      "eu_commission": 21
     },
-    "indice_total": 41,
+    "indice_total": 42,
     "execucao": "2026-10-15"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2175",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Commission launches RAISE pledging initiative to boost AI support for researchers across Europe",
+      "descricao": "European Commission Press release Brussels, 15 Oct 2026 Today, at the European AI in Science Summit in Dublin, the European Commission launched the RAISE (Resource for AI Science in Europe) pledging initiative for AI in Science Enablers.",
+      "data": "2026-10-15",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2175",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:0ea446d82eebc5c1",
+      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
+      "ultima_execucao": "run_2026_10_15_1039",
+      "primeira_deteccao": "2026-10-15T10:39:47-03:00",
+      "id_execucao_primeira": "run_2026_10_15_1039",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2160",
       "orgao": "eu_commission",
@@ -89,7 +113,7 @@
       "orgao": "edpb",
       "tipo": "orientacao",
       "titulo": "EDPB publishes statement on the data protection challenges of smart glasses",
-      "descricao": "Brussels, 13 October – During its latest plenary, the EDPB has adopted statement on smart glasses and published the report “The connected gaze. Video recording, surveillance and administering evidence in the age of smart glasses” *, developed in the context of the Support Pool of Expert (SPE) programme **. As smart glasses become widely available and more frequently used, they raise significant questions for the protection of individuals’ personal data and rights and freedoms even if they create new opportunities for communication, assistance, and innovation. “These devices look like ordinary ",
+      "descricao": "Brussels, 13 October – During its latest plenary, the EDPB has adopted statement 1/2026 on smart glasses and published the report “The connected gaze. Video recording, surveillance and administering evidence in the age of smart glasses” *, developed in the context of the Support Pool of Expert (SPE) programme **. As smart glasses become widely available and more frequently used, they raise significant questions for the protection of individuals’ personal data and rights and freedoms even if they create new opportunities for communication, assistance, and innovation. “These devices look like or",
       "data": "2026-10-13",
       "url_oficial": "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en",
       "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
@@ -101,12 +125,20 @@
       "situacao": null,
       "tipo_ato": null,
       "hierarquia": null,
-      "texto_hash": "sha1:df6218e95f0fabd6",
-      "ultima_verificacao": "2026-10-15T06:57:07-03:00",
-      "ultima_execucao": "run_2026_10_15_0657",
+      "texto_hash": "sha1:bc4a821990e5cdbb",
+      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
+      "ultima_execucao": "run_2026_10_15_1039",
       "primeira_deteccao": "2026-10-13T13:24:37-03:00",
       "id_execucao_primeira": "run_2026_10_13_1324",
-      "historico": []
+      "historico": [
+        {
+          "data_deteccao": "2026-10-15T10:39:47-03:00",
+          "id_execucao": "run_2026_10_15_1039",
+          "campo": "texto",
+          "anterior": "sha1:df6218e95f0fabd6",
+          "novo": "sha1:bc4a821990e5cdbb"
+        }
+      ]
     },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_mex_26_2138",
@@ -182,8 +214,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:72d6e1dfd65715dc",
-      "ultima_verificacao": "2026-10-15T06:57:07-03:00",
-      "ultima_execucao": "run_2026_10_15_0657",
+      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
+      "ultima_execucao": "run_2026_10_15_1039",
       "primeira_deteccao": "2026-10-12T10:11:33-03:00",
       "id_execucao_primeira": "run_2026_10_12_1011",
       "historico": []
@@ -206,8 +238,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:cec8f83b48cc400f",
-      "ultima_verificacao": "2026-10-15T06:57:07-03:00",
-      "ultima_execucao": "run_2026_10_15_0657",
+      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
+      "ultima_execucao": "run_2026_10_15_1039",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -230,8 +262,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:1642d01b1fb890b2",
-      "ultima_verificacao": "2026-10-15T06:57:07-03:00",
-      "ultima_execucao": "run_2026_10_15_0657",
+      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
+      "ultima_execucao": "run_2026_10_15_1039",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -254,8 +286,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:8ec95a5b45fc48ba",
-      "ultima_verificacao": "2026-10-15T06:57:07-03:00",
-      "ultima_execucao": "run_2026_10_15_0657",
+      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
+      "ultima_execucao": "run_2026_10_15_1039",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -278,8 +310,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:eb78ce14cb391900",
-      "ultima_verificacao": "2026-10-15T06:57:07-03:00",
-      "ultima_execucao": "run_2026_10_15_0657",
+      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
+      "ultima_execucao": "run_2026_10_15_1039",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -326,8 +358,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:6b069527163002e7",
-      "ultima_verificacao": "2026-10-15T06:57:07-03:00",
-      "ultima_execucao": "run_2026_10_15_0657",
+      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
+      "ultima_execucao": "run_2026_10_15_1039",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": []
@@ -350,8 +382,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:eb693757bc82fe55",
-      "ultima_verificacao": "2026-10-15T06:57:07-03:00",
-      "ultima_execucao": "run_2026_10_15_0657",
+      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
+      "ultima_execucao": "run_2026_10_15_1039",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": []
@@ -374,8 +406,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:19a4f1dc94b8482a",
-      "ultima_verificacao": "2026-10-15T06:57:07-03:00",
-      "ultima_execucao": "run_2026_10_15_0657",
+      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
+      "ultima_execucao": "run_2026_10_15_1039",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": [
@@ -630,8 +662,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:5773d4fe57e6c94e",
-      "ultima_verificacao": "2026-10-15T06:57:07-03:00",
-      "ultima_execucao": "run_2026_10_15_0657",
+      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
+      "ultima_execucao": "run_2026_10_15_1039",
       "primeira_deteccao": "2026-09-23T07:00:31-03:00",
       "id_execucao_primeira": "run_2026_09_23_0700",
       "historico": [
@@ -1309,6 +1341,12 @@
         "s": null,
         "d": "2026-10-14T07:15:12-03:00",
         "v": "2026-10-14"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2175": {
+        "h": "sha1:0ea446d82eebc5c1",
+        "s": null,
+        "d": "2026-10-15T10:39:47-03:00",
+        "v": "2026-10-15"
       }
     },
     "eu_parliament": {},
@@ -1434,7 +1472,7 @@
         "v": "2026-10-15"
       },
       "edpb_edpb_europa_eu_news_edpb_publishes_statement_on_the_data_protection_challenges_of_smart_glasses_en": {
-        "h": "sha1:df6218e95f0fabd6",
+        "h": "sha1:bc4a821990e5cdbb",
         "s": null,
         "d": "2026-10-13T13:24:37-03:00",
         "v": "2026-10-15"
