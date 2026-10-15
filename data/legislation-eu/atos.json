@@ -3,15 +3,39 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 42,
+    "total": 43,
     "por_orgao": {
       "edpb": 21,
-      "eu_commission": 21
+      "eu_commission": 22
     },
-    "indice_total": 42,
+    "indice_total": 43,
     "execucao": "2026-10-15"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2176",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Speech by Commissioner Albuquerque (by video message) for the Malta's Financial Wellbeing Conference 2026: From Access to Trust",
+      "descricao": "European Commission Speech Online, 15 Oct 2026 Good morning to everyone gathered in Malta today. Although other commitments mean that I am joining you from Brussels, I was determined to contribute to this im...",
+      "data": "2026-10-15",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2176",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:1556c95cba3e546a",
+      "ultima_verificacao": "2026-10-15T17:01:20-03:00",
+      "ultima_execucao": "run_2026_10_15_1701",
+      "primeira_deteccao": "2026-10-15T17:01:20-03:00",
+      "id_execucao_primeira": "run_2026_10_15_1701",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2175",
       "orgao": "eu_commission",
@@ -30,8 +54,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:0ea446d82eebc5c1",
-      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
-      "ultima_execucao": "run_2026_10_15_1039",
+      "ultima_verificacao": "2026-10-15T17:01:20-03:00",
+      "ultima_execucao": "run_2026_10_15_1701",
       "primeira_deteccao": "2026-10-15T10:39:47-03:00",
       "id_execucao_primeira": "run_2026_10_15_1039",
       "historico": []
@@ -126,8 +150,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:bc4a821990e5cdbb",
-      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
-      "ultima_execucao": "run_2026_10_15_1039",
+      "ultima_verificacao": "2026-10-15T17:01:20-03:00",
+      "ultima_execucao": "run_2026_10_15_1701",
       "primeira_deteccao": "2026-10-13T13:24:37-03:00",
       "id_execucao_primeira": "run_2026_10_13_1324",
       "historico": [
@@ -214,8 +238,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:72d6e1dfd65715dc",
-      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
-      "ultima_execucao": "run_2026_10_15_1039",
+      "ultima_verificacao": "2026-10-15T17:01:20-03:00",
+      "ultima_execucao": "run_2026_10_15_1701",
       "primeira_deteccao": "2026-10-12T10:11:33-03:00",
       "id_execucao_primeira": "run_2026_10_12_1011",
       "historico": []
@@ -238,8 +262,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:cec8f83b48cc400f",
-      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
-      "ultima_execucao": "run_2026_10_15_1039",
+      "ultima_verificacao": "2026-10-15T17:01:20-03:00",
+      "ultima_execucao": "run_2026_10_15_1701",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -262,8 +286,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:1642d01b1fb890b2",
-      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
-      "ultima_execucao": "run_2026_10_15_1039",
+      "ultima_verificacao": "2026-10-15T17:01:20-03:00",
+      "ultima_execucao": "run_2026_10_15_1701",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -286,8 +310,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:8ec95a5b45fc48ba",
-      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
-      "ultima_execucao": "run_2026_10_15_1039",
+      "ultima_verificacao": "2026-10-15T17:01:20-03:00",
+      "ultima_execucao": "run_2026_10_15_1701",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -310,8 +334,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:eb78ce14cb391900",
-      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
-      "ultima_execucao": "run_2026_10_15_1039",
+      "ultima_verificacao": "2026-10-15T17:01:20-03:00",
+      "ultima_execucao": "run_2026_10_15_1701",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -358,8 +382,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:6b069527163002e7",
-      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
-      "ultima_execucao": "run_2026_10_15_1039",
+      "ultima_verificacao": "2026-10-15T17:01:20-03:00",
+      "ultima_execucao": "run_2026_10_15_1701",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": []
@@ -382,8 +406,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:eb693757bc82fe55",
-      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
-      "ultima_execucao": "run_2026_10_15_1039",
+      "ultima_verificacao": "2026-10-15T17:01:20-03:00",
+      "ultima_execucao": "run_2026_10_15_1701",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": []
@@ -406,8 +430,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:19a4f1dc94b8482a",
-      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
-      "ultima_execucao": "run_2026_10_15_1039",
+      "ultima_verificacao": "2026-10-15T17:01:20-03:00",
+      "ultima_execucao": "run_2026_10_15_1701",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": [
@@ -662,8 +686,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:5773d4fe57e6c94e",
-      "ultima_verificacao": "2026-10-15T10:39:47-03:00",
-      "ultima_execucao": "run_2026_10_15_1039",
+      "ultima_verificacao": "2026-10-15T17:01:20-03:00",
+      "ultima_execucao": "run_2026_10_15_1701",
       "primeira_deteccao": "2026-09-23T07:00:31-03:00",
       "id_execucao_primeira": "run_2026_09_23_0700",
       "historico": [
@@ -1346,6 +1370,12 @@
         "h": "sha1:0ea446d82eebc5c1",
         "s": null,
         "d": "2026-10-15T10:39:47-03:00",
+        "v": "2026-10-15"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2176": {
+        "h": "sha1:1556c95cba3e546a",
+        "s": null,
+        "d": "2026-10-15T17:01:20-03:00",
         "v": "2026-10-15"
       }
     },

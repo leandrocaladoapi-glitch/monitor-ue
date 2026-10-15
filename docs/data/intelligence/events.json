@@ -5,7 +5,7 @@
   "rule": "FATO, ANÁLISE, INTERPRETAÇÃO e RECOMENDAÇÃO são objetos distintos. Confiança mínima 0.6. Nenhum evento sem fonte oficial é publicado.",
   "total": 36,
   "excluded_low_confidence": 0,
-  "excluded_no_material_relation": 13
+  "excluded_no_material_relation": 14
  },
  "events": [
   {
@@ -11908,6 +11908,15 @@
    "reason": "sem relação material com IA, dados, plataformas ou infraestrutura digital",
    "official_sources": [
     "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson"
+   ]
+  },
+  {
+   "id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-fce373",
+   "regulatory_event": "Speech by Commissioner Albuquerque (by video message) for the Malta's Financial Wellbeing Conference 2026: From Access to Trust",
+   "confidence": 0.6,
+   "reason": "sem relação material com IA, dados, plataformas ou infraestrutura digital",
+   "official_sources": [
+    "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2176"
    ]
   },
   {
