@@ -273,16 +273,16 @@
      "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
     },
     {
+     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+    },
+    {
      "title": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-iqvia-eur-7-0-c1dcc4",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en"
-    },
-    {
-     "title": "Italian DPA fines Emirates EUR 180 000 for infringements concerning passengers’ health data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-emirates-eur-704c4d",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-emirates-eur-180-000-for-infringements-concerning-passengers-health-data_en"
     }
    ],
    "possible_obligations": [
@@ -1457,16 +1457,16 @@
      "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
     },
     {
+     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+    },
+    {
      "title": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-iqvia-eur-7-0-c1dcc4",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en"
-    },
-    {
-     "title": "Italian DPA fines Emirates EUR 180 000 for infringements concerning passengers’ health data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-emirates-eur-704c4d",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-emirates-eur-180-000-for-infringements-concerning-passengers-health-data_en"
     }
    ],
    "possible_obligations": [

@@ -1,39 +1,39 @@
 {
  "meta": {
   "generated_from": "data/legislation-eu/*.json",
-  "dataset_execution": "2026-10-15",
-  "reference_date": "2026-10-15",
+  "dataset_execution": "2026-10-16",
+  "reference_date": "2026-10-16",
   "description": "Métricas de qualidade e cobertura da camada de inteligência."
  },
- "events_total": 36,
- "events_published": 36,
+ "events_total": 37,
+ "events_published": 37,
  "events_excluded_low_confidence": 0,
  "events_excluded_no_material_relation": 14,
  "events_without_official_source": 0,
  "events_by_priority": {
-  "urgent": 16,
-  "high": 3,
-  "medium": 8,
+  "urgent": 17,
+  "high": 2,
+  "medium": 9,
   "monitor": 9
  },
  "events_by_impact": {
-  "critical": 16,
-  "high": 3,
-  "medium": 8,
+  "critical": 17,
+  "high": 2,
+  "medium": 9,
   "low": 9
  },
  "confidence_min": 0.6,
  "confidence_avg": 0.778,
- "deadlines_tracked": 40,
- "deadlines_next_90_days": 2,
- "enforcement_cases": 15,
+ "deadlines_tracked": 41,
+ "deadlines_next_90_days": 1,
+ "enforcement_cases": 16,
  "sectors_covered": 20,
  "sectors_total": 24,
  "alerts_generated": 19,
  "official_hosts": [
   {
    "host": "www.edpb.europa.eu",
-   "citations": 21
+   "citations": 22
   },
   {
    "host": "ec.europa.eu",

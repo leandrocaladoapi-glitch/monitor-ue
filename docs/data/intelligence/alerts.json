@@ -134,7 +134,7 @@
     "Product"
    ],
    "deadline": "2026-12-02",
-   "deadline_label": "Aplicação das proibições — 2026-12-02 (48 dias)",
+   "deadline_label": "Aplicação das proibições — 2026-12-02 (47 dias)",
    "title": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
    "what_changed": "Digital Omnibus on AI — altera diretamente o AI Act: reprograma a aplicação das obrigações de alto risco (Anexo III 02/12/2027; Anexo I 02/08/2028), cria novas proibições aplicáveis a 02/12/2026 e reforça a execução pela European AI Office (Art. 102–110 aplicáveis desde 27/07/2026).",
    "recommended_action": "Inventariar sistemas de IA por caso de uso, risco e papel regulatório.",
@@ -142,7 +142,7 @@
    "official_sources": [
     "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\nRegulamento (UE) 2026/1744 — Digital Omnibus on AI\n\nImpacto:\nCRÍTICO\n\nAfeta:\nCloud, Modelos de Fundação (GPAI), Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nDigital Omnibus on AI — altera diretamente o AI Act: reprograma a aplicação das obrigações de alto risco (Anexo III 02/12/2027; Anexo I 02/08/2028), cria novas proibições aplicáveis a 02/12/2026 e reforça a execução pela European AI Office (Art. 102–110 aplicáveis desde 27/07/2026).\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nAplicação das proibições — 2026-12-02 (48 dias)\n\nFonte oficial:\nhttps://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nRegulamento (UE) 2026/1744 — Digital Omnibus on AI\n\nImpacto:\nCRÍTICO\n\nAfeta:\nCloud, Modelos de Fundação (GPAI), Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nDigital Omnibus on AI — altera diretamente o AI Act: reprograma a aplicação das obrigações de alto risco (Anexo III 02/12/2027; Anexo I 02/08/2028), cria novas proibições aplicáveis a 02/12/2026 e reforça a execução pela European AI Office (Art. 102–110 aplicáveis desde 27/07/2026).\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nAplicação das proibições — 2026-12-02 (47 dias)\n\nFonte oficial:\nhttps://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
   },
   {
    "id": "al_re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
@@ -277,6 +277,50 @@
     "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
    ],
    "text": "ALERTA REGULATÓRIO\n\nEvento:\nHealth data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR\n\nImpacto:\nCRÍTICO\n\nAfeta:\nSaúde, Cibersegurança, AdTech, Bancos\n\nÁreas internas:\nData Protection Officer, Privacy, Compliance, Jurídico, Data Governance\n\nO que mudou:\nBackground information Date of final decision: 3 September 2026 National case Controller: Hôpital Privé de la Loire Legal Reference: Article 32 (Security of processing), Article 34 (Communication of a personal data breach to the data subject), Decision: Administrative fine Keywords: Cybersecurity, Personal data breaches, Health and research Summary of the Decision Origin of the case In summer…\n\nAção recomendada:\nAtualizar a matriz de risco com o padrão sancionado nesta decisão.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
+  },
+  {
+   "id": "al_re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+   "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+   "priority": "urgent",
+   "impact_level": "critical",
+   "impact_score": 88,
+   "sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "MarTech",
+    "Marketplaces",
+    "Provedores de IA"
+   ],
+   "themes": [
+    "Consumidor e transparência",
+    "EDPB e proteção de dados em IA",
+    "Enforcement e sanções"
+   ],
+   "regulator": "EDPB",
+   "company_types": [
+    "Plataforma digital / marketplace",
+    "Grande empresa",
+    "PME (pequena e média empresa)",
+    "Startup / empresa em formação"
+   ],
+   "functions": [
+    "Product",
+    "Marketing",
+    "Jurídico",
+    "Compliance",
+    "Data Governance"
+   ],
+   "deadline": null,
+   "deadline_label": "Sem prazo futuro datado na fonte oficial.",
+   "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
+   "what_changed": "Background information Date of final decision: 2 October 2026 National case Controller: Xandr Inc. Legal References: Article 6 (Lawfulness of processing), Article 9 (Processing of special categories of personal data) Decision: Administrative fine Key words: Fines, Basic principles, Marketing, Online platforms Summary of the Decision Origin of the case The case started in 2020 when the Norwegian…",
+   "recommended_action": "Revisar transparência, rotulagem e padrões de interface dos produtos com IA.",
+   "confidence": 0.8,
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+   ],
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nNorwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data\n\nImpacto:\nCRÍTICO\n\nAfeta:\nAdTech, Cloud, E-commerce, MarTech\n\nÁreas internas:\nProduct, Marketing, Jurídico, Compliance, Data Governance\n\nO que mudou:\nBackground information Date of final decision: 2 October 2026 National case Controller: Xandr Inc. Legal References: Article 6 (Lawfulness of processing), Article 9 (Processing of special categories of personal data) Decision: Administrative fine Key words: Fines, Basic principles, Marketing, Online platforms Summary of the Decision Origin of the case The case started in 2020 when the Norwegian…\n\nAção recomendada:\nRevisar transparência, rotulagem e padrões de interface dos produtos com IA.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
   },
   {
    "id": "al_re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-iqvia-eur-7-0-c1dcc4",
@@ -445,13 +489,13 @@
    "deadline": null,
    "deadline_label": "Sem prazo futuro datado na fonte oficial.",
    "title": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security",
-   "what_changed": "Background information Date of final decision: 22/09/2026 National case Legal Reference(s): Article 32 (Security of processing) Decision: Administrative fine Website topics: Cybersecurity, personal data breaches Summary of the Decision Origin of the case In August 2025, the IT service provider Miljödata was targeted in a cyberattack, during which a malicious actor gained access to a large volume…",
+   "what_changed": "Background information Date of final decision: 22/09/2026 National case Legal Reference(s): Article 32 (Security of processing) Decision: Administrative fine Key words: Cybersecurity, personal data breaches Summary of the Decision Origin of the case In August 2025, the IT service provider Miljödata was targeted in a cyberattack, during which a malicious actor gained access to a large volume of…",
    "recommended_action": "Testar resposta a incidentes e reporte nos prazos aplicáveis.",
    "confidence": 0.8,
    "official_sources": [
     "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\nSwedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security\n\nImpacto:\nCRÍTICO\n\nAfeta:\nCibersegurança, AdTech, Bancos, Cloud\n\nÁreas internas:\nCybersecurity, Risk, Engenharia / ML, Compliance, Data Protection Officer\n\nO que mudou:\nBackground information Date of final decision: 22/09/2026 National case Legal Reference(s): Article 32 (Security of processing) Decision: Administrative fine Website topics: Cybersecurity, personal data breaches Summary of the Decision Origin of the case In August 2025, the IT service provider Miljödata was targeted in a cyberattack, during which a malicious actor gained access to a large volume…\n\nAção recomendada:\nTestar resposta a incidentes e reporte nos prazos aplicáveis.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nSwedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security\n\nImpacto:\nCRÍTICO\n\nAfeta:\nCibersegurança, AdTech, Bancos, Cloud\n\nÁreas internas:\nCybersecurity, Risk, Engenharia / ML, Compliance, Data Protection Officer\n\nO que mudou:\nBackground information Date of final decision: 22/09/2026 National case Legal Reference(s): Article 32 (Security of processing) Decision: Administrative fine Key words: Cybersecurity, personal data breaches Summary of the Decision Origin of the case In August 2025, the IT service provider Miljödata was targeted in a cyberattack, during which a malicious actor gained access to a large volume of…\n\nAção recomendada:\nTestar resposta a incidentes e reporte nos prazos aplicáveis.\n\nPrazo:\nSem prazo futuro datado na fonte oficial.\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
   },
   {
    "id": "al_re_ato_edpb-edpb-europa-eu-news-dutch-dpa-fines-uber-eur-824-99-9a1d0d",
@@ -743,7 +787,7 @@
     "Product"
    ],
    "deadline": "2027-12-02",
-   "deadline_label": "Obrigações de alto risco — Anexo III — 2027-12-02 (413 dias)",
+   "deadline_label": "Obrigações de alto risco — Anexo III — 2027-12-02 (412 dias)",
    "title": "Regulamento (UE) 2024/1689 — AI Act",
    "what_changed": "AI Act — o ato âncora deste monitor: abordagem baseada em risco, práticas proibidas, sistemas de alto risco, modelos de uso geral (GPAI) e European AI Office.",
    "recommended_action": "Inventariar sistemas de IA por caso de uso, risco e papel regulatório.",
@@ -751,51 +795,7 @@
    "official_sources": [
     "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\nRegulamento (UE) 2024/1689 — AI Act\n\nImpacto:\nALTO\n\nAfeta:\nModelos de Fundação (GPAI), Cloud, Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nAI Act — o ato âncora deste monitor: abordagem baseada em risco, práticas proibidas, sistemas de alto risco, modelos de uso geral (GPAI) e European AI Office.\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nObrigações de alto risco — Anexo III — 2027-12-02 (413 dias)\n\nFonte oficial:\nhttps://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
-  },
-  {
-   "id": "al_re_ato_edpb-edpb-europa-eu-news-stakeholder-event-on-guidelines-c9491c",
-   "event_id": "re_ato_edpb-edpb-europa-eu-news-stakeholder-event-on-guidelines-c9491c",
-   "priority": "high",
-   "impact_level": "high",
-   "impact_score": 70,
-   "sectors": [
-    "AdTech",
-    "Cloud",
-    "E-commerce",
-    "Marketplaces",
-    "Provedores de IA",
-    "SaaS"
-   ],
-   "themes": [
-    "Concorrência e mercados digitais",
-    "Consultas públicas e agenda",
-    "EDPB e proteção de dados em IA"
-   ],
-   "regulator": "EDPB",
-   "company_types": [
-    "Plataforma digital / marketplace",
-    "Grande empresa",
-    "Provedor de cloud, infraestrutura ou capacidade computacional",
-    "PME (pequena e média empresa)"
-   ],
-   "functions": [
-    "Jurídico",
-    "Public Policy",
-    "Government Affairs",
-    "Strategy",
-    "Compliance"
-   ],
-   "deadline": "2026-10-15",
-   "deadline_label": "Data referida no texto oficial — 2026-10-15 (0 dias)",
-   "title": "Stakeholder event on guidelines on the interplay between data protection and competition law: agenda now available",
-   "what_changed": "Brussels, 30 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…",
-   "recommended_action": "Assinar as atualizações do AI Office e do registo oficial antes de cada release relevante.",
-   "confidence": 0.8,
-   "official_sources": [
-    "https://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en"
-   ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\nStakeholder event on guidelines on the interplay between data protection and competition law: agenda now available\n\nImpacto:\nALTO\n\nAfeta:\nAdTech, Cloud, E-commerce, Marketplaces\n\nÁreas internas:\nJurídico, Public Policy, Government Affairs, Strategy, Compliance\n\nO que mudou:\nBrussels, 30 July – The EDPB and the European Commission organise a remote stakeholder event in the context of their joint work on upcoming guidelines on the interplay between competition and data protection . The event will take place on 15 October 2026 and is an opportunity for stakeholders to inform and support the ongoing work on this topic. The event reflects the EDPB’s commitment to…\n\nAção recomendada:\nAssinar as atualizações do AI Office e do registo oficial antes de cada release relevante.\n\nPrazo:\nData referida no texto oficial — 2026-10-15 (0 dias)\n\nFonte oficial:\nhttps://www.edpb.europa.eu/news/stakeholder-event-on-guidelines-on-the-interplay-between-data-protection-and-competition-law-0_en"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\nRegulamento (UE) 2024/1689 — AI Act\n\nImpacto:\nALTO\n\nAfeta:\nModelos de Fundação (GPAI), Cloud, Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nAI Act — o ato âncora deste monitor: abordagem baseada em risco, práticas proibidas, sistemas de alto risco, modelos de uso geral (GPAI) e European AI Office.\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nObrigações de alto risco — Anexo III — 2027-12-02 (412 dias)\n\nFonte oficial:\nhttps://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
   },
   {
    "id": "al_re_procedimento_ue-2021-0106-cod",
@@ -829,7 +829,7 @@
     "Product"
    ],
    "deadline": "2027-12-02",
-   "deadline_label": "Obrigações de alto risco — Anexo III — 2027-12-02 (413 dias)",
+   "deadline_label": "Obrigações de alto risco — Anexo III — 2027-12-02 (412 dias)",
    "title": "2021/0106(COD)",
    "what_changed": "Primeiro quadro jurídico vinculante do mundo para a inteligência artificial: abordagem baseada em risco, práticas proibidas, obrigações para sistemas de alto risco e para modelos de uso geral (GPAI), European AI Office.",
    "recommended_action": "Inventariar sistemas de IA por caso de uso, risco e papel regulatório.",
@@ -837,7 +837,7 @@
    "official_sources": [
     "https://data.europarl.europa.eu/api/v2/procedures/2021-0106?format=application/ld%2Bjson"
    ],
-   "text": "ALERTA REGULATÓRIO\n\nEvento:\n2021/0106(COD)\n\nImpacto:\nALTO\n\nAfeta:\nModelos de Fundação (GPAI), Cloud, Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nPrimeiro quadro jurídico vinculante do mundo para a inteligência artificial: abordagem baseada em risco, práticas proibidas, obrigações para sistemas de alto risco e para modelos de uso geral (GPAI), European AI Office.\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nObrigações de alto risco — Anexo III — 2027-12-02 (413 dias)\n\nFonte oficial:\nhttps://data.europarl.europa.eu/api/v2/procedures/2021-0106?format=application/ld%2Bjson"
+   "text": "ALERTA REGULATÓRIO\n\nEvento:\n2021/0106(COD)\n\nImpacto:\nALTO\n\nAfeta:\nModelos de Fundação (GPAI), Cloud, Provedores de IA, SaaS\n\nÁreas internas:\nAI Governance, Regulatory Affairs, Jurídico, Compliance, Product\n\nO que mudou:\nPrimeiro quadro jurídico vinculante do mundo para a inteligência artificial: abordagem baseada em risco, práticas proibidas, obrigações para sistemas de alto risco e para modelos de uso geral (GPAI), European AI Office.\n\nAção recomendada:\nInventariar sistemas de IA por caso de uso, risco e papel regulatório.\n\nPrazo:\nObrigações de alto risco — Anexo III — 2027-12-02 (412 dias)\n\nFonte oficial:\nhttps://data.europarl.europa.eu/api/v2/procedures/2021-0106?format=application/ld%2Bjson"
   }
  ]
 }
