@@ -85,6 +85,11 @@
    "events": 3
   },
   {
+   "key": "dsa",
+   "label": "Digital Services Act",
+   "events": 3
+  },
+  {
    "key": "gpai",
    "label": "GPAI e modelos de fundação",
    "events": 3
@@ -93,11 +98,6 @@
    "key": "employment",
    "label": "Trabalho e emprego",
    "events": 2
-  },
-  {
-   "key": "dsa",
-   "label": "Digital Services Act",
-   "events": 1
   },
   {
    "key": "consumer",
@@ -137,7 +137,7 @@
   },
   {
    "name": "Comissão Europeia",
-   "events": 11
+   "events": 13
   },
   {
    "name": "Parlamento Europeu",
@@ -151,7 +151,7 @@
   },
   {
    "label": "Consulta pública",
-   "events": 11
+   "events": 13
   },
   {
    "label": "Guideline / orientação",
@@ -175,12 +175,12 @@
   {
    "slug": "adtech",
    "name": "AdTech",
-   "changes": 24
+   "changes": 26
   },
   {
    "slug": "ecommerce",
    "name": "E-commerce",
-   "changes": 23
+   "changes": 25
   },
   {
    "slug": "provedores-de-ia",
@@ -195,7 +195,7 @@
   {
    "slug": "marketplaces",
    "name": "Marketplaces",
-   "changes": 21
+   "changes": 23
   },
   {
    "slug": "saude",
@@ -240,7 +240,7 @@
   {
    "slug": "martech",
    "name": "MarTech",
-   "changes": 2
+   "changes": 4
   },
   {
    "slug": "recrutamento",

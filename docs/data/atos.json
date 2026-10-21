@@ -3,15 +3,63 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 46,
+    "total": 48,
     "por_orgao": {
       "edpb": 22,
-      "eu_commission": 24
+      "eu_commission": 26
     },
-    "indice_total": 46,
-    "execucao": "2026-10-20"
+    "indice_total": 48,
+    "execucao": "2026-10-21"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_mex_26_2225",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Daily News 21 / 10 / 2026",
+      "descricao": "European Commission Daily news Brussels, 21 Oct 2026 Commission to investigate how Booking.com combats scams and fraud under the Digital Services Act Today, the European Commission has opened formal proceedings t...",
+      "data": "2026-10-21",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2225",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:dbb1a40c045c41c5",
+      "ultima_verificacao": "2026-10-21T07:11:47-03:00",
+      "ultima_execucao": "run_2026_10_21_0711",
+      "primeira_deteccao": "2026-10-21T07:11:47-03:00",
+      "id_execucao_primeira": "run_2026_10_21_0711",
+      "historico": []
+    },
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2223",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Commission to investigate how Booking.com combats scams and fraud under the Digital Services Act",
+      "descricao": "European Commission Press release Brussels, 21 Oct 2026 Today, the European Commission has opened formal proceedings to assess whether Booking.com may have breached the Digital Services Act (DSA) by not having diligently assessed or effectively mitigated risks related to fraudulent listings and phishing scams.",
+      "data": "2026-10-21",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2223",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:fe6ffd9997bd35d2",
+      "ultima_verificacao": "2026-10-21T07:11:47-03:00",
+      "ultima_execucao": "run_2026_10_21_0711",
+      "primeira_deteccao": "2026-10-21T07:11:47-03:00",
+      "id_execucao_primeira": "run_2026_10_21_0711",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_mex_26_2195",
       "orgao": "eu_commission",
@@ -78,8 +126,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:8c58ebae86004f02",
-      "ultima_verificacao": "2026-10-20T17:07:09-03:00",
-      "ultima_execucao": "run_2026_10_20_1707",
+      "ultima_verificacao": "2026-10-21T07:11:47-03:00",
+      "ultima_execucao": "run_2026_10_21_0711",
       "primeira_deteccao": "2026-10-16T06:52:23-03:00",
       "id_execucao_primeira": "run_2026_10_16_0652",
       "historico": []
@@ -222,8 +270,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:bc4a821990e5cdbb",
-      "ultima_verificacao": "2026-10-20T17:07:09-03:00",
-      "ultima_execucao": "run_2026_10_20_1707",
+      "ultima_verificacao": "2026-10-21T07:11:47-03:00",
+      "ultima_execucao": "run_2026_10_21_0711",
       "primeira_deteccao": "2026-10-13T13:24:37-03:00",
       "id_execucao_primeira": "run_2026_10_13_1324",
       "historico": [
@@ -334,8 +382,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:cec8f83b48cc400f",
-      "ultima_verificacao": "2026-10-20T17:07:09-03:00",
-      "ultima_execucao": "run_2026_10_20_1707",
+      "ultima_verificacao": "2026-10-21T07:11:47-03:00",
+      "ultima_execucao": "run_2026_10_21_0711",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -358,8 +406,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:1642d01b1fb890b2",
-      "ultima_verificacao": "2026-10-20T17:07:09-03:00",
-      "ultima_execucao": "run_2026_10_20_1707",
+      "ultima_verificacao": "2026-10-21T07:11:47-03:00",
+      "ultima_execucao": "run_2026_10_21_0711",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": []
@@ -382,8 +430,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:9b20c99eadb404c6",
-      "ultima_verificacao": "2026-10-20T17:07:09-03:00",
-      "ultima_execucao": "run_2026_10_20_1707",
+      "ultima_verificacao": "2026-10-21T07:11:47-03:00",
+      "ultima_execucao": "run_2026_10_21_0711",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": [
@@ -414,8 +462,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:c766541a62d43123",
-      "ultima_verificacao": "2026-10-20T17:07:09-03:00",
-      "ultima_execucao": "run_2026_10_20_1707",
+      "ultima_verificacao": "2026-10-21T07:11:47-03:00",
+      "ultima_execucao": "run_2026_10_21_0711",
       "primeira_deteccao": "2026-10-09T08:55:04-03:00",
       "id_execucao_primeira": "run_2026_10_09_0855",
       "historico": [
@@ -470,8 +518,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:5d4baafb58e9db70",
-      "ultima_verificacao": "2026-10-20T17:07:09-03:00",
-      "ultima_execucao": "run_2026_10_20_1707",
+      "ultima_verificacao": "2026-10-21T07:11:47-03:00",
+      "ultima_execucao": "run_2026_10_21_0711",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": [
@@ -502,8 +550,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:b63a445c9d4931b9",
-      "ultima_verificacao": "2026-10-20T17:07:09-03:00",
-      "ultima_execucao": "run_2026_10_20_1707",
+      "ultima_verificacao": "2026-10-21T07:11:47-03:00",
+      "ultima_execucao": "run_2026_10_21_0711",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": [
@@ -534,8 +582,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:19a4f1dc94b8482a",
-      "ultima_verificacao": "2026-10-20T17:07:09-03:00",
-      "ultima_execucao": "run_2026_10_20_1707",
+      "ultima_verificacao": "2026-10-21T07:11:47-03:00",
+      "ultima_execucao": "run_2026_10_21_0711",
       "primeira_deteccao": "2026-10-08T12:50:26-03:00",
       "id_execucao_primeira": "run_2026_10_08_1250",
       "historico": [
@@ -790,8 +838,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:5773d4fe57e6c94e",
-      "ultima_verificacao": "2026-10-20T17:07:09-03:00",
-      "ultima_execucao": "run_2026_10_20_1707",
+      "ultima_verificacao": "2026-10-21T07:11:47-03:00",
+      "ultima_execucao": "run_2026_10_21_0711",
       "primeira_deteccao": "2026-09-23T07:00:31-03:00",
       "id_execucao_primeira": "run_2026_09_23_0700",
       "historico": [
@@ -1493,6 +1541,18 @@
         "s": null,
         "d": "2026-10-19T07:47:49-03:00",
         "v": "2026-10-20"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_mex_26_2225": {
+        "h": "sha1:dbb1a40c045c41c5",
+        "s": null,
+        "d": "2026-10-21T07:11:47-03:00",
+        "v": "2026-10-21"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2223": {
+        "h": "sha1:fe6ffd9997bd35d2",
+        "s": null,
+        "d": "2026-10-21T07:11:47-03:00",
+        "v": "2026-10-21"
       }
     },
     "eu_parliament": {},
@@ -1555,7 +1615,7 @@
         "h": "sha1:5773d4fe57e6c94e",
         "s": null,
         "d": "2026-09-23T07:00:31-03:00",
-        "v": "2026-10-20"
+        "v": "2026-10-21"
       },
       "edpb_edpb_europa_eu_news_failure_to_respect_the_rights_of_individuals_the_cnil_fined_extia_eur_300_000_en": {
         "h": "sha1:075867e4826a517b",
@@ -1573,43 +1633,43 @@
         "h": "sha1:5d4baafb58e9db70",
         "s": null,
         "d": "2026-10-08T12:50:26-03:00",
-        "v": "2026-10-20"
+        "v": "2026-10-21"
       },
       "edpb_edpb_europa_eu_news_hellenic_dpa_decision_on_a_data_breach_involving_eetaa_sa_as_processor_for_the_ministry_of": {
         "h": "sha1:b63a445c9d4931b9",
         "s": null,
         "d": "2026-10-08T12:50:26-03:00",
-        "v": "2026-10-20"
+        "v": "2026-10-21"
       },
       "edpb_edpb_europa_eu_news_dutch_dpa_fines_uber_eur_824_990_000_for_unlawful_automated_decision_making_and_insufficie": {
         "h": "sha1:19a4f1dc94b8482a",
         "s": null,
         "d": "2026-10-08T12:50:26-03:00",
-        "v": "2026-10-20"
+        "v": "2026-10-21"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_iqvia_eur_7_000_000_for_unlawful_processing_of_patients_health_data_en": {
         "h": "sha1:cec8f83b48cc400f",
         "s": null,
         "d": "2026-10-09T08:55:04-03:00",
-        "v": "2026-10-20"
+        "v": "2026-10-21"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_security_company_eur_39_000_for_violations_concerning_employees_data_en": {
         "h": "sha1:1642d01b1fb890b2",
         "s": null,
         "d": "2026-10-09T08:55:04-03:00",
-        "v": "2026-10-20"
+        "v": "2026-10-21"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_emirates_eur_180_000_for_infringements_concerning_passengers_health_data": {
         "h": "sha1:9b20c99eadb404c6",
         "s": null,
         "d": "2026-10-09T08:55:04-03:00",
-        "v": "2026-10-20"
+        "v": "2026-10-21"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_bbva_eur_5_508_000_for_failing_to_respect_a_customers_objection_to_direc": {
         "h": "sha1:c766541a62d43123",
         "s": null,
         "d": "2026-10-09T08:55:04-03:00",
-        "v": "2026-10-20"
+        "v": "2026-10-21"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_wind_tre_eur_16_700_000_for_unlawful_telemarketing_and_data_protection_e": {
         "h": "sha1:72d6e1dfd65715dc",
@@ -1621,13 +1681,13 @@
         "h": "sha1:bc4a821990e5cdbb",
         "s": null,
         "d": "2026-10-13T13:24:37-03:00",
-        "v": "2026-10-20"
+        "v": "2026-10-21"
       },
       "edpb_edpb_europa_eu_news_norwegian_dpa_fines_xandr_eur_8_600_000_for_unlawful_processing_of_personal_data_en": {
         "h": "sha1:8c58ebae86004f02",
         "s": null,
         "d": "2026-10-16T06:52:23-03:00",
-        "v": "2026-10-20"
+        "v": "2026-10-21"
       }
     },
     "edps": {}
