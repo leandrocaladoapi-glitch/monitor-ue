@@ -1,14 +1,14 @@
 {
  "meta": {
   "generated_from": "data/legislation-eu/*.json",
-  "dataset_execution": "2026-10-21",
-  "reference_date": "2026-10-21",
+  "dataset_execution": "2026-10-22",
+  "reference_date": "2026-10-22",
   "description": "Métricas de qualidade e cobertura da camada de inteligência."
  },
  "events_total": 39,
  "events_published": 39,
  "events_excluded_low_confidence": 0,
- "events_excluded_no_material_relation": 16,
+ "events_excluded_no_material_relation": 17,
  "events_without_official_source": 0,
  "events_by_priority": {
   "urgent": 17,
@@ -52,6 +52,7 @@
  "skipped_no_material_relation": [
   "re_procedimento_ue-2025-2056-ini",
   "re_procedimento_ue-2025-2060-ini",
+  "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-c8f8c6",
   "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-1b975e",
   "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-516fcd",
   "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-fce373",
