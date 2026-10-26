@@ -2,12 +2,462 @@
   "gerado_em": "2026-10-26",
   "execucoes": [
     {
+      "id": "run_2026_10_26_1810",
+      "data_hora": "2026-10-26T18:10:38-03:00",
+      "fim": "2026-10-26T18:10:57-03:00",
+      "ts": "2026-10-26T21:10:38+00:00",
+      "ts_fim": "2026-10-26T21:10:57+00:00",
+      "idade_horas": 0.0,
+      "tipo": "atualizacao",
+      "status": "parcial",
+      "duracao_segundos": 18,
+      "orcamento_segundos": 1500,
+      "verificadas": 4,
+      "monitoradas": 4,
+      "pendentes": 0,
+      "atualizadas": 4,
+      "novas": 0,
+      "mudancas": 0,
+      "eventos": 0,
+      "cobertura_pct": 100.0,
+      "erros": 0,
+      "chamadas_http": 17,
+      "cache_http": 0,
+      "falhas_http": 0,
+      "tempo_rede_s": 4.98,
+      "por_endpoint": {
+        "comissao:info/law/better-regulation": {
+          "chamadas": 2,
+          "falhas": 0,
+          "tempo_total": 0.67
+        },
+        "eurlex:search.html": {
+          "chamadas": 10,
+          "falhas": 0,
+          "tempo_total": 0.78
+        },
+        "parlamento:api/v2/procedures": {
+          "chamadas": 4,
+          "falhas": 0,
+          "tempo_total": 3.32
+        },
+        "parlamento:legislative-train/theme-a-europe-fit-for-the-digital-age": {
+          "chamadas": 1,
+          "falhas": 0,
+          "tempo_total": 0.2
+        }
+      },
+      "fases_segundos": {
+        "agenda_consultas": 1.3,
+        "atualizacao_procedimentos": 1.3,
+        "descoberta_procedimentos": 4.3,
+        "fontes_multiorgao": 11.9
+      },
+      "snapshot": {
+        "proposicoes_total": 4,
+        "por_situacao": {
+          "em_tramitacao": 4
+        },
+        "normas_total": 2,
+        "eventos_total": 1,
+        "mudancas_registradas": 169
+      },
+      "fontes": 4,
+      "engine": {
+        "orcamento_segundos": 1500,
+        "max_novas": 25,
+        "workers": 5,
+        "http_concorrencia": 4
+      },
+      "status_global": "PARCIAL",
+      "fontes_monitoradas": {
+        "ai_office": {
+          "nome": "European AI Office — Comissão Europeia (digital-strategy)",
+          "status": "falha",
+          "ultima_tentativa": "2026-10-26T18:10:45-03:00",
+          "ultima_execucao_ok": null,
+          "itens_consultados": 0,
+          "itens_relevantes": 0,
+          "itens_descartados": 0,
+          "itens_duplicados": 0,
+          "revisao_pendente": 0,
+          "novidades": 0,
+          "erros": 6,
+          "duracao_segundos": 0.4,
+          "endpoints": [
+            "https://digital-strategy.ec.europa.eu/en/news?type=5%7C13",
+            "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+            "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+            "https://digital-strategy.ec.europa.eu/en/policies/general-purpose-ai",
+            "https://digital-strategy.ec.europa.eu/en/ai-act"
+          ],
+          "canais_detalhe": [],
+          "canais_ok": [],
+          "canais_falhos": [
+            "notícias e comunicados do portal",
+            "página da AI Office (políticas e ações)",
+            "AI Act — quadro regulatório e implementação",
+            "General-Purpose AI — página oficial",
+            "AI Act — página do serviço"
+          ],
+          "canais_falhos_obrigatorios": [
+            "notícias e comunicados do portal"
+          ],
+          "canais_opcionais_falhos": [
+            "página da AI Office (políticas e ações)",
+            "AI Act — quadro regulatório e implementação",
+            "General-Purpose AI — página oficial",
+            "AI Act — página do serviço"
+          ],
+          "erro_detalhe": "notícias e comunicados do portal: HTML indisponível: https://digital-strategy.ec.europa.eu/en/news?type=5%7C13 (HTTP 403); página da AI Office (políticas e ações): HTML indisponível: https://digital-strategy.ec.europa.eu/en/policies/ai-office (HTTP 403); AI Act — quadro regulatório e implementação: HTML indisponível: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai (HTTP 403); General-Purpose AI — página oficial: HTML indisponível: https://digital-strategy.ec.europa.eu/en/policies/general-purpose-ai (HTTP 403)",
+          "atos_registrados": 0,
+          "atos_descartados_por_retencao": 0
+        },
+        "edpb": {
+          "nome": "EDPB — European Data Protection Board",
+          "status": "ok",
+          "ultima_tentativa": "2026-10-26T18:10:55-03:00",
+          "ultima_execucao_ok": "2026-10-26T18:10:57-03:00",
+          "itens_consultados": 10,
+          "itens_relevantes": 10,
+          "itens_descartados": 0,
+          "itens_duplicados": 0,
+          "revisao_pendente": 0,
+          "novidades": 0,
+          "erros": 0,
+          "duracao_segundos": 0.9,
+          "endpoints": [
+            "https://www.edpb.europa.eu/feed/news_en"
+          ],
+          "canais_detalhe": [
+            {
+              "canal": "notícias e guidelines (RSS oficial)",
+              "url": "https://www.edpb.europa.eu/feed/news_en",
+              "itens_brutos": 10,
+              "amostra_hierarquia": [],
+              "itens_relevantes": 10
+            }
+          ],
+          "canais_ok": [
+            "notícias e guidelines (RSS oficial)"
+          ],
+          "canais_falhos": [],
+          "canais_falhos_obrigatorios": [],
+          "canais_opcionais_falhos": [],
+          "erro_detalhe": null,
+          "atos_registrados": 22,
+          "atos_descartados_por_retencao": 0
+        },
+        "edps": {
+          "nome": "EDPS — European Data Protection Supervisor",
+          "status": "falha",
+          "ultima_tentativa": "2026-10-26T18:10:56-03:00",
+          "ultima_execucao_ok": null,
+          "itens_consultados": 0,
+          "itens_relevantes": 0,
+          "itens_descartados": 0,
+          "itens_duplicados": 0,
+          "revisao_pendente": 0,
+          "novidades": 0,
+          "erros": 4,
+          "duracao_segundos": 0.9,
+          "endpoints": [
+            "https://www.edps.europa.eu/press-publications/press-news/press-releases_en",
+            "https://www.edps.europa.eu/press-publications/press-news/news_en",
+            "https://www.edps.europa.eu/data-protection/our-work/publications_en"
+          ],
+          "canais_detalhe": [],
+          "canais_ok": [],
+          "canais_falhos": [
+            "press releases (listagem oficial)",
+            "notícias oficiais (listagem)",
+            "publicações (opiniões e guidelines)"
+          ],
+          "canais_falhos_obrigatorios": [
+            "press releases (listagem oficial)"
+          ],
+          "canais_opcionais_falhos": [
+            "notícias oficiais (listagem)",
+            "publicações (opiniões e guidelines)"
+          ],
+          "erro_detalhe": "press releases (listagem oficial): ModuleNotFoundError: No module named 'eu_parsers'; notícias oficiais (listagem): ModuleNotFoundError: No module named 'eu_parsers'; publicações (opiniões e guidelines): ModuleNotFoundError: No module named 'eu_parsers'; nenhum canal respondeu — press releases (listagem oficial): ModuleNotFoundError: No module named 'eu_parsers'; notícias oficiais (listagem): ModuleNotFoundError: No module named 'eu_parsers'; publicações (opiniões e guidelines): ModuleNotFoundError: No module named 'eu_parsers'",
+          "atos_registrados": 0,
+          "atos_descartados_por_retencao": 0
+        },
+        "eu_commission": {
+          "nome": "Comissão Europeia — Press Corner e Have Your Say",
+          "status": "parcial",
+          "ultima_tentativa": "2026-10-26T18:10:47-03:00",
+          "ultima_execucao_ok": null,
+          "itens_consultados": 10,
+          "itens_relevantes": 3,
+          "itens_descartados": 7,
+          "itens_duplicados": 0,
+          "revisao_pendente": 3,
+          "novidades": 0,
+          "erros": 3,
+          "duracao_segundos": 2.2,
+          "endpoints": [
+            "https://ec.europa.eu/commission/presscorner/api/rss?language=en",
+            "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?page=1",
+            "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?page=2",
+            "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?keywords={topico}"
+          ],
+          "canais_detalhe": [
+            {
+              "canal": "comunicados oficiais (Press Corner, RSS)",
+              "url": "https://ec.europa.eu/commission/presscorner/api/rss?language=en",
+              "itens_brutos": 10,
+              "amostra_hierarquia": [],
+              "itens_relevantes": 3
+            }
+          ],
+          "canais_ok": [
+            "comunicados oficiais (Press Corner, RSS)"
+          ],
+          "canais_falhos": [
+            "consultas públicas e calls for evidence (Have Your Say)",
+            "consultas públicas (Have Your Say, página 2)",
+            "consultas por tema (Have Your Say, keywords)"
+          ],
+          "canais_falhos_obrigatorios": [
+            "consultas públicas e calls for evidence (Have Your Say)"
+          ],
+          "canais_opcionais_falhos": [
+            "consultas públicas (Have Your Say, página 2)",
+            "consultas por tema (Have Your Say, keywords)"
+          ],
+          "erro_detalhe": "consultas públicas e calls for evidence (Have Your Say): ModuleNotFoundError: No module named 'eu_parsers'; consultas públicas (Have Your Say, página 2): ModuleNotFoundError: No module named 'eu_parsers'; consultas por tema (Have Your Say, keywords): ModuleNotFoundError: No module named 'eu_parsers'",
+          "atos_registrados": 30,
+          "atos_descartados_por_retencao": 0
+        },
+        "eu_council": {
+          "nome": "Conselho da UE — Registro público de documentos",
+          "status": "falha",
+          "ultima_tentativa": "2026-10-26T18:10:46-03:00",
+          "ultima_execucao_ok": null,
+          "itens_consultados": 0,
+          "itens_relevantes": 0,
+          "itens_descartados": 0,
+          "itens_duplicados": 0,
+          "revisao_pendente": 0,
+          "novidades": 0,
+          "erros": 4,
+          "duracao_segundos": 0.5,
+          "endpoints": [
+            "https://www.consilium.europa.eu/en/documents/public-register/latest/",
+            "https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2",
+            "https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/"
+          ],
+          "canais_detalhe": [],
+          "canais_ok": [],
+          "canais_falhos": [
+            "últimos documentos adicionados ao registro",
+            "últimos documentos (página 2)",
+            "documentos legislativos preparatórios (página 1)"
+          ],
+          "canais_falhos_obrigatorios": [
+            "últimos documentos adicionados ao registro"
+          ],
+          "canais_opcionais_falhos": [
+            "últimos documentos (página 2)",
+            "documentos legislativos preparatórios (página 1)"
+          ],
+          "erro_detalhe": "últimos documentos adicionados ao registro: HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/ (HTTP 403); últimos documentos (página 2): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2 (HTTP 403); documentos legislativos preparatórios (página 1): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/ (HTTP 403); nenhum canal respondeu — últimos documentos adicionados ao registro: HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/ (HTTP 403); últimos documentos (página 2): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2 (HTTP 403); documentos legislativos preparatórios (página 1): HTML indisponível: https://www.consilium.europa.eu/en/documents/public-register/preparatory-legislative-documents/ (HTTP 403)",
+          "atos_registrados": 0,
+          "atos_descartados_por_retencao": 0
+        },
+        "eu_parliament": {
+          "nome": "Parlamento Europeu — Open Data Portal v2 / Legislative Train",
+          "status": "falha",
+          "ultima_tentativa": "2026-10-26T18:10:49-03:00",
+          "ultima_execucao_ok": null,
+          "itens_consultados": 0,
+          "itens_relevantes": 0,
+          "itens_descartados": 0,
+          "itens_duplicados": 0,
+          "revisao_pendente": 0,
+          "novidades": 0,
+          "erros": 6,
+          "duracao_segundos": 6.1,
+          "endpoints": [
+            "https://data.europarl.europa.eu/api/v2/procedures?parliamentary_term=10&limit=100&format=application/ld%2Bjson",
+            "https://data.europarl.europa.eu/api/v2/procedures?text={topico}&limit=25&format=application/ld%2Bjson",
+            "https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age",
+            "https://www.europarl.europa.eu/legislative-train/file-artificial-intelligence-act",
+            "https://www.europarl.europa.eu/news/en/press-room?keywords={topico}"
+          ],
+          "canais_detalhe": [],
+          "canais_ok": [],
+          "canais_falhos": [
+            "API v2 — procedimentos do termo parlamentar corrente",
+            "API v2 — procedimentos de IA (busca por texto)",
+            "Legislative Train — Europe fit for the digital age",
+            "Legislative Train — unicidade e poderes de execução",
+            "sala de imprensa — por tema"
+          ],
+          "canais_falhos_obrigatorios": [
+            "API v2 — procedimentos do termo parlamentar corrente"
+          ],
+          "canais_opcionais_falhos": [
+            "API v2 — procedimentos de IA (busca por texto)",
+            "Legislative Train — Europe fit for the digital age",
+            "Legislative Train — unicidade e poderes de execução",
+            "sala de imprensa — por tema"
+          ],
+          "erro_detalhe": "API v2 — procedimentos do termo parlamentar corrente: ModuleNotFoundError: No module named 'eu_parsers'; API v2 — procedimentos de IA (busca por texto): JSON indisponível: https://data.europarl.europa.eu/api/v2/procedures?text=artificial%20intelligence&limit=25&format=application/ld%2Bjson; Legislative Train — Europe fit for the digital age: ModuleNotFoundError: No module named 'eu_parsers'; Legislative Train — unicidade e poderes de execução: ModuleNotFoundError: No module named 'eu_parsers'",
+          "atos_registrados": 0,
+          "atos_descartados_por_retencao": 0
+        },
+        "eurlex": {
+          "nome": "EUR-Lex — Jornal Oficial da União Europeia (Publications Office)",
+          "status": "parcial",
+          "ultima_tentativa": "2026-10-26T18:10:46-03:00",
+          "ultima_execucao_ok": null,
+          "itens_consultados": 100,
+          "itens_relevantes": 0,
+          "itens_descartados": 1,
+          "itens_duplicados": 99,
+          "revisao_pendente": 0,
+          "novidades": 0,
+          "erros": 3,
+          "duracao_segundos": 0.3,
+          "endpoints": [
+            "https://eur-lex.europa.eu/search.html?text=%22{topico}%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR={year}",
+            "https://eur-lex.europa.eu/search.html?text=%22{topico}%22&scope=EURLEX&type=quick&amount=25&page=1&DD_YEAR={prev_year}",
+            "https://eur-lex.europa.eu/EN/display-feed.rss?rssId=222",
+            "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727"
+          ],
+          "canais_detalhe": [
+            {
+              "canal": "atos do Jornal Oficial — série L (RSS oficial)",
+              "url": "https://eur-lex.europa.eu/EN/display-feed.rss?rssId=222",
+              "itens_brutos": 100,
+              "amostra_hierarquia": [],
+              "itens_relevantes": 0
+            }
+          ],
+          "canais_ok": [
+            "atos do Jornal Oficial — série L (RSS oficial)"
+          ],
+          "canais_falhos": [
+            "busca por tema (legislação do ano corrente)",
+            "busca por tema (legislação do ano anterior)",
+            "AI Act — versão consolidada (ato âncora)"
+          ],
+          "canais_falhos_obrigatorios": [
+            "busca por tema (legislação do ano corrente)"
+          ],
+          "canais_opcionais_falhos": [
+            "busca por tema (legislação do ano anterior)",
+            "AI Act — versão consolidada (ato âncora)"
+          ],
+          "erro_detalhe": "busca por tema (legislação do ano corrente): ModuleNotFoundError: No module named 'eu_parsers'; busca por tema (legislação do ano anterior): ModuleNotFoundError: No module named 'eu_parsers'; AI Act — versão consolidada (ato âncora): ModuleNotFoundError: No module named 'eu_parsers'",
+          "atos_registrados": 0,
+          "atos_descartados_por_retencao": 0
+        },
+        "eurlex_motor": {
+          "nome": "EUR-Lex — busca oficial (motor legislativo)",
+          "status": "ok",
+          "ultima_tentativa": "2026-10-26T18:10:38-03:00",
+          "ultima_execucao_ok": "2026-10-26T18:10:38-03:00",
+          "itens_consultados": 10,
+          "novidades": 0,
+          "erros": 0,
+          "chamadas_http": 10,
+          "falhas_http": 0,
+          "endpoints": [
+            "https://eur-lex.europa.eu/"
+          ],
+          "canais_ok": [
+            "eurlex_motor:search.html"
+          ],
+          "canais_falhos": [],
+          "erro_detalhe": null
+        },
+        "parlamento": {
+          "nome": "Parlamento Europeu — Open Data Portal v2 (motor legislativo)",
+          "status": "ok",
+          "ultima_tentativa": "2026-10-26T18:10:38-03:00",
+          "ultima_execucao_ok": "2026-10-26T18:10:38-03:00",
+          "itens_consultados": 4,
+          "novidades": 0,
+          "erros": 0,
+          "chamadas_http": 5,
+          "falhas_http": 0,
+          "endpoints": [
+            "https://data.europarl.europa.eu/"
+          ],
+          "canais_ok": [
+            "parlamento:api/v2/procedures",
+            "parlamento:legislative-train/theme-a-europe-fit-for-the-digital-age"
+          ],
+          "canais_falhos": [],
+          "erro_detalhe": null
+        }
+      },
+      "fontes_falha": [
+        "ai_office",
+        "edps",
+        "eu_council",
+        "eu_parliament"
+      ],
+      "fontes_parciais": [
+        "eu_commission",
+        "eurlex"
+      ],
+      "http_fontes": {
+        "chamadas": 27,
+        "falhas": 11,
+        "cache": 0,
+        "tempo_total": 6.85,
+        "por_orgao": {
+          "ai_office": {
+            "chamadas": 5,
+            "falhas": 5,
+            "tempo_total": 0.41
+          },
+          "eurlex": {
+            "chamadas": 4,
+            "falhas": 0,
+            "tempo_total": 0.3
+          },
+          "eu_council": {
+            "chamadas": 3,
+            "falhas": 3,
+            "tempo_total": 0.55
+          },
+          "eu_commission": {
+            "chamadas": 4,
+            "falhas": 0,
+            "tempo_total": 2.21
+          },
+          "eu_parliament": {
+            "chamadas": 7,
+            "falhas": 3,
+            "tempo_total": 1.61
+          },
+          "edpb": {
+            "chamadas": 1,
+            "falhas": 0,
+            "tempo_total": 0.88
+          },
+          "edps": {
+            "chamadas": 3,
+            "falhas": 0,
+            "tempo_total": 0.89
+          }
+        }
+      },
+      "mudancas_multiorgao": 0
+    },
+    {
       "id": "run_2026_10_26_1227",
       "data_hora": "2026-10-26T12:27:10-03:00",
       "fim": "2026-10-26T12:28:12-03:00",
       "ts": "2026-10-26T15:27:10+00:00",
       "ts_fim": "2026-10-26T15:28:12+00:00",
-      "idade_horas": 0.0,
+      "idade_horas": 5.7,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 62,
@@ -459,7 +909,7 @@
       "fim": "2026-10-26T08:09:24-03:00",
       "ts": "2026-10-26T11:08:57+00:00",
       "ts_fim": "2026-10-26T11:09:24+00:00",
-      "idade_horas": 4.3,
+      "idade_horas": 10.0,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 27,
@@ -909,7 +1359,7 @@
       "fim": "2026-10-25T16:14:44-03:00",
       "ts": "2026-10-25T19:14:12+00:00",
       "ts_fim": "2026-10-25T19:14:44+00:00",
-      "idade_horas": 20.2,
+      "idade_horas": 25.9,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 32,
@@ -1359,7 +1809,7 @@
       "fim": "2026-10-25T10:20:54-03:00",
       "ts": "2026-10-25T13:20:31+00:00",
       "ts_fim": "2026-10-25T13:20:54+00:00",
-      "idade_horas": 26.1,
+      "idade_horas": 31.8,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 23,
@@ -1809,7 +2259,7 @@
       "fim": "2026-10-25T06:50:17-03:00",
       "ts": "2026-10-25T09:49:46+00:00",
       "ts_fim": "2026-10-25T09:50:17+00:00",
-      "idade_horas": 29.6,
+      "idade_horas": 35.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 31,
@@ -2259,7 +2709,7 @@
       "fim": "2026-10-24T15:59:10-03:00",
       "ts": "2026-10-24T18:58:20+00:00",
       "ts_fim": "2026-10-24T18:59:10+00:00",
-      "idade_horas": 44.5,
+      "idade_horas": 50.2,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 50,
@@ -2709,7 +3159,7 @@
       "fim": "2026-10-24T09:54:48-03:00",
       "ts": "2026-10-24T12:54:22+00:00",
       "ts_fim": "2026-10-24T12:54:48+00:00",
-      "idade_horas": 50.6,
+      "idade_horas": 56.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 25,
@@ -3159,7 +3609,7 @@
       "fim": "2026-10-24T06:34:02-03:00",
       "ts": "2026-10-24T09:33:32+00:00",
       "ts_fim": "2026-10-24T09:34:02+00:00",
-      "idade_horas": 53.9,
+      "idade_horas": 59.6,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 29,
@@ -3609,7 +4059,7 @@
       "fim": "2026-10-23T17:04:39-03:00",
       "ts": "2026-10-23T20:04:08+00:00",
       "ts_fim": "2026-10-23T20:04:39+00:00",
-      "idade_horas": 67.4,
+      "idade_horas": 73.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 31,
@@ -4059,7 +4509,7 @@
       "fim": "2026-10-23T10:47:29-03:00",
       "ts": "2026-10-23T13:47:04+00:00",
       "ts_fim": "2026-10-23T13:47:29+00:00",
-      "idade_horas": 73.7,
+      "idade_horas": 79.4,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 24,
@@ -4509,7 +4959,7 @@
       "fim": "2026-10-23T07:06:10-03:00",
       "ts": "2026-10-23T10:05:47+00:00",
       "ts_fim": "2026-10-23T10:06:10+00:00",
-      "idade_horas": 77.4,
+      "idade_horas": 83.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 22,
@@ -4959,7 +5409,7 @@
       "fim": "2026-10-22T17:17:11-03:00",
       "ts": "2026-10-22T20:16:49+00:00",
       "ts_fim": "2026-10-22T20:17:11+00:00",
-      "idade_horas": 91.2,
+      "idade_horas": 96.9,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 21,
@@ -5409,7 +5859,7 @@
       "fim": "2026-10-22T11:04:57-03:00",
       "ts": "2026-10-22T14:04:27+00:00",
       "ts_fim": "2026-10-22T14:04:57+00:00",
-      "idade_horas": 97.4,
+      "idade_horas": 103.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 29,
@@ -5859,7 +6309,7 @@
       "fim": "2026-10-22T07:13:25-03:00",
       "ts": "2026-10-22T10:13:04+00:00",
       "ts_fim": "2026-10-22T10:13:25+00:00",
-      "idade_horas": 101.2,
+      "idade_horas": 107.0,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 20,
@@ -6309,7 +6759,7 @@
       "fim": "2026-10-21T17:21:00-03:00",
       "ts": "2026-10-21T20:20:31+00:00",
       "ts_fim": "2026-10-21T20:21:00+00:00",
-      "idade_horas": 115.1,
+      "idade_horas": 120.8,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 29,
@@ -6759,7 +7209,7 @@
       "fim": "2026-10-21T11:06:31-03:00",
       "ts": "2026-10-21T14:05:48+00:00",
       "ts_fim": "2026-10-21T14:06:31+00:00",
-      "idade_horas": 121.4,
+      "idade_horas": 127.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 43,
@@ -7209,7 +7659,7 @@
       "fim": "2026-10-21T07:12:06-03:00",
       "ts": "2026-10-21T10:11:47+00:00",
       "ts_fim": "2026-10-21T10:12:06+00:00",
-      "idade_horas": 125.3,
+      "idade_horas": 131.0,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 19,
@@ -7659,7 +8109,7 @@
       "fim": "2026-10-20T17:07:33-03:00",
       "ts": "2026-10-20T20:07:09+00:00",
       "ts_fim": "2026-10-20T20:07:33+00:00",
-      "idade_horas": 139.3,
+      "idade_horas": 145.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 23,
@@ -8109,7 +8559,7 @@
       "fim": "2026-10-20T10:50:02-03:00",
       "ts": "2026-10-20T13:49:37+00:00",
       "ts_fim": "2026-10-20T13:50:02+00:00",
-      "idade_horas": 145.6,
+      "idade_horas": 151.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 24,
@@ -8559,7 +9009,7 @@
       "fim": "2026-10-20T07:06:36-03:00",
       "ts": "2026-10-20T10:05:55+00:00",
       "ts_fim": "2026-10-20T10:06:36+00:00",
-      "idade_horas": 149.4,
+      "idade_horas": 155.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 40,
@@ -9011,7 +9461,7 @@
       "fim": "2026-10-19T18:14:19-03:00",
       "ts": "2026-10-19T21:13:35+00:00",
       "ts_fim": "2026-10-19T21:14:19+00:00",
-      "idade_horas": 162.2,
+      "idade_horas": 167.9,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 43,
@@ -9461,7 +9911,7 @@
       "fim": "2026-10-19T12:52:08-03:00",
       "ts": "2026-10-19T15:51:24+00:00",
       "ts_fim": "2026-10-19T15:52:08+00:00",
-      "idade_horas": 167.6,
+      "idade_horas": 173.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 44,
@@ -9911,7 +10361,7 @@
       "fim": "2026-10-19T07:48:10-03:00",
       "ts": "2026-10-19T10:47:49+00:00",
       "ts_fim": "2026-10-19T10:48:10+00:00",
-      "idade_horas": 172.7,
+      "idade_horas": 178.4,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 21,
@@ -10361,7 +10811,7 @@
       "fim": "2026-10-18T15:53:49-03:00",
       "ts": "2026-10-18T18:53:10+00:00",
       "ts_fim": "2026-10-18T18:53:49+00:00",
-      "idade_horas": 188.6,
+      "idade_horas": 194.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 38,
@@ -10811,7 +11261,7 @@
       "fim": "2026-10-18T09:47:06-03:00",
       "ts": "2026-10-18T12:46:46+00:00",
       "ts_fim": "2026-10-18T12:47:06+00:00",
-      "idade_horas": 194.7,
+      "idade_horas": 200.4,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 19,
@@ -11261,7 +11711,7 @@
       "fim": "2026-10-18T06:39:53-03:00",
       "ts": "2026-10-18T09:39:10+00:00",
       "ts_fim": "2026-10-18T09:39:53+00:00",
-      "idade_horas": 197.8,
+      "idade_horas": 203.5,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 42,
@@ -11711,7 +12161,7 @@
       "fim": "2026-10-17T15:48:32-03:00",
       "ts": "2026-10-17T18:48:10+00:00",
       "ts_fim": "2026-10-17T18:48:32+00:00",
-      "idade_horas": 212.7,
+      "idade_horas": 218.4,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 21,
@@ -12153,7 +12603,7 @@
       "fim": "2026-10-17T12:55:29-03:00",
       "ts": "2026-10-17T15:55:07+00:00",
       "ts_fim": "2026-10-17T15:55:29+00:00",
-      "idade_horas": 215.5,
+      "idade_horas": 221.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 21,
@@ -12603,7 +13053,7 @@
       "fim": "2026-10-17T09:23:28-03:00",
       "ts": "2026-10-17T12:23:05+00:00",
       "ts_fim": "2026-10-17T12:23:28+00:00",
-      "idade_horas": 219.1,
+      "idade_horas": 224.8,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 23,
@@ -13053,7 +13503,7 @@
       "fim": "2026-10-17T06:23:52-03:00",
       "ts": "2026-10-17T09:23:31+00:00",
       "ts_fim": "2026-10-17T09:23:52+00:00",
-      "idade_horas": 222.1,
+      "idade_horas": 227.8,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 21,
@@ -13503,7 +13953,7 @@
       "fim": "2026-10-16T16:42:19-03:00",
       "ts": "2026-10-16T19:41:31+00:00",
       "ts_fim": "2026-10-16T19:42:19+00:00",
-      "idade_horas": 235.8,
+      "idade_horas": 241.5,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 47,
@@ -13953,7 +14403,7 @@
       "fim": "2026-10-16T10:30:58-03:00",
       "ts": "2026-10-16T13:30:30+00:00",
       "ts_fim": "2026-10-16T13:30:58+00:00",
-      "idade_horas": 242.0,
+      "idade_horas": 247.7,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 27,
@@ -14403,7 +14853,7 @@
       "fim": "2026-10-16T06:52:58-03:00",
       "ts": "2026-10-16T09:52:23+00:00",
       "ts_fim": "2026-10-16T09:52:58+00:00",
-      "idade_horas": 245.6,
+      "idade_horas": 251.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 34,
@@ -14853,7 +15303,7 @@
       "fim": "2026-10-15T17:01:47-03:00",
       "ts": "2026-10-15T20:01:20+00:00",
       "ts_fim": "2026-10-15T20:01:47+00:00",
-      "idade_horas": 259.4,
+      "idade_horas": 265.2,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 27,
@@ -15303,7 +15753,7 @@
       "fim": "2026-10-15T10:40:05-03:00",
       "ts": "2026-10-15T13:39:47+00:00",
       "ts_fim": "2026-10-15T13:40:05+00:00",
-      "idade_horas": 265.8,
+      "idade_horas": 271.5,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 18,
@@ -15753,7 +16203,7 @@
       "fim": "2026-10-15T06:57:26-03:00",
       "ts": "2026-10-15T09:57:07+00:00",
       "ts_fim": "2026-10-15T09:57:26+00:00",
-      "idade_horas": 269.5,
+      "idade_horas": 275.2,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 19,
@@ -16203,7 +16653,7 @@
       "fim": "2026-10-14T17:19:31-03:00",
       "ts": "2026-10-14T20:19:10+00:00",
       "ts_fim": "2026-10-14T20:19:31+00:00",
-      "idade_horas": 283.1,
+      "idade_horas": 288.9,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 21,
@@ -16653,7 +17103,7 @@
       "fim": "2026-10-14T11:00:51-03:00",
       "ts": "2026-10-14T14:00:10+00:00",
       "ts_fim": "2026-10-14T14:00:51+00:00",
-      "idade_horas": 289.5,
+      "idade_horas": 295.2,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 40,
@@ -17103,7 +17553,7 @@
       "fim": "2026-10-14T07:15:44-03:00",
       "ts": "2026-10-14T10:15:12+00:00",
       "ts_fim": "2026-10-14T10:15:44+00:00",
-      "idade_horas": 293.2,
+      "idade_horas": 298.9,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 32,
@@ -17553,7 +18003,7 @@
       "fim": "2026-10-13T18:31:50-03:00",
       "ts": "2026-10-13T21:31:20+00:00",
       "ts_fim": "2026-10-13T21:31:50+00:00",
-      "idade_horas": 305.9,
+      "idade_horas": 311.7,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 30,
@@ -18003,7 +18453,7 @@
       "fim": "2026-10-13T13:25:11-03:00",
       "ts": "2026-10-13T16:24:37+00:00",
       "ts_fim": "2026-10-13T16:25:11+00:00",
-      "idade_horas": 311.1,
+      "idade_horas": 316.8,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 33,
@@ -18453,7 +18903,7 @@
       "fim": "2026-10-13T09:43:57-03:00",
       "ts": "2026-10-13T12:43:36+00:00",
       "ts_fim": "2026-10-13T12:43:57+00:00",
-      "idade_horas": 314.7,
+      "idade_horas": 320.5,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 20,
@@ -18903,7 +19353,7 @@
       "fim": "2026-10-12T15:11:28-03:00",
       "ts": "2026-10-12T18:11:05+00:00",
       "ts_fim": "2026-10-12T18:11:28+00:00",
-      "idade_horas": 333.3,
+      "idade_horas": 339.0,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 22,
@@ -19353,7 +19803,7 @@
       "fim": "2026-10-12T10:12:08-03:00",
       "ts": "2026-10-12T13:11:33+00:00",
       "ts_fim": "2026-10-12T13:12:08+00:00",
-      "idade_horas": 338.3,
+      "idade_horas": 344.0,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 34,
@@ -19803,7 +20253,7 @@
       "fim": "2026-10-11T17:33:24-03:00",
       "ts": "2026-10-11T20:32:48+00:00",
       "ts_fim": "2026-10-11T20:33:24+00:00",
-      "idade_horas": 354.9,
+      "idade_horas": 360.6,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 36,
@@ -20245,7 +20695,7 @@
       "fim": "2026-10-11T12:04:03-03:00",
       "ts": "2026-10-11T15:03:27+00:00",
       "ts_fim": "2026-10-11T15:04:03+00:00",
-      "idade_horas": 360.4,
+      "idade_horas": 366.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 35,
@@ -20695,7 +21145,7 @@
       "fim": "2026-10-11T08:26:01-03:00",
       "ts": "2026-10-11T11:25:19+00:00",
       "ts_fim": "2026-10-11T11:26:01+00:00",
-      "idade_horas": 364.0,
+      "idade_horas": 369.7,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 42,
@@ -21145,7 +21595,7 @@
       "fim": "2026-10-10T17:19:13-03:00",
       "ts": "2026-10-10T20:18:25+00:00",
       "ts_fim": "2026-10-10T20:19:13+00:00",
-      "idade_horas": 379.2,
+      "idade_horas": 384.9,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 47,
@@ -21595,7 +22045,7 @@
       "fim": "2026-10-10T11:42:43-03:00",
       "ts": "2026-10-10T14:41:44+00:00",
       "ts_fim": "2026-10-10T14:42:43+00:00",
-      "idade_horas": 384.8,
+      "idade_horas": 390.5,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 59,
@@ -22045,7 +22495,7 @@
       "fim": "2026-10-10T08:12:22-03:00",
       "ts": "2026-10-10T11:11:46+00:00",
       "ts_fim": "2026-10-10T11:12:22+00:00",
-      "idade_horas": 388.3,
+      "idade_horas": 394.0,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 36,
@@ -22495,7 +22945,7 @@
       "fim": "2026-10-09T18:14:34-03:00",
       "ts": "2026-10-09T21:13:54+00:00",
       "ts_fim": "2026-10-09T21:14:34+00:00",
-      "idade_horas": 402.2,
+      "idade_horas": 407.9,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 40,
@@ -22945,7 +23395,7 @@
       "fim": "2026-10-09T12:33:42-03:00",
       "ts": "2026-10-09T15:32:47+00:00",
       "ts_fim": "2026-10-09T15:33:42+00:00",
-      "idade_horas": 407.9,
+      "idade_horas": 413.6,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 55,
@@ -23395,7 +23845,7 @@
       "fim": "2026-10-09T08:55:32-03:00",
       "ts": "2026-10-09T11:55:04+00:00",
       "ts_fim": "2026-10-09T11:55:32+00:00",
-      "idade_horas": 411.5,
+      "idade_horas": 417.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 28,
@@ -23845,7 +24295,7 @@
       "fim": "2026-10-08T18:29:22-03:00",
       "ts": "2026-10-08T21:28:41+00:00",
       "ts_fim": "2026-10-08T21:29:22+00:00",
-      "idade_horas": 426.0,
+      "idade_horas": 431.7,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 40,
@@ -24295,7 +24745,7 @@
       "fim": "2026-10-08T12:51:08-03:00",
       "ts": "2026-10-08T15:50:26+00:00",
       "ts_fim": "2026-10-08T15:51:08+00:00",
-      "idade_horas": 431.6,
+      "idade_horas": 437.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 42,
@@ -24745,7 +25195,7 @@
       "fim": "2026-10-08T09:03:48-03:00",
       "ts": "2026-10-08T12:03:19+00:00",
       "ts_fim": "2026-10-08T12:03:48+00:00",
-      "idade_horas": 435.4,
+      "idade_horas": 441.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 29,
@@ -25195,7 +25645,7 @@
       "fim": "2026-10-07T18:33:17-03:00",
       "ts": "2026-10-07T21:32:26+00:00",
       "ts_fim": "2026-10-07T21:33:17+00:00",
-      "idade_horas": 449.9,
+      "idade_horas": 455.6,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 50,
@@ -25647,7 +26097,7 @@
       "fim": "2026-10-07T12:45:45-03:00",
       "ts": "2026-10-07T15:45:15+00:00",
       "ts_fim": "2026-10-07T15:45:45+00:00",
-      "idade_horas": 455.7,
+      "idade_horas": 461.4,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 29,
@@ -26097,7 +26547,7 @@
       "fim": "2026-10-07T08:48:46-03:00",
       "ts": "2026-10-07T11:48:22+00:00",
       "ts_fim": "2026-10-07T11:48:46+00:00",
-      "idade_horas": 459.7,
+      "idade_horas": 465.4,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 23,
@@ -26547,7 +26997,7 @@
       "fim": "2026-10-06T18:13:22-03:00",
       "ts": "2026-10-06T21:12:28+00:00",
       "ts_fim": "2026-10-06T21:13:22+00:00",
-      "idade_horas": 474.2,
+      "idade_horas": 480.0,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 53,
@@ -26997,7 +27447,7 @@
       "fim": "2026-10-06T12:26:58-03:00",
       "ts": "2026-10-06T15:25:33+00:00",
       "ts_fim": "2026-10-06T15:26:58+00:00",
-      "idade_horas": 480.0,
+      "idade_horas": 485.7,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 84,
@@ -27439,7 +27889,7 @@
       "fim": "2026-10-06T09:03:10-03:00",
       "ts": "2026-10-06T12:02:44+00:00",
       "ts_fim": "2026-10-06T12:03:10+00:00",
-      "idade_horas": 483.4,
+      "idade_horas": 489.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 25,
@@ -27889,7 +28339,7 @@
       "fim": "2026-10-05T14:23:42-03:00",
       "ts": "2026-10-05T17:23:01+00:00",
       "ts_fim": "2026-10-05T17:23:42+00:00",
-      "idade_horas": 502.1,
+      "idade_horas": 507.8,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 40,
@@ -28339,7 +28789,7 @@
       "fim": "2026-10-05T09:18:29-03:00",
       "ts": "2026-10-05T12:18:05+00:00",
       "ts_fim": "2026-10-05T12:18:29+00:00",
-      "idade_horas": 507.2,
+      "idade_horas": 512.9,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 24,
@@ -28789,7 +29239,7 @@
       "fim": "2026-10-04T16:47:40-03:00",
       "ts": "2026-10-04T19:47:19+00:00",
       "ts_fim": "2026-10-04T19:47:40+00:00",
-      "idade_horas": 523.7,
+      "idade_horas": 529.4,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 21,
@@ -29239,7 +29689,7 @@
       "fim": "2026-10-04T11:21:08-03:00",
       "ts": "2026-10-04T14:20:46+00:00",
       "ts_fim": "2026-10-04T14:21:08+00:00",
-      "idade_horas": 529.1,
+      "idade_horas": 534.8,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 21,
@@ -29689,7 +30139,7 @@
       "fim": "2026-10-04T08:07:46-03:00",
       "ts": "2026-10-04T11:07:25+00:00",
       "ts_fim": "2026-10-04T11:07:46+00:00",
-      "idade_horas": 532.3,
+      "idade_horas": 538.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 21,
@@ -30139,7 +30589,7 @@
       "fim": "2026-10-03T16:23:49-03:00",
       "ts": "2026-10-03T19:23:05+00:00",
       "ts_fim": "2026-10-03T19:23:49+00:00",
-      "idade_horas": 548.1,
+      "idade_horas": 553.8,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 43,
@@ -30589,7 +31039,7 @@
       "fim": "2026-10-03T10:53:29-03:00",
       "ts": "2026-10-03T13:53:05+00:00",
       "ts_fim": "2026-10-03T13:53:29+00:00",
-      "idade_horas": 553.6,
+      "idade_horas": 559.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 23,
@@ -31039,7 +31489,7 @@
       "fim": "2026-10-03T07:26:03-03:00",
       "ts": "2026-10-03T10:25:42+00:00",
       "ts_fim": "2026-10-03T10:26:03+00:00",
-      "idade_horas": 557.0,
+      "idade_horas": 562.7,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 21,
@@ -31489,7 +31939,7 @@
       "fim": "2026-10-02T17:57:22-03:00",
       "ts": "2026-10-02T20:56:56+00:00",
       "ts_fim": "2026-10-02T20:57:22+00:00",
-      "idade_horas": 570.5,
+      "idade_horas": 576.2,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 26,
@@ -31939,7 +32389,7 @@
       "fim": "2026-10-02T11:57:54-03:00",
       "ts": "2026-10-02T14:57:34+00:00",
       "ts_fim": "2026-10-02T14:57:54+00:00",
-      "idade_horas": 576.5,
+      "idade_horas": 582.2,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 20,
@@ -32389,7 +32839,7 @@
       "fim": "2026-10-02T08:07:41-03:00",
       "ts": "2026-10-02T11:07:19+00:00",
       "ts_fim": "2026-10-02T11:07:41+00:00",
-      "idade_horas": 580.3,
+      "idade_horas": 586.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 22,
@@ -32839,7 +33289,7 @@
       "fim": "2026-10-01T18:18:21-03:00",
       "ts": "2026-10-01T21:18:02+00:00",
       "ts_fim": "2026-10-01T21:18:21+00:00",
-      "idade_horas": 594.2,
+      "idade_horas": 599.9,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 19,
@@ -33289,7 +33739,7 @@
       "fim": "2026-10-01T12:39:00-03:00",
       "ts": "2026-10-01T15:38:35+00:00",
       "ts_fim": "2026-10-01T15:39:00+00:00",
-      "idade_horas": 599.8,
+      "idade_horas": 605.5,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 24,
@@ -33739,7 +34189,7 @@
       "fim": "2026-10-01T08:38:48-03:00",
       "ts": "2026-10-01T11:38:24+00:00",
       "ts_fim": "2026-10-01T11:38:48+00:00",
-      "idade_horas": 603.8,
+      "idade_horas": 609.5,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 23,
@@ -34189,7 +34639,7 @@
       "fim": "2026-09-30T17:58:59-03:00",
       "ts": "2026-09-30T20:58:38+00:00",
       "ts_fim": "2026-09-30T20:58:59+00:00",
-      "idade_horas": 618.5,
+      "idade_horas": 624.2,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 20,
@@ -34639,7 +35089,7 @@
       "fim": "2026-09-30T12:16:15-03:00",
       "ts": "2026-09-30T15:15:33+00:00",
       "ts_fim": "2026-09-30T15:16:15+00:00",
-      "idade_horas": 624.2,
+      "idade_horas": 629.9,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 42,
@@ -35091,7 +35541,7 @@
       "fim": "2026-09-30T08:11:32-03:00",
       "ts": "2026-09-30T11:11:09+00:00",
       "ts_fim": "2026-09-30T11:11:32+00:00",
-      "idade_horas": 628.3,
+      "idade_horas": 634.0,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 22,
@@ -35541,7 +35991,7 @@
       "fim": "2026-09-29T18:01:35-03:00",
       "ts": "2026-09-29T21:00:51+00:00",
       "ts_fim": "2026-09-29T21:01:35+00:00",
-      "idade_horas": 642.4,
+      "idade_horas": 648.2,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 43,
@@ -35991,7 +36441,7 @@
       "fim": "2026-09-29T12:04:26-03:00",
       "ts": "2026-09-29T15:03:57+00:00",
       "ts_fim": "2026-09-29T15:04:26+00:00",
-      "idade_horas": 648.4,
+      "idade_horas": 654.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 28,
@@ -36441,7 +36891,7 @@
       "fim": "2026-09-29T08:23:29-03:00",
       "ts": "2026-09-29T11:23:06+00:00",
       "ts_fim": "2026-09-29T11:23:29+00:00",
-      "idade_horas": 652.1,
+      "idade_horas": 657.8,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 22,
@@ -36891,7 +37341,7 @@
       "fim": "2026-09-28T14:00:07-03:00",
       "ts": "2026-09-28T16:59:41+00:00",
       "ts_fim": "2026-09-28T17:00:07+00:00",
-      "idade_horas": 670.5,
+      "idade_horas": 676.2,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 26,
@@ -37341,7 +37791,7 @@
       "fim": "2026-09-28T08:43:35-03:00",
       "ts": "2026-09-28T11:42:52+00:00",
       "ts_fim": "2026-09-28T11:43:35+00:00",
-      "idade_horas": 675.7,
+      "idade_horas": 681.5,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 43,
@@ -37793,7 +38243,7 @@
       "fim": "2026-09-27T16:52:21-03:00",
       "ts": "2026-09-27T19:51:48+00:00",
       "ts_fim": "2026-09-27T19:52:21+00:00",
-      "idade_horas": 691.6,
+      "idade_horas": 697.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 33,
@@ -38245,7 +38695,7 @@
       "fim": "2026-09-27T11:16:58-03:00",
       "ts": "2026-09-27T14:16:13+00:00",
       "ts_fim": "2026-09-27T14:16:58+00:00",
-      "idade_horas": 697.2,
+      "idade_horas": 702.9,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 44,
@@ -38695,7 +39145,7 @@
       "fim": "2026-09-27T07:35:10-03:00",
       "ts": "2026-09-27T10:34:37+00:00",
       "ts_fim": "2026-09-27T10:35:10+00:00",
-      "idade_horas": 700.9,
+      "idade_horas": 706.6,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 33,
@@ -39145,7 +39595,7 @@
       "fim": "2026-09-26T16:21:53-03:00",
       "ts": "2026-09-26T19:21:29+00:00",
       "ts_fim": "2026-09-26T19:21:53+00:00",
-      "idade_horas": 716.1,
+      "idade_horas": 721.8,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 23,
@@ -39595,7 +40045,7 @@
       "fim": "2026-09-26T10:22:22-03:00",
       "ts": "2026-09-26T13:21:56+00:00",
       "ts_fim": "2026-09-26T13:22:22+00:00",
-      "idade_horas": 722.1,
+      "idade_horas": 727.8,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 25,
@@ -40045,7 +40495,7 @@
       "fim": "2026-09-26T06:54:02-03:00",
       "ts": "2026-09-26T09:53:01+00:00",
       "ts_fim": "2026-09-26T09:54:02+00:00",
-      "idade_horas": 725.6,
+      "idade_horas": 731.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 60,
@@ -40497,7 +40947,7 @@
       "fim": "2026-09-25T17:07:34-03:00",
       "ts": "2026-09-25T20:07:06+00:00",
       "ts_fim": "2026-09-25T20:07:34+00:00",
-      "idade_horas": 739.3,
+      "idade_horas": 745.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 28,
@@ -40947,7 +41397,7 @@
       "fim": "2026-09-25T11:09:18-03:00",
       "ts": "2026-09-25T14:08:47+00:00",
       "ts_fim": "2026-09-25T14:09:18+00:00",
-      "idade_horas": 745.3,
+      "idade_horas": 751.0,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 30,
@@ -41397,7 +41847,7 @@
       "fim": "2026-09-25T07:14:47-03:00",
       "ts": "2026-09-25T10:13:01+00:00",
       "ts_fim": "2026-09-25T10:14:47+00:00",
-      "idade_horas": 749.2,
+      "idade_horas": 754.9,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 106,
@@ -41839,7 +42289,7 @@
       "fim": "2026-09-24T17:06:49-03:00",
       "ts": "2026-09-24T20:06:13+00:00",
       "ts_fim": "2026-09-24T20:06:49+00:00",
-      "idade_horas": 763.4,
+      "idade_horas": 769.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 35,
@@ -42289,7 +42739,7 @@
       "fim": "2026-09-24T10:46:17-03:00",
       "ts": "2026-09-24T13:45:53+00:00",
       "ts_fim": "2026-09-24T13:46:17+00:00",
-      "idade_horas": 769.7,
+      "idade_horas": 775.4,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 24,
@@ -42739,7 +43189,7 @@
       "fim": "2026-09-24T07:03:43-03:00",
       "ts": "2026-09-24T10:03:05+00:00",
       "ts_fim": "2026-09-24T10:03:43+00:00",
-      "idade_horas": 773.4,
+      "idade_horas": 779.1,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 38,
@@ -43189,7 +43639,7 @@
       "fim": "2026-09-23T16:48:25-03:00",
       "ts": "2026-09-23T19:47:49+00:00",
       "ts_fim": "2026-09-23T19:48:25+00:00",
-      "idade_horas": 787.7,
+      "idade_horas": 793.4,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 35,
@@ -43641,7 +44091,7 @@
       "fim": "2026-09-23T10:50:25-03:00",
       "ts": "2026-09-23T13:50:09+00:00",
       "ts_fim": "2026-09-23T13:50:25+00:00",
-      "idade_horas": 793.6,
+      "idade_horas": 799.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 16,
@@ -44091,7 +44541,7 @@
       "fim": "2026-09-23T07:01:24-03:00",
       "ts": "2026-09-23T10:00:31+00:00",
       "ts_fim": "2026-09-23T10:01:24+00:00",
-      "idade_horas": 797.4,
+      "idade_horas": 803.2,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 52,
@@ -44543,7 +44993,7 @@
       "fim": "2026-09-22T16:52:55-03:00",
       "ts": "2026-09-22T19:52:20+00:00",
       "ts_fim": "2026-09-22T19:52:55+00:00",
-      "idade_horas": 811.6,
+      "idade_horas": 817.3,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 34,
@@ -44993,7 +45443,7 @@
       "fim": "2026-09-22T10:39:12-03:00",
       "ts": "2026-09-22T13:38:57+00:00",
       "ts_fim": "2026-09-22T13:39:12+00:00",
-      "idade_horas": 817.8,
+      "idade_horas": 823.5,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 15,
@@ -45443,7 +45893,7 @@
       "fim": "2026-09-22T06:59:16-03:00",
       "ts": "2026-09-22T09:58:50+00:00",
       "ts_fim": "2026-09-22T09:59:16+00:00",
-      "idade_horas": 821.5,
+      "idade_horas": 827.2,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 26,
@@ -45893,7 +46343,7 @@
       "fim": "2026-09-21T17:33:40-03:00",
       "ts": "2026-09-21T20:33:01+00:00",
       "ts_fim": "2026-09-21T20:33:40+00:00",
-      "idade_horas": 834.9,
+      "idade_horas": 840.6,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 38,
@@ -46343,7 +46793,7 @@
       "fim": "2026-09-21T12:19:02-03:00",
       "ts": "2026-09-21T15:18:34+00:00",
       "ts_fim": "2026-09-21T15:19:02+00:00",
-      "idade_horas": 840.2,
+      "idade_horas": 845.9,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 27,
@@ -46793,7 +47243,7 @@
       "fim": "2026-09-21T07:46:35-03:00",
       "ts": "2026-09-21T10:45:40+00:00",
       "ts_fim": "2026-09-21T10:46:35+00:00",
-      "idade_horas": 844.7,
+      "idade_horas": 850.4,
       "tipo": "atualizacao",
       "status": "parcial",
       "duracao_segundos": 54,
@@ -47245,7 +47695,7 @@
       "fim": "2026-09-18T10:00:00-03:00",
       "ts": "2026-09-18T13:00:00+00:00",
       "ts_fim": "2026-09-18T13:00:00+00:00",
-      "idade_horas": 914.5,
+      "idade_horas": 920.2,
       "tipo": "bootstrap",
       "status": "concluida",
       "duracao_segundos": null,
@@ -47277,56 +47727,56 @@
     }
   ],
   "ultima": {
-    "id": "run_2026_10_26_1227",
-    "data_hora": "2026-10-26T12:27:10-03:00",
-    "fim": "2026-10-26T12:28:12-03:00",
-    "ts": "2026-10-26T15:27:10+00:00",
-    "ts_fim": "2026-10-26T15:28:12+00:00",
+    "id": "run_2026_10_26_1810",
+    "data_hora": "2026-10-26T18:10:38-03:00",
+    "fim": "2026-10-26T18:10:57-03:00",
+    "ts": "2026-10-26T21:10:38+00:00",
+    "ts_fim": "2026-10-26T21:10:57+00:00",
     "idade_horas": 0.0,
     "tipo": "atualizacao",
     "status": "parcial",
-    "duracao_segundos": 62,
+    "duracao_segundos": 18,
     "orcamento_segundos": 1500,
-    "verificadas": 3,
+    "verificadas": 4,
     "monitoradas": 4,
     "pendentes": 0,
-    "atualizadas": 3,
+    "atualizadas": 4,
     "novas": 0,
     "mudancas": 0,
     "eventos": 0,
-    "cobertura_pct": 75.0,
-    "erros": 1,
-    "chamadas_http": 21,
+    "cobertura_pct": 100.0,
+    "erros": 0,
+    "chamadas_http": 17,
     "cache_http": 0,
-    "falhas_http": 5,
-    "tempo_rede_s": 147.19,
+    "falhas_http": 0,
+    "tempo_rede_s": 4.98,
     "por_endpoint": {
       "comissao:info/law/better-regulation": {
         "chamadas": 2,
         "falhas": 0,
-        "tempo_total": 0.96
+        "tempo_total": 0.67
       },
       "eurlex:search.html": {
         "chamadas": 10,
         "falhas": 0,
-        "tempo_total": 0.7
+        "tempo_total": 0.78
       },
       "parlamento:api/v2/procedures": {
-        "chamadas": 3,
-        "falhas": 5,
-        "tempo_total": 44.53
+        "chamadas": 4,
+        "falhas": 0,
+        "tempo_total": 3.32
       },
       "parlamento:legislative-train/theme-a-europe-fit-for-the-digital-age": {
         "chamadas": 1,
         "falhas": 0,
-        "tempo_total": 0.33
+        "tempo_total": 0.2
       }
     },
     "fases_segundos": {
-      "agenda_consultas": 1.6,
-      "atualizacao_procedimentos": 42.5,
+      "agenda_consultas": 1.3,
+      "atualizacao_procedimentos": 1.3,
       "descoberta_procedimentos": 4.3,
-      "fontes_multiorgao": 13.5
+      "fontes_multiorgao": 11.9
     },
     "snapshot": {
       "proposicoes_total": 4,
@@ -47349,7 +47799,7 @@
       "ai_office": {
         "nome": "European AI Office — Comissão Europeia (digital-strategy)",
         "status": "falha",
-        "ultima_tentativa": "2026-10-26T12:27:59-03:00",
+        "ultima_tentativa": "2026-10-26T18:10:45-03:00",
         "ultima_execucao_ok": null,
         "itens_consultados": 0,
         "itens_relevantes": 0,
@@ -47358,7 +47808,7 @@
         "revisao_pendente": 0,
         "novidades": 0,
         "erros": 6,
-        "duracao_segundos": 0.3,
+        "duracao_segundos": 0.4,
         "endpoints": [
           "https://digital-strategy.ec.europa.eu/en/news?type=5%7C13",
           "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
@@ -47391,8 +47841,8 @@
       "edpb": {
         "nome": "EDPB — European Data Protection Board",
         "status": "ok",
-        "ultima_tentativa": "2026-10-26T12:28:10-03:00",
-        "ultima_execucao_ok": "2026-10-26T12:28:12-03:00",
+        "ultima_tentativa": "2026-10-26T18:10:55-03:00",
+        "ultima_execucao_ok": "2026-10-26T18:10:57-03:00",
         "itens_consultados": 10,
         "itens_relevantes": 10,
         "itens_descartados": 0,
@@ -47400,7 +47850,7 @@
         "revisao_pendente": 0,
         "novidades": 0,
         "erros": 0,
-        "duracao_segundos": 0.8,
+        "duracao_segundos": 0.9,
         "endpoints": [
           "https://www.edpb.europa.eu/feed/news_en"
         ],
@@ -47426,7 +47876,7 @@
       "edps": {
         "nome": "EDPS — European Data Protection Supervisor",
         "status": "falha",
-        "ultima_tentativa": "2026-10-26T12:28:11-03:00",
+        "ultima_tentativa": "2026-10-26T18:10:56-03:00",
         "ultima_execucao_ok": null,
         "itens_consultados": 0,
         "itens_relevantes": 0,
@@ -47435,7 +47885,7 @@
         "revisao_pendente": 0,
         "novidades": 0,
         "erros": 4,
-        "duracao_segundos": 1.2,
+        "duracao_segundos": 0.9,
         "endpoints": [
           "https://www.edps.europa.eu/press-publications/press-news/press-releases_en",
           "https://www.edps.europa.eu/press-publications/press-news/news_en",
@@ -47462,16 +47912,16 @@
       "eu_commission": {
         "nome": "Comissão Europeia — Press Corner e Have Your Say",
         "status": "parcial",
-        "ultima_tentativa": "2026-10-26T12:28:01-03:00",
+        "ultima_tentativa": "2026-10-26T18:10:47-03:00",
         "ultima_execucao_ok": null,
         "itens_consultados": 10,
         "itens_relevantes": 3,
         "itens_descartados": 7,
         "itens_duplicados": 0,
         "revisao_pendente": 3,
-        "novidades": 1,
+        "novidades": 0,
         "erros": 3,
-        "duracao_segundos": 2.5,
+        "duracao_segundos": 2.2,
         "endpoints": [
           "https://ec.europa.eu/commission/presscorner/api/rss?language=en",
           "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en?page=1",
@@ -47509,7 +47959,7 @@
       "eu_council": {
         "nome": "Conselho da UE — Registro público de documentos",
         "status": "falha",
-        "ultima_tentativa": "2026-10-26T12:28:00-03:00",
+        "ultima_tentativa": "2026-10-26T18:10:46-03:00",
         "ultima_execucao_ok": null,
         "itens_consultados": 0,
         "itens_relevantes": 0,
@@ -47518,7 +47968,7 @@
         "revisao_pendente": 0,
         "novidades": 0,
         "erros": 4,
-        "duracao_segundos": 0.7,
+        "duracao_segundos": 0.5,
         "endpoints": [
           "https://www.consilium.europa.eu/en/documents/public-register/latest/",
           "https://www.consilium.europa.eu/en/documents/public-register/latest/?page=2",
@@ -47545,7 +47995,7 @@
       "eu_parliament": {
         "nome": "Parlamento Europeu — Open Data Portal v2 / Legislative Train",
         "status": "falha",
-        "ultima_tentativa": "2026-10-26T12:28:03-03:00",
+        "ultima_tentativa": "2026-10-26T18:10:49-03:00",
         "ultima_execucao_ok": null,
         "itens_consultados": 0,
         "itens_relevantes": 0,
@@ -47554,7 +48004,7 @@
         "revisao_pendente": 0,
         "novidades": 0,
         "erros": 6,
-        "duracao_segundos": 7.2,
+        "duracao_segundos": 6.1,
         "endpoints": [
           "https://data.europarl.europa.eu/api/v2/procedures?parliamentary_term=10&limit=100&format=application/ld%2Bjson",
           "https://data.europarl.europa.eu/api/v2/procedures?text={topico}&limit=25&format=application/ld%2Bjson",
@@ -47587,7 +48037,7 @@
       "eurlex": {
         "nome": "EUR-Lex — Jornal Oficial da União Europeia (Publications Office)",
         "status": "parcial",
-        "ultima_tentativa": "2026-10-26T12:27:59-03:00",
+        "ultima_tentativa": "2026-10-26T18:10:46-03:00",
         "ultima_execucao_ok": null,
         "itens_consultados": 100,
         "itens_relevantes": 0,
@@ -47634,8 +48084,8 @@
       "eurlex_motor": {
         "nome": "EUR-Lex — busca oficial (motor legislativo)",
         "status": "ok",
-        "ultima_tentativa": "2026-10-26T12:27:10-03:00",
-        "ultima_execucao_ok": "2026-10-26T12:27:10-03:00",
+        "ultima_tentativa": "2026-10-26T18:10:38-03:00",
+        "ultima_execucao_ok": "2026-10-26T18:10:38-03:00",
         "itens_consultados": 10,
         "novidades": 0,
         "erros": 0,
@@ -47652,23 +48102,22 @@
       },
       "parlamento": {
         "nome": "Parlamento Europeu — Open Data Portal v2 (motor legislativo)",
-        "status": "parcial",
-        "ultima_tentativa": "2026-10-26T12:27:10-03:00",
-        "ultima_execucao_ok": "2026-10-26T08:08:57-03:00",
-        "itens_consultados": 3,
+        "status": "ok",
+        "ultima_tentativa": "2026-10-26T18:10:38-03:00",
+        "ultima_execucao_ok": "2026-10-26T18:10:38-03:00",
+        "itens_consultados": 4,
         "novidades": 0,
         "erros": 0,
-        "chamadas_http": 4,
-        "falhas_http": 5,
+        "chamadas_http": 5,
+        "falhas_http": 0,
         "endpoints": [
           "https://data.europarl.europa.eu/"
         ],
         "canais_ok": [
+          "parlamento:api/v2/procedures",
           "parlamento:legislative-train/theme-a-europe-fit-for-the-digital-age"
         ],
-        "canais_falhos": [
-          "parlamento:api/v2/procedures"
-        ],
+        "canais_falhos": [],
         "erro_detalhe": null
       }
     },
@@ -47680,53 +48129,52 @@
     ],
     "fontes_parciais": [
       "eu_commission",
-      "eurlex",
-      "parlamento"
+      "eurlex"
     ],
     "http_fontes": {
       "chamadas": 27,
       "falhas": 11,
       "cache": 0,
-      "tempo_total": 8.39,
+      "tempo_total": 6.85,
       "por_orgao": {
         "ai_office": {
           "chamadas": 5,
           "falhas": 5,
-          "tempo_total": 0.35
+          "tempo_total": 0.41
         },
         "eurlex": {
           "chamadas": 4,
           "falhas": 0,
-          "tempo_total": 0.24
+          "tempo_total": 0.3
         },
         "eu_council": {
           "chamadas": 3,
           "falhas": 3,
-          "tempo_total": 0.69
+          "tempo_total": 0.55
         },
         "eu_commission": {
           "chamadas": 4,
           "falhas": 0,
-          "tempo_total": 2.48
+          "tempo_total": 2.21
         },
         "eu_parliament": {
           "chamadas": 7,
           "falhas": 3,
-          "tempo_total": 2.65
+          "tempo_total": 1.61
         },
         "edpb": {
           "chamadas": 1,
           "falhas": 0,
-          "tempo_total": 0.76
+          "tempo_total": 0.88
         },
         "edps": {
           "chamadas": 3,
           "falhas": 0,
-          "tempo_total": 1.22
+          "tempo_total": 0.89
         }
       }
     },
-    "mudancas_multiorgao": 1
+    "mudancas_multiorgao": 0
   },
   "frescor": {
     "horas": 0.0,
@@ -47735,9 +48183,9 @@
     "cron_brt": "07:17, 10:43, 14:43, 18:43"
   },
   "kpis": {
-    "execucoes_registradas": 106,
-    "execucoes_com_metricas": 106,
-    "execucoes_ok": 106,
+    "execucoes_registradas": 107,
+    "execucoes_com_metricas": 107,
+    "execucoes_ok": 107,
     "cobertura_media": 97.2,
     "mudancas_total": 169,
     "mudancas_30d": 40,
@@ -47745,7 +48193,7 @@
     "incorporacoes_historicas": 109,
     "fontes_monitoradas": 9,
     "fontes_falha": 4,
-    "fontes_parciais": 3,
+    "fontes_parciais": 2,
     "status_global": "PARCIAL",
     "procedimentos": 4,
     "proposicoes": 4,
@@ -47860,6 +48308,7 @@
       "10/25",
       "10/25",
       "10/26",
+      "10/26",
       "10/26"
     ],
     "cobertura_pct": [
@@ -47968,13 +48417,15 @@
       100.0,
       100.0,
       100.0,
-      75.0
+      75.0,
+      100.0
     ],
     "mudancas": [
       0,
       0,
       4,
       2,
+      0,
       0,
       0,
       0,
@@ -48184,6 +48635,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "chamadas_http": [
@@ -48291,9 +48743,11 @@
       17,
       17,
       17,
-      21
+      21,
+      17
     ],
     "cache_http": [
+      0,
       0,
       0,
       0,
@@ -48505,12 +48959,14 @@
       23,
       32,
       27,
-      62
+      62,
+      18
     ],
     "monitoradas": [
       2,
       2,
       2,
+      4,
       4,
       4,
       4,
@@ -48706,22 +49162,22 @@
     "comissao:info/law/better-regulation": {
       "chamadas": 2,
       "falhas": 0,
-      "tempo_total": 0.96
+      "tempo_total": 0.67
     },
     "eurlex:search.html": {
       "chamadas": 10,
       "falhas": 0,
-      "tempo_total": 0.7
+      "tempo_total": 0.78
     },
     "parlamento:api/v2/procedures": {
-      "chamadas": 3,
-      "falhas": 5,
-      "tempo_total": 44.53
+      "chamadas": 4,
+      "falhas": 0,
+      "tempo_total": 3.32
     },
     "parlamento:legislative-train/theme-a-europe-fit-for-the-digital-age": {
       "chamadas": 1,
       "falhas": 0,
-      "tempo_total": 0.33
+      "tempo_total": 0.2
     }
   },
   "alertas": [
@@ -48733,12 +49189,7 @@
     {
       "nivel": "atencao",
       "titulo": "Última execução foi parcial",
-      "detalhe": "0 proposição(ões) ficaram para a próxima execução (cobertura 75.0%)."
-    },
-    {
-      "nivel": "atencao",
-      "titulo": "1 erro(s) na última execução",
-      "detalhe": "Cada erro guarda a proposição e a URL oficial; ver updates.json."
+      "detalhe": "0 proposição(ões) ficaram para a próxima execução (cobertura 100.0%)."
     },
     {
       "nivel": "atencao",
