@@ -75,6 +75,11 @@
    "events": 4
   },
   {
+   "key": "dsa",
+   "label": "Digital Services Act",
+   "events": 4
+  },
+  {
    "key": "cybersecurity",
    "label": "Cibersegurança e resiliência",
    "events": 4
@@ -82,11 +87,6 @@
   {
    "key": "ai_office",
    "label": "European AI Office",
-   "events": 3
-  },
-  {
-   "key": "dsa",
-   "label": "Digital Services Act",
    "events": 3
   },
   {
@@ -137,7 +137,7 @@
   },
   {
    "name": "Comissão Europeia",
-   "events": 13
+   "events": 14
   },
   {
    "name": "Parlamento Europeu",
@@ -151,7 +151,7 @@
   },
   {
    "label": "Consulta pública",
-   "events": 13
+   "events": 14
   },
   {
    "label": "Guideline / orientação",
@@ -175,12 +175,12 @@
   {
    "slug": "adtech",
    "name": "AdTech",
-   "changes": 26
+   "changes": 27
   },
   {
    "slug": "ecommerce",
    "name": "E-commerce",
-   "changes": 25
+   "changes": 26
   },
   {
    "slug": "provedores-de-ia",
@@ -195,7 +195,7 @@
   {
    "slug": "marketplaces",
    "name": "Marketplaces",
-   "changes": 23
+   "changes": 24
   },
   {
    "slug": "saude",
@@ -228,6 +228,11 @@
    "changes": 5
   },
   {
+   "slug": "martech",
+   "name": "MarTech",
+   "changes": 5
+  },
+  {
    "slug": "pharma",
    "name": "Pharma e Life Sciences",
    "changes": 3
@@ -236,11 +241,6 @@
    "slug": "hr-tech",
    "name": "HR Tech",
    "changes": 2
-  },
-  {
-   "slug": "martech",
-   "name": "MarTech",
-   "changes": 4
   },
   {
    "slug": "recrutamento",

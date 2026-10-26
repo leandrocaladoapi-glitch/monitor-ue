@@ -308,8 +308,8 @@
     "Grande empresa",
     "PME (pequena e média empresa)"
    ],
-   "change_count": 26,
-   "cumulative_impact": 88,
+   "change_count": 27,
+   "cumulative_impact": 89,
    "top_priority": "urgent",
    "top_impact_level": "critical",
    "recent_changes": [
@@ -586,7 +586,7 @@
     "Grande empresa",
     "PME (pequena e média empresa)"
    ],
-   "change_count": 25,
+   "change_count": 26,
    "cumulative_impact": 87,
    "top_priority": "urgent",
    "top_impact_level": "critical",
@@ -1441,8 +1441,8 @@
     "Grande empresa",
     "PME (pequena e média empresa)"
    ],
-   "change_count": 23,
-   "cumulative_impact": 77,
+   "change_count": 24,
+   "cumulative_impact": 78,
    "top_priority": "urgent",
    "top_impact_level": "critical",
    "recent_changes": [
@@ -3294,6 +3294,235 @@
    "rank": 12
   },
   {
+   "slug": "martech",
+   "name": "MarTech",
+   "en": "MarTech",
+   "focus": "Automação de marketing, personalização e IA em decisão de cliente.",
+   "functions": [
+    "Compliance",
+    "Jurídico",
+    "AI Governance"
+   ],
+   "company_types": [
+    "Grande empresa",
+    "PME (pequena e média empresa)"
+   ],
+   "change_count": 5,
+   "cumulative_impact": 11,
+   "top_priority": "urgent",
+   "top_impact_level": "critical",
+   "recent_changes": [
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "date": "2026-09-21",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
+     "date": "2026-10-16",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+    },
+    {
+     "title": "Daily News 26 / 10 / 2026",
+     "date": "2026-10-26",
+     "impact_level": "low",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-a7c1f3",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2257"
+    },
+    {
+     "title": "Daily News 21 / 10 / 2026",
+     "date": "2026-10-21",
+     "impact_level": "low",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-9b06f1",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2225"
+    },
+    {
+     "title": "Commission to investigate how Booking.com combats scams and fraud under the Digital Services Act",
+     "date": "2026-10-21",
+     "impact_level": "low",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-f7b29c",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2223"
+    }
+   ],
+   "obligations": [
+    {
+     "text": "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Registo do risco e do plano de correção no sistema de compliance.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+     "confidence": 0.8
+    }
+   ],
+   "risks": [
+    {
+     "text": "Repetir o padrão sancionado na sua própria operação.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "text": "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "text": "Medidas corretivas que obrigam a alterar produto já em produção.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "text": "Perda de confiança de clientes e de investidores após incidente público.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "text": "Treino ou fine-tuning sem base legal documentada.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    }
+   ],
+   "recommended_actions": [
+    {
+     "text": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+     "owner_function": "compliance",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
+    },
+    {
+     "text": "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+     "owner_function": "compliance",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
+    },
+    {
+     "text": "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+     "owner_function": "compliance",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
+    },
+    {
+     "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
+    },
+    {
+     "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
+    },
+    {
+     "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
+    }
+   ],
+   "deadlines": [
+    {
+     "date": "2026-10-02",
+     "label": "Data referida no texto oficial",
+     "days_remaining": -24,
+     "norm": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+    }
+   ],
+   "related_acts": [
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "act_type": "Enforcement / sanção",
+     "stage": "Em plenário",
+     "date": "2026-09-21",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
+     "act_type": "Enforcement / sanção",
+     "stage": "A classificar",
+     "date": "2026-10-16",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+    },
+    {
+     "title": "Daily News 26 / 10 / 2026",
+     "act_type": "Consulta pública",
+     "stage": "A classificar",
+     "date": "2026-10-26",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-a7c1f3",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2257"
+    },
+    {
+     "title": "Daily News 21 / 10 / 2026",
+     "act_type": "Consulta pública",
+     "stage": "A classificar",
+     "date": "2026-10-21",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-9b06f1",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2225"
+    },
+    {
+     "title": "Commission to investigate how Booking.com combats scams and fraud under the Digital Services Act",
+     "act_type": "Consulta pública",
+     "stage": "A classificar",
+     "date": "2026-10-21",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-f7b29c",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2223"
+    }
+   ],
+   "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
+   "rank": 13
+  },
+  {
    "slug": "pharma",
    "name": "Pharma e Life Sciences",
    "en": "Pharma",
@@ -3495,7 +3724,7 @@
     }
    ],
    "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
-   "rank": 13
+   "rank": 14
   },
   {
    "slug": "hr-tech",
@@ -3680,218 +3909,6 @@
      "priority": "urgent",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
-    }
-   ],
-   "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
-   "rank": 14
-  },
-  {
-   "slug": "martech",
-   "name": "MarTech",
-   "en": "MarTech",
-   "focus": "Automação de marketing, personalização e IA em decisão de cliente.",
-   "functions": [
-    "Compliance",
-    "Jurídico",
-    "AI Governance"
-   ],
-   "company_types": [
-    "Grande empresa",
-    "PME (pequena e média empresa)"
-   ],
-   "change_count": 4,
-   "cumulative_impact": 10,
-   "top_priority": "urgent",
-   "top_impact_level": "critical",
-   "recent_changes": [
-    {
-     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
-     "date": "2026-09-21",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
-     "date": "2026-10-16",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
-     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
-    },
-    {
-     "title": "Daily News 21 / 10 / 2026",
-     "date": "2026-10-21",
-     "impact_level": "low",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-9b06f1",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2225"
-    },
-    {
-     "title": "Commission to investigate how Booking.com combats scams and fraud under the Digital Services Act",
-     "date": "2026-10-21",
-     "impact_level": "low",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-f7b29c",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2223"
-    }
-   ],
-   "obligations": [
-    {
-     "text": "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Registo do risco e do plano de correção no sistema de compliance.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
-     "confidence": 0.8
-    }
-   ],
-   "risks": [
-    {
-     "text": "Repetir o padrão sancionado na sua própria operação.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "text": "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "text": "Medidas corretivas que obrigam a alterar produto já em produção.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "text": "Perda de confiança de clientes e de investidores após incidente público.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "text": "Treino ou fine-tuning sem base legal documentada.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    }
-   ],
-   "recommended_actions": [
-    {
-     "text": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
-     "owner_function": "compliance",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
-    },
-    {
-     "text": "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
-     "owner_function": "compliance",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
-    },
-    {
-     "text": "Levar o caso concreto à reunião de compliance com responsável nomeado.",
-     "owner_function": "compliance",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
-    },
-    {
-     "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
-     "owner_function": "dpo",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
-    },
-    {
-     "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
-     "owner_function": "dpo",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
-    },
-    {
-     "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
-     "owner_function": "dpo",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
-    }
-   ],
-   "deadlines": [
-    {
-     "date": "2026-10-02",
-     "label": "Data referida no texto oficial",
-     "days_remaining": -24,
-     "norm": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
-     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
-    }
-   ],
-   "related_acts": [
-    {
-     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
-     "act_type": "Enforcement / sanção",
-     "stage": "Em plenário",
-     "date": "2026-09-21",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
-     "act_type": "Enforcement / sanção",
-     "stage": "A classificar",
-     "date": "2026-10-16",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
-     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
-    },
-    {
-     "title": "Daily News 21 / 10 / 2026",
-     "act_type": "Consulta pública",
-     "stage": "A classificar",
-     "date": "2026-10-21",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-9b06f1",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2225"
-    },
-    {
-     "title": "Commission to investigate how Booking.com combats scams and fraud under the Digital Services Act",
-     "act_type": "Consulta pública",
-     "stage": "A classificar",
-     "date": "2026-10-21",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-f7b29c",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2223"
     }
    ],
    "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",

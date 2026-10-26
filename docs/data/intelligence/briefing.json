@@ -80,6 +80,18 @@
     "title": "5. Consultas abertas",
     "items": [
      {
+      "title": "Daily News 26 / 10 / 2026",
+      "impact_level": "low",
+      "priority": "monitor",
+      "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-a7c1f3",
+      "sectors": [
+       "AdTech",
+       "E-commerce",
+       "MarTech"
+      ],
+      "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2257"
+     },
+     {
       "title": "Daily News 21 / 10 / 2026",
       "impact_level": "low",
       "priority": "monitor",
@@ -121,12 +133,12 @@
      },
      {
       "sector": "AdTech",
-      "changes": 26,
+      "changes": 27,
       "slug": "adtech"
      },
      {
       "sector": "E-commerce",
-      "changes": 25,
+      "changes": 26,
       "slug": "ecommerce"
      },
      {
@@ -452,6 +464,18 @@
       "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2020"
      },
      {
+      "title": "Daily News 26 / 10 / 2026",
+      "impact_level": "low",
+      "priority": "monitor",
+      "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-a7c1f3",
+      "sectors": [
+       "AdTech",
+       "E-commerce",
+       "MarTech"
+      ],
+      "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2257"
+     },
+     {
       "title": "Daily News 21 / 10 / 2026",
       "impact_level": "low",
       "priority": "monitor",
@@ -462,18 +486,6 @@
        "MarTech"
       ],
       "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2225"
-     },
-     {
-      "title": "Commission to investigate how Booking.com combats scams and fraud under the Digital Services Act",
-      "impact_level": "low",
-      "priority": "monitor",
-      "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-f7b29c",
-      "sectors": [
-       "AdTech",
-       "E-commerce",
-       "MarTech"
-      ],
-      "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2223"
      }
     ],
     "empty_message": "Nenhuma consulta aberta com fonte oficial neste recorte."
@@ -542,12 +554,12 @@
      },
      {
       "sector": "AdTech",
-      "changes": 26,
+      "changes": 27,
       "slug": "adtech"
      },
      {
       "sector": "E-commerce",
-      "changes": 25,
+      "changes": 26,
       "slug": "ecommerce"
      },
      {

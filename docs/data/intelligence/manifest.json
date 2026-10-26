@@ -5,8 +5,8 @@
   "reference_date": "2026-10-26",
   "description": "Métricas de qualidade e cobertura da camada de inteligência."
  },
- "events_total": 39,
- "events_published": 39,
+ "events_total": 40,
+ "events_published": 40,
  "events_excluded_low_confidence": 0,
  "events_excluded_no_material_relation": 19,
  "events_without_official_source": 0,
@@ -14,16 +14,16 @@
   "urgent": 17,
   "high": 2,
   "medium": 9,
-  "monitor": 11
+  "monitor": 12
  },
  "events_by_impact": {
   "critical": 17,
   "high": 2,
   "medium": 9,
-  "low": 11
+  "low": 12
  },
  "confidence_min": 0.6,
- "confidence_avg": 0.769,
+ "confidence_avg": 0.765,
  "deadlines_tracked": 41,
  "deadlines_next_90_days": 1,
  "enforcement_cases": 16,
@@ -37,7 +37,7 @@
   },
   {
    "host": "ec.europa.eu",
-   "citations": 13
+   "citations": 14
   },
   {
    "host": "eur-lex.europa.eu",
