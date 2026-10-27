@@ -8,7 +8,7 @@
  "events_total": 40,
  "events_published": 40,
  "events_excluded_low_confidence": 0,
- "events_excluded_no_material_relation": 19,
+ "events_excluded_no_material_relation": 20,
  "events_without_official_source": 0,
  "events_by_priority": {
   "urgent": 17,
@@ -52,6 +52,7 @@
  "skipped_no_material_relation": [
   "re_procedimento_ue-2025-2056-ini",
   "re_procedimento_ue-2025-2060-ini",
+  "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-8b25ac",
   "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-b3b380",
   "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-2312b8",
   "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-c8f8c6",

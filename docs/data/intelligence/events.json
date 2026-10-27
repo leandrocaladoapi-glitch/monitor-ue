@@ -5,7 +5,7 @@
   "rule": "FATO, ANÁLISE, INTERPRETAÇÃO e RECOMENDAÇÃO são objetos distintos. Confiança mínima 0.6. Nenhum evento sem fonte oficial é publicado.",
   "total": 40,
   "excluded_low_confidence": 0,
-  "excluded_no_material_relation": 19
+  "excluded_no_material_relation": 20
  },
  "events": [
   {
@@ -13305,6 +13305,15 @@
    "reason": "sem relação material com IA, dados, plataformas ou infraestrutura digital",
    "official_sources": [
     "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson"
+   ]
+  },
+  {
+   "id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-8b25ac",
+   "regulatory_event": "Remarks by Executive Vice-President Virkkunen and Commissioner Brunner on strengthening Frontex and the digitalisation of the return process",
+   "confidence": 0.6,
+   "reason": "sem relação material com IA, dados, plataformas ou infraestrutura digital",
+   "official_sources": [
+    "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2272"
    ]
   },
   {
