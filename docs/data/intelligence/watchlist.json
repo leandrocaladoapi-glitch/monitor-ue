@@ -60,6 +60,11 @@
    "events": 16
   },
   {
+   "key": "dsa",
+   "label": "Digital Services Act",
+   "events": 6
+  },
+  {
    "key": "health_data",
    "label": "Dados de saúde e EHDS",
    "events": 5
@@ -72,11 +77,6 @@
   {
    "key": "ai_act",
    "label": "EU AI Act",
-   "events": 4
-  },
-  {
-   "key": "dsa",
-   "label": "Digital Services Act",
    "events": 4
   },
   {
@@ -137,7 +137,7 @@
   },
   {
    "name": "Comissão Europeia",
-   "events": 14
+   "events": 16
   },
   {
    "name": "Parlamento Europeu",
@@ -151,7 +151,7 @@
   },
   {
    "label": "Consulta pública",
-   "events": 14
+   "events": 16
   },
   {
    "label": "Guideline / orientação",
@@ -175,12 +175,12 @@
   {
    "slug": "adtech",
    "name": "AdTech",
-   "changes": 27
+   "changes": 29
   },
   {
    "slug": "ecommerce",
    "name": "E-commerce",
-   "changes": 26
+   "changes": 28
   },
   {
    "slug": "provedores-de-ia",
@@ -195,7 +195,7 @@
   {
    "slug": "marketplaces",
    "name": "Marketplaces",
-   "changes": 24
+   "changes": 26
   },
   {
    "slug": "saude",
@@ -230,7 +230,7 @@
   {
    "slug": "martech",
    "name": "MarTech",
-   "changes": 5
+   "changes": 7
   },
   {
    "slug": "pharma",

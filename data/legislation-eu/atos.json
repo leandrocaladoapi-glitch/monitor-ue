@@ -3,15 +3,87 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 53,
+    "total": 56,
     "por_orgao": {
       "edpb": 22,
-      "eu_commission": 31
+      "eu_commission": 34
     },
-    "indice_total": 53,
-    "execucao": "2026-11-03"
+    "indice_total": 56,
+    "execucao": "2026-11-06"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_mex_26_2364",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Daily News 06 / 11 / 2026",
+      "descricao": "European Commission Daily news Brussels, 06 Nov 2026 Commission preliminarily finds TikTok's ‘For You' feed in breach of Digital Services Act for harmful ‘rabbit holes' effect Today, the European Commission has pr...",
+      "data": "2026-11-06",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2364",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:55d0159c1428ed11",
+      "ultima_verificacao": "2026-11-06T09:57:55-03:00",
+      "ultima_execucao": "run_2026_11_06_0957",
+      "primeira_deteccao": "2026-11-06T09:57:55-03:00",
+      "id_execucao_primeira": "run_2026_11_06_0957",
+      "historico": []
+    },
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2334",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "EU and India conclude negotiations on association to Horizon Europe",
+      "descricao": "European Commission Press release Brussels, 06 Nov 2026 The European Commission and India have successfully concluded negotiations on India's association to Horizon Europe, the EU's €93.5 billion flagship research and innovation programme.",
+      "data": "2026-11-05",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2334",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:f43d0541bdbecfea",
+      "ultima_verificacao": "2026-11-06T09:57:55-03:00",
+      "ultima_execucao": "run_2026_11_06_0957",
+      "primeira_deteccao": "2026-11-06T09:57:55-03:00",
+      "id_execucao_primeira": "run_2026_11_06_0957",
+      "historico": []
+    },
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2361",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Commission preliminarily finds TikTok's ‘For You' feed in breach of Digital Services Act for harmful ‘rabbit holes' effect",
+      "descricao": "European Commission Press release Brussels, 06 Nov 2026 Today, the European Commission has preliminarily found TikTok in breach of the Digital Services Act (DSA) for the so-called ‘rabbit hole effect' of its recommender system.",
+      "data": "2026-11-05",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2361",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:1341a108ede2c21e",
+      "ultima_verificacao": "2026-11-06T09:57:55-03:00",
+      "ultima_execucao": "run_2026_11_06_0957",
+      "primeira_deteccao": "2026-11-06T09:57:55-03:00",
+      "id_execucao_primeira": "run_2026_11_06_0957",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2272",
       "orgao": "eu_commission",
@@ -1703,6 +1775,24 @@
         "s": null,
         "d": "2026-10-27T11:53:17-03:00",
         "v": "2026-10-28"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_mex_26_2364": {
+        "h": "sha1:55d0159c1428ed11",
+        "s": null,
+        "d": "2026-11-06T09:57:55-03:00",
+        "v": "2026-11-06"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2334": {
+        "h": "sha1:f43d0541bdbecfea",
+        "s": null,
+        "d": "2026-11-06T09:57:55-03:00",
+        "v": "2026-11-06"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2361": {
+        "h": "sha1:1341a108ede2c21e",
+        "s": null,
+        "d": "2026-11-06T09:57:55-03:00",
+        "v": "2026-11-06"
       }
     },
     "eu_parliament": {},
