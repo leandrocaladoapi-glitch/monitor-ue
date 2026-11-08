@@ -9,7 +9,7 @@
       "eu_commission": 34
     },
     "indice_total": 56,
-    "execucao": "2026-11-07"
+    "execucao": "2026-11-08"
   },
   "atos": [
     {
@@ -30,8 +30,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:55d0159c1428ed11",
-      "ultima_verificacao": "2026-11-07T17:28:10-03:00",
-      "ultima_execucao": "run_2026_11_07_1728",
+      "ultima_verificacao": "2026-11-08T08:56:57-03:00",
+      "ultima_execucao": "run_2026_11_08_0856",
       "primeira_deteccao": "2026-11-06T09:57:55-03:00",
       "id_execucao_primeira": "run_2026_11_06_0957",
       "historico": []
@@ -54,8 +54,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:f43d0541bdbecfea",
-      "ultima_verificacao": "2026-11-07T17:28:10-03:00",
-      "ultima_execucao": "run_2026_11_07_1728",
+      "ultima_verificacao": "2026-11-08T08:56:57-03:00",
+      "ultima_execucao": "run_2026_11_08_0856",
       "primeira_deteccao": "2026-11-06T09:57:55-03:00",
       "id_execucao_primeira": "run_2026_11_06_0957",
       "historico": []
@@ -1780,13 +1780,13 @@
         "h": "sha1:55d0159c1428ed11",
         "s": null,
         "d": "2026-11-06T09:57:55-03:00",
-        "v": "2026-11-07"
+        "v": "2026-11-08"
       },
       "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2334": {
         "h": "sha1:f43d0541bdbecfea",
         "s": null,
         "d": "2026-11-06T09:57:55-03:00",
-        "v": "2026-11-07"
+        "v": "2026-11-08"
       },
       "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2361": {
         "h": "sha1:1341a108ede2c21e",
