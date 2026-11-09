@@ -3,12 +3,12 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 57,
+    "total": 58,
     "por_orgao": {
       "edpb": 22,
-      "eu_commission": 35
+      "eu_commission": 36
     },
-    "indice_total": 57,
+    "indice_total": 58,
     "execucao": "2026-11-09"
   },
   "atos": [
@@ -30,10 +30,34 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:975fd5d810e461f8",
-      "ultima_verificacao": "2026-11-09T10:55:47-03:00",
-      "ultima_execucao": "run_2026_11_09_1055",
+      "ultima_verificacao": "2026-11-09T16:05:26-03:00",
+      "ultima_execucao": "run_2026_11_09_1605",
       "primeira_deteccao": "2026-11-09T10:55:47-03:00",
       "id_execucao_primeira": "run_2026_11_09_1055",
+      "historico": []
+    },
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2371",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "High-Level Platform meets in Moldova to strengthen digital connectivity between the EU, the Black Sea region, South-Caucasus and Central Asia*",
+      "descricao": "European Commission Press release Chișinău, 09 Nov 2026 Today, the first High-Level Connectivity Platform Meeting on Digital takes place in Chișinău, Moldova, jointly hosted by the European Commission and the Moldovan Ministry of Economic Development and Digitalisation. The meeting sets the groundwork for stronger digital connectivity between Europe and Centra Asia, via Moldova, in the form of an Integrated EU Secure Connectivity Offer.",
+      "data": "2026-11-08",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2371",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:d8add5f03263b07f",
+      "ultima_verificacao": "2026-11-09T16:05:26-03:00",
+      "ultima_execucao": "run_2026_11_09_1605",
+      "primeira_deteccao": "2026-11-09T16:05:26-03:00",
+      "id_execucao_primeira": "run_2026_11_09_1605",
       "historico": []
     },
     {
@@ -1822,6 +1846,12 @@
         "h": "sha1:975fd5d810e461f8",
         "s": null,
         "d": "2026-11-09T10:55:47-03:00",
+        "v": "2026-11-09"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2371": {
+        "h": "sha1:d8add5f03263b07f",
+        "s": null,
+        "d": "2026-11-09T16:05:26-03:00",
         "v": "2026-11-09"
       }
     },
