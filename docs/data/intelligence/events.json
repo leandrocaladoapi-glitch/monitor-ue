@@ -5,7 +5,7 @@
   "rule": "FATO, ANÁLISE, INTERPRETAÇÃO e RECOMENDAÇÃO são objetos distintos. Confiança mínima 0.6. Nenhum evento sem fonte oficial é publicado.",
   "total": 42,
   "excluded_low_confidence": 0,
-  "excluded_no_material_relation": 23
+  "excluded_no_material_relation": 24
  },
  "events": [
   {
@@ -13967,6 +13967,15 @@
    "reason": "sem relação material com IA, dados, plataformas ou infraestrutura digital",
    "official_sources": [
     "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson"
+   ]
+  },
+  {
+   "id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-f01072",
+   "regulatory_event": "Commissioner Šuica delivers a keynote speech at the European Parliament event “Beyond promises: Building a Digital Future that Works for Children”",
+   "confidence": 0.6,
+   "reason": "sem relação material com IA, dados, plataformas ou infraestrutura digital",
+   "official_sources": [
+    "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2406"
    ]
   },
   {
