@@ -3,15 +3,39 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 61,
+    "total": 62,
     "por_orgao": {
       "edpb": 22,
-      "eu_commission": 39
+      "eu_commission": 40
     },
-    "indice_total": 61,
+    "indice_total": 62,
     "execucao": "2026-11-11"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2413",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Opening remarks by Commissioner Hansen at the first in-person meeting of the Women in Farming Platform",
+      "descricao": "European Commission Speech Brussels, 11 Nov 2026 Ladies and gentlemen, Dear women farmers and entrepreneurs, Dear representatives of the European Investment Bank, and National financial institutions, Thank you...",
+      "data": "2026-11-11",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2413",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:b3f6bb14632fbd70",
+      "ultima_verificacao": "2026-11-11T13:34:17-03:00",
+      "ultima_execucao": "run_2026_11_11_1334",
+      "primeira_deteccao": "2026-11-11T13:34:17-03:00",
+      "id_execucao_primeira": "run_2026_11_11_1334",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2412",
       "orgao": "eu_commission",
@@ -30,8 +54,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:f9b77d0b8a3a01c5",
-      "ultima_verificacao": "2026-11-11T09:44:34-03:00",
-      "ultima_execucao": "run_2026_11_11_0944",
+      "ultima_verificacao": "2026-11-11T13:34:17-03:00",
+      "ultima_execucao": "run_2026_11_11_1334",
       "primeira_deteccao": "2026-11-11T09:44:34-03:00",
       "id_execucao_primeira": "run_2026_11_11_0944",
       "historico": []
@@ -54,8 +78,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:e6a61b0f6e5e037c",
-      "ultima_verificacao": "2026-11-11T09:44:34-03:00",
-      "ultima_execucao": "run_2026_11_11_0944",
+      "ultima_verificacao": "2026-11-11T13:34:17-03:00",
+      "ultima_execucao": "run_2026_11_11_1334",
       "primeira_deteccao": "2026-11-11T09:44:34-03:00",
       "id_execucao_primeira": "run_2026_11_11_0944",
       "historico": []
@@ -1942,6 +1966,12 @@
         "h": "sha1:e6a61b0f6e5e037c",
         "s": null,
         "d": "2026-11-11T09:44:34-03:00",
+        "v": "2026-11-11"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2413": {
+        "h": "sha1:b3f6bb14632fbd70",
+        "s": null,
+        "d": "2026-11-11T13:34:17-03:00",
         "v": "2026-11-11"
       }
     },
