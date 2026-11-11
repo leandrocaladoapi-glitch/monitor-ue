@@ -3,15 +3,63 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 59,
+    "total": 61,
     "por_orgao": {
       "edpb": 22,
-      "eu_commission": 37
+      "eu_commission": 39
     },
-    "indice_total": 59,
-    "execucao": "2026-11-10"
+    "indice_total": 61,
+    "execucao": "2026-11-11"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2412",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Remarks by Executive Vice-President Virkkunen and Commissioner McGrath on the Digital Fairness Act and a Consumer enforcement initiative",
+      "descricao": "European Commission Speech Brussels, 11 Nov 2026 Executive Vice-President Virkkunen Good morning, and welcome to the college readout. Today we present the Consumer Package. This package has two proposals: the ...",
+      "data": "2026-11-11",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2412",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:f9b77d0b8a3a01c5",
+      "ultima_verificacao": "2026-11-11T09:44:34-03:00",
+      "ultima_execucao": "run_2026_11_11_0944",
+      "primeira_deteccao": "2026-11-11T09:44:34-03:00",
+      "id_execucao_primeira": "run_2026_11_11_0944",
+      "historico": []
+    },
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2407",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Commission strengthens consumer protection laws, making them fit for the digital age",
+      "descricao": "European Commission Press release Brussels, 11 Nov 2026 Today, the European Commission presented its Proposal for a Digital Fairness Act (DFA) - a major update of the EU consumer protection rules to ensure that consumers in the EU enjoy the same high level of protection online as they do offline.",
+      "data": "2026-11-10",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2407",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:e6a61b0f6e5e037c",
+      "ultima_verificacao": "2026-11-11T09:44:34-03:00",
+      "ultima_execucao": "run_2026_11_11_0944",
+      "primeira_deteccao": "2026-11-11T09:44:34-03:00",
+      "id_execucao_primeira": "run_2026_11_11_0944",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2406",
       "orgao": "eu_commission",
@@ -30,8 +78,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:8340d901a14d0d2e",
-      "ultima_verificacao": "2026-11-10T18:55:56-03:00",
-      "ultima_execucao": "run_2026_11_10_1855",
+      "ultima_verificacao": "2026-11-11T09:44:34-03:00",
+      "ultima_execucao": "run_2026_11_11_0944",
       "primeira_deteccao": "2026-11-10T13:35:27-03:00",
       "id_execucao_primeira": "run_2026_11_10_1335",
       "historico": []
@@ -1882,7 +1930,19 @@
         "h": "sha1:8340d901a14d0d2e",
         "s": null,
         "d": "2026-11-10T13:35:27-03:00",
-        "v": "2026-11-10"
+        "v": "2026-11-11"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2412": {
+        "h": "sha1:f9b77d0b8a3a01c5",
+        "s": null,
+        "d": "2026-11-11T09:44:34-03:00",
+        "v": "2026-11-11"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2407": {
+        "h": "sha1:e6a61b0f6e5e037c",
+        "s": null,
+        "d": "2026-11-11T09:44:34-03:00",
+        "v": "2026-11-11"
       }
     },
     "eu_parliament": {},

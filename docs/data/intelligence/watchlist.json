@@ -57,7 +57,7 @@
   {
    "key": "enforcement",
    "label": "Enforcement e sanções",
-   "events": 16
+   "events": 17
   },
   {
    "key": "dsa",
@@ -90,6 +90,11 @@
    "events": 3
   },
   {
+   "key": "consumer",
+   "label": "Consumidor e transparência",
+   "events": 3
+  },
+  {
    "key": "gpai",
    "label": "GPAI e modelos de fundação",
    "events": 3
@@ -98,11 +103,6 @@
    "key": "employment",
    "label": "Trabalho e emprego",
    "events": 2
-  },
-  {
-   "key": "consumer",
-   "label": "Consumidor e transparência",
-   "events": 1
   },
   {
    "key": "judicial",
@@ -137,7 +137,7 @@
   },
   {
    "name": "Comissão Europeia",
-   "events": 16
+   "events": 18
   },
   {
    "name": "Parlamento Europeu",
@@ -147,11 +147,11 @@
  "act_types": [
   {
    "label": "Enforcement / sanção",
-   "events": 16
+   "events": 17
   },
   {
    "label": "Consulta pública",
-   "events": 16
+   "events": 17
   },
   {
    "label": "Guideline / orientação",
@@ -170,37 +170,37 @@
   {
    "slug": "cloud",
    "name": "Cloud",
-   "changes": 28
+   "changes": 29
   },
   {
    "slug": "adtech",
    "name": "AdTech",
-   "changes": 29
+   "changes": 31
   },
   {
    "slug": "ecommerce",
    "name": "E-commerce",
-   "changes": 28
+   "changes": 30
   },
   {
    "slug": "provedores-de-ia",
    "name": "Provedores de IA",
-   "changes": 24
+   "changes": 25
   },
   {
    "slug": "saas",
    "name": "SaaS",
-   "changes": 24
+   "changes": 26
   },
   {
    "slug": "marketplaces",
    "name": "Marketplaces",
-   "changes": 26
+   "changes": 28
   },
   {
    "slug": "saude",
    "name": "Saúde",
-   "changes": 19
+   "changes": 20
   },
   {
    "slug": "bancos",
@@ -223,14 +223,14 @@
    "changes": 6
   },
   {
+   "slug": "martech",
+   "name": "MarTech",
+   "changes": 9
+  },
+  {
    "slug": "modelos-de-fundacao",
    "name": "Modelos de Fundação (GPAI)",
    "changes": 5
-  },
-  {
-   "slug": "martech",
-   "name": "MarTech",
-   "changes": 7
   },
   {
    "slug": "pharma",

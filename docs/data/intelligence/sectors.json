@@ -22,7 +22,7 @@
     "Grande empresa",
     "PME (pequena e média empresa)"
    ],
-   "change_count": 28,
+   "change_count": 29,
    "cumulative_impact": 100,
    "top_priority": "urgent",
    "top_impact_level": "critical",
@@ -205,7 +205,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
@@ -213,7 +213,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
@@ -221,7 +221,7 @@
     {
      "date": "2026-07-08",
      "label": "Data referida no texto oficial",
-     "days_remaining": -125,
+     "days_remaining": -126,
      "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
      "event_id": "re_norma_32026r1744",
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
@@ -229,7 +229,7 @@
     {
      "date": "2026-07-24",
      "label": "Publicação no Jornal Oficial",
-     "days_remaining": -109,
+     "days_remaining": -110,
      "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
      "event_id": "re_norma_32026r1744",
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
@@ -308,7 +308,285 @@
     "Grande empresa",
     "PME (pequena e média empresa)"
    ],
-   "change_count": 29,
+   "change_count": 31,
+   "cumulative_impact": 90,
+   "top_priority": "urgent",
+   "top_impact_level": "critical",
+   "recent_changes": [
+    {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+     "date": "2026-09-11",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
+     "date": "2026-09-11",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
+    },
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "date": "2026-09-21",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+     "date": "2026-09-09",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
+     "date": "2026-09-09",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
+    },
+    {
+     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
+     "date": "2026-10-16",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+    },
+    {
+     "title": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
+     "date": "2026-10-09",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-iqvia-eur-7-0-c1dcc4",
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en"
+    },
+    {
+     "title": "Italian DPA fines Emirates EUR 180 000 for infringements concerning passengers’ health data",
+     "date": "2026-10-09",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-emirates-eur-704c4d",
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-emirates-eur-180-000-for-infringements-concerning-passengers-health-data_en"
+    }
+   ],
+   "obligations": [
+    {
+     "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+     "reference": "Consultas públicas e agenda",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
+     "confidence": 0.8
+    }
+   ],
+   "risks": [
+    {
+     "text": "Tomar decisão de arquitetura com base em orientação desatualizada.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
+     "text": "Desalinhamento entre o produto e o entendimento da autoridade europeia.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
+     "text": "Custo de retrabalho por implementação tardia de requisitos técnicos.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
+     "text": "Treino ou fine-tuning sem base legal documentada.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
+     "text": "Uso de web scraping e conteúdo pessoal sem avaliação registada.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    }
+   ],
+   "recommended_actions": [
+    {
+     "text": "Assinar as atualizações do AI Office e do registo oficial antes de cada release relevante.",
+     "owner_function": "regulatory-affairs",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
+    },
+    {
+     "text": "Registar em ata a versão da orientação usada para decidir.",
+     "owner_function": "regulatory-affairs",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
+    },
+    {
+     "text": "Envolver produto e jurídico na leitura de novas orientações.",
+     "owner_function": "regulatory-affairs",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
+    },
+    {
+     "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
+    },
+    {
+     "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
+    },
+    {
+     "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
+    }
+   ],
+   "deadlines": [
+    {
+     "date": "2026-07-21",
+     "label": "Data referida no texto oficial",
+     "days_remaining": -113,
+     "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
+     "date": "2026-07-21",
+     "label": "Data referida no texto oficial",
+     "days_remaining": -113,
+     "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
+    },
+    {
+     "date": "2026-09-03",
+     "label": "Data referida no texto oficial",
+     "days_remaining": -69,
+     "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    }
+   ],
+   "related_acts": [
+    {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
+     "act_type": "Enforcement / sanção",
+     "stage": "Consulta aberta",
+     "date": "2026-09-11",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
+    },
+    {
+     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
+     "act_type": "Enforcement / sanção",
+     "stage": "Consulta aberta",
+     "date": "2026-09-11",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
+     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
+    },
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "act_type": "Enforcement / sanção",
+     "stage": "Em plenário",
+     "date": "2026-09-21",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
+     "act_type": "Enforcement / sanção",
+     "stage": "A classificar",
+     "date": "2026-09-09",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
+    },
+    {
+     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
+     "act_type": "Enforcement / sanção",
+     "stage": "A classificar",
+     "date": "2026-09-09",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
+     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
+    },
+    {
+     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
+     "act_type": "Enforcement / sanção",
+     "stage": "A classificar",
+     "date": "2026-10-16",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+    }
+   ],
+   "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
+   "rank": 2
+  },
+  {
+   "slug": "ecommerce",
+   "name": "E-commerce",
+   "en": "E-commerce",
+   "focus": "Venda online, recomendação, publicidade direcionada e deveres de informação.",
+   "functions": [
+    "Compliance",
+    "Jurídico",
+    "AI Governance"
+   ],
+   "company_types": [
+    "Grande empresa",
+    "PME (pequena e média empresa)"
+   ],
+   "change_count": 30,
    "cumulative_impact": 89,
    "top_priority": "urgent",
    "top_impact_level": "critical",
@@ -491,7 +769,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
@@ -499,7 +777,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
@@ -507,285 +785,7 @@
     {
      "date": "2026-09-03",
      "label": "Data referida no texto oficial",
-     "days_remaining": -68,
-     "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    }
-   ],
-   "related_acts": [
-    {
-     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
-     "act_type": "Enforcement / sanção",
-     "stage": "Consulta aberta",
-     "date": "2026-09-11",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
-    },
-    {
-     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
-     "act_type": "Enforcement / sanção",
-     "stage": "Consulta aberta",
-     "date": "2026-09-11",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
-    },
-    {
-     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
-     "act_type": "Enforcement / sanção",
-     "stage": "Em plenário",
-     "date": "2026-09-21",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
-     "act_type": "Enforcement / sanção",
-     "stage": "A classificar",
-     "date": "2026-09-09",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
-     "act_type": "Enforcement / sanção",
-     "stage": "A classificar",
-     "date": "2026-09-09",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
-    },
-    {
-     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
-     "act_type": "Enforcement / sanção",
-     "stage": "A classificar",
-     "date": "2026-10-16",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
-     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
-    }
-   ],
-   "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
-   "rank": 2
-  },
-  {
-   "slug": "ecommerce",
-   "name": "E-commerce",
-   "en": "E-commerce",
-   "focus": "Venda online, recomendação, publicidade direcionada e deveres de informação.",
-   "functions": [
-    "Compliance",
-    "Jurídico",
-    "AI Governance"
-   ],
-   "company_types": [
-    "Grande empresa",
-    "PME (pequena e média empresa)"
-   ],
-   "change_count": 28,
-   "cumulative_impact": 88,
-   "top_priority": "urgent",
-   "top_impact_level": "critical",
-   "recent_changes": [
-    {
-     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
-     "date": "2026-09-11",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
-    },
-    {
-     "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
-     "date": "2026-09-11",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
-    },
-    {
-     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
-     "date": "2026-09-21",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
-     "date": "2026-09-09",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
-     "date": "2026-09-09",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
-    },
-    {
-     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
-     "date": "2026-10-16",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
-     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
-    },
-    {
-     "title": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
-     "date": "2026-10-09",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-iqvia-eur-7-0-c1dcc4",
-     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en"
-    },
-    {
-     "title": "Italian DPA fines Emirates EUR 180 000 for infringements concerning passengers’ health data",
-     "date": "2026-10-09",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-emirates-eur-704c4d",
-     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-emirates-eur-180-000-for-infringements-concerning-passengers-health-data_en"
-    }
-   ],
-   "obligations": [
-    {
-     "text": "Acompanhamento das orientações e atos de execução aplicáveis antes de decisões de produto.",
-     "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Alinhamento da documentação interna com a terminologia e expectativas do AI Office.",
-     "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Participação em consultas e códigos de prática quando existir canal aberto.",
-     "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
-     "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
-     "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
-     "reference": "Consultas públicas e agenda",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en",
-     "confidence": 0.8
-    }
-   ],
-   "risks": [
-    {
-     "text": "Tomar decisão de arquitetura com base em orientação desatualizada.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
-    },
-    {
-     "text": "Desalinhamento entre o produto e o entendimento da autoridade europeia.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
-    },
-    {
-     "text": "Custo de retrabalho por implementação tardia de requisitos técnicos.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
-    },
-    {
-     "text": "Treino ou fine-tuning sem base legal documentada.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
-    },
-    {
-     "text": "Uso de web scraping e conteúdo pessoal sem avaliação registada.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
-    }
-   ],
-   "recommended_actions": [
-    {
-     "text": "Assinar as atualizações do AI Office e do registo oficial antes de cada release relevante.",
-     "owner_function": "regulatory-affairs",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
-    },
-    {
-     "text": "Registar em ata a versão da orientação usada para decidir.",
-     "owner_function": "regulatory-affairs",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
-    },
-    {
-     "text": "Envolver produto e jurídico na leitura de novas orientações.",
-     "owner_function": "regulatory-affairs",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
-    },
-    {
-     "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
-     "owner_function": "dpo",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
-    },
-    {
-     "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
-     "owner_function": "dpo",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
-    },
-    {
-     "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
-     "owner_function": "dpo",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f"
-    }
-   ],
-   "deadlines": [
-    {
-     "date": "2026-07-21",
-     "label": "Data referida no texto oficial",
-     "days_remaining": -112,
-     "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
-    },
-    {
-     "date": "2026-07-21",
-     "label": "Data referida no texto oficial",
-     "days_remaining": -112,
-     "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
-     "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
-    },
-    {
-     "date": "2026-09-03",
-     "label": "Data referida no texto oficial",
-     "days_remaining": -68,
+     "days_remaining": -69,
      "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
@@ -867,8 +867,8 @@
     "Grande empresa",
     "Startup / empresa em formação"
    ],
-   "change_count": 24,
-   "cumulative_impact": 84,
+   "change_count": 25,
+   "cumulative_impact": 85,
    "top_priority": "urgent",
    "top_impact_level": "critical",
    "recent_changes": [
@@ -1050,7 +1050,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
@@ -1058,7 +1058,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
@@ -1066,7 +1066,7 @@
     {
      "date": "2026-07-08",
      "label": "Data referida no texto oficial",
-     "days_remaining": -125,
+     "days_remaining": -126,
      "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
      "event_id": "re_norma_32026r1744",
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
@@ -1074,7 +1074,7 @@
     {
      "date": "2026-07-24",
      "label": "Publicação no Jornal Oficial",
-     "days_remaining": -109,
+     "days_remaining": -110,
      "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
      "event_id": "re_norma_32026r1744",
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
@@ -1155,8 +1155,8 @@
     "Grande empresa",
     "PME (pequena e média empresa)"
    ],
-   "change_count": 24,
-   "cumulative_impact": 84,
+   "change_count": 26,
+   "cumulative_impact": 85,
    "top_priority": "urgent",
    "top_impact_level": "critical",
    "recent_changes": [
@@ -1338,7 +1338,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
@@ -1346,7 +1346,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
@@ -1354,7 +1354,7 @@
     {
      "date": "2026-07-08",
      "label": "Data referida no texto oficial",
-     "days_remaining": -125,
+     "days_remaining": -126,
      "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
      "event_id": "re_norma_32026r1744",
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
@@ -1362,7 +1362,7 @@
     {
      "date": "2026-07-24",
      "label": "Publicação no Jornal Oficial",
-     "days_remaining": -109,
+     "days_remaining": -110,
      "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
      "event_id": "re_norma_32026r1744",
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
@@ -1441,8 +1441,8 @@
     "Grande empresa",
     "PME (pequena e média empresa)"
    ],
-   "change_count": 26,
-   "cumulative_impact": 78,
+   "change_count": 28,
+   "cumulative_impact": 79,
    "top_priority": "urgent",
    "top_impact_level": "critical",
    "recent_changes": [
@@ -1624,7 +1624,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
@@ -1632,7 +1632,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
@@ -1640,7 +1640,7 @@
     {
      "date": "2026-10-02",
      "label": "Data referida no texto oficial",
-     "days_remaining": -39,
+     "days_remaining": -40,
      "norm": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
      "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
@@ -1721,7 +1721,7 @@
     "Grande empresa",
     "PME (pequena e média empresa)"
    ],
-   "change_count": 19,
+   "change_count": 20,
    "cumulative_impact": 70,
    "top_priority": "urgent",
    "top_impact_level": "critical",
@@ -1904,7 +1904,7 @@
     {
      "date": "2026-09-03",
      "label": "Data referida no texto oficial",
-     "days_remaining": -68,
+     "days_remaining": -69,
      "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
@@ -1912,7 +1912,7 @@
     {
      "date": "2026-09-03",
      "label": "Data referida no texto oficial",
-     "days_remaining": -68,
+     "days_remaining": -69,
      "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
@@ -1920,7 +1920,7 @@
     {
      "date": "2026-10-02",
      "label": "Data referida no texto oficial",
-     "days_remaining": -39,
+     "days_remaining": -40,
      "norm": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
      "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
@@ -2001,7 +2001,7 @@
     "PME (pequena e média empresa)"
    ],
    "change_count": 5,
-   "cumulative_impact": 21,
+   "cumulative_impact": 20,
    "top_priority": "urgent",
    "top_impact_level": "critical",
    "recent_changes": [
@@ -2159,7 +2159,7 @@
     {
      "date": "2026-09-03",
      "label": "Data referida no texto oficial",
-     "days_remaining": -68,
+     "days_remaining": -69,
      "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
@@ -2167,7 +2167,7 @@
     {
      "date": "2026-09-03",
      "label": "Data referida no texto oficial",
-     "days_remaining": -68,
+     "days_remaining": -69,
      "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
@@ -2175,7 +2175,7 @@
     {
      "date": "2026-07-03",
      "label": "Data referida no texto oficial",
-     "days_remaining": -130,
+     "days_remaining": -131,
      "norm": "Italian DPA fines BBVA EUR 5 508 000 for failing to respect a customer’s objection to…",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-bbva-eur-5-50-817f87",
      "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-bbva-eur-5-508-000-for-failing-to-respect-a-customers-objection-to-direct_en"
@@ -2183,7 +2183,7 @@
     {
      "date": "2026-09-22",
      "label": "Data referida no texto oficial",
-     "days_remaining": -49,
+     "days_remaining": -50,
      "norm": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient…",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
      "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
@@ -2256,7 +2256,7 @@
     "PME (pequena e média empresa)"
    ],
    "change_count": 7,
-   "cumulative_impact": 18,
+   "cumulative_impact": 17,
    "top_priority": "urgent",
    "top_impact_level": "critical",
    "recent_changes": [
@@ -2430,7 +2430,7 @@
     {
      "date": "2026-09-03",
      "label": "Data referida no texto oficial",
-     "days_remaining": -68,
+     "days_remaining": -69,
      "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
@@ -2438,7 +2438,7 @@
     {
      "date": "2026-09-03",
      "label": "Data referida no texto oficial",
-     "days_remaining": -68,
+     "days_remaining": -69,
      "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
@@ -2446,7 +2446,7 @@
     {
      "date": "2026-09-22",
      "label": "Data referida no texto oficial",
-     "days_remaining": -49,
+     "days_remaining": -50,
      "norm": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient…",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
      "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
@@ -2686,7 +2686,7 @@
     {
      "date": "2026-09-03",
      "label": "Data referida no texto oficial",
-     "days_remaining": -68,
+     "days_remaining": -69,
      "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
@@ -2694,7 +2694,7 @@
     {
      "date": "2026-09-03",
      "label": "Data referida no texto oficial",
-     "days_remaining": -68,
+     "days_remaining": -69,
      "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
@@ -2702,7 +2702,7 @@
     {
      "date": "2026-09-22",
      "label": "Data referida no texto oficial",
-     "days_remaining": -49,
+     "days_remaining": -50,
      "norm": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient…",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
      "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
@@ -2939,7 +2939,7 @@
     {
      "date": "2026-09-03",
      "label": "Data referida no texto oficial",
-     "days_remaining": -68,
+     "days_remaining": -69,
      "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire EUR 500 000",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
@@ -2947,7 +2947,7 @@
     {
      "date": "2026-09-03",
      "label": "Data referida no texto oficial",
-     "days_remaining": -68,
+     "days_remaining": -69,
      "norm": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
@@ -2955,7 +2955,7 @@
     {
      "date": "2026-09-22",
      "label": "Data referida no texto oficial",
-     "days_remaining": -49,
+     "days_remaining": -50,
      "norm": "Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient…",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-swedish-dpa-fines-miljodata-i-k-c0b429",
      "source_url": "https://www.edpb.europa.eu/news/swedish-dpa-fines-miljodata-i-karlskrona-approximately-eur-160-000-for-insufficient-technical_en"
@@ -3021,6 +3021,268 @@
    "rank": 11
   },
   {
+   "slug": "martech",
+   "name": "MarTech",
+   "en": "MarTech",
+   "focus": "Automação de marketing, personalização e IA em decisão de cliente.",
+   "functions": [
+    "Compliance",
+    "Jurídico",
+    "AI Governance"
+   ],
+   "company_types": [
+    "Grande empresa",
+    "PME (pequena e média empresa)"
+   ],
+   "change_count": 9,
+   "cumulative_impact": 14,
+   "top_priority": "urgent",
+   "top_impact_level": "critical",
+   "recent_changes": [
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "date": "2026-09-21",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
+     "date": "2026-10-16",
+     "impact_level": "critical",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+    },
+    {
+     "title": "Remarks by Executive Vice-President Virkkunen and Commissioner McGrath on the Digital Fairness Act and a Consumer enforcement initiative",
+     "date": "2026-11-11",
+     "impact_level": "high",
+     "priority": "high",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-d76035",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2412"
+    },
+    {
+     "title": "Daily News 06 / 11 / 2026",
+     "date": "2026-11-06",
+     "impact_level": "low",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-4582a0",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2364"
+    },
+    {
+     "title": "Commission preliminarily finds TikTok's ‘For You' feed in breach of Digital Services Act for harmful ‘rabbit holes' effect",
+     "date": "2026-11-05",
+     "impact_level": "low",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-5df037",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2361"
+    },
+    {
+     "title": "Daily News 26 / 10 / 2026",
+     "date": "2026-10-26",
+     "impact_level": "low",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-a7c1f3",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2257"
+    },
+    {
+     "title": "Daily News 21 / 10 / 2026",
+     "date": "2026-10-21",
+     "impact_level": "low",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-9b06f1",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2225"
+    },
+    {
+     "title": "Commission to investigate how Booking.com combats scams and fraud under the Digital Services Act",
+     "date": "2026-10-21",
+     "impact_level": "low",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-f7b29c",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2223"
+    }
+   ],
+   "obligations": [
+    {
+     "text": "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Registo do risco e do plano de correção no sistema de compliance.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+     "confidence": 0.8
+    },
+    {
+     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
+     "reference": "EDPB e proteção de dados em IA",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+     "confidence": 0.8
+    }
+   ],
+   "risks": [
+    {
+     "text": "Repetir o padrão sancionado na sua própria operação.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "text": "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "text": "Medidas corretivas que obrigam a alterar produto já em produção.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "text": "Perda de confiança de clientes e de investidores após incidente público.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "text": "Treino ou fine-tuning sem base legal documentada.",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    }
+   ],
+   "recommended_actions": [
+    {
+     "text": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+     "owner_function": "compliance",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
+    },
+    {
+     "text": "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+     "owner_function": "compliance",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
+    },
+    {
+     "text": "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+     "owner_function": "compliance",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
+    },
+    {
+     "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
+    },
+    {
+     "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
+    },
+    {
+     "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
+     "owner_function": "dpo",
+     "priority": "Alta",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
+    }
+   ],
+   "deadlines": [
+    {
+     "date": "2026-10-02",
+     "label": "Data referida no texto oficial",
+     "days_remaining": -40,
+     "norm": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+    }
+   ],
+   "related_acts": [
+    {
+     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
+     "act_type": "Enforcement / sanção",
+     "stage": "Em plenário",
+     "date": "2026-09-21",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
+     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
+    },
+    {
+     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
+     "act_type": "Enforcement / sanção",
+     "stage": "A classificar",
+     "date": "2026-10-16",
+     "priority": "urgent",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+    },
+    {
+     "title": "Remarks by Executive Vice-President Virkkunen and Commissioner McGrath on the Digital Fairness Act and a Consumer enforcement initiative",
+     "act_type": "Enforcement / sanção",
+     "stage": "Proposta (não vinculante)",
+     "date": "2026-11-11",
+     "priority": "high",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-d76035",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2412"
+    },
+    {
+     "title": "Daily News 06 / 11 / 2026",
+     "act_type": "Consulta pública",
+     "stage": "A classificar",
+     "date": "2026-11-06",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-4582a0",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2364"
+    },
+    {
+     "title": "Commission preliminarily finds TikTok's ‘For You' feed in breach of Digital Services Act for harmful ‘rabbit holes' effect",
+     "act_type": "Consulta pública",
+     "stage": "A classificar",
+     "date": "2026-11-05",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-5df037",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2361"
+    },
+    {
+     "title": "Daily News 26 / 10 / 2026",
+     "act_type": "Consulta pública",
+     "stage": "A classificar",
+     "date": "2026-10-26",
+     "priority": "monitor",
+     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-a7c1f3",
+     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2257"
+    }
+   ],
+   "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
+   "rank": 12
+  },
+  {
    "slug": "modelos-de-fundacao",
    "name": "Modelos de Fundação (GPAI)",
    "en": "Foundation Models",
@@ -3039,7 +3301,7 @@
     "Desenvolvedor de código aberto"
    ],
    "change_count": 5,
-   "cumulative_impact": 14,
+   "cumulative_impact": 13,
    "top_priority": "urgent",
    "top_impact_level": "critical",
    "recent_changes": [
@@ -3197,7 +3459,7 @@
     {
      "date": "2026-07-08",
      "label": "Data referida no texto oficial",
-     "days_remaining": -125,
+     "days_remaining": -126,
      "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
      "event_id": "re_norma_32026r1744",
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
@@ -3205,7 +3467,7 @@
     {
      "date": "2026-07-24",
      "label": "Publicação no Jornal Oficial",
-     "days_remaining": -109,
+     "days_remaining": -110,
      "norm": "Regulamento (UE) 2026/1744 — Digital Omnibus on AI",
      "event_id": "re_norma_32026r1744",
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
@@ -3213,7 +3475,7 @@
     {
      "date": "2024-06-13",
      "label": "Data referida no texto oficial",
-     "days_remaining": -880,
+     "days_remaining": -881,
      "norm": "Regulamento (UE) 2024/1689 — AI Act",
      "event_id": "re_norma_32024r1689",
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
@@ -3221,7 +3483,7 @@
     {
      "date": "2024-07-12",
      "label": "Obrigações de alto risco — Anexo I",
-     "days_remaining": -851,
+     "days_remaining": -852,
      "norm": "Regulamento (UE) 2024/1689 — AI Act",
      "event_id": "re_norma_32024r1689",
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
@@ -3229,7 +3491,7 @@
     {
      "date": "2024-07-12",
      "label": "Data referida no texto oficial",
-     "days_remaining": -851,
+     "days_remaining": -852,
      "norm": "2021/0106(COD)",
      "event_id": "re_procedimento_ue-2021-0106-cod",
      "source_url": "https://data.europarl.europa.eu/api/v2/procedures/2021-0106?format=application/ld%2Bjson"
@@ -3237,7 +3499,7 @@
     {
      "date": "2024-08-01",
      "label": "Entrada em vigor",
-     "days_remaining": -831,
+     "days_remaining": -832,
      "norm": "2021/0106(COD)",
      "event_id": "re_procedimento_ue-2021-0106-cod",
      "source_url": "https://data.europarl.europa.eu/api/v2/procedures/2021-0106?format=application/ld%2Bjson"
@@ -3288,260 +3550,6 @@
      "priority": "medium",
      "event_id": "re_procedimento_ue-2025-2058-ini",
      "source_url": "https://data.europarl.europa.eu/api/v2/procedures/2025-2058?format=application/ld%2Bjson"
-    }
-   ],
-   "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
-   "rank": 12
-  },
-  {
-   "slug": "martech",
-   "name": "MarTech",
-   "en": "MarTech",
-   "focus": "Automação de marketing, personalização e IA em decisão de cliente.",
-   "functions": [
-    "Compliance",
-    "Jurídico",
-    "AI Governance"
-   ],
-   "company_types": [
-    "Grande empresa",
-    "PME (pequena e média empresa)"
-   ],
-   "change_count": 7,
-   "cumulative_impact": 11,
-   "top_priority": "urgent",
-   "top_impact_level": "critical",
-   "recent_changes": [
-    {
-     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
-     "date": "2026-09-21",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
-     "date": "2026-10-16",
-     "impact_level": "critical",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
-     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
-    },
-    {
-     "title": "Daily News 06 / 11 / 2026",
-     "date": "2026-11-06",
-     "impact_level": "low",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-4582a0",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2364"
-    },
-    {
-     "title": "Commission preliminarily finds TikTok's ‘For You' feed in breach of Digital Services Act for harmful ‘rabbit holes' effect",
-     "date": "2026-11-05",
-     "impact_level": "low",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-5df037",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2361"
-    },
-    {
-     "title": "Daily News 26 / 10 / 2026",
-     "date": "2026-10-26",
-     "impact_level": "low",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-a7c1f3",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2257"
-    },
-    {
-     "title": "Daily News 21 / 10 / 2026",
-     "date": "2026-10-21",
-     "impact_level": "low",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-9b06f1",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2225"
-    },
-    {
-     "title": "Commission to investigate how Booking.com combats scams and fraud under the Digital Services Act",
-     "date": "2026-10-21",
-     "impact_level": "low",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-f7b29c",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2223"
-    }
-   ],
-   "obligations": [
-    {
-     "text": "Verificação preventiva dos controlos equivalente aos que falharam na decisão publicada.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Registo do risco e do plano de correção no sistema de compliance.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Revisão contratual com fornecedores quando a decisão envolve terceiros.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Base legal documentada para tratamento de dados pessoais em sistemas de IA.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Avaliação de impacto sobre a proteção de dados (DPIA) quando exigida.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
-     "confidence": 0.8
-    },
-    {
-     "text": "Informação transparente sobre decisões automatizadas e revisão humana efetiva.",
-     "reference": "EDPB e proteção de dados em IA",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
-     "confidence": 0.8
-    }
-   ],
-   "risks": [
-    {
-     "text": "Repetir o padrão sancionado na sua própria operação.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "text": "Multas de percentagem do volume de negócios global em casos de maior gravidade.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "text": "Medidas corretivas que obrigam a alterar produto já em produção.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "text": "Perda de confiança de clientes e de investidores após incidente público.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "text": "Treino ou fine-tuning sem base legal documentada.",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    }
-   ],
-   "recommended_actions": [
-    {
-     "text": "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
-     "owner_function": "compliance",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
-    },
-    {
-     "text": "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
-     "owner_function": "compliance",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
-    },
-    {
-     "text": "Levar o caso concreto à reunião de compliance com responsável nomeado.",
-     "owner_function": "compliance",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
-    },
-    {
-     "text": "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais.",
-     "owner_function": "dpo",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
-    },
-    {
-     "text": "Atualizar a DPIA para os casos de uso afetados pela orientação mais recente.",
-     "owner_function": "dpo",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
-    },
-    {
-     "text": "Formar produto e marketing sobre limites de uso de dados pessoais.",
-     "owner_function": "dpo",
-     "priority": "Alta",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598"
-    }
-   ],
-   "deadlines": [
-    {
-     "date": "2026-10-02",
-     "label": "Data referida no texto oficial",
-     "days_remaining": -39,
-     "norm": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
-     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
-    }
-   ],
-   "related_acts": [
-    {
-     "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
-     "act_type": "Enforcement / sanção",
-     "stage": "Em plenário",
-     "date": "2026-09-21",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
-     "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
-    },
-    {
-     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
-     "act_type": "Enforcement / sanção",
-     "stage": "A classificar",
-     "date": "2026-10-16",
-     "priority": "urgent",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
-     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
-    },
-    {
-     "title": "Daily News 06 / 11 / 2026",
-     "act_type": "Consulta pública",
-     "stage": "A classificar",
-     "date": "2026-11-06",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-4582a0",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2364"
-    },
-    {
-     "title": "Commission preliminarily finds TikTok's ‘For You' feed in breach of Digital Services Act for harmful ‘rabbit holes' effect",
-     "act_type": "Consulta pública",
-     "stage": "A classificar",
-     "date": "2026-11-05",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-5df037",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2361"
-    },
-    {
-     "title": "Daily News 26 / 10 / 2026",
-     "act_type": "Consulta pública",
-     "stage": "A classificar",
-     "date": "2026-10-26",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-a7c1f3",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2257"
-    },
-    {
-     "title": "Daily News 21 / 10 / 2026",
-     "act_type": "Consulta pública",
-     "stage": "A classificar",
-     "date": "2026-10-21",
-     "priority": "monitor",
-     "event_id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-9b06f1",
-     "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_2225"
     }
    ],
    "hedge": "Triagem temática por palavras-chave da fonte oficial. Não confirma enquadramento jurídico de nenhuma empresa.",
@@ -3705,7 +3713,7 @@
     {
      "date": "2026-09-23",
      "label": "Data referida no texto oficial",
-     "days_remaining": -48,
+     "days_remaining": -49,
      "norm": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-iqvia-eur-7-0-c1dcc4",
      "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en"
@@ -3713,7 +3721,7 @@
     {
      "date": "2026-05-14",
      "label": "Data referida no texto oficial",
-     "days_remaining": -180,
+     "days_remaining": -181,
      "norm": "Italian DPA fines Emirates EUR 180 000 for infringements concerning passengers’ health…",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-emirates-eur-704c4d",
      "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-emirates-eur-180-000-for-infringements-concerning-passengers-health-data_en"
@@ -3768,7 +3776,7 @@
     "PME (pequena e média empresa)"
    ],
    "change_count": 2,
-   "cumulative_impact": 10,
+   "cumulative_impact": 9,
    "top_priority": "urgent",
    "top_impact_level": "critical",
    "recent_changes": [
@@ -3902,7 +3910,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
@@ -3910,7 +3918,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
@@ -3955,7 +3963,7 @@
     "PME (pequena e média empresa)"
    ],
    "change_count": 2,
-   "cumulative_impact": 10,
+   "cumulative_impact": 9,
    "top_priority": "urgent",
    "top_impact_level": "critical",
    "recent_changes": [
@@ -4089,7 +4097,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-bda67f",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-eur-300-000_en"
@@ -4097,7 +4105,7 @@
     {
      "date": "2026-07-21",
      "label": "Data referida no texto oficial",
-     "days_remaining": -112,
+     "days_remaining": -113,
      "norm": "Failure to respect the rights of individuals: The CNIL fined EXTIA 300 000 EUR",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-failure-to-respect-the-rights-o-6380e0",
      "source_url": "https://www.edpb.europa.eu/news/failure-to-respect-the-rights-of-individuals-the-cnil-fined-extia-300-000-eur_en"
@@ -4606,7 +4614,7 @@
     {
      "date": "2025-09-04",
      "label": "Data referida no texto oficial",
-     "days_remaining": -432,
+     "days_remaining": -433,
      "norm": "EDPB sheds light on anonymisation and web scraping for generative AI and adopts final…",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-sheds-light-on-anonymisati-c74808",
      "source_url": "https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en"

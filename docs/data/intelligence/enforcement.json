@@ -1,11 +1,56 @@
 {
  "meta": {
-  "total": 16,
+  "total": 17,
   "description": "Enforcement monitorado a partir de fontes oficiais (EDPB, EDPS, Comissão e autoridades nacionais citadas nas decisões).",
   "structure": "Evento → empresa/setor → autoridade → base legal → decisão → consequência → lição regulatória.",
   "rule": "A base legal é a indicada pela autoridade na fonte; o monitor não a reinterpreta."
  },
  "cases": [
+  {
+   "id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-d76035",
+   "event": "Remarks by Executive Vice-President Virkkunen and Commissioner McGrath on the Digital Fairness Act and a Consumer enforcement initiative",
+   "date": "2026-11-11",
+   "authority": "Comissão Europeia",
+   "company_or_sector": "AdTech",
+   "legal_basis": "Base legal não explicitada no resumo oficial — verificar a decisão na fonte oficial.",
+   "legal_basis_confidence": 0.6,
+   "decision": "European Commission Speech Brussels, 11 Nov 2026 Executive Vice-President Virkkunen Good morning, and welcome to the college readout. Today we present the Consumer Package. This package has two proposals: the ...",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em AdTech, Cloud, E-commerce.",
+   "regulatory_lesson": "Lição regulatória: o padrão sancionado (base legal, informação ao titular, controlo interno) deve ser testado na própria operação antes da próxima auditoria.",
+   "affected_sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "MarTech",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_functions": [
+    "Product",
+    "Marketing",
+    "Jurídico",
+    "Compliance",
+    "Data Governance",
+    "Risk",
+    "Privacy",
+    "Data Protection Officer"
+   ],
+   "recommended_actions": [
+    "Revisar transparência, rotulagem e padrões de interface dos produtos com IA.",
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado."
+   ],
+   "impact_level": "high",
+   "priority": "high",
+   "confidence": 0.6,
+   "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2412",
+   "official_sources": [
+    "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2412"
+   ]
+  },
   {
    "id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
    "event": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
