@@ -3,15 +3,39 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 62,
+    "total": 63,
     "por_orgao": {
       "edpb": 22,
-      "eu_commission": 40
+      "eu_commission": 41
     },
-    "indice_total": 62,
-    "execucao": "2026-11-11"
+    "indice_total": 63,
+    "execucao": "2026-11-12"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2418",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "EU and Australia deepen science and innovation ties with Horizon Europe Agreement",
+      "descricao": "European Commission Press release Brussels, 12 Nov 2026 The European Union and Australia have signed an agreement paving the way for Australian researchers and organisations to join and lead projects under Horizon Europe, the EU's flagship research and innovation programme.",
+      "data": "2026-11-12",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2418",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:2445546b9d295170",
+      "ultima_verificacao": "2026-11-12T10:47:18-03:00",
+      "ultima_execucao": "run_2026_11_12_1047",
+      "primeira_deteccao": "2026-11-12T10:47:18-03:00",
+      "id_execucao_primeira": "run_2026_11_12_1047",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2413",
       "orgao": "eu_commission",
@@ -30,8 +54,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:b3f6bb14632fbd70",
-      "ultima_verificacao": "2026-11-11T20:01:00-03:00",
-      "ultima_execucao": "run_2026_11_11_2001",
+      "ultima_verificacao": "2026-11-12T10:47:18-03:00",
+      "ultima_execucao": "run_2026_11_12_1047",
       "primeira_deteccao": "2026-11-11T13:34:17-03:00",
       "id_execucao_primeira": "run_2026_11_11_1334",
       "historico": []
@@ -54,8 +78,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:f9b77d0b8a3a01c5",
-      "ultima_verificacao": "2026-11-11T20:01:00-03:00",
-      "ultima_execucao": "run_2026_11_11_2001",
+      "ultima_verificacao": "2026-11-12T10:47:18-03:00",
+      "ultima_execucao": "run_2026_11_12_1047",
       "primeira_deteccao": "2026-11-11T09:44:34-03:00",
       "id_execucao_primeira": "run_2026_11_11_0944",
       "historico": []
@@ -1960,7 +1984,7 @@
         "h": "sha1:f9b77d0b8a3a01c5",
         "s": null,
         "d": "2026-11-11T09:44:34-03:00",
-        "v": "2026-11-11"
+        "v": "2026-11-12"
       },
       "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2407": {
         "h": "sha1:e6a61b0f6e5e037c",
@@ -1972,7 +1996,13 @@
         "h": "sha1:b3f6bb14632fbd70",
         "s": null,
         "d": "2026-11-11T13:34:17-03:00",
-        "v": "2026-11-11"
+        "v": "2026-11-12"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2418": {
+        "h": "sha1:2445546b9d295170",
+        "s": null,
+        "d": "2026-11-12T10:47:18-03:00",
+        "v": "2026-11-12"
       }
     },
     "eu_parliament": {},
