@@ -137,7 +137,7 @@
   },
   {
    "name": "Comissão Europeia",
-   "events": 18
+   "events": 19
   },
   {
    "name": "Parlamento Europeu",
@@ -146,11 +146,11 @@
  ],
  "act_types": [
   {
-   "label": "Enforcement / sanção",
-   "events": 17
+   "label": "Consulta pública",
+   "events": 18
   },
   {
-   "label": "Consulta pública",
+   "label": "Enforcement / sanção",
    "events": 17
   },
   {
@@ -255,7 +255,7 @@
   {
    "slug": "educacao",
    "name": "Educação",
-   "changes": 2
+   "changes": 3
   },
   {
    "slug": "legaltech",

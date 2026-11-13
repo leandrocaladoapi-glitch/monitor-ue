@@ -3,15 +3,39 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 63,
+    "total": 64,
     "por_orgao": {
       "edpb": 22,
-      "eu_commission": 41
+      "eu_commission": 42
     },
-    "indice_total": 63,
-    "execucao": "2026-11-12"
+    "indice_total": 64,
+    "execucao": "2026-11-13"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_statement_26_2431",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Doorstep by President von der Leyen ahead of the informal meeting of the European Council of 13 November",
+      "descricao": "European Commission Statement Dublin, 13 Nov 2026 Today, we are going to discuss AI. It is going to be very interesting. Of course, we are going to discuss the risks, like, for example, runaway AI, but also the...",
+      "data": "2026-11-13",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/statement_26_2431",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:29f74d4c2df421b0",
+      "ultima_verificacao": "2026-11-13T10:08:15-03:00",
+      "ultima_execucao": "run_2026_11_13_1008",
+      "primeira_deteccao": "2026-11-13T10:08:15-03:00",
+      "id_execucao_primeira": "run_2026_11_13_1008",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2418",
       "orgao": "eu_commission",
@@ -2003,6 +2027,12 @@
         "s": null,
         "d": "2026-11-12T10:47:18-03:00",
         "v": "2026-11-12"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_statement_26_2431": {
+        "h": "sha1:29f74d4c2df421b0",
+        "s": null,
+        "d": "2026-11-13T10:08:15-03:00",
+        "v": "2026-11-13"
       }
     },
     "eu_parliament": {},
