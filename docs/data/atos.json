@@ -9,7 +9,7 @@
       "eu_commission": 42
     },
     "indice_total": 64,
-    "execucao": "2026-11-13"
+    "execucao": "2026-11-14"
   },
   "atos": [
     {
@@ -30,8 +30,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:29f74d4c2df421b0",
-      "ultima_verificacao": "2026-11-13T13:43:19-03:00",
-      "ultima_execucao": "run_2026_11_13_1343",
+      "ultima_verificacao": "2026-11-14T09:12:46-03:00",
+      "ultima_execucao": "run_2026_11_14_0912",
       "primeira_deteccao": "2026-11-13T10:08:15-03:00",
       "id_execucao_primeira": "run_2026_11_13_1008",
       "historico": []
@@ -2032,7 +2032,7 @@
         "h": "sha1:29f74d4c2df421b0",
         "s": null,
         "d": "2026-11-13T10:08:15-03:00",
-        "v": "2026-11-13"
+        "v": "2026-11-14"
       }
     },
     "eu_parliament": {},
