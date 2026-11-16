@@ -3,15 +3,39 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 64,
+    "total": 65,
     "por_orgao": {
       "edpb": 22,
-      "eu_commission": 42
+      "eu_commission": 43
     },
-    "indice_total": 64,
+    "indice_total": 65,
     "execucao": "2026-11-16"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2458",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Keynote speech by Commissioner Kubilius at the DIGITAL SME summit - Breaking Europe's Digital Frontiers",
+      "descricao": "European Commission Speech Brussels, 16 Nov 2026 Dear Colleagues, It is a big pleasure to be together with you. The Digital SME alliance is a real power with 40000 SMEs. That is why I am very happy to have thi...",
+      "data": "2026-11-16",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2458",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:03ed7bc086c63aaa",
+      "ultima_verificacao": "2026-11-16T15:52:48-03:00",
+      "ultima_execucao": "run_2026_11_16_1552",
+      "primeira_deteccao": "2026-11-16T15:52:48-03:00",
+      "id_execucao_primeira": "run_2026_11_16_1552",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_statement_26_2431",
       "orgao": "eu_commission",
@@ -2033,6 +2057,12 @@
         "s": null,
         "d": "2026-11-13T10:08:15-03:00",
         "v": "2026-11-15"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2458": {
+        "h": "sha1:03ed7bc086c63aaa",
+        "s": null,
+        "d": "2026-11-16T15:52:48-03:00",
+        "v": "2026-11-16"
       }
     },
     "eu_parliament": {},

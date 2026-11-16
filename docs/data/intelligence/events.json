@@ -5,7 +5,7 @@
   "rule": "FATO, ANÁLISE, INTERPRETAÇÃO e RECOMENDAÇÃO são objetos distintos. Confiança mínima 0.6. Nenhum evento sem fonte oficial é publicado.",
   "total": 45,
   "excluded_low_confidence": 0,
-  "excluded_no_material_relation": 26
+  "excluded_no_material_relation": 27
  },
  "events": [
   {
@@ -14709,6 +14709,15 @@
    "reason": "sem relação material com IA, dados, plataformas ou infraestrutura digital",
    "official_sources": [
     "https://data.europarl.europa.eu/api/v2/procedures/2025-2060?format=application/ld%2Bjson"
+   ]
+  },
+  {
+   "id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-711475",
+   "regulatory_event": "Keynote speech by Commissioner Kubilius at the DIGITAL SME summit - Breaking Europe's Digital Frontiers",
+   "confidence": 0.6,
+   "reason": "sem relação material com IA, dados, plataformas ou infraestrutura digital",
+   "official_sources": [
+    "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2458"
    ]
   },
   {
