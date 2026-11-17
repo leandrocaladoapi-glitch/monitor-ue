@@ -3,7 +3,7 @@
   "reference_date": "2026-11-17",
   "description": "Eventos regulatórios interpretados pelo Regulatory Impact Engine.",
   "rule": "FATO, ANÁLISE, INTERPRETAÇÃO e RECOMENDAÇÃO são objetos distintos. Confiança mínima 0.6. Nenhum evento sem fonte oficial é publicado.",
-  "total": 46,
+  "total": 47,
   "excluded_low_confidence": 0,
   "excluded_no_material_relation": 27
  },
@@ -14688,6 +14688,113 @@
      "Compliance",
      "Jurídico",
      "AI Governance"
+    ],
+    "possible_costs": "Custo de adequação não quantificado pelo monitor: depende do número de sistemas afetados, da obrigação aplicável e do desenho do controlo.",
+    "adaptation_needed": "Adequação recomendada: revisão de política, contratos e registos internos.",
+    "risk_of_inaction": "Perder prazo interno e aumentar custo de remediação.",
+    "next_step": "Avaliar aplicabilidade com o jurídico da empresa."
+   },
+   "diff": null,
+   "changes_summary": null,
+   "published": true,
+   "relevance": "revisar",
+   "deadlines_full": []
+  },
+  {
+   "id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-e21be1",
+   "regulatory_event": "EU Leaders discuss AI and Europe's role in Ukraine peace negotiations during informal summit in Dublin",
+   "summary": "European Commission News Brussels, 17 Nov 2026 President of the European Commission, Ursula von der Leyen, was in Dublin on 12 and 13 November to attend the informal EUCO hosted by the Irish Presidency. Lea...",
+   "affected_sectors": [],
+   "affected_company_types": [],
+   "affected_functions": [
+    "Regulatory Affairs",
+    "Jurídico"
+   ],
+   "obligations": [],
+   "deadlines": [],
+   "risks": [],
+   "opportunities": [],
+   "recommended_actions": [],
+   "impact_level": "low",
+   "priority": "monitor",
+   "confidence": 0.6,
+   "official_sources": [
+    "https://ec.europa.eu/commission/presscorner/detail/en/ac_26_2477"
+   ],
+   "source_kind": "ato",
+   "source_id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ac_26_2477",
+   "territory": "União Europeia",
+   "regulator": "Comissão Europeia",
+   "regulator_key": "eu_commission",
+   "act_type": "consultation",
+   "act_type_label": "Consulta pública",
+   "stage": "negociacao",
+   "stage_label": "Em negociação",
+   "change_date": "2026-11-17",
+   "publication_date": null,
+   "entry_into_force": null,
+   "compliance_deadline": null,
+   "themes": [],
+   "theme_labels": [],
+   "flags": [],
+   "impact_score": 37,
+   "confidence_label": "Registo aguarda curadoria — leitura preliminar",
+   "requires_legal_review": true,
+   "hedge": "Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+   "watchlist_tags": [
+    "consultation"
+   ],
+   "fact": {
+    "title": "EU Leaders discuss AI and Europe's role in Ukraine peace negotiations during informal summit in Dublin",
+    "description": "European Commission News Brussels, 17 Nov 2026 President of the European Commission, Ursula von der Leyen, was in Dublin on 12 and 13 November to attend the informal EUCO hosted by the Irish Presidency. Lea...",
+    "date": "2026-11-17",
+    "date_label": "Data do item na fonte oficial",
+    "regulator": "Comissão Europeia",
+    "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ac_26_2477",
+    "sources": [
+     {
+      "title": "EU Leaders discuss AI and Europe's role in Ukraine peace negotiations during informal summit in Dublin",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ac_26_2477",
+      "type": "fonte primária",
+      "official": true
+     }
+    ],
+    "note": "Texto e data preservados do item do dataset; nenhum fato foi acrescentado."
+   },
+   "analysis": {
+    "why_it_matters": "Leitura: o item é classificado como regulação digital, o que normalmente desloca obrigações de documentação, transparência ou controlo interno para as equipas responsáveis.",
+    "sector_exposure": [],
+    "obligations": [],
+    "risks": [],
+    "opportunities": [],
+    "confidence": 0.6
+   },
+   "interpretation": {
+    "text": "Setores ainda não determinados. Potencialmente afetada. A aplicabilidade depende das atividades exercidas e requer avaliação jurídica específica.",
+    "company_types": [],
+    "functions": [
+     "regulatory-affairs",
+     "legal"
+    ],
+    "flags": [],
+    "confidence": 0.6,
+    "limits": "Classificação por palavras-chave e tema. Não estabelece que qualquer organização específica esteja juridicamente enquadrada no ato."
+   },
+   "recommendations": {
+    "actions": [],
+    "priority": "monitor",
+    "sla": "acompanhar",
+    "owner_functions": [
+     "regulatory-affairs",
+     "legal"
+    ],
+    "next_step": "Avaliar aplicabilidade com o jurídico da empresa."
+   },
+   "so_what": {
+    "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em processos ainda a identificar.",
+    "functions": [
+     "Regulatory Affairs",
+     "Jurídico"
     ],
     "possible_costs": "Custo de adequação não quantificado pelo monitor: depende do número de sistemas afetados, da obrigação aplicável e do desenho do controlo.",
     "adaptation_needed": "Adequação recomendada: revisão de política, contratos e registos internos.",

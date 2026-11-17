@@ -3,15 +3,39 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 66,
+    "total": 67,
     "por_orgao": {
       "edpb": 22,
-      "eu_commission": 44
+      "eu_commission": 45
     },
-    "indice_total": 66,
+    "indice_total": 67,
     "execucao": "2026-11-17"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ac_26_2477",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "EU Leaders discuss AI and Europe's role in Ukraine peace negotiations during informal summit in Dublin",
+      "descricao": "European Commission News Brussels, 17 Nov 2026 President of the European Commission, Ursula von der Leyen, was in Dublin on 12 and 13 November to attend the informal EUCO hosted by the Irish Presidency. Lea...",
+      "data": "2026-11-17",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ac_26_2477",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:256f1673ba33d165",
+      "ultima_verificacao": "2026-11-17T14:51:19-03:00",
+      "ultima_execucao": "run_2026_11_17_1451",
+      "primeira_deteccao": "2026-11-17T14:51:19-03:00",
+      "id_execucao_primeira": "run_2026_11_17_1451",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_mex_26_2471",
       "orgao": "eu_commission",
@@ -30,8 +54,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:42eebcd236e7b02d",
-      "ultima_verificacao": "2026-11-17T11:27:05-03:00",
-      "ultima_execucao": "run_2026_11_17_1127",
+      "ultima_verificacao": "2026-11-17T14:51:19-03:00",
+      "ultima_execucao": "run_2026_11_17_1451",
       "primeira_deteccao": "2026-11-17T11:27:05-03:00",
       "id_execucao_primeira": "run_2026_11_17_1127",
       "historico": []
@@ -2092,6 +2116,12 @@
         "h": "sha1:42eebcd236e7b02d",
         "s": null,
         "d": "2026-11-17T11:27:05-03:00",
+        "v": "2026-11-17"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ac_26_2477": {
+        "h": "sha1:256f1673ba33d165",
+        "s": null,
+        "d": "2026-11-17T14:51:19-03:00",
         "v": "2026-11-17"
       }
     },

@@ -137,7 +137,7 @@
   },
   {
    "name": "Comissão Europeia",
-   "events": 20
+   "events": 21
   },
   {
    "name": "Parlamento Europeu",
@@ -147,7 +147,7 @@
  "act_types": [
   {
    "label": "Consulta pública",
-   "events": 19
+   "events": 20
   },
   {
    "label": "Enforcement / sanção",
