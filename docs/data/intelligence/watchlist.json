@@ -107,7 +107,7 @@
   {
    "key": "judicial",
    "label": "Jurisprudência e tribunais da UE",
-   "events": 1
+   "events": 2
   },
   {
    "key": "edps",
@@ -137,7 +137,7 @@
   },
   {
    "name": "Comissão Europeia",
-   "events": 21
+   "events": 22
   },
   {
    "name": "Parlamento Europeu",
@@ -147,7 +147,7 @@
  "act_types": [
   {
    "label": "Consulta pública",
-   "events": 20
+   "events": 21
   },
   {
    "label": "Enforcement / sanção",
@@ -190,12 +190,12 @@
   {
    "slug": "saas",
    "name": "SaaS",
-   "changes": 26
+   "changes": 27
   },
   {
    "slug": "marketplaces",
    "name": "Marketplaces",
-   "changes": 29
+   "changes": 30
   },
   {
    "slug": "saude",
@@ -260,7 +260,7 @@
   {
    "slug": "legaltech",
    "name": "LegalTech",
-   "changes": 1
+   "changes": 2
   },
   {
    "slug": "utilities",

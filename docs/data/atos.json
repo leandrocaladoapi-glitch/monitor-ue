@@ -3,15 +3,63 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 67,
+    "total": 69,
     "por_orgao": {
       "edpb": 22,
-      "eu_commission": 45
+      "eu_commission": 47
     },
-    "indice_total": 67,
-    "execucao": "2026-11-18"
+    "indice_total": 69,
+    "execucao": "2026-11-19"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2427",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Commission decides to refer Greece to the Court of Justice of the European Union for the non-implementation of individual aircraft identification in the field of civil aviation",
+      "descricao": "European Commission Press release Brussels, 19 Nov 2026 Today, the European Commission decided to refer Greece (INFR(2024)2237) to the Court of Justice of the European Union for failing to implement the required aircraft identification technology, as mandated by Commission Implementing Regulation (EU) 2017/373, which governs air traffic management and navigation services.",
+      "data": "2026-11-18",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2427",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:4f612c4d5b163b3f",
+      "ultima_verificacao": "2026-11-19T11:27:29-03:00",
+      "ultima_execucao": "run_2026_11_19_1127",
+      "primeira_deteccao": "2026-11-19T11:27:29-03:00",
+      "id_execucao_primeira": "run_2026_11_19_1127",
+      "historico": []
+    },
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2356",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Almost €24 billion mobilised and 614 projects awarded for their support to critical technologies in Europe, according to Commission report",
+      "descricao": "European Commission Press release Brussels, 19 Nov 2026 Today, the European Commission published the second annual report of the Strategic Technologies for Europe Platform (STEP), covering 2025.",
+      "data": "2026-11-18",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2356",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:d0b8095a570266ae",
+      "ultima_verificacao": "2026-11-19T11:27:29-03:00",
+      "ultima_execucao": "run_2026_11_19_1127",
+      "primeira_deteccao": "2026-11-19T11:27:29-03:00",
+      "id_execucao_primeira": "run_2026_11_19_1127",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ac_26_2477",
       "orgao": "eu_commission",
@@ -2123,6 +2171,18 @@
         "s": null,
         "d": "2026-11-17T14:51:19-03:00",
         "v": "2026-11-17"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2427": {
+        "h": "sha1:4f612c4d5b163b3f",
+        "s": null,
+        "d": "2026-11-19T11:27:29-03:00",
+        "v": "2026-11-19"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2356": {
+        "h": "sha1:d0b8095a570266ae",
+        "s": null,
+        "d": "2026-11-19T11:27:29-03:00",
+        "v": "2026-11-19"
       }
     },
     "eu_parliament": {},

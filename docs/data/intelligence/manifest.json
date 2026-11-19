@@ -1,29 +1,29 @@
 {
  "meta": {
   "generated_from": "data/legislation-eu/*.json",
-  "dataset_execution": "2026-11-18",
-  "reference_date": "2026-11-18",
+  "dataset_execution": "2026-11-19",
+  "reference_date": "2026-11-19",
   "description": "Métricas de qualidade e cobertura da camada de inteligência."
  },
- "events_total": 47,
- "events_published": 47,
+ "events_total": 48,
+ "events_published": 48,
  "events_excluded_low_confidence": 0,
- "events_excluded_no_material_relation": 27,
+ "events_excluded_no_material_relation": 28,
  "events_without_official_source": 0,
  "events_by_priority": {
   "urgent": 17,
   "high": 3,
   "medium": 9,
-  "monitor": 18
+  "monitor": 19
  },
  "events_by_impact": {
   "critical": 17,
   "high": 3,
   "medium": 9,
-  "low": 18
+  "low": 19
  },
  "confidence_min": 0.6,
- "confidence_avg": 0.74,
+ "confidence_avg": 0.737,
  "deadlines_tracked": 41,
  "deadlines_next_90_days": 1,
  "enforcement_cases": 17,
@@ -37,7 +37,7 @@
   },
   {
    "host": "ec.europa.eu",
-   "citations": 21
+   "citations": 22
   },
   {
    "host": "eur-lex.europa.eu",
@@ -52,6 +52,7 @@
  "skipped_no_material_relation": [
   "re_procedimento_ue-2025-2056-ini",
   "re_procedimento_ue-2025-2060-ini",
+  "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-9c4970",
   "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-711475",
   "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-075368",
   "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-604257",
