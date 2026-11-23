@@ -1,11 +1,366 @@
 {
  "meta": {
-  "total": 17,
+  "total": 25,
   "description": "Enforcement monitorado a partir de fontes oficiais (EDPB, EDPS, Comissão e autoridades nacionais citadas nas decisões).",
   "structure": "Evento → empresa/setor → autoridade → base legal → decisão → consequência → lição regulatória.",
   "rule": "A base legal é a indicada pela autoridade na fonte; o monitor não a reinterpreta."
  },
  "cases": [
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-private-ind-c57df5",
+   "event": "Norwegian DPA fines private individual for credit check and publication of personal data without a lawful basis",
+   "date": "2026-11-19",
+   "authority": "EDPB",
+   "company_or_sector": "AdTech",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — princípios (art. 5.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Background information Date of final decision: 16/10/2026 National case Controller: Private individual Legal References: Article 6(1) (Lawfulness of processing) Decision: Administrative fine Key words: Legal basis, Fines, GDPR enforcement, Basic principles Summary of the Decision Origin of the case The Data Protection Authority received a complaint from an individual who had been subject to a credit check carried out by a private individual. The individual had access to a credit information service through their work and had used it to carry out a credit check on the complainant for personal p",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em AdTech, Cloud, E-commerce.",
+   "regulatory_lesson": "Lição regulatória: proteção de dados em produtos digitais é fiscalizada de forma ativa — base legal, transparência e resposta a pedidos de direitos são verificadas na prática.",
+   "affected_sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "AI Governance"
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-private-individual-for-credit-check-and-publication-of-personal-data_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/norwegian-dpa-fines-private-individual-for-credit-check-and-publication-of-personal-data_en"
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-the-norwegian-data-protection-a-53d446",
+   "event": "The Norwegian Data Protection Authority fines Social Garden AS for publishing personal data without a lawful basis",
+   "date": "2026-11-19",
+   "authority": "EDPB",
+   "company_or_sector": "AdTech",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — princípios (art. 5.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Background information Date of final decision: 13/11/2026 Cross-border case One-Stop-Shop Procedure: the decision was taken by national supervisory authorities following the One-Stop-Shop cooperation procedure (OSS) If cross-border, LSA: Norway and CSAs: Sweden, Denmark Controller: Social Garden AS Legal References: Article 6 (Lawfulness of processing), Article 9 (Processing of special categories of personal data) Decision: Administrative fine Key words: Basic principles, Legal basis, Fines, Online platforms, Cooperation between authorities Summary of the Decision Origin of the case The compan",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em AdTech, Cloud, E-commerce.",
+   "regulatory_lesson": "Lição regulatória: proteção de dados em produtos digitais é fiscalizada de forma ativa — base legal, transparência e resposta a pedidos de direitos são verificadas na prática.",
+   "affected_sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "AI Governance"
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/the-norwegian-data-protection-authority-fines-social-garden-as-for-publishing-personal-data_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/the-norwegian-data-protection-authority-fines-social-garden-as-for-publishing-personal-data_en"
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-radiology-cen-e889cb",
+   "event": "Italian DPA fines radiology centre and IT provider a combined EUR 28 000 for exposing patient health data",
+   "date": "2026-11-18",
+   "authority": "EDPB",
+   "company_or_sector": "Saúde",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — princípios (art. 5.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Background information Date of final decision: 07/10/2026 National case Controller: Centro Radiologico Madonna della Bruna S.r.l. Processor: MedStore Saronno S.r.l. Legal References: Article 5 (Principles relating to processing of personal data), Article 25 (Data protection by design and by default), Article 32 (Security of processing) Decision: Administrative fine Key words: Health and research, Fines, Privacy by design and by default, Controller/processor, Personal data breaches, Cybersecurity Summary of the Decision Origin of the case The Italian Data Protection Authority (DPA) received a r",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em Saúde, Cibersegurança, AdTech.",
+   "regulatory_lesson": "Lição regulatória: falha de segurança com exposição de dados gera sanção administrativa além do custo operacional.",
+   "affected_sectors": [
+    "Saúde",
+    "Cibersegurança",
+    "AdTech",
+    "Bancos",
+    "Cloud",
+    "Data Centers",
+    "E-commerce",
+    "Energia"
+   ],
+   "affected_functions": [
+    "Cybersecurity",
+    "Risk",
+    "Engenharia / ML",
+    "Compliance",
+    "Data Protection Officer",
+    "Privacy",
+    "Jurídico",
+    "Data Governance"
+   ],
+   "recommended_actions": [
+    "Testar resposta a incidentes e reporte nos prazos aplicáveis.",
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-radiology-centre-and-it-provider-a-combined-eur-28-000-for-exposing-patient_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/italian-dpa-fines-radiology-centre-and-it-provider-a-combined-eur-28-000-for-exposing-patient_en"
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-meta-eur-805-b9c057",
+   "event": "Italian DPA fines Meta EUR 805 million for unlawful access to Facebook users’ photo galleries",
+   "date": "2026-11-18",
+   "authority": "EDPB",
+   "company_or_sector": "Meta",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — base legal (art. 6.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Background information Date of final decision: 13/11/2026 National case Controller: Meta Platforms Ireland Limited Decision: Administrative fine, Compliance order Key words: Fines, Online platforms Summary of the Decision Origin of the case The Italian Data Protection Authority (DPA) launched an investigation following a complaint submitted in July 2025 by the Bolzano Consumer Protection Centre concerning Facebook's access to users' smartphone photo galleries. The investigation focused on the feature “Get suggestions from your gallery while browsing Facebook”, which displays photos and videos",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em E-commerce, AdTech, Cloud.",
+   "regulatory_lesson": "Lição regulatória: o padrão sancionado (base legal, informação ao titular, controlo interno) deve ser testado na própria operação antes da próxima auditoria.",
+   "affected_sectors": [
+    "E-commerce",
+    "AdTech",
+    "Cloud",
+    "MarTech",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_functions": [
+    "Product",
+    "Marketing",
+    "Jurídico",
+    "Compliance",
+    "Data Governance",
+    "Risk",
+    "Privacy",
+    "Data Protection Officer"
+   ],
+   "recommended_actions": [
+    "Revisar transparência, rotulagem e padrões de interface dos produtos com IA.",
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-meta-eur-805-million-for-unlawful-access-to-facebook-users-photo-galleries_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/italian-dpa-fines-meta-eur-805-million-for-unlawful-access-to-facebook-users-photo-galleries_en"
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-business-scho-065211",
+   "event": "Italian DPA fines Business School EUR 8 000 for unlawful telemarketing and failure to handle data subject request",
+   "date": "2026-11-18",
+   "authority": "EDPB",
+   "company_or_sector": "Educação",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — princípios (art. 5.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Background information Date of final decision: 23/09/2026 Controller: Business School S.r.l. Legal References: Article 5 (Principles relating to processing of personal data), Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 15 (Right to access by the data subject), Article 17 (Right to erasure (‘right to be forgotten’)), Article 21 (Right to object), Article 31 (Co-operation with the supervisory authority) Decision: Administrative fine, Compliance order Key words: Fines, Marketing, Data subjects rights Summary of the",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em Educação, AdTech, Cloud.",
+   "regulatory_lesson": "Lição regulatória: proteção de dados em produtos digitais é fiscalizada de forma ativa — base legal, transparência e resposta a pedidos de direitos são verificadas na prática.",
+   "affected_sectors": [
+    "Educação",
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "AI Governance"
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-business-school-eur-8-000-for-unlawful-telemarketing-and-failure-to-handle_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/italian-dpa-fines-business-school-eur-8-000-for-unlawful-telemarketing-and-failure-to-handle_en"
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-a-company-eur-af883c",
+   "event": "Italian DPA fines a company EUR 25 500 over employee access rights and corporate email accounts",
+   "date": "2026-11-18",
+   "authority": "EDPB",
+   "company_or_sector": "AdTech",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — princípios (art. 5.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Background information Date of final decision: 20/10/2026 National case Controller: Techpartner S.r.l. Legal References: Article 5 (Principles relating to processing of personal data), Article 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), Article 15 (Right to access by the data subject), Decision: Administrative fine, Compliance order Key words: Fines, Basic principles, Data subjects rights Summary of the Decision Origin of the case The Italian Data Protection Authority (DPA) received a complaint from a former employee of Techpar",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em AdTech, Cloud, E-commerce.",
+   "regulatory_lesson": "Lição regulatória: proteção de dados em produtos digitais é fiscalizada de forma ativa — base legal, transparência e resposta a pedidos de direitos são verificadas na prática.",
+   "affected_sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "AI Governance"
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-a-company-eur-25-500-over-employee-access-rights-and-corporate-email_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/italian-dpa-fines-a-company-eur-25-500-over-employee-access-rights-and-corporate-email_en"
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-irish-data-protection-commissio-e8ba8b",
+   "event": "Irish Data Protection Commission fines MTCH EUR 11 million following Inquiry into Tinder users’ personal data requests",
+   "date": "2026-11-17",
+   "authority": "Data Protection Commission (Irlanda)",
+   "company_or_sector": "AdTech",
+   "legal_basis": "Base legal não explicitada no resumo oficial — verificar a decisão na fonte oficial.",
+   "legal_basis_confidence": 0.6,
+   "decision": "Background information Date of final decision: 13/11/2026 National case Controller: MTCH Technology Services Limited (“MTCH”) Legal References: Article 15 (Right to access by the data subject) Decision: Administrative fine, Compliance order Key words: GDPR enforcement, Technology, Accountability, Data subjects rights, Fines Summary of the Decision Origin of the case The Data Protection Commission (DPC) has today announced its final decision following an Inquiry into MTCH Technology Services Limited (“MTCH”), concerning its Tinder service. This own-volition Inquiry was launched by the DPC in Ja",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em AdTech, Cloud, E-commerce.",
+   "regulatory_lesson": "Lição regulatória: proteção de dados em produtos digitais é fiscalizada de forma ativa — base legal, transparência e resposta a pedidos de direitos são verificadas na prática.",
+   "affected_sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "AI Governance"
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais."
+   ],
+   "impact_level": "critical",
+   "priority": "urgent",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/irish-data-protection-commission-fines-mtch-eur-11-million-following-inquiry-into-tinder-users_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/irish-data-protection-commission-fines-mtch-eur-11-million-following-inquiry-into-tinder-users_en"
+   ]
+  },
+  {
+   "id": "re_ato_edpb-edpb-europa-eu-news-edpb-adopts-statement-on-review-73737e",
+   "event": "EDPB adopts statement on review of the Republic of Korea adequacy, processor BCR recommendations, and selects topic for 2027 coordinated enforcement action",
+   "date": "2026-11-11",
+   "authority": "EDPB",
+   "company_or_sector": "AdTech",
+   "legal_basis": "Regulamento (UE) 2016/679 (RGPD) — princípios (art. 5.º) — base legal indicada pela autoridade; confirmar na decisão publicada.",
+   "legal_basis_confidence": 0.8,
+   "decision": "Brussels, 11 November – During its latest plenary, the EDPB has adopted a statement on the first review of the functioning of the adequacy decision of the Republic of Korea and the final version of the recommendations on the application for approval and on the elements and principles to be found in Processor Binding Corporate Rules (BCR-P) . In addition, the Board selected the topic for its sixth coordinated enforcement action (CEF). The EDPB statement on the first review of the Republic of Korea adequacy decision focuses mainly on the assessment of amendments to the Korean data protection leg",
+   "consequence": "Na prática, isto altera expectativas sobre como a organização documenta, avalia e supervisiona o uso de IA em AdTech, Cloud, E-commerce.",
+   "regulatory_lesson": "Lição regulatória: proteção de dados em produtos digitais é fiscalizada de forma ativa — base legal, transparência e resposta a pedidos de direitos são verificadas na prática.",
+   "affected_sectors": [
+    "AdTech",
+    "Cloud",
+    "E-commerce",
+    "Marketplaces",
+    "Provedores de IA",
+    "SaaS",
+    "Saúde"
+   ],
+   "affected_functions": [
+    "Data Protection Officer",
+    "Privacy",
+    "Compliance",
+    "Jurídico",
+    "Data Governance",
+    "Risk",
+    "Cybersecurity",
+    "AI Governance"
+   ],
+   "recommended_actions": [
+    "Atualizar a matriz de risco com o padrão sancionado nesta decisão.",
+    "Testar o controlo correspondente no seu próprio processo e registar o resultado.",
+    "Levar o caso concreto à reunião de compliance com responsável nomeado.",
+    "Mapear as bases legais de cada caso de uso de IA que trata dados pessoais."
+   ],
+   "impact_level": "high",
+   "priority": "high",
+   "confidence": 0.8,
+   "source_url": "https://www.edpb.europa.eu/news/edpb-adopts-statement-on-review-of-the-republic-of-korea-adequacy-processor-bcr_en",
+   "official_sources": [
+    "https://www.edpb.europa.eu/news/edpb-adopts-statement-on-review-of-the-republic-of-korea-adequacy-processor-bcr_en"
+   ]
+  },
   {
    "id": "re_ato_eu-commission-ec-europa-eu-commission-presscorner-detail-d76035",
    "event": "Remarks by Executive Vice-President Virkkunen and Commissioner McGrath on the Digital Fairness Act and a Consumer enforcement initiative",

@@ -52,12 +52,12 @@
   {
    "key": "edpb",
    "label": "EDPB e proteção de dados em IA",
-   "events": 22
+   "events": 31
   },
   {
    "key": "enforcement",
    "label": "Enforcement e sanções",
-   "events": 17
+   "events": 25
   },
   {
    "key": "dsa",
@@ -67,6 +67,11 @@
   {
    "key": "health_data",
    "label": "Dados de saúde e EHDS",
+   "events": 6
+  },
+  {
+   "key": "cybersecurity",
+   "label": "Cibersegurança e resiliência",
    "events": 5
   },
   {
@@ -80,18 +85,13 @@
    "events": 4
   },
   {
-   "key": "cybersecurity",
-   "label": "Cibersegurança e resiliência",
+   "key": "consumer",
+   "label": "Consumidor e transparência",
    "events": 4
   },
   {
    "key": "ai_office",
    "label": "European AI Office",
-   "events": 3
-  },
-  {
-   "key": "consumer",
-   "label": "Consumidor e transparência",
    "events": 3
   },
   {
@@ -133,7 +133,7 @@
  "regulators": [
   {
    "name": "EDPB",
-   "events": 22
+   "events": 32
   },
   {
    "name": "Comissão Europeia",
@@ -146,16 +146,16 @@
  ],
  "act_types": [
   {
+   "label": "Enforcement / sanção",
+   "events": 25
+  },
+  {
    "label": "Consulta pública",
    "events": 21
   },
   {
-   "label": "Enforcement / sanção",
-   "events": 17
-  },
-  {
    "label": "Guideline / orientação",
-   "events": 6
+   "events": 8
   },
   {
    "label": "Regulamento",
@@ -170,62 +170,62 @@
   {
    "slug": "cloud",
    "name": "Cloud",
-   "changes": 29
+   "changes": 39
   },
   {
    "slug": "adtech",
    "name": "AdTech",
-   "changes": 32
+   "changes": 42
   },
   {
    "slug": "ecommerce",
    "name": "E-commerce",
-   "changes": 31
+   "changes": 41
   },
   {
    "slug": "provedores-de-ia",
    "name": "Provedores de IA",
-   "changes": 25
+   "changes": 34
   },
   {
    "slug": "saas",
    "name": "SaaS",
-   "changes": 27
+   "changes": 36
   },
   {
    "slug": "marketplaces",
    "name": "Marketplaces",
-   "changes": 30
+   "changes": 39
   },
   {
    "slug": "saude",
    "name": "Saúde",
-   "changes": 20
+   "changes": 30
   },
   {
    "slug": "bancos",
    "name": "Bancos",
-   "changes": 5
+   "changes": 6
   },
   {
    "slug": "data-centers",
    "name": "Data Centers",
-   "changes": 7
+   "changes": 8
   },
   {
    "slug": "ciberseguranca",
    "name": "Cibersegurança",
-   "changes": 5
+   "changes": 6
   },
   {
    "slug": "energia",
    "name": "Energia",
-   "changes": 6
+   "changes": 7
   },
   {
    "slug": "martech",
    "name": "MarTech",
-   "changes": 10
+   "changes": 11
   },
   {
    "slug": "modelos-de-fundacao",
@@ -248,14 +248,14 @@
    "changes": 2
   },
   {
+   "slug": "educacao",
+   "name": "Educação",
+   "changes": 4
+  },
+  {
    "slug": "fintech",
    "name": "Fintech",
    "changes": 2
-  },
-  {
-   "slug": "educacao",
-   "name": "Educação",
-   "changes": 3
   },
   {
    "slug": "legaltech",

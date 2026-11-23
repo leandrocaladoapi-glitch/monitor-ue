@@ -85,6 +85,12 @@
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
     },
     {
+     "title": "Italian DPA fines radiology centre and IT provider a combined EUR 28 000 for exposing patient health data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-radiology-cen-e889cb",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-radiology-centre-and-it-provider-a-combined-eur-28-000-for-exposing-patient_en"
+    },
+    {
      "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
      "priority": "urgent",
@@ -95,12 +101,6 @@
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
     }
    ],
    "possible_obligations": [
@@ -273,16 +273,16 @@
      "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
     },
     {
-     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+     "title": "Italian DPA fines Meta EUR 805 million for unlawful access to Facebook users’ photo galleries",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-meta-eur-805-b9c057",
      "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-meta-eur-805-million-for-unlawful-access-to-facebook-users-photo-galleries_en"
     },
     {
-     "title": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-iqvia-eur-7-0-c1dcc4",
+     "title": "Italian DPA fines Business School EUR 8 000 for unlawful telemarketing and failure to handle data subject request",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-business-scho-065211",
      "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en"
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-business-school-eur-8-000-for-unlawful-telemarketing-and-failure-to-handle_en"
     }
    ],
    "possible_obligations": [
@@ -487,6 +487,12 @@
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
     },
     {
+     "title": "Italian DPA fines radiology centre and IT provider a combined EUR 28 000 for exposing patient health data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-radiology-cen-e889cb",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-radiology-centre-and-it-provider-a-combined-eur-28-000-for-exposing-patient_en"
+    },
+    {
      "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
      "priority": "urgent",
@@ -497,12 +503,6 @@
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
     }
    ],
    "possible_obligations": [
@@ -662,9 +662,27 @@
      "label": "EU AI Act"
     }
    ],
-   "evidence_status": "sem menção direta no dataset atual",
-   "evidence_matches": [],
-   "related_acts": [],
+   "evidence_status": "menção em fonte oficial do dataset",
+   "evidence_matches": [
+    {
+     "title": "Italian DPA fines Meta EUR 805 million for unlawful access to Facebook users’ photo galleries",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-meta-eur-805-b9c057",
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-meta-eur-805-million-for-unlawful-access-to-facebook-users-photo-galleries_en",
+     "date": "2026-11-18"
+    }
+   ],
+   "related_acts": [
+    {
+     "title": "Italian DPA fines Meta EUR 805 million for unlawful access to Facebook users’ photo galleries",
+     "act_type": "Enforcement / sanção",
+     "stage": "A classificar",
+     "date": "2026-11-18",
+     "priority": "urgent",
+     "impact_level": "critical",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-meta-eur-805-b9c057",
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-meta-eur-805-million-for-unlawful-access-to-facebook-users-photo-galleries_en"
+    }
+   ],
    "exposure_themes": [
     {
      "title": "Failure to respect the rights of individuals: The CNIL fined EXTIA EUR 300 000",
@@ -685,6 +703,12 @@
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
     },
     {
+     "title": "Italian DPA fines radiology centre and IT provider a combined EUR 28 000 for exposing patient health data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-radiology-cen-e889cb",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-radiology-centre-and-it-provider-a-combined-eur-28-000-for-exposing-patient_en"
+    },
+    {
      "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
      "priority": "urgent",
@@ -695,12 +719,6 @@
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
     }
    ],
    "possible_obligations": [
@@ -882,6 +900,12 @@
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
     },
     {
+     "title": "Italian DPA fines radiology centre and IT provider a combined EUR 28 000 for exposing patient health data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-radiology-cen-e889cb",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-radiology-centre-and-it-provider-a-combined-eur-28-000-for-exposing-patient_en"
+    },
+    {
      "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
      "priority": "urgent",
@@ -892,12 +916,6 @@
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
     }
    ],
    "possible_obligations": [
@@ -1073,6 +1091,12 @@
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
     },
     {
+     "title": "Italian DPA fines radiology centre and IT provider a combined EUR 28 000 for exposing patient health data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-radiology-cen-e889cb",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-radiology-centre-and-it-provider-a-combined-eur-28-000-for-exposing-patient_en"
+    },
+    {
      "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
      "priority": "urgent",
@@ -1083,12 +1107,6 @@
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
     }
    ],
    "possible_obligations": [
@@ -1257,6 +1275,12 @@
      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R1744"
     },
     {
+     "title": "Italian DPA fines radiology centre and IT provider a combined EUR 28 000 for exposing patient health data",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-radiology-cen-e889cb",
+     "priority": "urgent",
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-radiology-centre-and-it-provider-a-combined-eur-28-000-for-exposing-patient_en"
+    },
+    {
      "title": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines",
      "event_id": "re_ato_edpb-edpb-europa-eu-news-edpb-harmonises-fining-methodol-afc598",
      "priority": "urgent",
@@ -1267,12 +1291,6 @@
      "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-07e3b4",
      "priority": "urgent",
      "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-eur-500-000_en"
-    },
-    {
-     "title": "Health data breach: the CNIL fined Hôpital Privé de la Loire 500 000 EUR",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-health-data-breach-the-cnil-fin-4e4df5",
-     "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/health-data-breach-the-cnil-fined-hopital-prive-de-la-loire-500-000-eur_en"
     }
    ],
    "possible_obligations": [
@@ -1457,16 +1475,16 @@
      "source_url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en"
     },
     {
-     "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-norwegian-dpa-fines-xandr-eur-8-b9ae2d",
+     "title": "Italian DPA fines Meta EUR 805 million for unlawful access to Facebook users’ photo galleries",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-meta-eur-805-b9c057",
      "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-meta-eur-805-million-for-unlawful-access-to-facebook-users-photo-galleries_en"
     },
     {
-     "title": "Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data",
-     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-iqvia-eur-7-0-c1dcc4",
+     "title": "Italian DPA fines Business School EUR 8 000 for unlawful telemarketing and failure to handle data subject request",
+     "event_id": "re_ato_edpb-edpb-europa-eu-news-italian-dpa-fines-business-scho-065211",
      "priority": "urgent",
-     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-iqvia-eur-7-000-000-for-unlawful-processing-of-patients-health-data_en"
+     "source_url": "https://www.edpb.europa.eu/news/italian-dpa-fines-business-school-eur-8-000-for-unlawful-telemarketing-and-failure-to-handle_en"
     }
    ],
    "possible_obligations": [
