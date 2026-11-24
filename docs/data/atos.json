@@ -9,7 +9,7 @@
       "eu_commission": 47
     },
     "indice_total": 79,
-    "execucao": "2026-11-23"
+    "execucao": "2026-11-24"
   },
   "atos": [
     {
@@ -30,8 +30,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:7a4113c888d2a6e2",
-      "ultima_verificacao": "2026-11-23T17:31:13-03:00",
-      "ultima_execucao": "run_2026_11_23_1731",
+      "ultima_verificacao": "2026-11-24T12:54:31-03:00",
+      "ultima_execucao": "run_2026_11_24_1254",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -54,8 +54,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:b6e3c64e05a9661e",
-      "ultima_verificacao": "2026-11-23T17:31:13-03:00",
-      "ultima_execucao": "run_2026_11_23_1731",
+      "ultima_verificacao": "2026-11-24T12:54:31-03:00",
+      "ultima_execucao": "run_2026_11_24_1254",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -78,8 +78,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:9caccb5b75359281",
-      "ultima_verificacao": "2026-11-23T17:31:13-03:00",
-      "ultima_execucao": "run_2026_11_23_1731",
+      "ultima_verificacao": "2026-11-24T12:54:31-03:00",
+      "ultima_execucao": "run_2026_11_24_1254",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -102,8 +102,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:7b85eaf69a4b6bba",
-      "ultima_verificacao": "2026-11-23T17:31:13-03:00",
-      "ultima_execucao": "run_2026_11_23_1731",
+      "ultima_verificacao": "2026-11-24T12:54:31-03:00",
+      "ultima_execucao": "run_2026_11_24_1254",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -126,8 +126,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:59dde5b1d4ffa78a",
-      "ultima_verificacao": "2026-11-23T17:31:13-03:00",
-      "ultima_execucao": "run_2026_11_23_1731",
+      "ultima_verificacao": "2026-11-24T12:54:31-03:00",
+      "ultima_execucao": "run_2026_11_24_1254",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -150,8 +150,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:7320fdde43a19fd4",
-      "ultima_verificacao": "2026-11-23T17:31:13-03:00",
-      "ultima_execucao": "run_2026_11_23_1731",
+      "ultima_verificacao": "2026-11-24T12:54:31-03:00",
+      "ultima_execucao": "run_2026_11_24_1254",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -174,8 +174,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:65ea6c22c5bba18a",
-      "ultima_verificacao": "2026-11-23T17:31:13-03:00",
-      "ultima_execucao": "run_2026_11_23_1731",
+      "ultima_verificacao": "2026-11-24T12:54:31-03:00",
+      "ultima_execucao": "run_2026_11_24_1254",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -246,8 +246,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:817efc74c48efa7d",
-      "ultima_verificacao": "2026-11-23T17:31:13-03:00",
-      "ultima_execucao": "run_2026_11_23_1731",
+      "ultima_verificacao": "2026-11-24T12:54:31-03:00",
+      "ultima_execucao": "run_2026_11_24_1254",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -342,8 +342,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:edfec22c9771da7e",
-      "ultima_verificacao": "2026-11-23T17:31:13-03:00",
-      "ultima_execucao": "run_2026_11_23_1731",
+      "ultima_verificacao": "2026-11-24T12:54:31-03:00",
+      "ultima_execucao": "run_2026_11_24_1254",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -414,8 +414,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:abab054c2c0335e3",
-      "ultima_verificacao": "2026-11-23T17:31:13-03:00",
-      "ultima_execucao": "run_2026_11_23_1731",
+      "ultima_verificacao": "2026-11-24T12:54:31-03:00",
+      "ultima_execucao": "run_2026_11_24_1254",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -2563,61 +2563,61 @@
         "h": "sha1:7a4113c888d2a6e2",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-23"
+        "v": "2026-11-24"
       },
       "edpb_edpb_europa_eu_news_edpb_and_dpas_from_countries_and_organisation_with_eu_adequacy_decision_take_stock_of_prog": {
         "h": "sha1:b6e3c64e05a9661e",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-23"
+        "v": "2026-11-24"
       },
       "edpb_edpb_europa_eu_news_the_norwegian_data_protection_authority_fines_social_garden_as_for_publishing_personal_dat": {
         "h": "sha1:9caccb5b75359281",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-23"
+        "v": "2026-11-24"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_a_company_eur_25_500_over_employee_access_rights_and_corporate_email_en": {
         "h": "sha1:7b85eaf69a4b6bba",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-23"
+        "v": "2026-11-24"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_meta_eur_805_million_for_unlawful_access_to_facebook_users_photo_galleri": {
         "h": "sha1:59dde5b1d4ffa78a",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-23"
+        "v": "2026-11-24"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_radiology_centre_and_it_provider_a_combined_eur_28_000_for_exposing_pati": {
         "h": "sha1:7320fdde43a19fd4",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-23"
+        "v": "2026-11-24"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_business_school_eur_8_000_for_unlawful_telemarketing_and_failure_to_hand": {
         "h": "sha1:65ea6c22c5bba18a",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-23"
+        "v": "2026-11-24"
       },
       "edpb_edpb_europa_eu_news_irish_data_protection_commission_fines_mtch_eur_11_million_following_inquiry_into_tinder_u": {
         "h": "sha1:817efc74c48efa7d",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-23"
+        "v": "2026-11-24"
       },
       "edpb_edpb_europa_eu_news_edpb_supports_use_of_other_models_of_contractual_clauses_for_onward_transfers_of_personal_": {
         "h": "sha1:edfec22c9771da7e",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-23"
+        "v": "2026-11-24"
       },
       "edpb_edpb_europa_eu_news_edpb_adopts_statement_on_review_of_the_republic_of_korea_adequacy_processor_bcr_en": {
         "h": "sha1:abab054c2c0335e3",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-23"
+        "v": "2026-11-24"
       }
     },
     "edps": {}
