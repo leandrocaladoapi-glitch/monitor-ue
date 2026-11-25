@@ -3,15 +3,39 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 79,
+    "total": 80,
     "por_orgao": {
       "edpb": 32,
-      "eu_commission": 47
+      "eu_commission": 48
     },
-    "indice_total": 79,
-    "execucao": "2026-11-24"
+    "indice_total": 80,
+    "execucao": "2026-11-25"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2567",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Commission proposes Quantum Act and new Sovereign Tech Equity Fund to strengthen Europe's industrial capacity and security",
+      "descricao": "European Commission Press release Strasbourg, 25 Nov 2026 The European Commission today proposed the Quantum Act, a new framework to help turn Europe's quantum research into products and services, strengthen supply chains and prepare Europe's digital systems for post-quantum cryptography. The proposal also lays the groundwork for the Sovereign Tech Equity Fund (STEF).",
+      "data": "2026-11-24",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2567",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:afc4b96f4e7fa9b1",
+      "ultima_verificacao": "2026-11-25T12:37:51-03:00",
+      "ultima_execucao": "run_2026_11_25_1237",
+      "primeira_deteccao": "2026-11-25T12:37:51-03:00",
+      "id_execucao_primeira": "run_2026_11_25_1237",
+      "historico": []
+    },
     {
       "id": "edpb_edpb_europa_eu_news_norwegian_dpa_fines_private_individual_for_credit_check_and_publication_of_personal_data_e",
       "orgao": "edpb",
@@ -30,8 +54,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:7a4113c888d2a6e2",
-      "ultima_verificacao": "2026-11-24T16:40:57-03:00",
-      "ultima_execucao": "run_2026_11_24_1640",
+      "ultima_verificacao": "2026-11-25T12:37:51-03:00",
+      "ultima_execucao": "run_2026_11_25_1237",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -54,8 +78,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:b6e3c64e05a9661e",
-      "ultima_verificacao": "2026-11-24T16:40:57-03:00",
-      "ultima_execucao": "run_2026_11_24_1640",
+      "ultima_verificacao": "2026-11-25T12:37:51-03:00",
+      "ultima_execucao": "run_2026_11_25_1237",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -78,8 +102,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:9caccb5b75359281",
-      "ultima_verificacao": "2026-11-24T16:40:57-03:00",
-      "ultima_execucao": "run_2026_11_24_1640",
+      "ultima_verificacao": "2026-11-25T12:37:51-03:00",
+      "ultima_execucao": "run_2026_11_25_1237",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -102,8 +126,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:7b85eaf69a4b6bba",
-      "ultima_verificacao": "2026-11-24T16:40:57-03:00",
-      "ultima_execucao": "run_2026_11_24_1640",
+      "ultima_verificacao": "2026-11-25T12:37:51-03:00",
+      "ultima_execucao": "run_2026_11_25_1237",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -126,8 +150,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:59dde5b1d4ffa78a",
-      "ultima_verificacao": "2026-11-24T16:40:57-03:00",
-      "ultima_execucao": "run_2026_11_24_1640",
+      "ultima_verificacao": "2026-11-25T12:37:51-03:00",
+      "ultima_execucao": "run_2026_11_25_1237",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -150,8 +174,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:7320fdde43a19fd4",
-      "ultima_verificacao": "2026-11-24T16:40:57-03:00",
-      "ultima_execucao": "run_2026_11_24_1640",
+      "ultima_verificacao": "2026-11-25T12:37:51-03:00",
+      "ultima_execucao": "run_2026_11_25_1237",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -174,8 +198,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:65ea6c22c5bba18a",
-      "ultima_verificacao": "2026-11-24T16:40:57-03:00",
-      "ultima_execucao": "run_2026_11_24_1640",
+      "ultima_verificacao": "2026-11-25T12:37:51-03:00",
+      "ultima_execucao": "run_2026_11_25_1237",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -246,8 +270,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:817efc74c48efa7d",
-      "ultima_verificacao": "2026-11-24T16:40:57-03:00",
-      "ultima_execucao": "run_2026_11_24_1640",
+      "ultima_verificacao": "2026-11-25T12:37:51-03:00",
+      "ultima_execucao": "run_2026_11_25_1237",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -342,8 +366,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:edfec22c9771da7e",
-      "ultima_verificacao": "2026-11-24T16:40:57-03:00",
-      "ultima_execucao": "run_2026_11_24_1640",
+      "ultima_verificacao": "2026-11-25T12:37:51-03:00",
+      "ultima_execucao": "run_2026_11_25_1237",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -414,8 +438,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:abab054c2c0335e3",
-      "ultima_verificacao": "2026-11-24T16:40:57-03:00",
-      "ultima_execucao": "run_2026_11_24_1640",
+      "ultima_verificacao": "2026-11-25T12:37:51-03:00",
+      "ultima_execucao": "run_2026_11_25_1237",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -2423,6 +2447,12 @@
         "s": null,
         "d": "2026-11-19T11:27:29-03:00",
         "v": "2026-11-19"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2567": {
+        "h": "sha1:afc4b96f4e7fa9b1",
+        "s": null,
+        "d": "2026-11-25T12:37:51-03:00",
+        "v": "2026-11-25"
       }
     },
     "eu_parliament": {},
@@ -2563,61 +2593,61 @@
         "h": "sha1:7a4113c888d2a6e2",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-24"
+        "v": "2026-11-25"
       },
       "edpb_edpb_europa_eu_news_edpb_and_dpas_from_countries_and_organisation_with_eu_adequacy_decision_take_stock_of_prog": {
         "h": "sha1:b6e3c64e05a9661e",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-24"
+        "v": "2026-11-25"
       },
       "edpb_edpb_europa_eu_news_the_norwegian_data_protection_authority_fines_social_garden_as_for_publishing_personal_dat": {
         "h": "sha1:9caccb5b75359281",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-24"
+        "v": "2026-11-25"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_a_company_eur_25_500_over_employee_access_rights_and_corporate_email_en": {
         "h": "sha1:7b85eaf69a4b6bba",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-24"
+        "v": "2026-11-25"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_meta_eur_805_million_for_unlawful_access_to_facebook_users_photo_galleri": {
         "h": "sha1:59dde5b1d4ffa78a",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-24"
+        "v": "2026-11-25"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_radiology_centre_and_it_provider_a_combined_eur_28_000_for_exposing_pati": {
         "h": "sha1:7320fdde43a19fd4",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-24"
+        "v": "2026-11-25"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_business_school_eur_8_000_for_unlawful_telemarketing_and_failure_to_hand": {
         "h": "sha1:65ea6c22c5bba18a",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-24"
+        "v": "2026-11-25"
       },
       "edpb_edpb_europa_eu_news_irish_data_protection_commission_fines_mtch_eur_11_million_following_inquiry_into_tinder_u": {
         "h": "sha1:817efc74c48efa7d",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-24"
+        "v": "2026-11-25"
       },
       "edpb_edpb_europa_eu_news_edpb_supports_use_of_other_models_of_contractual_clauses_for_onward_transfers_of_personal_": {
         "h": "sha1:edfec22c9771da7e",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-24"
+        "v": "2026-11-25"
       },
       "edpb_edpb_europa_eu_news_edpb_adopts_statement_on_review_of_the_republic_of_korea_adequacy_processor_bcr_en": {
         "h": "sha1:abab054c2c0335e3",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-24"
+        "v": "2026-11-25"
       }
     },
     "edps": {}
