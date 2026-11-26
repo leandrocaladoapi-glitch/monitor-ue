@@ -3,15 +3,63 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 81,
+    "total": 83,
     "por_orgao": {
-      "edpb": 32,
-      "eu_commission": 49
+      "edpb": 33,
+      "eu_commission": 50
     },
-    "indice_total": 81,
-    "execucao": "2026-11-25"
+    "indice_total": 83,
+    "execucao": "2026-11-26"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2594",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Temu commits to complying with EU consumer protection rules following action by national authorities",
+      "descricao": "European Commission Press release Brussels, 26 Nov 2026 Following a coordinated action by the European Commission and the Consumer Protection Cooperation (CPC) Network, the online marketplace Temu has committed to bring several of its commercial practices in line with EU consumer protection laws. The CPC Network accepted Temu's commitments today.",
+      "data": "2026-11-26",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2594",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:6a64844fb208b0f5",
+      "ultima_verificacao": "2026-11-26T12:19:35-03:00",
+      "ultima_execucao": "run_2026_11_26_1219",
+      "primeira_deteccao": "2026-11-26T12:19:35-03:00",
+      "id_execucao_primeira": "run_2026_11_26_1219",
+      "historico": []
+    },
+    {
+      "id": "edpb_edpb_europa_eu_news_hellenic_dpa_fines_teleperformance_greece_eur_100_000_for_gdpr_breaches_en",
+      "orgao": "edpb",
+      "tipo": "orientacao",
+      "titulo": "Hellenic DPA fines Teleperformance Greece EUR 100 000 for GDPR breaches",
+      "descricao": "Background information Date of final decision: 05/10/2026 National case Controller: TELEPERFORMANCE GREECE Legal References: Articles 5 (Principles relating to processing of personal data), 12 (Transparent information, communication and modalities for the exercise of the rights of the data subject), 13 (Information to be provided where personal data are collected from the data subject), 15 (Right of access by the data subject), 17 (Right to erasure (‘right to be forgotten’)), and 32 (Security of processing) Decision: Administrative fine Key words: Fines Summary of the Decision Origin of the ca",
+      "data": "2026-11-25",
+      "url_oficial": "https://www.edpb.europa.eu/news/hellenic-dpa-fines-teleperformance-greece-eur-100-000-for-gdpr-breaches_en",
+      "fonte": "EDPB — European Data Protection Board — notícias e guidelines (RSS oficial)",
+      "canais": [
+        "notícias e guidelines (RSS oficial)"
+      ],
+      "relevancia": "forte",
+      "revisao_pendente": false,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:fddcdc44097b5446",
+      "ultima_verificacao": "2026-11-26T12:19:35-03:00",
+      "ultima_execucao": "run_2026_11_26_1219",
+      "primeira_deteccao": "2026-11-26T12:19:35-03:00",
+      "id_execucao_primeira": "run_2026_11_26_1219",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2590",
       "orgao": "eu_commission",
@@ -30,8 +78,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:9ea8505bd819eb38",
-      "ultima_verificacao": "2026-11-25T15:48:53-03:00",
-      "ultima_execucao": "run_2026_11_25_1548",
+      "ultima_verificacao": "2026-11-26T12:19:35-03:00",
+      "ultima_execucao": "run_2026_11_26_1219",
       "primeira_deteccao": "2026-11-25T15:48:53-03:00",
       "id_execucao_primeira": "run_2026_11_25_1548",
       "historico": []
@@ -78,8 +126,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:7a4113c888d2a6e2",
-      "ultima_verificacao": "2026-11-25T15:48:53-03:00",
-      "ultima_execucao": "run_2026_11_25_1548",
+      "ultima_verificacao": "2026-11-26T12:19:35-03:00",
+      "ultima_execucao": "run_2026_11_26_1219",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -102,8 +150,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:b6e3c64e05a9661e",
-      "ultima_verificacao": "2026-11-25T15:48:53-03:00",
-      "ultima_execucao": "run_2026_11_25_1548",
+      "ultima_verificacao": "2026-11-26T12:19:35-03:00",
+      "ultima_execucao": "run_2026_11_26_1219",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -126,8 +174,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:9caccb5b75359281",
-      "ultima_verificacao": "2026-11-25T15:48:53-03:00",
-      "ultima_execucao": "run_2026_11_25_1548",
+      "ultima_verificacao": "2026-11-26T12:19:35-03:00",
+      "ultima_execucao": "run_2026_11_26_1219",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -150,8 +198,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:7b85eaf69a4b6bba",
-      "ultima_verificacao": "2026-11-25T15:48:53-03:00",
-      "ultima_execucao": "run_2026_11_25_1548",
+      "ultima_verificacao": "2026-11-26T12:19:35-03:00",
+      "ultima_execucao": "run_2026_11_26_1219",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -174,8 +222,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:59dde5b1d4ffa78a",
-      "ultima_verificacao": "2026-11-25T15:48:53-03:00",
-      "ultima_execucao": "run_2026_11_25_1548",
+      "ultima_verificacao": "2026-11-26T12:19:35-03:00",
+      "ultima_execucao": "run_2026_11_26_1219",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -198,8 +246,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:7320fdde43a19fd4",
-      "ultima_verificacao": "2026-11-25T15:48:53-03:00",
-      "ultima_execucao": "run_2026_11_25_1548",
+      "ultima_verificacao": "2026-11-26T12:19:35-03:00",
+      "ultima_execucao": "run_2026_11_26_1219",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -222,8 +270,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:65ea6c22c5bba18a",
-      "ultima_verificacao": "2026-11-25T15:48:53-03:00",
-      "ultima_execucao": "run_2026_11_25_1548",
+      "ultima_verificacao": "2026-11-26T12:19:35-03:00",
+      "ultima_execucao": "run_2026_11_26_1219",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -294,8 +342,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:817efc74c48efa7d",
-      "ultima_verificacao": "2026-11-25T15:48:53-03:00",
-      "ultima_execucao": "run_2026_11_25_1548",
+      "ultima_verificacao": "2026-11-26T12:19:35-03:00",
+      "ultima_execucao": "run_2026_11_26_1219",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -390,8 +438,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:edfec22c9771da7e",
-      "ultima_verificacao": "2026-11-25T15:48:53-03:00",
-      "ultima_execucao": "run_2026_11_25_1548",
+      "ultima_verificacao": "2026-11-26T12:19:35-03:00",
+      "ultima_execucao": "run_2026_11_26_1219",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -2482,7 +2530,13 @@
         "h": "sha1:9ea8505bd819eb38",
         "s": null,
         "d": "2026-11-25T15:48:53-03:00",
-        "v": "2026-11-25"
+        "v": "2026-11-26"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2594": {
+        "h": "sha1:6a64844fb208b0f5",
+        "s": null,
+        "d": "2026-11-26T12:19:35-03:00",
+        "v": "2026-11-26"
       }
     },
     "eu_parliament": {},
@@ -2623,61 +2677,67 @@
         "h": "sha1:7a4113c888d2a6e2",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-25"
+        "v": "2026-11-26"
       },
       "edpb_edpb_europa_eu_news_edpb_and_dpas_from_countries_and_organisation_with_eu_adequacy_decision_take_stock_of_prog": {
         "h": "sha1:b6e3c64e05a9661e",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-25"
+        "v": "2026-11-26"
       },
       "edpb_edpb_europa_eu_news_the_norwegian_data_protection_authority_fines_social_garden_as_for_publishing_personal_dat": {
         "h": "sha1:9caccb5b75359281",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-25"
+        "v": "2026-11-26"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_a_company_eur_25_500_over_employee_access_rights_and_corporate_email_en": {
         "h": "sha1:7b85eaf69a4b6bba",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-25"
+        "v": "2026-11-26"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_meta_eur_805_million_for_unlawful_access_to_facebook_users_photo_galleri": {
         "h": "sha1:59dde5b1d4ffa78a",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-25"
+        "v": "2026-11-26"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_radiology_centre_and_it_provider_a_combined_eur_28_000_for_exposing_pati": {
         "h": "sha1:7320fdde43a19fd4",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-25"
+        "v": "2026-11-26"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_business_school_eur_8_000_for_unlawful_telemarketing_and_failure_to_hand": {
         "h": "sha1:65ea6c22c5bba18a",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-25"
+        "v": "2026-11-26"
       },
       "edpb_edpb_europa_eu_news_irish_data_protection_commission_fines_mtch_eur_11_million_following_inquiry_into_tinder_u": {
         "h": "sha1:817efc74c48efa7d",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-25"
+        "v": "2026-11-26"
       },
       "edpb_edpb_europa_eu_news_edpb_supports_use_of_other_models_of_contractual_clauses_for_onward_transfers_of_personal_": {
         "h": "sha1:edfec22c9771da7e",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-25"
+        "v": "2026-11-26"
       },
       "edpb_edpb_europa_eu_news_edpb_adopts_statement_on_review_of_the_republic_of_korea_adequacy_processor_bcr_en": {
         "h": "sha1:abab054c2c0335e3",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
         "v": "2026-11-25"
+      },
+      "edpb_edpb_europa_eu_news_hellenic_dpa_fines_teleperformance_greece_eur_100_000_for_gdpr_breaches_en": {
+        "h": "sha1:fddcdc44097b5446",
+        "s": null,
+        "d": "2026-11-26T12:19:35-03:00",
+        "v": "2026-11-26"
       }
     },
     "edps": {}
