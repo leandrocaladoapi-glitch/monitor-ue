@@ -3,15 +3,39 @@
     "descricao": "Atos, publicações, consultas e documentos das fontes oficiais da União Europeia (European AI Office, EUR-Lex, Conselho, Comissão, Parlamento, EDPB e EDPS), coletados automaticamente.",
     "chave_primaria": "id estável derivado da URL oficial",
     "nota": "Todo item traz URL oficial, instituição, fonte e as datas de detecção. A coleta usa o inglês como idioma técnico e deduplica por identificador oficial (CELEX, número de procedimento, URL canônica). Registros com relevância 'revisar' aguardam curadoria editorial. Nada é estimado.",
-    "total": 83,
+    "total": 84,
     "por_orgao": {
       "edpb": 33,
-      "eu_commission": 50
+      "eu_commission": 51
     },
-    "indice_total": 83,
-    "execucao": "2026-11-26"
+    "indice_total": 84,
+    "execucao": "2026-11-27"
   },
   "atos": [
+    {
+      "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2613",
+      "orgao": "eu_commission",
+      "tipo": "comunicado",
+      "titulo": "Keynote speech by Commissioner Albuquerque at the Training Day' of the 10th Anniversary of the ECB Simulation Conference for University Students",
+      "descricao": "European Commission Speech Online, 27 Nov 2026 Good morning, everyone. I am delighted to join you for the opening of the 10th ECB Simulation Conference. Let me begin by congratulating the organisers on a dec...",
+      "data": "2026-11-27",
+      "url_oficial": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2613",
+      "fonte": "Comissão Europeia — Press Corner e Have Your Say — comunicados oficiais (Press Corner, RSS)",
+      "canais": [
+        "comunicados oficiais (Press Corner, RSS)"
+      ],
+      "relevancia": "revisar",
+      "revisao_pendente": true,
+      "situacao": null,
+      "tipo_ato": null,
+      "hierarquia": null,
+      "texto_hash": "sha1:3ae1cd250c0ec7e0",
+      "ultima_verificacao": "2026-11-27T12:07:23-03:00",
+      "ultima_execucao": "run_2026_11_27_1207",
+      "primeira_deteccao": "2026-11-27T12:07:23-03:00",
+      "id_execucao_primeira": "run_2026_11_27_1207",
+      "historico": []
+    },
     {
       "id": "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2594",
       "orgao": "eu_commission",
@@ -30,8 +54,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:6a64844fb208b0f5",
-      "ultima_verificacao": "2026-11-26T15:37:12-03:00",
-      "ultima_execucao": "run_2026_11_26_1537",
+      "ultima_verificacao": "2026-11-27T12:07:23-03:00",
+      "ultima_execucao": "run_2026_11_27_1207",
       "primeira_deteccao": "2026-11-26T12:19:35-03:00",
       "id_execucao_primeira": "run_2026_11_26_1219",
       "historico": []
@@ -54,8 +78,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:fddcdc44097b5446",
-      "ultima_verificacao": "2026-11-26T15:37:12-03:00",
-      "ultima_execucao": "run_2026_11_26_1537",
+      "ultima_verificacao": "2026-11-27T12:07:23-03:00",
+      "ultima_execucao": "run_2026_11_27_1207",
       "primeira_deteccao": "2026-11-26T12:19:35-03:00",
       "id_execucao_primeira": "run_2026_11_26_1219",
       "historico": []
@@ -78,8 +102,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:9ea8505bd819eb38",
-      "ultima_verificacao": "2026-11-26T15:37:12-03:00",
-      "ultima_execucao": "run_2026_11_26_1537",
+      "ultima_verificacao": "2026-11-27T12:07:23-03:00",
+      "ultima_execucao": "run_2026_11_27_1207",
       "primeira_deteccao": "2026-11-25T15:48:53-03:00",
       "id_execucao_primeira": "run_2026_11_25_1548",
       "historico": []
@@ -126,8 +150,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:7a4113c888d2a6e2",
-      "ultima_verificacao": "2026-11-26T15:37:12-03:00",
-      "ultima_execucao": "run_2026_11_26_1537",
+      "ultima_verificacao": "2026-11-27T12:07:23-03:00",
+      "ultima_execucao": "run_2026_11_27_1207",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -150,8 +174,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:b6e3c64e05a9661e",
-      "ultima_verificacao": "2026-11-26T15:37:12-03:00",
-      "ultima_execucao": "run_2026_11_26_1537",
+      "ultima_verificacao": "2026-11-27T12:07:23-03:00",
+      "ultima_execucao": "run_2026_11_27_1207",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -174,8 +198,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:9caccb5b75359281",
-      "ultima_verificacao": "2026-11-26T15:37:12-03:00",
-      "ultima_execucao": "run_2026_11_26_1537",
+      "ultima_verificacao": "2026-11-27T12:07:23-03:00",
+      "ultima_execucao": "run_2026_11_27_1207",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -198,8 +222,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:7b85eaf69a4b6bba",
-      "ultima_verificacao": "2026-11-26T15:37:12-03:00",
-      "ultima_execucao": "run_2026_11_26_1537",
+      "ultima_verificacao": "2026-11-27T12:07:23-03:00",
+      "ultima_execucao": "run_2026_11_27_1207",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -222,8 +246,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:59dde5b1d4ffa78a",
-      "ultima_verificacao": "2026-11-26T15:37:12-03:00",
-      "ultima_execucao": "run_2026_11_26_1537",
+      "ultima_verificacao": "2026-11-27T12:07:23-03:00",
+      "ultima_execucao": "run_2026_11_27_1207",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -246,8 +270,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:7320fdde43a19fd4",
-      "ultima_verificacao": "2026-11-26T15:37:12-03:00",
-      "ultima_execucao": "run_2026_11_26_1537",
+      "ultima_verificacao": "2026-11-27T12:07:23-03:00",
+      "ultima_execucao": "run_2026_11_27_1207",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -270,8 +294,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:65ea6c22c5bba18a",
-      "ultima_verificacao": "2026-11-26T15:37:12-03:00",
-      "ultima_execucao": "run_2026_11_26_1537",
+      "ultima_verificacao": "2026-11-27T12:07:23-03:00",
+      "ultima_execucao": "run_2026_11_27_1207",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -342,8 +366,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:817efc74c48efa7d",
-      "ultima_verificacao": "2026-11-26T15:37:12-03:00",
-      "ultima_execucao": "run_2026_11_26_1537",
+      "ultima_verificacao": "2026-11-27T12:07:23-03:00",
+      "ultima_execucao": "run_2026_11_27_1207",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -438,8 +462,8 @@
       "tipo_ato": null,
       "hierarquia": null,
       "texto_hash": "sha1:edfec22c9771da7e",
-      "ultima_verificacao": "2026-11-26T15:37:12-03:00",
-      "ultima_execucao": "run_2026_11_26_1537",
+      "ultima_verificacao": "2026-11-27T12:07:23-03:00",
+      "ultima_execucao": "run_2026_11_27_1207",
       "primeira_deteccao": "2026-11-23T12:59:52-03:00",
       "id_execucao_primeira": "run_2026_11_23_1259",
       "historico": []
@@ -2530,13 +2554,19 @@
         "h": "sha1:9ea8505bd819eb38",
         "s": null,
         "d": "2026-11-25T15:48:53-03:00",
-        "v": "2026-11-26"
+        "v": "2026-11-27"
       },
       "eu_commission_ec_europa_eu_commission_presscorner_detail_en_ip_26_2594": {
         "h": "sha1:6a64844fb208b0f5",
         "s": null,
         "d": "2026-11-26T12:19:35-03:00",
-        "v": "2026-11-26"
+        "v": "2026-11-27"
+      },
+      "eu_commission_ec_europa_eu_commission_presscorner_detail_en_speech_26_2613": {
+        "h": "sha1:3ae1cd250c0ec7e0",
+        "s": null,
+        "d": "2026-11-27T12:07:23-03:00",
+        "v": "2026-11-27"
       }
     },
     "eu_parliament": {},
@@ -2677,55 +2707,55 @@
         "h": "sha1:7a4113c888d2a6e2",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-26"
+        "v": "2026-11-27"
       },
       "edpb_edpb_europa_eu_news_edpb_and_dpas_from_countries_and_organisation_with_eu_adequacy_decision_take_stock_of_prog": {
         "h": "sha1:b6e3c64e05a9661e",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-26"
+        "v": "2026-11-27"
       },
       "edpb_edpb_europa_eu_news_the_norwegian_data_protection_authority_fines_social_garden_as_for_publishing_personal_dat": {
         "h": "sha1:9caccb5b75359281",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-26"
+        "v": "2026-11-27"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_a_company_eur_25_500_over_employee_access_rights_and_corporate_email_en": {
         "h": "sha1:7b85eaf69a4b6bba",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-26"
+        "v": "2026-11-27"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_meta_eur_805_million_for_unlawful_access_to_facebook_users_photo_galleri": {
         "h": "sha1:59dde5b1d4ffa78a",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-26"
+        "v": "2026-11-27"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_radiology_centre_and_it_provider_a_combined_eur_28_000_for_exposing_pati": {
         "h": "sha1:7320fdde43a19fd4",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-26"
+        "v": "2026-11-27"
       },
       "edpb_edpb_europa_eu_news_italian_dpa_fines_business_school_eur_8_000_for_unlawful_telemarketing_and_failure_to_hand": {
         "h": "sha1:65ea6c22c5bba18a",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-26"
+        "v": "2026-11-27"
       },
       "edpb_edpb_europa_eu_news_irish_data_protection_commission_fines_mtch_eur_11_million_following_inquiry_into_tinder_u": {
         "h": "sha1:817efc74c48efa7d",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-26"
+        "v": "2026-11-27"
       },
       "edpb_edpb_europa_eu_news_edpb_supports_use_of_other_models_of_contractual_clauses_for_onward_transfers_of_personal_": {
         "h": "sha1:edfec22c9771da7e",
         "s": null,
         "d": "2026-11-23T12:59:52-03:00",
-        "v": "2026-11-26"
+        "v": "2026-11-27"
       },
       "edpb_edpb_europa_eu_news_edpb_adopts_statement_on_review_of_the_republic_of_korea_adequacy_processor_bcr_en": {
         "h": "sha1:abab054c2c0335e3",
@@ -2737,7 +2767,7 @@
         "h": "sha1:fddcdc44097b5446",
         "s": null,
         "d": "2026-11-26T12:19:35-03:00",
-        "v": "2026-11-26"
+        "v": "2026-11-27"
       }
     },
     "edps": {}
